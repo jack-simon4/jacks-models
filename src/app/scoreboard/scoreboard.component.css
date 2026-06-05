@@ -1,0 +1,336 @@
+/* General Flex Container Styling */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.flex-item {
+  flex: 1;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Title Styling */
+.scoreboard-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #e74c3c;
+  text-shadow: 2px 2px 8px rgba(231, 76, 60, 0.7);
+}
+
+/* Scoreboard Container */
+.scoreboard-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #2d3436, #3a3d42);
+  border: 2px solid #616161;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+/* Team Scoreboard */
+.team-scoreboard {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-scoreboard label {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.team-info {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.team-score {
+  font-size: 24px;
+  margin-top: 10px;
+  border: 2px solid #34495e;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(52, 152, 219, 0.2);
+  color: #ecf0f1;
+  text-shadow: 1px 1px 4px rgba(52, 152, 219, 0.7);
+}
+
+/* Neutral Site Checkbox */
+.neutral-site-checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.neutral-site-checkbox input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Button Styling */
+.bottom-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.bottom-controls button {
+  padding: 12px 40px;
+  background: linear-gradient(135deg, #0f9b0f, #00ff95);
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 160px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bottom-controls button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 255, 149, 0.4);
+}
+
+/* Dropdown Menus */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #1e272e;
+  border: 1px solid #34495e;
+  border-radius: 10px;
+  z-index: 100;
+  max-height: 250px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 12px 18px;
+  cursor: pointer;
+  color: #dcdde1;
+  background: #2f3640;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background: #3b3b4d;
+  color: #00d4ff;
+}
+
+/* MLB Lineups Section */
+.mlb-lineups-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+  border: 2px solid #616161;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+}
+
+.lineup-column {
+  width: 48%;
+  padding: 10px;
+  background: #2d3436;
+  border-radius: 10px;
+}
+
+.lineup-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.lineup-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #616161;
+  align-items: center;
+}
+
+.lineup-cell {
+  width: 30%;
+  text-align: center;
+  padding: 5px;
+  color: #dcdde1;
+  border-right: 2px solid #616161;
+}
+
+.lineup-cell:last-child {
+  border-right: none;
+}
+
+.lineup-column h3 {
+  text-align: center;
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.lineup-cell:first-child {
+  border-left: 2px solid #616161;
+}
+
+.lineup-cell.hit-percent.green { color: green; }
+.lineup-cell.hit-percent.red  { color: red; }
+.lineup-cell.x-bases.green    { color: green; }
+.lineup-cell.x-bases.red      { color: red; }
+
+.lineup-header span {
+  width: 33%;
+  text-align: center;
+}
+
+.lineup-row:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .scoreboard-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .team-score {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    width: 80%;
+    max-width: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 9999;
+    display: none;
+  }
+
+  .mlb-lineups-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lineup-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .lineup-row {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .lineup-stat {
+    width: 100%;
+  }
+
+  .team-score {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .dropdown-item {
+    padding: 8px 12px;
+  }
+
+  .lineup-row {
+    padding: 5px 0;
+  }
+
+  .lineup-player,
+  .lineup-stat {
+    font-size: 14px;
+  }
+
+  .lineup-cell {
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+    color: #dcdde1;
+    border-right: 2px solid #616161;
+  }
+
+  .team-info select {
+    width: 100%;
+    max-width: 180px;
+    font-size: 12px;
+  }
+
+  .scoreboard-container {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .form-group input {
+    width: 100%;
+    max-width: 180px;
+  }
+}
+
+.table-wrapper {
+  max-height: 500px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.player-props-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.player-props-table th,
+.player-props-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.player-props-table th:hover {
+  background-color: #35054c;
+}
+
+.player-props-table th span {
+  font-size: 0.8em;
+  margin-left: 4px;
+}

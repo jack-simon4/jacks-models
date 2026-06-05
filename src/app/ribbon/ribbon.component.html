@@ -1,0 +1,15 @@
+<!-- Ribbon with Dynamic Buttons -->
+<div class="ribbon">
+  <!-- Generate buttons dynamically from the 'sports' array -->
+  <button *ngFor="let sport of sports" 
+          (click)="selectSport(sport)" 
+          [class.active]="selectedSport === sport"
+          [class.dropdown]="sport === 'Soccer'"> <!-- Changed to 'Soccer' -->
+    {{ sport === 'Soccer' ? 'Soccer' : sport }} <!-- Display 'Soccer' instead of 'EPL' -->
+    <!-- Dropdown Menu within the Soccer button -->
+    <div class="dropdown-menu" *ngIf="selectedSport === 'Soccer'">
+      <a (click)="openSoccerScoreboard()">Soccer</a>
+      <!-- Add more menu items here if needed -->
+    </div>
+  </button>
+</div>

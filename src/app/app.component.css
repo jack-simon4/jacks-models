@@ -1,0 +1,129 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 10px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #aac8e0;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #00d4ff;
+}
+
+/* Main content container */
+.container {
+  min-height: calc(100vh - 64px - 200px);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 0.85rem;
+  margin-top: 40px;
+  padding: 24px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.footer p {
+  margin: 4px 0;
+}
+
+.footer .last-updated {
+  color: #cccccc;
+}
+
+.footer h3 {
+  color: #ffffff;
+  margin: 16px 0 8px;
+  font-size: 0.95rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 16px;
+}
+
+.footer li a {
+  color: #4da3ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer li a:hover {
+  color: #00d4ff;
+}
+
+.footer a {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #00d4ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .nav-links a {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}

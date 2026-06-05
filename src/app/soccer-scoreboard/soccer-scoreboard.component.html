@@ -1,0 +1,41 @@
+
+<div class="ribbon">
+  <button *ngFor="let league of Leagues"
+    (click)="selectLeague(league)"
+    [class.active]="selectedLeague === league">
+    {{ league }}
+  </button>
+</div>
+
+<div class="scoreboard-title">Scoreboard</div>
+
+<div class="scoreboard-container">
+  <div class="team-scoreboard">
+    <label for="awayTeam">Away</label>
+    <div class="team-info">
+      <select id="awayTeam" [(ngModel)]="selectedAwayTeam">
+        <option *ngFor="let team of awayTeams" [value]="team">{{ team }}</option>
+      </select>
+    </div>
+    <div class="team-score">{{awayTeamScore}}</div>
+  </div>
+
+  <div class="team-scoreboard">
+    <label for="homeTeam">Home</label>
+    <div class="team-info">
+      <select id="homeTeam" [(ngModel)]="selectedHomeTeam">
+        <option *ngFor="let team of homeTeams" [value]="team">{{ team }}</option>
+      </select>
+    </div>
+    <div class="team-score">{{homeTeamScore}}</div>
+  </div>
+</div>
+
+<div class="bottom-controls">
+  <button (click)="runSimulation()">Run Sim</button>
+  <button>Show Details</button>
+  <div class="neutral-site-checkbox">
+    <input type="checkbox" id="neutralSiteCheckbox" [(ngModel)]="isNeutralSite">
+    <label for="neutralSiteCheckbox">Neutral site</label>
+  </div>
+</div>

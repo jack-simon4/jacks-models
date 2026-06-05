@@ -1,0 +1,71 @@
+/* Global Styles */
+
+/* Ensure the HTML and body elements occupy the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body Styling */
+  body {
+    margin: 0;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* High-tech gradient background */
+    color: #333; /* Dark gray for better readability */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* General Link Styling */
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #6c5ce7; /* Neon purple for hover state */
+  }
+  
+  /* Universal Box Sizing */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #6c5ce7; /* Matches theme color */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4e3cc9;
+  }
+  
+  /* Responsive Font Scaling */
+  html {
+    font-size: 16px; /* Base font size */
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 15px; /* Slightly smaller font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    html {
+      font-size: 14px; /* Further reduced font size for compact devices */
+    }
+  }
+  

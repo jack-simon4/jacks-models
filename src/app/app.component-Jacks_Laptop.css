@@ -1,0 +1,92 @@
+/* app.component.css */
+/* General Container Styling */
+.container {
+  text-align: center;
+  font-family: 'Roboto', 'Arial', sans-serif; /* Modern font */
+  color: #ffffff;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* High-tech gradient background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container a {
+  display: inline-block;
+  margin: 10px 15px;
+  text-decoration: none;
+  color: #00d4ff; /* Vibrant neon color */
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.container a:hover {
+  color: #02a9f4; /* Slightly darker neon for hover */
+  transform: scale(1.1); /* Adds interaction effect */
+}
+
+/* Last Updated Section */
+.last-updated {
+  margin-top: 20px;
+  padding: 15px;
+  background: #1e272e; /* Dark background */
+  border: 1px solid #34495e;
+  border-radius: 10px;
+  color: #ecf0f1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.last-updated a {
+  color: #1abc9c; /* Neon green */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.last-updated a:hover {
+  text-decoration: underline;
+  color: #16a085; /* Slightly darker green */
+}
+
+/* Survey Section */
+.survey-section {
+  position: relative;
+  padding: 15px;
+  background: rgba(36, 37, 42, 0.9); /* Semi-transparent dark background */
+  border: 1px solid #2f3640;
+  border-radius: 10px;
+  color: #dcdde1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons (Optional Enhancement) */
+button {
+  background: linear-gradient(135deg, #0f9b0f, #00ff95); /* Neon gradient */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 255, 149, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .last-updated, .survey-section {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}

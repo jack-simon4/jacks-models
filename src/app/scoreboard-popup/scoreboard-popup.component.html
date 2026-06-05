@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>Simulation Result</h2>
+<div mat-dialog-content>
+  <p>Winning Team: {{ data.winner }}</p>
+  <p>Margin of Victory: {{ data.marginOfVictory }}</p>
+  <p>{{ data.oddsText }}</p>
+  <p>{{ data.spreadText }}</p> <!-- Include this line to display the spread -->
+  <p>{{ data.NBAspreadText}}</p>
+  <p>{{ data.NFLspreadText}}</p>
+
+    <p>Expected ML: {{data.winner}} {{ data.expectedOdds }}</p>
+
+  <p>Win Percentage: {{ data.winningPercentage }}%</p>
+  <p>Total Score: {{ data.totalScoreRounded }}</p>
+
+<div *ngIf="data.selectedSport === 'MLB'">
+  <p>{{ data.selectedHomePitcher }} Strikeouts: {{ data.homeSPK.toFixed(2) }}</p>
+  <p>{{ data.selectedAwayPitcher }} Strikeouts: {{ data.awaySPK.toFixed(2) }}</p>
+</div>
+
+</div>
+<!-- Add this button at the bottom of your existing content -->
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>
+
+
+

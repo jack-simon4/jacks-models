@@ -1,0 +1,31 @@
+.seo-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.seo-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.seo-container p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.btn {
+  padding: 12px 20px;
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #187bcd;
+}

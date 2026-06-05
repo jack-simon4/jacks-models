@@ -1,0 +1,62 @@
+/* Popup Menu Styling */
+
+/* Dialog Content */
+.mat-dialog-content {
+  padding: 20px; /* Slightly increased padding for better spacing */
+  background: linear-gradient(135deg, #2e2e38, #3b3b4d); /* Dark gradient background for a modern look */
+  color: #ffffff; /* White text for better contrast */
+  border-radius: 8px; /* Rounded corners for a polished appearance */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  font-family: "Roboto", "Helvetica Neue", sans-serif; /* Consistent font across the app */
+  font-size: 16px; /* Readable font size */
+  line-height: 1.5; /* Improved readability */
+}
+
+/* Dialog Actions */
+.mat-dialog-actions {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  padding: 10px 20px; /* Add padding for spacing */
+  background: #2e2e38; /* Match background with dialog content */
+  border-top: 1px solid #444; /* Separator line for distinction */
+}
+
+/* Dialog Buttons */
+.mat-dialog-actions button {
+  background: linear-gradient(135deg, #6c5ce7, #9c88ff); /* Neon purple gradient for buttons */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 10px; /* Spacing between buttons */
+}
+
+.mat-dialog-actions button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(108, 92, 231, 0.5); /* Hover effect */
+}
+
+.mat-dialog-actions button:active {
+  transform: scale(0.95); /* Subtle shrink effect on click */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .mat-dialog-content {
+    padding: 16px; /* Slightly reduced padding for smaller screens */
+  }
+
+  .mat-dialog-actions {
+    justify-content: center; /* Center buttons for smaller screens */
+    flex-wrap: wrap; /* Allow buttons to wrap if necessary */
+  }
+
+  .mat-dialog-actions button {
+    width: 100%; /* Full-width buttons on smaller screens */
+    margin: 5px 0; /* Adjust spacing for stacked buttons */
+  }
+}

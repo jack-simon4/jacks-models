@@ -1,0 +1,12 @@
+<div class="team-selection">
+    <label for="homeTeam">Home Team:</label>
+    <select id="homeTeam" [(ngModel)]="selectedHomeTeam">
+      <option *ngFor="let team of homeTeams" [value]="team">{{ team }}</option>
+    </select>
+  
+    <label for="awayTeam">Away Team:</label>
+    <select id="awayTeam" [(ngModel)]="selectedAwayTeam">
+      <option *ngFor="let team of awayTeams" [value]="team">{{ team }}</option>
+    </select>
+  </div>
+  

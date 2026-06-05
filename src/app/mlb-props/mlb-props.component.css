@@ -1,0 +1,147 @@
+.props-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+}
+
+.props-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.props-header h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ecf0f1;
+}
+
+.header-spacer {
+  min-width: 110px;
+}
+
+.back-button {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.back-button:hover {
+  background: #6ddf68;
+  color: #111;
+  transform: translateY(-2px);
+}
+
+.props-subtitle {
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.loading {
+  text-align: center;
+  color: #aaaaaa;
+  padding: 40px;
+  font-size: 16px;
+}
+
+.table-wrapper {
+  max-height: 70vh;
+  overflow-y: auto;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background: rgba(40, 40, 40, 0.9);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background: #1a1a2e;
+  z-index: 1;
+}
+
+th {
+  padding: 12px 16px;
+  text-align: center;
+  color: #cccccc;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #444;
+}
+
+th.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s;
+}
+
+th.sortable:hover {
+  color: #00d4ff;
+  background: rgba(0, 212, 255, 0.08);
+}
+
+td {
+  padding: 10px 16px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  font-size: 14px;
+}
+
+tbody tr:hover {
+  background: rgba(255,255,255,.05);
+}
+
+.rank-cell {
+  color: #888;
+  font-size: 12px;
+  width: 40px;
+}
+
+.name-cell {
+  text-align: left;
+  font-weight: 600;
+  color: #ecf0f1;
+}
+
+.stat-cell.hr {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.stat-cell.hit {
+  color: #2ecc71;
+  font-weight: 600;
+}
+
+.stat-cell.xb {
+  color: #3498db;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .props-page {
+    padding: 12px;
+  }
+
+  th, td {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}

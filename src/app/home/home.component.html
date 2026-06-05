@@ -1,0 +1,69 @@
+<div class="hero-section">
+  <h1>AI Sports Predictions & MLB Player Props</h1>
+  <p class="hero-subtitle">
+    Built by a college student and tested across thousands of real games.
+  </p>
+  <p>
+    Thousands of simulations every day across MLB, NFL, NBA, NHL,
+    NCAA Football, and NCAA Basketball.
+  </p>
+
+  <div class="stats-bar">
+    <div class="stat-box">
+      <span class="stat-number">10,000+</span>
+      <span class="stat-label">Simulations Daily</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">7</span>
+      <span class="stat-label">Sports Covered</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">Free</span>
+      <span class="stat-label">Predictions</span>
+    </div>
+  </div>
+
+  <button routerLink="/scoreboard" class="hero-btn">
+    Run Predictions →
+  </button>
+</div>
+
+<div class="top-picks-container">
+  <h2>🔥 Today's Top Model Picks</h2>
+
+  <div
+    *ngFor="let pick of topPicks"
+    class="pick-card"
+    [ngClass]="pick.confidence.toLowerCase()"
+  >
+    <div class="pick-rank">#{{ pick.rank }}</div>
+    <div class="pick-info">
+      <div class="matchup">{{ pick.matchup }}</div>
+      <div class="prediction">{{ pick.prediction }}</div>
+    </div>
+    <div class="confidence">{{ pick.confidence }}</div>
+  </div>
+</div>
+
+<div class="top-props-container">
+  <h2>⚾ Today's Top MLB Props</h2>
+
+  <div
+    *ngFor="let player of topProps"
+    class="pick-card prop-pick-card"
+  >
+    <div class="pick-rank">#{{ player.rank }}</div>
+    <div class="pick-info">
+      <div class="player-name">{{ player.name }}</div>
+      <div class="player-stats">
+        🎯 Hit %: <span class="hit-stat">{{ player.hitPercent }}</span>
+        💣 HR %: <span class="hr-stat">{{ player.hrPercent }}</span>
+        ⚾ xBases: <span class="xbases-stat">{{ player.xBases }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="props-button" routerLink="/mlb-props">
+  View Full Props Table →
+</button>

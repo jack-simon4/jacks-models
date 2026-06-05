@@ -1,0 +1,48 @@
+<div class="props-page">
+  <div class="props-header">
+    <h1>MLB Player Props</h1>
+  </div>
+
+  <p class="props-subtitle">Click any column header to sort. Showing top 100 hitters by model projections.</p>
+
+  <div *ngIf="isLoading" class="loading">Loading props...</div>
+
+  <div *ngIf="!isLoading" class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th (click)="sortTable('Hitters')" class="sortable">
+            Hitter
+            <span *ngIf="sortDirection['Hitters'] === 'asc'">▲</span>
+            <span *ngIf="sortDirection['Hitters'] === 'desc'">▼</span>
+          </th>
+          <th (click)="sortTable('Homer %')" class="sortable">
+            Homer %
+            <span *ngIf="sortDirection['Homer %'] === 'asc'">▲</span>
+            <span *ngIf="sortDirection['Homer %'] === 'desc'">▼</span>
+          </th>
+          <th (click)="sortTable('Hit%')" class="sortable">
+            Hit %
+            <span *ngIf="sortDirection['Hit%'] === 'asc'">▲</span>
+            <span *ngIf="sortDirection['Hit%'] === 'desc'">▼</span>
+          </th>
+          <th (click)="sortTable('xBases')" class="sortable">
+            xBases
+            <span *ngIf="sortDirection['xBases'] === 'asc'">▲</span>
+            <span *ngIf="sortDirection['xBases'] === 'desc'">▼</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let prop of sortedProps.slice(0, 100); let i = index">
+          <td class="rank-cell">{{ i + 1 }}</td>
+          <td class="name-cell">{{ prop['Hitters'] }}</td>
+          <td class="stat-cell hr">{{ (prop['Homer %'] * 100) | number:'1.1-1' }}%</td>
+          <td class="stat-cell hit">{{ (prop['Hit%'] * 100) | number:'1.1-1' }}%</td>
+          <td class="stat-cell xb">{{ prop['xBases'] | number:'1.2-2' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

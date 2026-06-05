@@ -1,0 +1,194 @@
+<link rel="stylesheet" href="./scoreboard.component.css">
+
+<div class="ribbon">
+  <app-ribbon (sportSelected)="onSportSelected($event)"></app-ribbon>
+</div>
+
+<div class="scoreboard-title">Scoreboard</div>
+
+<!-- scoreboard.component.html -->
+<div class="scoreboard-container">
+  <div class="team-scoreboard">
+    <label for="awayTeam">Away</label>
+    <div class="team-info">
+      <select id="awayTeam" [(ngModel)]="selectedAwayTeam">
+        <option *ngFor="let team of awayTeams" [value]="team">{{ team }}</option>
+      </select>
+    </div>
+    <div class="form-group" *ngIf="selectedSport === 'MLB'">
+      <label for="awayPitcherSearch">Starting Pitcher</label>
+      <div class="team-info">
+        <input
+          type="text"
+          class="form-control"
+          id="awayPitcherSearch"
+          [(ngModel)]="searchTextAwayPitcher"
+          (focus)="clearInput('away')"
+          (input)="filterAwayPitchers()"
+          (blur)="hideDropdown('away')"
+          placeholder="Away Pitcher"
+        />
+        <div class="dropdown-menu" [class.show]="showAwayPitcherDropdown">
+          <div
+            *ngFor="let pitcher of filteredAwayPitchers"
+            class="dropdown-item"
+            (click)="selectAwayPitcher(pitcher.name)"
+          >
+            {{ pitcher.name }}
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+    
+    <div class="form-group" *ngIf="selectedSport === 'NHL'">
+      <label for="awayGoalieSelect">Starting Goalie</label>
+      <div class="team-info">
+        <select class="form-control" id="awayGoalieSelect" [(ngModel)]="selectedAwayGoalie">
+          <option *ngFor="let goalie of goaliesList" [value]="goalie.name">{{ goalie.name }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="team-score">{{ awayTeamScore }}</div>
+  </div>
+
+  <div class="team-scoreboard">
+    <label for="homeTeam">Home</label>
+    <div class="team-info">
+      <select id="homeTeam" [(ngModel)]="selectedHomeTeam">
+        <option *ngFor="let team of homeTeams" [value]="team">{{ team }}</option>
+      </select>
+    </div>
+    <div class="form-group" *ngIf="selectedSport === 'MLB'">
+      <label for="homePitcherSearch">Starting Pitcher</label>
+      <div class="team-info">
+        <input
+          type="text"
+          class="form-control"
+          id="homePitcherSearch"
+          [(ngModel)]="searchTextHomePitcher"
+          (focus)="clearInput('home')"
+          (input)="filterHomePitchers()"
+          (blur)="hideDropdown('home')"
+          placeholder="Home Pitcher"
+        />
+        <div class="dropdown-menu" [class.show]="showHomePitcherDropdown">
+          <div
+            *ngFor="let pitcher of filteredHomePitchers"
+            class="dropdown-item"
+            (click)="selectHomePitcher(pitcher.name)"
+          >
+            {{ pitcher.name }}
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <div class="form-group" *ngIf="selectedSport === 'NHL'">
+      <label for="homeGoalieSelect">Starting Goalie</label>
+      <div class="team-info">
+        <select class="form-control" id="homeGoalieSelect" [(ngModel)]="selectedHomeGoalie">
+          <option *ngFor="let goalie of goaliesList" [value]="goalie.name">{{ goalie.name }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="team-score">{{ homeTeamScore }}</div>
+  </div>
+</div>
+
+<!-- Add "Run Sim" button and "Neutral Site" checkbox below the teams -->
+<div class="bottom-controls">
+  <button (click)="runSimulation()">Run Sim</button>
+  <div class="bottom-controls">
+    <button (click)="openDetailsPopup()">Show Details</button>
+  </div>
+  <div class="neutral-site-checkbox">
+    <input type="checkbox" id="neutralSiteCheckbox" [(ngModel)]="isNeutralSite">
+    <label for="neutralSiteCheckbox">Neutral site</label>
+  </div>
+</div>
+<!-- MLB Lineups Section -->
+<div class="form-group" *ngIf="selectedSport === 'MLB'">
+  <div class="mlb-lineups-container">
+    <!-- Away Team Lineup -->
+    <div class="lineup-column">
+      <h3 
+      [ngStyle]="{ 
+        color: getTeamColor(selectedAwayTeam),
+        'text-shadow': getTextOutline(selectedAwayTeam)
+      }">
+      {{ selectedAwayTeam }} Lineup
+    </h3>
+      <div class="lineup-table">
+        <div class="lineup-header">
+          <span>Player</span>
+          <span>Hit %</span>
+          <span>xBases</span>
+        </div>
+        <!-- Add rows for the away lineup -->
+        <div *ngFor="let i of [0,1, 2, 3, 4, 5, 6, 7, 8]; let idx = index" class="lineup-row">
+          <div class="lineup-cell">{{ mlbLineups[selectedAwayTeam + (i + 1)] }}</div>
+          <div
+            class="lineup-cell hit-percent"
+            [ngClass]="{
+              'green': awayHitPercent[i] > 75,
+              'red': awayHitPercent[i] < 55
+            }"
+          >
+            {{ awayHitPercent[i] }}
+          </div>
+          <div
+            class="lineup-cell x-bases"
+            [ngClass]="{
+              'green': awayxBases[i] > 1.55 && awayHitPercent[i] > 75,
+              'red': awayxBases[i] < 1.15
+            }"
+          >
+            {{ awayxBases[i] }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home Team Lineup -->
+    <div class="lineup-column">
+      <h3 
+      [ngStyle]="{ 
+        color: getTeamColor(selectedHomeTeam),
+        'text-shadow': getTextOutline(selectedHomeTeam)
+      }">
+      {{ selectedHomeTeam }} Lineup
+    </h3>
+      <div class="lineup-table">
+        <div class="lineup-header">
+          <span>Player</span>
+          <span>Hit %</span>
+          <span>xBases</span>
+        </div>
+        <!-- Add rows for the home lineup -->
+        <div *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7, 8]; let idx = index" class="lineup-row">
+          <div class="lineup-cell">{{ mlbLineups[selectedHomeTeam + (i + 1)] }}</div>
+          <div
+            class="lineup-cell hit-percent"
+            [ngClass]="{
+              'green': homeHitPercent[i] > 75,
+              'red': homeHitPercent[i] < 55
+            }"
+          >
+            {{ homeHitPercent[i] }}
+          </div>
+          <div
+            class="lineup-cell x-bases"
+            [ngClass]="{
+              'green': homexBases[i] > 1.55 && homeHitPercent[i] > 75,
+              'red': homexBases[i] < 1.15
+            }"
+          >
+            {{ homexBases[i] }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
