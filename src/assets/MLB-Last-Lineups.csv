@@ -3,7 +3,7 @@ Arizona Diamondbacks1,Ketel Marte
 Arizona Diamondbacks2,Corbin Carroll
 Arizona Diamondbacks3,Gabriel Moreno
 Arizona Diamondbacks4,Nolan Arenado
-Arizona Diamondbacks5,Pavin Smith
+Arizona Diamondbacks5,Ildemaro Vargas
 Arizona Diamondbacks6,Ryan Waldschmidt
 Arizona Diamondbacks7,Geraldo Perdomo
 Arizona Diamondbacks8,LuJames Groover
@@ -32,9 +32,9 @@ Baltimore Orioles3,Adley Rutschman
 Baltimore Orioles4,Pete Alonso
 Baltimore Orioles5,Coby Mayo
 Baltimore Orioles6,Leody Taveras
-Baltimore Orioles7,Colton Cowser
+Baltimore Orioles7,Samuel Basallo
 Baltimore Orioles8,Blaze Alexander
-Baltimore Orioles9,Jackson Holliday
+Baltimore Orioles9,Jeremiah Jackson
 Boston Red Sox1,Jarren Duran
 Boston Red Sox2,Ceddanne Rafaela
 Boston Red Sox3,Wilyer Abreu
@@ -45,7 +45,7 @@ Boston Red Sox7,Caleb Durbin
 Boston Red Sox8,Anthony Seigler
 Boston Red Sox9,Marcelo Mayer
 Chicago Cubs1,Pete Crow-Armstrong
-Chicago Cubs2,Kevin Alcántara
+Chicago Cubs2,Dansby Swanson
 Chicago Cubs3,Michael Busch
 Chicago Cubs4,Alex Bregman
 Chicago Cubs5,Ian Happ
@@ -61,16 +61,16 @@ Chicago White Sox5,Chase Meidroth
 Chicago White Sox6,Jacob Gonzalez
 Chicago White Sox7,Tristan Peters
 Chicago White Sox8,Drew Romo
-Chicago White Sox9,Rikuu Nishida
-Cincinnati Reds1,Dane Myers
+Chicago White Sox9,Derek Hill
+Cincinnati Reds1,Will Benson
 Cincinnati Reds2,JJ Bleday
 Cincinnati Reds3,Spencer Steer
 Cincinnati Reds4,Sal Stewart
-Cincinnati Reds5,Eugenio Suárez
+Cincinnati Reds5,Edwin Arroyo
 Cincinnati Reds6,Blake Dunn
 Cincinnati Reds7,Noelvi Marte
 Cincinnati Reds8,Matt McLain
-Cincinnati Reds9,P.J. Higgins
+Cincinnati Reds9,Nathaniel Lowe
 Cleveland Guardians1,Travis Bazzana
 Cleveland Guardians2,José Ramírez
 Cleveland Guardians3,Chase DeLauter
@@ -116,6 +116,15 @@ Kansas City Royals6,Michael Massey
 Kansas City Royals7,Tyler Tolbert
 Kansas City Royals8,Josh Rojas
 Kansas City Royals9,Kyle Isbel
+Los Angeles Dodgers1,Shohei Ohtani
+Los Angeles Dodgers2,Andy Pages
+Los Angeles Dodgers3,Freddie Freeman
+Los Angeles Dodgers4,Mookie Betts
+Los Angeles Dodgers5,Max Muncy
+Los Angeles Dodgers6,Will Smith
+Los Angeles Dodgers7,Ryan Ward
+Los Angeles Dodgers8,Alex Call
+Los Angeles Dodgers9,Alex Freeland
 Miami Marlins1,Xavier Edwards
 Miami Marlins2,Otto Lopez
 Miami Marlins3,Kyle Stowers
@@ -123,14 +132,14 @@ Miami Marlins4,Heriberto Hernández
 Miami Marlins5,Leo Jiménez
 Miami Marlins6,Javier Sanoja
 Miami Marlins7,Esteury Ruiz
-Miami Marlins8,Connor Norby
+Miami Marlins8,Liam Hicks
 Miami Marlins9,Joe Mack
 Minnesota Twins1,Orlando Arcia
 Minnesota Twins2,Brooks Lee
 Minnesota Twins3,Kody Clemens
 Minnesota Twins4,Josh Bell
 Minnesota Twins5,Austin Martin
-Minnesota Twins6,Victor Caratini
+Minnesota Twins6,Alex Jackson
 Minnesota Twins7,Royce Lewis
 Minnesota Twins8,Luke Keaschall
 Minnesota Twins9,Ryan Kreidler
@@ -161,15 +170,24 @@ Pittsburgh Pirates6,Oneil Cruz
 Pittsburgh Pirates7,Endy Rodríguez
 Pittsburgh Pirates8,Tyler Callihan
 Pittsburgh Pirates9,Jared Triolo
-San Francisco Giants1,Casey Schmitt
+San Diego Padres1,Fernando Tatis Jr.
+San Diego Padres2,Jackson Merrill
+San Diego Padres3,Ty France
+San Diego Padres4,Manny Machado
+San Diego Padres5,Gavin Sheets
+San Diego Padres6,Xander Bogaerts
+San Diego Padres7,Miguel Andujar
+San Diego Padres8,Sung-Mun Song
+San Diego Padres9,Freddy Fermin
+San Francisco Giants1,Sam Hentges
 San Francisco Giants2,Rafael Devers
 San Francisco Giants3,Luis Arraez
 San Francisco Giants4,Willy Adames
 San Francisco Giants5,Jung Hoo Lee
-San Francisco Giants6,Bryce Eldridge
+San Francisco Giants6,Jonah Cox
 San Francisco Giants7,Matt Chapman
 San Francisco Giants8,Eric Haase
-San Francisco Giants9,Drew Gilbert
+San Francisco Giants9,Victor Bericoto
 Seattle Mariners1,Cole Young
 Seattle Mariners2,Julio Rodríguez
 Seattle Mariners3,Josh Naylor
@@ -209,7 +227,7 @@ Texas Rangers9,Kyle Higashioka
 Toronto Blue Jays1,George Springer
 Toronto Blue Jays2,Nathan Lukes
 Toronto Blue Jays3,Vladimir Guerrero Jr.
-Toronto Blue Jays4,Jesús Sánchez
+Toronto Blue Jays4,Daulton Varsho
 Toronto Blue Jays5,Ernie Clement
 Toronto Blue Jays6,Brandon Valenzuela
 Toronto Blue Jays7,Kazuma Okamoto
