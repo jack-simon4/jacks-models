@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv
+          git add src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv
           if git diff --staged --quiet; then
             echo "No lineup changes — nothing to commit."
           else
