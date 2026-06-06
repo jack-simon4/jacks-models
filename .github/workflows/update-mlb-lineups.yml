@@ -1,17 +1,17 @@
-name: Update MLB Data
+name: Update MLB Lineups (Hourly)
 
 on:
   schedule:
-    # 11 AM ET (15:00 UTC) daily — full refresh of pitchers, hitters, lineups, props
-    - cron: '0 15 * * *'
-  # Allow manual trigger from the GitHub Actions UI
+    # Noon–10 PM ET (16:00–02:00 UTC) — picks up lineups as teams post them
+    - cron: '0 16-23 * * *'
+    - cron: '0 0-2 * * *'
   workflow_dispatch:
 
 jobs:
-  update-data:
+  update-lineups:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # needed to push the updated CSVs back
+      contents: write
 
     steps:
       - name: Check out repository
@@ -26,17 +26,19 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      - name: Update MLB data
-        run: python scripts/update_mlb.py
+      - name: Update lineups and player props
+        run: |
+          python scripts/fetch_mlb_lineups.py
+          python scripts/fetch_mlb_player_props.py
 
       - name: Commit and push updated CSVs
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/MLB-Pitchers.csv src/assets/MLB-Hitters.csv src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv
+          git add src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv
           if git diff --staged --quiet; then
-            echo "No CSV changes — nothing to commit."
+            echo "No lineup changes — nothing to commit."
           else
-            git commit -m "chore: auto-update MLB data $(date -u +%Y-%m-%d)"
+            git commit -m "chore: auto-update lineups $(date -u +%Y-%m-%dT%H:%M)"
             git push
           fi

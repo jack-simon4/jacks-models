@@ -25,7 +25,7 @@ OUTPUT = os.path.normpath(
     os.path.join(os.path.dirname(__file__), '..', 'src', 'assets', 'MLB-Hitters.csv')
 )
 
-MIN_PA = 100
+MIN_PA = 30
 _PLATOON = {'L': (1.04, 0.88), 'R': (0.97, 1.07), 'S': (1.01, 1.01)}
 
 
