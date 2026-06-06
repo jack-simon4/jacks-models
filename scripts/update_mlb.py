@@ -28,4 +28,4 @@ for script in SCRIPTS:
         print(f'[update_mlb] {script} exited with code {result.returncode}')
         sys.exit(result.returncode)
 
-print('\n✓ All MLB data updated successfully.')
+print('\nAll MLB data updated successfully.')
