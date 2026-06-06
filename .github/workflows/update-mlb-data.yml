@@ -1,0 +1,42 @@
+name: Update MLB Data
+
+on:
+  schedule:
+    # 1 PM ET (17:00 UTC) daily — catches most lineups before evening games
+    - cron: '0 17 * * *'
+  # Allow manual trigger from the GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to push the updated CSVs back
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update MLB data
+        run: python scripts/update_mlb.py
+
+      - name: Commit and push updated CSVs
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add src/assets/MLB-Pitchers.csv src/assets/MLB-Hitters.csv src/assets/MLB-Lineups.csv
+          if git diff --staged --quiet; then
+            echo "No CSV changes — nothing to commit."
+          else
+            git commit -m "chore: auto-update MLB data $(date -u +%Y-%m-%d)"
+            git push
+          fi
