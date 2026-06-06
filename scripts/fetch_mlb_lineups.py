@@ -25,7 +25,7 @@ def _load_existing():
     if not os.path.exists(OUTPUT):
         return {}
     try:
-        df = pd.read_csv(OUTPUT)
+        df = pd.read_csv(OUTPUT, encoding='utf-8')
         return dict(zip(df['Team'], df['Player']))
     except Exception:
         return {}
@@ -103,7 +103,7 @@ def fetch_mlb_lineups():
     all_rows = live_rows + fallback_rows
     if all_rows:
         df = pd.DataFrame(all_rows)
-        df.to_csv(OUTPUT, index=False)
+        df.to_csv(OUTPUT, index=False, encoding='utf-8')
         live_teams = len(teams_with_live)
         total_teams = len(all_teams_today)
         print('[Lineups] Saved', len(all_rows), 'entries:',

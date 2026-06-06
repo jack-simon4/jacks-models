@@ -37,6 +37,17 @@ def _ascii(name):
     return unicodedata.normalize('NFKD', str(name)).encode('ascii', 'ignore').decode('ascii')
 
 
+def _fix_name(name):
+    """Decode literal \\xNN escape sequences that pybaseball's bref parser emits."""
+    s = str(name)
+    if '\\x' not in s:
+        return s
+    try:
+        return s.encode('ascii').decode('unicode_escape').encode('latin-1').decode('utf-8')
+    except Exception:
+        return s
+
+
 def _load_existing_hands():
     if not os.path.exists(OUTPUT):
         return {}
@@ -158,7 +169,8 @@ def fetch_mlb_pitchers():
         'single%', 'double%', 'triple%', 'home_run%', 'PA/G', 'Hand',
     ]].copy()
 
-    result.to_csv(OUTPUT, index=False)
+    result['Name'] = result['Name'].map(_fix_name)
+    result.to_csv(OUTPUT, index=False, encoding='utf-8')
     print('[Pitchers] Saved', len(result), 'rows ->', OUTPUT)
 
 

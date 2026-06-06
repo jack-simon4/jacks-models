@@ -40,6 +40,18 @@ def _ascii(name):
     return unicodedata.normalize('NFKD', str(name)).encode('ascii', 'ignore').decode('ascii')
 
 
+def _fix_name(name):
+    """Decode literal \\xNN escape sequences that pybaseball's bref parser emits.
+    e.g. 'Julio Rodr\\xc3\\xadguez' -> 'Julio Rodriguez' (via UTF-8 decode)."""
+    s = str(name)
+    if '\\x' not in s:
+        return s
+    try:
+        return s.encode('ascii').decode('unicode_escape').encode('latin-1').decode('utf-8')
+    except Exception:
+        return s
+
+
 def _fg_splits(year, pitcher_hand):
     url = 'https://www.fangraphs.com/api/leaders/splits/splits-leaders'
     params = {
@@ -197,7 +209,8 @@ def fetch_mlb_hitters():
         'single%', 'double%', 'triple%', 'home_run%', 'xOPS', 'wRops', 'wLops',
     ]
     result = merged[[c for c in keep if c in merged.columns]].copy()
-    result.to_csv(OUTPUT, index=False)
+    result['Name'] = result['Name'].map(_fix_name)
+    result.to_csv(OUTPUT, index=False, encoding='utf-8')
     print('[Hitters] Saved', len(result), 'rows ->', OUTPUT)
 
 

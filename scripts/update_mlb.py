@@ -14,6 +14,7 @@ SCRIPTS = [
     'fetch_mlb_pitchers.py',
     'fetch_mlb_hitters.py',
     'fetch_mlb_lineups.py',
+    'fetch_mlb_player_props.py',
 ]
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
