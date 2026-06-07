@@ -1,13 +1,13 @@
 Team,Player
-Pittsburgh Pirates1,Spencer Horwitz
+Pittsburgh Pirates1,Davis Wendzel
 Pittsburgh Pirates2,Nick Gonzales
 Pittsburgh Pirates3,Bryan Reynolds
 Pittsburgh Pirates4,Ryan O'Hearn
-Pittsburgh Pirates5,Marcell Ozuna
+Pittsburgh Pirates5,Oneil Cruz
 Pittsburgh Pirates6,Tyler Callihan
 Pittsburgh Pirates7,Jake Mangum
 Pittsburgh Pirates8,Jared Triolo
-Pittsburgh Pirates9,Henry Davis
+Pittsburgh Pirates9,Endy Rodríguez
 Atlanta Braves1,Ronald Acuña Jr.
 Atlanta Braves2,Mauricio Dubón
 Atlanta Braves3,Matt Olson
@@ -16,16 +16,16 @@ Atlanta Braves5,Dominic Smith
 Atlanta Braves6,Austin Riley
 Atlanta Braves7,Mike Yastrzemski
 Atlanta Braves8,Jorge Mateo
-Atlanta Braves9,Sandy León
+Atlanta Braves9,Austin Wynns
 Chicago White Sox1,Sam Antonacci
 Chicago White Sox2,Miguel Vargas
-Chicago White Sox3,Andrew Benintendi
+Chicago White Sox3,Edgar Quero
 Chicago White Sox4,Colson Montgomery
 Chicago White Sox5,Chase Meidroth
-Chicago White Sox6,Jacob Gonzalez
+Chicago White Sox6,Randal Grichuk
 Chicago White Sox7,Tristan Peters
 Chicago White Sox8,Drew Romo
-Chicago White Sox9,Rikuu Nishida
+Chicago White Sox9,Derek Hill
 Philadelphia Phillies1,Kyle Schwarber
 Philadelphia Phillies2,Trea Turner
 Philadelphia Phillies3,Bryce Harper
@@ -42,22 +42,22 @@ Boston Red Sox4,Willson Contreras
 Boston Red Sox5,Masataka Yoshida
 Boston Red Sox6,Mickey Gasper
 Boston Red Sox7,Caleb Durbin
-Boston Red Sox8,Anthony Seigler
-Boston Red Sox9,Marcelo Mayer
+Boston Red Sox8,Andruw Monasterio
+Boston Red Sox9,Isiah Kiner-Falefa
 New York Yankees1,Paul Goldschmidt
 New York Yankees2,Ben Rice
 New York Yankees3,Cody Bellinger
-New York Yankees4,Amed Rosario
+New York Yankees4,Ryan McMahon
 New York Yankees5,Trent Grisham
 New York Yankees6,Anthony Volpe
 New York Yankees7,Jazz Chisholm Jr.
 New York Yankees8,José Caballero
-New York Yankees9,Ali Sánchez
+New York Yankees9,J.C. Escarra
 Baltimore Orioles1,Taylor Ward
 Baltimore Orioles2,Gunnar Henderson
 Baltimore Orioles3,Adley Rutschman
 Baltimore Orioles4,Pete Alonso
-Baltimore Orioles5,Samuel Basallo
+Baltimore Orioles5,Sam Huff
 Baltimore Orioles6,Colton Cowser
 Baltimore Orioles7,Tyler O'Neill
 Baltimore Orioles8,Jackson Holliday
@@ -65,27 +65,27 @@ Baltimore Orioles9,Blaze Alexander
 Toronto Blue Jays1,George Springer
 Toronto Blue Jays2,Yohendrick Piñango
 Toronto Blue Jays3,Vladimir Guerrero Jr.
-Toronto Blue Jays4,Jesús Sánchez
+Toronto Blue Jays4,Daulton Varsho
 Toronto Blue Jays5,Ernie Clement
 Toronto Blue Jays6,Brandon Valenzuela
 Toronto Blue Jays7,Kazuma Okamoto
 Toronto Blue Jays8,Andrés Giménez
-Toronto Blue Jays9,Myles Straw
+Toronto Blue Jays9,Nathan Lukes
 Seattle Mariners1,Cole Young
 Seattle Mariners2,Julio Rodríguez
 Seattle Mariners3,Josh Naylor
 Seattle Mariners4,Randy Arozarena
-Seattle Mariners5,Luke Raley
-Seattle Mariners6,Dominic Canzone
+Seattle Mariners5,Victor Robles
+Seattle Mariners6,Rob Refsnyder
 Seattle Mariners7,Patrick Wisdom
 Seattle Mariners8,Colt Emerson
 Seattle Mariners9,Jhonny Pereda
-Detroit Tigers1,Kerry Carpenter
+Detroit Tigers1,Matt Vierling
 Detroit Tigers2,Kevin McGonigle
 Detroit Tigers3,Gleyber Torres
 Detroit Tigers4,Riley Greene
 Detroit Tigers5,Dillon Dingler
-Detroit Tigers6,Colt Keith
+Detroit Tigers6,Zack Short
 Detroit Tigers7,Spencer Torkelson
 Detroit Tigers8,Zach McKinstry
 Detroit Tigers9,Wenceel Pérez
@@ -102,13 +102,13 @@ Miami Marlins1,Liam Hicks
 Miami Marlins2,Otto Lopez
 Miami Marlins3,Kyle Stowers
 Miami Marlins4,Xavier Edwards
-Miami Marlins5,Heriberto Hernández
-Miami Marlins6,Owen Caissie
+Miami Marlins5,Connor Norby
+Miami Marlins6,Esteury Ruiz
 Miami Marlins7,Jakob Marsee
 Miami Marlins8,Joe Mack
 Miami Marlins9,Javier Sanoja
 Athletics1,Nick Kurtz
-Athletics2,Carlos Cortes
+Athletics2,Henry Bolte
 Athletics3,Shea Langeliers
 Athletics4,Tyler Soderstrom
 Athletics5,Brent Rooker
@@ -123,10 +123,10 @@ Houston Astros4,Isaac Paredes
 Houston Astros5,Cam Smith
 Houston Astros6,Jake Meyers
 Houston Astros7,Christian Vázquez
-Houston Astros8,Brice Matthews
-Houston Astros9,Taylor Trammell
+Houston Astros8,LaMonte Wade Jr.
+Houston Astros9,Jose Altuve
 Kansas City Royals1,Lane Thomas
-Kansas City Royals2,Bobby Witt Jr.
+Kansas City Royals2,Michael Massey
 Kansas City Royals3,Maikel Garcia
 Kansas City Royals4,Starling Marte
 Kansas City Royals5,Vinnie Pasquantino
@@ -134,19 +134,19 @@ Kansas City Royals6,Nick Loftin
 Kansas City Royals7,Isaac Collins
 Kansas City Royals8,Carter Jensen
 Kansas City Royals9,Tyler Tolbert
-Minnesota Twins1,Austin Martin
+Minnesota Twins1,Tristan Gray
 Minnesota Twins2,Brooks Lee
 Minnesota Twins3,Orlando Arcia
 Minnesota Twins4,Kody Clemens
 Minnesota Twins5,Josh Bell
 Minnesota Twins6,Royce Lewis
-Minnesota Twins7,Ryan Kreidler
+Minnesota Twins7,Trevor Larnach
 Minnesota Twins8,Luke Keaschall
-Minnesota Twins9,Alex Jackson
+Minnesota Twins9,Victor Caratini
 Cincinnati Reds1,Blake Dunn
 Cincinnati Reds2,JJ Bleday
 Cincinnati Reds3,Sal Stewart
-Cincinnati Reds4,Nathaniel Lowe
+Cincinnati Reds4,Dane Myers
 Cincinnati Reds5,Spencer Steer
 Cincinnati Reds6,Will Benson
 Cincinnati Reds7,Matt McLain
@@ -159,7 +159,7 @@ St. Louis Cardinals4,Jordan Walker
 St. Louis Cardinals5,Lars Nootbaar
 St. Louis Cardinals6,Bryan Torres
 St. Louis Cardinals7,José Fermín
-St. Louis Cardinals8,Nolan Gorman
+St. Louis Cardinals8,Nelson Velázquez
 St. Louis Cardinals9,Victor Scott II
 Cleveland Guardians1,Travis Bazzana
 Cleveland Guardians2,José Ramírez
@@ -167,9 +167,9 @@ Cleveland Guardians3,Chase DeLauter
 Cleveland Guardians4,Kyle Manzardo
 Cleveland Guardians5,Daniel Schneemann
 Cleveland Guardians6,Angel Martínez
-Cleveland Guardians7,Steven Kwan
+Cleveland Guardians7,Stuart Fairchild
 Cleveland Guardians8,Patrick Bailey
-Cleveland Guardians9,Brayan Rocchio
+Cleveland Guardians9,David Fry
 Texas Rangers1,Wyatt Langford
 Texas Rangers2,Josh Jung
 Texas Rangers3,Brandon Nimmo
@@ -251,6 +251,15 @@ San Diego Padres6,Miguel Andujar
 San Diego Padres7,Jase Bowen
 San Diego Padres8,Samad Taylor
 San Diego Padres9,Freddy Fermin
+San Francisco Giants1,Casey Schmitt
+San Francisco Giants2,Rafael Devers
+San Francisco Giants3,Luis Arraez
+San Francisco Giants4,Willy Adames
+San Francisco Giants5,Jung Hoo Lee
+San Francisco Giants6,Bryce Eldridge
+San Francisco Giants7,Matt Chapman
+San Francisco Giants8,Daniel Susac
+San Francisco Giants9,Drew Gilbert
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Dansby Swanson
 Chicago Cubs3,Michael Busch
@@ -260,12 +269,3 @@ Chicago Cubs6,Seiya Suzuki
 Chicago Cubs7,Nico Hoerner
 Chicago Cubs8,Pedro Ramírez
 Chicago Cubs9,Carson Kelly
-San Francisco Giants1,Sam Hentges
-San Francisco Giants2,Rafael Devers
-San Francisco Giants3,Luis Arraez
-San Francisco Giants4,Willy Adames
-San Francisco Giants5,Jung Hoo Lee
-San Francisco Giants6,Jonah Cox
-San Francisco Giants7,Matt Chapman
-San Francisco Giants8,Eric Haase
-San Francisco Giants9,Victor Bericoto
