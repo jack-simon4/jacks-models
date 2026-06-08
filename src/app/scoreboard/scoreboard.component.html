@@ -6,11 +6,26 @@
 
 <div class="scoreboard-container">
   <div class="team-scoreboard">
-    <label for="awayTeam">Away</label>
+    <label for="awayTeamSearch">Away</label>
     <div class="team-info">
-      <select id="awayTeam" [(ngModel)]="selectedAwayTeam">
-        <option *ngFor="let team of awayTeams" [value]="team">{{ team }}</option>
-      </select>
+      <input
+        type="text"
+        class="form-control"
+        id="awayTeamSearch"
+        [(ngModel)]="searchTextAwayTeam"
+        (focus)="clearInput('awayTeam')"
+        (input)="filterAwayTeams()"
+        (blur)="hideDropdown('awayTeam')"
+        (keydown)="onDropdownKeydown($event, 'awayTeam')"
+        placeholder="Away Team"
+      />
+      <div class="dropdown-menu" [class.show]="showAwayTeamDropdown">
+        <div
+          *ngFor="let team of filteredAwayTeams"
+          class="dropdown-item"
+          (mousedown)="selectAwayTeam(team)"
+        >{{ team }}</div>
+      </div>
     </div>
     <div class="form-group" *ngIf="selectedSport === 'MLB'">
       <label for="awayPitcherSearch">Starting Pitcher</label>
@@ -23,6 +38,7 @@
           (focus)="clearInput('away')"
           (input)="filterAwayPitchers()"
           (blur)="hideDropdown('away')"
+          (keydown)="onDropdownKeydown($event, 'awayPitcher')"
           placeholder="Away Pitcher"
         />
         <div class="dropdown-menu" [class.show]="showAwayPitcherDropdown">
@@ -38,22 +54,52 @@
       </div>
     </div>
     <div class="form-group" *ngIf="selectedSport === 'NHL'">
-      <label for="awayGoalieSelect">Starting Goalie</label>
+      <label for="awayGoalieSearch">Starting Goalie</label>
       <div class="team-info">
-        <select class="form-control" id="awayGoalieSelect" [(ngModel)]="selectedAwayGoalie">
-          <option *ngFor="let goalie of goaliesList" [value]="goalie.name">{{ goalie.name }}</option>
-        </select>
+        <input
+          type="text"
+          class="form-control"
+          id="awayGoalieSearch"
+          [(ngModel)]="searchTextAwayGoalie"
+          (focus)="clearInput('awayGoalie')"
+          (input)="filterAwayGoalies()"
+          (blur)="hideDropdown('awayGoalie')"
+          (keydown)="onDropdownKeydown($event, 'awayGoalie')"
+          placeholder="Away Goalie"
+        />
+        <div class="dropdown-menu" [class.show]="showAwayGoalieDropdown">
+          <div
+            *ngFor="let goalie of filteredAwayGoalies"
+            class="dropdown-item"
+            (mousedown)="selectAwayGoalie(goalie.name)"
+          >{{ goalie.name }}</div>
+        </div>
       </div>
     </div>
     <div class="team-score">{{ awayTeamScore }}</div>
   </div>
 
   <div class="team-scoreboard">
-    <label for="homeTeam">Home</label>
+    <label for="homeTeamSearch">Home</label>
     <div class="team-info">
-      <select id="homeTeam" [(ngModel)]="selectedHomeTeam">
-        <option *ngFor="let team of homeTeams" [value]="team">{{ team }}</option>
-      </select>
+      <input
+        type="text"
+        class="form-control"
+        id="homeTeamSearch"
+        [(ngModel)]="searchTextHomeTeam"
+        (focus)="clearInput('homeTeam')"
+        (input)="filterHomeTeams()"
+        (blur)="hideDropdown('homeTeam')"
+        (keydown)="onDropdownKeydown($event, 'homeTeam')"
+        placeholder="Home Team"
+      />
+      <div class="dropdown-menu" [class.show]="showHomeTeamDropdown">
+        <div
+          *ngFor="let team of filteredHomeTeams"
+          class="dropdown-item"
+          (mousedown)="selectHomeTeam(team)"
+        >{{ team }}</div>
+      </div>
     </div>
     <div class="form-group" *ngIf="selectedSport === 'MLB'">
       <label for="homePitcherSearch">Starting Pitcher</label>
@@ -66,6 +112,7 @@
           (focus)="clearInput('home')"
           (input)="filterHomePitchers()"
           (blur)="hideDropdown('home')"
+          (keydown)="onDropdownKeydown($event, 'homePitcher')"
           placeholder="Home Pitcher"
         />
         <div class="dropdown-menu" [class.show]="showHomePitcherDropdown">
@@ -81,11 +128,26 @@
       </div>
     </div>
     <div class="form-group" *ngIf="selectedSport === 'NHL'">
-      <label for="homeGoalieSelect">Starting Goalie</label>
+      <label for="homeGoalieSearch">Starting Goalie</label>
       <div class="team-info">
-        <select class="form-control" id="homeGoalieSelect" [(ngModel)]="selectedHomeGoalie">
-          <option *ngFor="let goalie of goaliesList" [value]="goalie.name">{{ goalie.name }}</option>
-        </select>
+        <input
+          type="text"
+          class="form-control"
+          id="homeGoalieSearch"
+          [(ngModel)]="searchTextHomeGoalie"
+          (focus)="clearInput('homeGoalie')"
+          (input)="filterHomeGoalies()"
+          (blur)="hideDropdown('homeGoalie')"
+          (keydown)="onDropdownKeydown($event, 'homeGoalie')"
+          placeholder="Home Goalie"
+        />
+        <div class="dropdown-menu" [class.show]="showHomeGoalieDropdown">
+          <div
+            *ngFor="let goalie of filteredHomeGoalies"
+            class="dropdown-item"
+            (mousedown)="selectHomeGoalie(goalie.name)"
+          >{{ goalie.name }}</div>
+        </div>
       </div>
     </div>
     <div class="team-score">{{ homeTeamScore }}</div>

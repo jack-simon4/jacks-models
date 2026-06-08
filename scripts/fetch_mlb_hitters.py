@@ -55,6 +55,9 @@ def _process_bref(df, min_pa):
         .query('PA >= @min_pa')
         .copy()
     )
+    # Fix BRef escape sequences (e.g. Garc\\xc3\\xada → García) BEFORE building
+    # the _ascii merge key, so accented names match Statcast and FanGraphs.
+    df['Name'] = df['Name'].map(_fix_name)
     pa = df['PA'].replace(0, 1)
     df['1B']         = (df['H'] - df['2B'] - df['3B'] - df['HR']).clip(lower=0)
     df['k_percent']  = df['SO'] / pa * 100
@@ -235,7 +238,7 @@ def fetch_mlb_hitters():
     merged['xba']  = merged['xba'].fillna(0)  if 'xba'  in merged.columns else 0
     merged['xslg'] = merged['xslg'].fillna(0) if 'xslg' in merged.columns else 0
     merged['xOPS'] = merged['xobp'] + merged['xslg']
-    merged.drop(columns=['_ascii', 'PA'], inplace=True)
+    # Keep _ascii until after the FanGraphs merge so accented names match there too.
 
     # --- Platoon splits ---
     print('[Hitters] Fetching FanGraphs platoon splits...')
@@ -248,10 +251,12 @@ def fetch_mlb_hitters():
         rc = _ops_col(sr)
         lc = _ops_col(sl)
         if rc and lc and not sr.empty and not sl.empty:
-            sr = sr[['Name', rc]].rename(columns={rc: 'OPS_R'})
-            sl = sl[['Name', lc]].rename(columns={lc: 'OPS_L'})
-            splits = sr.merge(sl, on='Name', how='outer')
-            merged = merged.merge(splits, on='Name', how='left')
+            sr['_ascii'] = sr['Name'].map(_ascii)
+            sl['_ascii'] = sl['Name'].map(_ascii)
+            sr = sr[['_ascii', rc]].rename(columns={rc: 'OPS_R'})
+            sl = sl[['_ascii', lc]].rename(columns={lc: 'OPS_L'})
+            splits = sr.merge(sl, on='_ascii', how='outer')
+            merged = merged.merge(splits, on='_ascii', how='left')
             xops = merged['xOPS'].replace(0, 1)
             merged['wRops'] = merged['OPS_R'].fillna(merged['xOPS']) / xops
             merged['wLops'] = merged['OPS_L'].fillna(merged['xOPS']) / xops
@@ -269,10 +274,12 @@ def fetch_mlb_hitters():
         merged['wLops'] = merged['_hand'].map(lambda h: _PLATOON.get(h, (1.0, 1.0))[1])
         merged.drop(columns=['_hand'], inplace=True)
 
+    # Drop merge-only columns now that all joins are complete
+    merged.drop(columns=[c for c in ['_ascii', 'PA'] if c in merged.columns], inplace=True)
+
     keep = ['Name', 'k_percent', 'bb_percent', 'xba', 'xslg', 'xobp',
             'single%', 'double%', 'triple%', 'home_run%', 'xOPS', 'wRops', 'wLops']
     result = merged[[c for c in keep if c in merged.columns]].copy()
-    result['Name'] = result['Name'].map(_fix_name)
     result.to_csv(OUTPUT, index=False, encoding='utf-8')
     print('[Hitters] Saved', len(result), 'rows ->', OUTPUT)
 

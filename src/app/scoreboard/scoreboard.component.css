@@ -41,7 +41,7 @@
   margin: 20px auto;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
   flex-wrap: nowrap;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Team Scoreboard */
@@ -63,6 +63,7 @@
   margin-top: 10px;
   font-size: 18px;
   color: #ffffff;
+  position: relative;
 }
 
 .team-score {
@@ -134,11 +135,12 @@
 }
 
 .dropdown-item {
-  padding: 12px 18px;
+  padding: 7px 12px;
   cursor: pointer;
   color: #dcdde1;
   background: #2f3640;
-  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 14px;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .dropdown-item:hover {

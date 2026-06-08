@@ -21,7 +21,7 @@ OUTPUT = os.path.normpath(
     os.path.join(os.path.dirname(__file__), '..', 'src', 'assets', 'MLB-Pitchers.csv')
 )
 
-MIN_BF = 30
+MIN_IP = 15  # minimum innings pitched for inclusion
 
 
 def _current_season():
@@ -71,14 +71,14 @@ def _lookup_hand(name, cache):
     return 'R'
 
 
-def _process_bref(df, min_bf):
+def _process_bref(df, min_ip):
     """Compute per-BF rates from a raw BRef pitching DataFrame."""
     if 'BF' not in df.columns and 'TBF' in df.columns:
         df = df.rename(columns={'TBF': 'BF'})
     df = (
-        df.sort_values('BF', ascending=False)
+        df.sort_values('IP', ascending=False)
         .drop_duplicates('Name', keep='first')
-        .query('BF >= @min_bf')
+        .query('IP >= @min_ip')
         .copy()
     )
     bf = df['BF'].replace(0, 1)
@@ -121,7 +121,7 @@ def _fetch_statcast(year):
         elif 'PA' in raw.columns:
             raw = raw.rename(columns={'PA': 'sc_bf'})
         else:
-            raw['sc_bf'] = MIN_BF
+            raw['sc_bf'] = MIN_IP * 4  # approx BF from IP
         return raw[['_ascii', 'xba', 'xslg', 'sc_bf']].copy()
     except Exception as exc:
         print('[Pitchers] Statcast', year, 'failed:', exc)
@@ -168,7 +168,7 @@ def fetch_mlb_pitchers():
     # --- Baseball Reference: current year ---
     print('[Pitchers] Fetching BRef pitching stats', year, '...')
     try:
-        bref_cur = _process_bref(pybaseball.pitching_stats_bref(year), MIN_BF)
+        bref_cur = _process_bref(pybaseball.pitching_stats_bref(year), MIN_IP)
     except Exception as exc:
         print('[Pitchers] BRef', year, 'failed:', exc)
         sys.exit(1)
@@ -178,7 +178,7 @@ def fetch_mlb_pitchers():
     # --- Baseball Reference: prior year ---
     print('[Pitchers] Fetching BRef pitching stats', prior, '...')
     try:
-        bref_prev = _process_bref(pybaseball.pitching_stats_bref(prior), MIN_BF)
+        bref_prev = _process_bref(pybaseball.pitching_stats_bref(prior), MIN_IP)
     except Exception as exc:
         print('[Pitchers] BRef', prior, 'failed (continuing without):', exc)
         bref_prev = pd.DataFrame(columns=bref_cur.columns)

@@ -179,16 +179,45 @@ export class ScoreboardComponent implements OnInit {
     `;
   }
   
- // Searchable dropdown properties
+ // Pitcher searchable dropdown
  searchTextHomePitcher: string = '';
  searchTextAwayPitcher: string = '';
  showHomePitcherDropdown: boolean = false;
  showAwayPitcherDropdown: boolean = false;
  filteredHomePitchers: Pitcher[] = this.pitchersList;
  filteredAwayPitchers: Pitcher[] = this.pitchersList;
+
+ // Team searchable dropdown
+ searchTextAwayTeam: string = '';
+ searchTextHomeTeam: string = '';
+ showAwayTeamDropdown: boolean = false;
+ showHomeTeamDropdown: boolean = false;
+ filteredAwayTeams: string[] = [];
+ filteredHomeTeams: string[] = [];
+
+ // Goalie searchable dropdown
+ searchTextAwayGoalie: string = '';
+ searchTextHomeGoalie: string = '';
+ showAwayGoalieDropdown: boolean = false;
+ showHomeGoalieDropdown: boolean = false;
+ filteredAwayGoalies: Goalie[] = [];
+ filteredHomeGoalies: Goalie[] = [];
   
   
  
+ private asciiNorm(name: string): string {
+   return (name || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').trim();
+ }
+
+ // True log5 formula: combines independent batter/pitcher/league rates correctly.
+ // More accurate than simple multiplication at extreme values.
+ private log5(b: number, p: number, l: number): number {
+   if (l <= 0 || l >= 1 || b <= 0 || p <= 0) return 0;
+   const bp = (b * p) / l;
+   const neg = ((1 - b) * (1 - p)) / (1 - l);
+   return bp / (bp + neg);
+ }
+
  getHTeamColor(): string {
   return TEAM_COLORS[this.selectedHomeTeam]?.primary || '#ffffff'; // Default white if not found
 }
@@ -260,24 +289,129 @@ getATeamColor(): string {
     this.searchTextAwayPitcher = pitcherName;
     this.showAwayPitcherDropdown = false;
   }
-  hideDropdown(pitcherType: string) {
+  hideDropdown(type: string) {
     setTimeout(() => {
-      if (pitcherType === 'home') {
+      if (type === 'home') {
         this.showHomePitcherDropdown = false;
-      } else if (pitcherType === 'away') {
+      } else if (type === 'away') {
         this.showAwayPitcherDropdown = false;
+      } else if (type === 'awayTeam') {
+        this.showAwayTeamDropdown = false;
+        this.searchTextAwayTeam = this.selectedAwayTeam;
+      } else if (type === 'homeTeam') {
+        this.showHomeTeamDropdown = false;
+        this.searchTextHomeTeam = this.selectedHomeTeam;
+      } else if (type === 'awayGoalie') {
+        this.showAwayGoalieDropdown = false;
+        this.searchTextAwayGoalie = this.selectedAwayGoalie;
+      } else if (type === 'homeGoalie') {
+        this.showHomeGoalieDropdown = false;
+        this.searchTextHomeGoalie = this.selectedHomeGoalie;
       }
     }, 200);
   }
-  // Method to clear input on focus
-  clearInput(pitcherType: string) {
-    if (pitcherType === 'home') {
+
+  clearInput(type: string) {
+    if (type === 'home') {
       this.searchTextHomePitcher = '';
-      this.showHomePitcherDropdown = true; // Ensure the dropdown appears when focused
-    } else if (pitcherType === 'away') {
+      this.showHomePitcherDropdown = true;
+    } else if (type === 'away') {
       this.searchTextAwayPitcher = '';
-      this.showAwayPitcherDropdown = true; // Ensure the dropdown appears when focused
+      this.showAwayPitcherDropdown = true;
+    } else if (type === 'awayTeam') {
+      this.searchTextAwayTeam = '';
+      this.filteredAwayTeams = this.awayTeams;
+      this.showAwayTeamDropdown = true;
+    } else if (type === 'homeTeam') {
+      this.searchTextHomeTeam = '';
+      this.filteredHomeTeams = this.homeTeams;
+      this.showHomeTeamDropdown = true;
+    } else if (type === 'awayGoalie') {
+      this.searchTextAwayGoalie = '';
+      this.filteredAwayGoalies = this.goaliesList;
+      this.showAwayGoalieDropdown = true;
+    } else if (type === 'homeGoalie') {
+      this.searchTextHomeGoalie = '';
+      this.filteredHomeGoalies = this.goaliesList;
+      this.showHomeGoalieDropdown = true;
     }
+  }
+
+  onDropdownKeydown(event: KeyboardEvent, type: string) {
+    if (event.key !== 'Enter' && event.key !== 'Tab') return;
+    const isTab = event.key === 'Tab';
+    switch (type) {
+      case 'awayTeam':
+        if (this.filteredAwayTeams.length) { if (!isTab) event.preventDefault(); this.selectAwayTeam(this.filteredAwayTeams[0]); }
+        break;
+      case 'homeTeam':
+        if (this.filteredHomeTeams.length) { if (!isTab) event.preventDefault(); this.selectHomeTeam(this.filteredHomeTeams[0]); }
+        break;
+      case 'awayGoalie':
+        if (this.filteredAwayGoalies.length) { if (!isTab) event.preventDefault(); this.selectAwayGoalie(this.filteredAwayGoalies[0].name); }
+        break;
+      case 'homeGoalie':
+        if (this.filteredHomeGoalies.length) { if (!isTab) event.preventDefault(); this.selectHomeGoalie(this.filteredHomeGoalies[0].name); }
+        break;
+      case 'awayPitcher':
+        if (this.filteredAwayPitchers.length) { if (!isTab) event.preventDefault(); this.selectAwayPitcher(this.filteredAwayPitchers[0].name); }
+        break;
+      case 'homePitcher':
+        if (this.filteredHomePitchers.length) { if (!isTab) event.preventDefault(); this.selectHomePitcher(this.filteredHomePitchers[0].name); }
+        break;
+    }
+  }
+
+  filterAwayTeams() {
+    this.filteredAwayTeams = this.awayTeams.filter(team =>
+      team.toLowerCase().includes(this.searchTextAwayTeam.toLowerCase())
+    );
+    this.showAwayTeamDropdown = true;
+  }
+
+  filterHomeTeams() {
+    this.filteredHomeTeams = this.homeTeams.filter(team =>
+      team.toLowerCase().includes(this.searchTextHomeTeam.toLowerCase())
+    );
+    this.showHomeTeamDropdown = true;
+  }
+
+  selectAwayTeam(team: string) {
+    this.selectedAwayTeam = team;
+    this.searchTextAwayTeam = team;
+    this.showAwayTeamDropdown = false;
+  }
+
+  selectHomeTeam(team: string) {
+    this.selectedHomeTeam = team;
+    this.searchTextHomeTeam = team;
+    this.showHomeTeamDropdown = false;
+  }
+
+  filterAwayGoalies() {
+    this.filteredAwayGoalies = this.goaliesList.filter(g =>
+      g.name.toLowerCase().includes(this.searchTextAwayGoalie.toLowerCase())
+    );
+    this.showAwayGoalieDropdown = true;
+  }
+
+  filterHomeGoalies() {
+    this.filteredHomeGoalies = this.goaliesList.filter(g =>
+      g.name.toLowerCase().includes(this.searchTextHomeGoalie.toLowerCase())
+    );
+    this.showHomeGoalieDropdown = true;
+  }
+
+  selectAwayGoalie(name: string) {
+    this.selectedAwayGoalie = name;
+    this.searchTextAwayGoalie = name;
+    this.showAwayGoalieDropdown = false;
+  }
+
+  selectHomeGoalie(name: string) {
+    this.selectedHomeGoalie = name;
+    this.searchTextHomeGoalie = name;
+    this.showHomeGoalieDropdown = false;
   }
   
 
@@ -927,11 +1061,13 @@ parseNHLStats(csvData: string | undefined) {
   updateTeams() {
     this.homeTeams = this.sportsTeams[this.selectedSport] || [];
     this.awayTeams = this.sportsTeams[this.selectedSport] || [];
-    this.selectedHomeTeam = this.homeTeams[0] || ''; // Set default home team
-    this.selectedAwayTeam = this.awayTeams[0] || ''; // Set default away team
-  
-
-  this.selectedHomePitcher = '';
+    this.selectedHomeTeam = this.homeTeams[0] || '';
+    this.selectedAwayTeam = this.awayTeams[0] || '';
+    this.searchTextHomeTeam = this.selectedHomeTeam;
+    this.searchTextAwayTeam = this.selectedAwayTeam;
+    this.filteredHomeTeams = [...this.homeTeams];
+    this.filteredAwayTeams = [...this.awayTeams];
+    this.selectedHomePitcher = '';
     this.selectedAwayPitcher = '';
   }
 
@@ -1105,287 +1241,175 @@ console.log(xShotsHome, )
           
           
         
+          const LG_AVG_PITCHER: Pitcher = {
+            name: '', k_percent: 22.7, bb_percent: 8.3, xba: 0.248, xslg: 0.394, xobp: 0.320,
+            single_percent: 0.1343, double_percent: 0.0409, triple_percent: 0.00367,
+            home_run_percent: 0.02555, pa_per_game: 27.0, hand: 'R'
+          };
+          const LG_AVG_BATTER: Hitter = {
+            name: '', k_percent: 22.7, bb_percent: 8.3, xba: 0.248, xslg: 0.394, xobp: 0.320,
+            single_percent: 0.1343, double_percent: 0.0409, triple_percent: 0.00367,
+            home_run_percent: 0.02555, xOPS: 0.714, wRops: 1.0, wLops: 1.0
+          };
+          const fillPitcher = (p: Pitcher | undefined): Pitcher => {
+            if (!p) return LG_AVG_PITCHER;
+            return {
+              ...p,
+              xba:           p.xba           || LG_AVG_PITCHER.xba,
+              xslg:          p.xslg          || LG_AVG_PITCHER.xslg,
+              xobp:          p.xobp          || LG_AVG_PITCHER.xobp,
+              single_percent:   p.single_percent   || LG_AVG_PITCHER.single_percent,
+              double_percent:   p.double_percent   || LG_AVG_PITCHER.double_percent,
+              triple_percent:   p.triple_percent   || LG_AVG_PITCHER.triple_percent,
+              home_run_percent: p.home_run_percent || LG_AVG_PITCHER.home_run_percent,
+              k_percent:     p.k_percent     || LG_AVG_PITCHER.k_percent,
+              bb_percent:    p.bb_percent    || LG_AVG_PITCHER.bb_percent,
+            };
+          };
+          const fillBatter = (b: Hitter): Hitter => ({
+            ...b,
+            xba:             b.xba             || LG_AVG_BATTER.xba,
+            xslg:            b.xslg            || LG_AVG_BATTER.xslg,
+            xobp:            b.xobp            || LG_AVG_BATTER.xobp,
+            single_percent:  b.single_percent  || LG_AVG_BATTER.single_percent,
+            double_percent:  b.double_percent  || LG_AVG_BATTER.double_percent,
+            triple_percent:  b.triple_percent  || LG_AVG_BATTER.triple_percent,
+            home_run_percent:b.home_run_percent|| LG_AVG_BATTER.home_run_percent,
+            k_percent:       b.k_percent       || LG_AVG_BATTER.k_percent,
+            bb_percent:      b.bb_percent      || LG_AVG_BATTER.bb_percent,
+          });
+
           for (let i = 1; i <= 9; i++) {
-            const homeBatter = this.HittersList.find(player => player.name === this.mlbLineups[this.selectedHomeTeam + i][0].trim());
-            const awayBatter = this.HittersList.find(player => player.name === this.mlbLineups[this.selectedAwayTeam + i][0].trim());
+            const homeLineupName = this.asciiNorm(this.mlbLineups[this.selectedHomeTeam + i]?.[0] || '');
+            const awayLineupName = this.asciiNorm(this.mlbLineups[this.selectedAwayTeam + i]?.[0] || '');
+            const homeBatter = fillBatter(this.HittersList.find(p => this.asciiNorm(p.name) === homeLineupName) ?? LG_AVG_BATTER);
+            const awayBatter = fillBatter(this.HittersList.find(p => this.asciiNorm(p.name) === awayLineupName) ?? LG_AVG_BATTER);
             homeBatters.push(homeBatter);
             awayBatters.push(awayBatter);
           }
-          const homePitcher = this.pitchersList.find(player => player.name === this.selectedHomePitcher);
-          const awayPitcher = this.pitchersList.find(player => player.name === this.selectedAwayPitcher);
+          const homePitcher = fillPitcher(this.pitchersList.find(player => player.name === this.selectedHomePitcher));
+          const awayPitcher = fillPitcher(this.pitchersList.find(player => player.name === this.selectedAwayPitcher));
           
   
-//Single
-const HomeSingle = [];
-
- // Access the pitcher's hand from the data
- const homePitcherHandedness = homePitcher?.hand; // 'R' or 'L'
- const awayPitcherHandedness = awayPitcher?.hand; // 'R' or 'L'
-
-// Loop through home batters and calculate single for each
-for (let i = 0; i < homeBatters.length; i++) {
-  let single;
-  if (awayPitcherHandedness === 'R') {
-    single = (Number(homeBatters[i]?.single_percent) * (Number(awayPitcher?.single_percent) / 0.13425)) * Number(homeBatters[i]?.wRops) * ParkFactor.w1B;
-  } else {
-    single = (Number(homeBatters[i]?.single_percent) * (Number(awayPitcher?.single_percent) / 0.13425)) * Number(homeBatters[i]?.wLops)* ParkFactor.w1B;
-  }
-  HomeSingle.push(single);
-}
-
-// Define an array to store single values for each away batter
-const awaySingle = [];
-
-// Loop through away batters and calculate single for each
-for (let i = 0; i < awayBatters.length; i++) {
-  let single;
-  if (homePitcherHandedness === 'R') {
-    single = (Number(awayBatters[i]?.single_percent) * (Number(homePitcher?.single_percent) / 0.13425)) * Number(awayBatters[i]?.wRops)* ParkFactor.w1B;
-  } else {
-    single = (Number(awayBatters[i]?.single_percent) * (Number(homePitcher?.single_percent) / 0.13425)) * Number(awayBatters[i]?.wLops)* ParkFactor.w1B;
-  }
-  awaySingle.push(single);
-}
-
-
-//DOUBLE
-const HomeDouble: number[] = [];
-
-// Loop through home batters and calculate double for each
-for (let i = 0; i < homeBatters.length; i++) {
-  let double;
-  if (awayPitcherHandedness === 'R') {
-    double = (Number(homeBatters[i]?.double_percent) * (Number(awayPitcher?.double_percent) / 0.0409)) * Number(homeBatters[i]?.wRops) * ParkFactor.w2B;
-  } else {
-    double = (Number(homeBatters[i]?.double_percent) * (Number(awayPitcher?.double_percent) / 0.0409)) * Number(homeBatters[i]?.wLops) *  ParkFactor.w2B;
-  }
-  HomeDouble.push(double);
-}
-
-// Define an array to store double values for each away batter
-const awayDouble: number[] = [];
-
-// Loop through away batters and calculate double for each
-for (let i = 0; i < awayBatters.length; i++) {
-  let double;
-  if (homePitcherHandedness === 'R') {
-    double = (Number(awayBatters[i]?.double_percent) * (Number(homePitcher?.double_percent) / 0.0409)) * Number(awayBatters[i]?.wRops)*  ParkFactor.w2B;
-  } else {
-    double = (Number(awayBatters[i]?.double_percent) * (Number(homePitcher?.double_percent) / 0.0409)) * Number(awayBatters[i]?.wLops) *  ParkFactor.w2B;
-  }
-  awayDouble.push(double);
-}
-
-//TRIPLE
-const HomeTriple: number[] = [];
-
-// Loop through home batters and calculate triple for each
-for (let i = 0; i < homeBatters.length; i++) {
-  let triple;
-  if (awayPitcherHandedness === 'R') {
-    triple = (Number(homeBatters[i]?.triple_percent) * (Number(awayPitcher?.triple_percent) / 0.00367)) * Number(homeBatters[i]?.wRops) * ParkFactor.w3B;
-  } else {
-    triple = (Number(homeBatters[i]?.triple_percent) * (Number(awayPitcher?.triple_percent) / 0.00367)) * Number(homeBatters[i]?.wLops) * ParkFactor.w3B;
-  }
-  HomeTriple.push(triple);
-}
-
-// Define an array to store triple values for each away batter
-const awayTriple: number[] = [];
-
-// Loop through away batters and calculate triple for each
-for (let i = 0; i < awayBatters.length; i++) {
-  let triple;
-  if (homePitcherHandedness === 'R') {
-    triple = (Number(awayBatters[i]?.triple_percent) * (Number(homePitcher?.triple_percent) / 0.00367)) * Number(awayBatters[i]?.wRops) * ParkFactor.w3B;
-  } else {
-    triple = (Number(awayBatters[i]?.triple_percent) * (Number(homePitcher?.triple_percent) / 0.00367)) * Number(awayBatters[i]?.wLops) * ParkFactor.w3B;
-  }
-  awayTriple.push(triple);
-}
-
-// HOME RUN
-const HomeHR: number[] = [];
-
-// Loop through home batters and calculate home runs for each
-for (let i = 0; i < homeBatters.length; i++) {
-  let hr;
-  if (awayPitcherHandedness === 'R') {
-    hr = (Number(homeBatters[i]?.home_run_percent) * (Number(awayPitcher?.home_run_percent) / 0.02555)) * Number(homeBatters[i]?.wRops)* ParkFactor.wHR;
-  } else {
-    hr = (Number(homeBatters[i]?.home_run_percent) * (Number(awayPitcher?.home_run_percent) / 0.02555)) * Number(homeBatters[i]?.wLops) * ParkFactor.wHR;
-  }
-  HomeHR.push(hr);
-}
-
-// Define an array to store home run values for each away batter
-const awayHR: number[] = [];
-
-// Loop through away batters and calculate home runs for each
-for (let i = 0; i < awayBatters.length; i++) {
-  let hr;
-  if (homePitcherHandedness === 'R') {
-    hr = (Number(awayBatters[i]?.home_run_percent) * (Number(homePitcher?.home_run_percent) / 0.02555)) * Number(awayBatters[i]?.wRops) * ParkFactor.wHR;
-  } else {
-    hr = (Number(awayBatters[i]?.home_run_percent) * (Number(homePitcher?.home_run_percent) / 0.02555)) * Number(awayBatters[i]?.wLops) * ParkFactor.wHR;
-  }
-  awayHR.push(hr);
-}
-
-// STRIKEOUT
-const HomeK: number[] = [];
-
-// Loop through home batters and calculate strikeouts for each
-for (let i = 0; i < homeBatters.length; i++) {
-  let k;
-  if (awayPitcherHandedness === 'R') {
-    k = (((Number(homeBatters[i]?.k_percent) * (Number(awayPitcher?.k_percent) / 21.377)) * Number(homeBatters[i]?.wLops)) / 100) * ParkFactor.wSO;
-  } else {
-    k = (((Number(homeBatters[i]?.k_percent) * (Number(awayPitcher?.k_percent) / 21.377)) * Number(homeBatters[i]?.wRops)) / 100) * ParkFactor.wSO;
-  }
-  HomeK.push(k);
-}
-
-// Define an array to store strikeouts for each away batter
-const awayK: number[] = [];
-
-// Loop through away batters and calculate strikeouts for each
-for (let i = 0; i < awayBatters.length; i++) {
-  let k;
-  if (homePitcherHandedness === 'R') {
-    k = (((Number(awayBatters[i]?.k_percent) * (Number(homePitcher?.k_percent) / 21.377)) * Number(awayBatters[i]?.wLops)) / 100) * ParkFactor.wSO;
-  } else {
-    k = (((Number(awayBatters[i]?.k_percent) * (Number(homePitcher?.k_percent) / 21.377)) * Number(awayBatters[i]?.wRops)) / 100) * ParkFactor.wSO;
-  }
-  awayK.push(k);
-}
-
-// Sum all the k values
-this.HomeSPK = Number(homePitcher?.pa_per_game) /9 * (awayK.reduce((sum, value) => sum + value, 0));
-this.AwaySPK = Number(awayPitcher?.pa_per_game) /9 * (HomeK.reduce((sum, value) => sum + value, 0));
-
-// WALKS
-const HomeBB: number[] = [];
-const HomeAB: number[] = [];
+const homePitcherHandedness = homePitcher?.hand;
+const awayPitcherHandedness = awayPitcher?.hand;
 const PA = [4.65, 4.55, 4.43, 4.33, 4.24, 4.13, 4.01, 3.9, 3.77];
 
-// Loop through home batters and calculate walks for each
+// ── SINGLES ───────────────────────────────────────────────────────────────────
+const HomeSingle: number[] = [];
 for (let i = 0; i < homeBatters.length; i++) {
-  let bb, ab;
-  if (awayPitcherHandedness === 'R') {
-    bb = (((Number(homeBatters[i]?.bb_percent) * (Number(awayPitcher?.bb_percent) / 9.3317)) * Number(homeBatters[i]?.wRops)) / 100) * ParkFactor.wBB;
-  } else {
-    bb = (((Number(homeBatters[i]?.bb_percent) * (Number(awayPitcher?.bb_percent) / 9.3317)) * Number(homeBatters[i]?.wLops)) / 100) * ParkFactor.wBB;
-  }
-  HomeBB.push(bb);
-
-  ab = Number(PA[i] - (PA[i] * HomeBB[i]));
-  HomeAB.push(ab);
+  const platoon = awayPitcherHandedness === 'R' ? Number(homeBatters[i]?.wRops) : Number(homeBatters[i]?.wLops);
+  HomeSingle.push(this.log5(Number(homeBatters[i]?.single_percent), Number(awayPitcher?.single_percent), 0.13425) * platoon * ParkFactor.w1B);
+}
+const awaySingle: number[] = [];
+for (let i = 0; i < awayBatters.length; i++) {
+  const platoon = homePitcherHandedness === 'R' ? Number(awayBatters[i]?.wRops) : Number(awayBatters[i]?.wLops);
+  awaySingle.push(this.log5(Number(awayBatters[i]?.single_percent), Number(homePitcher?.single_percent), 0.13425) * platoon * ParkFactor.w1B);
 }
 
-// Define arrays to store walks and at-bats for each away batter
+// ── DOUBLES ───────────────────────────────────────────────────────────────────
+const HomeDouble: number[] = [];
+for (let i = 0; i < homeBatters.length; i++) {
+  const platoon = awayPitcherHandedness === 'R' ? Number(homeBatters[i]?.wRops) : Number(homeBatters[i]?.wLops);
+  HomeDouble.push(this.log5(Number(homeBatters[i]?.double_percent), Number(awayPitcher?.double_percent), 0.0409) * platoon * ParkFactor.w2B);
+}
+const awayDouble: number[] = [];
+for (let i = 0; i < awayBatters.length; i++) {
+  const platoon = homePitcherHandedness === 'R' ? Number(awayBatters[i]?.wRops) : Number(awayBatters[i]?.wLops);
+  awayDouble.push(this.log5(Number(awayBatters[i]?.double_percent), Number(homePitcher?.double_percent), 0.0409) * platoon * ParkFactor.w2B);
+}
+
+// ── TRIPLES ───────────────────────────────────────────────────────────────────
+const HomeTriple: number[] = [];
+for (let i = 0; i < homeBatters.length; i++) {
+  const platoon = awayPitcherHandedness === 'R' ? Number(homeBatters[i]?.wRops) : Number(homeBatters[i]?.wLops);
+  HomeTriple.push(this.log5(Number(homeBatters[i]?.triple_percent), Number(awayPitcher?.triple_percent), 0.00367) * platoon * ParkFactor.w3B);
+}
+const awayTriple: number[] = [];
+for (let i = 0; i < awayBatters.length; i++) {
+  const platoon = homePitcherHandedness === 'R' ? Number(awayBatters[i]?.wRops) : Number(awayBatters[i]?.wLops);
+  awayTriple.push(this.log5(Number(awayBatters[i]?.triple_percent), Number(homePitcher?.triple_percent), 0.00367) * platoon * ParkFactor.w3B);
+}
+
+// ── HOME RUNS ─────────────────────────────────────────────────────────────────
+const HomeHR: number[] = [];
+for (let i = 0; i < homeBatters.length; i++) {
+  const platoon = awayPitcherHandedness === 'R' ? Number(homeBatters[i]?.wRops) : Number(homeBatters[i]?.wLops);
+  HomeHR.push(this.log5(Number(homeBatters[i]?.home_run_percent), Number(awayPitcher?.home_run_percent), 0.02555) * platoon * ParkFactor.wHR);
+}
+const awayHR: number[] = [];
+for (let i = 0; i < awayBatters.length; i++) {
+  const platoon = homePitcherHandedness === 'R' ? Number(awayBatters[i]?.wRops) : Number(awayBatters[i]?.wLops);
+  awayHR.push(this.log5(Number(awayBatters[i]?.home_run_percent), Number(homePitcher?.home_run_percent), 0.02555) * platoon * ParkFactor.wHR);
+}
+
+// ── STRIKEOUTS (platoon reversed: same-hand = disadvantage for batter) ────────
+const HomeK: number[] = [];
+for (let i = 0; i < homeBatters.length; i++) {
+  const platoon = awayPitcherHandedness === 'R' ? Number(homeBatters[i]?.wLops) : Number(homeBatters[i]?.wRops);
+  HomeK.push(this.log5(Number(homeBatters[i]?.k_percent) / 100, Number(awayPitcher?.k_percent) / 100, 0.21377) * platoon * ParkFactor.wSO);
+}
+const awayK: number[] = [];
+for (let i = 0; i < awayBatters.length; i++) {
+  const platoon = homePitcherHandedness === 'R' ? Number(awayBatters[i]?.wLops) : Number(awayBatters[i]?.wRops);
+  awayK.push(this.log5(Number(awayBatters[i]?.k_percent) / 100, Number(homePitcher?.k_percent) / 100, 0.21377) * platoon * ParkFactor.wSO);
+}
+
+this.HomeSPK = Number(homePitcher?.pa_per_game) / 9 * awayK.reduce((s, v) => s + v, 0);
+this.AwaySPK = Number(awayPitcher?.pa_per_game) / 9 * HomeK.reduce((s, v) => s + v, 0);
+
+// ── WALKS & AT-BATS ───────────────────────────────────────────────────────────
+const HomeBB: number[] = [];
+const HomeAB: number[] = [];
+for (let i = 0; i < homeBatters.length; i++) {
+  const platoon = awayPitcherHandedness === 'R' ? Number(homeBatters[i]?.wRops) : Number(homeBatters[i]?.wLops);
+  const bb = this.log5(Number(homeBatters[i]?.bb_percent) / 100, Number(awayPitcher?.bb_percent) / 100, 0.093317) * platoon * ParkFactor.wBB;
+  HomeBB.push(bb);
+  HomeAB.push(PA[i] * (1 - bb));
+}
 const awayBB: number[] = [];
 const awayAB: number[] = [];
-
-// Loop through away batters and calculate walks and at-bats for each
 for (let i = 0; i < awayBatters.length; i++) {
-  let bb, ab;
-  if (homePitcherHandedness === 'R') {
-    bb = (((Number(awayBatters[i]?.bb_percent) * (Number(homePitcher?.bb_percent) / 9.3317)) * Number(awayBatters[i]?.wRops)) / 100) * ParkFactor.wBB;
-  } else {
-    bb = (((Number(awayBatters[i]?.bb_percent) * (Number(homePitcher?.bb_percent) / 9.3317)) * Number(awayBatters[i]?.wLops)) / 100) * ParkFactor.wBB;
-  }
+  const platoon = homePitcherHandedness === 'R' ? Number(awayBatters[i]?.wRops) : Number(awayBatters[i]?.wLops);
+  const bb = this.log5(Number(awayBatters[i]?.bb_percent) / 100, Number(homePitcher?.bb_percent) / 100, 0.093317) * platoon * ParkFactor.wBB;
   awayBB.push(bb);
-
-  ab = Number(PA[i] - (PA[i] * awayBB[i]));
-  awayAB.push(ab);
+  awayAB.push(PA[i] * (1 - bb));
 }
 
-
-// XBA 
+// ── xBA (log5; park via wRest) ────────────────────────────────────────────────
 const HomexbaValues: number[] = [];
-
-// Loop through home batters and calculate xba for each
 for (let i = 0; i < homeBatters.length; i++) {
-  let xba;
-  if (awayPitcherHandedness === 'R') {
-    xba = (Number(homeBatters[i]?.xba) * (Number(awayPitcher?.xba) / 0.2407)) * Number(homeBatters[i]?.wRops) * ParkFactor.wRest;
-  } else {
-    xba = (Number(homeBatters[i]?.xba) * (Number(awayPitcher?.xba) / 0.2407)) * Number(homeBatters[i]?.wLops) * ParkFactor.wRest;
-  }
-  HomexbaValues.push(xba);
+  const platoon = awayPitcherHandedness === 'R' ? Number(homeBatters[i]?.wRops) : Number(homeBatters[i]?.wLops);
+  HomexbaValues.push(this.log5(Number(homeBatters[i]?.xba), Number(awayPitcher?.xba), 0.2407) * platoon * ParkFactor.wRest);
 }
-
-// Define an array to store xba values for each away batter
 const awayXbaValues: number[] = [];
-
-// Loop through away batters and calculate xba for each
 for (let i = 0; i < awayBatters.length; i++) {
-  let xba;
-  if (homePitcherHandedness === 'R') {
-    xba = (Number(awayBatters[i]?.xba) * (Number(homePitcher?.xba) / 0.2407)) * Number(awayBatters[i]?.wRops)  * ParkFactor.wRest;
-  } else {
-    xba = (Number(awayBatters[i]?.xba) * (Number(homePitcher?.xba) / 0.2407)) * Number(awayBatters[i]?.wLops)  * ParkFactor.wRest;
-  }
-  awayXbaValues.push(xba);
+  const platoon = homePitcherHandedness === 'R' ? Number(awayBatters[i]?.wRops) : Number(awayBatters[i]?.wLops);
+  awayXbaValues.push(this.log5(Number(awayBatters[i]?.xba), Number(homePitcher?.xba), 0.2407) * platoon * ParkFactor.wRest);
 }
 
-
-  // XSLG 
+// ── xSLG (multiplicative; NO extra park factor — event rates already park-adjusted) ──
 const HomeXslg: number[] = [];
-
-// Loop through home batters and calculate xslg for each
 for (let i = 0; i < homeBatters.length; i++) {
-  let xslg;
-  if (awayPitcherHandedness === 'R') {
-    xslg = (Number(homeBatters[i]?.xslg) * (Number(awayPitcher?.xslg) / 0.3878)) * Number(homeBatters[i]?.wRops)  * ParkFactor.wRest;
-  } else {
-    xslg = (Number(homeBatters[i]?.xslg) * (Number(awayPitcher?.xslg) / 0.3878)) * Number(homeBatters[i]?.wLops) * ParkFactor.wRest;
-  }
-  HomeXslg.push(xslg);
+  const platoon = awayPitcherHandedness === 'R' ? Number(homeBatters[i]?.wRops) : Number(homeBatters[i]?.wLops);
+  HomeXslg.push((Number(homeBatters[i]?.xslg) * (Number(awayPitcher?.xslg) / 0.3878)) * platoon);
 }
-
-// Define an array to store xslg values for each away batter
 const awayXslg: number[] = [];
-
-// Loop through away batters and calculate xslg for each
 for (let i = 0; i < awayBatters.length; i++) {
-  let xslg;
-  if (homePitcherHandedness === 'R') {
-    xslg = (Number(awayBatters[i]?.xslg) * (Number(homePitcher?.xslg) / 0.3878)) * Number(awayBatters[i]?.wRops)  * ParkFactor.wRest;
-  } else {
-    xslg = (Number(awayBatters[i]?.xslg) * (Number(homePitcher?.xslg) / 0.3878)) * Number(awayBatters[i]?.wLops)  * ParkFactor.wRest;
-  }
-  awayXslg.push(xslg);
+  const platoon = homePitcherHandedness === 'R' ? Number(awayBatters[i]?.wRops) : Number(awayBatters[i]?.wLops);
+  awayXslg.push((Number(awayBatters[i]?.xslg) * (Number(homePitcher?.xslg) / 0.3878)) * platoon);
 }
 
-  
-  // XOBP
+// ── xOBP ─────────────────────────────────────────────────────────────────────
 const HomeXobp: number[] = [];
-
-// Loop through home batters and calculate xobp for each
 for (let i = 0; i < homeBatters.length; i++) {
-  let xobp;
-  if (awayPitcherHandedness === 'R') {
-    xobp = (Number(homeBatters[i]?.xobp) * (Number(awayPitcher?.xobp) / 0.320657)) * Number(homeBatters[i]?.wRops)  * ParkFactor.wOBP;
-  } else {
-    xobp = (Number(homeBatters[i]?.xobp) * (Number(awayPitcher?.xobp) / 0.320657)) * Number(homeBatters[i]?.wLops) * ParkFactor.wOBP;
-  }
-  HomeXobp.push(xobp);
+  const platoon = awayPitcherHandedness === 'R' ? Number(homeBatters[i]?.wRops) : Number(homeBatters[i]?.wLops);
+  HomeXobp.push((Number(homeBatters[i]?.xobp) * (Number(awayPitcher?.xobp) / 0.320657)) * platoon * ParkFactor.wOBP);
 }
-
-// Define an array to store xobp values for each away batter
 const awayXobp: number[] = [];
-
-// Loop through away batters and calculate xobp for each
 for (let i = 0; i < awayBatters.length; i++) {
-  let xobp;
-  if (homePitcherHandedness === 'R') {
-    xobp = (Number(awayBatters[i]?.xobp) * (Number(homePitcher?.xobp) / 0.320657)) * Number(awayBatters[i]?.wRops) * ParkFactor.wOBP;
-  } else {
-    xobp = (Number(awayBatters[i]?.xobp) * (Number(homePitcher?.xobp) / 0.320657)) * Number(awayBatters[i]?.wLops) * ParkFactor.wOBP;
-  }
-  awayXobp.push(xobp);
+  const platoon = homePitcherHandedness === 'R' ? Number(awayBatters[i]?.wRops) : Number(awayBatters[i]?.wLops);
+  awayXobp.push((Number(awayBatters[i]?.xobp) * (Number(homePitcher?.xobp) / 0.320657)) * platoon * ParkFactor.wOBP);
 }
 
 
@@ -1395,14 +1419,14 @@ const awayHitPercent: number[] = [];
 
 // Loop through home batters and calculate hit percentage for each
 for (let i = 0; i < homeBatters.length; i++) {
-  const hitPercent = Math.round(((1 - (Math.pow(1 - HomexbaValues[i], HomeAB[i]))) + (1 - Math.pow(1 - (HomeSingle[i] + HomeDouble[i] + HomeTriple[i] + HomeHR[i]), PA[i]))) / 2 *100);
+  const hitPercent = Math.round((0.65 * (1 - Math.pow(1 - HomexbaValues[i], HomeAB[i])) + 0.35 * (1 - Math.pow(1 - (HomeSingle[i] + HomeDouble[i] + HomeTriple[i] + HomeHR[i]), PA[i]))) * 100);
   homeHitPercent.push(hitPercent);
 }
 
 
 // Loop through away batters and calculate hit percentage for each
 for (let i = 0; i < awayBatters.length; i++) {
-  const hitPercent = Math.round(((1 - (Math.pow(1 - awayXbaValues[i], awayAB[i]))) + (1 - Math.pow(1 - (awaySingle[i] + awayDouble[i] + awayTriple[i] + awayHR[i]), PA[i]))) / 2 *100);
+  const hitPercent = Math.round((0.65 * (1 - Math.pow(1 - awayXbaValues[i], awayAB[i])) + 0.35 * (1 - Math.pow(1 - (awaySingle[i] + awayDouble[i] + awayTriple[i] + awayHR[i]), PA[i]))) * 100);
   awayHitPercent.push(hitPercent);
 }
 
@@ -1424,7 +1448,7 @@ for (let i = 0; i < homeBatters.length; i++) {
 for (let i = 0; i < awayBatters.length; i++) {
   const xBases = Number(((awayXslg[i] * awayAB[i]) + ((awaySingle[i] + (awayDouble[i] * 2) + (awayTriple[i] * 3) + (awayHR[i] * 4)) * PA[i])) / 2 - 0.19).toFixed(2);
   awayxBases.push(Number(xBases));
-  this.awayTeamScore = Number((Math.floor(awayxBases[0] + awayxBases[1] + awayxBases[2] + awayxBases[3] + awayxBases[4] + awayxBases[5] + awayxBases[6] + awayxBases[7] + awayxBases[8]) / AwayTeam.TB_R - 0.175).toFixed(2));
+  this.awayTeamScore = Number((Math.floor(awayxBases[0] + awayxBases[1] + awayxBases[2] + awayxBases[3] + awayxBases[4] + awayxBases[5] + awayxBases[6] + awayxBases[7] + awayxBases[8]) / ParkFactor.TB_R - 0.175).toFixed(2));
 }
 
 // Assign the arrays to component properties

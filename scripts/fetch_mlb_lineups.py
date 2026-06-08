@@ -74,13 +74,25 @@ def fetch_mlb_lineups():
             continue
 
         box = data.get('liveData', {}).get('boxscore', {}).get('teams', {})
+        # gameData.lineups is populated once teams officially submit pre-game lineups
+        # (typically 2 h before first pitch) — available before liveData.boxscore is.
+        gd_lineups = data.get('gameData', {}).get('lineups', {})
 
         for side, team_name in (('away', away_name), ('home', home_name)):
-            team_data    = box.get(side, {})
+            team_data     = box.get(side, {})
             batting_order = team_data.get('battingOrder', [])
-            players      = team_data.get('players', {})
+            players       = team_data.get('players', {})
 
+            # If boxscore battingOrder isn't populated yet, try gameData.lineups
             if not batting_order:
+                gd_key = 'homePlayers' if side == 'home' else 'awayPlayers'
+                gd_players = gd_lineups.get(gd_key, [])
+                if gd_players:
+                    teams_with_live.add(team_name)
+                    for slot, player in enumerate(gd_players[:9], start=1):
+                        full_name = player.get('fullName', '')
+                        if full_name:
+                            live_rows.append({'Team': team_name + str(slot), 'Player': full_name})
                 continue
 
             teams_with_live.add(team_name)

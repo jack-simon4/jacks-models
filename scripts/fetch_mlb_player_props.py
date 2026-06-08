@@ -145,33 +145,35 @@ def load_lineups(path):
     return result
 
 
+def _log5(b: float, p: float, l: float) -> float:
+    """Log5 combination of batter rate b, pitcher rate p, league average l."""
+    if l <= 0 or l >= 1 or b <= 0 or p <= 0:
+        return 0.0
+    bp = (b * p) / l
+    neg = ((1 - b) * (1 - p)) / (1 - l)
+    return bp / (bp + neg)
+
+
 def compute_props(batter, pitcher, park, batting_slot):
     pa = PA_BY_POSITION[batting_slot]
     pitcher_hand = str(pitcher.get('Hand', 'R')).strip()
 
-    if pitcher_hand == 'R':
-        platoon = float(batter.get('wRops', 1.0))
-        platoon_k = float(batter.get('wLops', 1.0))
-    else:
-        platoon = float(batter.get('wLops', 1.0))
-        platoon_k = float(batter.get('wRops', 1.0))
+    platoon   = float(batter.get('wRops', 1.0)) if pitcher_hand == 'R' else float(batter.get('wLops', 1.0))
+    platoon_k = float(batter.get('wLops', 1.0)) if pitcher_hand == 'R' else float(batter.get('wRops', 1.0))
 
-    def adj(batter_val, pitcher_val, lg_avg, park_f):
-        return float(batter_val) * (_pitcher_stat(pitcher, pitcher_val, lg_avg) / lg_avg) * platoon * park_f
-
-    single = adj(batter['single%'], 'single%', 0.13425, park['w1B'])
-    double = adj(batter['double%'], 'double%', 0.0409,  park['w2B'])
-    triple = adj(batter['triple%'], 'triple%', 0.00367, park['w3B'])
-    hr     = adj(batter['home_run%'], 'home_run%', 0.02555, park['wHR'])
-    xba_adj  = float(batter['xba'])  * (_pitcher_stat(pitcher, 'xba',  0.2407) / 0.2407)  * platoon * park['wRest']
-    xslg_adj = float(batter['xslg']) * (_pitcher_stat(pitcher, 'xslg', 0.3878) / 0.3878)  * platoon * park['wRest']
-    bb = (float(batter['bb_percent']) * (_pitcher_stat(pitcher, 'bb_percent', 9.3317) / 9.3317) * platoon / 100) * park['wBB']
+    single = _log5(float(batter['single%']),    _pitcher_stat(pitcher, 'single%',    0.13425), 0.13425) * platoon   * park['w1B']
+    double = _log5(float(batter['double%']),    _pitcher_stat(pitcher, 'double%',    0.0409),  0.0409)  * platoon   * park['w2B']
+    triple = _log5(float(batter['triple%']),    _pitcher_stat(pitcher, 'triple%',    0.00367), 0.00367) * platoon   * park['w3B']
+    hr     = _log5(float(batter['home_run%']),  _pitcher_stat(pitcher, 'home_run%',  0.02555), 0.02555) * platoon   * park['wHR']
+    xba_adj  = _log5(float(batter['xba']),  _pitcher_stat(pitcher, 'xba',  0.2407), 0.2407) * platoon * park['wRest']
+    xslg_adj = (float(batter['xslg']) * (_pitcher_stat(pitcher, 'xslg', 0.3878) / 0.3878)) * platoon  # no extra park factor
+    bb = _log5(float(batter['bb_percent']) / 100, _pitcher_stat(pitcher, 'bb_percent', 9.3317) / 100, 0.093317) * platoon * park['wBB']
 
     ab = pa * (1.0 - bb)
     hit_sum = single + double + triple + hr
 
     homer_pct = 1.0 - (1.0 - hr) ** pa
-    hit_pct = ((1.0 - (1.0 - xba_adj) ** ab) + (1.0 - (1.0 - hit_sum) ** pa)) / 2.0
+    hit_pct = 0.65 * (1.0 - (1.0 - xba_adj) ** ab) + 0.35 * (1.0 - (1.0 - hit_sum) ** pa)
     x_bases = (xslg_adj * ab + (single + 2 * double + 3 * triple + 4 * hr) * pa) / 2.0 - 0.19
 
     return homer_pct, hit_pct, x_bases
@@ -228,10 +230,13 @@ def fetch_mlb_player_props():
             if not player_name:
                 continue
             batter_key = _ascii(player_name)
-            batter = hitters.get(batter_key)
-            if batter is None:
+            raw_batter = hitters.get(batter_key)
+            if raw_batter is None:
                 missing_hitters.add(player_name)
                 batter = LG_AVG_BATTER
+            else:
+                batter = {k: (v if v and float(v) > 0 else LG_AVG_BATTER[k]) if k in LG_AVG_BATTER else v
+                          for k, v in raw_batter.items()}
 
             homer_pct, hit_pct, x_bases = compute_props(batter, pitcher, park, slot)
             rows.append({
