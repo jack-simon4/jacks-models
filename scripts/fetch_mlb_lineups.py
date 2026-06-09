@@ -15,10 +15,16 @@ Output format: Team column like "Arizona Diamondbacks1", Player column.
 """
 
 import os
+import unicodedata
 from datetime import date
 
 import pandas as pd
 import statsapi
+
+
+def _ascii(name):
+    """Strip accents and non-ASCII so names match the hitters/pitchers CSV keys."""
+    return unicodedata.normalize('NFKD', str(name)).encode('ascii', 'ignore').decode('ascii')
 
 OUTPUT = os.path.normpath(
     os.path.join(os.path.dirname(__file__), '..', 'src', 'assets', 'MLB-Lineups.csv')
@@ -92,7 +98,7 @@ def fetch_mlb_lineups():
                     for slot, player in enumerate(gd_players[:9], start=1):
                         full_name = player.get('fullName', '')
                         if full_name:
-                            live_rows.append({'Team': team_name + str(slot), 'Player': full_name})
+                            live_rows.append({'Team': team_name + str(slot), 'Player': _ascii(full_name)})
                 continue
 
             teams_with_live.add(team_name)
@@ -104,7 +110,7 @@ def fetch_mlb_lineups():
                     .get('fullName', '')
                 )
                 if full_name:
-                    live_rows.append({'Team': team_name + str(slot), 'Player': full_name})
+                    live_rows.append({'Team': team_name + str(slot), 'Player': _ascii(full_name)})
 
     # Update history with every live slot we just received
     for row in live_rows:
@@ -125,7 +131,7 @@ def fetch_mlb_lineups():
         if any(slots):
             for slot, player in enumerate(slots, start=1):
                 if player:
-                    fallback_rows.append({'Team': team_name + str(slot), 'Player': player})
+                    fallback_rows.append({'Team': team_name + str(slot), 'Player': _ascii(player)})
             fallback_count += 1
             print('[Lineups]   Using last known lineup for', team_name)
         else:
