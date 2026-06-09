@@ -126,6 +126,15 @@ def fetch_mlb_lineups():
     fallback_rows  = []
     fallback_count = 0
 
+    # Derive all teams we have any history for
+    all_known_teams = set()
+    for key in history:
+        for s in range(9, 0, -1):
+            if key.endswith(str(s)):
+                all_known_teams.add(key[: -len(str(s))])
+                break
+
+    # Teams playing today but not yet announced → use history
     for team_name in sorted(all_teams_today - teams_with_live):
         slots = [history.get(team_name + str(s), '') for s in range(1, 10)]
         if any(slots):
@@ -133,9 +142,18 @@ def fetch_mlb_lineups():
                 if player:
                     fallback_rows.append({'Team': team_name + str(slot), 'Player': _ascii(player)})
             fallback_count += 1
-            print('[Lineups]   Using last known lineup for', team_name)
+            print('[Lineups]   Using last known lineup for', team_name, '(playing today)')
         else:
             print('[Lineups]   No lineup data at all for', team_name)
+
+    # Teams NOT playing today → still include their last known lineup
+    for team_name in sorted(all_known_teams - all_teams_today):
+        slots = [history.get(team_name + str(s), '') for s in range(1, 10)]
+        if any(slots):
+            for slot, player in enumerate(slots, start=1):
+                if player:
+                    fallback_rows.append({'Team': team_name + str(slot), 'Player': _ascii(player)})
+            fallback_count += 1
 
     # Save updated history (includes today's live slots)
     _save_history(history)
