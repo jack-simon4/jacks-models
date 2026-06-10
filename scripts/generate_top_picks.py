@@ -354,7 +354,7 @@ def generate_top_picks():
 
     with open(OUTPUT, 'w', encoding='utf-8') as f:
         json.dump(picks, f, indent=2)
-    print(f'[TopPicks] Saved {len(picks)} qualifying picks → {OUTPUT}')
+    print(f'[TopPicks] Saved {len(picks)} qualifying picks -> {OUTPUT}')
 
 
 if __name__ == '__main__':
