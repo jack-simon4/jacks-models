@@ -37,7 +37,7 @@ Cleveland Guardians8,Austin Hedges
 Cleveland Guardians9,Brayan Rocchio
 Washington Nationals1,James Wood
 Washington Nationals2,Curtis Mead
-Washington Nationals3,Andres Chaparro
+Washington Nationals3,Luis Garcia Jr.
 Washington Nationals4,Dylan Crews
 Washington Nationals5,Daylen Lile
 Washington Nationals6,Jacob Young
@@ -52,23 +52,23 @@ San Francisco Giants5,Jung Hoo Lee
 San Francisco Giants6,Bryce Eldridge
 San Francisco Giants7,Daniel Susac
 San Francisco Giants8,Drew Gilbert
-San Francisco Giants9,Jonah Cox
+San Francisco Giants9,Eric Haase
 Cincinnati Reds1,Matt McLain
 Cincinnati Reds2,JJ Bleday
 Cincinnati Reds3,Sal Stewart
 Cincinnati Reds4,Spencer Steer
-Cincinnati Reds5,Nathaniel Lowe
+Cincinnati Reds5,Edwin Arroyo
 Cincinnati Reds6,Eugenio Suarez
 Cincinnati Reds7,Dane Myers
 Cincinnati Reds8,Noelvi Marte
-Cincinnati Reds9,P.J. Higgins
+Cincinnati Reds9,Tyler Stephenson
 San Diego Padres1,Fernando Tatis Jr.
 San Diego Padres2,Jackson Merrill
 San Diego Padres3,Manny Machado
-San Diego Padres4,Gavin Sheets
-San Diego Padres5,Will Wagner
+San Diego Padres4,Jase Bowen
+San Diego Padres5,Miguel Andujar
 San Diego Padres6,Samad Taylor
-San Diego Padres7,Bryce Johnson
+San Diego Padres7,Ty France
 San Diego Padres8,Rodolfo Duran
 San Diego Padres9,Sung-Mun Song
 Seattle Mariners1,Cole Young
@@ -215,15 +215,51 @@ Chicago White Sox6,Derek Hill
 Chicago White Sox7,Jacob Gonzalez
 Chicago White Sox8,Luisangel Acuna
 Chicago White Sox9,Tristan Peters
+Chicago Cubs1,Pete Crow-Armstrong
+Chicago Cubs2,Moises Ballesteros
+Chicago Cubs3,Michael Busch
+Chicago Cubs4,Alex Bregman
+Chicago Cubs5,Ian Happ
+Chicago Cubs6,Seiya Suzuki
+Chicago Cubs7,Nico Hoerner
+Chicago Cubs8,Michael Conforto
+Chicago Cubs9,Dansby Swanson
 Colorado Rockies1,Willi Castro
 Colorado Rockies2,Kyle Karros
 Colorado Rockies3,TJ Rumfield
 Colorado Rockies4,Hunter Goodman
 Colorado Rockies5,Ezequiel Tovar
-Colorado Rockies6,Jake McCarthy
-Colorado Rockies7,Cole Carrigg
+Colorado Rockies6,Cole Carrigg
+Colorado Rockies7,Troy Johnston
 Colorado Rockies8,Braxton Fulford
 Colorado Rockies9,Chad Stevens
+Milwaukee Brewers1,Christian Yelich
+Milwaukee Brewers2,Jackson Chourio
+Milwaukee Brewers3,Brice Turang
+Milwaukee Brewers4,Andrew Vaughn
+Milwaukee Brewers5,Jake Bauers
+Milwaukee Brewers6,Gary Sanchez
+Milwaukee Brewers7,Sal Frelick
+Milwaukee Brewers8,David Hamilton
+Milwaukee Brewers9,Joey Ortiz
+Athletics1,Nick Kurtz
+Athletics2,Tyler Soderstrom
+Athletics3,Shea Langeliers
+Athletics4,Carlos Cortes
+Athletics5,Zack Gelof
+Athletics6,Lawrence Butler
+Athletics7,Henry Bolte
+Athletics8,Jeff McNeil
+Athletics9,Alika Williams
+Houston Astros1,Jose Altuve
+Houston Astros2,Yordan Alvarez
+Houston Astros3,Christian Walker
+Houston Astros4,Isaac Paredes
+Houston Astros5,Cam Smith
+Houston Astros6,Jake Meyers
+Houston Astros7,Shay Whitcomb
+Houston Astros8,Brice Matthews
+Houston Astros9,Christian Vazquez
 Los Angeles Angels1,Zach Neto
 Los Angeles Angels2,Mike Trout
 Los Angeles Angels3,Wade Meckler
@@ -233,39 +269,3 @@ Los Angeles Angels6,Nick Madrigal
 Los Angeles Angels7,Trey Mancini
 Los Angeles Angels8,Jose Siri
 Los Angeles Angels9,Logan O'Hoppe
-Athletics1,Colby Thomas
-Athletics2,Nick Kurtz
-Athletics3,Shea Langeliers
-Athletics4,Tyler Soderstrom
-Athletics5,Max Muncy
-Athletics6,Jonah Heim
-Athletics7,Henry Bolte
-Athletics8,Zack Gelof
-Athletics9,Alika Williams
-Chicago Cubs1,Pete Crow-Armstrong
-Chicago Cubs2,Moises Ballesteros
-Chicago Cubs3,Michael Busch
-Chicago Cubs4,Alex Bregman
-Chicago Cubs5,Ian Happ
-Chicago Cubs6,Seiya Suzuki
-Chicago Cubs7,Nico Hoerner
-Chicago Cubs8,Miguel Amaya
-Chicago Cubs9,Dansby Swanson
-Houston Astros1,Jeremy Pena
-Houston Astros2,Yordan Alvarez
-Houston Astros3,Christian Walker
-Houston Astros4,Isaac Paredes
-Houston Astros5,Jose Altuve
-Houston Astros6,Cam Smith
-Houston Astros7,Joey Loperfido
-Houston Astros8,Jake Meyers
-Houston Astros9,Christian Vazquez
-Milwaukee Brewers1,Christian Yelich
-Milwaukee Brewers2,Jackson Chourio
-Milwaukee Brewers3,Brice Turang
-Milwaukee Brewers4,William Contreras
-Milwaukee Brewers5,Jake Bauers
-Milwaukee Brewers6,Andrew Vaughn
-Milwaukee Brewers7,Garrett Mitchell
-Milwaukee Brewers8,Luis Rengifo
-Milwaukee Brewers9,Joey Ortiz
