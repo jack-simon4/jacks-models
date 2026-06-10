@@ -38,5 +38,6 @@ jobs:
             echo "No CSV changes — nothing to commit."
           else
             git commit -m "chore: auto-update MLB data $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
             git push
           fi
