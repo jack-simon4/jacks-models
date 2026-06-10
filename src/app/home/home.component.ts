@@ -1,5 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
+
+interface TopPick {
+  rank: number;
+  matchup: string;
+  awayTeam: string;
+  homeTeam: string;
+  awayPitcher: string;
+  homePitcher: string;
+  pick: string;
+  prediction: string;
+  confidence: string;
+  predictedScore: string;
+  winProb: number;
+}
 
 @Component({
   selector: 'app-home',
@@ -8,25 +23,34 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
 
-  topPicks = [
-    { rank: 1, matchup: 'Red Sox vs Yankees',       prediction: 'Yankees -144',      confidence: 'Elite'  },
-    { rank: 2, matchup: 'Cal Poly vs West Virginia', prediction: 'West Virginia -1.5', confidence: 'Strong' },
-    { rank: 3, matchup: 'Knicks vs Spurs',           prediction: 'Knicks +6.5',        confidence: 'Lean'   }
-  ];
+  topPicks: TopPick[] = [];
+  topPicksLoading = true;
 
   topProps: { rank: number; name: string; hitPercent: string; hrPercent: string; xBases: string }[] = [];
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
+    this.loadTopPicks();
     this.loadTopProps();
+  }
+
+  private loadTopPicks() {
+    this.http.get<TopPick[]>(environment.topPicksUrl).subscribe({
+      next: (picks) => {
+        this.topPicks = (picks || []).slice(0, 5);
+        this.topPicksLoading = false;
+      },
+      error: () => {
+        this.topPicksLoading = false;
+      }
+    });
   }
 
   private loadTopProps() {
     this.http.get('assets/MLB-Player-Props.csv', { responseType: 'text' }).subscribe({
       next: (csv) => {
         const lines = csv.trim().split('\n');
-        // Skip header row
         const rows = lines.slice(1)
           .map(line => {
             const parts = line.split(',');
@@ -39,7 +63,6 @@ export class HomeComponent implements OnInit {
           })
           .filter(r => r.name && !isNaN(r.xBases));
 
-        // Already sorted by xBases desc by the fetch script; take top 5
         this.topProps = rows.slice(0, 5).map((r, i) => ({
           rank:       i + 1,
           name:       r.name,
@@ -48,9 +71,7 @@ export class HomeComponent implements OnInit {
           xBases:     r.xBases.toFixed(2),
         }));
       },
-      error: () => {
-        // Leave topProps empty if file is unavailable
-      }
+      error: () => {}
     });
   }
 }

@@ -24,6 +24,7 @@ ASSETS_DIR = os.path.normpath(
 FILES = [
     'MLB-Lineups.csv',
     'MLB-Player-Props.csv',
+    'top-picks.json',
 ]
 
 
@@ -42,8 +43,9 @@ def upload():
         if not os.path.exists(local_path):
             print(f'[Storage] File not found, skipping: {filename}')
             continue
+        content_type = 'application/json' if filename.endswith('.json') else 'text/csv'
         blob = bucket.blob(filename)
-        blob.upload_from_filename(local_path, content_type='text/csv')
+        blob.upload_from_filename(local_path, content_type=content_type)
         print(f'[Storage] Uploaded {filename} → gs://{BUCKET}/{filename}')
 
     print('[Storage] Done.')

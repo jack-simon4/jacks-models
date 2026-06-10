@@ -31,6 +31,12 @@
 <div class="top-picks-container">
   <h2>🔥 Today's Top Model Picks</h2>
 
+  <div *ngIf="topPicksLoading" class="picks-loading">Loading today's picks…</div>
+
+  <div *ngIf="!topPicksLoading && topPicks.length === 0" class="picks-empty">
+    No high-confidence picks for today's slate.
+  </div>
+
   <div
     *ngFor="let pick of topPicks"
     class="pick-card"
@@ -39,6 +45,7 @@
     <div class="pick-rank">#{{ pick.rank }}</div>
     <div class="pick-info">
       <div class="matchup">{{ pick.matchup }}</div>
+      <div class="pitchers">{{ pick.awayPitcher }} vs {{ pick.homePitcher }}</div>
       <div class="prediction">{{ pick.prediction }}</div>
     </div>
     <div class="confidence">{{ pick.confidence }}</div>

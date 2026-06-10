@@ -30,6 +30,7 @@ jobs:
         run: |
           python scripts/fetch_mlb_lineups.py
           python scripts/fetch_mlb_player_props.py
+          python scripts/generate_top_picks.py
 
       - name: Upload updated CSVs to Firebase Storage
         env:
@@ -40,7 +41,7 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv
+          git add src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv src/assets/top-picks.json
           if git diff --staged --quiet; then
             echo "No lineup changes — nothing to commit."
           else
