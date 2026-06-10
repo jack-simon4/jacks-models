@@ -1,5 +1,7 @@
 export const environment = {
     production: true,
+    mlbLineupsUrl: 'https://firebasestorage.googleapis.com/v0/b/jesimon4-scoreboard.appspot.com/o/MLB-Lineups.csv?alt=media',
+    mlbPlayerPropsUrl: 'https://firebasestorage.googleapis.com/v0/b/jesimon4-scoreboard.appspot.com/o/MLB-Player-Props.csv?alt=media',
     firebaseConfig: {
       apiKey: "AIzaSyCkmrDxv3isLR-cJdCmyxuBMPrGbg-dJgc",
       authDomain: "jesimon4-scoreboard.firebaseapp.com",

@@ -1,5 +1,7 @@
 export const environment = {
     production: false,
+    mlbLineupsUrl: 'assets/MLB-Lineups.csv',
+    mlbPlayerPropsUrl: 'assets/MLB-Player-Props.csv',
     firebaseConfig: {
         apiKey: "AIzaSyCkmrDxv3isLR-cJdCmyxuBMPrGbg-dJgc",
         authDomain: "jesimon4-scoreboard.firebaseapp.com",

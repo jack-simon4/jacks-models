@@ -7,6 +7,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { TEAM_COLORS } from '../team-colors'; // Import the team colors
 import { CommonModule } from '@angular/common';
 import * as Papa from 'papaparse'
+import { environment } from '../../environments/environment';
 
 
 
@@ -252,7 +253,7 @@ getATeamColor(): string {
   
  
   
-    this.http.get('/assets/MLB-Lineups.csv', { responseType: 'text' }).subscribe(data => {
+    this.http.get(environment.mlbLineupsUrl, { responseType: 'text' }).subscribe(data => {
       const lines = data.split('\n');
       lines.forEach(line => {
         const parts = line.split(',');
@@ -1086,7 +1087,7 @@ parseNHLStats(csvData: string | undefined) {
   }
 
   loadPlayerProps() {
-    this.http.get('assets/MLB-Player-Props.csv', { responseType: 'text' })
+    this.http.get(environment.mlbPlayerPropsUrl, { responseType: 'text' })
       .subscribe(data => {
         Papa.parse(data, {
           header: true,

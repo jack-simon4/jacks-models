@@ -6,6 +6,12 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - main
+    paths-ignore:
+      - 'src/assets/MLB-Lineups.csv'
+      - 'src/assets/MLB-Player-Props.csv'
+      - 'src/assets/MLB-Last-Lineups.csv'
+      - 'src/assets/MLB-Hitters.csv'
+      - 'src/assets/MLB-Pitchers.csv'
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
