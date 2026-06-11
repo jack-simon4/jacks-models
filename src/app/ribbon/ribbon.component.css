@@ -1,32 +1,43 @@
-/* Ribbon Styles */
+/* ── Ribbon ───────────────────────────────────────────────────── */
 .ribbon {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #1a1a1a, #333);
+  background: linear-gradient(145deg, #1a1d24, #23262f);
+  border-bottom: 1px solid #2e3038;
   padding: 10px 20px;
   overflow-x: auto;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .ribbon button {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #444;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #3a3d45;
+  color: #aaa;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  margin: 0 5px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
-.ribbon button:hover,
+.ribbon button:hover {
+  background: rgba(0, 230, 118, 0.1);
+  border-color: rgba(0, 230, 118, 0.4);
+  color: #00e676;
+}
+
 .ribbon button.active {
-  background: #555;
-  color: #f8f8f8;
+  background: rgba(0, 230, 118, 0.15);
+  border-color: rgba(0, 230, 118, 0.5);
+  color: #00e676;
+  font-weight: 700;
 }
 
+/* ── Dropdown (Soccer button) ─────────────────────────────────── */
 .ribbon .dropdown {
   position: relative;
 }
@@ -34,12 +45,14 @@
 .ribbon .dropdown-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 5px);
+  top: calc(100% + 6px);
   left: 0;
-  background: #444;
-  border-radius: 4px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background: #1a1d24;
+  border: 1px solid #3a3d45;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
   z-index: 1000;
+  min-width: 120px;
 }
 
 .ribbon .dropdown-menu.show {
@@ -47,45 +60,29 @@
 }
 
 .ribbon .dropdown-menu a {
-  color: #fff;
-  padding: 10px;
+  color: #c0c0c0;
+  padding: 10px 14px;
   display: block;
   text-decoration: none;
-  transition: background 0.3s;
+  font-size: 14px;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 
 .ribbon .dropdown-menu a:hover {
-  background: #555;
+  background: rgba(0, 230, 118, 0.1);
+  color: #00e676;
 }
 
+/* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .ribbon {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow-x: auto;
-    max-width: 100%;
-    padding-bottom: 10px;
-    max-height: 120px; /* Limits to two rows */
-    display: flex;
-    flex-direction: row;
-    gap: 2px; /* Adds spacing between elements */
+    justify-content: flex-start;
+    padding: 8px 12px;
+    gap: 5px;
   }
 
   .ribbon button {
-    flex: 1 1 calc(8% - 5px); /* Ensures two buttons per row */
-    max-width: 200px; /* Keeps buttons from being too wide */
-    margin: 1px;
-    text-align: center;
-  }
-
-  .ribbon .dropdown {
-    flex: 1 1 calc(50% - 10px);
-    max-width: 150px;
-    text-align: center;
+    padding: 6px 14px;
+    font-size: 13px;
   }
 }
-
-
-
