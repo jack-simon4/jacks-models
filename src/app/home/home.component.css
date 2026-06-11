@@ -118,6 +118,12 @@
   color: #ecf0f1;
 }
 
+.pitchers {
+  color: #a0a0a0;
+  font-size: 12px;
+  margin: 2px 0;
+}
+
 .prediction {
   color: #ffffff;
   font-size: 14px;
