@@ -1,6 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { Observable } from 'rxjs';
+
+interface Game {
+  id: string;
+  sport: string;
+  homeTeam: string;
+  awayTeam: string;
+  predictedHomeScore: number;
+  predictedAwayScore: number;
+  actualHomeScore: number | null;
+  actualAwayScore: number | null;
+  timestamp: Date;
+}
+
+interface LeagueStat {
+  sport: string;
+  icon: string;
+  rows: { label: string; value: string }[];
+  games: number;
+}
 
 @Component({
   selector: 'app-results',
@@ -9,42 +27,130 @@ import { Observable } from 'rxjs';
 })
 export class ResultsComponent implements OnInit {
 
-  games: any[] = []; // Array to store retrieved games
+  games: Game[] = [];
+  loading = true;
 
-  constructor(private firestore: AngularFirestore) { }
+  leagueStats: LeagueStat[] = [
+    {
+      sport: 'NFL', icon: '🏈',
+      rows: [
+        { label: 'Moneyline',       value: '68%' },
+        { label: 'Against Spread',  value: '53%' },
+        { label: 'Over/Under',      value: '55%' },
+      ],
+      games: 116,
+    },
+    {
+      sport: 'NBA', icon: '🏀',
+      rows: [
+        { label: 'Moneyline',       value: '59%' },
+        { label: 'Against Spread',  value: '51%' },
+        { label: 'Over/Under',      value: '53%' },
+      ],
+      games: 400,
+    },
+    {
+      sport: 'MLB', icon: '⚾',
+      rows: [
+        { label: 'Moneyline',       value: '65%' },
+        { label: '0.5+ Hits (green)', value: '70%' },
+        { label: '1.5+ TB (green)',   value: '52%' },
+      ],
+      games: 69,
+    },
+    {
+      sport: 'NHL', icon: '🏒',
+      rows: [
+        { label: 'Moneyline',       value: '60%' },
+        { label: 'Favored Value',   value: '58% (+22u)' },
+      ],
+      games: 671,
+    },
+    {
+      sport: 'NCAAF', icon: '🏈',
+      rows: [
+        { label: 'Moneyline',            value: '70%' },
+        { label: 'Home Dog ATS',         value: '59%' },
+        { label: 'Extreme totals O/U',   value: '64%' },
+      ],
+      games: 535,
+    },
+    {
+      sport: 'NCAAM', icon: '🏀',
+      rows: [
+        { label: 'Moneyline',       value: '73%' },
+        { label: 'Against Spread',  value: '54%' },
+        { label: 'Over/Under',      value: '50%' },
+      ],
+      games: 1203,
+    },
+    {
+      sport: 'Soccer', icon: '⚽',
+      rows: [
+        { label: 'Record (W-L-D)',   value: '60-28-24' },
+        { label: 'Tie No Bet',       value: '68%' },
+      ],
+      games: 112,
+    },
+    {
+      sport: 'College Baseball', icon: '⚾',
+      rows: [
+        { label: 'Moneyline',  value: '76%' },
+      ],
+      games: 237,
+    },
+  ];
+
+  get totalCorrect(): number {
+    return this.games.filter(g => this.isPredictionCorrect(g)).length;
+  }
+
+  get recordedGames(): Game[] {
+    return this.games.filter(
+      g => g.actualHomeScore != null && g.actualAwayScore != null
+    );
+  }
+
+  get overallWinRate(): string {
+    const completed = this.recordedGames.length;
+    if (completed === 0) return '—';
+    const pct = Math.round((this.totalCorrect / completed) * 100);
+    return `${pct}%`;
+  }
+
+  constructor(private firestore: AngularFirestore) {}
 
   ngOnInit(): void {
-    this.loadGames(); // Load games when component initializes
+    this.loadGames();
   }
 
   loadGames() {
-   // Listen for changes to the 'games' collection in Firestore
-   this.firestore.collection('games', ref => ref.orderBy('timestamp', 'desc')) // Order by timestamp descending
-   .snapshotChanges()
-   .subscribe(logs => {
-     this.games = logs.map(log => {
-       const data = log.payload.doc.data() as any;
-       data.id = log.payload.doc.id; // Add the document ID
-       // Convert Firestore Timestamp to JavaScript Date object
-       if (data.timestamp && data.timestamp.seconds) {
-        data.timestamp = new Date(data.timestamp.seconds * 1000); // Convert to milliseconds
-      }return data;
-
-
-     });
-   });
-}
-
-// Function to check if the predicted winner matches the actual winner
-isPredictionCorrect(game: any): boolean {
-  if (game.actualHomeScore == null || game.actualAwayScore == null) {
-    // If actual scores are not yet available, return false or neutral
-    return false;
+    this.firestore
+      .collection('games', ref => ref.orderBy('timestamp', 'desc').limit(50))
+      .snapshotChanges()
+      .subscribe(logs => {
+        this.games = logs.map(log => {
+          const data = log.payload.doc.data() as any;
+          data.id = log.payload.doc.id;
+          if (data.timestamp?.seconds) {
+            data.timestamp = new Date(data.timestamp.seconds * 1000);
+          }
+          return data as Game;
+        });
+        this.loading = false;
+      });
   }
-  
-  const predictedWinner = game.predictedHomeScore > game.predictedAwayScore ? 'home' : 'away';
-  const actualWinner = game.actualHomeScore > game.actualAwayScore ? 'home' : 'away';
-  
-  return predictedWinner === actualWinner;
-}
+
+  isPredictionCorrect(game: Game): boolean {
+    if (game.actualHomeScore == null || game.actualAwayScore == null) return false;
+    const predWinner = game.predictedHomeScore > game.predictedAwayScore ? 'home' : 'away';
+    const actualWinner = game.actualHomeScore  > game.actualAwayScore  ? 'home' : 'away';
+    return predWinner === actualWinner;
+  }
+
+  predictedWinner(game: Game): string {
+    return game.predictedHomeScore > game.predictedAwayScore
+      ? game.homeTeam
+      : game.awayTeam;
+  }
 }

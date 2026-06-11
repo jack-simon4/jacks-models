@@ -1,72 +1,96 @@
+<div class="results-page">
 
-    <h1>Results</h1>
-    <div class="inforomation">
-    <p>The models were desinged to be used as an additional resource. However,
-      if you were to blindly pick each moneyline, spread, and over/under that 
-    the model sided on, these are the results.</p>
-    </div>
-  
-  <div class="leagues-container">
-    <div class="league">
-      <h2>NFL</h2>
-      <p>68% Money Line</p>
-      <p>53% Against the Spread</p>
-      <p>55% Over/Under</p>
-      <p>*Through 116 games</p>
-    </div>
-  
-    <div class="league">
-      <h2>NBA</h2>
-      <p>59% Money Line</p>
-      <p>51% Against the Spread</p>
-      <p>53% Over/Under</p>
-      <p>*Through 400 games</p>
-    </div>
-  
-    <div class="league">
-      <h2>MLB</h2>
-      <p>65% ML</p>
-      <p>70% o0.5 Hits on guys in the green</p>
-      <p>52% o1.5 TB on guys in green</p>
-      <p>*Through 69 games</p>
-    </div>
-  
-    <div class="league">
-      <h2>NHL</h2>
-      <p>60% Money Line</p>
-      <p>58% Favored Value, +22u</p>
-      <p>*Through 671 games</p>
-    </div>
-  
-    <div class="league">
-      <h2>NCAAF</h2>
-      <p>70% Money Line</p>
-      <p>59% Home Underdog to cover ATS</p>
-      <p>64% Over/Under Totals greater than 62 or less than 42</p>
-      <p>*Through 535 games</p>
-    </div>
-  
-    <div class="league">
-      <h2>NCAAM</h2>
-      <p>73% Money Line</p>
-      <p>54% Against the Spread</p>
-      <p>50% Over/Under</p>
-      <p>*Through 1203 games</p>
-    </div>
-
-    <div class="league">
-      <h2>Soccer</h2>
-      <p>60-28-24</p>
-      <p>Tie no bet</p>
-    </div>
-
-    <div class="league">
-      <h2>College Baseball</h2>
-      <p>76% Money Line</p>
-      <p>*Through 237 games</p>
-    </div>
-
+  <!-- Header -->
+  <div class="page-header">
+    <h1>Model Performance</h1>
+    <p class="page-subtitle">
+      Blind moneyline results — picking every game the model favors, no filtering.
+    </p>
   </div>
 
- 
-  
+  <!-- League stat cards -->
+  <div class="leagues-grid">
+    <div class="league-card" *ngFor="let league of leagueStats">
+      <div class="league-header">
+        <span class="league-icon">{{ league.icon }}</span>
+        <span class="league-name">{{ league.sport }}</span>
+      </div>
+      <div class="league-rows">
+        <div class="league-row" *ngFor="let row of league.rows">
+          <span class="row-label">{{ row.label }}</span>
+          <span class="row-value">{{ row.value }}</span>
+        </div>
+      </div>
+      <div class="league-footer">{{ league.games | number }} games tracked</div>
+    </div>
+  </div>
+
+  <!-- Recent predictions -->
+  <div class="recent-section">
+    <div class="recent-header">
+      <h2>Recent Predictions</h2>
+      <span class="overall-badge" *ngIf="recordedGames.length > 0">
+        {{ totalCorrect }}/{{ recordedGames.length }} correct &nbsp;·&nbsp; {{ overallWinRate }}
+      </span>
+    </div>
+
+    <div *ngIf="loading" class="empty-state">Loading predictions…</div>
+
+    <div *ngIf="!loading && games.length === 0" class="empty-state">
+      No recorded predictions yet.
+    </div>
+
+    <div *ngIf="!loading && games.length > 0" class="game-log">
+      <div
+        *ngFor="let game of games"
+        class="game-row"
+        [ngClass]="game.actualHomeScore != null ? (isPredictionCorrect(game) ? 'correct' : 'incorrect') : 'pending'"
+      >
+        <!-- Result badge -->
+        <div class="result-badge">
+          <ng-container *ngIf="game.actualHomeScore != null">
+            <span *ngIf="isPredictionCorrect(game)"  class="badge-win">W</span>
+            <span *ngIf="!isPredictionCorrect(game)" class="badge-loss">L</span>
+          </ng-container>
+          <span *ngIf="game.actualHomeScore == null" class="badge-pending">—</span>
+        </div>
+
+        <!-- Matchup info -->
+        <div class="game-info">
+          <div class="game-matchup">
+            <span class="sport-chip">{{ game.sport }}</span>
+            {{ game.awayTeam }} @ {{ game.homeTeam }}
+          </div>
+          <div class="game-meta">
+            {{ game.timestamp | date:'MMM d, h:mm a' }}
+          </div>
+        </div>
+
+        <!-- Scores -->
+        <div class="scores">
+          <div class="score-col">
+            <div class="score-label">Predicted</div>
+            <div class="score-value">
+              {{ game.awayTeam | slice:0:3 | uppercase }} {{ game.predictedAwayScore | number:'1.1-1' }}
+              – {{ game.homeTeam | slice:0:3 | uppercase }} {{ game.predictedHomeScore | number:'1.1-1' }}
+            </div>
+          </div>
+          <div class="score-col" *ngIf="game.actualHomeScore != null">
+            <div class="score-label">Actual</div>
+            <div class="score-value actual">
+              {{ game.awayTeam | slice:0:3 | uppercase }} {{ game.actualAwayScore }}
+              – {{ game.homeTeam | slice:0:3 | uppercase }} {{ game.actualHomeScore }}
+            </div>
+          </div>
+        </div>
+
+        <!-- Pick -->
+        <div class="pick-col">
+          <div class="score-label">Pick</div>
+          <div class="pick-name">{{ predictedWinner(game) }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
