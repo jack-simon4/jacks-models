@@ -1,21 +1,5 @@
 [
   {
-    "matchup": "Philadelphia Phillies @ Milwaukee Brewers",
-    "awayTeam": "Philadelphia Phillies",
-    "homeTeam": "Milwaukee Brewers",
-    "awayPitcher": "Andrew Painter",
-    "homePitcher": "Jacob Misiorowski",
-    "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -370",
-    "odds": "-370",
-    "winProb": 0.786,
-    "edge": 0.286,
-    "confidence": "Elite",
-    "predictedScore": "Philadelphia Phillies 3.1 \u2013 Milwaukee Brewers 6.0",
-    "gameTime": "2026-06-12T23:40:00Z",
-    "rank": 1
-  },
-  {
     "matchup": "New York Yankees @ Toronto Blue Jays",
     "awayTeam": "New York Yankees",
     "homeTeam": "Toronto Blue Jays",
@@ -29,22 +13,38 @@
     "confidence": "Elite",
     "predictedScore": "New York Yankees 2.7 \u2013 Toronto Blue Jays 5.0",
     "gameTime": "2026-06-12T23:37:00Z",
+    "rank": 1
+  },
+  {
+    "matchup": "Philadelphia Phillies @ Milwaukee Brewers",
+    "awayTeam": "Philadelphia Phillies",
+    "homeTeam": "Milwaukee Brewers",
+    "awayPitcher": "Tanner Banks",
+    "homePitcher": "Jacob Misiorowski",
+    "pick": "Milwaukee Brewers",
+    "prediction": "Milwaukee Brewers -255",
+    "odds": "-255",
+    "winProb": 0.719,
+    "edge": 0.219,
+    "confidence": "Elite",
+    "predictedScore": "Philadelphia Phillies 3.1 \u2013 Milwaukee Brewers 5.2",
+    "gameTime": "2026-06-12T23:40:00Z",
     "rank": 2
   },
   {
-    "matchup": "Los Angeles Dodgers @ Chicago White Sox",
-    "awayTeam": "Los Angeles Dodgers",
-    "homeTeam": "Chicago White Sox",
-    "awayPitcher": "Roki Sasaki",
-    "homePitcher": "Anthony Kay",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -215",
-    "odds": "-215",
-    "winProb": 0.681,
-    "edge": 0.181,
-    "confidence": "Elite",
-    "predictedScore": "Los Angeles Dodgers 5.7 \u2013 Chicago White Sox 4.0",
-    "gameTime": "2026-06-12T23:40:00Z",
+    "matchup": "Houston Astros @ Kansas City Royals",
+    "awayTeam": "Houston Astros",
+    "homeTeam": "Kansas City Royals",
+    "awayPitcher": "Tatsuya Imai",
+    "homePitcher": "Luinder Avila",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -170",
+    "odds": "-170",
+    "winProb": 0.632,
+    "edge": 0.132,
+    "confidence": "Strong",
+    "predictedScore": "Houston Astros 4.2 \u2013 Kansas City Royals 3.0",
+    "gameTime": "2026-06-13T00:10:00Z",
     "rank": 3
   },
   {
@@ -64,19 +64,19 @@
     "rank": 4
   },
   {
-    "matchup": "Houston Astros @ Kansas City Royals",
-    "awayTeam": "Houston Astros",
-    "homeTeam": "Kansas City Royals",
-    "awayPitcher": "Tatsuya Imai",
-    "homePitcher": "Luinder Avila",
-    "pick": "Houston Astros",
-    "prediction": "Houston Astros -150",
-    "odds": "-150",
-    "winProb": 0.599,
-    "edge": 0.099,
+    "matchup": "Los Angeles Dodgers @ Chicago White Sox",
+    "awayTeam": "Los Angeles Dodgers",
+    "homeTeam": "Chicago White Sox",
+    "awayPitcher": "Roki Sasaki",
+    "homePitcher": "Anthony Kay",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -155",
+    "odds": "-155",
+    "winProb": 0.61,
+    "edge": 0.11,
     "confidence": "Strong",
-    "predictedScore": "Houston Astros 3.9 \u2013 Kansas City Royals 3.0",
-    "gameTime": "2026-06-13T00:10:00Z",
+    "predictedScore": "Los Angeles Dodgers 5.0 \u2013 Chicago White Sox 4.0",
+    "gameTime": "2026-06-12T23:40:00Z",
     "rank": 5
   },
   {
@@ -112,6 +112,22 @@
     "rank": 7
   },
   {
+    "matchup": "Detroit Tigers @ Cleveland Guardians",
+    "awayTeam": "Detroit Tigers",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "Jack Flaherty",
+    "homePitcher": "Tanner Bibee",
+    "pick": "Detroit Tigers",
+    "prediction": "Detroit Tigers -130",
+    "odds": "-130",
+    "winProb": 0.57,
+    "edge": 0.07,
+    "confidence": "Lean",
+    "predictedScore": "Detroit Tigers 4.2 \u2013 Cleveland Guardians 3.6",
+    "gameTime": "2026-06-12T23:10:00Z",
+    "rank": 8
+  },
+  {
     "matchup": "Arizona Diamondbacks @ Cincinnati Reds",
     "awayTeam": "Arizona Diamondbacks",
     "homeTeam": "Cincinnati Reds",
@@ -125,7 +141,7 @@
     "confidence": "Lean",
     "predictedScore": "Arizona Diamondbacks 5.0 \u2013 Cincinnati Reds 4.4",
     "gameTime": "2026-06-12T23:15:00Z",
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Texas Rangers @ Boston Red Sox",
@@ -141,7 +157,23 @@
     "confidence": "Lean",
     "predictedScore": "Texas Rangers 4.2 \u2013 Boston Red Sox 3.6",
     "gameTime": "2026-06-12T23:10:00Z",
-    "rank": 9
+    "rank": 10
+  },
+  {
+    "matchup": "St. Louis Cardinals @ Minnesota Twins",
+    "awayTeam": "St. Louis Cardinals",
+    "homeTeam": "Minnesota Twins",
+    "awayPitcher": "Kyle Leahy",
+    "homePitcher": "Joe Ryan",
+    "pick": "Minnesota Twins",
+    "prediction": "Minnesota Twins -120",
+    "odds": "-120",
+    "winProb": 0.546,
+    "edge": 0.046,
+    "confidence": "Lean",
+    "predictedScore": "St. Louis Cardinals 4.1 \u2013 Minnesota Twins 4.5",
+    "gameTime": "2026-06-13T00:10:00Z",
+    "rank": 11
   },
   {
     "matchup": "Colorado Rockies @ Athletics",
@@ -157,7 +189,7 @@
     "confidence": "Lean",
     "predictedScore": "Colorado Rockies 3.6 \u2013 Athletics 4.0",
     "gameTime": "2026-06-13T02:05:00Z",
-    "rank": 10
+    "rank": 12
   },
   {
     "matchup": "Chicago Cubs @ San Francisco Giants",
@@ -173,22 +205,6 @@
     "confidence": "Lean",
     "predictedScore": "Chicago Cubs 3.2 \u2013 San Francisco Giants 3.5",
     "gameTime": "2026-06-13T02:15:00Z",
-    "rank": 11
-  },
-  {
-    "matchup": "Detroit Tigers @ Cleveland Guardians",
-    "awayTeam": "Detroit Tigers",
-    "homeTeam": "Cleveland Guardians",
-    "awayPitcher": "Jack Flaherty",
-    "homePitcher": "Tanner Bibee",
-    "pick": "Detroit Tigers",
-    "prediction": "Detroit Tigers -115",
-    "odds": "-115",
-    "winProb": 0.532,
-    "edge": 0.032,
-    "confidence": "Lean",
-    "predictedScore": "Detroit Tigers 3.9 \u2013 Cleveland Guardians 3.6",
-    "gameTime": "2026-06-12T23:10:00Z",
-    "rank": 12
+    "rank": 13
   }
 ]
