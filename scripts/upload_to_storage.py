@@ -17,7 +17,7 @@ except ImportError:
     print('[Storage] firebase-admin not installed; skipping upload.')
     sys.exit(0)
 
-BUCKET = 'jesimon4-scoreboard.appspot.com'
+BUCKET = 'jesimon4-scoreboard.firebasestorage.app'
 ASSETS_DIR = os.path.normpath(
     os.path.join(os.path.dirname(__file__), '..', 'src', 'assets')
 )
@@ -46,7 +46,7 @@ def upload():
         content_type = 'application/json' if filename.endswith('.json') else 'text/csv'
         blob = bucket.blob(filename)
         blob.upload_from_filename(local_path, content_type=content_type)
-        print(f'[Storage] Uploaded {filename} → gs://{BUCKET}/{filename}')
+        print(f'[Storage] Uploaded {filename} -> gs://{BUCKET}/{filename}')
 
     print('[Storage] Done.')
 
