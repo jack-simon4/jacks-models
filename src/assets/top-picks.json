@@ -16,6 +16,22 @@
     "rank": 1
   },
   {
+    "matchup": "New York Yankees @ Toronto Blue Jays",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Ryan Weathers",
+    "homePitcher": "Trey Yesavage",
+    "pick": "Toronto Blue Jays",
+    "prediction": "Toronto Blue Jays -280",
+    "odds": "-280",
+    "winProb": 0.735,
+    "edge": 0.235,
+    "confidence": "Elite",
+    "predictedScore": "New York Yankees 2.7 \u2013 Toronto Blue Jays 5.0",
+    "gameTime": "2026-06-12T23:37:00Z",
+    "rank": 2
+  },
+  {
     "matchup": "Los Angeles Dodgers @ Chicago White Sox",
     "awayTeam": "Los Angeles Dodgers",
     "homeTeam": "Chicago White Sox",
@@ -29,7 +45,7 @@
     "confidence": "Elite",
     "predictedScore": "Los Angeles Dodgers 5.7 \u2013 Chicago White Sox 4.0",
     "gameTime": "2026-06-12T23:40:00Z",
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Atlanta Braves @ New York Mets",
@@ -38,62 +54,14 @@
     "awayPitcher": "Spencer Strider",
     "homePitcher": "Nolan McLean",
     "pick": "New York Mets",
-    "prediction": "New York Mets -190",
-    "odds": "-190",
-    "winProb": 0.652,
-    "edge": 0.152,
-    "confidence": "Elite",
-    "predictedScore": "Atlanta Braves 2.9 \u2013 New York Mets 4.3",
-    "gameTime": "2026-06-12T23:15:00Z",
-    "rank": 3
-  },
-  {
-    "matchup": "New York Yankees @ Toronto Blue Jays",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "Ryan Weathers",
-    "homePitcher": "TBD",
-    "pick": "Toronto Blue Jays",
-    "prediction": "Toronto Blue Jays -180",
-    "odds": "-180",
-    "winProb": 0.644,
-    "edge": 0.144,
-    "confidence": "Elite",
-    "predictedScore": "New York Yankees 3.6 \u2013 Toronto Blue Jays 5.0",
-    "gameTime": "2026-06-12T23:37:00Z",
-    "rank": 4
-  },
-  {
-    "matchup": "Miami Marlins @ Pittsburgh Pirates",
-    "awayTeam": "Miami Marlins",
-    "homeTeam": "Pittsburgh Pirates",
-    "awayPitcher": "Sandy Alcantara",
-    "homePitcher": "Braxton Ashcraft",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -170",
-    "odds": "-170",
-    "winProb": 0.627,
-    "edge": 0.127,
-    "confidence": "Strong",
-    "predictedScore": "Miami Marlins 3.5 \u2013 Pittsburgh Pirates 4.7",
-    "gameTime": "2026-06-12T22:40:00Z",
-    "rank": 5
-  },
-  {
-    "matchup": "Seattle Mariners @ Washington Nationals",
-    "awayTeam": "Seattle Mariners",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Bryce Miller",
-    "homePitcher": "Zack Littell",
-    "pick": "Seattle Mariners",
-    "prediction": "Seattle Mariners -160",
+    "prediction": "New York Mets -160",
     "odds": "-160",
-    "winProb": 0.618,
-    "edge": 0.118,
+    "winProb": 0.617,
+    "edge": 0.117,
     "confidence": "Strong",
-    "predictedScore": "Seattle Mariners 5.8 \u2013 Washington Nationals 4.7",
-    "gameTime": "2026-06-12T22:45:00Z",
-    "rank": 6
+    "predictedScore": "Atlanta Braves 3.2 \u2013 New York Mets 4.3",
+    "gameTime": "2026-06-12T23:15:00Z",
+    "rank": 4
   },
   {
     "matchup": "Houston Astros @ Kansas City Royals",
@@ -109,7 +77,55 @@
     "confidence": "Strong",
     "predictedScore": "Houston Astros 3.9 \u2013 Kansas City Royals 3.0",
     "gameTime": "2026-06-13T00:10:00Z",
+    "rank": 5
+  },
+  {
+    "matchup": "Miami Marlins @ Pittsburgh Pirates",
+    "awayTeam": "Miami Marlins",
+    "homeTeam": "Pittsburgh Pirates",
+    "awayPitcher": "Sandy Alcantara",
+    "homePitcher": "Braxton Ashcraft",
+    "pick": "Pittsburgh Pirates",
+    "prediction": "Pittsburgh Pirates -140",
+    "odds": "-140",
+    "winProb": 0.587,
+    "edge": 0.087,
+    "confidence": "Strong",
+    "predictedScore": "Miami Marlins 3.5 \u2013 Pittsburgh Pirates 4.3",
+    "gameTime": "2026-06-12T22:40:00Z",
+    "rank": 6
+  },
+  {
+    "matchup": "Seattle Mariners @ Washington Nationals",
+    "awayTeam": "Seattle Mariners",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Bryce Miller",
+    "homePitcher": "Zack Littell",
+    "pick": "Seattle Mariners",
+    "prediction": "Seattle Mariners -135",
+    "odds": "-135",
+    "winProb": 0.577,
+    "edge": 0.077,
+    "confidence": "Lean",
+    "predictedScore": "Seattle Mariners 5.8 \u2013 Washington Nationals 5.1",
+    "gameTime": "2026-06-12T22:45:00Z",
     "rank": 7
+  },
+  {
+    "matchup": "Arizona Diamondbacks @ Cincinnati Reds",
+    "awayTeam": "Arizona Diamondbacks",
+    "homeTeam": "Cincinnati Reds",
+    "awayPitcher": "Eduardo Rodriguez",
+    "homePitcher": "Nick Lodolo",
+    "pick": "Arizona Diamondbacks",
+    "prediction": "Arizona Diamondbacks -130",
+    "odds": "-130",
+    "winProb": 0.567,
+    "edge": 0.067,
+    "confidence": "Lean",
+    "predictedScore": "Arizona Diamondbacks 5.0 \u2013 Cincinnati Reds 4.4",
+    "gameTime": "2026-06-12T23:15:00Z",
+    "rank": 8
   },
   {
     "matchup": "Texas Rangers @ Boston Red Sox",
@@ -125,7 +141,7 @@
     "confidence": "Lean",
     "predictedScore": "Texas Rangers 4.2 \u2013 Boston Red Sox 3.6",
     "gameTime": "2026-06-12T23:10:00Z",
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Colorado Rockies @ Athletics",
@@ -141,7 +157,7 @@
     "confidence": "Lean",
     "predictedScore": "Colorado Rockies 3.6 \u2013 Athletics 4.0",
     "gameTime": "2026-06-13T02:05:00Z",
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Chicago Cubs @ San Francisco Giants",
@@ -157,7 +173,7 @@
     "confidence": "Lean",
     "predictedScore": "Chicago Cubs 3.2 \u2013 San Francisco Giants 3.5",
     "gameTime": "2026-06-13T02:15:00Z",
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Detroit Tigers @ Cleveland Guardians",
@@ -173,22 +189,6 @@
     "confidence": "Lean",
     "predictedScore": "Detroit Tigers 3.9 \u2013 Cleveland Guardians 3.6",
     "gameTime": "2026-06-12T23:10:00Z",
-    "rank": 11
-  },
-  {
-    "matchup": "Arizona Diamondbacks @ Cincinnati Reds",
-    "awayTeam": "Arizona Diamondbacks",
-    "homeTeam": "Cincinnati Reds",
-    "awayPitcher": "Eduardo Rodriguez",
-    "homePitcher": "Nick Lodolo",
-    "pick": "Arizona Diamondbacks",
-    "prediction": "Arizona Diamondbacks -115",
-    "odds": "-115",
-    "winProb": 0.531,
-    "edge": 0.031,
-    "confidence": "Lean",
-    "predictedScore": "Arizona Diamondbacks 4.7 \u2013 Cincinnati Reds 4.4",
-    "gameTime": "2026-06-12T23:15:00Z",
     "rank": 12
   }
 ]
