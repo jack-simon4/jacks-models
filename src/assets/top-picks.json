@@ -16,22 +16,6 @@
     "rank": 1
   },
   {
-    "matchup": "St. Louis Cardinals @ Minnesota Twins",
-    "awayTeam": "St. Louis Cardinals",
-    "homeTeam": "Minnesota Twins",
-    "awayPitcher": "Matthew Liberatore",
-    "homePitcher": "Connor Prielipp",
-    "pick": "Minnesota Twins",
-    "prediction": "Minnesota Twins -195",
-    "odds": "-195",
-    "winProb": 0.661,
-    "edge": 0.161,
-    "confidence": "Elite",
-    "predictedScore": "St. Louis Cardinals 4.1 \u2013 Minnesota Twins 5.6",
-    "gameTime": "2026-06-13T18:10:00Z",
-    "rank": 2
-  },
-  {
     "matchup": "Los Angeles Dodgers @ Chicago White Sox",
     "awayTeam": "Los Angeles Dodgers",
     "homeTeam": "Chicago White Sox",
@@ -45,22 +29,38 @@
     "confidence": "Elite",
     "predictedScore": "Los Angeles Dodgers 4.3 \u2013 Chicago White Sox 3.0",
     "gameTime": "2026-06-13T20:10:00Z",
+    "rank": 2
+  },
+  {
+    "matchup": "St. Louis Cardinals @ Minnesota Twins",
+    "awayTeam": "St. Louis Cardinals",
+    "homeTeam": "Minnesota Twins",
+    "awayPitcher": "Matthew Liberatore",
+    "homePitcher": "Connor Prielipp",
+    "pick": "Minnesota Twins",
+    "prediction": "Minnesota Twins -165",
+    "odds": "-165",
+    "winProb": 0.624,
+    "edge": 0.124,
+    "confidence": "Strong",
+    "predictedScore": "St. Louis Cardinals 4.1 \u2013 Minnesota Twins 5.2",
+    "gameTime": "2026-06-13T18:10:00Z",
     "rank": 3
   },
   {
-    "matchup": "New York Yankees @ Toronto Blue Jays",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "Cam Schlittler",
-    "homePitcher": "Kevin Gausman",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -150",
-    "odds": "-150",
-    "winProb": 0.6,
-    "edge": 0.1,
+    "matchup": "Detroit Tigers @ Cleveland Guardians",
+    "awayTeam": "Detroit Tigers",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "Tarik Skubal",
+    "homePitcher": "Joey Cantillo",
+    "pick": "Detroit Tigers",
+    "prediction": "Detroit Tigers -155",
+    "odds": "-155",
+    "winProb": 0.606,
+    "edge": 0.106,
     "confidence": "Strong",
-    "predictedScore": "New York Yankees 3.9 \u2013 Toronto Blue Jays 3.0",
-    "gameTime": "2026-06-13T19:07:00Z",
+    "predictedScore": "Detroit Tigers 4.2 \u2013 Cleveland Guardians 3.2",
+    "gameTime": "2026-06-13T20:10:00Z",
     "rank": 4
   },
   {
@@ -96,22 +96,6 @@
     "rank": 6
   },
   {
-    "matchup": "Detroit Tigers @ Cleveland Guardians",
-    "awayTeam": "Detroit Tigers",
-    "homeTeam": "Cleveland Guardians",
-    "awayPitcher": "Tarik Skubal",
-    "homePitcher": "Joey Cantillo",
-    "pick": "Detroit Tigers",
-    "prediction": "Detroit Tigers -130",
-    "odds": "-130",
-    "winProb": 0.57,
-    "edge": 0.07,
-    "confidence": "Lean",
-    "predictedScore": "Detroit Tigers 4.2 \u2013 Cleveland Guardians 3.6",
-    "gameTime": "2026-06-13T20:10:00Z",
-    "rank": 7
-  },
-  {
     "matchup": "Chicago Cubs @ San Francisco Giants",
     "awayTeam": "Chicago Cubs",
     "homeTeam": "San Francisco Giants",
@@ -125,7 +109,7 @@
     "confidence": "Lean",
     "predictedScore": "Chicago Cubs 2.9 \u2013 San Francisco Giants 3.5",
     "gameTime": "2026-06-14T02:05:00Z",
-    "rank": 8
+    "rank": 7
   },
   {
     "matchup": "San Diego Padres @ Baltimore Orioles",
@@ -141,6 +125,38 @@
     "confidence": "Lean",
     "predictedScore": "San Diego Padres 4.0 \u2013 Baltimore Orioles 4.4",
     "gameTime": "2026-06-13T20:05:00Z",
+    "rank": 8
+  },
+  {
+    "matchup": "Arizona Diamondbacks @ Cincinnati Reds",
+    "awayTeam": "Arizona Diamondbacks",
+    "homeTeam": "Cincinnati Reds",
+    "awayPitcher": "Michael Soroka",
+    "homePitcher": "Rhett Lowder",
+    "pick": "Cincinnati Reds",
+    "prediction": "Cincinnati Reds -120",
+    "odds": "-120",
+    "winProb": 0.542,
+    "edge": 0.042,
+    "confidence": "Lean",
+    "predictedScore": "Arizona Diamondbacks 3.7 \u2013 Cincinnati Reds 4.1",
+    "gameTime": "2026-06-13T20:10:00Z",
     "rank": 9
+  },
+  {
+    "matchup": "New York Yankees @ Toronto Blue Jays",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Cam Schlittler",
+    "homePitcher": "Kevin Gausman",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -115",
+    "odds": "-115",
+    "winProb": 0.53,
+    "edge": 0.03,
+    "confidence": "Lean",
+    "predictedScore": "New York Yankees 3.6 \u2013 Toronto Blue Jays 3.4",
+    "gameTime": "2026-06-13T19:07:00Z",
+    "rank": 10
   }
 ]
