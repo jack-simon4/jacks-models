@@ -56,14 +56,14 @@ Baltimore Orioles9,Blaze Alexander
 Seattle Mariners1,Cole Young
 Seattle Mariners2,Julio Rodriguez
 Seattle Mariners3,Josh Naylor
-Seattle Mariners4,Luke Raley
+Seattle Mariners4,Rob Refsnyder
 Seattle Mariners5,Dominic Canzone
 Seattle Mariners6,Victor Robles
 Seattle Mariners7,Miles Mastrobuoni
 Seattle Mariners8,Mitch Garver
 Seattle Mariners9,Colt Emerson
-Washington Nationals1,James Wood
-Washington Nationals2,Luis Garcia Jr.
+Washington Nationals1,Jacob Young
+Washington Nationals2,Andres Chaparro
 Washington Nationals3,Curtis Mead
 Washington Nationals4,CJ Abrams
 Washington Nationals5,Daylen Lile
@@ -77,7 +77,7 @@ Miami Marlins3,Xavier Edwards
 Miami Marlins4,Kyle Stowers
 Miami Marlins5,Heriberto Hernandez
 Miami Marlins6,Leo Jimenez
-Miami Marlins7,Jakob Marsee
+Miami Marlins7,Esteury Ruiz
 Miami Marlins8,Javier Sanoja
 Miami Marlins9,Connor Norby
 Pittsburgh Pirates1,Spencer Horwitz
@@ -86,7 +86,7 @@ Pittsburgh Pirates3,Bryan Reynolds
 Pittsburgh Pirates4,Ryan O'Hearn
 Pittsburgh Pirates5,Nick Gonzales
 Pittsburgh Pirates6,Endy Rodriguez
-Pittsburgh Pirates7,Tyler Callihan
+Pittsburgh Pirates7,Billy Cook
 Pittsburgh Pirates8,Jake Mangum
 Pittsburgh Pirates9,Jared Triolo
 Arizona Diamondbacks1,Ketel Marte
@@ -101,7 +101,7 @@ Arizona Diamondbacks9,Ryan Waldschmidt
 Cincinnati Reds1,Edwin Arroyo
 Cincinnati Reds2,JJ Bleday
 Cincinnati Reds3,Sal Stewart
-Cincinnati Reds4,Nathaniel Lowe
+Cincinnati Reds4,Dane Myers
 Cincinnati Reds5,Spencer Steer
 Cincinnati Reds6,Eugenio Suarez
 Cincinnati Reds7,Noelvi Marte
@@ -119,7 +119,7 @@ Detroit Tigers9,Zach McKinstry
 Cleveland Guardians1,Steven Kwan
 Cleveland Guardians2,Kyle Manzardo
 Cleveland Guardians3,Daniel Schneemann
-Cleveland Guardians4,Rhys Hoskins
+Cleveland Guardians4,Cade Smith
 Cleveland Guardians5,David Fry
 Cleveland Guardians6,Travis Bazzana
 Cleveland Guardians7,Stuart Fairchild
@@ -131,10 +131,10 @@ Texas Rangers3,Josh Jung
 Texas Rangers4,Ezequiel Duran
 Texas Rangers5,Jake Burger
 Texas Rangers6,Cody Freeman
-Texas Rangers7,Michael Helman
-Texas Rangers8,Elias Diaz
+Texas Rangers7,Kyle Higashioka
+Texas Rangers8,Brandon Nimmo
 Texas Rangers9,Nicky Lopez
-Boston Red Sox1,Mickey Gasper
+Boston Red Sox1,Andruw Monasterio
 Boston Red Sox2,Ceddanne Rafaela
 Boston Red Sox3,Wilyer Abreu
 Boston Red Sox4,Willson Contreras
@@ -152,7 +152,7 @@ Atlanta Braves6,Eli White
 Atlanta Braves7,Dominic Smith
 Atlanta Braves8,Mike Yastrzemski
 Atlanta Braves9,Sandy Leon
-New York Mets1,Carson Benge
+New York Mets1,Brett Baty
 New York Mets2,Bo Bichette
 New York Mets3,Juan Soto
 New York Mets4,Mark Vientos
@@ -160,7 +160,7 @@ New York Mets5,Marcus Semien
 New York Mets6,Francisco Alvarez
 New York Mets7,Jared Young
 New York Mets8,MJ Melendez
-New York Mets9,Vidal Brujan
+New York Mets9,A.J. Ewing
 Los Angeles Dodgers1,Shohei Ohtani
 Los Angeles Dodgers2,Andy Pages
 Los Angeles Dodgers3,Freddie Freeman
@@ -169,8 +169,8 @@ Los Angeles Dodgers5,Max Muncy
 Los Angeles Dodgers6,Kyle Tucker
 Los Angeles Dodgers7,Alex Call
 Los Angeles Dodgers8,Dalton Rushing
-Los Angeles Dodgers9,Miguel Rojas
-Chicago White Sox1,Sam Antonacci
+Los Angeles Dodgers9,Santiago Espinal
+Chicago White Sox1,Everson Pereira
 Chicago White Sox2,Miguel Vargas
 Chicago White Sox3,Andrew Benintendi
 Chicago White Sox4,Colson Montgomery
@@ -215,42 +215,33 @@ Milwaukee Brewers6,Garrett Mitchell
 Milwaukee Brewers7,Sal Frelick
 Milwaukee Brewers8,David Hamilton
 Milwaukee Brewers9,Joey Ortiz
-Athletics1,Shea Langeliers
-Athletics2,Nick Kurtz
-Athletics3,Colby Thomas
-Athletics4,Tyler Soderstrom
-Athletics5,Jacob Wilson
-Athletics6,Jonah Heim
-Athletics7,Zack Gelof
-Athletics8,Max Muncy
-Athletics9,Henry Bolte
-Chicago Cubs1,Pete Crow-Armstrong
-Chicago Cubs2,Alex Bregman
-Chicago Cubs3,Michael Busch
-Chicago Cubs4,Ian Happ
-Chicago Cubs5,Seiya Suzuki
-Chicago Cubs6,Nico Hoerner
-Chicago Cubs7,Matt Shaw
-Chicago Cubs8,Carson Kelly
-Chicago Cubs9,Dansby Swanson
-Colorado Rockies1,Willi Castro
-Colorado Rockies2,Kyle Karros
+Colorado Rockies1,Edouard Julien
+Colorado Rockies2,Willi Castro
 Colorado Rockies3,TJ Rumfield
 Colorado Rockies4,Hunter Goodman
 Colorado Rockies5,Troy Johnston
-Colorado Rockies6,Ezequiel Tovar
-Colorado Rockies7,Cole Carrigg
-Colorado Rockies8,Sterlin Thompson
-Colorado Rockies9,Braxton Fulford
-Los Angeles Angels1,Zach Neto
-Los Angeles Angels2,Mike Trout
-Los Angeles Angels3,Jo Adell
-Los Angeles Angels4,Oswald Peraza
-Los Angeles Angels5,Trey Mancini
-Los Angeles Angels6,Denzer Guzman
-Los Angeles Angels7,Nick Madrigal
-Los Angeles Angels8,Logan O'Hoppe
-Los Angeles Angels9,Jose Siri
+Colorado Rockies6,Cole Carrigg
+Colorado Rockies7,Kyle Karros
+Colorado Rockies8,Brett Sullivan
+Colorado Rockies9,Sterlin Thompson
+Athletics1,Colby Thomas
+Athletics2,Nick Kurtz
+Athletics3,Shea Langeliers
+Athletics4,Jonah Heim
+Athletics5,Jacob Wilson
+Athletics6,Henry Bolte
+Athletics7,Zack Gelof
+Athletics8,Max Muncy
+Athletics9,Alika Williams
+Chicago Cubs1,Pete Crow-Armstrong
+Chicago Cubs2,Alex Bregman
+Chicago Cubs3,Michael Busch
+Chicago Cubs4,Seiya Suzuki
+Chicago Cubs5,Ian Happ
+Chicago Cubs6,Nico Hoerner
+Chicago Cubs7,Pedro Ramirez
+Chicago Cubs8,Miguel Amaya
+Chicago Cubs9,Dansby Swanson
 San Francisco Giants1,Luis Arraez
 San Francisco Giants2,Bryce Eldridge
 San Francisco Giants3,Casey Schmitt
@@ -259,13 +250,22 @@ San Francisco Giants5,Jung Hoo Lee
 San Francisco Giants6,Willy Adames
 San Francisco Giants7,Matt Chapman
 San Francisco Giants8,Drew Gilbert
-San Francisco Giants9,Daniel Susac
+San Francisco Giants9,Eric Haase
 Tampa Bay Rays1,Yandy Diaz
-Tampa Bay Rays2,Hunter Feduccia
-Tampa Bay Rays3,Junior Caminero
-Tampa Bay Rays4,Ryan Vilade
-Tampa Bay Rays5,Jonathan Aranda
-Tampa Bay Rays6,Ben Williamson
-Tampa Bay Rays7,Chandler Simpson
-Tampa Bay Rays8,Cedric Mullins
+Tampa Bay Rays2,Jonathan Aranda
+Tampa Bay Rays3,Cedric Mullins
+Tampa Bay Rays4,Junior Caminero
+Tampa Bay Rays5,Chandler Simpson
+Tampa Bay Rays6,Richie Palacios
+Tampa Bay Rays7,Victor Mesa Jr.
+Tampa Bay Rays8,Hunter Feduccia
 Tampa Bay Rays9,Taylor Walls
+Los Angeles Angels1,Zach Neto
+Los Angeles Angels2,Mike Trout
+Los Angeles Angels3,Wade Meckler
+Los Angeles Angels4,Jo Adell
+Los Angeles Angels5,Nolan Schanuel
+Los Angeles Angels6,Oswald Peraza
+Los Angeles Angels7,Denzer Guzman
+Los Angeles Angels8,Donovan Walton
+Los Angeles Angels9,Logan O'Hoppe
