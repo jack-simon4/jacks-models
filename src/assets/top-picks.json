@@ -1,51 +1,19 @@
 [
   {
-    "matchup": "Seattle Mariners @ Washington Nationals",
-    "awayTeam": "Seattle Mariners",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Emerson Hancock",
-    "homePitcher": "Miles Mikolas",
-    "pick": "Seattle Mariners",
-    "prediction": "Seattle Mariners -225",
-    "odds": "-225",
-    "winProb": 0.693,
-    "edge": 0.193,
-    "confidence": "Elite",
-    "predictedScore": "Seattle Mariners 6.1 \u2013 Washington Nationals 4.3",
-    "gameTime": "2026-06-14T17:35:00Z",
-    "rank": 1
-  },
-  {
-    "matchup": "Los Angeles Dodgers @ Chicago White Sox",
-    "awayTeam": "Los Angeles Dodgers",
-    "homeTeam": "Chicago White Sox",
-    "awayPitcher": "Emmet Sheehan",
-    "homePitcher": "Erick Fedde",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -185",
-    "odds": "-185",
-    "winProb": 0.646,
-    "edge": 0.146,
-    "confidence": "Elite",
-    "predictedScore": "Los Angeles Dodgers 5.0 \u2013 Chicago White Sox 3.7",
+    "matchup": "Philadelphia Phillies @ Milwaukee Brewers",
+    "awayTeam": "Philadelphia Phillies",
+    "homeTeam": "Milwaukee Brewers",
+    "awayPitcher": "Cristopher S\u00e1nchez",
+    "homePitcher": "Kyle Harrison",
+    "pick": "Philadelphia Phillies",
+    "prediction": "Philadelphia Phillies -170",
+    "odds": "-170",
+    "winProb": 0.629,
+    "edge": 0.129,
+    "confidence": "Strong",
+    "predictedScore": "Philadelphia Phillies 5.1 \u2013 Milwaukee Brewers 3.9",
     "gameTime": "2026-06-14T18:10:00Z",
-    "rank": 2
-  },
-  {
-    "matchup": "Colorado Rockies @ Athletics",
-    "awayTeam": "Colorado Rockies",
-    "homeTeam": "Athletics",
-    "awayPitcher": "Tomoyuki Sugano",
-    "homePitcher": "Jeffrey Springs",
-    "pick": "Athletics",
-    "prediction": "Athletics -180",
-    "odds": "-180",
-    "winProb": 0.644,
-    "edge": 0.144,
-    "confidence": "Elite",
-    "predictedScore": "Colorado Rockies 4.6 \u2013 Athletics 5.9",
-    "gameTime": "2026-06-14T19:05:00Z",
-    "rank": 3
+    "rank": 1
   },
   {
     "matchup": "Miami Marlins @ Pittsburgh Pirates",
@@ -61,23 +29,7 @@
     "confidence": "Strong",
     "predictedScore": "Miami Marlins 3.1 \u2013 Pittsburgh Pirates 4.3",
     "gameTime": "2026-06-14T16:15:00Z",
-    "rank": 4
-  },
-  {
-    "matchup": "St. Louis Cardinals @ Minnesota Twins",
-    "awayTeam": "St. Louis Cardinals",
-    "homeTeam": "Minnesota Twins",
-    "awayPitcher": "Michael McGreevy",
-    "homePitcher": "Taj Bradley",
-    "pick": "Minnesota Twins",
-    "prediction": "Minnesota Twins -165",
-    "odds": "-165",
-    "winProb": 0.624,
-    "edge": 0.124,
-    "confidence": "Strong",
-    "predictedScore": "St. Louis Cardinals 4.1 \u2013 Minnesota Twins 5.2",
-    "gameTime": "2026-06-14T18:10:00Z",
-    "rank": 5
+    "rank": 2
   },
   {
     "matchup": "Atlanta Braves @ New York Mets",
@@ -93,7 +45,23 @@
     "confidence": "Strong",
     "predictedScore": "Atlanta Braves 3.2 \u2013 New York Mets 4.3",
     "gameTime": "2026-06-14T17:40:00Z",
-    "rank": 6
+    "rank": 3
+  },
+  {
+    "matchup": "Colorado Rockies @ Athletics",
+    "awayTeam": "Colorado Rockies",
+    "homeTeam": "Athletics",
+    "awayPitcher": "Tomoyuki Sugano",
+    "homePitcher": "Jeffrey Springs",
+    "pick": "Athletics",
+    "prediction": "Athletics -155",
+    "odds": "-155",
+    "winProb": 0.611,
+    "edge": 0.111,
+    "confidence": "Strong",
+    "predictedScore": "Colorado Rockies 4.6 \u2013 Athletics 5.6",
+    "gameTime": "2026-06-14T19:05:00Z",
+    "rank": 4
   },
   {
     "matchup": "Tampa Bay Rays @ Los Angeles Angels",
@@ -109,39 +77,39 @@
     "confidence": "Strong",
     "predictedScore": "Tampa Bay Rays 5.2 \u2013 Los Angeles Angels 4.2",
     "gameTime": "2026-06-14T20:07:00Z",
-    "rank": 7
+    "rank": 5
   },
   {
-    "matchup": "New York Yankees @ Toronto Blue Jays",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "Will Warren",
-    "homePitcher": "Patrick Corbin",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -150",
-    "odds": "-150",
-    "winProb": 0.6,
-    "edge": 0.1,
-    "confidence": "Strong",
-    "predictedScore": "New York Yankees 4.9 \u2013 Toronto Blue Jays 4.0",
-    "gameTime": "2026-06-14T17:37:00Z",
-    "rank": 8
-  },
-  {
-    "matchup": "Philadelphia Phillies @ Milwaukee Brewers",
-    "awayTeam": "Philadelphia Phillies",
-    "homeTeam": "Milwaukee Brewers",
-    "awayPitcher": "Cristopher S\u00e1nchez",
-    "homePitcher": "Kyle Harrison",
-    "pick": "Philadelphia Phillies",
-    "prediction": "Philadelphia Phillies -140",
+    "matchup": "St. Louis Cardinals @ Minnesota Twins",
+    "awayTeam": "St. Louis Cardinals",
+    "homeTeam": "Minnesota Twins",
+    "awayPitcher": "Michael McGreevy",
+    "homePitcher": "Taj Bradley",
+    "pick": "Minnesota Twins",
+    "prediction": "Minnesota Twins -140",
     "odds": "-140",
     "winProb": 0.585,
     "edge": 0.085,
     "confidence": "Strong",
-    "predictedScore": "Philadelphia Phillies 5.1 \u2013 Milwaukee Brewers 4.3",
+    "predictedScore": "St. Louis Cardinals 4.5 \u2013 Minnesota Twins 5.2",
     "gameTime": "2026-06-14T18:10:00Z",
-    "rank": 9
+    "rank": 6
+  },
+  {
+    "matchup": "Los Angeles Dodgers @ Chicago White Sox",
+    "awayTeam": "Los Angeles Dodgers",
+    "homeTeam": "Chicago White Sox",
+    "awayPitcher": "Emmet Sheehan",
+    "homePitcher": "Bryan Hudson",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -140",
+    "odds": "-140",
+    "winProb": 0.583,
+    "edge": 0.083,
+    "confidence": "Strong",
+    "predictedScore": "Los Angeles Dodgers 3.3 \u2013 Chicago White Sox 4.0",
+    "gameTime": "2026-06-14T18:10:00Z",
+    "rank": 7
   },
   {
     "matchup": "Chicago Cubs @ San Francisco Giants",
@@ -157,7 +125,23 @@
     "confidence": "Lean",
     "predictedScore": "Chicago Cubs 3.2 \u2013 San Francisco Giants 3.8",
     "gameTime": "2026-06-14T19:10:00Z",
-    "rank": 10
+    "rank": 8
+  },
+  {
+    "matchup": "New York Yankees @ Toronto Blue Jays",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Will Warren",
+    "homePitcher": "Patrick Corbin",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -130",
+    "odds": "-130",
+    "winProb": 0.565,
+    "edge": 0.065,
+    "confidence": "Lean",
+    "predictedScore": "New York Yankees 4.9 \u2013 Toronto Blue Jays 4.3",
+    "gameTime": "2026-06-14T17:37:00Z",
+    "rank": 9
   },
   {
     "matchup": "Houston Astros @ Kansas City Royals",
@@ -173,7 +157,7 @@
     "confidence": "Lean",
     "predictedScore": "Houston Astros 3.6 \u2013 Kansas City Royals 3.0",
     "gameTime": "2026-06-14T18:10:00Z",
-    "rank": 11
+    "rank": 10
   },
   {
     "matchup": "Texas Rangers @ Boston Red Sox",
@@ -189,7 +173,7 @@
     "confidence": "Lean",
     "predictedScore": "Texas Rangers 4.2 \u2013 Boston Red Sox 3.6",
     "gameTime": "2026-06-14T23:20:00Z",
-    "rank": 12
+    "rank": 11
   },
   {
     "matchup": "San Diego Padres @ Baltimore Orioles",
@@ -203,25 +187,25 @@
     "winProb": 0.545,
     "edge": 0.045,
     "confidence": "Lean",
-    "predictedScore": "San Diego Padres 4.0 \u2013 Baltimore Orioles 4.4",
+    "predictedScore": "San Diego Padres 4.3 \u2013 Baltimore Orioles 4.7",
     "gameTime": "2026-06-14T17:35:00Z",
-    "rank": 13
+    "rank": 12
   },
   {
-    "matchup": "Arizona Diamondbacks @ Cincinnati Reds",
-    "awayTeam": "Arizona Diamondbacks",
-    "homeTeam": "Cincinnati Reds",
-    "awayPitcher": "Zac Gallen",
-    "homePitcher": "Andrew Abbott",
-    "pick": "Cincinnati Reds",
-    "prediction": "Cincinnati Reds -120",
-    "odds": "-120",
-    "winProb": 0.542,
-    "edge": 0.042,
+    "matchup": "Seattle Mariners @ Washington Nationals",
+    "awayTeam": "Seattle Mariners",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Emerson Hancock",
+    "homePitcher": "PJ Poulin",
+    "pick": "Seattle Mariners",
+    "prediction": "Seattle Mariners -115",
+    "odds": "-115",
+    "winProb": 0.536,
+    "edge": 0.036,
     "confidence": "Lean",
-    "predictedScore": "Arizona Diamondbacks 4.7 \u2013 Cincinnati Reds 5.1",
-    "gameTime": "2026-06-14T17:40:00Z",
-    "rank": 14
+    "predictedScore": "Seattle Mariners 5.4 \u2013 Washington Nationals 5.1",
+    "gameTime": "2026-06-14T17:35:00Z",
+    "rank": 13
   },
   {
     "matchup": "Detroit Tigers @ Cleveland Guardians",
@@ -237,6 +221,6 @@
     "confidence": "Lean",
     "predictedScore": "Detroit Tigers 3.9 \u2013 Cleveland Guardians 3.6",
     "gameTime": "2026-06-14T17:40:00Z",
-    "rank": 15
+    "rank": 14
   }
 ]
