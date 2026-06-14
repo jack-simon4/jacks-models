@@ -1,5 +1,21 @@
 [
   {
+    "matchup": "Tampa Bay Rays @ Los Angeles Angels",
+    "awayTeam": "Tampa Bay Rays",
+    "homeTeam": "Los Angeles Angels",
+    "awayPitcher": "Casey Legumina",
+    "homePitcher": "Grayson Rodriguez",
+    "pick": "Tampa Bay Rays",
+    "prediction": "Tampa Bay Rays -180",
+    "odds": "-180",
+    "winProb": 0.642,
+    "edge": 0.142,
+    "confidence": "Elite",
+    "predictedScore": "Tampa Bay Rays 5.2 \u2013 Los Angeles Angels 3.9",
+    "gameTime": "2026-06-14T20:07:00Z",
+    "rank": 1
+  },
+  {
     "matchup": "Philadelphia Phillies @ Milwaukee Brewers",
     "awayTeam": "Philadelphia Phillies",
     "homeTeam": "Milwaukee Brewers",
@@ -13,7 +29,7 @@
     "confidence": "Strong",
     "predictedScore": "Philadelphia Phillies 5.1 \u2013 Milwaukee Brewers 3.9",
     "gameTime": "2026-06-14T18:10:00Z",
-    "rank": 1
+    "rank": 2
   },
   {
     "matchup": "Miami Marlins @ Pittsburgh Pirates",
@@ -29,7 +45,7 @@
     "confidence": "Strong",
     "predictedScore": "Miami Marlins 3.1 \u2013 Pittsburgh Pirates 4.3",
     "gameTime": "2026-06-14T16:15:00Z",
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Atlanta Braves @ New York Mets",
@@ -45,7 +61,7 @@
     "confidence": "Strong",
     "predictedScore": "Atlanta Braves 3.2 \u2013 New York Mets 4.3",
     "gameTime": "2026-06-14T17:40:00Z",
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Colorado Rockies @ Athletics",
@@ -61,22 +77,6 @@
     "confidence": "Strong",
     "predictedScore": "Colorado Rockies 4.6 \u2013 Athletics 5.6",
     "gameTime": "2026-06-14T19:05:00Z",
-    "rank": 4
-  },
-  {
-    "matchup": "Tampa Bay Rays @ Los Angeles Angels",
-    "awayTeam": "Tampa Bay Rays",
-    "homeTeam": "Los Angeles Angels",
-    "awayPitcher": "Casey Legumina",
-    "homePitcher": "Grayson Rodriguez",
-    "pick": "Tampa Bay Rays",
-    "prediction": "Tampa Bay Rays -155",
-    "odds": "-155",
-    "winProb": 0.606,
-    "edge": 0.106,
-    "confidence": "Strong",
-    "predictedScore": "Tampa Bay Rays 5.2 \u2013 Los Angeles Angels 4.2",
-    "gameTime": "2026-06-14T20:07:00Z",
     "rank": 5
   },
   {
@@ -128,6 +128,22 @@
     "rank": 8
   },
   {
+    "matchup": "Arizona Diamondbacks @ Cincinnati Reds",
+    "awayTeam": "Arizona Diamondbacks",
+    "homeTeam": "Cincinnati Reds",
+    "awayPitcher": "Zac Gallen",
+    "homePitcher": "Andrew Abbott",
+    "pick": "Cincinnati Reds",
+    "prediction": "Cincinnati Reds -135",
+    "odds": "-135",
+    "winProb": 0.578,
+    "edge": 0.078,
+    "confidence": "Lean",
+    "predictedScore": "Arizona Diamondbacks 4.4 \u2013 Cincinnati Reds 5.1",
+    "gameTime": "2026-06-14T17:40:00Z",
+    "rank": 9
+  },
+  {
     "matchup": "Chicago Cubs @ San Francisco Giants",
     "awayTeam": "Chicago Cubs",
     "homeTeam": "San Francisco Giants",
@@ -141,7 +157,7 @@
     "confidence": "Lean",
     "predictedScore": "Chicago Cubs 3.2 \u2013 San Francisco Giants 3.8",
     "gameTime": "2026-06-14T19:10:00Z",
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "New York Yankees @ Toronto Blue Jays",
@@ -157,7 +173,7 @@
     "confidence": "Lean",
     "predictedScore": "New York Yankees 4.6 \u2013 Toronto Blue Jays 4.0",
     "gameTime": "2026-06-14T17:37:00Z",
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Houston Astros @ Kansas City Royals",
@@ -173,7 +189,7 @@
     "confidence": "Lean",
     "predictedScore": "Houston Astros 3.6 \u2013 Kansas City Royals 3.0",
     "gameTime": "2026-06-14T18:10:00Z",
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "San Diego Padres @ Baltimore Orioles",
@@ -189,22 +205,6 @@
     "confidence": "Lean",
     "predictedScore": "San Diego Padres 4.3 \u2013 Baltimore Orioles 4.7",
     "gameTime": "2026-06-14T17:35:00Z",
-    "rank": 12
-  },
-  {
-    "matchup": "Arizona Diamondbacks @ Cincinnati Reds",
-    "awayTeam": "Arizona Diamondbacks",
-    "homeTeam": "Cincinnati Reds",
-    "awayPitcher": "Zac Gallen",
-    "homePitcher": "Andrew Abbott",
-    "pick": "Cincinnati Reds",
-    "prediction": "Cincinnati Reds -120",
-    "odds": "-120",
-    "winProb": 0.542,
-    "edge": 0.042,
-    "confidence": "Lean",
-    "predictedScore": "Arizona Diamondbacks 4.4 \u2013 Cincinnati Reds 4.8",
-    "gameTime": "2026-06-14T17:40:00Z",
     "rank": 13
   },
   {
