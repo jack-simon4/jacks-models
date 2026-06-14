@@ -4,10 +4,10 @@ Miami Marlins2,Otto Lopez
 Miami Marlins3,Kyle Stowers
 Miami Marlins4,Xavier Edwards
 Miami Marlins5,Heriberto Hernandez
-Miami Marlins6,Owen Caissie
+Miami Marlins6,Esteury Ruiz
 Miami Marlins7,Jakob Marsee
 Miami Marlins8,Joe Mack
-Miami Marlins9,Connor Norby
+Miami Marlins9,Javier Sanoja
 Pittsburgh Pirates1,Spencer Horwitz
 Pittsburgh Pirates2,Brandon Lowe
 Pittsburgh Pirates3,Bryan Reynolds
@@ -16,7 +16,7 @@ Pittsburgh Pirates5,Nick Gonzales
 Pittsburgh Pirates6,Tyler Callihan
 Pittsburgh Pirates7,Jake Mangum
 Pittsburgh Pirates8,Jared Triolo
-Pittsburgh Pirates9,Henry Davis
+Pittsburgh Pirates9,Endy Rodriguez
 San Diego Padres1,Fernando Tatis Jr.
 San Diego Padres2,Jackson Merrill
 San Diego Padres3,Manny Machado
@@ -37,7 +37,7 @@ Baltimore Orioles8,Jeremiah Jackson
 Baltimore Orioles9,Blaze Alexander
 Seattle Mariners1,Cole Young
 Seattle Mariners2,Julio Rodriguez
-Seattle Mariners3,Josh Naylor
+Seattle Mariners3,Patrick Wisdom
 Seattle Mariners4,Luke Raley
 Seattle Mariners5,Dominic Canzone
 Seattle Mariners6,Victor Robles
@@ -89,24 +89,6 @@ Cincinnati Reds6,Noelvi Marte
 Cincinnati Reds7,Matt McLain
 Cincinnati Reds8,Jose Trevino
 Cincinnati Reds9,Edwin Arroyo
-Detroit Tigers1,Kevin McGonigle
-Detroit Tigers2,Gleyber Torres
-Detroit Tigers3,Riley Greene
-Detroit Tigers4,Dillon Dingler
-Detroit Tigers5,Kerry Carpenter
-Detroit Tigers6,Colt Keith
-Detroit Tigers7,Spencer Torkelson
-Detroit Tigers8,James Outman
-Detroit Tigers9,Jake Rogers
-Cleveland Guardians1,Travis Bazzana
-Cleveland Guardians2,Brayan Rocchio
-Cleveland Guardians3,Kyle Manzardo
-Cleveland Guardians4,Rhys Hoskins
-Cleveland Guardians5,Daniel Schneemann
-Cleveland Guardians6,David Fry
-Cleveland Guardians7,Steven Kwan
-Cleveland Guardians8,Gabriel Arias
-Cleveland Guardians9,Patrick Bailey
 Atlanta Braves1,Michael Harris II
 Atlanta Braves2,Mauricio Dubon
 Atlanta Braves3,Matt Olson
@@ -219,10 +201,10 @@ Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Alex Bregman
 Chicago Cubs3,Michael Busch
 Chicago Cubs4,Ian Happ
-Chicago Cubs5,Seiya Suzuki
-Chicago Cubs6,Michael Conforto
-Chicago Cubs7,Pedro Ramirez
-Chicago Cubs8,Carson Kelly
+Chicago Cubs5,Michael Conforto
+Chicago Cubs6,Pedro Ramirez
+Chicago Cubs7,Carson Kelly
+Chicago Cubs8,Moises Ballesteros
 Chicago Cubs9,Dansby Swanson
 San Francisco Giants1,Matt Chapman
 San Francisco Giants2,Luis Arraez
@@ -233,6 +215,24 @@ San Francisco Giants6,Willy Adames
 San Francisco Giants7,Jung Hoo Lee
 San Francisco Giants8,Daniel Susac
 San Francisco Giants9,Drew Gilbert
+Tampa Bay Rays1,Yandy Diaz
+Tampa Bay Rays2,Jonathan Aranda
+Tampa Bay Rays3,Cedric Mullins
+Tampa Bay Rays4,Junior Caminero
+Tampa Bay Rays5,Chandler Simpson
+Tampa Bay Rays6,Richie Palacios
+Tampa Bay Rays7,Ben Williamson
+Tampa Bay Rays8,Hunter Feduccia
+Tampa Bay Rays9,Victor Mesa Jr.
+Los Angeles Angels1,Zach Neto
+Los Angeles Angels2,Mike Trout
+Los Angeles Angels3,Wade Meckler
+Los Angeles Angels4,Jo Adell
+Los Angeles Angels5,Nolan Schanuel
+Los Angeles Angels6,Denzer Guzman
+Los Angeles Angels7,Nick Madrigal
+Los Angeles Angels8,Donovan Walton
+Los Angeles Angels9,Logan Porter
 Boston Red Sox1,Andruw Monasterio
 Boston Red Sox2,Ceddanne Rafaela
 Boston Red Sox3,Wilyer Abreu
@@ -242,24 +242,24 @@ Boston Red Sox6,Caleb Durbin
 Boston Red Sox7,Isiah Kiner-Falefa
 Boston Red Sox8,Marcelo Mayer
 Boston Red Sox9,Carlos Narvaez
-Los Angeles Angels1,Zach Neto
-Los Angeles Angels2,Mike Trout
-Los Angeles Angels3,Wade Meckler
-Los Angeles Angels4,Jo Adell
-Los Angeles Angels5,Nolan Schanuel
-Los Angeles Angels6,Oswald Peraza
-Los Angeles Angels7,Denzer Guzman
-Los Angeles Angels8,Donovan Walton
-Los Angeles Angels9,Logan O'Hoppe
-Tampa Bay Rays1,Yandy Diaz
-Tampa Bay Rays2,Jonathan Aranda
-Tampa Bay Rays3,Cedric Mullins
-Tampa Bay Rays4,Junior Caminero
-Tampa Bay Rays5,Chandler Simpson
-Tampa Bay Rays6,Richie Palacios
-Tampa Bay Rays7,Victor Mesa Jr.
-Tampa Bay Rays8,Hunter Feduccia
-Tampa Bay Rays9,Taylor Walls
+Cleveland Guardians1,Travis Bazzana
+Cleveland Guardians2,Brayan Rocchio
+Cleveland Guardians3,Kyle Manzardo
+Cleveland Guardians4,Rhys Hoskins
+Cleveland Guardians5,Daniel Schneemann
+Cleveland Guardians6,David Fry
+Cleveland Guardians7,Steven Kwan
+Cleveland Guardians8,Gabriel Arias
+Cleveland Guardians9,Patrick Bailey
+Detroit Tigers1,Kevin McGonigle
+Detroit Tigers2,Gleyber Torres
+Detroit Tigers3,Riley Greene
+Detroit Tigers4,Dillon Dingler
+Detroit Tigers5,Kerry Carpenter
+Detroit Tigers6,Colt Keith
+Detroit Tigers7,Spencer Torkelson
+Detroit Tigers8,James Outman
+Detroit Tigers9,Jake Rogers
 Texas Rangers1,Wyatt Langford
 Texas Rangers2,Joc Pederson
 Texas Rangers3,Josh Jung

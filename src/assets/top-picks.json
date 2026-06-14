@@ -192,22 +192,6 @@
     "rank": 12
   },
   {
-    "matchup": "Seattle Mariners @ Washington Nationals",
-    "awayTeam": "Seattle Mariners",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Emerson Hancock",
-    "homePitcher": "PJ Poulin",
-    "pick": "Seattle Mariners",
-    "prediction": "Seattle Mariners -115",
-    "odds": "-115",
-    "winProb": 0.536,
-    "edge": 0.036,
-    "confidence": "Lean",
-    "predictedScore": "Seattle Mariners 5.4 \u2013 Washington Nationals 5.1",
-    "gameTime": "2026-06-14T17:35:00Z",
-    "rank": 13
-  },
-  {
     "matchup": "Detroit Tigers @ Cleveland Guardians",
     "awayTeam": "Detroit Tigers",
     "homeTeam": "Cleveland Guardians",
@@ -221,6 +205,6 @@
     "confidence": "Lean",
     "predictedScore": "Detroit Tigers 3.9 \u2013 Cleveland Guardians 3.6",
     "gameTime": "2026-06-14T17:40:00Z",
-    "rank": 14
+    "rank": 13
   }
 ]
