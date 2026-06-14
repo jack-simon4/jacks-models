@@ -48,22 +48,6 @@
     "rank": 3
   },
   {
-    "matchup": "Tampa Bay Rays @ Los Angeles Angels",
-    "awayTeam": "Tampa Bay Rays",
-    "homeTeam": "Los Angeles Angels",
-    "awayPitcher": "TBD",
-    "homePitcher": "Grayson Rodriguez",
-    "pick": "Tampa Bay Rays",
-    "prediction": "Tampa Bay Rays -180",
-    "odds": "-180",
-    "winProb": 0.642,
-    "edge": 0.142,
-    "confidence": "Elite",
-    "predictedScore": "Tampa Bay Rays 5.2 \u2013 Los Angeles Angels 3.9",
-    "gameTime": "2026-06-14T20:07:00Z",
-    "rank": 4
-  },
-  {
     "matchup": "Miami Marlins @ Pittsburgh Pirates",
     "awayTeam": "Miami Marlins",
     "homeTeam": "Pittsburgh Pirates",
@@ -77,7 +61,7 @@
     "confidence": "Strong",
     "predictedScore": "Miami Marlins 3.1 \u2013 Pittsburgh Pirates 4.3",
     "gameTime": "2026-06-14T16:15:00Z",
-    "rank": 5
+    "rank": 4
   },
   {
     "matchup": "St. Louis Cardinals @ Minnesota Twins",
@@ -93,7 +77,7 @@
     "confidence": "Strong",
     "predictedScore": "St. Louis Cardinals 4.1 \u2013 Minnesota Twins 5.2",
     "gameTime": "2026-06-14T18:10:00Z",
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "Atlanta Braves @ New York Mets",
@@ -109,6 +93,22 @@
     "confidence": "Strong",
     "predictedScore": "Atlanta Braves 3.2 \u2013 New York Mets 4.3",
     "gameTime": "2026-06-14T17:40:00Z",
+    "rank": 6
+  },
+  {
+    "matchup": "Tampa Bay Rays @ Los Angeles Angels",
+    "awayTeam": "Tampa Bay Rays",
+    "homeTeam": "Los Angeles Angels",
+    "awayPitcher": "Casey Legumina",
+    "homePitcher": "Grayson Rodriguez",
+    "pick": "Tampa Bay Rays",
+    "prediction": "Tampa Bay Rays -155",
+    "odds": "-155",
+    "winProb": 0.606,
+    "edge": 0.106,
+    "confidence": "Strong",
+    "predictedScore": "Tampa Bay Rays 5.2 \u2013 Los Angeles Angels 4.2",
+    "gameTime": "2026-06-14T20:07:00Z",
     "rank": 7
   },
   {
@@ -147,7 +147,7 @@
     "matchup": "Chicago Cubs @ San Francisco Giants",
     "awayTeam": "Chicago Cubs",
     "homeTeam": "San Francisco Giants",
-    "awayPitcher": "Colin Rea",
+    "awayPitcher": "Ryan Rolison",
     "homePitcher": "Logan Webb",
     "pick": "San Francisco Giants",
     "prediction": "San Francisco Giants -130",
