@@ -80,6 +80,22 @@
     "rank": 5
   },
   {
+    "matchup": "Texas Rangers @ Boston Red Sox",
+    "awayTeam": "Texas Rangers",
+    "homeTeam": "Boston Red Sox",
+    "awayPitcher": "Nathan Eovaldi",
+    "homePitcher": "Connelly Early",
+    "pick": "Texas Rangers",
+    "prediction": "Texas Rangers -150",
+    "odds": "-150",
+    "winProb": 0.598,
+    "edge": 0.098,
+    "confidence": "Strong",
+    "predictedScore": "Texas Rangers 4.5 \u2013 Boston Red Sox 3.6",
+    "gameTime": "2026-06-14T23:20:00Z",
+    "rank": 6
+  },
+  {
     "matchup": "St. Louis Cardinals @ Minnesota Twins",
     "awayTeam": "St. Louis Cardinals",
     "homeTeam": "Minnesota Twins",
@@ -91,9 +107,9 @@
     "winProb": 0.585,
     "edge": 0.085,
     "confidence": "Strong",
-    "predictedScore": "St. Louis Cardinals 4.5 \u2013 Minnesota Twins 5.2",
+    "predictedScore": "St. Louis Cardinals 4.1 \u2013 Minnesota Twins 4.9",
     "gameTime": "2026-06-14T18:10:00Z",
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "Los Angeles Dodgers @ Chicago White Sox",
@@ -109,7 +125,7 @@
     "confidence": "Strong",
     "predictedScore": "Los Angeles Dodgers 3.3 \u2013 Chicago White Sox 4.0",
     "gameTime": "2026-06-14T18:10:00Z",
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Chicago Cubs @ San Francisco Giants",
@@ -125,7 +141,7 @@
     "confidence": "Lean",
     "predictedScore": "Chicago Cubs 3.2 \u2013 San Francisco Giants 3.8",
     "gameTime": "2026-06-14T19:10:00Z",
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "New York Yankees @ Toronto Blue Jays",
@@ -139,9 +155,9 @@
     "winProb": 0.565,
     "edge": 0.065,
     "confidence": "Lean",
-    "predictedScore": "New York Yankees 4.9 \u2013 Toronto Blue Jays 4.3",
+    "predictedScore": "New York Yankees 4.6 \u2013 Toronto Blue Jays 4.0",
     "gameTime": "2026-06-14T17:37:00Z",
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Houston Astros @ Kansas City Royals",
@@ -157,22 +173,6 @@
     "confidence": "Lean",
     "predictedScore": "Houston Astros 3.6 \u2013 Kansas City Royals 3.0",
     "gameTime": "2026-06-14T18:10:00Z",
-    "rank": 10
-  },
-  {
-    "matchup": "Texas Rangers @ Boston Red Sox",
-    "awayTeam": "Texas Rangers",
-    "homeTeam": "Boston Red Sox",
-    "awayPitcher": "Nathan Eovaldi",
-    "homePitcher": "Connelly Early",
-    "pick": "Texas Rangers",
-    "prediction": "Texas Rangers -130",
-    "odds": "-130",
-    "winProb": 0.564,
-    "edge": 0.064,
-    "confidence": "Lean",
-    "predictedScore": "Texas Rangers 4.2 \u2013 Boston Red Sox 3.6",
-    "gameTime": "2026-06-14T23:20:00Z",
     "rank": 11
   },
   {
@@ -192,6 +192,22 @@
     "rank": 12
   },
   {
+    "matchup": "Arizona Diamondbacks @ Cincinnati Reds",
+    "awayTeam": "Arizona Diamondbacks",
+    "homeTeam": "Cincinnati Reds",
+    "awayPitcher": "Zac Gallen",
+    "homePitcher": "Andrew Abbott",
+    "pick": "Cincinnati Reds",
+    "prediction": "Cincinnati Reds -120",
+    "odds": "-120",
+    "winProb": 0.542,
+    "edge": 0.042,
+    "confidence": "Lean",
+    "predictedScore": "Arizona Diamondbacks 4.4 \u2013 Cincinnati Reds 4.8",
+    "gameTime": "2026-06-14T17:40:00Z",
+    "rank": 13
+  },
+  {
     "matchup": "Detroit Tigers @ Cleveland Guardians",
     "awayTeam": "Detroit Tigers",
     "homeTeam": "Cleveland Guardians",
@@ -205,6 +221,6 @@
     "confidence": "Lean",
     "predictedScore": "Detroit Tigers 3.9 \u2013 Cleveland Guardians 3.6",
     "gameTime": "2026-06-14T17:40:00Z",
-    "rank": 13
+    "rank": 14
   }
 ]
