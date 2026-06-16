@@ -1,21 +1,5 @@
 [
   {
-    "matchup": "Colorado Rockies @ Chicago Cubs",
-    "awayTeam": "Colorado Rockies",
-    "homeTeam": "Chicago Cubs",
-    "awayPitcher": "Ryan Feltner",
-    "homePitcher": "Edward Cabrera",
-    "pick": "Chicago Cubs",
-    "prediction": "Chicago Cubs -195",
-    "odds": "-195",
-    "winProb": 0.659,
-    "edge": 0.159,
-    "confidence": "Elite",
-    "predictedScore": "Colorado Rockies 4.1 \u2013 Chicago Cubs 5.5",
-    "gameTime": "2026-06-17T00:05:00Z",
-    "rank": 1
-  },
-  {
     "matchup": "Pittsburgh Pirates @ Athletics",
     "awayTeam": "Pittsburgh Pirates",
     "homeTeam": "Athletics",
@@ -29,7 +13,39 @@
     "confidence": "Elite",
     "predictedScore": "Pittsburgh Pirates 3.3 \u2013 Athletics 4.6",
     "gameTime": "2026-06-17T01:40:00Z",
+    "rank": 1
+  },
+  {
+    "matchup": "New York Mets @ Cincinnati Reds",
+    "awayTeam": "New York Mets",
+    "homeTeam": "Cincinnati Reds",
+    "awayPitcher": "Kodai Senga",
+    "homePitcher": "Brady Singer",
+    "pick": "New York Mets",
+    "prediction": "New York Mets -175",
+    "odds": "-175",
+    "winProb": 0.638,
+    "edge": 0.138,
+    "confidence": "Strong",
+    "predictedScore": "New York Mets 5.0 \u2013 Cincinnati Reds 3.8",
+    "gameTime": "2026-06-16T23:10:00Z",
     "rank": 2
+  },
+  {
+    "matchup": "Colorado Rockies @ Chicago Cubs",
+    "awayTeam": "Colorado Rockies",
+    "homeTeam": "Chicago Cubs",
+    "awayPitcher": "Ryan Feltner",
+    "homePitcher": "Edward Cabrera",
+    "pick": "Chicago Cubs",
+    "prediction": "Chicago Cubs -165",
+    "odds": "-165",
+    "winProb": 0.623,
+    "edge": 0.123,
+    "confidence": "Strong",
+    "predictedScore": "Colorado Rockies 4.4 \u2013 Chicago Cubs 5.5",
+    "gameTime": "2026-06-17T00:05:00Z",
+    "rank": 3
   },
   {
     "matchup": "Detroit Tigers @ Houston Astros",
@@ -45,7 +61,7 @@
     "confidence": "Strong",
     "predictedScore": "Detroit Tigers 3.1 \u2013 Houston Astros 4.1",
     "gameTime": "2026-06-17T00:10:00Z",
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Los Angeles Angels @ Arizona Diamondbacks",
@@ -61,22 +77,6 @@
     "confidence": "Strong",
     "predictedScore": "Los Angeles Angels 4.9 \u2013 Arizona Diamondbacks 3.9",
     "gameTime": "2026-06-17T01:40:00Z",
-    "rank": 4
-  },
-  {
-    "matchup": "New York Mets @ Cincinnati Reds",
-    "awayTeam": "New York Mets",
-    "homeTeam": "Cincinnati Reds",
-    "awayPitcher": "Kodai Senga",
-    "homePitcher": "Brady Singer",
-    "pick": "New York Mets",
-    "prediction": "New York Mets -150",
-    "odds": "-150",
-    "winProb": 0.603,
-    "edge": 0.103,
-    "confidence": "Strong",
-    "predictedScore": "New York Mets 5.0 \u2013 Cincinnati Reds 4.1",
-    "gameTime": "2026-06-16T23:10:00Z",
     "rank": 5
   },
   {
@@ -96,6 +96,22 @@
     "rank": 6
   },
   {
+    "matchup": "Toronto Blue Jays @ Boston Red Sox",
+    "awayTeam": "Toronto Blue Jays",
+    "homeTeam": "Boston Red Sox",
+    "awayPitcher": "Dylan Cease",
+    "homePitcher": "Payton Tolle",
+    "pick": "Toronto Blue Jays",
+    "prediction": "Toronto Blue Jays -130",
+    "odds": "-130",
+    "winProb": 0.564,
+    "edge": 0.064,
+    "confidence": "Lean",
+    "predictedScore": "Toronto Blue Jays 3.9 \u2013 Boston Red Sox 3.3",
+    "gameTime": "2026-06-16T22:45:00Z",
+    "rank": 7
+  },
+  {
     "matchup": "Chicago White Sox @ New York Yankees",
     "awayTeam": "Chicago White Sox",
     "homeTeam": "New York Yankees",
@@ -109,7 +125,7 @@
     "confidence": "Lean",
     "predictedScore": "Chicago White Sox 3.8 \u2013 New York Yankees 4.2",
     "gameTime": "2026-06-16T23:05:00Z",
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Baltimore Orioles @ Seattle Mariners",
@@ -125,22 +141,6 @@
     "confidence": "Lean",
     "predictedScore": "Baltimore Orioles 3.7 \u2013 Seattle Mariners 4.0",
     "gameTime": "2026-06-17T01:40:00Z",
-    "rank": 8
-  },
-  {
-    "matchup": "San Diego Padres @ St. Louis Cardinals",
-    "awayTeam": "San Diego Padres",
-    "homeTeam": "St. Louis Cardinals",
-    "awayPitcher": "Michael King",
-    "homePitcher": "Andre Pallante",
-    "pick": "San Diego Padres",
-    "prediction": "San Diego Padres -115",
-    "odds": "-115",
-    "winProb": 0.532,
-    "edge": 0.032,
-    "confidence": "Lean",
-    "predictedScore": "San Diego Padres 4.1 \u2013 St. Louis Cardinals 3.9",
-    "gameTime": "2026-06-16T23:45:00Z",
     "rank": 9
   }
 ]
