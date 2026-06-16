@@ -45,7 +45,9 @@ jobs:
             echo "No CSV changes — nothing to commit."
           else
             git commit -m "chore: auto-update MLB data $(date -u +%Y-%m-%d)"
+            git stash --include-untracked
             git fetch origin main
             git rebase origin/main
+            git stash pop || true
             git push
           fi

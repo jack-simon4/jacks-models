@@ -46,6 +46,9 @@ jobs:
             echo "No lineup changes — nothing to commit."
           else
             git commit -m "chore: auto-update lineups $(date -u +%Y-%m-%dT%H:%M)"
-            git pull --rebase origin main
+            git stash --include-untracked
+            git fetch origin main
+            git rebase origin/main
+            git stash pop || true
             git push
           fi
