@@ -32,22 +32,6 @@
     "rank": 2
   },
   {
-    "matchup": "Colorado Rockies @ Chicago Cubs",
-    "awayTeam": "Colorado Rockies",
-    "homeTeam": "Chicago Cubs",
-    "awayPitcher": "Ryan Feltner",
-    "homePitcher": "Edward Cabrera",
-    "pick": "Chicago Cubs",
-    "prediction": "Chicago Cubs -165",
-    "odds": "-165",
-    "winProb": 0.623,
-    "edge": 0.123,
-    "confidence": "Strong",
-    "predictedScore": "Colorado Rockies 4.4 \u2013 Chicago Cubs 5.5",
-    "gameTime": "2026-06-17T00:05:00Z",
-    "rank": 3
-  },
-  {
     "matchup": "Detroit Tigers @ Houston Astros",
     "awayTeam": "Detroit Tigers",
     "homeTeam": "Houston Astros",
@@ -61,7 +45,7 @@
     "confidence": "Strong",
     "predictedScore": "Detroit Tigers 3.1 \u2013 Houston Astros 4.1",
     "gameTime": "2026-06-17T00:10:00Z",
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Los Angeles Angels @ Arizona Diamondbacks",
@@ -77,6 +61,22 @@
     "confidence": "Strong",
     "predictedScore": "Los Angeles Angels 4.9 \u2013 Arizona Diamondbacks 3.9",
     "gameTime": "2026-06-17T01:40:00Z",
+    "rank": 4
+  },
+  {
+    "matchup": "Colorado Rockies @ Chicago Cubs",
+    "awayTeam": "Colorado Rockies",
+    "homeTeam": "Chicago Cubs",
+    "awayPitcher": "Ryan Feltner",
+    "homePitcher": "Edward Cabrera",
+    "pick": "Chicago Cubs",
+    "prediction": "Chicago Cubs -140",
+    "odds": "-140",
+    "winProb": 0.584,
+    "edge": 0.084,
+    "confidence": "Strong",
+    "predictedScore": "Colorado Rockies 4.8 \u2013 Chicago Cubs 5.5",
+    "gameTime": "2026-06-17T00:05:00Z",
     "rank": 5
   },
   {
@@ -128,6 +128,22 @@
     "rank": 8
   },
   {
+    "matchup": "San Francisco Giants @ Atlanta Braves",
+    "awayTeam": "San Francisco Giants",
+    "homeTeam": "Atlanta Braves",
+    "awayPitcher": "Adrian Houser",
+    "homePitcher": "Grant Holmes",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -120",
+    "odds": "-120",
+    "winProb": 0.545,
+    "edge": 0.045,
+    "confidence": "Lean",
+    "predictedScore": "San Francisco Giants 4.4 \u2013 Atlanta Braves 4.8",
+    "gameTime": "2026-06-16T23:15:00Z",
+    "rank": 9
+  },
+  {
     "matchup": "Baltimore Orioles @ Seattle Mariners",
     "awayTeam": "Baltimore Orioles",
     "homeTeam": "Seattle Mariners",
@@ -141,6 +157,6 @@
     "confidence": "Lean",
     "predictedScore": "Baltimore Orioles 3.7 \u2013 Seattle Mariners 4.0",
     "gameTime": "2026-06-17T01:40:00Z",
-    "rank": 9
+    "rank": 10
   }
 ]
