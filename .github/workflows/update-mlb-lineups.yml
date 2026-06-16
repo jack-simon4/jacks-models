@@ -34,7 +34,7 @@ jobs:
 
       - name: Upload updated CSVs to Firebase Storage
         env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: python scripts/upload_to_storage.py
 
       - name: Commit and push updated CSVs

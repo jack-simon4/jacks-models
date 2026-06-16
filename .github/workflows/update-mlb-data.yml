@@ -33,18 +33,19 @@ jobs:
 
       - name: Upload updated CSVs to Firebase Storage
         env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: python scripts/upload_to_storage.py
 
       - name: Commit and push updated CSVs
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/MLB-Pitchers.csv src/assets/MLB-Hitters.csv src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv
+          git add src/assets/MLB-Pitchers.csv src/assets/MLB-Hitters.csv src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv src/assets/top-picks.json
           if git diff --staged --quiet; then
             echo "No CSV changes — nothing to commit."
           else
             git commit -m "chore: auto-update MLB data $(date -u +%Y-%m-%d)"
-            git pull --rebase origin main
+            git fetch origin main
+            git rebase origin/main
             git push
           fi
