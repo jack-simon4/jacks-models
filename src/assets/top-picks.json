@@ -48,22 +48,6 @@
     "rank": 3
   },
   {
-    "matchup": "San Francisco Giants @ Atlanta Braves",
-    "awayTeam": "San Francisco Giants",
-    "homeTeam": "Atlanta Braves",
-    "awayPitcher": "Robbie Ray",
-    "homePitcher": "JR Ritchie",
-    "pick": "Atlanta Braves",
-    "prediction": "Atlanta Braves -195",
-    "odds": "-195",
-    "winProb": 0.659,
-    "edge": 0.159,
-    "confidence": "Elite",
-    "predictedScore": "San Francisco Giants 3.7 \u2013 Atlanta Braves 5.2",
-    "gameTime": "2026-06-17T23:15:00Z",
-    "rank": 4
-  },
-  {
     "matchup": "Detroit Tigers @ Houston Astros",
     "awayTeam": "Detroit Tigers",
     "homeTeam": "Houston Astros",
@@ -77,7 +61,7 @@
     "confidence": "Strong",
     "predictedScore": "Detroit Tigers 3.4 \u2013 Houston Astros 4.5",
     "gameTime": "2026-06-17T18:10:00Z",
-    "rank": 5
+    "rank": 4
   },
   {
     "matchup": "Toronto Blue Jays @ Boston Red Sox",
@@ -93,7 +77,7 @@
     "confidence": "Strong",
     "predictedScore": "Toronto Blue Jays 4.2 \u2013 Boston Red Sox 5.2",
     "gameTime": "2026-06-17T22:45:00Z",
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "Los Angeles Angels @ Arizona Diamondbacks",
@@ -109,7 +93,7 @@
     "confidence": "Strong",
     "predictedScore": "Los Angeles Angels 4.6 \u2013 Arizona Diamondbacks 3.6",
     "gameTime": "2026-06-17T19:40:00Z",
-    "rank": 7
+    "rank": 6
   },
   {
     "matchup": "San Diego Padres @ St. Louis Cardinals",
@@ -125,7 +109,7 @@
     "confidence": "Strong",
     "predictedScore": "San Diego Padres 4.5 \u2013 St. Louis Cardinals 3.5",
     "gameTime": "2026-06-17T18:15:00Z",
-    "rank": 8
+    "rank": 7
   },
   {
     "matchup": "Pittsburgh Pirates @ Athletics",
@@ -141,7 +125,7 @@
     "confidence": "Strong",
     "predictedScore": "Pittsburgh Pirates 4.6 \u2013 Athletics 3.7",
     "gameTime": "2026-06-18T01:40:00Z",
-    "rank": 9
+    "rank": 8
   },
   {
     "matchup": "Cleveland Guardians @ Milwaukee Brewers",
@@ -157,7 +141,39 @@
     "confidence": "Lean",
     "predictedScore": "Cleveland Guardians 4.3 \u2013 Milwaukee Brewers 4.8",
     "gameTime": "2026-06-17T23:40:00Z",
+    "rank": 9
+  },
+  {
+    "matchup": "San Francisco Giants @ Atlanta Braves",
+    "awayTeam": "San Francisco Giants",
+    "homeTeam": "Atlanta Braves",
+    "awayPitcher": "Adrian Houser",
+    "homePitcher": "Grant Holmes",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -120",
+    "odds": "-120",
+    "winProb": 0.545,
+    "edge": 0.045,
+    "confidence": "Lean",
+    "predictedScore": "San Francisco Giants 4.4 \u2013 Atlanta Braves 4.8",
+    "gameTime": "2026-06-17T18:05:00Z",
     "rank": 10
+  },
+  {
+    "matchup": "San Francisco Giants @ Atlanta Braves",
+    "awayTeam": "San Francisco Giants",
+    "homeTeam": "Atlanta Braves",
+    "awayPitcher": "TBD",
+    "homePitcher": "JR Ritchie",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -120",
+    "odds": "-120",
+    "winProb": 0.545,
+    "edge": 0.045,
+    "confidence": "Lean",
+    "predictedScore": "San Francisco Giants 3.7 \u2013 Atlanta Braves 4.1",
+    "gameTime": "2026-06-17T23:15:00Z",
+    "rank": 11
   },
   {
     "matchup": "Colorado Rockies @ Chicago Cubs",
@@ -173,7 +189,7 @@
     "confidence": "Lean",
     "predictedScore": "Colorado Rockies 4.4 \u2013 Chicago Cubs 4.1",
     "gameTime": "2026-06-18T00:05:00Z",
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "Baltimore Orioles @ Seattle Mariners",
@@ -189,6 +205,6 @@
     "confidence": "Lean",
     "predictedScore": "Baltimore Orioles 3.7 \u2013 Seattle Mariners 3.4",
     "gameTime": "2026-06-18T01:40:00Z",
-    "rank": 12
+    "rank": 13
   }
 ]
