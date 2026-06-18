@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { ResultsComponent } from './results/results.component';
 
 import { SoccerSeoPageComponent } from './seo-pages/soccer-seo-page.component';
+import { WorldCupSeoPageComponent } from './seo-pages/world-cup-seo-page.component';
 import { CollegeBaseballSeoPageComponent } from './seo-pages/college-baseball-seo-page.component';
 import { NhlSeoPageComponent } from './seo-pages/nhl-seo-page.component';
 import { NcaamSeoPageComponent } from './seo-pages/ncaam-seo-page.component';
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'nhl-predictions', component: NhlSeoPageComponent },
   { path: 'college-baseball-predictions', component: CollegeBaseballSeoPageComponent },
   { path: 'soccer-predictions', component: SoccerSeoPageComponent },
+  { path: 'world-cup-predictions', component: WorldCupSeoPageComponent },
 ];
 
 @NgModule({

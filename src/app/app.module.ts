@@ -29,6 +29,7 @@ import { NcaamSeoPageComponent } from './seo-pages/ncaam-seo-page.component';
 import { NhlSeoPageComponent } from './seo-pages/nhl-seo-page.component';
 import { CollegeBaseballSeoPageComponent } from './seo-pages/college-baseball-seo-page.component';
 import { SoccerSeoPageComponent } from './seo-pages/soccer-seo-page.component';
+import { WorldCupSeoPageComponent } from './seo-pages/world-cup-seo-page.component';
 import { HomeComponent } from './home/home.component';
 import { MlbPropsComponent } from './mlb-props/mlb-props.component';
 
@@ -54,6 +55,7 @@ import { MlbPropsComponent } from './mlb-props/mlb-props.component';
     NhlSeoPageComponent,
     CollegeBaseballSeoPageComponent,
     SoccerSeoPageComponent,
+    WorldCupSeoPageComponent,
       HomeComponent,
     MlbPropsComponent
   ],
