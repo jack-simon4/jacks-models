@@ -64,6 +64,22 @@
     "rank": 4
   },
   {
+    "matchup": "Los Angeles Angels @ Athletics",
+    "awayTeam": "Los Angeles Angels",
+    "homeTeam": "Athletics",
+    "awayPitcher": "TBD",
+    "homePitcher": "Gage Jump",
+    "pick": "Athletics",
+    "prediction": "Athletics -120",
+    "odds": "-120",
+    "winProb": 0.541,
+    "edge": 0.041,
+    "confidence": "Lean",
+    "predictedScore": "Los Angeles Angels 3.6 \u2013 Athletics 4.0",
+    "gameTime": "2026-06-19T01:40:00Z",
+    "rank": 5
+  },
+  {
     "matchup": "Chicago White Sox @ New York Yankees",
     "awayTeam": "Chicago White Sox",
     "homeTeam": "New York Yankees",
@@ -77,7 +93,7 @@
     "confidence": "Lean",
     "predictedScore": "Chicago White Sox 5.2 \u2013 New York Yankees 4.9",
     "gameTime": "2026-06-18T23:05:00Z",
-    "rank": 5
+    "rank": 6
   },
   {
     "matchup": "San Francisco Giants @ Atlanta Braves",
@@ -93,7 +109,7 @@
     "confidence": "Lean",
     "predictedScore": "San Francisco Giants 4.1 \u2013 Atlanta Braves 3.8",
     "gameTime": "2026-06-18T23:15:00Z",
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "Minnesota Twins @ Texas Rangers",
@@ -109,6 +125,6 @@
     "confidence": "Lean",
     "predictedScore": "Minnesota Twins 4.0 \u2013 Texas Rangers 3.7",
     "gameTime": "2026-06-18T18:35:00Z",
-    "rank": 7
+    "rank": 8
   }
 ]
