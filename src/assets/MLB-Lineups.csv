@@ -1,4 +1,76 @@
 Team,Player
+Toronto Blue Jays1,George Springer
+Toronto Blue Jays2,Vladimir Guerrero Jr.
+Toronto Blue Jays3,Jesus Sanchez
+Toronto Blue Jays4,Yohendrick Pinango
+Toronto Blue Jays5,Ernie Clement
+Toronto Blue Jays6,Nathan Lukes
+Toronto Blue Jays7,Kazuma Okamoto
+Toronto Blue Jays8,Brandon Valenzuela
+Toronto Blue Jays9,Andres Gimenez
+Boston Red Sox1,Mickey Gasper
+Boston Red Sox2,Ceddanne Rafaela
+Boston Red Sox3,Wilyer Abreu
+Boston Red Sox4,Willson Contreras
+Boston Red Sox5,Jarren Duran
+Boston Red Sox6,Isiah Kiner-Falefa
+Boston Red Sox7,Caleb Durbin
+Boston Red Sox8,Connor Wong
+Boston Red Sox9,Andruw Monasterio
+Cleveland Guardians1,Travis Bazzana
+Cleveland Guardians2,David Fry
+Cleveland Guardians3,Brayan Rocchio
+Cleveland Guardians4,Rhys Hoskins
+Cleveland Guardians5,Kyle Manzardo
+Cleveland Guardians6,Gabriel Arias
+Cleveland Guardians7,Stuart Fairchild
+Cleveland Guardians8,Kahlil Watson
+Cleveland Guardians9,Austin Hedges
+Milwaukee Brewers1,Christian Yelich
+Milwaukee Brewers2,Jackson Chourio
+Milwaukee Brewers3,Brice Turang
+Milwaukee Brewers4,Andrew Vaughn
+Milwaukee Brewers5,Jake Bauers
+Milwaukee Brewers6,Gary Sanchez
+Milwaukee Brewers7,Blake Perkins
+Milwaukee Brewers8,Cooper Pratt
+Milwaukee Brewers9,Joey Ortiz
+Minnesota Twins1,Trevor Larnach
+Minnesota Twins2,Byron Buxton
+Minnesota Twins3,Kody Clemens
+Minnesota Twins4,Royce Lewis
+Minnesota Twins5,Josh Bell
+Minnesota Twins6,Brooks Lee
+Minnesota Twins7,Victor Caratini
+Minnesota Twins8,Tristan Gray
+Minnesota Twins9,Luke Keaschall
+Texas Rangers1,Joc Pederson
+Texas Rangers2,Josh Jung
+Texas Rangers3,Wyatt Langford
+Texas Rangers4,Brandon Nimmo
+Texas Rangers5,Ezequiel Duran
+Texas Rangers6,Josh Smith
+Texas Rangers7,Jake Burger
+Texas Rangers8,Alejandro Osuna
+Texas Rangers9,Kyle Higashioka
+Baltimore Orioles1,Taylor Ward
+Baltimore Orioles2,Gunnar Henderson
+Baltimore Orioles3,Adley Rutschman
+Baltimore Orioles4,Pete Alonso
+Baltimore Orioles5,Samuel Basallo
+Baltimore Orioles6,Leody Taveras
+Baltimore Orioles7,Colton Cowser
+Baltimore Orioles8,Blaze Alexander
+Baltimore Orioles9,Jackson Holliday
+Seattle Mariners1,J.P. Crawford
+Seattle Mariners2,Cal Raleigh
+Seattle Mariners3,Josh Naylor
+Seattle Mariners4,Dominic Canzone
+Seattle Mariners5,Cole Young
+Seattle Mariners6,Colt Emerson
+Seattle Mariners7,Mitch Garver
+Seattle Mariners8,Victor Robles
+Seattle Mariners9,Miles Mastrobuoni
 Athletics1,Nick Kurtz
 Athletics2,Shea Langeliers
 Athletics3,Tyler Soderstrom
@@ -17,24 +89,6 @@ Atlanta Braves6,Eli White
 Atlanta Braves7,Jorge Mateo
 Atlanta Braves8,Mike Yastrzemski
 Atlanta Braves9,Sandy Leon
-Baltimore Orioles1,Taylor Ward
-Baltimore Orioles2,Gunnar Henderson
-Baltimore Orioles3,Adley Rutschman
-Baltimore Orioles4,Pete Alonso
-Baltimore Orioles5,Samuel Basallo
-Baltimore Orioles6,Leody Taveras
-Baltimore Orioles7,Coby Mayo
-Baltimore Orioles8,Jackson Holliday
-Baltimore Orioles9,Blaze Alexander
-Boston Red Sox1,Mickey Gasper
-Boston Red Sox2,Ceddanne Rafaela
-Boston Red Sox3,Wilyer Abreu
-Boston Red Sox4,Willson Contreras
-Boston Red Sox5,Jarren Duran
-Boston Red Sox6,Masataka Yoshida
-Boston Red Sox7,Isiah Kiner-Falefa
-Boston Red Sox8,Andruw Monasterio
-Boston Red Sox9,Marcelo Mayer
 Chicago White Sox1,Chase Meidroth
 Chicago White Sox2,Randal Grichuk
 Chicago White Sox3,Miguel Vargas
@@ -44,15 +98,6 @@ Chicago White Sox6,Edgar Quero
 Chicago White Sox7,Braden Montgomery
 Chicago White Sox8,Luisangel Acuna
 Chicago White Sox9,Sam Antonacci
-Cleveland Guardians1,Travis Bazzana
-Cleveland Guardians2,Kyle Manzardo
-Cleveland Guardians3,Brayan Rocchio
-Cleveland Guardians4,Rhys Hoskins
-Cleveland Guardians5,Daniel Schneemann
-Cleveland Guardians6,David Fry
-Cleveland Guardians7,Steven Kwan
-Cleveland Guardians8,Petey Halpin
-Cleveland Guardians9,Patrick Bailey
 Kansas City Royals1,Carter Jensen
 Kansas City Royals2,Bobby Witt Jr.
 Kansas City Royals3,Jac Caglianone
@@ -71,24 +116,6 @@ Los Angeles Angels6,Denzer Guzman
 Los Angeles Angels7,Jose Siri
 Los Angeles Angels8,Logan Porter
 Los Angeles Angels9,Wade Meckler
-Milwaukee Brewers1,Christian Yelich
-Milwaukee Brewers2,Jackson Chourio
-Milwaukee Brewers3,Brice Turang
-Milwaukee Brewers4,William Contreras
-Milwaukee Brewers5,Jake Bauers
-Milwaukee Brewers6,Sal Frelick
-Milwaukee Brewers7,Garrett Mitchell
-Milwaukee Brewers8,Cooper Pratt
-Milwaukee Brewers9,David Hamilton
-Minnesota Twins1,Trevor Larnach
-Minnesota Twins2,Byron Buxton
-Minnesota Twins3,Kody Clemens
-Minnesota Twins4,Royce Lewis
-Minnesota Twins5,Josh Bell
-Minnesota Twins6,Brooks Lee
-Minnesota Twins7,Luke Keaschall
-Minnesota Twins8,Tristan Gray
-Minnesota Twins9,Alex Jackson
 New York Mets1,Carson Benge
 New York Mets2,Bo Bichette
 New York Mets3,MJ Melendez
@@ -125,15 +152,6 @@ San Francisco Giants6,Willy Adames
 San Francisco Giants7,Casey Schmitt
 San Francisco Giants8,Drew Gilbert
 San Francisco Giants9,Eric Haase
-Seattle Mariners1,J.P. Crawford
-Seattle Mariners2,Cal Raleigh
-Seattle Mariners3,Julio Rodriguez
-Seattle Mariners4,Dominic Canzone
-Seattle Mariners5,Cole Young
-Seattle Mariners6,Victor Robles
-Seattle Mariners7,Colt Emerson
-Seattle Mariners8,Connor Joe
-Seattle Mariners9,Miles Mastrobuoni
 St. Louis Cardinals1,JJ Wetherholt
 St. Louis Cardinals2,Ivan Herrera
 St. Louis Cardinals3,Alec Burleson
@@ -143,24 +161,6 @@ St. Louis Cardinals6,Masyn Winn
 St. Louis Cardinals7,Pedro Pages
 St. Louis Cardinals8,Blaze Jordan
 St. Louis Cardinals9,Jose Fermin
-Texas Rangers1,Joc Pederson
-Texas Rangers2,Josh Jung
-Texas Rangers3,Wyatt Langford
-Texas Rangers4,Brandon Nimmo
-Texas Rangers5,Ezequiel Duran
-Texas Rangers6,Jake Burger
-Texas Rangers7,Josh Smith
-Texas Rangers8,Alejandro Osuna
-Texas Rangers9,Elias Diaz
-Toronto Blue Jays1,George Springer
-Toronto Blue Jays2,Vladimir Guerrero Jr.
-Toronto Blue Jays3,Kazuma Okamoto
-Toronto Blue Jays4,Alejandro Kirk
-Toronto Blue Jays5,Ernie Clement
-Toronto Blue Jays6,Jesus Sanchez
-Toronto Blue Jays7,Davis Schneider
-Toronto Blue Jays8,Myles Straw
-Toronto Blue Jays9,Andres Gimenez
 Arizona Diamondbacks1,Ketel Marte
 Arizona Diamondbacks2,Geraldo Perdomo
 Arizona Diamondbacks3,Jorge Barrosa
