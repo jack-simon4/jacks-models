@@ -80,22 +80,6 @@
     "rank": 5
   },
   {
-    "matchup": "Boston Red Sox @ Seattle Mariners",
-    "awayTeam": "Boston Red Sox",
-    "homeTeam": "Seattle Mariners",
-    "awayPitcher": "Ranger Suarez",
-    "homePitcher": "Bryce Miller",
-    "pick": "Boston Red Sox",
-    "prediction": "Boston Red Sox -130",
-    "odds": "-130",
-    "winProb": 0.566,
-    "edge": 0.066,
-    "confidence": "Lean",
-    "predictedScore": "Boston Red Sox 4.0 \u2013 Seattle Mariners 3.4",
-    "gameTime": "2026-06-20T02:10:00Z",
-    "rank": 6
-  },
-  {
     "matchup": "Cincinnati Reds @ New York Yankees",
     "awayTeam": "Cincinnati Reds",
     "homeTeam": "New York Yankees",
@@ -109,7 +93,7 @@
     "confidence": "Lean",
     "predictedScore": "Cincinnati Reds 3.4 \u2013 New York Yankees 3.8",
     "gameTime": "2026-06-19T23:05:00Z",
-    "rank": 7
+    "rank": 6
   },
   {
     "matchup": "Baltimore Orioles @ Los Angeles Dodgers",
@@ -125,7 +109,7 @@
     "confidence": "Lean",
     "predictedScore": "Baltimore Orioles 4.4 \u2013 Los Angeles Dodgers 4.8",
     "gameTime": "2026-06-20T02:10:00Z",
-    "rank": 8
+    "rank": 7
   },
   {
     "matchup": "Minnesota Twins @ Arizona Diamondbacks",
@@ -141,30 +125,14 @@
     "confidence": "Lean",
     "predictedScore": "Minnesota Twins 3.9 \u2013 Arizona Diamondbacks 4.3",
     "gameTime": "2026-06-20T01:45:00Z",
-    "rank": 9
-  },
-  {
-    "matchup": "St. Louis Cardinals @ Kansas City Royals",
-    "awayTeam": "St. Louis Cardinals",
-    "homeTeam": "Kansas City Royals",
-    "awayPitcher": "Michael McGreevy",
-    "homePitcher": "Seth Lugo",
-    "pick": "Kansas City Royals",
-    "prediction": "Kansas City Royals -120",
-    "odds": "-120",
-    "winProb": 0.541,
-    "edge": 0.041,
-    "confidence": "Lean",
-    "predictedScore": "St. Louis Cardinals 4.2 \u2013 Kansas City Royals 4.6",
-    "gameTime": "2026-06-20T00:15:00Z",
-    "rank": 10
+    "rank": 8
   },
   {
     "matchup": "San Francisco Giants @ Miami Marlins",
     "awayTeam": "San Francisco Giants",
     "homeTeam": "Miami Marlins",
     "awayPitcher": "Landen Roupp",
-    "homePitcher": "TBD",
+    "homePitcher": "Lake Bachar",
     "pick": "San Francisco Giants",
     "prediction": "San Francisco Giants -115",
     "odds": "-115",
@@ -173,6 +141,22 @@
     "confidence": "Lean",
     "predictedScore": "San Francisco Giants 3.9 \u2013 Miami Marlins 3.6",
     "gameTime": "2026-06-19T23:10:00Z",
-    "rank": 11
+    "rank": 9
+  },
+  {
+    "matchup": "Boston Red Sox @ Seattle Mariners",
+    "awayTeam": "Boston Red Sox",
+    "homeTeam": "Seattle Mariners",
+    "awayPitcher": "Ranger Suarez",
+    "homePitcher": "Bryce Miller",
+    "pick": "Boston Red Sox",
+    "prediction": "Boston Red Sox -115",
+    "odds": "-115",
+    "winProb": 0.53,
+    "edge": 0.03,
+    "confidence": "Lean",
+    "predictedScore": "Boston Red Sox 3.7 \u2013 Seattle Mariners 3.4",
+    "gameTime": "2026-06-20T02:10:00Z",
+    "rank": 10
   }
 ]
