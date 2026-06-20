@@ -59,7 +59,7 @@ San Diego Padres3,Manny Machado
 San Diego Padres4,Xander Bogaerts
 San Diego Padres5,Jackson Merrill
 San Diego Padres6,Ty France
-San Diego Padres7,Nick Solak
+San Diego Padres7,Will Wagner
 San Diego Padres8,Gavin Sheets
 San Diego Padres9,Rodolfo Duran
 Texas Rangers1,Joc Pederson
@@ -70,17 +70,17 @@ Texas Rangers5,Ezequiel Duran
 Texas Rangers6,Justin Foscue
 Texas Rangers7,Jake Burger
 Texas Rangers8,Cody Freeman
-Texas Rangers9,Kyle Higashioka
+Texas Rangers9,Elias Diaz
 Washington Nationals1,James Wood
 Washington Nationals2,Curtis Mead
 Washington Nationals3,Luis Garcia Jr.
 Washington Nationals4,CJ Abrams
 Washington Nationals5,Dylan Crews
 Washington Nationals6,Daylen Lile
-Washington Nationals7,Jorbit Vivas
+Washington Nationals7,Clayton Beeter
 Washington Nationals8,Nasim Nunez
 Washington Nationals9,Keibert Ruiz
-Tampa Bay Rays1,Yandy Diaz
+Tampa Bay Rays1,Jonny DeLuca
 Tampa Bay Rays2,Jonathan Aranda
 Tampa Bay Rays3,Cedric Mullins
 Tampa Bay Rays4,Junior Caminero
@@ -97,14 +97,14 @@ San Francisco Giants5,Jung Hoo Lee
 San Francisco Giants6,Willy Adames
 San Francisco Giants7,Casey Schmitt
 San Francisco Giants8,Drew Gilbert
-San Francisco Giants9,Eric Haase
+San Francisco Giants9,Daniel Susac
 Miami Marlins1,Jakob Marsee
 Miami Marlins2,Otto Lopez
 Miami Marlins3,Kyle Stowers
 Miami Marlins4,Xavier Edwards
 Miami Marlins5,Heriberto Hernandez
 Miami Marlins6,Owen Caissie
-Miami Marlins7,Leo Jimenez
+Miami Marlins7,Javier Sanoja
 Miami Marlins8,Joe Mack
 Miami Marlins9,Esteury Ruiz
 Milwaukee Brewers1,Jackson Chourio
@@ -161,6 +161,15 @@ Philadelphia Phillies6,Bryson Stott
 Philadelphia Phillies7,J.T. Realmuto
 Philadelphia Phillies8,Gabriel Rincones Jr.
 Philadelphia Phillies9,Justin Crawford
+Pittsburgh Pirates1,Spencer Horwitz
+Pittsburgh Pirates2,Brandon Lowe
+Pittsburgh Pirates3,Bryan Reynolds
+Pittsburgh Pirates4,Ryan O'Hearn
+Pittsburgh Pirates5,Nick Gonzales
+Pittsburgh Pirates6,Tyler Callihan
+Pittsburgh Pirates7,Jake Mangum
+Pittsburgh Pirates8,Jared Triolo
+Pittsburgh Pirates9,Henry Davis
 Colorado Rockies1,Jake McCarthy
 Colorado Rockies2,Willi Castro
 Colorado Rockies3,TJ Rumfield
@@ -206,6 +215,15 @@ Los Angeles Dodgers6,Tommy Edman
 Los Angeles Dodgers7,Kyle Tucker
 Los Angeles Dodgers8,Alex Call
 Los Angeles Dodgers9,Dalton Rushing
+Boston Red Sox1,Anthony Seigler
+Boston Red Sox2,Masataka Yoshida
+Boston Red Sox3,Wilyer Abreu
+Boston Red Sox4,Willson Contreras
+Boston Red Sox5,Jarren Duran
+Boston Red Sox6,Caleb Durbin
+Boston Red Sox7,Marcelo Mayer
+Boston Red Sox8,Carlos Narvaez
+Boston Red Sox9,Nate Eaton
 Seattle Mariners1,J.P. Crawford
 Seattle Mariners2,Cal Raleigh
 Seattle Mariners3,Julio Rodriguez
@@ -233,24 +251,6 @@ Arizona Diamondbacks6,Nolan Arenado
 Arizona Diamondbacks7,Adrian Del Castillo
 Arizona Diamondbacks8,Jorge Barrosa
 Arizona Diamondbacks9,Tommy Troy
-Boston Red Sox1,Mickey Gasper
-Boston Red Sox2,Ceddanne Rafaela
-Boston Red Sox3,Wilyer Abreu
-Boston Red Sox4,Willson Contreras
-Boston Red Sox5,Jarren Duran
-Boston Red Sox6,Isiah Kiner-Falefa
-Boston Red Sox7,Caleb Durbin
-Boston Red Sox8,Carlos Narvaez
-Boston Red Sox9,Andruw Monasterio
-Pittsburgh Pirates1,Spencer Horwitz
-Pittsburgh Pirates2,Nick Gonzales
-Pittsburgh Pirates3,Bryan Reynolds
-Pittsburgh Pirates4,Ryan O'Hearn
-Pittsburgh Pirates5,Marcell Ozuna
-Pittsburgh Pirates6,Brandon Lowe
-Pittsburgh Pirates7,Endy Rodriguez
-Pittsburgh Pirates8,Jared Triolo
-Pittsburgh Pirates9,Billy Cook
 Kansas City Royals1,Carter Jensen
 Kansas City Royals2,Lane Thomas
 Kansas City Royals3,Jac Caglianone
