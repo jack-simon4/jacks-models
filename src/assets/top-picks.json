@@ -22,12 +22,12 @@
     "awayPitcher": "Joey Cantillo",
     "homePitcher": "Spencer Arrighetti",
     "pick": "Houston Astros",
-    "prediction": "Houston Astros -245",
-    "odds": "-245",
-    "winProb": 0.712,
-    "edge": 0.212,
+    "prediction": "Houston Astros -215",
+    "odds": "-215",
+    "winProb": 0.681,
+    "edge": 0.181,
     "confidence": "Elite",
-    "predictedScore": "Cleveland Guardians 2.4 \u2013 Houston Astros 4.5",
+    "predictedScore": "Cleveland Guardians 2.8 \u2013 Houston Astros 4.5",
     "gameTime": "2026-06-20T23:15:00Z",
     "rank": 2
   },
@@ -160,6 +160,22 @@
     "rank": 10
   },
   {
+    "matchup": "San Diego Padres @ Texas Rangers",
+    "awayTeam": "San Diego Padres",
+    "homeTeam": "Texas Rangers",
+    "awayPitcher": "Walker Buehler",
+    "homePitcher": "MacKenzie Gore",
+    "pick": "San Diego Padres",
+    "prediction": "San Diego Padres -115",
+    "odds": "-115",
+    "winProb": 0.531,
+    "edge": 0.031,
+    "confidence": "Lean",
+    "predictedScore": "San Diego Padres 4.3 \u2013 Texas Rangers 4.1",
+    "gameTime": "2026-06-20T20:05:00Z",
+    "rank": 11
+  },
+  {
     "matchup": "Los Angeles Angels @ Athletics",
     "awayTeam": "Los Angeles Angels",
     "homeTeam": "Athletics",
@@ -173,6 +189,6 @@
     "confidence": "Lean",
     "predictedScore": "Los Angeles Angels 4.0 \u2013 Athletics 3.7",
     "gameTime": "2026-06-21T02:05:00Z",
-    "rank": 11
+    "rank": 12
   }
 ]
