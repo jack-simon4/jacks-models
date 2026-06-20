@@ -128,22 +128,6 @@
     "rank": 8
   },
   {
-    "matchup": "Washington Nationals @ Tampa Bay Rays",
-    "awayTeam": "Washington Nationals",
-    "homeTeam": "Tampa Bay Rays",
-    "awayPitcher": "Cade Cavalli",
-    "homePitcher": "Ian Seymour",
-    "pick": "Washington Nationals",
-    "prediction": "Washington Nationals -115",
-    "odds": "-115",
-    "winProb": 0.534,
-    "edge": 0.034,
-    "confidence": "Lean",
-    "predictedScore": "Washington Nationals 4.1 \u2013 Tampa Bay Rays 3.8",
-    "gameTime": "2026-06-20T20:10:00Z",
-    "rank": 9
-  },
-  {
     "matchup": "San Francisco Giants @ Miami Marlins",
     "awayTeam": "San Francisco Giants",
     "homeTeam": "Miami Marlins",
@@ -157,7 +141,7 @@
     "confidence": "Lean",
     "predictedScore": "San Francisco Giants 3.9 \u2013 Miami Marlins 3.6",
     "gameTime": "2026-06-20T20:10:00Z",
-    "rank": 10
+    "rank": 9
   },
   {
     "matchup": "San Diego Padres @ Texas Rangers",
@@ -173,7 +157,7 @@
     "confidence": "Lean",
     "predictedScore": "San Diego Padres 4.3 \u2013 Texas Rangers 4.1",
     "gameTime": "2026-06-20T20:05:00Z",
-    "rank": 11
+    "rank": 10
   },
   {
     "matchup": "Los Angeles Angels @ Athletics",
@@ -189,6 +173,6 @@
     "confidence": "Lean",
     "predictedScore": "Los Angeles Angels 4.0 \u2013 Athletics 3.7",
     "gameTime": "2026-06-21T02:05:00Z",
-    "rank": 12
+    "rank": 11
   }
 ]
