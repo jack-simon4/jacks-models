@@ -80,6 +80,15 @@ San Francisco Giants6,Willy Adames
 San Francisco Giants7,Matt Chapman
 San Francisco Giants8,Drew Gilbert
 San Francisco Giants9,Daniel Susac
+Miami Marlins1,Jakob Marsee
+Miami Marlins2,Griffin Conine
+Miami Marlins3,Xavier Edwards
+Miami Marlins4,Kyle Stowers
+Miami Marlins5,Otto Lopez
+Miami Marlins6,Owen Caissie
+Miami Marlins7,Esteury Ruiz
+Miami Marlins8,Joe Mack
+Miami Marlins9,Connor Norby
 Cleveland Guardians1,Travis Bazzana
 Cleveland Guardians2,Kyle Manzardo
 Cleveland Guardians3,Brayan Rocchio
@@ -170,6 +179,15 @@ Arizona Diamondbacks6,Nolan Arenado
 Arizona Diamondbacks7,Ildemaro Vargas
 Arizona Diamondbacks8,Jorge Barrosa
 Arizona Diamondbacks9,Tommy Troy
+Los Angeles Angels1,Zach Neto
+Los Angeles Angels2,Wade Meckler
+Los Angeles Angels3,Jo Adell
+Los Angeles Angels4,Nolan Schanuel
+Los Angeles Angels5,Denzer Guzman
+Los Angeles Angels6,Christian Moore
+Los Angeles Angels7,Donovan Walton
+Los Angeles Angels8,Logan O'Hoppe
+Los Angeles Angels9,Jose Siri
 Athletics1,Zack Gelof
 Athletics2,Nick Kurtz
 Athletics3,Jacob Wilson
@@ -179,6 +197,15 @@ Athletics6,Joey Meneses
 Athletics7,Colby Thomas
 Athletics8,Henry Bolte
 Athletics9,Max Muncy
+Baltimore Orioles1,Taylor Ward
+Baltimore Orioles2,Gunnar Henderson
+Baltimore Orioles3,Pete Alonso
+Baltimore Orioles4,Samuel Basallo
+Baltimore Orioles5,Coby Mayo
+Baltimore Orioles6,Colton Cowser
+Baltimore Orioles7,Leody Taveras
+Baltimore Orioles8,Blaze Alexander
+Baltimore Orioles9,Jeremiah Jackson
 Los Angeles Dodgers1,Shohei Ohtani
 Los Angeles Dodgers2,Andy Pages
 Los Angeles Dodgers3,Freddie Freeman
@@ -206,15 +233,6 @@ Seattle Mariners6,Dominic Canzone
 Seattle Mariners7,Victor Robles
 Seattle Mariners8,Weston Wilson
 Seattle Mariners9,Cole Young
-Baltimore Orioles1,Taylor Ward
-Baltimore Orioles2,Gunnar Henderson
-Baltimore Orioles3,Pete Alonso
-Baltimore Orioles4,Samuel Basallo
-Baltimore Orioles5,Leody Taveras
-Baltimore Orioles6,Colton Cowser
-Baltimore Orioles7,Coby Mayo
-Baltimore Orioles8,Jackson Holliday
-Baltimore Orioles9,Blaze Alexander
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Nico Hoerner
 Chicago Cubs3,Seiya Suzuki
@@ -224,24 +242,6 @@ Chicago Cubs6,Ian Happ
 Chicago Cubs7,Matt Shaw
 Chicago Cubs8,Pedro Ramirez
 Chicago Cubs9,Dansby Swanson
-Los Angeles Angels1,Zach Neto
-Los Angeles Angels2,Nolan Schanuel
-Los Angeles Angels3,Vaughn Grissom
-Los Angeles Angels4,Jo Adell
-Los Angeles Angels5,Wade Meckler
-Los Angeles Angels6,Denzer Guzman
-Los Angeles Angels7,Donovan Walton
-Los Angeles Angels8,Jose Siri
-Los Angeles Angels9,Tyler Heineman
-Miami Marlins1,Jakob Marsee
-Miami Marlins2,Otto Lopez
-Miami Marlins3,Kyle Stowers
-Miami Marlins4,Xavier Edwards
-Miami Marlins5,Heriberto Hernandez
-Miami Marlins6,Owen Caissie
-Miami Marlins7,Javier Sanoja
-Miami Marlins8,Joe Mack
-Miami Marlins9,Esteury Ruiz
 New York Mets1,Carson Benge
 New York Mets2,Bo Bichette
 New York Mets3,Juan Soto
