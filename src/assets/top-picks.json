@@ -22,12 +22,12 @@
     "awayPitcher": "Slade Cecconi",
     "homePitcher": "Kai-Wei Teng",
     "pick": "Houston Astros",
-    "prediction": "Houston Astros -215",
-    "odds": "-215",
-    "winProb": 0.681,
-    "edge": 0.181,
+    "prediction": "Houston Astros -185",
+    "odds": "-185",
+    "winProb": 0.648,
+    "edge": 0.148,
     "confidence": "Elite",
-    "predictedScore": "Cleveland Guardians 3.1 \u2013 Houston Astros 4.8",
+    "predictedScore": "Cleveland Guardians 3.1 \u2013 Houston Astros 4.5",
     "gameTime": "2026-06-21T18:10:00Z",
     "rank": 2
   },
@@ -80,6 +80,22 @@
     "rank": 5
   },
   {
+    "matchup": "Chicago White Sox @ Detroit Tigers",
+    "awayTeam": "Chicago White Sox",
+    "homeTeam": "Detroit Tigers",
+    "awayPitcher": "Davis Martin",
+    "homePitcher": "Keider Montero",
+    "pick": "Detroit Tigers",
+    "prediction": "Detroit Tigers -135",
+    "odds": "-135",
+    "winProb": 0.575,
+    "edge": 0.075,
+    "confidence": "Lean",
+    "predictedScore": "Chicago White Sox 3.6 \u2013 Detroit Tigers 4.2",
+    "gameTime": "2026-06-21T17:40:00Z",
+    "rank": 6
+  },
+  {
     "matchup": "Minnesota Twins @ Arizona Diamondbacks",
     "awayTeam": "Minnesota Twins",
     "homeTeam": "Arizona Diamondbacks",
@@ -93,7 +109,7 @@
     "confidence": "Lean",
     "predictedScore": "Minnesota Twins 3.9 \u2013 Arizona Diamondbacks 3.3",
     "gameTime": "2026-06-21T19:15:00Z",
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "San Francisco Giants @ Miami Marlins",
@@ -109,7 +125,23 @@
     "confidence": "Lean",
     "predictedScore": "San Francisco Giants 4.5 \u2013 Miami Marlins 3.9",
     "gameTime": "2026-06-21T17:40:00Z",
-    "rank": 7
+    "rank": 8
+  },
+  {
+    "matchup": "Milwaukee Brewers @ Atlanta Braves",
+    "awayTeam": "Milwaukee Brewers",
+    "homeTeam": "Atlanta Braves",
+    "awayPitcher": "Robert Gasser",
+    "homePitcher": "Bryce Elder",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -120",
+    "odds": "-120",
+    "winProb": 0.545,
+    "edge": 0.045,
+    "confidence": "Lean",
+    "predictedScore": "Milwaukee Brewers 4.4 \u2013 Atlanta Braves 4.8",
+    "gameTime": "2026-06-21T17:35:00Z",
+    "rank": 9
   },
   {
     "matchup": "St. Louis Cardinals @ Kansas City Royals",
@@ -125,38 +157,6 @@
     "confidence": "Lean",
     "predictedScore": "St. Louis Cardinals 3.6 \u2013 Kansas City Royals 3.9",
     "gameTime": "2026-06-21T18:10:00Z",
-    "rank": 8
-  },
-  {
-    "matchup": "Chicago White Sox @ Detroit Tigers",
-    "awayTeam": "Chicago White Sox",
-    "homeTeam": "Detroit Tigers",
-    "awayPitcher": "Davis Martin",
-    "homePitcher": "Keider Montero",
-    "pick": "Detroit Tigers",
-    "prediction": "Detroit Tigers -120",
-    "odds": "-120",
-    "winProb": 0.54,
-    "edge": 0.04,
-    "confidence": "Lean",
-    "predictedScore": "Chicago White Sox 3.6 \u2013 Detroit Tigers 3.9",
-    "gameTime": "2026-06-21T17:40:00Z",
-    "rank": 9
-  },
-  {
-    "matchup": "Cincinnati Reds @ New York Yankees",
-    "awayTeam": "Cincinnati Reds",
-    "homeTeam": "New York Yankees",
-    "awayPitcher": "Chase Burns",
-    "homePitcher": "Elmer Rodr\u00edguez",
-    "pick": "Cincinnati Reds",
-    "prediction": "Cincinnati Reds -115",
-    "odds": "-115",
-    "winProb": 0.534,
-    "edge": 0.034,
-    "confidence": "Lean",
-    "predictedScore": "Cincinnati Reds 4.1 \u2013 New York Yankees 3.8",
-    "gameTime": "2026-06-21T17:35:00Z",
     "rank": 10
   },
   {
