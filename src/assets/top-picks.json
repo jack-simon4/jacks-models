@@ -80,6 +80,22 @@
     "rank": 5
   },
   {
+    "matchup": "Minnesota Twins @ Arizona Diamondbacks",
+    "awayTeam": "Minnesota Twins",
+    "homeTeam": "Arizona Diamondbacks",
+    "awayPitcher": "Mike Paredes",
+    "homePitcher": "Jose Cabrera",
+    "pick": "Minnesota Twins",
+    "prediction": "Minnesota Twins -135",
+    "odds": "-135",
+    "winProb": 0.57,
+    "edge": 0.07,
+    "confidence": "Lean",
+    "predictedScore": "Minnesota Twins 3.9 \u2013 Arizona Diamondbacks 3.3",
+    "gameTime": "2026-06-21T19:15:00Z",
+    "rank": 6
+  },
+  {
     "matchup": "San Francisco Giants @ Miami Marlins",
     "awayTeam": "San Francisco Giants",
     "homeTeam": "Miami Marlins",
@@ -93,7 +109,7 @@
     "confidence": "Lean",
     "predictedScore": "San Francisco Giants 4.5 \u2013 Miami Marlins 3.9",
     "gameTime": "2026-06-21T17:40:00Z",
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "Pittsburgh Pirates @ Colorado Rockies",
@@ -109,7 +125,7 @@
     "confidence": "Lean",
     "predictedScore": "Pittsburgh Pirates 5.4 \u2013 Colorado Rockies 5.7",
     "gameTime": "2026-06-21T19:10:00Z",
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Los Angeles Angels @ Athletics",
@@ -125,7 +141,7 @@
     "confidence": "Lean",
     "predictedScore": "Los Angeles Angels 3.6 \u2013 Athletics 4.0",
     "gameTime": "2026-06-21T20:05:00Z",
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Chicago White Sox @ Detroit Tigers",
@@ -141,7 +157,7 @@
     "confidence": "Lean",
     "predictedScore": "Chicago White Sox 3.6 \u2013 Detroit Tigers 3.9",
     "gameTime": "2026-06-21T17:40:00Z",
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Cincinnati Reds @ New York Yankees",
@@ -157,7 +173,7 @@
     "confidence": "Lean",
     "predictedScore": "Cincinnati Reds 3.8 \u2013 New York Yankees 3.4",
     "gameTime": "2026-06-21T17:35:00Z",
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "San Diego Padres @ Texas Rangers",
@@ -173,6 +189,6 @@
     "confidence": "Lean",
     "predictedScore": "San Diego Padres 4.0 \u2013 Texas Rangers 3.7",
     "gameTime": "2026-06-21T18:35:00Z",
-    "rank": 11
+    "rank": 12
   }
 ]
