@@ -27,10 +27,17 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Update lineups and player props
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: |
           python scripts/fetch_mlb_lineups.py
           python scripts/fetch_mlb_player_props.py
           python scripts/generate_top_picks.py
+
+      - name: Update completed game results in Firestore
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: python scripts/update_results.py
 
       - name: Upload updated CSVs to Firebase Storage
         env:

@@ -22,6 +22,13 @@ from datetime import date
 import pandas as pd
 import statsapi
 
+try:
+    import firebase_admin
+    from firebase_admin import credentials, firestore as fb_firestore
+    _FIREBASE_AVAILABLE = True
+except ImportError:
+    _FIREBASE_AVAILABLE = False
+
 # ── Paths ──────────────────────────────────────────────────────────────────
 ASSETS = os.path.normpath(
     os.path.join(os.path.dirname(__file__), '..', 'src', 'assets')
@@ -93,6 +100,53 @@ def confidence_label(edge: float):
     if edge >= 0.03:
         return 'Lean'
     return None
+
+
+def save_picks_to_firestore(picks: list):
+    """Write today's qualifying picks to Firestore. No-op if creds unavailable."""
+    sa_json = os.environ.get('FIREBASE_SERVICE_ACCOUNT')
+    if not sa_json:
+        print('[TopPicks] FIREBASE_SERVICE_ACCOUNT not set — skipping Firestore save.')
+        return
+    if not _FIREBASE_AVAILABLE:
+        print('[TopPicks] firebase-admin not installed — skipping Firestore save.')
+        return
+
+    cred = credentials.Certificate(json.loads(sa_json))
+    app = firebase_admin.initialize_app(cred)
+    db = fb_firestore.client()
+
+    saved = 0
+    for pick in picks:
+        game_pk = pick.get('gamePk')
+        if not game_pk:
+            continue
+        doc_ref = db.collection('games').document(str(game_pk))
+        # Only create — never overwrite a doc that already has actual scores
+        if not doc_ref.get().exists:
+            doc_ref.set({
+                'sport': 'MLB',
+                'homeTeam': pick['homeTeam'],
+                'awayTeam': pick['awayTeam'],
+                'predictedHomeScore': pick['predictedHomeScore'],
+                'predictedAwayScore': pick['predictedAwayScore'],
+                'actualHomeScore': None,
+                'actualAwayScore': None,
+                'pick': pick['pick'],
+                'winProb': pick['winProb'],
+                'odds': pick['odds'],
+                'confidence': pick['confidence'],
+                'gamePk': game_pk,
+                'gameTime': pick['gameTime'],
+                'awayPitcher': pick.get('awayPitcher', ''),
+                'homePitcher': pick.get('homePitcher', ''),
+                'timestamp': fb_firestore.SERVER_TIMESTAMP,
+            })
+            saved += 1
+            print(f'  [Firestore] Saved: {pick["awayTeam"]} @ {pick["homeTeam"]}')
+
+    firebase_admin.delete_app(app)
+    print(f'[TopPicks] {saved} new picks written to Firestore.')
 
 
 # ── Data loaders ───────────────────────────────────────────────────────────
@@ -302,6 +356,7 @@ def generate_top_picks():
         away_pitcher = (game.get('away_probable_pitcher') or '').strip()
         home_pitcher = (game.get('home_probable_pitcher') or '').strip()
         game_time    = game.get('game_datetime', '')
+        game_pk      = game.get('game_id')
         status       = game.get('status', '')
 
         print(f'  [{status}] {away_name} @ {home_name}  '
@@ -333,19 +388,22 @@ def generate_top_picks():
         odds = prob_to_american(pick_wp)
 
         picks.append({
-            'matchup':        f'{away_name} @ {home_name}',
-            'awayTeam':       away_name,
-            'homeTeam':       home_name,
-            'awayPitcher':    away_pitcher or 'TBD',
-            'homePitcher':    home_pitcher or 'TBD',
-            'pick':           pick_team,
-            'prediction':     f'{pick_team} {odds}',
-            'odds':           odds,
-            'winProb':        round(pick_wp, 3),
-            'edge':           round(edge, 3),
-            'confidence':     label,
-            'predictedScore': f'{away_name} {away_runs:.1f} – {home_name} {home_runs:.1f}',
-            'gameTime':       game_time,
+            'matchup':             f'{away_name} @ {home_name}',
+            'awayTeam':            away_name,
+            'homeTeam':            home_name,
+            'awayPitcher':         away_pitcher or 'TBD',
+            'homePitcher':         home_pitcher or 'TBD',
+            'pick':                pick_team,
+            'prediction':          f'{pick_team} {odds}',
+            'odds':                odds,
+            'winProb':             round(pick_wp, 3),
+            'edge':                round(edge, 3),
+            'confidence':          label,
+            'predictedScore':      f'{away_name} {away_runs:.1f} – {home_name} {home_runs:.1f}',
+            'predictedHomeScore':  round(home_runs, 2),
+            'predictedAwayScore':  round(away_runs, 2),
+            'gameTime':            game_time,
+            'gamePk':              game_pk,
         })
 
     picks.sort(key=lambda x: x['edge'], reverse=True)
@@ -355,6 +413,8 @@ def generate_top_picks():
     with open(OUTPUT, 'w', encoding='utf-8') as f:
         json.dump(picks, f, indent=2)
     print(f'[TopPicks] Saved {len(picks)} qualifying picks -> {OUTPUT}')
+
+    save_picks_to_firestore(picks)
 
 
 if __name__ == '__main__':
