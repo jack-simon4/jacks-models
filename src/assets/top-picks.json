@@ -160,22 +160,6 @@
     "rank": 10
   },
   {
-    "matchup": "Atlanta Braves @ San Diego Padres",
-    "awayTeam": "Atlanta Braves",
-    "homeTeam": "San Diego Padres",
-    "awayPitcher": "Grant Holmes",
-    "homePitcher": "TBD",
-    "pick": "San Diego Padres",
-    "prediction": "San Diego Padres -120",
-    "odds": "-120",
-    "winProb": 0.543,
-    "edge": 0.043,
-    "confidence": "Lean",
-    "predictedScore": "Atlanta Braves 3.5 \u2013 San Diego Padres 3.8",
-    "gameTime": "2026-06-23T02:10:00Z",
-    "rank": 11
-  },
-  {
     "matchup": "Cleveland Guardians @ Chicago White Sox",
     "awayTeam": "Cleveland Guardians",
     "homeTeam": "Chicago White Sox",
@@ -189,7 +173,7 @@
     "confidence": "Lean",
     "predictedScore": "Cleveland Guardians 4.3 \u2013 Chicago White Sox 4.0",
     "gameTime": "2026-06-22T23:40:00Z",
-    "rank": 12
+    "rank": 11
   },
   {
     "matchup": "Houston Astros @ Toronto Blue Jays",
@@ -205,6 +189,6 @@
     "confidence": "Lean",
     "predictedScore": "Houston Astros 3.3 \u2013 Toronto Blue Jays 3.0",
     "gameTime": "2026-06-22T23:07:00Z",
-    "rank": 13
+    "rank": 12
   }
 ]
