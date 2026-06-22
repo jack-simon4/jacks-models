@@ -1,5 +1,24 @@
 [
   {
+    "matchup": "Los Angeles Dodgers @ Minnesota Twins",
+    "awayTeam": "Los Angeles Dodgers",
+    "homeTeam": "Minnesota Twins",
+    "awayPitcher": "Will Klein",
+    "homePitcher": "Zebby Matthews",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -415",
+    "odds": "-415",
+    "winProb": 0.806,
+    "edge": 0.306,
+    "confidence": "Elite",
+    "predictedScore": "Los Angeles Dodgers 5.9 \u2013 Minnesota Twins 2.7",
+    "predictedHomeScore": 2.74,
+    "predictedAwayScore": 5.91,
+    "gameTime": "2026-06-22T23:40:00Z",
+    "gamePk": 823692,
+    "rank": 1
+  },
+  {
     "matchup": "Texas Rangers @ Miami Marlins",
     "awayTeam": "Texas Rangers",
     "homeTeam": "Miami Marlins",
@@ -12,8 +31,11 @@
     "edge": 0.185,
     "confidence": "Elite",
     "predictedScore": "Texas Rangers 3.2 \u2013 Miami Marlins 4.9",
+    "predictedHomeScore": 4.91,
+    "predictedAwayScore": 3.18,
     "gameTime": "2026-06-22T22:40:00Z",
-    "rank": 1
+    "gamePk": 823851,
+    "rank": 2
   },
   {
     "matchup": "Chicago Cubs @ New York Mets",
@@ -28,8 +50,11 @@
     "edge": 0.152,
     "confidence": "Elite",
     "predictedScore": "Chicago Cubs 3.9 \u2013 New York Mets 5.3",
+    "predictedHomeScore": 5.27,
+    "predictedAwayScore": 3.87,
     "gameTime": "2026-06-22T23:10:00Z",
-    "rank": 2
+    "gamePk": 823613,
+    "rank": 3
   },
   {
     "matchup": "Kansas City Royals @ Tampa Bay Rays",
@@ -44,8 +69,11 @@
     "edge": 0.123,
     "confidence": "Strong",
     "predictedScore": "Kansas City Royals 3.4 \u2013 Tampa Bay Rays 4.5",
+    "predictedHomeScore": 4.5,
+    "predictedAwayScore": 3.38,
     "gameTime": "2026-06-22T22:40:00Z",
-    "rank": 3
+    "gamePk": 822964,
+    "rank": 4
   },
   {
     "matchup": "Philadelphia Phillies @ Washington Nationals",
@@ -60,8 +88,11 @@
     "edge": 0.118,
     "confidence": "Strong",
     "predictedScore": "Philadelphia Phillies 5.8 \u2013 Washington Nationals 4.7",
+    "predictedHomeScore": 4.71,
+    "predictedAwayScore": 5.78,
     "gameTime": "2026-06-22T22:45:00Z",
-    "rank": 4
+    "gamePk": 822720,
+    "rank": 5
   },
   {
     "matchup": "New York Yankees @ Detroit Tigers",
@@ -76,23 +107,10 @@
     "edge": 0.098,
     "confidence": "Strong",
     "predictedScore": "New York Yankees 3.9 \u2013 Detroit Tigers 3.0",
+    "predictedHomeScore": 2.98,
+    "predictedAwayScore": 3.87,
     "gameTime": "2026-06-22T22:10:00Z",
-    "rank": 5
-  },
-  {
-    "matchup": "Baltimore Orioles @ Los Angeles Angels",
-    "awayTeam": "Baltimore Orioles",
-    "homeTeam": "Los Angeles Angels",
-    "awayPitcher": "Kyle Bradish",
-    "homePitcher": "Sam Aldegheri",
-    "pick": "Los Angeles Angels",
-    "prediction": "Los Angeles Angels -140",
-    "odds": "-140",
-    "winProb": 0.581,
-    "edge": 0.081,
-    "confidence": "Strong",
-    "predictedScore": "Baltimore Orioles 3.5 \u2013 Los Angeles Angels 4.2",
-    "gameTime": "2026-06-23T01:38:00Z",
+    "gamePk": 824261,
     "rank": 6
   },
   {
@@ -108,7 +126,10 @@
     "edge": 0.08,
     "confidence": "Lean",
     "predictedScore": "Arizona Diamondbacks 3.8 \u2013 St. Louis Cardinals 4.5",
+    "predictedHomeScore": 4.53,
+    "predictedAwayScore": 3.81,
     "gameTime": "2026-06-22T23:45:00Z",
+    "gamePk": 823040,
     "rank": 7
   },
   {
@@ -124,7 +145,10 @@
     "edge": 0.072,
     "confidence": "Lean",
     "predictedScore": "Cleveland Guardians 4.7 \u2013 Chicago White Sox 4.0",
+    "predictedHomeScore": 4.05,
+    "predictedAwayScore": 4.69,
     "gameTime": "2026-06-22T23:40:00Z",
+    "gamePk": 824585,
     "rank": 8
   },
   {
@@ -140,7 +164,10 @@
     "edge": 0.067,
     "confidence": "Lean",
     "predictedScore": "Milwaukee Brewers 4.4 \u2013 Cincinnati Reds 3.8",
+    "predictedHomeScore": 3.79,
+    "predictedAwayScore": 4.39,
     "gameTime": "2026-06-22T23:10:00Z",
+    "gamePk": 824502,
     "rank": 9
   },
   {
@@ -156,7 +183,10 @@
     "edge": 0.067,
     "confidence": "Lean",
     "predictedScore": "Boston Red Sox 4.7 \u2013 Colorado Rockies 4.1",
+    "predictedHomeScore": 4.11,
+    "predictedAwayScore": 4.72,
     "gameTime": "2026-06-23T00:40:00Z",
+    "gamePk": 824344,
     "rank": 10
   },
   {
@@ -172,7 +202,48 @@
     "edge": 0.065,
     "confidence": "Lean",
     "predictedScore": "Houston Astros 3.6 \u2013 Toronto Blue Jays 3.0",
+    "predictedHomeScore": 3.05,
+    "predictedAwayScore": 3.63,
     "gameTime": "2026-06-22T23:07:00Z",
+    "gamePk": 822800,
     "rank": 11
+  },
+  {
+    "matchup": "Baltimore Orioles @ Los Angeles Angels",
+    "awayTeam": "Baltimore Orioles",
+    "homeTeam": "Los Angeles Angels",
+    "awayPitcher": "Kyle Bradish",
+    "homePitcher": "Sam Aldegheri",
+    "pick": "Los Angeles Angels",
+    "prediction": "Los Angeles Angels -120",
+    "odds": "-120",
+    "winProb": 0.543,
+    "edge": 0.043,
+    "confidence": "Lean",
+    "predictedScore": "Baltimore Orioles 3.9 \u2013 Los Angeles Angels 4.2",
+    "predictedHomeScore": 4.25,
+    "predictedAwayScore": 3.86,
+    "gameTime": "2026-06-23T01:38:00Z",
+    "gamePk": 824016,
+    "rank": 12
+  },
+  {
+    "matchup": "Atlanta Braves @ San Diego Padres",
+    "awayTeam": "Atlanta Braves",
+    "homeTeam": "San Diego Padres",
+    "awayPitcher": "Grant Holmes",
+    "homePitcher": "Michael King",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -115",
+    "odds": "-115",
+    "winProb": 0.531,
+    "edge": 0.031,
+    "confidence": "Lean",
+    "predictedScore": "Atlanta Braves 4.1 \u2013 San Diego Padres 3.8",
+    "predictedHomeScore": 3.84,
+    "predictedAwayScore": 4.12,
+    "gameTime": "2026-06-23T02:10:00Z",
+    "gamePk": 823288,
+    "rank": 13
   }
 ]
