@@ -32,19 +32,19 @@
     "rank": 2
   },
   {
-    "matchup": "Texas Rangers @ Miami Marlins",
-    "awayTeam": "Texas Rangers",
-    "homeTeam": "Miami Marlins",
-    "awayPitcher": "Kumar Rocker",
-    "homePitcher": "Tyler Phillips",
-    "pick": "Miami Marlins",
-    "prediction": "Miami Marlins -160",
-    "odds": "-160",
-    "winProb": 0.617,
-    "edge": 0.117,
+    "matchup": "Los Angeles Dodgers @ Minnesota Twins",
+    "awayTeam": "Los Angeles Dodgers",
+    "homeTeam": "Minnesota Twins",
+    "awayPitcher": "Eric Lauer",
+    "homePitcher": "Zebby Matthews",
+    "pick": "Minnesota Twins",
+    "prediction": "Minnesota Twins -165",
+    "odds": "-165",
+    "winProb": 0.624,
+    "edge": 0.124,
     "confidence": "Strong",
-    "predictedScore": "Texas Rangers 3.5 \u2013 Miami Marlins 4.6",
-    "gameTime": "2026-06-22T22:40:00Z",
+    "predictedScore": "Los Angeles Dodgers 4.8 \u2013 Minnesota Twins 6.0",
+    "gameTime": "2026-06-22T23:40:00Z",
     "rank": 3
   },
   {
@@ -54,29 +54,29 @@
     "awayPitcher": "Michael Wacha",
     "homePitcher": "Drew Rasmussen",
     "pick": "Tampa Bay Rays",
-    "prediction": "Tampa Bay Rays -140",
-    "odds": "-140",
-    "winProb": 0.585,
-    "edge": 0.085,
+    "prediction": "Tampa Bay Rays -165",
+    "odds": "-165",
+    "winProb": 0.623,
+    "edge": 0.123,
     "confidence": "Strong",
-    "predictedScore": "Kansas City Royals 3.4 \u2013 Tampa Bay Rays 4.1",
+    "predictedScore": "Kansas City Royals 3.4 \u2013 Tampa Bay Rays 4.5",
     "gameTime": "2026-06-22T22:40:00Z",
     "rank": 4
   },
   {
-    "matchup": "Los Angeles Dodgers @ Minnesota Twins",
-    "awayTeam": "Los Angeles Dodgers",
-    "homeTeam": "Minnesota Twins",
-    "awayPitcher": "Eric Lauer",
-    "homePitcher": "Zebby Matthews",
-    "pick": "Minnesota Twins",
-    "prediction": "Minnesota Twins -140",
-    "odds": "-140",
-    "winProb": 0.585,
-    "edge": 0.085,
+    "matchup": "Texas Rangers @ Miami Marlins",
+    "awayTeam": "Texas Rangers",
+    "homeTeam": "Miami Marlins",
+    "awayPitcher": "Tyler Alexander",
+    "homePitcher": "Tyler Phillips",
+    "pick": "Miami Marlins",
+    "prediction": "Miami Marlins -160",
+    "odds": "-160",
+    "winProb": 0.617,
+    "edge": 0.117,
     "confidence": "Strong",
-    "predictedScore": "Los Angeles Dodgers 4.8 \u2013 Minnesota Twins 5.6",
-    "gameTime": "2026-06-22T23:40:00Z",
+    "predictedScore": "Texas Rangers 3.5 \u2013 Miami Marlins 4.6",
+    "gameTime": "2026-06-22T22:40:00Z",
     "rank": 5
   },
   {
@@ -96,6 +96,22 @@
     "rank": 6
   },
   {
+    "matchup": "Cleveland Guardians @ Chicago White Sox",
+    "awayTeam": "Cleveland Guardians",
+    "homeTeam": "Chicago White Sox",
+    "awayPitcher": "Gavin Williams",
+    "homePitcher": "Anthony Kay",
+    "pick": "Cleveland Guardians",
+    "prediction": "Cleveland Guardians -135",
+    "odds": "-135",
+    "winProb": 0.572,
+    "edge": 0.072,
+    "confidence": "Lean",
+    "predictedScore": "Cleveland Guardians 4.7 \u2013 Chicago White Sox 4.0",
+    "gameTime": "2026-06-22T23:40:00Z",
+    "rank": 7
+  },
+  {
     "matchup": "Milwaukee Brewers @ Cincinnati Reds",
     "awayTeam": "Milwaukee Brewers",
     "homeTeam": "Cincinnati Reds",
@@ -109,7 +125,7 @@
     "confidence": "Lean",
     "predictedScore": "Milwaukee Brewers 4.4 \u2013 Cincinnati Reds 3.8",
     "gameTime": "2026-06-22T23:10:00Z",
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Boston Red Sox @ Colorado Rockies",
@@ -125,7 +141,7 @@
     "confidence": "Lean",
     "predictedScore": "Boston Red Sox 4.7 \u2013 Colorado Rockies 4.1",
     "gameTime": "2026-06-23T00:40:00Z",
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "New York Yankees @ Detroit Tigers",
@@ -141,7 +157,7 @@
     "confidence": "Lean",
     "predictedScore": "New York Yankees 3.6 \u2013 Detroit Tigers 3.0",
     "gameTime": "2026-06-22T22:10:00Z",
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Baltimore Orioles @ Los Angeles Angels",
@@ -157,38 +173,6 @@
     "confidence": "Lean",
     "predictedScore": "Baltimore Orioles 3.5 \u2013 Los Angeles Angels 3.9",
     "gameTime": "2026-06-23T01:38:00Z",
-    "rank": 10
-  },
-  {
-    "matchup": "Cleveland Guardians @ Chicago White Sox",
-    "awayTeam": "Cleveland Guardians",
-    "homeTeam": "Chicago White Sox",
-    "awayPitcher": "Gavin Williams",
-    "homePitcher": "Anthony Kay",
-    "pick": "Cleveland Guardians",
-    "prediction": "Cleveland Guardians -115",
-    "odds": "-115",
-    "winProb": 0.533,
-    "edge": 0.033,
-    "confidence": "Lean",
-    "predictedScore": "Cleveland Guardians 4.3 \u2013 Chicago White Sox 4.0",
-    "gameTime": "2026-06-22T23:40:00Z",
     "rank": 11
-  },
-  {
-    "matchup": "Houston Astros @ Toronto Blue Jays",
-    "awayTeam": "Houston Astros",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "Hunter Brown",
-    "homePitcher": "TBD",
-    "pick": "Houston Astros",
-    "prediction": "Houston Astros -115",
-    "odds": "-115",
-    "winProb": 0.53,
-    "edge": 0.03,
-    "confidence": "Lean",
-    "predictedScore": "Houston Astros 3.3 \u2013 Toronto Blue Jays 3.0",
-    "gameTime": "2026-06-22T23:07:00Z",
-    "rank": 12
   }
 ]
