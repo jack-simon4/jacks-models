@@ -1,21 +1,5 @@
 [
   {
-    "matchup": "Chicago Cubs @ New York Mets",
-    "awayTeam": "Chicago Cubs",
-    "homeTeam": "New York Mets",
-    "awayPitcher": "Shota Imanaga",
-    "homePitcher": "Kodai Senga",
-    "pick": "New York Mets",
-    "prediction": "New York Mets -220",
-    "odds": "-220",
-    "winProb": 0.686,
-    "edge": 0.186,
-    "confidence": "Elite",
-    "predictedScore": "Chicago Cubs 3.9 \u2013 New York Mets 5.6",
-    "gameTime": "2026-06-22T23:10:00Z",
-    "rank": 1
-  },
-  {
     "matchup": "Texas Rangers @ Miami Marlins",
     "awayTeam": "Texas Rangers",
     "homeTeam": "Miami Marlins",
@@ -29,23 +13,23 @@
     "confidence": "Elite",
     "predictedScore": "Texas Rangers 3.2 \u2013 Miami Marlins 4.9",
     "gameTime": "2026-06-22T22:40:00Z",
-    "rank": 2
+    "rank": 1
   },
   {
-    "matchup": "Los Angeles Dodgers @ Minnesota Twins",
-    "awayTeam": "Los Angeles Dodgers",
-    "homeTeam": "Minnesota Twins",
-    "awayPitcher": "Eric Lauer",
-    "homePitcher": "Zebby Matthews",
-    "pick": "Minnesota Twins",
-    "prediction": "Minnesota Twins -165",
-    "odds": "-165",
-    "winProb": 0.624,
-    "edge": 0.124,
-    "confidence": "Strong",
-    "predictedScore": "Los Angeles Dodgers 4.8 \u2013 Minnesota Twins 6.0",
-    "gameTime": "2026-06-22T23:40:00Z",
-    "rank": 3
+    "matchup": "Chicago Cubs @ New York Mets",
+    "awayTeam": "Chicago Cubs",
+    "homeTeam": "New York Mets",
+    "awayPitcher": "Shota Imanaga",
+    "homePitcher": "Kodai Senga",
+    "pick": "New York Mets",
+    "prediction": "New York Mets -190",
+    "odds": "-190",
+    "winProb": 0.652,
+    "edge": 0.152,
+    "confidence": "Elite",
+    "predictedScore": "Chicago Cubs 3.9 \u2013 New York Mets 5.3",
+    "gameTime": "2026-06-22T23:10:00Z",
+    "rank": 2
   },
   {
     "matchup": "Kansas City Royals @ Tampa Bay Rays",
@@ -61,7 +45,7 @@
     "confidence": "Strong",
     "predictedScore": "Kansas City Royals 3.4 \u2013 Tampa Bay Rays 4.5",
     "gameTime": "2026-06-22T22:40:00Z",
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Philadelphia Phillies @ Washington Nationals",
@@ -77,7 +61,39 @@
     "confidence": "Strong",
     "predictedScore": "Philadelphia Phillies 5.8 \u2013 Washington Nationals 4.7",
     "gameTime": "2026-06-22T22:45:00Z",
+    "rank": 4
+  },
+  {
+    "matchup": "New York Yankees @ Detroit Tigers",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Detroit Tigers",
+    "awayPitcher": "Gerrit Cole",
+    "homePitcher": "Framber Valdez",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -150",
+    "odds": "-150",
+    "winProb": 0.598,
+    "edge": 0.098,
+    "confidence": "Strong",
+    "predictedScore": "New York Yankees 3.9 \u2013 Detroit Tigers 3.0",
+    "gameTime": "2026-06-22T22:10:00Z",
     "rank": 5
+  },
+  {
+    "matchup": "Baltimore Orioles @ Los Angeles Angels",
+    "awayTeam": "Baltimore Orioles",
+    "homeTeam": "Los Angeles Angels",
+    "awayPitcher": "Kyle Bradish",
+    "homePitcher": "Sam Aldegheri",
+    "pick": "Los Angeles Angels",
+    "prediction": "Los Angeles Angels -140",
+    "odds": "-140",
+    "winProb": 0.581,
+    "edge": 0.081,
+    "confidence": "Strong",
+    "predictedScore": "Baltimore Orioles 3.5 \u2013 Los Angeles Angels 4.2",
+    "gameTime": "2026-06-23T01:38:00Z",
+    "rank": 6
   },
   {
     "matchup": "Arizona Diamondbacks @ St. Louis Cardinals",
@@ -93,7 +109,7 @@
     "confidence": "Lean",
     "predictedScore": "Arizona Diamondbacks 3.8 \u2013 St. Louis Cardinals 4.5",
     "gameTime": "2026-06-22T23:45:00Z",
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "Cleveland Guardians @ Chicago White Sox",
@@ -109,13 +125,13 @@
     "confidence": "Lean",
     "predictedScore": "Cleveland Guardians 4.7 \u2013 Chicago White Sox 4.0",
     "gameTime": "2026-06-22T23:40:00Z",
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Milwaukee Brewers @ Cincinnati Reds",
     "awayTeam": "Milwaukee Brewers",
     "homeTeam": "Cincinnati Reds",
-    "awayPitcher": "TBD",
+    "awayPitcher": "Brandon Woodruff",
     "homePitcher": "Brady Singer",
     "pick": "Milwaukee Brewers",
     "prediction": "Milwaukee Brewers -130",
@@ -125,7 +141,7 @@
     "confidence": "Lean",
     "predictedScore": "Milwaukee Brewers 4.4 \u2013 Cincinnati Reds 3.8",
     "gameTime": "2026-06-22T23:10:00Z",
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Boston Red Sox @ Colorado Rockies",
@@ -141,38 +157,22 @@
     "confidence": "Lean",
     "predictedScore": "Boston Red Sox 4.7 \u2013 Colorado Rockies 4.1",
     "gameTime": "2026-06-23T00:40:00Z",
-    "rank": 9
-  },
-  {
-    "matchup": "New York Yankees @ Detroit Tigers",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Detroit Tigers",
-    "awayPitcher": "Gerrit Cole",
-    "homePitcher": "Framber Valdez",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -130",
-    "odds": "-130",
-    "winProb": 0.564,
-    "edge": 0.064,
-    "confidence": "Lean",
-    "predictedScore": "New York Yankees 3.6 \u2013 Detroit Tigers 3.0",
-    "gameTime": "2026-06-22T22:10:00Z",
     "rank": 10
   },
   {
-    "matchup": "Baltimore Orioles @ Los Angeles Angels",
-    "awayTeam": "Baltimore Orioles",
-    "homeTeam": "Los Angeles Angels",
-    "awayPitcher": "Kyle Bradish",
-    "homePitcher": "Sam Aldegheri",
-    "pick": "Los Angeles Angels",
-    "prediction": "Los Angeles Angels -120",
-    "odds": "-120",
-    "winProb": 0.543,
-    "edge": 0.043,
+    "matchup": "Houston Astros @ Toronto Blue Jays",
+    "awayTeam": "Houston Astros",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Hunter Brown",
+    "homePitcher": "Dylan Cease",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -130",
+    "odds": "-130",
+    "winProb": 0.565,
+    "edge": 0.065,
     "confidence": "Lean",
-    "predictedScore": "Baltimore Orioles 3.5 \u2013 Los Angeles Angels 3.9",
-    "gameTime": "2026-06-23T01:38:00Z",
+    "predictedScore": "Houston Astros 3.6 \u2013 Toronto Blue Jays 3.0",
+    "gameTime": "2026-06-22T23:07:00Z",
     "rank": 11
   }
 ]
