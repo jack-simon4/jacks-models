@@ -45,6 +45,7 @@ def upload():
             continue
         content_type = 'application/json' if filename.endswith('.json') else 'text/csv'
         blob = bucket.blob(filename)
+        blob.cache_control = 'no-cache, no-store, must-revalidate'
         blob.upload_from_filename(local_path, content_type=content_type)
         print(f'[Storage] Uploaded {filename} -> gs://{BUCKET}/{filename}')
 
