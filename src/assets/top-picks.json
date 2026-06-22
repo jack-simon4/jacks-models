@@ -1,21 +1,5 @@
 [
   {
-    "matchup": "Philadelphia Phillies @ Washington Nationals",
-    "awayTeam": "Philadelphia Phillies",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "TBD",
-    "homePitcher": "Foster Griffin",
-    "pick": "Philadelphia Phillies",
-    "prediction": "Philadelphia Phillies -225",
-    "odds": "-225",
-    "winProb": 0.693,
-    "edge": 0.193,
-    "confidence": "Elite",
-    "predictedScore": "Philadelphia Phillies 6.1 \u2013 Washington Nationals 4.3",
-    "gameTime": "2026-06-22T22:45:00Z",
-    "rank": 1
-  },
-  {
     "matchup": "Chicago Cubs @ New York Mets",
     "awayTeam": "Chicago Cubs",
     "homeTeam": "New York Mets",
@@ -29,6 +13,22 @@
     "confidence": "Elite",
     "predictedScore": "Chicago Cubs 3.9 \u2013 New York Mets 5.6",
     "gameTime": "2026-06-22T23:10:00Z",
+    "rank": 1
+  },
+  {
+    "matchup": "Texas Rangers @ Miami Marlins",
+    "awayTeam": "Texas Rangers",
+    "homeTeam": "Miami Marlins",
+    "awayPitcher": "Tyler Alexander",
+    "homePitcher": "Tyler Phillips",
+    "pick": "Miami Marlins",
+    "prediction": "Miami Marlins -220",
+    "odds": "-220",
+    "winProb": 0.685,
+    "edge": 0.185,
+    "confidence": "Elite",
+    "predictedScore": "Texas Rangers 3.2 \u2013 Miami Marlins 4.9",
+    "gameTime": "2026-06-22T22:40:00Z",
     "rank": 2
   },
   {
@@ -64,19 +64,19 @@
     "rank": 4
   },
   {
-    "matchup": "Texas Rangers @ Miami Marlins",
-    "awayTeam": "Texas Rangers",
-    "homeTeam": "Miami Marlins",
-    "awayPitcher": "Tyler Alexander",
-    "homePitcher": "Tyler Phillips",
-    "pick": "Miami Marlins",
-    "prediction": "Miami Marlins -160",
+    "matchup": "Philadelphia Phillies @ Washington Nationals",
+    "awayTeam": "Philadelphia Phillies",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Tim Mayza",
+    "homePitcher": "Foster Griffin",
+    "pick": "Philadelphia Phillies",
+    "prediction": "Philadelphia Phillies -160",
     "odds": "-160",
-    "winProb": 0.617,
-    "edge": 0.117,
+    "winProb": 0.618,
+    "edge": 0.118,
     "confidence": "Strong",
-    "predictedScore": "Texas Rangers 3.5 \u2013 Miami Marlins 4.6",
-    "gameTime": "2026-06-22T22:40:00Z",
+    "predictedScore": "Philadelphia Phillies 5.8 \u2013 Washington Nationals 4.7",
+    "gameTime": "2026-06-22T22:45:00Z",
     "rank": 5
   },
   {
