@@ -36,7 +36,8 @@ export class HomeComponent implements OnInit {
   }
 
   private loadTopPicks() {
-    this.http.get<TopPick[]>(environment.topPicksUrl).subscribe({
+    const url = `${environment.topPicksUrl}&_cb=${Date.now()}`;
+    this.http.get<TopPick[]>(url).subscribe({
       next: (picks) => {
         this.topPicks = (picks || []).slice(0, 5);
         this.topPicksLoading = false;
@@ -48,7 +49,8 @@ export class HomeComponent implements OnInit {
   }
 
   private loadTopProps() {
-    this.http.get('assets/MLB-Player-Props.csv', { responseType: 'text' }).subscribe({
+    const url = `${environment.mlbPlayerPropsUrl}&_cb=${Date.now()}`;
+    this.http.get(url, { responseType: 'text' }).subscribe({
       next: (csv) => {
         const lines = csv.trim().split('\n');
         const rows = lines.slice(1)
