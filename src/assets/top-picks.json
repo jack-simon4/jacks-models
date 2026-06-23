@@ -19,6 +19,25 @@
     "rank": 1
   },
   {
+    "matchup": "Houston Astros @ Toronto Blue Jays",
+    "awayTeam": "Houston Astros",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Peter Lambert",
+    "homePitcher": "Shane Bieber",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -200",
+    "odds": "-200",
+    "winProb": 0.666,
+    "edge": 0.166,
+    "confidence": "Elite",
+    "predictedScore": "Houston Astros 4.6 \u2013 Toronto Blue Jays 3.0",
+    "predictedHomeScore": 3.05,
+    "predictedAwayScore": 4.58,
+    "gameTime": "2026-06-23T20:07:00Z",
+    "gamePk": 822799,
+    "rank": 2
+  },
+  {
     "matchup": "Texas Rangers @ Miami Marlins",
     "awayTeam": "Texas Rangers",
     "homeTeam": "Miami Marlins",
@@ -35,25 +54,6 @@
     "predictedAwayScore": 3.86,
     "gameTime": "2026-06-23T22:40:00Z",
     "gamePk": 823849,
-    "rank": 2
-  },
-  {
-    "matchup": "Houston Astros @ Toronto Blue Jays",
-    "awayTeam": "Houston Astros",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "Peter Lambert",
-    "homePitcher": "Shane Bieber",
-    "pick": "Houston Astros",
-    "prediction": "Houston Astros -175",
-    "odds": "-175",
-    "winProb": 0.634,
-    "edge": 0.134,
-    "confidence": "Strong",
-    "predictedScore": "Houston Astros 4.6 \u2013 Toronto Blue Jays 3.4",
-    "predictedHomeScore": 3.37,
-    "predictedAwayScore": 4.58,
-    "gameTime": "2026-06-23T20:07:00Z",
-    "gamePk": 822799,
     "rank": 3
   },
   {
@@ -152,6 +152,25 @@
     "rank": 8
   },
   {
+    "matchup": "Cleveland Guardians @ Chicago White Sox",
+    "awayTeam": "Cleveland Guardians",
+    "homeTeam": "Chicago White Sox",
+    "awayPitcher": "Parker Messick",
+    "homePitcher": "Sean Burke",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -120",
+    "odds": "-120",
+    "winProb": 0.545,
+    "edge": 0.045,
+    "confidence": "Lean",
+    "predictedScore": "Cleveland Guardians 3.6 \u2013 Chicago White Sox 4.0",
+    "predictedHomeScore": 4.05,
+    "predictedAwayScore": 3.65,
+    "gameTime": "2026-06-23T23:40:00Z",
+    "gamePk": 824584,
+    "rank": 9
+  },
+  {
     "matchup": "Chicago Cubs @ New York Mets",
     "awayTeam": "Chicago Cubs",
     "homeTeam": "New York Mets",
@@ -168,6 +187,6 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-06-23T23:10:00Z",
     "gamePk": 823614,
-    "rank": 9
+    "rank": 10
   }
 ]
