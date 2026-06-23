@@ -144,31 +144,12 @@
     "winProb": 0.546,
     "edge": 0.046,
     "confidence": "Lean",
-    "predictedScore": "Los Angeles Dodgers 4.5 \u2013 Minnesota Twins 4.9",
-    "predictedHomeScore": 4.89,
-    "predictedAwayScore": 4.48,
+    "predictedScore": "Los Angeles Dodgers 4.1 \u2013 Minnesota Twins 4.5",
+    "predictedHomeScore": 4.53,
+    "predictedAwayScore": 4.12,
     "gameTime": "2026-06-23T23:40:00Z",
     "gamePk": 823690,
     "rank": 8
-  },
-  {
-    "matchup": "Cleveland Guardians @ Chicago White Sox",
-    "awayTeam": "Cleveland Guardians",
-    "homeTeam": "Chicago White Sox",
-    "awayPitcher": "Parker Messick",
-    "homePitcher": "Sean Burke",
-    "pick": "Chicago White Sox",
-    "prediction": "Chicago White Sox -120",
-    "odds": "-120",
-    "winProb": 0.545,
-    "edge": 0.045,
-    "confidence": "Lean",
-    "predictedScore": "Cleveland Guardians 3.6 \u2013 Chicago White Sox 4.0",
-    "predictedHomeScore": 4.05,
-    "predictedAwayScore": 3.65,
-    "gameTime": "2026-06-23T23:40:00Z",
-    "gamePk": 824584,
-    "rank": 9
   },
   {
     "matchup": "Chicago Cubs @ New York Mets",
@@ -187,7 +168,7 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-06-23T23:10:00Z",
     "gamePk": 823614,
-    "rank": 10
+    "rank": 9
   },
   {
     "matchup": "Seattle Mariners @ Pittsburgh Pirates",
@@ -206,7 +187,7 @@
     "predictedAwayScore": 4.6,
     "gameTime": "2026-06-23T22:40:00Z",
     "gamePk": 823365,
-    "rank": 11
+    "rank": 10
   },
   {
     "matchup": "Milwaukee Brewers @ Cincinnati Reds",
@@ -225,6 +206,6 @@
     "predictedAwayScore": 4.72,
     "gameTime": "2026-06-23T23:10:00Z",
     "gamePk": 824501,
-    "rank": 12
+    "rank": 11
   }
 ]
