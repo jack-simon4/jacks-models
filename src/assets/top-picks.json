@@ -19,6 +19,25 @@
     "rank": 1
   },
   {
+    "matchup": "Houston Astros @ Toronto Blue Jays",
+    "awayTeam": "Houston Astros",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Peter Lambert",
+    "homePitcher": "Shane Bieber",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -175",
+    "odds": "-175",
+    "winProb": 0.634,
+    "edge": 0.134,
+    "confidence": "Strong",
+    "predictedScore": "Houston Astros 4.3 \u2013 Toronto Blue Jays 3.0",
+    "predictedHomeScore": 3.05,
+    "predictedAwayScore": 4.27,
+    "gameTime": "2026-06-23T20:07:00Z",
+    "gamePk": 822799,
+    "rank": 2
+  },
+  {
     "matchup": "Kansas City Royals @ Tampa Bay Rays",
     "awayTeam": "Kansas City Royals",
     "homeTeam": "Tampa Bay Rays",
@@ -35,7 +54,7 @@
     "predictedAwayScore": 3.38,
     "gameTime": "2026-06-23T22:40:00Z",
     "gamePk": 822963,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Philadelphia Phillies @ Washington Nationals",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 5.03,
     "gameTime": "2026-06-23T22:45:00Z",
     "gamePk": 822718,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Boston Red Sox @ Colorado Rockies",
@@ -73,25 +92,6 @@
     "predictedAwayScore": 4.06,
     "gameTime": "2026-06-24T00:40:00Z",
     "gamePk": 824340,
-    "rank": 4
-  },
-  {
-    "matchup": "Houston Astros @ Toronto Blue Jays",
-    "awayTeam": "Houston Astros",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "Peter Lambert",
-    "homePitcher": "Shane Bieber",
-    "pick": "Houston Astros",
-    "prediction": "Houston Astros -150",
-    "odds": "-150",
-    "winProb": 0.6,
-    "edge": 0.1,
-    "confidence": "Strong",
-    "predictedScore": "Houston Astros 4.3 \u2013 Toronto Blue Jays 3.4",
-    "predictedHomeScore": 3.37,
-    "predictedAwayScore": 4.27,
-    "gameTime": "2026-06-23T20:07:00Z",
-    "gamePk": 822799,
     "rank": 5
   },
   {
