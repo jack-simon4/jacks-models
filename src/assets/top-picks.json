@@ -19,6 +19,25 @@
     "rank": 1
   },
   {
+    "matchup": "Texas Rangers @ Miami Marlins",
+    "awayTeam": "Texas Rangers",
+    "homeTeam": "Miami Marlins",
+    "awayPitcher": "Cal Quantrill",
+    "homePitcher": "Sandy Alcantara",
+    "pick": "Miami Marlins",
+    "prediction": "Miami Marlins -185",
+    "odds": "-185",
+    "winProb": 0.652,
+    "edge": 0.152,
+    "confidence": "Elite",
+    "predictedScore": "Texas Rangers 3.9 \u2013 Miami Marlins 5.2",
+    "predictedHomeScore": 5.25,
+    "predictedAwayScore": 3.86,
+    "gameTime": "2026-06-23T22:40:00Z",
+    "gamePk": 823849,
+    "rank": 2
+  },
+  {
     "matchup": "Houston Astros @ Toronto Blue Jays",
     "awayTeam": "Houston Astros",
     "homeTeam": "Toronto Blue Jays",
@@ -35,7 +54,7 @@
     "predictedAwayScore": 4.58,
     "gameTime": "2026-06-23T20:07:00Z",
     "gamePk": 822799,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Kansas City Royals @ Tampa Bay Rays",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 3.38,
     "gameTime": "2026-06-23T22:40:00Z",
     "gamePk": 822963,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Boston Red Sox @ Colorado Rockies",
@@ -73,7 +92,7 @@
     "predictedAwayScore": 3.74,
     "gameTime": "2026-06-24T00:40:00Z",
     "gamePk": 824340,
-    "rank": 4
+    "rank": 5
   },
   {
     "matchup": "Baltimore Orioles @ Los Angeles Angels",
@@ -92,7 +111,7 @@
     "predictedAwayScore": 3.86,
     "gameTime": "2026-06-24T01:38:00Z",
     "gamePk": 824017,
-    "rank": 5
+    "rank": 6
   },
   {
     "matchup": "New York Yankees @ Detroit Tigers",
@@ -111,7 +130,26 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-06-23T22:40:00Z",
     "gamePk": 824262,
-    "rank": 6
+    "rank": 7
+  },
+  {
+    "matchup": "Los Angeles Dodgers @ Minnesota Twins",
+    "awayTeam": "Los Angeles Dodgers",
+    "homeTeam": "Minnesota Twins",
+    "awayPitcher": "Justin Wrobleski",
+    "homePitcher": "Kendry Rojas",
+    "pick": "Minnesota Twins",
+    "prediction": "Minnesota Twins -120",
+    "odds": "-120",
+    "winProb": 0.546,
+    "edge": 0.046,
+    "confidence": "Lean",
+    "predictedScore": "Los Angeles Dodgers 4.5 \u2013 Minnesota Twins 4.9",
+    "predictedHomeScore": 4.89,
+    "predictedAwayScore": 4.48,
+    "gameTime": "2026-06-23T23:40:00Z",
+    "gamePk": 823690,
+    "rank": 8
   },
   {
     "matchup": "Chicago Cubs @ New York Mets",
@@ -130,6 +168,6 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-06-23T23:10:00Z",
     "gamePk": 823614,
-    "rank": 7
+    "rank": 9
   }
 ]
