@@ -1,24 +1,5 @@
 [
   {
-    "matchup": "Boston Red Sox @ Colorado Rockies",
-    "awayTeam": "Boston Red Sox",
-    "homeTeam": "Colorado Rockies",
-    "awayPitcher": "Ranger Suarez",
-    "homePitcher": "Kyle Freeland",
-    "pick": "Boston Red Sox",
-    "prediction": "Boston Red Sox -235",
-    "odds": "-235",
-    "winProb": 0.702,
-    "edge": 0.202,
-    "confidence": "Elite",
-    "predictedScore": "Boston Red Sox 6.0 \u2013 Colorado Rockies 4.1",
-    "predictedHomeScore": 4.11,
-    "predictedAwayScore": 6.02,
-    "gameTime": "2026-06-24T19:10:00Z",
-    "gamePk": 824341,
-    "rank": 1
-  },
-  {
     "matchup": "Houston Astros @ Toronto Blue Jays",
     "awayTeam": "Houston Astros",
     "homeTeam": "Toronto Blue Jays",
@@ -35,7 +16,7 @@
     "predictedAwayScore": 3.0,
     "gameTime": "2026-06-24T23:07:00Z",
     "gamePk": 822798,
-    "rank": 2
+    "rank": 1
   },
   {
     "matchup": "Arizona Diamondbacks @ St. Louis Cardinals",
@@ -54,7 +35,7 @@
     "predictedAwayScore": 5.48,
     "gameTime": "2026-06-24T23:45:00Z",
     "gamePk": 823041,
-    "rank": 3
+    "rank": 2
   },
   {
     "matchup": "Los Angeles Dodgers @ Minnesota Twins",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 4.48,
     "gameTime": "2026-06-24T23:40:00Z",
     "gamePk": 823691,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Atlanta Braves @ San Diego Padres",
@@ -92,6 +73,25 @@
     "predictedAwayScore": 4.78,
     "gameTime": "2026-06-25T00:40:00Z",
     "gamePk": 823284,
+    "rank": 4
+  },
+  {
+    "matchup": "Boston Red Sox @ Colorado Rockies",
+    "awayTeam": "Boston Red Sox",
+    "homeTeam": "Colorado Rockies",
+    "awayPitcher": "Ranger Suarez",
+    "homePitcher": "Kyle Freeland",
+    "pick": "Boston Red Sox",
+    "prediction": "Boston Red Sox -175",
+    "odds": "-175",
+    "winProb": 0.638,
+    "edge": 0.138,
+    "confidence": "Strong",
+    "predictedScore": "Boston Red Sox 5.7 \u2013 Colorado Rockies 4.4",
+    "predictedHomeScore": 4.44,
+    "predictedAwayScore": 5.7,
+    "gameTime": "2026-06-24T19:10:00Z",
+    "gamePk": 824341,
     "rank": 5
   },
   {
@@ -114,42 +114,23 @@
     "rank": 6
   },
   {
-    "matchup": "Athletics @ San Francisco Giants",
-    "awayTeam": "Athletics",
-    "homeTeam": "San Francisco Giants",
-    "awayPitcher": "Gage Jump",
-    "homePitcher": "Tyler Mahle",
-    "pick": "Athletics",
-    "prediction": "Athletics -145",
-    "odds": "-145",
-    "winProb": 0.588,
-    "edge": 0.088,
-    "confidence": "Strong",
-    "predictedScore": "Athletics 3.5 \u2013 San Francisco Giants 2.7",
-    "predictedHomeScore": 2.69,
-    "predictedAwayScore": 3.48,
-    "gameTime": "2026-06-25T01:45:00Z",
-    "gamePk": 823208,
-    "rank": 7
-  },
-  {
     "matchup": "Chicago Cubs @ New York Mets",
     "awayTeam": "Chicago Cubs",
     "homeTeam": "New York Mets",
     "awayPitcher": "Javier Assad",
     "homePitcher": "Nolan McLean",
     "pick": "New York Mets",
-    "prediction": "New York Mets -140",
-    "odds": "-140",
-    "winProb": 0.581,
-    "edge": 0.081,
+    "prediction": "New York Mets -160",
+    "odds": "-160",
+    "winProb": 0.617,
+    "edge": 0.117,
     "confidence": "Strong",
-    "predictedScore": "Chicago Cubs 3.2 \u2013 New York Mets 3.9",
+    "predictedScore": "Chicago Cubs 2.9 \u2013 New York Mets 3.9",
     "predictedHomeScore": 3.92,
-    "predictedAwayScore": 3.19,
+    "predictedAwayScore": 2.86,
     "gameTime": "2026-06-24T17:10:00Z",
     "gamePk": 823613,
-    "rank": 8
+    "rank": 7
   },
   {
     "matchup": "Baltimore Orioles @ Los Angeles Angels",
@@ -168,7 +149,7 @@
     "predictedAwayScore": 3.52,
     "gameTime": "2026-06-24T20:07:00Z",
     "gamePk": 824018,
-    "rank": 9
+    "rank": 8
   },
   {
     "matchup": "New York Yankees @ Detroit Tigers",
@@ -187,7 +168,64 @@
     "predictedAwayScore": 3.55,
     "gameTime": "2026-06-24T22:40:00Z",
     "gamePk": 824259,
+    "rank": 9
+  },
+  {
+    "matchup": "Athletics @ San Francisco Giants",
+    "awayTeam": "Athletics",
+    "homeTeam": "San Francisco Giants",
+    "awayPitcher": "Gage Jump",
+    "homePitcher": "Tyler Mahle",
+    "pick": "Athletics",
+    "prediction": "Athletics -125",
+    "odds": "-125",
+    "winProb": 0.557,
+    "edge": 0.057,
+    "confidence": "Lean",
+    "predictedScore": "Athletics 3.2 \u2013 San Francisco Giants 2.7",
+    "predictedHomeScore": 2.69,
+    "predictedAwayScore": 3.2,
+    "gameTime": "2026-06-25T01:45:00Z",
+    "gamePk": 823208,
     "rank": 10
+  },
+  {
+    "matchup": "Cleveland Guardians @ Chicago White Sox",
+    "awayTeam": "Cleveland Guardians",
+    "homeTeam": "Chicago White Sox",
+    "awayPitcher": "Tanner Bibee",
+    "homePitcher": "Erick Fedde",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -120",
+    "odds": "-120",
+    "winProb": 0.545,
+    "edge": 0.045,
+    "confidence": "Lean",
+    "predictedScore": "Cleveland Guardians 4.0 \u2013 Chicago White Sox 4.4",
+    "predictedHomeScore": 4.39,
+    "predictedAwayScore": 4.0,
+    "gameTime": "2026-06-24T18:10:00Z",
+    "gamePk": 824583,
+    "rank": 11
+  },
+  {
+    "matchup": "Chicago Cubs @ New York Mets",
+    "awayTeam": "Chicago Cubs",
+    "homeTeam": "New York Mets",
+    "awayPitcher": "Shota Imanaga",
+    "homePitcher": "Sean Manaea",
+    "pick": "New York Mets",
+    "prediction": "New York Mets -120",
+    "odds": "-120",
+    "winProb": 0.543,
+    "edge": 0.043,
+    "confidence": "Lean",
+    "predictedScore": "Chicago Cubs 4.9 \u2013 New York Mets 5.3",
+    "predictedHomeScore": 5.27,
+    "predictedAwayScore": 4.88,
+    "gameTime": "2026-06-24T23:10:00Z",
+    "gamePk": 823611,
+    "rank": 12
   },
   {
     "matchup": "Milwaukee Brewers @ Cincinnati Reds",
@@ -206,6 +244,6 @@
     "predictedAwayScore": 3.74,
     "gameTime": "2026-06-24T23:10:00Z",
     "gamePk": 824500,
-    "rank": 11
+    "rank": 13
   }
 ]
