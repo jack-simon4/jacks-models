@@ -228,25 +228,6 @@
     "rank": 12
   },
   {
-    "matchup": "Texas Rangers @ Miami Marlins",
-    "awayTeam": "Texas Rangers",
-    "homeTeam": "Miami Marlins",
-    "awayPitcher": "Jacob deGrom",
-    "homePitcher": "Eury P\u00e9rez",
-    "pick": "Miami Marlins",
-    "prediction": "Miami Marlins -120",
-    "odds": "-120",
-    "winProb": 0.543,
-    "edge": 0.043,
-    "confidence": "Lean",
-    "predictedScore": "Texas Rangers 3.5 \u2013 Miami Marlins 3.9",
-    "predictedHomeScore": 3.91,
-    "predictedAwayScore": 3.52,
-    "gameTime": "2026-06-24T16:10:00Z",
-    "gamePk": 823850,
-    "rank": 13
-  },
-  {
     "matchup": "Milwaukee Brewers @ Cincinnati Reds",
     "awayTeam": "Milwaukee Brewers",
     "homeTeam": "Cincinnati Reds",
@@ -263,6 +244,6 @@
     "predictedAwayScore": 3.74,
     "gameTime": "2026-06-24T23:10:00Z",
     "gamePk": 824500,
-    "rank": 14
+    "rank": 13
   }
 ]
