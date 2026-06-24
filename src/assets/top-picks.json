@@ -114,6 +114,25 @@
     "rank": 6
   },
   {
+    "matchup": "Chicago Cubs @ New York Mets",
+    "awayTeam": "Chicago Cubs",
+    "homeTeam": "New York Mets",
+    "awayPitcher": "TBD",
+    "homePitcher": "Nolan McLean",
+    "pick": "New York Mets",
+    "prediction": "New York Mets -160",
+    "odds": "-160",
+    "winProb": 0.617,
+    "edge": 0.117,
+    "confidence": "Strong",
+    "predictedScore": "Chicago Cubs 2.9 \u2013 New York Mets 3.9",
+    "predictedHomeScore": 3.92,
+    "predictedAwayScore": 2.86,
+    "gameTime": "2026-06-24T17:10:00Z",
+    "gamePk": 823613,
+    "rank": 7
+  },
+  {
     "matchup": "New York Yankees @ Detroit Tigers",
     "awayTeam": "New York Yankees",
     "homeTeam": "Detroit Tigers",
@@ -130,7 +149,26 @@
     "predictedAwayScore": 3.55,
     "gameTime": "2026-06-24T22:40:00Z",
     "gamePk": 824259,
-    "rank": 7
+    "rank": 8
+  },
+  {
+    "matchup": "Chicago Cubs @ New York Mets",
+    "awayTeam": "Chicago Cubs",
+    "homeTeam": "New York Mets",
+    "awayPitcher": "TBD",
+    "homePitcher": "Sean Manaea",
+    "pick": "Chicago Cubs",
+    "prediction": "Chicago Cubs -155",
+    "odds": "-155",
+    "winProb": 0.606,
+    "edge": 0.106,
+    "confidence": "Strong",
+    "predictedScore": "Chicago Cubs 4.9 \u2013 New York Mets 3.9",
+    "predictedHomeScore": 3.92,
+    "predictedAwayScore": 4.88,
+    "gameTime": "2026-06-24T23:10:00Z",
+    "gamePk": 823611,
+    "rank": 9
   },
   {
     "matchup": "Athletics @ San Francisco Giants",
@@ -149,7 +187,7 @@
     "predictedAwayScore": 3.48,
     "gameTime": "2026-06-25T01:45:00Z",
     "gamePk": 823208,
-    "rank": 8
+    "rank": 10
   },
   {
     "matchup": "Kansas City Royals @ Tampa Bay Rays",
@@ -168,7 +206,7 @@
     "predictedAwayScore": 3.74,
     "gameTime": "2026-06-24T22:40:00Z",
     "gamePk": 822965,
-    "rank": 9
+    "rank": 11
   },
   {
     "matchup": "Baltimore Orioles @ Los Angeles Angels",
@@ -187,7 +225,7 @@
     "predictedAwayScore": 3.52,
     "gameTime": "2026-06-24T20:07:00Z",
     "gamePk": 824018,
-    "rank": 10
+    "rank": 12
   },
   {
     "matchup": "Seattle Mariners @ Pittsburgh Pirates",
@@ -206,7 +244,7 @@
     "predictedAwayScore": 3.5,
     "gameTime": "2026-06-24T22:40:00Z",
     "gamePk": 823367,
-    "rank": 11
+    "rank": 13
   },
   {
     "matchup": "Cleveland Guardians @ Chicago White Sox",
@@ -225,7 +263,7 @@
     "predictedAwayScore": 4.0,
     "gameTime": "2026-06-24T18:10:00Z",
     "gamePk": 824583,
-    "rank": 12
+    "rank": 14
   },
   {
     "matchup": "Milwaukee Brewers @ Cincinnati Reds",
@@ -244,6 +282,6 @@
     "predictedAwayScore": 3.74,
     "gameTime": "2026-06-24T23:10:00Z",
     "gamePk": 824500,
-    "rank": 13
+    "rank": 15
   }
 ]
