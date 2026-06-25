@@ -38,6 +38,25 @@
     "rank": 2
   },
   {
+    "matchup": "Kansas City Royals @ Tampa Bay Rays",
+    "awayTeam": "Kansas City Royals",
+    "homeTeam": "Tampa Bay Rays",
+    "awayPitcher": "Seth Lugo",
+    "homePitcher": "Casey Legumina",
+    "pick": "Tampa Bay Rays",
+    "prediction": "Tampa Bay Rays -165",
+    "odds": "-165",
+    "winProb": 0.623,
+    "edge": 0.123,
+    "confidence": "Strong",
+    "predictedScore": "Kansas City Royals 3.7 \u2013 Tampa Bay Rays 4.9",
+    "predictedHomeScore": 4.86,
+    "predictedAwayScore": 3.74,
+    "gameTime": "2026-06-25T16:10:00Z",
+    "gamePk": 822961,
+    "rank": 3
+  },
+  {
     "matchup": "Chicago Cubs @ New York Mets",
     "awayTeam": "Chicago Cubs",
     "homeTeam": "New York Mets",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 3.53,
     "gameTime": "2026-06-25T23:10:00Z",
     "gamePk": 823612,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Seattle Mariners @ Pittsburgh Pirates",
@@ -73,25 +92,6 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-06-25T16:35:00Z",
     "gamePk": 823366,
-    "rank": 4
-  },
-  {
-    "matchup": "Kansas City Royals @ Tampa Bay Rays",
-    "awayTeam": "Kansas City Royals",
-    "homeTeam": "Tampa Bay Rays",
-    "awayPitcher": "Seth Lugo",
-    "homePitcher": "Ian Seymour",
-    "pick": "Tampa Bay Rays",
-    "prediction": "Tampa Bay Rays -140",
-    "odds": "-140",
-    "winProb": 0.585,
-    "edge": 0.085,
-    "confidence": "Strong",
-    "predictedScore": "Kansas City Royals 4.1 \u2013 Tampa Bay Rays 4.9",
-    "predictedHomeScore": 4.86,
-    "predictedAwayScore": 4.1,
-    "gameTime": "2026-06-25T16:10:00Z",
-    "gamePk": 822961,
     "rank": 5
   },
   {
