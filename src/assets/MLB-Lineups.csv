@@ -51,8 +51,17 @@ San Francisco Giants4,Rafael Devers
 San Francisco Giants5,Willy Adames
 San Francisco Giants6,Jung Hoo Lee
 San Francisco Giants7,Victor Bericoto
-San Francisco Giants8,Daniel Susac
+San Francisco Giants8,Eric Haase
 San Francisco Giants9,Jonah Cox
+Houston Astros1,Jeremy Pena
+Houston Astros2,Yordan Alvarez
+Houston Astros3,Isaac Paredes
+Houston Astros4,Christian Walker
+Houston Astros5,Jose Altuve
+Houston Astros6,Joey Loperfido
+Houston Astros7,Cam Smith
+Houston Astros8,Taylor Trammell
+Houston Astros9,Christian Vazquez
 Detroit Tigers1,Kevin McGonigle
 Detroit Tigers2,Kerry Carpenter
 Detroit Tigers3,Dillon Dingler
@@ -98,6 +107,33 @@ Toronto Blue Jays6,Nathan Lukes
 Toronto Blue Jays7,Davis Schneider
 Toronto Blue Jays8,Myles Straw
 Toronto Blue Jays9,Luis Urias
+Chicago Cubs1,Pete Crow-Armstrong
+Chicago Cubs2,Michael Conforto
+Chicago Cubs3,Michael Busch
+Chicago Cubs4,Alex Bregman
+Chicago Cubs5,Ian Happ
+Chicago Cubs6,Nico Hoerner
+Chicago Cubs7,Pedro Ramirez
+Chicago Cubs8,Miguel Amaya
+Chicago Cubs9,Dansby Swanson
+New York Mets1,Carson Benge
+New York Mets2,Bo Bichette
+New York Mets3,Juan Soto
+New York Mets4,Mark Vientos
+New York Mets5,Francisco Alvarez
+New York Mets6,A.J. Ewing
+New York Mets7,Ronny Mauricio
+New York Mets8,MJ Melendez
+New York Mets9,Brett Baty
+New York Yankees1,Paul Goldschmidt
+New York Yankees2,Ben Rice
+New York Yankees3,Amed Rosario
+New York Yankees4,Cody Bellinger
+New York Yankees5,Jasson Dominguez
+New York Yankees6,Anthony Volpe
+New York Yankees7,Jazz Chisholm Jr.
+New York Yankees8,Jose Caballero
+New York Yankees9,Austin Wells
 Boston Red Sox1,Masataka Yoshida
 Boston Red Sox2,Ceddanne Rafaela
 Boston Red Sox3,Wilyer Abreu
@@ -107,6 +143,15 @@ Boston Red Sox6,Caleb Durbin
 Boston Red Sox7,Anthony Seigler
 Boston Red Sox8,Carlos Narvaez
 Boston Red Sox9,Marcelo Mayer
+Arizona Diamondbacks1,Ketel Marte
+Arizona Diamondbacks2,Geraldo Perdomo
+Arizona Diamondbacks3,Corbin Carroll
+Arizona Diamondbacks4,Adrian Del Castillo
+Arizona Diamondbacks5,Max Kepler
+Arizona Diamondbacks6,Pavin Smith
+Arizona Diamondbacks7,Lourdes Gurriel Jr.
+Arizona Diamondbacks8,Ildemaro Vargas
+Arizona Diamondbacks9,Tommy Troy
 St. Louis Cardinals1,JJ Wetherholt
 St. Louis Cardinals2,Ivan Herrera
 St. Louis Cardinals3,Alec Burleson
@@ -116,51 +161,6 @@ St. Louis Cardinals6,Masyn Winn
 St. Louis Cardinals7,Nathan Church
 St. Louis Cardinals8,Blaze Jordan
 St. Louis Cardinals9,Jose Fermin
-Arizona Diamondbacks1,Ketel Marte
-Arizona Diamondbacks2,Geraldo Perdomo
-Arizona Diamondbacks3,Corbin Carroll
-Arizona Diamondbacks4,Gabriel Moreno
-Arizona Diamondbacks5,Nolan Arenado
-Arizona Diamondbacks6,Tommy Troy
-Arizona Diamondbacks7,Lourdes Gurriel Jr.
-Arizona Diamondbacks8,Ildemaro Vargas
-Arizona Diamondbacks9,LuJames Groover
-Chicago Cubs1,Pete Crow-Armstrong
-Chicago Cubs2,Matt Shaw
-Chicago Cubs3,Seiya Suzuki
-Chicago Cubs4,Alex Bregman
-Chicago Cubs5,Michael Busch
-Chicago Cubs6,Nico Hoerner
-Chicago Cubs7,Carson Kelly
-Chicago Cubs8,Pedro Ramirez
-Chicago Cubs9,Dansby Swanson
-Houston Astros1,Jose Altuve
-Houston Astros2,Yordan Alvarez
-Houston Astros3,Jeremy Pena
-Houston Astros4,Isaac Paredes
-Houston Astros5,Joey Loperfido
-Houston Astros6,Yainer Diaz
-Houston Astros7,Cam Smith
-Houston Astros8,Brice Matthews
-Houston Astros9,Raynel Delgado
-New York Mets1,Carson Benge
-New York Mets2,Francisco Lindor
-New York Mets3,Bo Bichette
-New York Mets4,Mark Vientos
-New York Mets5,Marcus Semien
-New York Mets6,Francisco Alvarez
-New York Mets7,Eric Wagaman
-New York Mets8,A.J. Ewing
-New York Mets9,Brett Baty
-New York Yankees1,Paul Goldschmidt
-New York Yankees2,Ben Rice
-New York Yankees3,Jasson Dominguez
-New York Yankees4,Cody Bellinger
-New York Yankees5,Anthony Volpe
-New York Yankees6,Jazz Chisholm Jr.
-New York Yankees7,Jose Caballero
-New York Yankees8,Austin Wells
-New York Yankees9,Max Schuemann
 Atlanta Braves1,Mauricio Dubon
 Atlanta Braves2,Michael Harris II
 Atlanta Braves3,Ozzie Albies
