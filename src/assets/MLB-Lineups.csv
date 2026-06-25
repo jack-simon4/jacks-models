@@ -1,4 +1,58 @@
 Team,Player
+Kansas City Royals1,Carter Jensen
+Kansas City Royals2,Nick Loftin
+Kansas City Royals3,Jac Caglianone
+Kansas City Royals4,Lane Thomas
+Kansas City Royals5,Josh Rojas
+Kansas City Royals6,Salvador Perez
+Kansas City Royals7,Isaac Collins
+Kansas City Royals8,Starling Marte
+Kansas City Royals9,Tyler Tolbert
+Tampa Bay Rays1,Yandy Diaz
+Tampa Bay Rays2,Jonathan Aranda
+Tampa Bay Rays3,Junior Caminero
+Tampa Bay Rays4,Richie Palacios
+Tampa Bay Rays5,Chandler Simpson
+Tampa Bay Rays6,Cedric Mullins
+Tampa Bay Rays7,Taylor Walls
+Tampa Bay Rays8,Victor Mesa Jr.
+Tampa Bay Rays9,Hunter Feduccia
+Seattle Mariners1,J.P. Crawford
+Seattle Mariners2,Cal Raleigh
+Seattle Mariners3,Julio Rodriguez
+Seattle Mariners4,Josh Naylor
+Seattle Mariners5,Randy Arozarena
+Seattle Mariners6,Luke Raley
+Seattle Mariners7,Cole Young
+Seattle Mariners8,Mitch Garver
+Seattle Mariners9,Colt Emerson
+Pittsburgh Pirates1,Jake Mangum
+Pittsburgh Pirates2,Brandon Lowe
+Pittsburgh Pirates3,Bryan Reynolds
+Pittsburgh Pirates4,Nick Gonzales
+Pittsburgh Pirates5,Ryan O'Hearn
+Pittsburgh Pirates6,Esmerlyn Valdez
+Pittsburgh Pirates7,Tyler Callihan
+Pittsburgh Pirates8,Jared Triolo
+Pittsburgh Pirates9,Henry Davis
+Athletics1,Henry Bolte
+Athletics2,Nick Kurtz
+Athletics3,Shea Langeliers
+Athletics4,Tyler Soderstrom
+Athletics5,Jonah Heim
+Athletics6,Lawrence Butler
+Athletics7,Max Muncy
+Athletics8,Jeff McNeil
+Athletics9,Alika Williams
+San Francisco Giants1,Matt Chapman
+San Francisco Giants2,Bryce Eldridge
+San Francisco Giants3,Casey Schmitt
+San Francisco Giants4,Rafael Devers
+San Francisco Giants5,Willy Adames
+San Francisco Giants6,Jung Hoo Lee
+San Francisco Giants7,Victor Bericoto
+San Francisco Giants8,Daniel Susac
+San Francisco Giants9,Jonah Cox
 Arizona Diamondbacks1,Ketel Marte
 Arizona Diamondbacks2,Geraldo Perdomo
 Arizona Diamondbacks3,Corbin Carroll
@@ -8,15 +62,6 @@ Arizona Diamondbacks6,Tommy Troy
 Arizona Diamondbacks7,Lourdes Gurriel Jr.
 Arizona Diamondbacks8,Ildemaro Vargas
 Arizona Diamondbacks9,LuJames Groover
-Athletics1,Henry Bolte
-Athletics2,Nick Kurtz
-Athletics3,Shea Langeliers
-Athletics4,Tyler Soderstrom
-Athletics5,Jacob Wilson
-Athletics6,Joey Meneses
-Athletics7,Lawrence Butler
-Athletics8,Max Muncy
-Athletics9,Jeff McNeil
 Boston Red Sox1,Nate Eaton
 Boston Red Sox2,Ceddanne Rafaela
 Boston Red Sox3,Wilyer Abreu
@@ -53,15 +98,6 @@ Houston Astros6,Yainer Diaz
 Houston Astros7,Cam Smith
 Houston Astros8,Brice Matthews
 Houston Astros9,Raynel Delgado
-Kansas City Royals1,Carter Jensen
-Kansas City Royals2,Nick Loftin
-Kansas City Royals3,Jac Caglianone
-Kansas City Royals4,Salvador Perez
-Kansas City Royals5,Michael Massey
-Kansas City Royals6,Isaac Collins
-Kansas City Royals7,John Rave
-Kansas City Royals8,Kameron Misner
-Kansas City Royals9,Tyler Tolbert
 New York Mets1,Carson Benge
 New York Mets2,Francisco Lindor
 New York Mets3,Bo Bichette
@@ -89,33 +125,6 @@ Philadelphia Phillies6,J.T. Realmuto
 Philadelphia Phillies7,Gabriel Rincones Jr.
 Philadelphia Phillies8,Edmundo Sosa
 Philadelphia Phillies9,Justin Crawford
-Pittsburgh Pirates1,Spencer Horwitz
-Pittsburgh Pirates2,Brandon Lowe
-Pittsburgh Pirates3,Bryan Reynolds
-Pittsburgh Pirates4,Nick Gonzales
-Pittsburgh Pirates5,Ryan O'Hearn
-Pittsburgh Pirates6,Endy Rodriguez
-Pittsburgh Pirates7,Tyler Callihan
-Pittsburgh Pirates8,Jake Mangum
-Pittsburgh Pirates9,Jared Triolo
-San Francisco Giants1,Matt Chapman
-San Francisco Giants2,Bryce Eldridge
-San Francisco Giants3,Casey Schmitt
-San Francisco Giants4,Rafael Devers
-San Francisco Giants5,Willy Adames
-San Francisco Giants6,Jung Hoo Lee
-San Francisco Giants7,Victor Bericoto
-San Francisco Giants8,Eric Haase
-San Francisco Giants9,Jonah Cox
-Seattle Mariners1,J.P. Crawford
-Seattle Mariners2,Cal Raleigh
-Seattle Mariners3,Julio Rodriguez
-Seattle Mariners4,Josh Naylor
-Seattle Mariners5,Randy Arozarena
-Seattle Mariners6,Dominic Canzone
-Seattle Mariners7,Luke Raley
-Seattle Mariners8,Cole Young
-Seattle Mariners9,Colt Emerson
 St. Louis Cardinals1,JJ Wetherholt
 St. Louis Cardinals2,Ivan Herrera
 St. Louis Cardinals3,Jordan Walker
@@ -125,15 +134,6 @@ St. Louis Cardinals6,Masyn Winn
 St. Louis Cardinals7,Lars Nootbaar
 St. Louis Cardinals8,Blaze Jordan
 St. Louis Cardinals9,Pedro Pages
-Tampa Bay Rays1,Yandy Diaz
-Tampa Bay Rays2,Jonny DeLuca
-Tampa Bay Rays3,Junior Caminero
-Tampa Bay Rays4,Ryan Vilade
-Tampa Bay Rays5,Jonathan Aranda
-Tampa Bay Rays6,Ben Williamson
-Tampa Bay Rays7,Taylor Walls
-Tampa Bay Rays8,Chandler Simpson
-Tampa Bay Rays9,Nick Fortes
 Texas Rangers1,Joc Pederson
 Texas Rangers2,Wyatt Langford
 Texas Rangers3,Josh Jung
