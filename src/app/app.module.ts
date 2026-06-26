@@ -32,8 +32,7 @@ import { SoccerSeoPageComponent } from './seo-pages/soccer-seo-page.component';
 import { WorldCupSeoPageComponent } from './seo-pages/world-cup-seo-page.component';
 import { HomeComponent } from './home/home.component';
 import { MlbPropsComponent } from './mlb-props/mlb-props.component';
-
-
+import { MlbTodayComponent } from './mlb-today/mlb-today.component';
 
 
 
@@ -57,7 +56,8 @@ import { MlbPropsComponent } from './mlb-props/mlb-props.component';
     SoccerSeoPageComponent,
     WorldCupSeoPageComponent,
       HomeComponent,
-    MlbPropsComponent
+    MlbPropsComponent,
+    MlbTodayComponent
   ],
   imports: [
     BrowserModule,

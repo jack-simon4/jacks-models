@@ -16,6 +16,7 @@ import { NcaafSeoPageComponent } from './seo-pages/ncaaf-seo-page.component';
 import { MlbSeoPageComponent } from './seo-pages/mlb-seo-page.component';
 import { MlbPropsComponent } from './mlb-props/mlb-props.component';
 import { NflSeoPageComponent } from './seo-pages/nfl-seo-page.component';
+import { MlbTodayComponent } from './mlb-today/mlb-today.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'results', component: ResultsComponent },
   { path: 'soccer-scoreboard', component: SoccerScoreboardComponent },
   { path: 'mlb-props', component: MlbPropsComponent },
+  { path: 'mlb-predictions-today', component: MlbTodayComponent },
 
   // SEO Landing Pages
   { path: 'nfl-predictions', component: NflSeoPageComponent },

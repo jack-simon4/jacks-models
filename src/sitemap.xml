@@ -40,6 +40,12 @@
   </url>
 
   <url>
+    <loc>https://jacksmodels.com/mlb-predictions-today</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
     <loc>https://jacksmodels.com/ncaaf-predictions</loc>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
