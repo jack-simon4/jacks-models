@@ -8,11 +8,31 @@
       Model-projected scores, win probabilities, and pitcher matchups for
       today's MLB slate — updated automatically each morning.
     </p>
+
+    <div class="accuracy-bar">
+      <div class="acc-stat">
+        <span class="acc-value">65%</span>
+        <span class="acc-label">Moneyline</span>
+      </div>
+      <div class="acc-stat">
+        <span class="acc-value">70%</span>
+        <span class="acc-label">Hit Props</span>
+      </div>
+      <div class="acc-stat">
+        <span class="acc-value">69</span>
+        <span class="acc-label">Games Tracked</span>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a routerLink="/scoreboard" class="btn-primary">Run Any Matchup →</a>
+      <a routerLink="/mlb-props" class="btn-outline">Player Props</a>
+    </div>
   </div>
 
-  <!-- Picks table -->
+  <!-- Picks -->
   <div class="section">
-    <h2>Today's Top Picks</h2>
+    <h2 class="section-title">Today's Top Picks</h2>
 
     <div *ngIf="loading" class="loading">Loading today's picks...</div>
 
@@ -21,128 +41,95 @@
       (usually by 11 AM ET).
     </div>
 
-    <div *ngIf="!loading && picks.length > 0">
-      <!-- Desktop table -->
-      <table class="picks-table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Matchup</th>
-            <th>Pitchers</th>
-            <th>Projected Score</th>
-            <th>Pick</th>
-            <th>Win Prob</th>
-            <th>Confidence</th>
-            <th>Time (ET)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let p of picks">
-            <td class="rank">{{ p.rank }}</td>
-            <td class="matchup">{{ p.awayTeam }} @ {{ p.homeTeam }}</td>
-            <td class="pitchers">
-              {{ p.awayPitcher }}<br>
-              <span class="vs-sep">vs</span><br>
-              {{ p.homePitcher }}
-            </td>
-            <td class="score">{{ p.predictedScore }}</td>
-            <td class="pick-cell">
-              <strong>{{ p.pick }}</strong>
-              <div class="odds">{{ p.odds }}</div>
-            </td>
-            <td class="prob">{{ (p.winProb * 100).toFixed(0) }}%</td>
-            <td><span class="conf-badge" [ngClass]="confidenceClass(p.confidence)">{{ p.confidence }}</span></td>
-            <td class="time">{{ formatTime(p.gameTime) }}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div *ngIf="!loading && picks.length > 0" class="picks-list">
+      <div class="pick-row" *ngFor="let p of picks">
 
-      <!-- Mobile cards -->
-      <div class="pick-cards">
-        <div class="pick-card" *ngFor="let p of picks">
-          <div class="card-header">
-            <span class="card-rank">#{{ p.rank }}</span>
-            <span class="conf-badge" [ngClass]="confidenceClass(p.confidence)">{{ p.confidence }}</span>
-          </div>
-          <div class="card-matchup">{{ p.awayTeam }} @ {{ p.homeTeam }}</div>
-          <div class="card-pitchers">{{ p.awayPitcher }} vs {{ p.homePitcher }}</div>
-          <div class="card-score">{{ p.predictedScore }}</div>
-          <div class="card-footer">
-            <span class="card-pick">Pick: <strong>{{ p.pick }}</strong> {{ p.odds }}</span>
-            <span class="card-prob">{{ (p.winProb * 100).toFixed(0) }}% win prob</span>
-          </div>
-          <div class="card-time">{{ formatTime(p.gameTime) }}</div>
+        <div class="p-rank">{{ p.rank }}</div>
+
+        <div class="p-info">
+          <div class="p-matchup">{{ p.awayTeam }} @ {{ p.homeTeam }}</div>
+          <div class="p-pitchers">{{ p.awayPitcher }} vs {{ p.homePitcher }}</div>
+          <div class="p-score">{{ p.predictedScore }}</div>
         </div>
+
+        <div class="p-pick-block">
+          <div class="p-pick-team">{{ p.pick }}</div>
+          <div class="p-odds">{{ p.odds }}</div>
+        </div>
+
+        <div class="p-prob">
+          <span class="prob-value">{{ (p.winProb * 100).toFixed(0) }}%</span>
+          <span class="prob-label">Win</span>
+        </div>
+
+        <div class="p-meta">
+          <span class="conf-badge" [ngClass]="confidenceClass(p.confidence)">{{ p.confidence }}</span>
+          <div class="p-time">{{ formatTime(p.gameTime) }}</div>
+        </div>
+
       </div>
     </div>
   </div>
 
   <!-- How to read -->
   <div class="section">
-    <h2>How to Read This Page</h2>
+    <h2 class="section-title">How to Read This Page</h2>
     <div class="explainer-grid">
       <div class="explainer-item">
         <div class="explainer-label">Projected Score</div>
-        <div class="explainer-desc">The model's expected final score for both teams based on starting pitchers, lineups, and ballpark.</div>
+        <div class="explainer-desc">Expected final score for both teams based on starting pitchers, lineups, and ballpark factors.</div>
       </div>
       <div class="explainer-item">
         <div class="explainer-label">Win Probability</div>
-        <div class="explainer-desc">The model's estimated chance that the picked team wins outright. Higher % = stronger lean.</div>
+        <div class="explainer-desc">The model's estimated chance the picked team wins outright. Higher % = stronger lean.</div>
       </div>
       <div class="explainer-item">
         <div class="explainer-label">Confidence</div>
-        <div class="explainer-desc">Elite (70%+), High (65–69%), Medium (60–64%), Low (&lt;60%) based on win probability.</div>
+        <div class="explainer-desc">Elite (70%+) · High (65–69%) · Medium (60–64%) · Low (&lt;60%) — based on win probability.</div>
       </div>
       <div class="explainer-item">
         <div class="explainer-label">Odds</div>
-        <div class="explainer-desc">The moneyline odds for the picked team from consensus sportsbook lines at time of generation.</div>
+        <div class="explainer-desc">Consensus moneyline for the picked team at time of generation. Compare to your book's line.</div>
       </div>
     </div>
   </div>
 
   <!-- Model inputs -->
   <div class="section">
-    <h2>What the Model Uses</h2>
-    <p>
-      Each pick is generated by the same engine powering the
+    <h2 class="section-title">What the Model Uses</h2>
+    <p style="color:#ccc; line-height:1.7; margin-bottom:0;">
+      Each pick is powered by the same engine behind the
       <a routerLink="/scoreboard" class="inline-link">scoreboard tool</a>.
-      For MLB, the model computes expected runs from:
+      The model projects expected runs from pitcher quality, lineup strength,
+      and how the ballpark affects scoring — then ranks picks by the gap
+      between model confidence and implied odds.
     </p>
     <div class="data-pills">
-      <span class="pill">Starting Pitcher FIP</span>
+      <span class="pill">Pitcher FIP</span>
       <span class="pill">WHIP</span>
       <span class="pill">Lineup wOBA</span>
       <span class="pill">ISO (Isolated Power)</span>
       <span class="pill">Ballpark Run Factor</span>
     </div>
-    <p style="margin-top: 16px;">
-      Lineups and pitchers are pulled from official sources each morning.
-      Top picks are sorted by model confidence — the largest gap between
-      projected win probability and the implied probability from the
-      moneyline odds.
-    </p>
   </div>
 
   <!-- FAQ -->
   <div class="section">
-    <h2>Frequently Asked Questions</h2>
+    <h2 class="section-title">FAQ</h2>
     <div class="faq-item">
-      <h3>When are today's picks posted?</h3>
-      <p>Picks are generated automatically as soon as starting lineups are
-         confirmed, typically between 9–11 AM ET. The page is refreshed
-         hourly throughout the day.</p>
+      <h3>When are picks posted?</h3>
+      <p>Picks are generated automatically once starting lineups are confirmed —
+         typically 9–11 AM ET. The page refreshes hourly throughout the day.</p>
     </div>
     <div class="faq-item">
-      <h3>How has this model performed historically?</h3>
-      <p>The MLB model has hit 65% on the moneyline across 69 tracked games.
-         See the <a routerLink="/results" class="inline-link">Results page</a>
-         for the full historical breakdown.</p>
+      <h3>How has the model performed?</h3>
+      <p>65% moneyline accuracy across 69 tracked games. See the full breakdown
+         on the <a routerLink="/results" class="inline-link">Results page</a>.</p>
     </div>
     <div class="faq-item">
       <h3>Can I run my own matchup?</h3>
       <p>Yes — the <a routerLink="/scoreboard" class="inline-link">scoreboard tool</a>
-         lets you pick any two teams and any pitcher combination to run your
-         own prediction instantly.</p>
+         lets you pick any two teams and any pitcher combination instantly.</p>
     </div>
     <div class="faq-item">
       <h3>Is this free?</h3>
@@ -151,8 +138,8 @@
   </div>
 
   <div class="cta-block">
-    <a routerLink="/scoreboard" class="btn">Run Your Own MLB Prediction →</a>
-    <a routerLink="/mlb-predictions" class="btn btn-secondary">MLB Model Overview</a>
+    <a routerLink="/scoreboard" class="btn-primary">Run Your Own MLB Prediction →</a>
+    <a routerLink="/mlb-predictions" class="btn-outline">MLB Model Overview</a>
   </div>
 
 </div>
