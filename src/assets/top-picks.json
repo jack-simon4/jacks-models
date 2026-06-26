@@ -6,13 +6,13 @@
     "awayPitcher": "Colin Rea",
     "homePitcher": "Jacob Misiorowski",
     "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -255",
-    "odds": "-255",
-    "winProb": 0.719,
-    "edge": 0.219,
+    "prediction": "Milwaukee Brewers -305",
+    "odds": "-305",
+    "winProb": 0.754,
+    "edge": 0.254,
     "confidence": "Elite",
-    "predictedScore": "Chicago Cubs 3.1 \u2013 Milwaukee Brewers 5.2",
-    "predictedHomeScore": 5.16,
+    "predictedScore": "Chicago Cubs 3.1 \u2013 Milwaukee Brewers 5.6",
+    "predictedHomeScore": 5.57,
     "predictedAwayScore": 3.08,
     "gameTime": "2026-06-26T23:45:00Z",
     "gamePk": 823773,
@@ -38,25 +38,6 @@
     "rank": 2
   },
   {
-    "matchup": "Kansas City Royals @ Chicago White Sox",
-    "awayTeam": "Kansas City Royals",
-    "homeTeam": "Chicago White Sox",
-    "awayPitcher": "Steven Cruz",
-    "homePitcher": "TBD",
-    "pick": "Chicago White Sox",
-    "prediction": "Chicago White Sox -190",
-    "odds": "-190",
-    "winProb": 0.657,
-    "edge": 0.157,
-    "confidence": "Elite",
-    "predictedScore": "Kansas City Royals 3.3 \u2013 Chicago White Sox 4.7",
-    "predictedHomeScore": 4.74,
-    "predictedAwayScore": 3.3,
-    "gameTime": "2026-06-26T23:40:00Z",
-    "gamePk": 824582,
-    "rank": 3
-  },
-  {
     "matchup": "Cincinnati Reds @ Pittsburgh Pirates",
     "awayTeam": "Cincinnati Reds",
     "homeTeam": "Pittsburgh Pirates",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 3.5,
     "gameTime": "2026-06-26T22:40:00Z",
     "gamePk": 823363,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Miami Marlins @ St. Louis Cardinals",
@@ -92,6 +73,25 @@
     "predictedAwayScore": 4.81,
     "gameTime": "2026-06-27T00:15:00Z",
     "gamePk": 823039,
+    "rank": 4
+  },
+  {
+    "matchup": "Texas Rangers @ Toronto Blue Jays",
+    "awayTeam": "Texas Rangers",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Nathan Eovaldi",
+    "homePitcher": "Patrick Corbin",
+    "pick": "Texas Rangers",
+    "prediction": "Texas Rangers -150",
+    "odds": "-150",
+    "winProb": 0.6,
+    "edge": 0.1,
+    "confidence": "Strong",
+    "predictedScore": "Texas Rangers 4.9 \u2013 Toronto Blue Jays 4.0",
+    "predictedHomeScore": 4.0,
+    "predictedAwayScore": 4.9,
+    "gameTime": "2026-06-26T23:07:00Z",
+    "gamePk": 822796,
     "rank": 5
   },
   {
@@ -114,42 +114,23 @@
     "rank": 6
   },
   {
-    "matchup": "Texas Rangers @ Toronto Blue Jays",
-    "awayTeam": "Texas Rangers",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "Nathan Eovaldi",
-    "homePitcher": "Patrick Corbin",
-    "pick": "Texas Rangers",
-    "prediction": "Texas Rangers -130",
-    "odds": "-130",
-    "winProb": 0.565,
-    "edge": 0.065,
-    "confidence": "Lean",
-    "predictedScore": "Texas Rangers 4.6 \u2013 Toronto Blue Jays 4.0",
-    "predictedHomeScore": 4.0,
-    "predictedAwayScore": 4.58,
-    "gameTime": "2026-06-26T23:07:00Z",
-    "gamePk": 822796,
-    "rank": 7
-  },
-  {
-    "matchup": "Washington Nationals @ Baltimore Orioles",
-    "awayTeam": "Washington Nationals",
-    "homeTeam": "Baltimore Orioles",
-    "awayPitcher": "Andrew Alvarez",
-    "homePitcher": "Trevor Rogers",
-    "pick": "Baltimore Orioles",
-    "prediction": "Baltimore Orioles -120",
-    "odds": "-120",
-    "winProb": 0.545,
-    "edge": 0.045,
-    "confidence": "Lean",
-    "predictedScore": "Washington Nationals 4.0 \u2013 Baltimore Orioles 4.4",
+    "matchup": "Kansas City Royals @ Chicago White Sox",
+    "awayTeam": "Kansas City Royals",
+    "homeTeam": "Chicago White Sox",
+    "awayPitcher": "Steven Cruz",
+    "homePitcher": "David Sandlin",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -140",
+    "odds": "-140",
+    "winProb": 0.583,
+    "edge": 0.083,
+    "confidence": "Strong",
+    "predictedScore": "Kansas City Royals 3.6 \u2013 Chicago White Sox 4.4",
     "predictedHomeScore": 4.39,
-    "predictedAwayScore": 3.99,
-    "gameTime": "2026-06-26T23:05:00Z",
-    "gamePk": 824824,
-    "rank": 8
+    "predictedAwayScore": 3.65,
+    "gameTime": "2026-06-26T23:40:00Z",
+    "gamePk": 824582,
+    "rank": 7
   },
   {
     "matchup": "Athletics @ Los Angeles Angels",
@@ -158,17 +139,17 @@
     "awayPitcher": "J.T. Ginn",
     "homePitcher": "Walbert Ure\u00f1a",
     "pick": "Los Angeles Angels",
-    "prediction": "Los Angeles Angels -120",
-    "odds": "-120",
-    "winProb": 0.543,
-    "edge": 0.043,
-    "confidence": "Lean",
-    "predictedScore": "Athletics 3.5 \u2013 Los Angeles Angels 3.9",
-    "predictedHomeScore": 3.91,
+    "prediction": "Los Angeles Angels -140",
+    "odds": "-140",
+    "winProb": 0.581,
+    "edge": 0.081,
+    "confidence": "Strong",
+    "predictedScore": "Athletics 3.5 \u2013 Los Angeles Angels 4.2",
+    "predictedHomeScore": 4.25,
     "predictedAwayScore": 3.52,
     "gameTime": "2026-06-27T01:38:00Z",
     "gamePk": 824014,
-    "rank": 9
+    "rank": 8
   },
   {
     "matchup": "Atlanta Braves @ San Francisco Giants",
@@ -187,7 +168,7 @@
     "predictedAwayScore": 2.92,
     "gameTime": "2026-06-27T02:15:00Z",
     "gamePk": 823206,
-    "rank": 10
+    "rank": 9
   },
   {
     "matchup": "Arizona Diamondbacks @ Tampa Bay Rays",
@@ -206,7 +187,7 @@
     "predictedAwayScore": 4.81,
     "gameTime": "2026-06-26T23:10:00Z",
     "gamePk": 822962,
-    "rank": 11
+    "rank": 10
   },
   {
     "matchup": "Seattle Mariners @ Cleveland Guardians",
@@ -225,26 +206,26 @@
     "predictedAwayScore": 4.2,
     "gameTime": "2026-06-26T23:10:00Z",
     "gamePk": 824423,
-    "rank": 12
+    "rank": 11
   },
   {
     "matchup": "Philadelphia Phillies @ New York Mets",
     "awayTeam": "Philadelphia Phillies",
     "homeTeam": "New York Mets",
     "awayPitcher": "Zack Wheeler",
-    "homePitcher": "TBD",
+    "homePitcher": "Zach Thornton",
     "pick": "Philadelphia Phillies",
     "prediction": "Philadelphia Phillies -115",
     "odds": "-115",
     "winProb": 0.532,
     "edge": 0.032,
     "confidence": "Lean",
-    "predictedScore": "Philadelphia Phillies 3.5 \u2013 New York Mets 3.2",
-    "predictedHomeScore": 3.24,
-    "predictedAwayScore": 3.53,
+    "predictedScore": "Philadelphia Phillies 3.9 \u2013 New York Mets 3.6",
+    "predictedHomeScore": 3.58,
+    "predictedAwayScore": 3.87,
     "gameTime": "2026-06-26T23:10:00Z",
     "gamePk": 823610,
-    "rank": 13
+    "rank": 12
   },
   {
     "matchup": "Los Angeles Dodgers @ San Diego Padres",
@@ -263,6 +244,6 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-06-27T01:45:00Z",
     "gamePk": 823285,
-    "rank": 14
+    "rank": 13
   }
 ]
