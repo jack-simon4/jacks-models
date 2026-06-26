@@ -133,25 +133,6 @@
     "rank": 7
   },
   {
-    "matchup": "Philadelphia Phillies @ New York Mets",
-    "awayTeam": "Philadelphia Phillies",
-    "homeTeam": "New York Mets",
-    "awayPitcher": "Zack Wheeler",
-    "homePitcher": "TBD",
-    "pick": "Philadelphia Phillies",
-    "prediction": "Philadelphia Phillies -130",
-    "odds": "-130",
-    "winProb": 0.57,
-    "edge": 0.07,
-    "confidence": "Lean",
-    "predictedScore": "Philadelphia Phillies 3.9 \u2013 New York Mets 3.2",
-    "predictedHomeScore": 3.24,
-    "predictedAwayScore": 3.87,
-    "gameTime": "2026-06-26T23:10:00Z",
-    "gamePk": 823610,
-    "rank": 8
-  },
-  {
     "matchup": "Washington Nationals @ Baltimore Orioles",
     "awayTeam": "Washington Nationals",
     "homeTeam": "Baltimore Orioles",
@@ -168,7 +149,7 @@
     "predictedAwayScore": 3.99,
     "gameTime": "2026-06-26T23:05:00Z",
     "gamePk": 824824,
-    "rank": 9
+    "rank": 8
   },
   {
     "matchup": "Athletics @ Los Angeles Angels",
@@ -187,7 +168,7 @@
     "predictedAwayScore": 3.52,
     "gameTime": "2026-06-27T01:38:00Z",
     "gamePk": 824014,
-    "rank": 10
+    "rank": 9
   },
   {
     "matchup": "Atlanta Braves @ San Francisco Giants",
@@ -206,7 +187,7 @@
     "predictedAwayScore": 2.92,
     "gameTime": "2026-06-27T02:15:00Z",
     "gamePk": 823206,
-    "rank": 11
+    "rank": 10
   },
   {
     "matchup": "Arizona Diamondbacks @ Tampa Bay Rays",
@@ -225,7 +206,7 @@
     "predictedAwayScore": 4.45,
     "gameTime": "2026-06-26T23:10:00Z",
     "gamePk": 822962,
-    "rank": 12
+    "rank": 11
   },
   {
     "matchup": "Seattle Mariners @ Cleveland Guardians",
@@ -244,6 +225,25 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-06-26T23:10:00Z",
     "gamePk": 824423,
+    "rank": 12
+  },
+  {
+    "matchup": "Philadelphia Phillies @ New York Mets",
+    "awayTeam": "Philadelphia Phillies",
+    "homeTeam": "New York Mets",
+    "awayPitcher": "Zack Wheeler",
+    "homePitcher": "TBD",
+    "pick": "Philadelphia Phillies",
+    "prediction": "Philadelphia Phillies -115",
+    "odds": "-115",
+    "winProb": 0.532,
+    "edge": 0.032,
+    "confidence": "Lean",
+    "predictedScore": "Philadelphia Phillies 3.5 \u2013 New York Mets 3.2",
+    "predictedHomeScore": 3.24,
+    "predictedAwayScore": 3.53,
+    "gameTime": "2026-06-26T23:10:00Z",
+    "gamePk": 823610,
     "rank": 13
   },
   {
