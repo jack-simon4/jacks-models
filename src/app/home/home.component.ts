@@ -36,8 +36,7 @@ export class HomeComponent implements OnInit {
   }
 
   private loadTopPicks() {
-    const url = `${environment.topPicksUrl}&_cb=${Date.now()}`;
-    this.http.get<TopPick[]>(url).subscribe({
+    this.http.get<TopPick[]>('assets/top-picks.json').subscribe({
       next: (picks) => {
         this.topPicks = (picks || []).slice(0, 5);
         this.topPicksLoading = false;
