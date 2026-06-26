@@ -1,0 +1,47 @@
+name: Update NFL Stats (Weekly)
+
+on:
+  schedule:
+    # Monday 2 AM ET (06:00 UTC) — captures Sunday afternoon + night games
+    - cron: '0 6 * * 2'
+    # Tuesday 2 AM ET (06:00 UTC) — captures Monday Night Football
+    - cron: '0 6 * * 3'
+  workflow_dispatch:
+
+jobs:
+  update-nfl:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch and update NFL team stats
+        run: python scripts/fetch_nfl_stats.py
+
+      - name: Commit updated NFL stats
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add src/assets/NFL-Stats.csv
+          if git diff --staged --quiet; then
+            echo "No NFL stat changes — nothing to commit."
+          else
+            git commit -m "chore: auto-update NFL stats $(date -u +%Y-%m-%d)"
+            git stash --include-untracked
+            git fetch origin main
+            git rebase origin/main
+            git stash pop || true
+            git push
+          fi
