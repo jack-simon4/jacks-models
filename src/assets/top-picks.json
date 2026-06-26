@@ -152,25 +152,6 @@
     "rank": 8
   },
   {
-    "matchup": "Atlanta Braves @ San Francisco Giants",
-    "awayTeam": "Atlanta Braves",
-    "homeTeam": "San Francisco Giants",
-    "awayPitcher": "Reynaldo L\u00f3pez",
-    "homePitcher": "TBD",
-    "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -115",
-    "odds": "-115",
-    "winProb": 0.537,
-    "edge": 0.037,
-    "confidence": "Lean",
-    "predictedScore": "Atlanta Braves 2.9 \u2013 San Francisco Giants 3.2",
-    "predictedHomeScore": 3.25,
-    "predictedAwayScore": 2.92,
-    "gameTime": "2026-06-27T02:15:00Z",
-    "gamePk": 823206,
-    "rank": 9
-  },
-  {
     "matchup": "Arizona Diamondbacks @ Tampa Bay Rays",
     "awayTeam": "Arizona Diamondbacks",
     "homeTeam": "Tampa Bay Rays",
@@ -187,7 +168,7 @@
     "predictedAwayScore": 4.81,
     "gameTime": "2026-06-26T23:10:00Z",
     "gamePk": 822962,
-    "rank": 10
+    "rank": 9
   },
   {
     "matchup": "Seattle Mariners @ Cleveland Guardians",
@@ -206,7 +187,7 @@
     "predictedAwayScore": 4.2,
     "gameTime": "2026-06-26T23:10:00Z",
     "gamePk": 824423,
-    "rank": 11
+    "rank": 10
   },
   {
     "matchup": "Philadelphia Phillies @ New York Mets",
@@ -225,7 +206,7 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-06-26T23:10:00Z",
     "gamePk": 823610,
-    "rank": 12
+    "rank": 11
   },
   {
     "matchup": "Los Angeles Dodgers @ San Diego Padres",
@@ -244,6 +225,6 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-06-27T01:45:00Z",
     "gamePk": 823285,
-    "rank": 13
+    "rank": 12
   }
 ]
