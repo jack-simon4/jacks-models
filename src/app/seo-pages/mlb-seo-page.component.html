@@ -1,9 +1,109 @@
-﻿<div class="seo-container">
-  <h1>MLB Predictions</h1>
-  <p>
-    Get MLB game predictions for any matchup. Select two teams and view
-    model-projected scores.
-  </p>
-  <a routerLink="/scoreboard" class="btn">Open MLB Model</a>
-</div>
+<div class="seo-container">
 
+  <!-- Hero -->
+  <div class="hero">
+    <h1>MLB Predictions Today</h1>
+    <p class="subtitle">
+      Free stat-driven MLB game predictions powered by Jack's Models. The model
+      projects runs scored for any matchup using starting pitcher quality,
+      lineup strength, and ballpark factors — updated daily with today's
+      pitching matchups.
+    </p>
+    <a routerLink="/scoreboard" class="btn">Run an MLB Prediction →</a>
+    <a routerLink="/mlb-props" class="btn btn-secondary">Player Props →</a>
+  </div>
+
+  <!-- Accuracy -->
+  <div class="section">
+    <h2>Model Accuracy</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-value">65%</span>
+        <span class="stat-label">Moneyline</span>
+        <div class="stat-sub">69 recorded games</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">70%</span>
+        <span class="stat-label">Hit Prop (0.5+ hits green)</span>
+        <div class="stat-sub">batter hit probability</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">52%</span>
+        <span class="stat-label">Total Bases (1.5+ TB)</span>
+        <div class="stat-sub">extra-base hit model</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="section">
+    <h2>How the MLB Model Works</h2>
+    <p>
+      The model evaluates each game from both sides of the battery. On the
+      pitching side it uses FIP (Fielding Independent Pitching) and WHIP to
+      measure how well a starter limits baserunners independent of defense.
+      Lower FIP means fewer expected runs allowed.
+    </p>
+    <p>
+      On the offensive side, the model uses wOBA (Weighted On-Base Average)
+      and ISO (Isolated Power) for each lineup to measure true offensive
+      output. These are then adjusted for the ballpark being played in — a
+      game at Coors Field is modeled differently than one at Petco Park.
+    </p>
+    <p>
+      The final run totals are weighted against the opposing pitcher and
+      defense, giving you a projected score with win probability for each
+      team.
+    </p>
+    <div class="data-pills">
+      <span class="pill">Starting Pitcher FIP</span>
+      <span class="pill">WHIP</span>
+      <span class="pill">Lineup wOBA</span>
+      <span class="pill">ISO (Isolated Power)</span>
+      <span class="pill">Ballpark Factors</span>
+      <span class="pill">Win Probability</span>
+    </div>
+  </div>
+
+  <!-- Player props -->
+  <div class="section">
+    <h2>MLB Player Props</h2>
+    <p>
+      Beyond game totals, the model generates individual player prop
+      probabilities every morning. Each batter is evaluated for:
+    </p>
+    <div class="data-pills">
+      <span class="pill">Hit Probability (0.5+ hits)</span>
+      <span class="pill">Home Run %</span>
+      <span class="pill">Expected Total Bases</span>
+    </div>
+    <p style="margin-top: 14px;">
+      The top-rated props are listed on the homepage and updated automatically
+      before first pitch.
+    </p>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How often is the MLB model updated?</h3>
+      <p>Pitcher stats and lineup data are refreshed every morning automatically.
+         The top picks reflect today's confirmed starting pitchers.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does the model account for bullpen usage?</h3>
+      <p>The current model focuses on starting pitcher quality. Bullpen depth
+         is implicitly reflected in team-level defensive stats.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is this free to use?</h3>
+      <p>Yes — Jack's Models is completely free. No signup, no paywall.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <a routerLink="/scoreboard" class="btn">Run Today's MLB Prediction →</a>
+  </div>
+
+</div>

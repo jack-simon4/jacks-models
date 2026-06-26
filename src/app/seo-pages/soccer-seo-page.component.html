@@ -1,8 +1,109 @@
 <div class="seo-container">
-  <h1>Soccer Predictions</h1>
-  <p>
-    Pick any two soccer teams and get instant model-generated score
-    predictions.
-  </p>
-  <a routerLink="/soccer-scoreboard" class="btn">Open Soccer Model</a>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Soccer Predictions &amp; EPL Picks</h1>
+    <p class="subtitle">
+      Free soccer and EPL predictions from Jack's Models. The model uses
+      expected goals (xG), goals per game, and possession stats to project
+      scorelines for any club or international matchup.
+    </p>
+    <a routerLink="/soccer-scoreboard" class="btn">Run a Soccer Prediction →</a>
+  </div>
+
+  <!-- Accuracy -->
+  <div class="section">
+    <h2>Model Accuracy</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-value">68%</span>
+        <span class="stat-label">Tie No Bet</span>
+        <div class="stat-sub">112 recorded games</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">60-28-24</span>
+        <span class="stat-label">Win-Loss-Draw Record</span>
+        <div class="stat-sub">full match record</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">112</span>
+        <span class="stat-label">Games Tracked</span>
+        <div class="stat-sub">club &amp; international</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="section">
+    <h2>How the Soccer Model Works</h2>
+    <p>
+      Soccer prediction is uniquely difficult because low-scoring games mean
+      a single defensive error can invalidate an otherwise accurate model.
+      Jack's Models tackles this with expected goals (xG) — a shot-quality
+      metric that measures how many goals a team <em>should</em> have scored
+      based on shot location, type, and defensive pressure, rather than just
+      how many they actually scored.
+    </p>
+    <p>
+      The model combines xG with goals scored, goals conceded, and possession
+      percentage to build an offensive and defensive strength rating for each
+      club. These ratings are then matched against each other to project a
+      final expected scoreline.
+    </p>
+    <p>
+      Home field advantage is built in — home sides in the EPL score
+      meaningfully more goals per game than away sides, and the model
+      applies a per-team home adjustment based on historical data.
+    </p>
+    <div class="data-pills">
+      <span class="pill">Expected Goals (xG)</span>
+      <span class="pill">Goals For / Against</span>
+      <span class="pill">Possession %</span>
+      <span class="pill">Shots on Target</span>
+      <span class="pill">Home / Away Split</span>
+    </div>
+  </div>
+
+  <!-- Competitions -->
+  <div class="section">
+    <h2>Competitions Covered</h2>
+    <p>
+      The soccer model covers club football (English Premier League and other
+      top European leagues) as well as international matches. It is also the
+      same engine powering the 2026 FIFA World Cup predictions — 48 national
+      teams rated on international goals data weighted by opponent quality.
+    </p>
+    <a routerLink="/world-cup-predictions" style="color:#1e90ff;">
+      → See 2026 World Cup Predictions
+    </a>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What does "Tie No Bet" mean?</h3>
+      <p>Tie No Bet is a common soccer betting market where your stake is
+         refunded if the match ends in a draw. The model hits 68% on this
+         market, meaning it correctly identifies the winning side in
+         non-draw matches at a solid rate.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does the model predict over/under goals?</h3>
+      <p>The model outputs a projected scoreline for both teams, which gives
+         you an implied total. You can compare this directly to a bookmaker's
+         Over/Under line.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I predict Champions League games?</h3>
+      <p>Yes — select any two clubs from the soccer scoreboard to run a
+         prediction. The tool works for any club matchup regardless of
+         competition.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <a routerLink="/soccer-scoreboard" class="btn">Run a Soccer Prediction →</a>
+  </div>
+
 </div>

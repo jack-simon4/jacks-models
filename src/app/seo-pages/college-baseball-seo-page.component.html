@@ -1,9 +1,106 @@
-﻿<div class="seo-container">
-  <h1>College Baseball Predictions</h1>
-  <p>
-    Input any two NCAA baseball teams to generate model-based score
-    predictions.
-  </p>
-  <a routerLink="/scoreboard" class="btn">Open College Baseball Model</a>
-</div>
+<div class="seo-container">
 
+  <!-- Hero -->
+  <div class="hero">
+    <h1>College Baseball Predictions</h1>
+    <p class="subtitle">
+      Free NCAA Baseball game predictions from Jack's Models. The model
+      projects runs scored for any college baseball matchup using ERA, offense
+      ratings, and ballpark context — the highest moneyline accuracy of any
+      sport on the site.
+    </p>
+    <a routerLink="/scoreboard" class="btn">Run a College Baseball Prediction →</a>
+  </div>
+
+  <!-- Accuracy -->
+  <div class="section">
+    <h2>Model Accuracy</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-value">76%</span>
+        <span class="stat-label">Moneyline</span>
+        <div class="stat-sub">237 recorded games</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">237</span>
+        <span class="stat-label">Games Tracked</span>
+        <div class="stat-sub">full season sample</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">#1</span>
+        <span class="stat-label">Highest Accuracy Sport</span>
+        <div class="stat-sub">vs. all other sports</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="section">
+    <h2>How the College Baseball Model Works</h2>
+    <p>
+      College baseball has the widest talent spread across its bracket field,
+      which is why the model hits 76% on the moneyline — the highest of any
+      sport tracked on Jack's Models. Regional powerhouses like Arkansas,
+      LSU, and Vanderbilt are modeled very differently from smaller conference
+      programs.
+    </p>
+    <p>
+      The model evaluates each team's offensive production (runs scored per
+      game, batting average, slugging percentage) against the opposing
+      pitcher's ERA and WHIP. Home park context is applied to adjust for
+      stadiums that play significantly differently for run-scoring.
+    </p>
+    <p>
+      Because college baseball seasons are long and teams play conference
+      series on back-to-back days, the model uses rolling averages that
+      capture recent form rather than just season-long stats.
+    </p>
+    <div class="data-pills">
+      <span class="pill">Team ERA</span>
+      <span class="pill">WHIP</span>
+      <span class="pill">Runs Per Game</span>
+      <span class="pill">Batting Average</span>
+      <span class="pill">Offensive Rating</span>
+      <span class="pill">Home Field Factor</span>
+    </div>
+  </div>
+
+  <!-- Season timing -->
+  <div class="section">
+    <h2>When Is College Baseball Season?</h2>
+    <p>
+      The NCAA Baseball season runs February through June, culminating in the
+      College World Series in Omaha. The model is active throughout the
+      regular season, conference tournaments, and the NCAA Regional, Super
+      Regional, and CWS rounds.
+    </p>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Why is college baseball the most accurate sport on the site?</h3>
+      <p>College baseball has larger gaps in team quality than most sports,
+         especially during the NCAA Tournament when top national seeds play
+         smaller conference teams in regional rounds. The model correctly
+         identifies heavy favorites more often than in even-field sports
+         like the NFL.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How many college baseball teams are supported?</h3>
+      <p>The model covers all major Division I programs. Select any two teams
+         from the scoreboard's College Baseball dropdown to run a prediction.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does the model account for the starting pitcher?</h3>
+      <p>Yes — pitcher ERA and WHIP are primary inputs. Weekend ace vs. mid-week
+         starter differences are reflected in the team's pitching stats.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <a routerLink="/scoreboard" class="btn">Run a College Baseball Prediction →</a>
+  </div>
+
+</div>

@@ -1,8 +1,107 @@
-﻿<div class="seo-container">
-  <h1>NCAAM Predictions</h1>
-  <p>
-    Input any two college basketball teams and get model-projected scores.
-  </p>
-  <a routerLink="/scoreboard" class="btn">Open NCAAM Model</a>
-</div>
+<div class="seo-container">
 
+  <!-- Hero -->
+  <div class="hero">
+    <h1>College Basketball Predictions</h1>
+    <p class="subtitle">
+      Free NCAAM game predictions from Jack's Models. The model uses
+      offensive and defensive efficiency, pace, and spread data to project
+      scores for any college basketball matchup — all Division I teams
+      supported.
+    </p>
+    <a routerLink="/scoreboard" class="btn">Run a College Basketball Prediction →</a>
+  </div>
+
+  <!-- Accuracy -->
+  <div class="section">
+    <h2>Model Accuracy</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-value">73%</span>
+        <span class="stat-label">Moneyline</span>
+        <div class="stat-sub">1,203 recorded games</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">54%</span>
+        <span class="stat-label">Against the Spread</span>
+        <div class="stat-sub">covers tracked</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">1,203</span>
+        <span class="stat-label">Games Tracked</span>
+        <div class="stat-sub">largest total sample</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="section">
+    <h2>How the NCAAM Model Works</h2>
+    <p>
+      College basketball has even wider talent gaps than the NBA, which is why
+      the model achieves its highest moneyline accuracy (73%) in this sport.
+      The model rates each team's offensive and defensive efficiency relative
+      to the Division I average, so games between ranked programs and mid-major
+      opponents are correctly priced.
+    </p>
+    <p>
+      Pace is a major factor in college basketball scoring. Tempo-adjusted
+      stats prevent teams that score a lot simply because they play fast from
+      being rated higher than efficient, slower-paced teams. The model projects
+      the number of possessions in the game and applies each team's per-possession
+      efficiency to get to a final score.
+    </p>
+    <p>
+      The model also incorporates each team's strength of schedule so that an
+      undefeated record against weak competition is weighted less heavily than
+      the same record against major-conference opponents.
+    </p>
+    <div class="data-pills">
+      <span class="pill">Offensive Efficiency</span>
+      <span class="pill">Defensive Efficiency</span>
+      <span class="pill">Pace (Possessions / 40 min)</span>
+      <span class="pill">Strength of Schedule</span>
+      <span class="pill">Points per Possession</span>
+      <span class="pill">Home Court Advantage</span>
+    </div>
+  </div>
+
+  <!-- March Madness -->
+  <div class="section">
+    <h2>March Madness Predictions</h2>
+    <p>
+      The NCAA Tournament is the most popular bracket event in sports. The
+      model covers all 68 tournament teams and can project any first-round,
+      Sweet 16, Elite Eight, Final Four, or championship game. Because the
+      model is built on season-long efficiency data rather than seeding alone,
+      it often identifies mismatches the bracket lines miss.
+    </p>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Why is NCAAM moneyline accuracy the highest at 73%?</h3>
+      <p>College basketball has the most extreme talent spread of any sport
+         on the site. A No. 1 seed vs. a No. 16 seed is a near-certain
+         outcome. The model's strength is correctly identifying large talent
+         gaps, which are more common in college than pro sports.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does the model cover women's basketball (NCAAW)?</h3>
+      <p>Currently the model covers the men's Division I tournament and regular
+         season. NCAAW support is planned for a future update.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How many teams are in the model?</h3>
+      <p>The model covers all major Division I programs. Select any two teams
+         from the scoreboard dropdown to run an instant prediction.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <a routerLink="/scoreboard" class="btn">Run a College Basketball Prediction →</a>
+  </div>
+
+</div>

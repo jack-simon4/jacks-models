@@ -1,10 +1,102 @@
-﻿<div class="seo-container">
-  <h1>NFL Predictions</h1>
-  <p>
-    Use the Jack's Models NFL prediction tool to input any two teams and
-    instantly get data-driven score predictions.
-  </p>
-  <a routerLink="/scoreboard" class="btn">Open NFL Model</a>
+<div class="seo-container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>NFL Score Predictions</h1>
+    <p class="subtitle">
+      Free data-driven NFL game predictions from Jack's Models. The model
+      uses rushing efficiency, passing efficiency, plays per game, and home
+      field advantage to project final scores for any NFL matchup.
+    </p>
+    <a routerLink="/scoreboard" class="btn">Run an NFL Prediction →</a>
+  </div>
+
+  <!-- Accuracy -->
+  <div class="section">
+    <h2>Model Accuracy</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-value">68%</span>
+        <span class="stat-label">Moneyline</span>
+        <div class="stat-sub">116 recorded games</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">53%</span>
+        <span class="stat-label">Against the Spread</span>
+        <div class="stat-sub">covers tracked</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">55%</span>
+        <span class="stat-label">Over / Under</span>
+        <div class="stat-sub">total accuracy</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="section">
+    <h2>How the NFL Model Works</h2>
+    <p>
+      The model processes 14 team-level stats for all 32 NFL teams, updated
+      weekly after each game. Rushing yards per attempt and passing yards per
+      attempt are compared against opponent defensive averages to project how
+      many yards each offense will generate.
+    </p>
+    <p>
+      Yards are then converted to points using each team's offensive yards per
+      point — a measure of scoring efficiency. Teams that produce the same
+      yards but score more (fewer penalties, better red zone conversion) are
+      reflected as more efficient.
+    </p>
+    <p>
+      At the start of a new season, the model blends current-season data with
+      last year's stats to avoid over-weighting small early-season samples.
+      As more games are played, the blend shifts entirely to current data.
+    </p>
+    <div class="data-pills">
+      <span class="pill">Rush Yds / Attempt</span>
+      <span class="pill">Pass Yds / Attempt</span>
+      <span class="pill">Plays per Game</span>
+      <span class="pill">Points per Play</span>
+      <span class="pill">Total Yards per Point</span>
+      <span class="pill">Home Field Advantage</span>
+    </div>
+  </div>
+
+  <!-- Season timing -->
+  <div class="section">
+    <h2>When Is NFL Season?</h2>
+    <p>
+      The NFL regular season runs September through January, with the playoffs
+      extending through the Super Bowl in February. The model is most accurate
+      mid-season (Weeks 5–18) once teams have established reliable statistical
+      profiles. All 32 teams are supported.
+    </p>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How often are NFL team stats updated?</h3>
+      <p>Stats are automatically updated every Monday and Tuesday to capture
+         Sunday games and Monday Night Football.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does the model include injuries?</h3>
+      <p>Injuries are not currently modeled explicitly. The stats reflect each
+         team's recent performance, which inherently captures the effect of key
+         player absences over the last several games.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I use this for playoff games?</h3>
+      <p>Yes — select any two NFL teams in the scoreboard tool regardless of
+         the type of game.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <a routerLink="/scoreboard" class="btn">Run an NFL Prediction →</a>
+  </div>
+
 </div>
-
-

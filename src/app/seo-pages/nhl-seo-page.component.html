@@ -1,7 +1,102 @@
-﻿<div class="seo-container">
-  <h1>NHL Predictions</h1>
-  <p>
-    Explore matchups for any NHL teams with immediate model predictions.
-  </p>
-  <a routerLink="/scoreboard" class="btn">Open NHL Model</a>
+<div class="seo-container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>NHL Score Predictions</h1>
+    <p class="subtitle">
+      Free NHL game predictions from Jack's Models. The model projects goals
+      for any NHL matchup using team-level scoring rates, goalie quality,
+      and power play efficiency — all 32 teams supported.
+    </p>
+    <a routerLink="/scoreboard" class="btn">Run an NHL Prediction →</a>
+  </div>
+
+  <!-- Accuracy -->
+  <div class="section">
+    <h2>Model Accuracy</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-value">60%</span>
+        <span class="stat-label">Moneyline</span>
+        <div class="stat-sub">671 recorded games</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">58%</span>
+        <span class="stat-label">Favored Value Picks</span>
+        <div class="stat-sub">+22 units</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">671</span>
+        <span class="stat-label">Games Tracked</span>
+        <div class="stat-sub">largest sample size</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="section">
+    <h2>How the NHL Model Works</h2>
+    <p>
+      Hockey scoring is low-variance, which makes goalie quality one of the
+      most important predictive inputs. The model incorporates save percentage
+      and goals-against average for starting goalies to estimate how many
+      shots translate to goals.
+    </p>
+    <p>
+      On the offensive side, goals scored per game, shots on goal, and power
+      play percentage are combined to produce an offensive output rating for
+      each team. The model also factors in Corsi (shot attempt differential) as
+      a proxy for puck possession and territorial control.
+    </p>
+    <p>
+      Home ice advantage in hockey is among the strongest in professional
+      sports, and the model applies a per-team home adjustment based on
+      historical scoring differentials.
+    </p>
+    <div class="data-pills">
+      <span class="pill">Goals For / Against</span>
+      <span class="pill">Save Percentage</span>
+      <span class="pill">Goals Against Average</span>
+      <span class="pill">Power Play %</span>
+      <span class="pill">Corsi (Shot Differential)</span>
+      <span class="pill">Home Ice Advantage</span>
+    </div>
+  </div>
+
+  <!-- Season timing -->
+  <div class="section">
+    <h2>When Is NHL Season?</h2>
+    <p>
+      The NHL regular season runs October through April, with the Stanley Cup
+      Playoffs extending through June. The model tracks all 32 teams across
+      both the regular season and playoffs.
+    </p>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Does the model know which goalie is starting?</h3>
+      <p>You can select a starting goalie for each team from the scoreboard
+         tool. The goalie's save percentage and GAA are factored into the
+         projected goal totals.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Why does NHL have the largest sample size?</h3>
+      <p>The NHL model has been tracking predictions the longest — 671 games
+         across multiple seasons — giving it the most statistically reliable
+         accuracy figures of any sport on the site.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can the model predict overtime results?</h3>
+      <p>The model projects regulation scoring. Overtime and shootout outcomes
+         are essentially coin-flips and are not separately modeled.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <a routerLink="/scoreboard" class="btn">Run an NHL Prediction →</a>
+  </div>
+
 </div>

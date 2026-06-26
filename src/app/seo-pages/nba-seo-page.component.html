@@ -1,8 +1,99 @@
-﻿<div class="seo-container">
-  <h1>NBA Predictions</h1>
-  <p>
-    Get instant NBA score projections by selecting any two teams.
-  </p>
-  <a routerLink="/scoreboard" class="btn">Open NBA Model</a>
-</div>
+<div class="seo-container">
 
+  <!-- Hero -->
+  <div class="hero">
+    <h1>NBA Game Predictions</h1>
+    <p class="subtitle">
+      Free NBA score predictions powered by Jack's Models. The model uses
+      offensive and defensive ratings, pace, and efficiency metrics to project
+      totals for any NBA matchup — all 30 teams supported.
+    </p>
+    <a routerLink="/scoreboard" class="btn">Run an NBA Prediction →</a>
+  </div>
+
+  <!-- Accuracy -->
+  <div class="section">
+    <h2>Model Accuracy</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-value">59%</span>
+        <span class="stat-label">Moneyline</span>
+        <div class="stat-sub">400 recorded games</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">51%</span>
+        <span class="stat-label">Against the Spread</span>
+        <div class="stat-sub">covers tracked</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">53%</span>
+        <span class="stat-label">Over / Under</span>
+        <div class="stat-sub">total accuracy</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="section">
+    <h2>How the NBA Model Works</h2>
+    <p>
+      NBA scoring is driven by pace (possessions per 48 minutes) and
+      efficiency (points per possession). The model computes an offensive
+      rating for each team — how many points they score per 100 possessions —
+      and compares it against the opponent's defensive rating, how many points
+      they allow per 100 possessions.
+    </p>
+    <p>
+      The projected score is derived from the expected number of possessions
+      in the game (a function of both teams' pace) multiplied by the blended
+      offensive/defensive efficiency. This gives a points total for each team
+      that accounts for both how fast and how well they play.
+    </p>
+    <div class="data-pills">
+      <span class="pill">Offensive Rating</span>
+      <span class="pill">Defensive Rating</span>
+      <span class="pill">Pace (Possessions / 48 min)</span>
+      <span class="pill">Points per Possession</span>
+      <span class="pill">Home Court Advantage</span>
+    </div>
+  </div>
+
+  <!-- Season timing -->
+  <div class="section">
+    <h2>When Is NBA Season?</h2>
+    <p>
+      The NBA regular season runs October through April, followed by the
+      playoffs in May and June. The model covers all 30 teams throughout the
+      regular season and postseason. Early-season predictions blend current
+      stats with prior-year data until teams have played enough games for
+      reliable ratings.
+    </p>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Does the model account for rest days?</h3>
+      <p>Rest advantage is not explicitly modeled, but team efficiency stats
+         reflect each team's rolling performance, which correlates with
+         scheduling load.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I predict playoff series outcomes?</h3>
+      <p>The model predicts individual game scores. You can run the same
+         matchup multiple times to simulate a series and track projected
+         winners.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How accurate are NBA totals (over/under)?</h3>
+      <p>The model hits 53% on over/under predictions across 400 tracked games,
+         slightly above the break-even threshold.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <a routerLink="/scoreboard" class="btn">Run an NBA Prediction →</a>
+  </div>
+
+</div>

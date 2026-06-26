@@ -1,9 +1,110 @@
-﻿<div class="seo-container">
-  <h1>NCAAF Predictions</h1>
-  <p>
-    Predict any college football matchup using the Jack's Models NCAAF
-    engine.
-  </p>
-  <a routerLink="/scoreboard" class="btn">Open NCAAF Model</a>
-</div>
+<div class="seo-container">
 
+  <!-- Hero -->
+  <div class="hero">
+    <h1>College Football Predictions</h1>
+    <p class="subtitle">
+      Free NCAAF game predictions from Jack's Models. The model covers all
+      136 FBS teams using strength-of-schedule-weighted yards per play,
+      offensive and defensive ratings, and pace — updated weekly throughout
+      the college football season.
+    </p>
+    <a routerLink="/scoreboard" class="btn">Run a College Football Prediction →</a>
+  </div>
+
+  <!-- Accuracy -->
+  <div class="section">
+    <h2>Model Accuracy</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-value">70%</span>
+        <span class="stat-label">Moneyline</span>
+        <div class="stat-sub">535 recorded games</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">59%</span>
+        <span class="stat-label">Home Dog ATS</span>
+        <div class="stat-sub">underdog cover rate</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">64%</span>
+        <span class="stat-label">Extreme Totals O/U</span>
+        <div class="stat-sub">high/low total games</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="section">
+    <h2>How the NCAAF Model Works</h2>
+    <p>
+      College football has enormous variance in team quality — the gap between
+      a Power Four contender and a Group of Five bottom-dweller is far wider
+      than in the NFL. The model handles this by rating each team's offense
+      and defense relative to the national average (oRating and dRating), so
+      mismatches are priced in automatically.
+    </p>
+    <p>
+      The core efficiency metric is yards per play, weighted by strength of
+      schedule (SOS) so teams that put up big numbers against weak competition
+      aren't overvalued. A recent-game weighting blends the season average
+      with the last three games (65% season / 35% recent) to capture
+      in-season trends like a team hitting its stride or dealing with injuries.
+    </p>
+    <p>
+      Scoring efficiency — yards per point — adjusts for teams that move the
+      ball well but stall in the red zone versus teams that punch it in
+      efficiently. Plays per game adjusts for tempo, since some teams run 85+
+      plays and others grind out 60-play games.
+    </p>
+    <div class="data-pills">
+      <span class="pill">SOS-Weighted Yds/Play</span>
+      <span class="pill">Offensive Rating</span>
+      <span class="pill">Defensive Rating</span>
+      <span class="pill">Yards per Point</span>
+      <span class="pill">Plays per Game</span>
+      <span class="pill">Last 3 Games</span>
+      <span class="pill">Home Field Advantage</span>
+    </div>
+  </div>
+
+  <!-- Teams -->
+  <div class="section">
+    <h2>All 136 FBS Teams Covered</h2>
+    <p>
+      The model covers every FBS program across all conferences: SEC, Big Ten,
+      Big 12, ACC, Pac-12, American Athletic, Mountain West, Sun Belt,
+      Conference USA, MAC, and independents. Stats are auto-updated each week
+      after Saturday's games.
+    </p>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Why is college football moneyline accuracy so high at 70%?</h3>
+      <p>FBS has extreme talent gaps. Predicting that Alabama beats a mid-major
+         is easier than predicting NFL outcomes where teams are more evenly
+         matched. The model's biggest edge is correctly sizing those mismatches
+         rather than picking 50/50 games.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does the model work for bowl games and the CFP?</h3>
+      <p>Yes — select any two FBS teams in the scoreboard. The model uses
+         season-long stats so it performs well in bowl matchups even when teams
+         haven't played each other.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How does the model handle early-season games?</h3>
+      <p>In Weeks 1–8, the model blends current-season stats with last year's
+         data to avoid over-weighting a small sample. By Week 8–9, current
+         stats take full precedence.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <a routerLink="/scoreboard" class="btn">Run a College Football Prediction →</a>
+  </div>
+
+</div>
