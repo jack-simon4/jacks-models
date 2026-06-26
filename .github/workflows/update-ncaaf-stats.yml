@@ -1,0 +1,49 @@
+name: Update NCAAF Stats (Weekly)
+
+on:
+  schedule:
+    # Sunday 2 AM ET (06:00 UTC) — captures all Saturday games
+    - cron: '0 6 * * 0'
+    # Monday 2 AM ET (06:00 UTC) — fallback for any Sunday evening games
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  update-ncaaf:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch and update NCAAF team stats
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python scripts/fetch_ncaaf_stats.py
+
+      - name: Commit updated NCAAF stats
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add src/assets/NCAAF-Stats.csv
+          if git diff --staged --quiet; then
+            echo "No NCAAF stat changes — nothing to commit."
+          else
+            git commit -m "chore: auto-update NCAAF stats $(date -u +%Y-%m-%d)"
+            git stash --include-untracked
+            git fetch origin main
+            git rebase origin/main
+            git stash pop || true
+            git push
+          fi
