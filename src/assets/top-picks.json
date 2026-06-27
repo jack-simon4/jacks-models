@@ -6,14 +6,14 @@
     "awayPitcher": "Cal Quantrill",
     "homePitcher": "Dylan Cease",
     "pick": "Toronto Blue Jays",
-    "prediction": "Toronto Blue Jays -320",
-    "odds": "-320",
-    "winProb": 0.762,
-    "edge": 0.262,
+    "prediction": "Toronto Blue Jays -240",
+    "odds": "-240",
+    "winProb": 0.707,
+    "edge": 0.207,
     "confidence": "Elite",
-    "predictedScore": "Texas Rangers 3.0 \u2013 Toronto Blue Jays 5.6",
-    "predictedHomeScore": 5.59,
-    "predictedAwayScore": 3.0,
+    "predictedScore": "Texas Rangers 3.3 \u2013 Toronto Blue Jays 5.3",
+    "predictedHomeScore": 5.27,
+    "predictedAwayScore": 3.32,
     "gameTime": "2026-06-27T19:07:00Z",
     "gamePk": 822794,
     "rank": 1
@@ -38,25 +38,6 @@
     "rank": 2
   },
   {
-    "matchup": "Cincinnati Reds @ Pittsburgh Pirates",
-    "awayTeam": "Cincinnati Reds",
-    "homeTeam": "Pittsburgh Pirates",
-    "awayPitcher": "Chase Burns",
-    "homePitcher": "Jared Jones",
-    "pick": "Cincinnati Reds",
-    "prediction": "Cincinnati Reds -190",
-    "odds": "-190",
-    "winProb": 0.655,
-    "edge": 0.155,
-    "confidence": "Elite",
-    "predictedScore": "Cincinnati Reds 5.0 \u2013 Pittsburgh Pirates 3.6",
-    "predictedHomeScore": 3.55,
-    "predictedAwayScore": 4.97,
-    "gameTime": "2026-06-27T20:05:00Z",
-    "gamePk": 823364,
-    "rank": 3
-  },
-  {
     "matchup": "Seattle Mariners @ Cleveland Guardians",
     "awayTeam": "Seattle Mariners",
     "homeTeam": "Cleveland Guardians",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 4.88,
     "gameTime": "2026-06-27T23:10:00Z",
     "gamePk": 824421,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Los Angeles Dodgers @ San Diego Padres",
@@ -92,6 +73,25 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-06-28T00:40:00Z",
     "gamePk": 823283,
+    "rank": 4
+  },
+  {
+    "matchup": "Cincinnati Reds @ Pittsburgh Pirates",
+    "awayTeam": "Cincinnati Reds",
+    "homeTeam": "Pittsburgh Pirates",
+    "awayPitcher": "Chase Burns",
+    "homePitcher": "Jared Jones",
+    "pick": "Cincinnati Reds",
+    "prediction": "Cincinnati Reds -160",
+    "odds": "-160",
+    "winProb": 0.616,
+    "edge": 0.116,
+    "confidence": "Strong",
+    "predictedScore": "Cincinnati Reds 5.0 \u2013 Pittsburgh Pirates 3.9",
+    "predictedHomeScore": 3.92,
+    "predictedAwayScore": 4.97,
+    "gameTime": "2026-06-27T20:05:00Z",
+    "gamePk": 823364,
     "rank": 5
   },
   {
@@ -152,42 +152,23 @@
     "rank": 8
   },
   {
-    "matchup": "Houston Astros @ Detroit Tigers",
-    "awayTeam": "Houston Astros",
-    "homeTeam": "Detroit Tigers",
-    "awayPitcher": "Kai-Wei Teng",
-    "homePitcher": "Framber Valdez",
-    "pick": "Houston Astros",
-    "prediction": "Houston Astros -130",
-    "odds": "-130",
-    "winProb": 0.564,
-    "edge": 0.064,
-    "confidence": "Lean",
-    "predictedScore": "Houston Astros 3.9 \u2013 Detroit Tigers 3.3",
-    "predictedHomeScore": 3.29,
-    "predictedAwayScore": 3.87,
-    "gameTime": "2026-06-27T17:10:00Z",
-    "gamePk": 824257,
-    "rank": 9
-  },
-  {
     "matchup": "New York Yankees @ Boston Red Sox",
     "awayTeam": "New York Yankees",
     "homeTeam": "Boston Red Sox",
     "awayPitcher": "Gerrit Cole",
     "homePitcher": "Jake Bennett",
     "pick": "Boston Red Sox",
-    "prediction": "Boston Red Sox -120",
-    "odds": "-120",
-    "winProb": 0.54,
-    "edge": 0.04,
+    "prediction": "Boston Red Sox -135",
+    "odds": "-135",
+    "winProb": 0.575,
+    "edge": 0.075,
     "confidence": "Lean",
-    "predictedScore": "New York Yankees 3.2 \u2013 Boston Red Sox 3.6",
-    "predictedHomeScore": 3.6,
+    "predictedScore": "New York Yankees 3.2 \u2013 Boston Red Sox 3.9",
+    "predictedHomeScore": 3.91,
     "predictedAwayScore": 3.24,
     "gameTime": "2026-06-27T17:10:00Z",
     "gamePk": 824745,
-    "rank": 10
+    "rank": 9
   },
   {
     "matchup": "Atlanta Braves @ San Francisco Giants",
@@ -206,7 +187,7 @@
     "predictedAwayScore": 3.2,
     "gameTime": "2026-06-28T01:05:00Z",
     "gamePk": 823207,
-    "rank": 11
+    "rank": 10
   },
   {
     "matchup": "Kansas City Royals @ Chicago White Sox",
@@ -225,7 +206,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-06-27T20:10:00Z",
     "gamePk": 824581,
-    "rank": 12
+    "rank": 11
   },
   {
     "matchup": "Athletics @ Los Angeles Angels",
@@ -244,6 +225,6 @@
     "predictedAwayScore": 3.86,
     "gameTime": "2026-06-28T01:38:00Z",
     "gamePk": 824015,
-    "rank": 13
+    "rank": 12
   }
 ]
