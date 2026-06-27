@@ -40,7 +40,7 @@ Texas Rangers2,Josh Jung
 Texas Rangers3,Corey Seager
 Texas Rangers4,Brandon Nimmo
 Texas Rangers5,Jake Burger
-Texas Rangers6,Jarred Kelenic
+Texas Rangers6,Ezequiel Duran
 Texas Rangers7,Alejandro Osuna
 Texas Rangers8,Elias Diaz
 Texas Rangers9,Nicky Lopez
@@ -93,9 +93,9 @@ Kansas City Royals1,Carter Jensen
 Kansas City Royals2,Bobby Witt Jr.
 Kansas City Royals3,Jac Caglianone
 Kansas City Royals4,Lane Thomas
-Kansas City Royals5,Michael Massey
+Kansas City Royals5,Tyler Tolbert
 Kansas City Royals6,Salvador Perez
-Kansas City Royals7,John Rave
+Kansas City Royals7,Starling Marte
 Kansas City Royals8,Nick Loftin
 Kansas City Royals9,Isaac Collins
 Chicago White Sox1,Sam Antonacci
@@ -179,6 +179,24 @@ Minnesota Twins6,Royce Lewis
 Minnesota Twins7,Brooks Lee
 Minnesota Twins8,Tristan Gray
 Minnesota Twins9,Luke Keaschall
+Chicago Cubs1,Pete Crow-Armstrong
+Chicago Cubs2,Matt Shaw
+Chicago Cubs3,Seiya Suzuki
+Chicago Cubs4,Alex Bregman
+Chicago Cubs5,Michael Busch
+Chicago Cubs6,Nico Hoerner
+Chicago Cubs7,Ian Happ
+Chicago Cubs8,Carson Kelly
+Chicago Cubs9,Dansby Swanson
+Milwaukee Brewers1,Jackson Chourio
+Milwaukee Brewers2,Brice Turang
+Milwaukee Brewers3,William Contreras
+Milwaukee Brewers4,Andrew Vaughn
+Milwaukee Brewers5,Gary Sanchez
+Milwaukee Brewers6,Blake Perkins
+Milwaukee Brewers7,Sal Frelick
+Milwaukee Brewers8,Cooper Pratt
+Milwaukee Brewers9,Joey Ortiz
 Miami Marlins1,Xavier Edwards
 Miami Marlins2,Otto Lopez
 Miami Marlins3,Kyle Stowers
@@ -197,6 +215,42 @@ St. Louis Cardinals6,Masyn Winn
 St. Louis Cardinals7,Bryan Torres
 St. Louis Cardinals8,Jimmy Crooks
 St. Louis Cardinals9,Nathan Church
+Los Angeles Dodgers1,Shohei Ohtani
+Los Angeles Dodgers2,Andy Pages
+Los Angeles Dodgers3,Freddie Freeman
+Los Angeles Dodgers4,Mookie Betts
+Los Angeles Dodgers5,Max Muncy
+Los Angeles Dodgers6,Tommy Edman
+Los Angeles Dodgers7,Kyle Tucker
+Los Angeles Dodgers8,Dalton Rushing
+Los Angeles Dodgers9,Alex Freeland
+San Diego Padres1,Fernando Tatis Jr.
+San Diego Padres2,Samad Taylor
+San Diego Padres3,Jackson Merrill
+San Diego Padres4,Manny Machado
+San Diego Padres5,Gavin Sheets
+San Diego Padres6,Xander Bogaerts
+San Diego Padres7,Miguel Andujar
+San Diego Padres8,Will Wagner
+San Diego Padres9,Freddy Fermin
+Atlanta Braves1,Michael Harris II
+Atlanta Braves2,Ozzie Albies
+Atlanta Braves3,Matt Olson
+Atlanta Braves4,Drake Baldwin
+Atlanta Braves5,Dominic Smith
+Atlanta Braves6,Mauricio Dubon
+Atlanta Braves7,Austin Riley
+Atlanta Braves8,Mike Yastrzemski
+Atlanta Braves9,Ha-Seong Kim
+San Francisco Giants1,Luis Arraez
+San Francisco Giants2,Casey Schmitt
+San Francisco Giants3,Jung Hoo Lee
+San Francisco Giants4,Rafael Devers
+San Francisco Giants5,Willy Adames
+San Francisco Giants6,Bryce Eldridge
+San Francisco Giants7,Matt Chapman
+San Francisco Giants8,Drew Gilbert
+San Francisco Giants9,Drew Cavanaugh
 Athletics1,Henry Bolte
 Athletics2,Nick Kurtz
 Athletics3,Shea Langeliers
@@ -206,24 +260,6 @@ Athletics6,Lawrence Butler
 Athletics7,Max Muncy
 Athletics8,Jeff McNeil
 Athletics9,Alika Williams
-Atlanta Braves1,Michael Harris II
-Atlanta Braves2,Mauricio Dubon
-Atlanta Braves3,Matt Olson
-Atlanta Braves4,Ozzie Albies
-Atlanta Braves5,Drake Baldwin
-Atlanta Braves6,Austin Riley
-Atlanta Braves7,Dominic Smith
-Atlanta Braves8,Mike Yastrzemski
-Atlanta Braves9,Ha-Seong Kim
-Chicago Cubs1,Pete Crow-Armstrong
-Chicago Cubs2,Alex Bregman
-Chicago Cubs3,Michael Busch
-Chicago Cubs4,Seiya Suzuki
-Chicago Cubs5,Ian Happ
-Chicago Cubs6,Nico Hoerner
-Chicago Cubs7,Carson Kelly
-Chicago Cubs8,Matt Shaw
-Chicago Cubs9,Dansby Swanson
 Los Angeles Angels1,Zach Neto
 Los Angeles Angels2,Nolan Schanuel
 Los Angeles Angels3,Jo Adell
@@ -233,39 +269,3 @@ Los Angeles Angels6,Denzer Guzman
 Los Angeles Angels7,Donovan Walton
 Los Angeles Angels8,Logan O'Hoppe
 Los Angeles Angels9,Josh Lowe
-Los Angeles Dodgers1,Shohei Ohtani
-Los Angeles Dodgers2,Andy Pages
-Los Angeles Dodgers3,Freddie Freeman
-Los Angeles Dodgers4,Mookie Betts
-Los Angeles Dodgers5,Max Muncy
-Los Angeles Dodgers6,Kyle Tucker
-Los Angeles Dodgers7,Tommy Edman
-Los Angeles Dodgers8,Dalton Rushing
-Los Angeles Dodgers9,Alex Freeland
-Milwaukee Brewers1,Christian Yelich
-Milwaukee Brewers2,Jackson Chourio
-Milwaukee Brewers3,Brice Turang
-Milwaukee Brewers4,William Contreras
-Milwaukee Brewers5,Jake Bauers
-Milwaukee Brewers6,Andrew Vaughn
-Milwaukee Brewers7,Garrett Mitchell
-Milwaukee Brewers8,Cooper Pratt
-Milwaukee Brewers9,David Hamilton
-San Diego Padres1,Fernando Tatis Jr.
-San Diego Padres2,Samad Taylor
-San Diego Padres3,Jackson Merrill
-San Diego Padres4,Manny Machado
-San Diego Padres5,Gavin Sheets
-San Diego Padres6,Xander Bogaerts
-San Diego Padres7,Ty France
-San Diego Padres8,Will Wagner
-San Diego Padres9,Rodolfo Duran
-San Francisco Giants1,Luis Arraez
-San Francisco Giants2,Bryce Eldridge
-San Francisco Giants3,Casey Schmitt
-San Francisco Giants4,Rafael Devers
-San Francisco Giants5,Jung Hoo Lee
-San Francisco Giants6,Willy Adames
-San Francisco Giants7,Matt Chapman
-San Francisco Giants8,Drew Cavanaugh
-San Francisco Giants9,Victor Bericoto

@@ -38,6 +38,25 @@
     "rank": 2
   },
   {
+    "matchup": "Los Angeles Dodgers @ San Diego Padres",
+    "awayTeam": "Los Angeles Dodgers",
+    "homeTeam": "San Diego Padres",
+    "awayPitcher": "Yoshinobu Yamamoto",
+    "homePitcher": "Kyle Hart",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -205",
+    "odds": "-205",
+    "winProb": 0.673,
+    "edge": 0.173,
+    "confidence": "Elite",
+    "predictedScore": "Los Angeles Dodgers 4.4 \u2013 San Diego Padres 2.8",
+    "predictedHomeScore": 2.85,
+    "predictedAwayScore": 4.45,
+    "gameTime": "2026-06-28T00:40:00Z",
+    "gamePk": 823283,
+    "rank": 3
+  },
+  {
     "matchup": "Cincinnati Reds @ Pittsburgh Pirates",
     "awayTeam": "Cincinnati Reds",
     "homeTeam": "Pittsburgh Pirates",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 4.97,
     "gameTime": "2026-06-27T20:05:00Z",
     "gamePk": 823364,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Seattle Mariners @ Cleveland Guardians",
@@ -73,25 +92,6 @@
     "predictedAwayScore": 4.88,
     "gameTime": "2026-06-27T23:10:00Z",
     "gamePk": 824421,
-    "rank": 4
-  },
-  {
-    "matchup": "Los Angeles Dodgers @ San Diego Padres",
-    "awayTeam": "Los Angeles Dodgers",
-    "homeTeam": "San Diego Padres",
-    "awayPitcher": "Yoshinobu Yamamoto",
-    "homePitcher": "Randy V\u00e1squez",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -175",
-    "odds": "-175",
-    "winProb": 0.639,
-    "edge": 0.139,
-    "confidence": "Strong",
-    "predictedScore": "Los Angeles Dodgers 4.1 \u2013 San Diego Padres 2.8",
-    "predictedHomeScore": 2.85,
-    "predictedAwayScore": 4.12,
-    "gameTime": "2026-06-28T00:40:00Z",
-    "gamePk": 823283,
     "rank": 5
   },
   {
