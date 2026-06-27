@@ -28,7 +28,7 @@ jobs:
 
       - name: Update lineups and player props
         env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
         run: |
           python scripts/fetch_mlb_lineups.py
           python scripts/fetch_mlb_player_props.py
@@ -36,12 +36,12 @@ jobs:
 
       - name: Update completed game results in Firestore
         env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
         run: python scripts/update_results.py
 
       - name: Upload updated CSVs to Firebase Storage
         env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
         run: python scripts/upload_to_storage.py
 
       - name: Commit and push updated CSVs

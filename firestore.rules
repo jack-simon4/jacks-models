@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Results page reads game predictions publicly — writes only via Admin SDK
+    match /games/{document} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}
