@@ -1,0 +1,50 @@
+name: Update World Cup Stats (Daily)
+
+# Runs daily through the end of the 2026 World Cup (final is July 19).
+# Disable or delete this workflow after the tournament ends.
+
+on:
+  schedule:
+    # 8 AM ET (12:00 UTC) — captures overnight and early-morning matches
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-wc:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch and update World Cup team stats
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: python scripts/fetch_wc_stats.py
+
+      - name: Commit updated World Cup stats
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add src/assets/Soccer-Stats.csv
+          if git diff --staged --quiet; then
+            echo "No World Cup stat changes — nothing to commit."
+          else
+            git commit -m "chore: auto-update World Cup stats $(date -u +%Y-%m-%d)"
+            git stash --include-untracked
+            git fetch origin main
+            git rebase origin/main
+            git stash pop || true
+            git push
+          fi
