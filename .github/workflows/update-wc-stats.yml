@@ -31,6 +31,7 @@ jobs:
       - name: Fetch and update World Cup team stats
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
         run: python scripts/fetch_wc_stats.py
 
       - name: Commit updated World Cup stats
