@@ -38,6 +38,25 @@
     "rank": 2
   },
   {
+    "matchup": "Cincinnati Reds @ Pittsburgh Pirates",
+    "awayTeam": "Cincinnati Reds",
+    "homeTeam": "Pittsburgh Pirates",
+    "awayPitcher": "Chase Burns",
+    "homePitcher": "Jared Jones",
+    "pick": "Cincinnati Reds",
+    "prediction": "Cincinnati Reds -190",
+    "odds": "-190",
+    "winProb": 0.655,
+    "edge": 0.155,
+    "confidence": "Elite",
+    "predictedScore": "Cincinnati Reds 5.0 \u2013 Pittsburgh Pirates 3.6",
+    "predictedHomeScore": 3.55,
+    "predictedAwayScore": 4.97,
+    "gameTime": "2026-06-27T20:05:00Z",
+    "gamePk": 823364,
+    "rank": 3
+  },
+  {
     "matchup": "Seattle Mariners @ Cleveland Guardians",
     "awayTeam": "Seattle Mariners",
     "homeTeam": "Cleveland Guardians",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 4.88,
     "gameTime": "2026-06-27T23:10:00Z",
     "gamePk": 824421,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Los Angeles Dodgers @ San Diego Padres",
@@ -73,25 +92,6 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-06-28T00:40:00Z",
     "gamePk": 823283,
-    "rank": 4
-  },
-  {
-    "matchup": "Cincinnati Reds @ Pittsburgh Pirates",
-    "awayTeam": "Cincinnati Reds",
-    "homeTeam": "Pittsburgh Pirates",
-    "awayPitcher": "Chase Burns",
-    "homePitcher": "Jared Jones",
-    "pick": "Cincinnati Reds",
-    "prediction": "Cincinnati Reds -160",
-    "odds": "-160",
-    "winProb": 0.616,
-    "edge": 0.116,
-    "confidence": "Strong",
-    "predictedScore": "Cincinnati Reds 5.0 \u2013 Pittsburgh Pirates 3.9",
-    "predictedHomeScore": 3.92,
-    "predictedAwayScore": 4.97,
-    "gameTime": "2026-06-27T20:05:00Z",
-    "gamePk": 823364,
     "rank": 5
   },
   {
@@ -133,6 +133,25 @@
     "rank": 7
   },
   {
+    "matchup": "Philadelphia Phillies @ New York Mets",
+    "awayTeam": "Philadelphia Phillies",
+    "homeTeam": "New York Mets",
+    "awayPitcher": "Tim Mayza",
+    "homePitcher": "Christian Scott",
+    "pick": "New York Mets",
+    "prediction": "New York Mets -140",
+    "odds": "-140",
+    "winProb": 0.581,
+    "edge": 0.081,
+    "confidence": "Strong",
+    "predictedScore": "Philadelphia Phillies 3.5 \u2013 New York Mets 4.3",
+    "predictedHomeScore": 4.25,
+    "predictedAwayScore": 3.53,
+    "gameTime": "2026-06-27T20:10:00Z",
+    "gamePk": 823609,
+    "rank": 8
+  },
+  {
     "matchup": "Miami Marlins @ St. Louis Cardinals",
     "awayTeam": "Miami Marlins",
     "homeTeam": "St. Louis Cardinals",
@@ -149,7 +168,7 @@
     "predictedAwayScore": 3.81,
     "gameTime": "2026-06-27T23:15:00Z",
     "gamePk": 823038,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "New York Yankees @ Boston Red Sox",
@@ -168,7 +187,7 @@
     "predictedAwayScore": 3.24,
     "gameTime": "2026-06-27T17:10:00Z",
     "gamePk": 824745,
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Atlanta Braves @ San Francisco Giants",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 3.2,
     "gameTime": "2026-06-28T01:05:00Z",
     "gamePk": 823207,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Kansas City Royals @ Chicago White Sox",
@@ -206,7 +225,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-06-27T20:10:00Z",
     "gamePk": 824581,
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "Athletics @ Los Angeles Angels",
@@ -225,6 +244,6 @@
     "predictedAwayScore": 3.86,
     "gameTime": "2026-06-28T01:38:00Z",
     "gamePk": 824015,
-    "rank": 12
+    "rank": 13
   }
 ]
