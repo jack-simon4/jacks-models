@@ -1,5 +1,24 @@
 [
   {
+    "matchup": "Texas Rangers @ Toronto Blue Jays",
+    "awayTeam": "Texas Rangers",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Cal Quantrill",
+    "homePitcher": "Dylan Cease",
+    "pick": "Toronto Blue Jays",
+    "prediction": "Toronto Blue Jays -320",
+    "odds": "-320",
+    "winProb": 0.762,
+    "edge": 0.262,
+    "confidence": "Elite",
+    "predictedScore": "Texas Rangers 3.0 \u2013 Toronto Blue Jays 5.6",
+    "predictedHomeScore": 5.59,
+    "predictedAwayScore": 3.0,
+    "gameTime": "2026-06-27T19:07:00Z",
+    "gamePk": 822794,
+    "rank": 1
+  },
+  {
     "matchup": "Colorado Rockies @ Minnesota Twins",
     "awayTeam": "Colorado Rockies",
     "homeTeam": "Minnesota Twins",
@@ -16,7 +35,7 @@
     "predictedAwayScore": 3.76,
     "gameTime": "2026-06-27T23:10:00Z",
     "gamePk": 823689,
-    "rank": 1
+    "rank": 2
   },
   {
     "matchup": "Cincinnati Reds @ Pittsburgh Pirates",
@@ -35,7 +54,7 @@
     "predictedAwayScore": 4.97,
     "gameTime": "2026-06-27T20:05:00Z",
     "gamePk": 823364,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Seattle Mariners @ Cleveland Guardians",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 4.88,
     "gameTime": "2026-06-27T23:10:00Z",
     "gamePk": 824421,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Los Angeles Dodgers @ San Diego Padres",
@@ -73,26 +92,26 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-06-28T00:40:00Z",
     "gamePk": 823283,
-    "rank": 4
+    "rank": 5
   },
   {
-    "matchup": "Texas Rangers @ Toronto Blue Jays",
-    "awayTeam": "Texas Rangers",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "TBD",
-    "homePitcher": "Dylan Cease",
-    "pick": "Toronto Blue Jays",
-    "prediction": "Toronto Blue Jays -155",
-    "odds": "-155",
-    "winProb": 0.611,
-    "edge": 0.111,
+    "matchup": "Arizona Diamondbacks @ Tampa Bay Rays",
+    "awayTeam": "Arizona Diamondbacks",
+    "homeTeam": "Tampa Bay Rays",
+    "awayPitcher": "Jose Cabrera",
+    "homePitcher": "Cole Sulser",
+    "pick": "Arizona Diamondbacks",
+    "prediction": "Arizona Diamondbacks -160",
+    "odds": "-160",
+    "winProb": 0.613,
+    "edge": 0.113,
     "confidence": "Strong",
-    "predictedScore": "Texas Rangers 3.0 \u2013 Toronto Blue Jays 4.0",
-    "predictedHomeScore": 4.0,
-    "predictedAwayScore": 3.0,
-    "gameTime": "2026-06-27T19:07:00Z",
-    "gamePk": 822794,
-    "rank": 5
+    "predictedScore": "Arizona Diamondbacks 4.8 \u2013 Tampa Bay Rays 3.8",
+    "predictedHomeScore": 3.79,
+    "predictedAwayScore": 4.81,
+    "gameTime": "2026-06-27T22:10:00Z",
+    "gamePk": 822960,
+    "rank": 6
   },
   {
     "matchup": "Washington Nationals @ Baltimore Orioles",
@@ -111,7 +130,26 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-06-27T23:05:00Z",
     "gamePk": 824825,
-    "rank": 6
+    "rank": 7
+  },
+  {
+    "matchup": "Miami Marlins @ St. Louis Cardinals",
+    "awayTeam": "Miami Marlins",
+    "homeTeam": "St. Louis Cardinals",
+    "awayPitcher": "Ryan Gusto",
+    "homePitcher": "Andre Pallante",
+    "pick": "St. Louis Cardinals",
+    "prediction": "St. Louis Cardinals -140",
+    "odds": "-140",
+    "winProb": 0.58,
+    "edge": 0.08,
+    "confidence": "Lean",
+    "predictedScore": "Miami Marlins 3.8 \u2013 St. Louis Cardinals 4.5",
+    "predictedHomeScore": 4.53,
+    "predictedAwayScore": 3.81,
+    "gameTime": "2026-06-27T23:15:00Z",
+    "gamePk": 823038,
+    "rank": 8
   },
   {
     "matchup": "Houston Astros @ Detroit Tigers",
@@ -130,7 +168,7 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-06-27T17:10:00Z",
     "gamePk": 824257,
-    "rank": 7
+    "rank": 9
   },
   {
     "matchup": "New York Yankees @ Boston Red Sox",
@@ -149,7 +187,7 @@
     "predictedAwayScore": 3.24,
     "gameTime": "2026-06-27T17:10:00Z",
     "gamePk": 824745,
-    "rank": 8
+    "rank": 10
   },
   {
     "matchup": "Atlanta Braves @ San Francisco Giants",
@@ -168,26 +206,7 @@
     "predictedAwayScore": 3.2,
     "gameTime": "2026-06-28T01:05:00Z",
     "gamePk": 823207,
-    "rank": 9
-  },
-  {
-    "matchup": "Arizona Diamondbacks @ Tampa Bay Rays",
-    "awayTeam": "Arizona Diamondbacks",
-    "homeTeam": "Tampa Bay Rays",
-    "awayPitcher": "Jose Cabrera",
-    "homePitcher": "TBD",
-    "pick": "Arizona Diamondbacks",
-    "prediction": "Arizona Diamondbacks -115",
-    "odds": "-115",
-    "winProb": 0.534,
-    "edge": 0.034,
-    "confidence": "Lean",
-    "predictedScore": "Arizona Diamondbacks 4.1 \u2013 Tampa Bay Rays 3.8",
-    "predictedHomeScore": 3.79,
-    "predictedAwayScore": 4.1,
-    "gameTime": "2026-06-27T22:10:00Z",
-    "gamePk": 822960,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Kansas City Royals @ Chicago White Sox",
@@ -206,7 +225,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-06-27T20:10:00Z",
     "gamePk": 824581,
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "Athletics @ Los Angeles Angels",
@@ -225,6 +244,6 @@
     "predictedAwayScore": 3.86,
     "gameTime": "2026-06-28T01:38:00Z",
     "gamePk": 824015,
-    "rank": 12
+    "rank": 13
   }
 ]
