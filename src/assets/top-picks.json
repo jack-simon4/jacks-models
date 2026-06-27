@@ -190,6 +190,25 @@
     "rank": 10
   },
   {
+    "matchup": "Kansas City Royals @ Chicago White Sox",
+    "awayTeam": "Kansas City Royals",
+    "homeTeam": "Chicago White Sox",
+    "awayPitcher": "Michael Wacha",
+    "homePitcher": "Davis Martin",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -120",
+    "odds": "-120",
+    "winProb": 0.545,
+    "edge": 0.045,
+    "confidence": "Lean",
+    "predictedScore": "Kansas City Royals 4.0 \u2013 Chicago White Sox 4.4",
+    "predictedHomeScore": 4.39,
+    "predictedAwayScore": 4.0,
+    "gameTime": "2026-06-27T20:10:00Z",
+    "gamePk": 824581,
+    "rank": 11
+  },
+  {
     "matchup": "Atlanta Braves @ San Francisco Giants",
     "awayTeam": "Atlanta Braves",
     "homeTeam": "San Francisco Giants",
@@ -206,25 +225,6 @@
     "predictedAwayScore": 3.2,
     "gameTime": "2026-06-28T01:05:00Z",
     "gamePk": 823207,
-    "rank": 11
-  },
-  {
-    "matchup": "Kansas City Royals @ Chicago White Sox",
-    "awayTeam": "Kansas City Royals",
-    "homeTeam": "Chicago White Sox",
-    "awayPitcher": "Michael Wacha",
-    "homePitcher": "Davis Martin",
-    "pick": "Kansas City Royals",
-    "prediction": "Kansas City Royals -115",
-    "odds": "-115",
-    "winProb": 0.533,
-    "edge": 0.033,
-    "confidence": "Lean",
-    "predictedScore": "Kansas City Royals 4.3 \u2013 Chicago White Sox 4.0",
-    "predictedHomeScore": 4.05,
-    "predictedAwayScore": 4.34,
-    "gameTime": "2026-06-27T20:10:00Z",
-    "gamePk": 824581,
     "rank": 12
   },
   {
