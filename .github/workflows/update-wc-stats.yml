@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/Soccer-Stats.csv
+          git add src/assets/Soccer-Stats.csv src/assets/wc-today.json
           if git diff --staged --quiet; then
             echo "No World Cup stat changes — nothing to commit."
           else

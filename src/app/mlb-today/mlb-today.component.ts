@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Meta, Title } from '@angular/platform-browser';
 
@@ -30,7 +31,12 @@ export class MlbTodayComponent implements OnInit {
   loading = true;
   dateLabel = '';
 
-  constructor(private http: HttpClient, private meta: Meta, private title: Title) {
+  constructor(
+    private http: HttpClient,
+    private meta: Meta,
+    private title: Title,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
     const now = new Date();
     this.dateLabel = now.toLocaleDateString('en-US', {
       weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
@@ -46,6 +52,10 @@ export class MlbTodayComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (!isPlatformBrowser(this.platformId)) {
+      this.loading = false;
+      return;
+    }
     this.http.get<Pick[]>('assets/top-picks.json').subscribe({
       next: (data) => {
         this.picks = data || [];

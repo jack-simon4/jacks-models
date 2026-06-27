@@ -33,7 +33,8 @@ BASE          = 'https://api.football-data.org/v4'
 ASSETS = os.path.normpath(
     os.path.join(os.path.dirname(__file__), '..', 'src', 'assets')
 )
-CSV_PATH = os.path.join(ASSETS, 'Soccer-Stats.csv')
+CSV_PATH      = os.path.join(ASSETS, 'Soccer-Stats.csv')
+WC_TODAY_PATH = os.path.join(ASSETS, 'wc-today.json')
 
 PRIOR_GAMES    = 7
 INTL_CONSTANT  = 1.3   # wGF = GF / 1.3 for all national teams
@@ -171,6 +172,91 @@ def win_prob(home_xg: float, away_xg: float) -> float:
     return round(1.0 / (1.0 + math.exp(-0.85 * (home_xg - away_xg))), 3)
 
 
+# ── Today JSON ───────────────────────────────────────────────────────────────
+
+STAGE_LABELS = {
+    'GROUP_STAGE':    'Group Stage',
+    'LAST_16':        'Round of 16',
+    'ROUND_OF_16':    'Round of 16',
+    'QUARTER_FINALS': 'Quarterfinal',
+    'SEMI_FINALS':    'Semifinal',
+    'THIRD_PLACE':    '3rd Place',
+    'FINAL':          'Final',
+}
+
+ACTIVE_STATUSES = {'SCHEDULED', 'TIMED', 'IN_PLAY', 'PAUSED', 'LIVE'}
+
+
+def generate_today_json(matches: list, stats: dict):
+    """Write wc-today.json with upcoming matches and recent finished results."""
+    from datetime import datetime, timezone
+    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+
+    upcoming = []
+    results  = []
+
+    for m in matches:
+        status   = m.get('status', '')
+        home_fd  = m.get('homeTeam', {}).get('name', '')
+        away_fd  = m.get('awayTeam', {}).get('name', '')
+        home_csv = FD_TO_CSV.get(home_fd, home_fd)
+        away_csv = FD_TO_CSV.get(away_fd, away_fd)
+
+        if home_csv not in stats or away_csv not in stats:
+            continue
+
+        game_time  = m.get('utcDate', '')
+        game_date  = game_time[:10]
+        stage_raw  = m.get('stage', '')
+        round_name = STAGE_LABELS.get(stage_raw, stage_raw.replace('_', ' ').title())
+        group      = m.get('group', '')
+        if group:
+            round_name = f'{round_name} – {group}'
+
+        home_s = stats[home_csv]
+        away_s = stats[away_csv]
+        home_xg, away_xg = soccer_prediction(home_s, away_s)
+        wp = win_prob(home_xg, away_xg)
+
+        entry = {
+            'matchId':             m.get('id'),
+            'round':               round_name,
+            'homeTeam':            home_csv,
+            'awayTeam':            away_csv,
+            'predictedHomeScore':  home_xg,
+            'predictedAwayScore':  away_xg,
+            'homeWinProb':         wp,
+            'gameDate':            game_date,
+            'gameTime':            game_time,
+            'status':              status,
+            'actualHomeScore':     None,
+            'actualAwayScore':     None,
+        }
+
+        if status == 'FINISHED':
+            score = m.get('score', {}).get('fullTime', {})
+            entry['actualHomeScore'] = score.get('home')
+            entry['actualAwayScore'] = score.get('away')
+            results.append(entry)
+        elif status in ACTIVE_STATUSES:
+            upcoming.append(entry)
+
+    upcoming.sort(key=lambda x: x['gameTime'])
+    results.sort(key=lambda x: x['gameTime'], reverse=True)
+
+    output = {
+        'generated': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+        'today':     today,
+        'upcoming':  upcoming[:12],
+        'recentResults': results[:8],
+    }
+
+    with open(WC_TODAY_PATH, 'w', encoding='utf-8') as f:
+        json.dump(output, f, indent=2)
+
+    print(f'[WC] wc-today.json written: {len(upcoming[:12])} upcoming, {len(results[:8])} results.')
+
+
 # ── Firestore ─────────────────────────────────────────────────────────────────
 
 def save_to_firestore(matches: list, stats: dict):
@@ -294,8 +380,9 @@ def main():
     else:
         print('[WC] No finished matches yet — CSV unchanged.')
 
-    # Step 2: load the freshly-updated stats, then save predictions to Firestore
+    # Step 2: load the freshly-updated stats, generate today JSON + save to Firestore
     stats = load_stats()
+    generate_today_json(matches, stats)
     save_to_firestore(matches, stats)
 
 

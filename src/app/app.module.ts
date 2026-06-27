@@ -33,6 +33,7 @@ import { WorldCupSeoPageComponent } from './seo-pages/world-cup-seo-page.compone
 import { HomeComponent } from './home/home.component';
 import { MlbPropsComponent } from './mlb-props/mlb-props.component';
 import { MlbTodayComponent } from './mlb-today/mlb-today.component';
+import { WcTodayComponent } from './wc-today/wc-today.component';
 
 
 
@@ -57,7 +58,8 @@ import { MlbTodayComponent } from './mlb-today/mlb-today.component';
     WorldCupSeoPageComponent,
       HomeComponent,
     MlbPropsComponent,
-    MlbTodayComponent
+    MlbTodayComponent,
+    WcTodayComponent
   ],
   imports: [
     BrowserModule,

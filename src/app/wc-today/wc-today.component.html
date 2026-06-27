@@ -1,0 +1,184 @@
+<div class="today-container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="sport-badge">2026 FIFA World Cup</div>
+    <h1>World Cup Predictions Today</h1>
+    <p class="date-label">{{ dateLabel }}</p>
+    <p class="subtitle">
+      Model-projected scores and win probabilities for every 2026 World Cup match —
+      updated daily as group stage results sharpen each team's rating.
+    </p>
+    <div class="accuracy-bar">
+      <div class="acc-stat">
+        <span class="acc-value">68%</span>
+        <span class="acc-label">Moneyline</span>
+      </div>
+      <div class="acc-stat">
+        <span class="acc-value">60-28-24</span>
+        <span class="acc-label">W-D-L Record</span>
+      </div>
+      <div class="acc-stat">
+        <span class="acc-value">112</span>
+        <span class="acc-label">Games Tracked</span>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a routerLink="/soccer-scoreboard" class="btn-primary">Run Any Matchup →</a>
+      <a routerLink="/world-cup-predictions" class="btn-outline">WC Model Overview</a>
+    </div>
+  </div>
+
+  <!-- Loading -->
+  <div *ngIf="loading" class="loading">Loading predictions...</div>
+
+  <!-- Today's Matches -->
+  <div class="section" *ngIf="!loading && todayMatches.length > 0">
+    <h2 class="section-title">Today's Matches</h2>
+    <div class="matches-list">
+      <div class="match-card" *ngFor="let m of todayMatches">
+        <div class="match-header">
+          <span class="round-label">{{ m.round }}</span>
+          <span class="match-time">{{ formatTime(m.gameTime) }}</span>
+        </div>
+        <div class="match-body">
+          <div class="team-block">
+            <div class="team-name">{{ m.awayTeam }}</div>
+            <div class="pred-score">{{ m.predictedAwayScore }}</div>
+          </div>
+          <div class="match-divider">vs</div>
+          <div class="team-block">
+            <div class="team-name">{{ m.homeTeam }}</div>
+            <div class="pred-score">{{ m.predictedHomeScore }}</div>
+          </div>
+        </div>
+        <div class="match-footer">
+          <span class="pred-label">Predicted xG</span>
+          <span class="pick-label">
+            Model: <strong class="green">{{ predictedWinner(m) }}</strong>
+            &nbsp;·&nbsp; {{ (m.homeWinProb * 100).toFixed(0) }}% {{ m.homeTeam }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Upcoming Matches -->
+  <div class="section" *ngIf="!loading && upcomingMatches.length > 0">
+    <h2 class="section-title">{{ todayMatches.length === 0 ? 'Upcoming Matches' : 'More Upcoming' }}</h2>
+    <div class="matches-list">
+      <div class="match-card" *ngFor="let m of upcomingMatches">
+        <div class="match-header">
+          <span class="round-label">{{ m.round }}</span>
+          <span class="match-time">{{ formatDate(m.gameDate) }} · {{ formatTime(m.gameTime) }}</span>
+        </div>
+        <div class="match-body">
+          <div class="team-block">
+            <div class="team-name">{{ m.awayTeam }}</div>
+            <div class="pred-score">{{ m.predictedAwayScore }}</div>
+          </div>
+          <div class="match-divider">vs</div>
+          <div class="team-block">
+            <div class="team-name">{{ m.homeTeam }}</div>
+            <div class="pred-score">{{ m.predictedHomeScore }}</div>
+          </div>
+        </div>
+        <div class="match-footer">
+          <span class="pred-label">Predicted xG</span>
+          <span class="pick-label">
+            Model: <strong class="green">{{ predictedWinner(m) }}</strong>
+            &nbsp;·&nbsp; {{ (m.homeWinProb * 100).toFixed(0) }}% {{ m.homeTeam }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- No upcoming -->
+  <div *ngIf="!loading && todayMatches.length === 0 && upcomingMatches.length === 0" class="no-picks">
+    No upcoming matches scheduled. Check back after the next round is drawn.
+  </div>
+
+  <!-- Recent Results -->
+  <div class="section" *ngIf="!loading && recentResults.length > 0">
+    <h2 class="section-title">Recent Results</h2>
+    <div class="matches-list">
+      <div class="match-card result-card"
+           [class.correct]="modelCorrect(m)"
+           [class.incorrect]="!modelCorrect(m)"
+           *ngFor="let m of recentResults">
+        <div class="match-header">
+          <span class="round-label">{{ m.round }}</span>
+          <span class="final-badge">FINAL</span>
+        </div>
+        <div class="match-body">
+          <div class="team-block">
+            <div class="team-name">{{ m.awayTeam }}</div>
+            <div class="actual-score-val">{{ m.actualAwayScore }}</div>
+          </div>
+          <div class="match-divider result-divider">–</div>
+          <div class="team-block">
+            <div class="team-name">{{ m.homeTeam }}</div>
+            <div class="actual-score-val">{{ m.actualHomeScore }}</div>
+          </div>
+        </div>
+        <div class="match-footer">
+          <span class="pred-note">Predicted {{ m.predictedAwayScore }}–{{ m.predictedHomeScore }}</span>
+          <span class="result-badge" [class.correct-badge]="modelCorrect(m)" [class.incorrect-badge]="!modelCorrect(m)">
+            {{ modelCorrect(m) ? '✓ Correct' : '✗ Missed' }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="section">
+    <h2 class="section-title">How the Model Works</h2>
+    <p class="body-text">
+      The World Cup model is a neutral-site adaptation of Jack's soccer prediction engine.
+      It blends each team's pre-tournament historical stats with live group stage results
+      using a weighted average — so predictions get sharper as the tournament progresses.
+      More group games played = more weight on current-tournament data.
+    </p>
+    <div class="data-pills">
+      <span class="pill">Goals For / Against</span>
+      <span class="pill">League Strength</span>
+      <span class="pill">Group Stage Results</span>
+      <span class="pill">Neutral Site Adjustment</span>
+      <span class="pill">Early-Season Blending</span>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section">
+    <h2 class="section-title">FAQ</h2>
+    <div class="faq-item">
+      <h3>When are predictions updated?</h3>
+      <p>Every morning at 8 AM ET, the model pulls overnight results and recalculates
+         each team's rating before the day's matches.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does the model handle penalty shootouts?</h3>
+      <p>The model predicts 90-minute expected goals. Knockouts that go to penalties
+         are tracked as draws for accuracy purposes since extra time and penalties
+         are inherently less predictable.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How has the model performed on soccer?</h3>
+      <p>68% moneyline accuracy across 112 tracked games (60-28-24 W-D-L).
+         See the full breakdown on the <a routerLink="/results" class="inline-link">Results page</a>.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I run my own World Cup matchup?</h3>
+      <p>Yes — the <a routerLink="/soccer-scoreboard" class="inline-link">soccer scoreboard</a>
+         lets you pick any two international teams instantly.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <a routerLink="/soccer-scoreboard" class="btn-primary">Run Your Own WC Prediction →</a>
+    <a routerLink="/world-cup-predictions" class="btn-outline">WC Model Overview</a>
+  </div>
+
+</div>
