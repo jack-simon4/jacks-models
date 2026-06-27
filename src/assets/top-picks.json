@@ -95,6 +95,25 @@
     "rank": 5
   },
   {
+    "matchup": "Philadelphia Phillies @ New York Mets",
+    "awayTeam": "Philadelphia Phillies",
+    "homeTeam": "New York Mets",
+    "awayPitcher": "Tim Mayza",
+    "homePitcher": "Christian Scott",
+    "pick": "New York Mets",
+    "prediction": "New York Mets -160",
+    "odds": "-160",
+    "winProb": 0.617,
+    "edge": 0.117,
+    "confidence": "Strong",
+    "predictedScore": "Philadelphia Phillies 3.5 \u2013 New York Mets 4.6",
+    "predictedHomeScore": 4.59,
+    "predictedAwayScore": 3.53,
+    "gameTime": "2026-06-27T20:10:00Z",
+    "gamePk": 823609,
+    "rank": 6
+  },
+  {
     "matchup": "Arizona Diamondbacks @ Tampa Bay Rays",
     "awayTeam": "Arizona Diamondbacks",
     "homeTeam": "Tampa Bay Rays",
@@ -111,7 +130,7 @@
     "predictedAwayScore": 4.81,
     "gameTime": "2026-06-27T22:10:00Z",
     "gamePk": 822960,
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "Washington Nationals @ Baltimore Orioles",
@@ -130,25 +149,6 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-06-27T23:05:00Z",
     "gamePk": 824825,
-    "rank": 7
-  },
-  {
-    "matchup": "Philadelphia Phillies @ New York Mets",
-    "awayTeam": "Philadelphia Phillies",
-    "homeTeam": "New York Mets",
-    "awayPitcher": "Tim Mayza",
-    "homePitcher": "Christian Scott",
-    "pick": "New York Mets",
-    "prediction": "New York Mets -140",
-    "odds": "-140",
-    "winProb": 0.581,
-    "edge": 0.081,
-    "confidence": "Strong",
-    "predictedScore": "Philadelphia Phillies 3.5 \u2013 New York Mets 4.3",
-    "predictedHomeScore": 4.25,
-    "predictedAwayScore": 3.53,
-    "gameTime": "2026-06-27T20:10:00Z",
-    "gamePk": 823609,
     "rank": 8
   },
   {
