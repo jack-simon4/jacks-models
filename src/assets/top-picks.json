@@ -6,36 +6,17 @@
     "awayPitcher": "Zack Littell",
     "homePitcher": "Kyle Bradish",
     "pick": "Baltimore Orioles",
-    "prediction": "Baltimore Orioles -225",
-    "odds": "-225",
-    "winProb": 0.691,
-    "edge": 0.191,
+    "prediction": "Baltimore Orioles -190",
+    "odds": "-190",
+    "winProb": 0.656,
+    "edge": 0.156,
     "confidence": "Elite",
-    "predictedScore": "Washington Nationals 4.0 \u2013 Baltimore Orioles 5.8",
-    "predictedHomeScore": 5.77,
+    "predictedScore": "Washington Nationals 4.0 \u2013 Baltimore Orioles 5.4",
+    "predictedHomeScore": 5.43,
     "predictedAwayScore": 3.99,
     "gameTime": "2026-06-28T17:35:00Z",
     "gamePk": 824821,
     "rank": 1
-  },
-  {
-    "matchup": "Chicago Cubs @ Milwaukee Brewers",
-    "awayTeam": "Chicago Cubs",
-    "homeTeam": "Milwaukee Brewers",
-    "awayPitcher": "Ryan Rolison",
-    "homePitcher": "Brandon Woodruff",
-    "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -175",
-    "odds": "-175",
-    "winProb": 0.639,
-    "edge": 0.139,
-    "confidence": "Strong",
-    "predictedScore": "Chicago Cubs 4.3 \u2013 Milwaukee Brewers 5.6",
-    "predictedHomeScore": 5.57,
-    "predictedAwayScore": 4.3,
-    "gameTime": "2026-06-28T18:10:00Z",
-    "gamePk": 823769,
-    "rank": 2
   },
   {
     "matchup": "Houston Astros @ Detroit Tigers",
@@ -54,26 +35,26 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-06-28T17:40:00Z",
     "gamePk": 824256,
-    "rank": 3
+    "rank": 2
   },
   {
-    "matchup": "New York Yankees @ Boston Red Sox",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Boston Red Sox",
-    "awayPitcher": "Carlos Rod\u00f3n",
-    "homePitcher": "Sonny Gray",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -150",
-    "odds": "-150",
-    "winProb": 0.598,
-    "edge": 0.098,
+    "matchup": "Chicago Cubs @ Milwaukee Brewers",
+    "awayTeam": "Chicago Cubs",
+    "homeTeam": "Milwaukee Brewers",
+    "awayPitcher": "Ryan Rolison",
+    "homePitcher": "Brandon Woodruff",
+    "pick": "Milwaukee Brewers",
+    "prediction": "Milwaukee Brewers -145",
+    "odds": "-145",
+    "winProb": 0.596,
+    "edge": 0.096,
     "confidence": "Strong",
-    "predictedScore": "New York Yankees 4.5 \u2013 Boston Red Sox 3.6",
-    "predictedHomeScore": 3.6,
-    "predictedAwayScore": 4.49,
-    "gameTime": "2026-06-28T23:20:00Z",
-    "gamePk": 824744,
-    "rank": 4
+    "predictedScore": "Chicago Cubs 4.3 \u2013 Milwaukee Brewers 5.2",
+    "predictedHomeScore": 5.16,
+    "predictedAwayScore": 4.3,
+    "gameTime": "2026-06-28T18:10:00Z",
+    "gamePk": 823769,
+    "rank": 3
   },
   {
     "matchup": "Arizona Diamondbacks @ Tampa Bay Rays",
@@ -92,7 +73,7 @@
     "predictedAwayScore": 3.74,
     "gameTime": "2026-06-28T17:40:00Z",
     "gamePk": 822959,
-    "rank": 5
+    "rank": 4
   },
   {
     "matchup": "Athletics @ Los Angeles Angels",
@@ -111,7 +92,7 @@
     "predictedAwayScore": 4.2,
     "gameTime": "2026-06-28T19:15:00Z",
     "gamePk": 824011,
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "Texas Rangers @ Toronto Blue Jays",
@@ -130,26 +111,7 @@
     "predictedAwayScore": 3.95,
     "gameTime": "2026-06-28T17:37:00Z",
     "gamePk": 822795,
-    "rank": 7
-  },
-  {
-    "matchup": "Kansas City Royals @ Chicago White Sox",
-    "awayTeam": "Kansas City Royals",
-    "homeTeam": "Chicago White Sox",
-    "awayPitcher": "Luinder Avila",
-    "homePitcher": "Anthony Kay",
-    "pick": "Kansas City Royals",
-    "prediction": "Kansas City Royals -135",
-    "odds": "-135",
-    "winProb": 0.572,
-    "edge": 0.072,
-    "confidence": "Lean",
-    "predictedScore": "Kansas City Royals 4.7 \u2013 Chicago White Sox 4.0",
-    "predictedHomeScore": 4.05,
-    "predictedAwayScore": 4.69,
-    "gameTime": "2026-06-28T18:10:00Z",
-    "gamePk": 824580,
-    "rank": 8
+    "rank": 6
   },
   {
     "matchup": "Miami Marlins @ St. Louis Cardinals",
@@ -168,7 +130,26 @@
     "predictedAwayScore": 4.15,
     "gameTime": "2026-06-28T18:15:00Z",
     "gamePk": 823037,
-    "rank": 9
+    "rank": 7
+  },
+  {
+    "matchup": "New York Yankees @ Boston Red Sox",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Boston Red Sox",
+    "awayPitcher": "Carlos Rod\u00f3n",
+    "homePitcher": "Sonny Gray",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -130",
+    "odds": "-130",
+    "winProb": 0.564,
+    "edge": 0.064,
+    "confidence": "Lean",
+    "predictedScore": "New York Yankees 4.2 \u2013 Boston Red Sox 3.6",
+    "predictedHomeScore": 3.6,
+    "predictedAwayScore": 4.18,
+    "gameTime": "2026-06-28T23:20:00Z",
+    "gamePk": 824744,
+    "rank": 8
   },
   {
     "matchup": "Atlanta Braves @ San Francisco Giants",
@@ -187,7 +168,7 @@
     "predictedAwayScore": 3.48,
     "gameTime": "2026-06-28T20:05:00Z",
     "gamePk": 823204,
-    "rank": 10
+    "rank": 9
   },
   {
     "matchup": "Cincinnati Reds @ Pittsburgh Pirates",
@@ -206,7 +187,45 @@
     "predictedAwayScore": 4.6,
     "gameTime": "2026-06-28T17:35:00Z",
     "gamePk": 823362,
+    "rank": 10
+  },
+  {
+    "matchup": "Colorado Rockies @ Minnesota Twins",
+    "awayTeam": "Colorado Rockies",
+    "homeTeam": "Minnesota Twins",
+    "awayPitcher": "Ryan Feltner",
+    "homePitcher": "Connor Prielipp",
+    "pick": "Colorado Rockies",
+    "prediction": "Colorado Rockies -115",
+    "odds": "-115",
+    "winProb": 0.535,
+    "edge": 0.035,
+    "confidence": "Lean",
+    "predictedScore": "Colorado Rockies 5.2 \u2013 Minnesota Twins 4.9",
+    "predictedHomeScore": 4.89,
+    "predictedAwayScore": 5.19,
+    "gameTime": "2026-06-28T18:10:00Z",
+    "gamePk": 823686,
     "rank": 11
+  },
+  {
+    "matchup": "Kansas City Royals @ Chicago White Sox",
+    "awayTeam": "Kansas City Royals",
+    "homeTeam": "Chicago White Sox",
+    "awayPitcher": "Luinder Avila",
+    "homePitcher": "Anthony Kay",
+    "pick": "Kansas City Royals",
+    "prediction": "Kansas City Royals -115",
+    "odds": "-115",
+    "winProb": 0.533,
+    "edge": 0.033,
+    "confidence": "Lean",
+    "predictedScore": "Kansas City Royals 4.3 \u2013 Chicago White Sox 4.0",
+    "predictedHomeScore": 4.05,
+    "predictedAwayScore": 4.34,
+    "gameTime": "2026-06-28T18:10:00Z",
+    "gamePk": 824580,
+    "rank": 12
   },
   {
     "matchup": "Philadelphia Phillies @ New York Mets",
@@ -225,7 +244,7 @@
     "predictedAwayScore": 4.2,
     "gameTime": "2026-06-28T17:40:00Z",
     "gamePk": 823608,
-    "rank": 12
+    "rank": 13
   },
   {
     "matchup": "Los Angeles Dodgers @ San Diego Padres",
@@ -244,6 +263,6 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-06-28T20:10:00Z",
     "gamePk": 823281,
-    "rank": 13
+    "rank": 14
   }
 ]
