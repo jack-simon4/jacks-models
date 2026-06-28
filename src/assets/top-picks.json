@@ -133,6 +133,25 @@
     "rank": 7
   },
   {
+    "matchup": "Los Angeles Dodgers @ San Diego Padres",
+    "awayTeam": "Los Angeles Dodgers",
+    "homeTeam": "San Diego Padres",
+    "awayPitcher": "Emmet Sheehan",
+    "homePitcher": "Michael King",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -130",
+    "odds": "-130",
+    "winProb": 0.568,
+    "edge": 0.068,
+    "confidence": "Lean",
+    "predictedScore": "Los Angeles Dodgers 4.1 \u2013 San Diego Padres 3.5",
+    "predictedHomeScore": 3.51,
+    "predictedAwayScore": 4.12,
+    "gameTime": "2026-06-28T20:10:00Z",
+    "gamePk": 823281,
+    "rank": 8
+  },
+  {
     "matchup": "New York Yankees @ Boston Red Sox",
     "awayTeam": "New York Yankees",
     "homeTeam": "Boston Red Sox",
@@ -149,7 +168,7 @@
     "predictedAwayScore": 4.18,
     "gameTime": "2026-06-28T23:20:00Z",
     "gamePk": 824744,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Atlanta Braves @ San Francisco Giants",
@@ -168,7 +187,7 @@
     "predictedAwayScore": 3.48,
     "gameTime": "2026-06-28T20:05:00Z",
     "gamePk": 823204,
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Colorado Rockies @ Minnesota Twins",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 5.19,
     "gameTime": "2026-06-28T18:10:00Z",
     "gamePk": 823686,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Kansas City Royals @ Chicago White Sox",
@@ -206,7 +225,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-06-28T18:10:00Z",
     "gamePk": 824580,
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "Philadelphia Phillies @ New York Mets",
@@ -225,25 +244,6 @@
     "predictedAwayScore": 4.2,
     "gameTime": "2026-06-28T17:40:00Z",
     "gamePk": 823608,
-    "rank": 12
-  },
-  {
-    "matchup": "Los Angeles Dodgers @ San Diego Padres",
-    "awayTeam": "Los Angeles Dodgers",
-    "homeTeam": "San Diego Padres",
-    "awayPitcher": "Emmet Sheehan",
-    "homePitcher": "Michael King",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -115",
-    "odds": "-115",
-    "winProb": 0.531,
-    "edge": 0.031,
-    "confidence": "Lean",
-    "predictedScore": "Los Angeles Dodgers 4.1 \u2013 San Diego Padres 3.8",
-    "predictedHomeScore": 3.84,
-    "predictedAwayScore": 4.12,
-    "gameTime": "2026-06-28T20:10:00Z",
-    "gamePk": 823281,
     "rank": 13
   }
 ]
