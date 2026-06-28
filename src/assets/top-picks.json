@@ -171,25 +171,6 @@
     "rank": 9
   },
   {
-    "matchup": "Cincinnati Reds @ Pittsburgh Pirates",
-    "awayTeam": "Cincinnati Reds",
-    "homeTeam": "Pittsburgh Pirates",
-    "awayPitcher": "Brady Singer",
-    "homePitcher": "Mitch Keller",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -120",
-    "odds": "-120",
-    "winProb": 0.547,
-    "edge": 0.047,
-    "confidence": "Lean",
-    "predictedScore": "Cincinnati Reds 4.6 \u2013 Pittsburgh Pirates 5.0",
-    "predictedHomeScore": 5.02,
-    "predictedAwayScore": 4.6,
-    "gameTime": "2026-06-28T17:35:00Z",
-    "gamePk": 823362,
-    "rank": 10
-  },
-  {
     "matchup": "Colorado Rockies @ Minnesota Twins",
     "awayTeam": "Colorado Rockies",
     "homeTeam": "Minnesota Twins",
@@ -206,7 +187,7 @@
     "predictedAwayScore": 5.19,
     "gameTime": "2026-06-28T18:10:00Z",
     "gamePk": 823686,
-    "rank": 11
+    "rank": 10
   },
   {
     "matchup": "Kansas City Royals @ Chicago White Sox",
@@ -225,7 +206,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-06-28T18:10:00Z",
     "gamePk": 824580,
-    "rank": 12
+    "rank": 11
   },
   {
     "matchup": "Philadelphia Phillies @ New York Mets",
@@ -244,7 +225,7 @@
     "predictedAwayScore": 4.2,
     "gameTime": "2026-06-28T17:40:00Z",
     "gamePk": 823608,
-    "rank": 13
+    "rank": 12
   },
   {
     "matchup": "Los Angeles Dodgers @ San Diego Padres",
@@ -263,6 +244,6 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-06-28T20:10:00Z",
     "gamePk": 823281,
-    "rank": 14
+    "rank": 13
   }
 ]
