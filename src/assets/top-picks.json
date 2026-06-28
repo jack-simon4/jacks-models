@@ -57,6 +57,25 @@
     "rank": 3
   },
   {
+    "matchup": "Chicago Cubs @ Milwaukee Brewers",
+    "awayTeam": "Chicago Cubs",
+    "homeTeam": "Milwaukee Brewers",
+    "awayPitcher": "Ryan Rolison",
+    "homePitcher": "Brandon Woodruff",
+    "pick": "Milwaukee Brewers",
+    "prediction": "Milwaukee Brewers -145",
+    "odds": "-145",
+    "winProb": 0.596,
+    "edge": 0.096,
+    "confidence": "Strong",
+    "predictedScore": "Chicago Cubs 4.3 \u2013 Milwaukee Brewers 5.2",
+    "predictedHomeScore": 5.16,
+    "predictedAwayScore": 4.3,
+    "gameTime": "2026-06-28T18:10:00Z",
+    "gamePk": 823769,
+    "rank": 4
+  },
+  {
     "matchup": "Arizona Diamondbacks @ Tampa Bay Rays",
     "awayTeam": "Arizona Diamondbacks",
     "homeTeam": "Tampa Bay Rays",
@@ -73,7 +92,7 @@
     "predictedAwayScore": 3.74,
     "gameTime": "2026-06-28T17:40:00Z",
     "gamePk": 822959,
-    "rank": 4
+    "rank": 5
   },
   {
     "matchup": "Athletics @ Los Angeles Angels",
@@ -92,7 +111,7 @@
     "predictedAwayScore": 4.53,
     "gameTime": "2026-06-28T19:15:00Z",
     "gamePk": 824011,
-    "rank": 5
+    "rank": 6
   },
   {
     "matchup": "Kansas City Royals @ Chicago White Sox",
@@ -111,13 +130,13 @@
     "predictedAwayScore": 4.69,
     "gameTime": "2026-06-28T18:10:00Z",
     "gamePk": 824580,
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "Miami Marlins @ St. Louis Cardinals",
     "awayTeam": "Miami Marlins",
     "homeTeam": "St. Louis Cardinals",
-    "awayPitcher": "TBD",
+    "awayPitcher": "Tyler Phillips",
     "homePitcher": "Kyle Leahy",
     "pick": "Miami Marlins",
     "prediction": "Miami Marlins -130",
@@ -130,7 +149,7 @@
     "predictedAwayScore": 4.15,
     "gameTime": "2026-06-28T18:15:00Z",
     "gamePk": 823037,
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Atlanta Braves @ San Francisco Giants",
@@ -149,7 +168,7 @@
     "predictedAwayScore": 3.48,
     "gameTime": "2026-06-28T20:05:00Z",
     "gamePk": 823204,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Texas Rangers @ Toronto Blue Jays",
@@ -168,7 +187,7 @@
     "predictedAwayScore": 3.95,
     "gameTime": "2026-06-28T17:37:00Z",
     "gamePk": 822795,
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Seattle Mariners @ Cleveland Guardians",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 4.2,
     "gameTime": "2026-06-28T17:40:00Z",
     "gamePk": 824422,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Los Angeles Dodgers @ San Diego Padres",
@@ -206,6 +225,6 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-06-28T20:10:00Z",
     "gamePk": 823281,
-    "rank": 11
+    "rank": 12
   }
 ]
