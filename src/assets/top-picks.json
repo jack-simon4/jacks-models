@@ -11,12 +11,31 @@
     "winProb": 0.691,
     "edge": 0.191,
     "confidence": "Elite",
-    "predictedScore": "Washington Nationals 3.6 \u2013 Baltimore Orioles 5.4",
-    "predictedHomeScore": 5.43,
-    "predictedAwayScore": 3.64,
+    "predictedScore": "Washington Nationals 4.0 \u2013 Baltimore Orioles 5.8",
+    "predictedHomeScore": 5.77,
+    "predictedAwayScore": 3.99,
     "gameTime": "2026-06-28T17:35:00Z",
     "gamePk": 824821,
     "rank": 1
+  },
+  {
+    "matchup": "Chicago Cubs @ Milwaukee Brewers",
+    "awayTeam": "Chicago Cubs",
+    "homeTeam": "Milwaukee Brewers",
+    "awayPitcher": "Ryan Rolison",
+    "homePitcher": "Brandon Woodruff",
+    "pick": "Milwaukee Brewers",
+    "prediction": "Milwaukee Brewers -175",
+    "odds": "-175",
+    "winProb": 0.639,
+    "edge": 0.139,
+    "confidence": "Strong",
+    "predictedScore": "Chicago Cubs 4.3 \u2013 Milwaukee Brewers 5.6",
+    "predictedHomeScore": 5.57,
+    "predictedAwayScore": 4.3,
+    "gameTime": "2026-06-28T18:10:00Z",
+    "gamePk": 823769,
+    "rank": 2
   },
   {
     "matchup": "Houston Astros @ Detroit Tigers",
@@ -30,12 +49,12 @@
     "winProb": 0.598,
     "edge": 0.098,
     "confidence": "Strong",
-    "predictedScore": "Houston Astros 3.6 \u2013 Detroit Tigers 2.7",
-    "predictedHomeScore": 2.67,
-    "predictedAwayScore": 3.55,
+    "predictedScore": "Houston Astros 3.9 \u2013 Detroit Tigers 3.0",
+    "predictedHomeScore": 2.98,
+    "predictedAwayScore": 3.87,
     "gameTime": "2026-06-28T17:40:00Z",
     "gamePk": 824256,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "New York Yankees @ Boston Red Sox",
@@ -54,25 +73,6 @@
     "predictedAwayScore": 4.49,
     "gameTime": "2026-06-28T23:20:00Z",
     "gamePk": 824744,
-    "rank": 3
-  },
-  {
-    "matchup": "Chicago Cubs @ Milwaukee Brewers",
-    "awayTeam": "Chicago Cubs",
-    "homeTeam": "Milwaukee Brewers",
-    "awayPitcher": "Ryan Rolison",
-    "homePitcher": "Brandon Woodruff",
-    "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -145",
-    "odds": "-145",
-    "winProb": 0.596,
-    "edge": 0.096,
-    "confidence": "Strong",
-    "predictedScore": "Chicago Cubs 4.3 \u2013 Milwaukee Brewers 5.2",
-    "predictedHomeScore": 5.16,
-    "predictedAwayScore": 4.3,
-    "gameTime": "2026-06-28T18:10:00Z",
-    "gamePk": 823769,
     "rank": 4
   },
   {
@@ -114,6 +114,25 @@
     "rank": 6
   },
   {
+    "matchup": "Texas Rangers @ Toronto Blue Jays",
+    "awayTeam": "Texas Rangers",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Kumar Rocker",
+    "homePitcher": "Shane Bieber",
+    "pick": "Toronto Blue Jays",
+    "prediction": "Toronto Blue Jays -135",
+    "odds": "-135",
+    "winProb": 0.576,
+    "edge": 0.076,
+    "confidence": "Lean",
+    "predictedScore": "Texas Rangers 3.9 \u2013 Toronto Blue Jays 4.6",
+    "predictedHomeScore": 4.63,
+    "predictedAwayScore": 3.95,
+    "gameTime": "2026-06-28T17:37:00Z",
+    "gamePk": 822795,
+    "rank": 7
+  },
+  {
     "matchup": "Kansas City Royals @ Chicago White Sox",
     "awayTeam": "Kansas City Royals",
     "homeTeam": "Chicago White Sox",
@@ -130,7 +149,7 @@
     "predictedAwayScore": 4.69,
     "gameTime": "2026-06-28T18:10:00Z",
     "gamePk": 824580,
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Miami Marlins @ St. Louis Cardinals",
@@ -149,7 +168,7 @@
     "predictedAwayScore": 4.15,
     "gameTime": "2026-06-28T18:15:00Z",
     "gamePk": 823037,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Atlanta Braves @ San Francisco Giants",
@@ -168,45 +187,45 @@
     "predictedAwayScore": 3.48,
     "gameTime": "2026-06-28T20:05:00Z",
     "gamePk": 823204,
-    "rank": 9
-  },
-  {
-    "matchup": "Texas Rangers @ Toronto Blue Jays",
-    "awayTeam": "Texas Rangers",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "Kumar Rocker",
-    "homePitcher": "Shane Bieber",
-    "pick": "Toronto Blue Jays",
-    "prediction": "Toronto Blue Jays -120",
-    "odds": "-120",
-    "winProb": 0.541,
-    "edge": 0.041,
-    "confidence": "Lean",
-    "predictedScore": "Texas Rangers 3.9 \u2013 Toronto Blue Jays 4.3",
-    "predictedHomeScore": 4.32,
-    "predictedAwayScore": 3.95,
-    "gameTime": "2026-06-28T17:37:00Z",
-    "gamePk": 822795,
     "rank": 10
   },
   {
-    "matchup": "Seattle Mariners @ Cleveland Guardians",
-    "awayTeam": "Seattle Mariners",
-    "homeTeam": "Cleveland Guardians",
-    "awayPitcher": "Emerson Hancock",
-    "homePitcher": "Gavin Williams",
-    "pick": "Seattle Mariners",
-    "prediction": "Seattle Mariners -115",
+    "matchup": "Cincinnati Reds @ Pittsburgh Pirates",
+    "awayTeam": "Cincinnati Reds",
+    "homeTeam": "Pittsburgh Pirates",
+    "awayPitcher": "Brady Singer",
+    "homePitcher": "Mitch Keller",
+    "pick": "Pittsburgh Pirates",
+    "prediction": "Pittsburgh Pirates -120",
+    "odds": "-120",
+    "winProb": 0.547,
+    "edge": 0.047,
+    "confidence": "Lean",
+    "predictedScore": "Cincinnati Reds 4.6 \u2013 Pittsburgh Pirates 5.0",
+    "predictedHomeScore": 5.02,
+    "predictedAwayScore": 4.6,
+    "gameTime": "2026-06-28T17:35:00Z",
+    "gamePk": 823362,
+    "rank": 11
+  },
+  {
+    "matchup": "Philadelphia Phillies @ New York Mets",
+    "awayTeam": "Philadelphia Phillies",
+    "homeTeam": "New York Mets",
+    "awayPitcher": "Jes\u00fas Luzardo",
+    "homePitcher": "Cionel P\u00e9rez",
+    "pick": "Philadelphia Phillies",
+    "prediction": "Philadelphia Phillies -115",
     "odds": "-115",
     "winProb": 0.532,
     "edge": 0.032,
     "confidence": "Lean",
-    "predictedScore": "Seattle Mariners 4.2 \u2013 Cleveland Guardians 3.9",
+    "predictedScore": "Philadelphia Phillies 4.2 \u2013 New York Mets 3.9",
     "predictedHomeScore": 3.92,
     "predictedAwayScore": 4.2,
     "gameTime": "2026-06-28T17:40:00Z",
-    "gamePk": 824422,
-    "rank": 11
+    "gamePk": 823608,
+    "rank": 12
   },
   {
     "matchup": "Los Angeles Dodgers @ San Diego Padres",
@@ -225,6 +244,6 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-06-28T20:10:00Z",
     "gamePk": 823281,
-    "rank": 12
+    "rank": 13
   }
 ]
