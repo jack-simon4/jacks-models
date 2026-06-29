@@ -38,25 +38,6 @@
     "rank": 2
   },
   {
-    "matchup": "San Diego Padres @ Chicago Cubs",
-    "awayTeam": "San Diego Padres",
-    "homeTeam": "Chicago Cubs",
-    "awayPitcher": "TBD",
-    "homePitcher": "Shota Imanaga",
-    "pick": "San Diego Padres",
-    "prediction": "San Diego Padres -185",
-    "odds": "-185",
-    "winProb": 0.649,
-    "edge": 0.149,
-    "confidence": "Elite",
-    "predictedScore": "San Diego Padres 5.5 \u2013 Chicago Cubs 4.1",
-    "predictedHomeScore": 4.12,
-    "predictedAwayScore": 5.49,
-    "gameTime": "2026-06-30T00:05:00Z",
-    "gamePk": 824662,
-    "rank": 3
-  },
-  {
     "matchup": "Los Angeles Dodgers @ Athletics",
     "awayTeam": "Los Angeles Dodgers",
     "homeTeam": "Athletics",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 3.64,
     "gameTime": "2026-06-30T01:40:00Z",
     "gamePk": 824986,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Washington Nationals @ Boston Red Sox",
@@ -92,7 +73,7 @@
     "predictedAwayScore": 3.86,
     "gameTime": "2026-06-29T23:10:00Z",
     "gamePk": 824741,
-    "rank": 5
+    "rank": 4
   },
   {
     "matchup": "Pittsburgh Pirates @ Philadelphia Phillies",
@@ -111,7 +92,7 @@
     "predictedAwayScore": 4.4,
     "gameTime": "2026-06-29T22:40:00Z",
     "gamePk": 823444,
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "Detroit Tigers @ New York Yankees",
@@ -130,6 +111,25 @@
     "predictedAwayScore": 5.18,
     "gameTime": "2026-06-29T23:05:00Z",
     "gamePk": 823529,
+    "rank": 6
+  },
+  {
+    "matchup": "San Diego Padres @ Chicago Cubs",
+    "awayTeam": "San Diego Padres",
+    "homeTeam": "Chicago Cubs",
+    "awayPitcher": "Griffin Canning",
+    "homePitcher": "Shota Imanaga",
+    "pick": "San Diego Padres",
+    "prediction": "San Diego Padres -160",
+    "odds": "-160",
+    "winProb": 0.612,
+    "edge": 0.112,
+    "confidence": "Strong",
+    "predictedScore": "San Diego Padres 5.5 \u2013 Chicago Cubs 4.5",
+    "predictedHomeScore": 4.48,
+    "predictedAwayScore": 5.49,
+    "gameTime": "2026-06-30T00:05:00Z",
+    "gamePk": 824662,
     "rank": 7
   },
   {
@@ -177,16 +177,35 @@
     "awayPitcher": "Sandy Alcantara",
     "homePitcher": "TBD",
     "pick": "Colorado Rockies",
-    "prediction": "Colorado Rockies -120",
-    "odds": "-120",
-    "winProb": 0.542,
-    "edge": 0.042,
+    "prediction": "Colorado Rockies -135",
+    "odds": "-135",
+    "winProb": 0.578,
+    "edge": 0.078,
     "confidence": "Lean",
-    "predictedScore": "Miami Marlins 4.1 \u2013 Colorado Rockies 4.4",
+    "predictedScore": "Miami Marlins 3.7 \u2013 Colorado Rockies 4.4",
     "predictedHomeScore": 4.44,
-    "predictedAwayScore": 4.06,
+    "predictedAwayScore": 3.74,
     "gameTime": "2026-06-30T00:40:00Z",
     "gamePk": 824339,
     "rank": 10
+  },
+  {
+    "matchup": "San Francisco Giants @ Arizona Diamondbacks",
+    "awayTeam": "San Francisco Giants",
+    "homeTeam": "Arizona Diamondbacks",
+    "awayPitcher": "Tyler Mahle",
+    "homePitcher": "Eduardo Rodriguez",
+    "pick": "San Francisco Giants",
+    "prediction": "San Francisco Giants -115",
+    "odds": "-115",
+    "winProb": 0.533,
+    "edge": 0.033,
+    "confidence": "Lean",
+    "predictedScore": "San Francisco Giants 4.6 \u2013 Arizona Diamondbacks 4.3",
+    "predictedHomeScore": 4.29,
+    "predictedAwayScore": 4.58,
+    "gameTime": "2026-06-30T01:40:00Z",
+    "gamePk": 825065,
+    "rank": 11
   }
 ]
