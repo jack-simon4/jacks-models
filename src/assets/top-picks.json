@@ -1,5 +1,24 @@
 [
   {
+    "matchup": "Pittsburgh Pirates @ Philadelphia Phillies",
+    "awayTeam": "Pittsburgh Pirates",
+    "homeTeam": "Philadelphia Phillies",
+    "awayPitcher": "Braxton Ashcraft",
+    "homePitcher": "Aaron Nola",
+    "pick": "Pittsburgh Pirates",
+    "prediction": "Pittsburgh Pirates -255",
+    "odds": "-255",
+    "winProb": 0.719,
+    "edge": 0.219,
+    "confidence": "Elite",
+    "predictedScore": "Pittsburgh Pirates 5.0 \u2013 Philadelphia Phillies 2.9",
+    "predictedHomeScore": 2.92,
+    "predictedAwayScore": 5.01,
+    "gameTime": "2026-06-29T22:40:00Z",
+    "gamePk": 823444,
+    "rank": 1
+  },
+  {
     "matchup": "New York Mets @ Toronto Blue Jays",
     "awayTeam": "New York Mets",
     "homeTeam": "Toronto Blue Jays",
@@ -16,7 +35,26 @@
     "predictedAwayScore": 3.0,
     "gameTime": "2026-06-29T23:07:00Z",
     "gamePk": 822792,
-    "rank": 1
+    "rank": 2
+  },
+  {
+    "matchup": "Los Angeles Dodgers @ Athletics",
+    "awayTeam": "Los Angeles Dodgers",
+    "homeTeam": "Athletics",
+    "awayPitcher": "Eric Lauer",
+    "homePitcher": "Gage Jump",
+    "pick": "Athletics",
+    "prediction": "Athletics -210",
+    "odds": "-210",
+    "winProb": 0.676,
+    "edge": 0.176,
+    "confidence": "Elite",
+    "predictedScore": "Los Angeles Dodgers 3.6 \u2013 Athletics 5.3",
+    "predictedHomeScore": 5.28,
+    "predictedAwayScore": 3.64,
+    "gameTime": "2026-06-30T01:40:00Z",
+    "gamePk": 824986,
+    "rank": 3
   },
   {
     "matchup": "Washington Nationals @ Boston Red Sox",
@@ -35,26 +73,7 @@
     "predictedAwayScore": 3.55,
     "gameTime": "2026-06-29T23:10:00Z",
     "gamePk": 824741,
-    "rank": 2
-  },
-  {
-    "matchup": "Pittsburgh Pirates @ Philadelphia Phillies",
-    "awayTeam": "Pittsburgh Pirates",
-    "homeTeam": "Philadelphia Phillies",
-    "awayPitcher": "Braxton Ashcraft",
-    "homePitcher": "Aaron Nola",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -195",
-    "odds": "-195",
-    "winProb": 0.66,
-    "edge": 0.16,
-    "confidence": "Elite",
-    "predictedScore": "Pittsburgh Pirates 4.4 \u2013 Philadelphia Phillies 2.9",
-    "predictedHomeScore": 2.92,
-    "predictedAwayScore": 4.4,
-    "gameTime": "2026-06-29T22:40:00Z",
-    "gamePk": 823444,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Minnesota Twins @ Houston Astros",
@@ -73,25 +92,6 @@
     "predictedAwayScore": 3.09,
     "gameTime": "2026-06-30T00:10:00Z",
     "gamePk": 824176,
-    "rank": 4
-  },
-  {
-    "matchup": "Los Angeles Dodgers @ Athletics",
-    "awayTeam": "Los Angeles Dodgers",
-    "homeTeam": "Athletics",
-    "awayPitcher": "Eric Lauer",
-    "homePitcher": "Gage Jump",
-    "pick": "Athletics",
-    "prediction": "Athletics -180",
-    "odds": "-180",
-    "winProb": 0.644,
-    "edge": 0.144,
-    "confidence": "Elite",
-    "predictedScore": "Los Angeles Dodgers 3.6 \u2013 Athletics 5.0",
-    "predictedHomeScore": 4.96,
-    "predictedAwayScore": 3.64,
-    "gameTime": "2026-06-30T01:40:00Z",
-    "gamePk": 824986,
     "rank": 5
   },
   {
