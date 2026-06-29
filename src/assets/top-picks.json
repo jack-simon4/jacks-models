@@ -114,6 +114,25 @@
     "rank": 6
   },
   {
+    "matchup": "Detroit Tigers @ New York Yankees",
+    "awayTeam": "Detroit Tigers",
+    "homeTeam": "New York Yankees",
+    "awayPitcher": "Casey Mize",
+    "homePitcher": "Ryan Weathers",
+    "pick": "Detroit Tigers",
+    "prediction": "Detroit Tigers -160",
+    "odds": "-160",
+    "winProb": 0.613,
+    "edge": 0.113,
+    "confidence": "Strong",
+    "predictedScore": "Detroit Tigers 5.5 \u2013 New York Yankees 4.5",
+    "predictedHomeScore": 4.52,
+    "predictedAwayScore": 5.54,
+    "gameTime": "2026-06-29T23:05:00Z",
+    "gamePk": 823529,
+    "rank": 7
+  },
+  {
     "matchup": "San Diego Padres @ Chicago Cubs",
     "awayTeam": "San Diego Padres",
     "homeTeam": "Chicago Cubs",
@@ -130,7 +149,7 @@
     "predictedAwayScore": 5.49,
     "gameTime": "2026-06-30T00:05:00Z",
     "gamePk": 824662,
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Los Angeles Angels @ Seattle Mariners",
@@ -149,7 +168,7 @@
     "predictedAwayScore": 3.68,
     "gameTime": "2026-06-30T01:40:00Z",
     "gamePk": 823121,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Cincinnati Reds @ Milwaukee Brewers",
@@ -168,25 +187,6 @@
     "predictedAwayScore": 4.71,
     "gameTime": "2026-06-29T23:40:00Z",
     "gamePk": 823771,
-    "rank": 9
-  },
-  {
-    "matchup": "Detroit Tigers @ New York Yankees",
-    "awayTeam": "Detroit Tigers",
-    "homeTeam": "New York Yankees",
-    "awayPitcher": "Casey Mize",
-    "homePitcher": "Ryan Weathers",
-    "pick": "Detroit Tigers",
-    "prediction": "Detroit Tigers -135",
-    "odds": "-135",
-    "winProb": 0.574,
-    "edge": 0.074,
-    "confidence": "Lean",
-    "predictedScore": "Detroit Tigers 5.2 \u2013 New York Yankees 4.5",
-    "predictedHomeScore": 4.52,
-    "predictedAwayScore": 5.18,
-    "gameTime": "2026-06-29T23:05:00Z",
-    "gamePk": 823529,
     "rank": 10
   },
   {
