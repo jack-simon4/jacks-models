@@ -152,6 +152,25 @@
     "rank": 8
   },
   {
+    "matchup": "Pittsburgh Pirates @ Philadelphia Phillies",
+    "awayTeam": "Pittsburgh Pirates",
+    "homeTeam": "Philadelphia Phillies",
+    "awayPitcher": "Bubba Chandler",
+    "homePitcher": "Cristopher S\u00e1nchez",
+    "pick": "Pittsburgh Pirates",
+    "prediction": "Pittsburgh Pirates -130",
+    "odds": "-130",
+    "winProb": 0.563,
+    "edge": 0.063,
+    "confidence": "Lean",
+    "predictedScore": "Pittsburgh Pirates 3.8 \u2013 Philadelphia Phillies 3.2",
+    "predictedHomeScore": 3.23,
+    "predictedAwayScore": 3.79,
+    "gameTime": "2026-06-30T22:40:00Z",
+    "gamePk": 823445,
+    "rank": 9
+  },
+  {
     "matchup": "Chicago White Sox @ Baltimore Orioles",
     "awayTeam": "Chicago White Sox",
     "homeTeam": "Baltimore Orioles",
@@ -168,7 +187,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-06-30T22:35:00Z",
     "gamePk": 824819,
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Cincinnati Reds @ Milwaukee Brewers",
@@ -187,25 +206,6 @@
     "predictedAwayScore": 5.11,
     "gameTime": "2026-06-30T23:40:00Z",
     "gamePk": 823768,
-    "rank": 10
-  },
-  {
-    "matchup": "San Francisco Giants @ Arizona Diamondbacks",
-    "awayTeam": "San Francisco Giants",
-    "homeTeam": "Arizona Diamondbacks",
-    "awayPitcher": "Landen Roupp",
-    "homePitcher": "TBD",
-    "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -115",
-    "odds": "-115",
-    "winProb": 0.533,
-    "edge": 0.033,
-    "confidence": "Lean",
-    "predictedScore": "San Francisco Giants 4.2 \u2013 Arizona Diamondbacks 3.9",
-    "predictedHomeScore": 3.95,
-    "predictedAwayScore": 4.24,
-    "gameTime": "2026-07-01T01:40:00Z",
-    "gamePk": 825066,
     "rank": 11
   }
 ]
