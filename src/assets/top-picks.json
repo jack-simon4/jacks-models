@@ -38,6 +38,25 @@
     "rank": 2
   },
   {
+    "matchup": "San Francisco Giants @ Arizona Diamondbacks",
+    "awayTeam": "San Francisco Giants",
+    "homeTeam": "Arizona Diamondbacks",
+    "awayPitcher": "Landen Roupp",
+    "homePitcher": "Brandon Pfaadt",
+    "pick": "San Francisco Giants",
+    "prediction": "San Francisco Giants -210",
+    "odds": "-210",
+    "winProb": 0.677,
+    "edge": 0.177,
+    "confidence": "Elite",
+    "predictedScore": "San Francisco Giants 5.6 \u2013 Arizona Diamondbacks 3.9",
+    "predictedHomeScore": 3.95,
+    "predictedAwayScore": 5.6,
+    "gameTime": "2026-07-01T01:40:00Z",
+    "gamePk": 825066,
+    "rank": 3
+  },
+  {
     "matchup": "San Diego Padres @ Chicago Cubs",
     "awayTeam": "San Diego Padres",
     "homeTeam": "Chicago Cubs",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 4.43,
     "gameTime": "2026-07-01T00:05:00Z",
     "gamePk": 824661,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Miami Marlins @ Colorado Rockies",
@@ -73,7 +92,7 @@
     "predictedAwayScore": 6.02,
     "gameTime": "2026-07-01T00:40:00Z",
     "gamePk": 824338,
-    "rank": 4
+    "rank": 5
   },
   {
     "matchup": "New York Mets @ Toronto Blue Jays",
@@ -82,17 +101,36 @@
     "awayPitcher": "Nolan McLean",
     "homePitcher": "Kevin Gausman",
     "pick": "New York Mets",
-    "prediction": "New York Mets -150",
-    "odds": "-150",
-    "winProb": 0.6,
-    "edge": 0.1,
+    "prediction": "New York Mets -175",
+    "odds": "-175",
+    "winProb": 0.634,
+    "edge": 0.134,
     "confidence": "Strong",
-    "predictedScore": "New York Mets 4.3 \u2013 Toronto Blue Jays 3.4",
-    "predictedHomeScore": 3.37,
+    "predictedScore": "New York Mets 4.3 \u2013 Toronto Blue Jays 3.0",
+    "predictedHomeScore": 3.05,
     "predictedAwayScore": 4.27,
     "gameTime": "2026-06-30T23:07:00Z",
     "gamePk": 822793,
-    "rank": 5
+    "rank": 6
+  },
+  {
+    "matchup": "Tampa Bay Rays @ Kansas City Royals",
+    "awayTeam": "Tampa Bay Rays",
+    "homeTeam": "Kansas City Royals",
+    "awayPitcher": "Griffin Jax",
+    "homePitcher": "Noah Cameron",
+    "pick": "Tampa Bay Rays",
+    "prediction": "Tampa Bay Rays -150",
+    "odds": "-150",
+    "winProb": 0.599,
+    "edge": 0.099,
+    "confidence": "Strong",
+    "predictedScore": "Tampa Bay Rays 4.5 \u2013 Kansas City Royals 3.6",
+    "predictedHomeScore": 3.63,
+    "predictedAwayScore": 4.52,
+    "gameTime": "2026-06-30T23:40:00Z",
+    "gamePk": 824096,
+    "rank": 7
   },
   {
     "matchup": "Detroit Tigers @ New York Yankees",
@@ -111,7 +149,7 @@
     "predictedAwayScore": 3.4,
     "gameTime": "2026-06-30T23:05:00Z",
     "gamePk": 823528,
-    "rank": 6
+    "rank": 8
   },
   {
     "matchup": "Minnesota Twins @ Houston Astros",
@@ -130,26 +168,7 @@
     "predictedAwayScore": 4.4,
     "gameTime": "2026-07-01T00:10:00Z",
     "gamePk": 824175,
-    "rank": 7
-  },
-  {
-    "matchup": "Pittsburgh Pirates @ Philadelphia Phillies",
-    "awayTeam": "Pittsburgh Pirates",
-    "homeTeam": "Philadelphia Phillies",
-    "awayPitcher": "Bubba Chandler",
-    "homePitcher": "Cristopher S\u00e1nchez",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -130",
-    "odds": "-130",
-    "winProb": 0.563,
-    "edge": 0.063,
-    "confidence": "Lean",
-    "predictedScore": "Pittsburgh Pirates 3.8 \u2013 Philadelphia Phillies 3.2",
-    "predictedHomeScore": 3.23,
-    "predictedAwayScore": 3.79,
-    "gameTime": "2026-06-30T22:40:00Z",
-    "gamePk": 823445,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Chicago White Sox @ Baltimore Orioles",
@@ -168,7 +187,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-06-30T22:35:00Z",
     "gamePk": 824819,
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Cincinnati Reds @ Milwaukee Brewers",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 5.11,
     "gameTime": "2026-06-30T23:40:00Z",
     "gamePk": 823768,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Texas Rangers @ Cleveland Guardians",
@@ -206,6 +225,25 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-06-30T22:40:00Z",
     "gamePk": 824418,
-    "rank": 11
+    "rank": 12
+  },
+  {
+    "matchup": "Los Angeles Angels @ Seattle Mariners",
+    "awayTeam": "Los Angeles Angels",
+    "homeTeam": "Seattle Mariners",
+    "awayPitcher": "Jos\u00e9 Soriano",
+    "homePitcher": "Bryan Woo",
+    "pick": "Los Angeles Angels",
+    "prediction": "Los Angeles Angels -115",
+    "odds": "-115",
+    "winProb": 0.53,
+    "edge": 0.03,
+    "confidence": "Lean",
+    "predictedScore": "Los Angeles Angels 3.4 \u2013 Seattle Mariners 3.1",
+    "predictedHomeScore": 3.08,
+    "predictedAwayScore": 3.36,
+    "gameTime": "2026-07-01T01:40:00Z",
+    "gamePk": 823122,
+    "rank": 13
   }
 ]
