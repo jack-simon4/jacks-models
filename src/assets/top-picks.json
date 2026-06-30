@@ -57,6 +57,25 @@
     "rank": 3
   },
   {
+    "matchup": "Miami Marlins @ Colorado Rockies",
+    "awayTeam": "Miami Marlins",
+    "homeTeam": "Colorado Rockies",
+    "awayPitcher": "Eury P\u00e9rez",
+    "homePitcher": "Tanner Gordon",
+    "pick": "Miami Marlins",
+    "prediction": "Miami Marlins -175",
+    "odds": "-175",
+    "winProb": 0.638,
+    "edge": 0.138,
+    "confidence": "Strong",
+    "predictedScore": "Miami Marlins 6.0 \u2013 Colorado Rockies 4.8",
+    "predictedHomeScore": 4.77,
+    "predictedAwayScore": 6.02,
+    "gameTime": "2026-07-01T00:40:00Z",
+    "gamePk": 824338,
+    "rank": 4
+  },
+  {
     "matchup": "New York Mets @ Toronto Blue Jays",
     "awayTeam": "New York Mets",
     "homeTeam": "Toronto Blue Jays",
@@ -73,25 +92,6 @@
     "predictedAwayScore": 4.27,
     "gameTime": "2026-06-30T23:07:00Z",
     "gamePk": 822793,
-    "rank": 4
-  },
-  {
-    "matchup": "Miami Marlins @ Colorado Rockies",
-    "awayTeam": "Miami Marlins",
-    "homeTeam": "Colorado Rockies",
-    "awayPitcher": "Eury P\u00e9rez",
-    "homePitcher": "TBD",
-    "pick": "Colorado Rockies",
-    "prediction": "Colorado Rockies -160",
-    "odds": "-160",
-    "winProb": 0.614,
-    "edge": 0.114,
-    "confidence": "Strong",
-    "predictedScore": "Miami Marlins 3.7 \u2013 Colorado Rockies 4.8",
-    "predictedHomeScore": 4.77,
-    "predictedAwayScore": 3.74,
-    "gameTime": "2026-07-01T00:40:00Z",
-    "gamePk": 824338,
     "rank": 5
   },
   {
