@@ -12,8 +12,8 @@ Baltimore Orioles1,Gunnar Henderson
 Baltimore Orioles2,Adley Rutschman
 Baltimore Orioles3,Taylor Ward
 Baltimore Orioles4,Pete Alonso
-Baltimore Orioles5,Coby Mayo
-Baltimore Orioles6,Tyler O'Neill
+Baltimore Orioles5,Samuel Basallo
+Baltimore Orioles6,Colton Cowser
 Baltimore Orioles7,Leody Taveras
 Baltimore Orioles8,Jackson Holliday
 Baltimore Orioles9,Blaze Alexander
@@ -21,12 +21,12 @@ Texas Rangers1,Justin Foscue
 Texas Rangers2,Josh Jung
 Texas Rangers3,Ezequiel Duran
 Texas Rangers4,Jake Burger
-Texas Rangers5,Kyle Higashioka
-Texas Rangers6,Cam Cauley
+Texas Rangers5,Joc Pederson
+Texas Rangers6,Josh Smith
 Texas Rangers7,Alejandro Osuna
 Texas Rangers8,Elias Diaz
 Texas Rangers9,Nicky Lopez
-Cleveland Guardians1,David Fry
+Cleveland Guardians1,Steven Kwan
 Cleveland Guardians2,Chase DeLauter
 Cleveland Guardians3,Rhys Hoskins
 Cleveland Guardians4,Kyle Manzardo
@@ -37,7 +37,7 @@ Cleveland Guardians8,Austin Hedges
 Cleveland Guardians9,Daniel Schneemann
 Washington Nationals1,James Wood
 Washington Nationals2,Curtis Mead
-Washington Nationals3,Andres Chaparro
+Washington Nationals3,Luis Garcia Jr.
 Washington Nationals4,Dylan Crews
 Washington Nationals5,Daylen Lile
 Washington Nationals6,Jacob Young
@@ -107,6 +107,24 @@ Toronto Blue Jays6,Yohendrick Pinango
 Toronto Blue Jays7,Ernie Clement
 Toronto Blue Jays8,Sean Keys
 Toronto Blue Jays9,Andres Gimenez
+Atlanta Braves1,Drake Baldwin
+Atlanta Braves2,Ozzie Albies
+Atlanta Braves3,Matt Olson
+Atlanta Braves4,Michael Harris II
+Atlanta Braves5,Mauricio Dubon
+Atlanta Braves6,Dominic Smith
+Atlanta Braves7,Austin Riley
+Atlanta Braves8,Mike Yastrzemski
+Atlanta Braves9,Jorge Mateo
+Kansas City Royals1,Lane Thomas
+Kansas City Royals2,Bobby Witt Jr.
+Kansas City Royals3,Jac Caglianone
+Kansas City Royals4,Starling Marte
+Kansas City Royals5,Salvador Perez
+Kansas City Royals6,Carter Jensen
+Kansas City Royals7,Nick Loftin
+Kansas City Royals8,Tyler Tolbert
+Kansas City Royals9,Michael Massey
 Minnesota Twins1,Trevor Larnach
 Minnesota Twins2,Brooks Lee
 Minnesota Twins3,Kody Clemens
@@ -134,15 +152,6 @@ Athletics6,Colby Thomas
 Athletics7,Max Muncy
 Athletics8,Alika Williams
 Athletics9,Joshua Kuroda-Grauer
-Atlanta Braves1,Drake Baldwin
-Atlanta Braves2,Ozzie Albies
-Atlanta Braves3,Matt Olson
-Atlanta Braves4,Michael Harris II
-Atlanta Braves5,Mauricio Dubon
-Atlanta Braves6,Eli White
-Atlanta Braves7,Austin Riley
-Atlanta Braves8,Joey Bart
-Atlanta Braves9,Jorge Mateo
 Cincinnati Reds1,Elly De La Cruz
 Cincinnati Reds2,Sal Stewart
 Cincinnati Reds3,JJ Bleday
@@ -170,15 +179,6 @@ Houston Astros6,Taylor Trammell
 Houston Astros7,Yainer Diaz
 Houston Astros8,Nick Allen
 Houston Astros9,Raynel Delgado
-Kansas City Royals1,Carter Jensen
-Kansas City Royals2,Bobby Witt Jr.
-Kansas City Royals3,Jac Caglianone
-Kansas City Royals4,Lane Thomas
-Kansas City Royals5,Michael Massey
-Kansas City Royals6,Salvador Perez
-Kansas City Royals7,John Rave
-Kansas City Royals8,Nick Loftin
-Kansas City Royals9,Isaac Collins
 Los Angeles Dodgers1,Shohei Ohtani
 Los Angeles Dodgers2,Andy Pages
 Los Angeles Dodgers3,Freddie Freeman
