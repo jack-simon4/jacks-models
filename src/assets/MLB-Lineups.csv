@@ -2,7 +2,7 @@ Team,Player
 Pittsburgh Pirates1,Jake Mangum
 Pittsburgh Pirates2,Brandon Lowe
 Pittsburgh Pirates3,Bryan Reynolds
-Pittsburgh Pirates4,Esmerlyn Valdez
+Pittsburgh Pirates4,Billy Cook
 Pittsburgh Pirates5,Ryan O'Hearn
 Pittsburgh Pirates6,Nick Gonzales
 Pittsburgh Pirates7,Marcell Ozuna
@@ -21,9 +21,9 @@ Cincinnati Reds1,Elly De La Cruz
 Cincinnati Reds2,Sal Stewart
 Cincinnati Reds3,JJ Bleday
 Cincinnati Reds4,Eugenio Suarez
-Cincinnati Reds5,Nathaniel Lowe
+Cincinnati Reds5,Spencer Steer
 Cincinnati Reds6,Noelvi Marte
-Cincinnati Reds7,Edwin Arroyo
+Cincinnati Reds7,Matt McLain
 Cincinnati Reds8,Jose Trevino
 Cincinnati Reds9,TJ Friedl
 Milwaukee Brewers1,Christian Yelich
@@ -34,13 +34,13 @@ Milwaukee Brewers5,Jake Bauers
 Milwaukee Brewers6,Garrett Mitchell
 Milwaukee Brewers7,Sal Frelick
 Milwaukee Brewers8,Cooper Pratt
-Milwaukee Brewers9,David Hamilton
+Milwaukee Brewers9,Joey Ortiz
 Miami Marlins1,Liam Hicks
 Miami Marlins2,Otto Lopez
 Miami Marlins3,Kyle Stowers
 Miami Marlins4,Xavier Edwards
 Miami Marlins5,Griffin Conine
-Miami Marlins6,Owen Caissie
+Miami Marlins6,Heriberto Hernandez
 Miami Marlins7,Jakob Marsee
 Miami Marlins8,Javier Sanoja
 Miami Marlins9,Joe Mack
@@ -53,6 +53,24 @@ Colorado Rockies6,Cole Carrigg
 Colorado Rockies7,Kyle Karros
 Colorado Rockies8,Brett Sullivan
 Colorado Rockies9,Edouard Julien
+Chicago White Sox1,Sam Antonacci
+Chicago White Sox2,Miguel Vargas
+Chicago White Sox3,Kyle Teel
+Chicago White Sox4,Andrew Benintendi
+Chicago White Sox5,Colson Montgomery
+Chicago White Sox6,Braden Montgomery
+Chicago White Sox7,Chase Meidroth
+Chicago White Sox8,Tristan Peters
+Chicago White Sox9,Jacob Gonzalez
+Cleveland Guardians1,Travis Bazzana
+Cleveland Guardians2,Chase DeLauter
+Cleveland Guardians3,Kyle Manzardo
+Cleveland Guardians4,Kahlil Watson
+Cleveland Guardians5,Brayan Rocchio
+Cleveland Guardians6,Cooper Ingle
+Cleveland Guardians7,Gabriel Arias
+Cleveland Guardians8,Patrick Bailey
+Cleveland Guardians9,Steven Kwan
 Atlanta Braves1,Drake Baldwin
 Atlanta Braves2,Ozzie Albies
 Atlanta Braves3,Matt Olson
@@ -61,43 +79,34 @@ Atlanta Braves5,Mauricio Dubon
 Atlanta Braves6,Dominic Smith
 Atlanta Braves7,Austin Riley
 Atlanta Braves8,Mike Yastrzemski
-Atlanta Braves9,Jorge Mateo
-Chicago White Sox1,Sam Antonacci
-Chicago White Sox2,Miguel Vargas
-Chicago White Sox3,Andrew Benintendi
-Chicago White Sox4,Braden Montgomery
-Chicago White Sox5,Jacob Gonzalez
-Chicago White Sox6,Chase Meidroth
-Chicago White Sox7,Tristan Peters
-Chicago White Sox8,Luisangel Acuna
-Chicago White Sox9,Drew Romo
-Cleveland Guardians1,Steven Kwan
-Cleveland Guardians2,Chase DeLauter
-Cleveland Guardians3,Rhys Hoskins
-Cleveland Guardians4,Kyle Manzardo
-Cleveland Guardians5,Brayan Rocchio
-Cleveland Guardians6,Gabriel Arias
-Cleveland Guardians7,Kahlil Watson
-Cleveland Guardians8,Austin Hedges
-Cleveland Guardians9,Daniel Schneemann
+Atlanta Braves9,Jim Jarvis
+Kansas City Royals1,Carter Jensen
+Kansas City Royals2,Bobby Witt Jr.
+Kansas City Royals3,Jac Caglianone
+Kansas City Royals4,Lane Thomas
+Kansas City Royals5,Starling Marte
+Kansas City Royals6,Nick Loftin
+Kansas City Royals7,Michael Massey
+Kansas City Royals8,Isaac Collins
+Kansas City Royals9,Kameron Misner
 Detroit Tigers1,Kevin McGonigle
 Detroit Tigers2,Dillon Dingler
-Detroit Tigers3,Matt Vierling
+Detroit Tigers3,Kerry Carpenter
 Detroit Tigers4,Riley Greene
-Detroit Tigers5,Hao-Yu Lee
+Detroit Tigers5,Colt Keith
 Detroit Tigers6,Spencer Torkelson
 Detroit Tigers7,Zach McKinstry
 Detroit Tigers8,James Outman
-Detroit Tigers9,Jake Rogers
-Kansas City Royals1,Lane Thomas
-Kansas City Royals2,Bobby Witt Jr.
-Kansas City Royals3,Jac Caglianone
-Kansas City Royals4,Starling Marte
-Kansas City Royals5,Salvador Perez
-Kansas City Royals6,Carter Jensen
-Kansas City Royals7,Nick Loftin
-Kansas City Royals8,Tyler Tolbert
-Kansas City Royals9,Michael Massey
+Detroit Tigers9,Hao-Yu Lee
+Texas Rangers1,Justin Foscue
+Texas Rangers2,Josh Jung
+Texas Rangers3,Ezequiel Duran
+Texas Rangers4,Jake Burger
+Texas Rangers5,Kyle Higashioka
+Texas Rangers6,Cam Cauley
+Texas Rangers7,Elias Diaz
+Texas Rangers8,Alejandro Osuna
+Texas Rangers9,Nicky Lopez
 Los Angeles Angels1,Zach Neto
 Los Angeles Angels2,Vaughn Grissom
 Los Angeles Angels3,Nolan Schanuel
@@ -152,15 +161,6 @@ Tampa Bay Rays6,Cedric Mullins
 Tampa Bay Rays7,Taylor Walls
 Tampa Bay Rays8,Richie Palacios
 Tampa Bay Rays9,Hunter Feduccia
-Texas Rangers1,Justin Foscue
-Texas Rangers2,Josh Jung
-Texas Rangers3,Ezequiel Duran
-Texas Rangers4,Jake Burger
-Texas Rangers5,Joc Pederson
-Texas Rangers6,Josh Smith
-Texas Rangers7,Alejandro Osuna
-Texas Rangers8,Elias Diaz
-Texas Rangers9,Nicky Lopez
 Arizona Diamondbacks1,Ketel Marte
 Arizona Diamondbacks2,Geraldo Perdomo
 Arizona Diamondbacks3,Corbin Carroll

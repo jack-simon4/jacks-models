@@ -1,5 +1,24 @@
 [
   {
+    "matchup": "Pittsburgh Pirates @ Philadelphia Phillies",
+    "awayTeam": "Pittsburgh Pirates",
+    "homeTeam": "Philadelphia Phillies",
+    "awayPitcher": "Jared Jones",
+    "homePitcher": "Alan Rangel",
+    "pick": "Philadelphia Phillies",
+    "prediction": "Philadelphia Phillies -205",
+    "odds": "-205",
+    "winProb": 0.67,
+    "edge": 0.17,
+    "confidence": "Elite",
+    "predictedScore": "Pittsburgh Pirates 3.2 \u2013 Philadelphia Phillies 4.8",
+    "predictedHomeScore": 4.75,
+    "predictedAwayScore": 3.18,
+    "gameTime": "2026-07-02T16:35:00Z",
+    "gamePk": 823442,
+    "rank": 1
+  },
+  {
     "matchup": "St. Louis Cardinals @ Atlanta Braves",
     "awayTeam": "St. Louis Cardinals",
     "homeTeam": "Atlanta Braves",
@@ -16,7 +35,7 @@
     "predictedAwayScore": 3.36,
     "gameTime": "2026-07-02T23:15:00Z",
     "gamePk": 824906,
-    "rank": 1
+    "rank": 2
   },
   {
     "matchup": "San Diego Padres @ Los Angeles Dodgers",
@@ -35,25 +54,6 @@
     "predictedAwayScore": 3.72,
     "gameTime": "2026-07-03T02:10:00Z",
     "gamePk": 823935,
-    "rank": 2
-  },
-  {
-    "matchup": "Pittsburgh Pirates @ Philadelphia Phillies",
-    "awayTeam": "Pittsburgh Pirates",
-    "homeTeam": "Philadelphia Phillies",
-    "awayPitcher": "Jared Jones",
-    "homePitcher": "Alan Rangel",
-    "pick": "Philadelphia Phillies",
-    "prediction": "Philadelphia Phillies -155",
-    "odds": "-155",
-    "winProb": 0.607,
-    "edge": 0.107,
-    "confidence": "Strong",
-    "predictedScore": "Pittsburgh Pirates 3.8 \u2013 Philadelphia Phillies 4.8",
-    "predictedHomeScore": 4.75,
-    "predictedAwayScore": 3.79,
-    "gameTime": "2026-07-02T16:35:00Z",
-    "gamePk": 823442,
     "rank": 3
   },
   {
@@ -95,6 +95,25 @@
     "rank": 5
   },
   {
+    "matchup": "Chicago White Sox @ Cleveland Guardians",
+    "awayTeam": "Chicago White Sox",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "Davis Martin",
+    "homePitcher": "Slade Cecconi",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -130",
+    "odds": "-130",
+    "winProb": 0.57,
+    "edge": 0.07,
+    "confidence": "Lean",
+    "predictedScore": "Chicago White Sox 4.5 \u2013 Cleveland Guardians 3.9",
+    "predictedHomeScore": 3.92,
+    "predictedAwayScore": 4.54,
+    "gameTime": "2026-07-02T22:40:00Z",
+    "gamePk": 824416,
+    "rank": 6
+  },
+  {
     "matchup": "Miami Marlins @ Colorado Rockies",
     "awayTeam": "Miami Marlins",
     "homeTeam": "Colorado Rockies",
@@ -111,25 +130,25 @@
     "predictedAwayScore": 5.7,
     "gameTime": "2026-07-02T19:10:00Z",
     "gamePk": 824335,
-    "rank": 6
+    "rank": 7
   },
   {
-    "matchup": "Chicago White Sox @ Cleveland Guardians",
-    "awayTeam": "Chicago White Sox",
-    "homeTeam": "Cleveland Guardians",
-    "awayPitcher": "Davis Martin",
-    "homePitcher": "Slade Cecconi",
-    "pick": "Chicago White Sox",
-    "prediction": "Chicago White Sox -115",
+    "matchup": "Detroit Tigers @ Texas Rangers",
+    "awayTeam": "Detroit Tigers",
+    "homeTeam": "Texas Rangers",
+    "awayPitcher": "Framber Valdez",
+    "homePitcher": "Nathan Eovaldi",
+    "pick": "Detroit Tigers",
+    "prediction": "Detroit Tigers -115",
     "odds": "-115",
-    "winProb": 0.532,
-    "edge": 0.032,
+    "winProb": 0.531,
+    "edge": 0.031,
     "confidence": "Lean",
-    "predictedScore": "Chicago White Sox 4.2 \u2013 Cleveland Guardians 3.9",
-    "predictedHomeScore": 3.92,
-    "predictedAwayScore": 4.2,
-    "gameTime": "2026-07-02T22:40:00Z",
-    "gamePk": 824416,
-    "rank": 7
+    "predictedScore": "Detroit Tigers 4.0 \u2013 Texas Rangers 3.7",
+    "predictedHomeScore": 3.74,
+    "predictedAwayScore": 4.01,
+    "gameTime": "2026-07-03T00:05:00Z",
+    "gamePk": 822884,
+    "rank": 8
   }
 ]
