@@ -19,25 +19,6 @@
     "rank": 1
   },
   {
-    "matchup": "Cincinnati Reds @ Milwaukee Brewers",
-    "awayTeam": "Cincinnati Reds",
-    "homeTeam": "Milwaukee Brewers",
-    "awayPitcher": "Chase Burns",
-    "homePitcher": "Jacob Misiorowski",
-    "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -175",
-    "odds": "-175",
-    "winProb": 0.639,
-    "edge": 0.139,
-    "confidence": "Strong",
-    "predictedScore": "Cincinnati Reds 3.1 \u2013 Milwaukee Brewers 4.3",
-    "predictedHomeScore": 4.35,
-    "predictedAwayScore": 3.08,
-    "gameTime": "2026-07-02T18:10:00Z",
-    "gamePk": 823765,
-    "rank": 2
-  },
-  {
     "matchup": "San Diego Padres @ Los Angeles Dodgers",
     "awayTeam": "San Diego Padres",
     "homeTeam": "Los Angeles Dodgers",
@@ -54,7 +35,7 @@
     "predictedAwayScore": 3.72,
     "gameTime": "2026-07-03T02:10:00Z",
     "gamePk": 823935,
-    "rank": 3
+    "rank": 2
   },
   {
     "matchup": "Pittsburgh Pirates @ Philadelphia Phillies",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 3.79,
     "gameTime": "2026-07-02T16:35:00Z",
     "gamePk": 823442,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Los Angeles Angels @ Seattle Mariners",
@@ -92,7 +73,45 @@
     "predictedAwayScore": 4.0,
     "gameTime": "2026-07-03T01:40:00Z",
     "gamePk": 823119,
+    "rank": 4
+  },
+  {
+    "matchup": "Cincinnati Reds @ Milwaukee Brewers",
+    "awayTeam": "Cincinnati Reds",
+    "homeTeam": "Milwaukee Brewers",
+    "awayPitcher": "Chase Burns",
+    "homePitcher": "Jacob Misiorowski",
+    "pick": "Milwaukee Brewers",
+    "prediction": "Milwaukee Brewers -145",
+    "odds": "-145",
+    "winProb": 0.596,
+    "edge": 0.096,
+    "confidence": "Strong",
+    "predictedScore": "Cincinnati Reds 3.1 \u2013 Milwaukee Brewers 3.9",
+    "predictedHomeScore": 3.94,
+    "predictedAwayScore": 3.08,
+    "gameTime": "2026-07-02T18:10:00Z",
+    "gamePk": 823765,
     "rank": 5
+  },
+  {
+    "matchup": "Miami Marlins @ Colorado Rockies",
+    "awayTeam": "Miami Marlins",
+    "homeTeam": "Colorado Rockies",
+    "awayPitcher": "Ryan Gusto",
+    "homePitcher": "Michael Lorenzen",
+    "pick": "Miami Marlins",
+    "prediction": "Miami Marlins -130",
+    "odds": "-130",
+    "winProb": 0.567,
+    "edge": 0.067,
+    "confidence": "Lean",
+    "predictedScore": "Miami Marlins 5.7 \u2013 Colorado Rockies 5.1",
+    "predictedHomeScore": 5.09,
+    "predictedAwayScore": 5.7,
+    "gameTime": "2026-07-02T19:10:00Z",
+    "gamePk": 824335,
+    "rank": 6
   },
   {
     "matchup": "Chicago White Sox @ Cleveland Guardians",
@@ -111,25 +130,6 @@
     "predictedAwayScore": 4.2,
     "gameTime": "2026-07-02T22:40:00Z",
     "gamePk": 824416,
-    "rank": 6
-  },
-  {
-    "matchup": "Miami Marlins @ Colorado Rockies",
-    "awayTeam": "Miami Marlins",
-    "homeTeam": "Colorado Rockies",
-    "awayPitcher": "Ryan Gusto",
-    "homePitcher": "Michael Lorenzen",
-    "pick": "Miami Marlins",
-    "prediction": "Miami Marlins -115",
-    "odds": "-115",
-    "winProb": 0.531,
-    "edge": 0.031,
-    "confidence": "Lean",
-    "predictedScore": "Miami Marlins 5.4 \u2013 Colorado Rockies 5.1",
-    "predictedHomeScore": 5.09,
-    "predictedAwayScore": 5.37,
-    "gameTime": "2026-07-02T19:10:00Z",
-    "gamePk": 824335,
     "rank": 7
   }
 ]
