@@ -39,9 +39,6 @@ jobs:
             echo "No NFL stat changes — nothing to commit."
           else
             git commit -m "chore: auto-update NFL stats $(date -u +%Y-%m-%d)"
-            git stash --include-untracked
-            git fetch origin main
-            git rebase origin/main
-            git stash pop || true
+            git pull --rebase origin main
             git push
           fi
