@@ -36,23 +36,20 @@
 
     <div *ngIf="loading" class="empty-state">Loading predictions…</div>
 
-    <div *ngIf="!loading && games.length === 0" class="empty-state">
-      No recorded predictions yet.
+    <div *ngIf="!loading && recordedGames.length === 0" class="empty-state">
+      No completed predictions yet.
     </div>
 
-    <div *ngIf="!loading && games.length > 0" class="game-log">
+    <div *ngIf="!loading && recordedGames.length > 0" class="game-log">
       <div
-        *ngFor="let game of games"
+        *ngFor="let game of recordedGames"
         class="game-row"
-        [ngClass]="game.actualHomeScore != null ? (isPredictionCorrect(game) ? 'correct' : 'incorrect') : 'pending'"
+        [ngClass]="isPredictionCorrect(game) ? 'correct' : 'incorrect'"
       >
         <!-- Result badge -->
         <div class="result-badge">
-          <ng-container *ngIf="game.actualHomeScore != null">
-            <span *ngIf="isPredictionCorrect(game)"  class="badge-win">W</span>
-            <span *ngIf="!isPredictionCorrect(game)" class="badge-loss">L</span>
-          </ng-container>
-          <span *ngIf="game.actualHomeScore == null" class="badge-pending">—</span>
+          <span *ngIf="isPredictionCorrect(game)"  class="badge-win">W</span>
+          <span *ngIf="!isPredictionCorrect(game)" class="badge-loss">L</span>
         </div>
 
         <!-- Matchup info -->
@@ -75,7 +72,7 @@
               – {{ game.homeTeam | slice:0:3 | uppercase }} {{ game.predictedHomeScore | number:'1.1-1' }}
             </div>
           </div>
-          <div class="score-col" *ngIf="game.actualHomeScore != null">
+          <div class="score-col">
             <div class="score-label">Actual</div>
             <div class="score-value actual">
               {{ game.awayTeam | slice:0:3 | uppercase }} {{ game.actualAwayScore }}

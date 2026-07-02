@@ -11,6 +11,7 @@ interface Game {
   actualHomeScore: number | null;
   actualAwayScore: number | null;
   timestamp: Date;
+  gameTime?: string;
 }
 
 interface LeagueStat {
@@ -106,9 +107,13 @@ export class ResultsComponent implements OnInit {
   }
 
   get recordedGames(): Game[] {
-    return this.games.filter(
-      g => g.actualHomeScore != null && g.actualAwayScore != null
-    );
+    return this.games
+      .filter(g => g.actualHomeScore != null && g.actualAwayScore != null)
+      .sort((a, b) => {
+        const ta = a.gameTime ? new Date(a.gameTime).getTime() : a.timestamp?.getTime() ?? 0;
+        const tb = b.gameTime ? new Date(b.gameTime).getTime() : b.timestamp?.getTime() ?? 0;
+        return tb - ta;
+      });
   }
 
   get overallWinRate(): string {
@@ -126,7 +131,7 @@ export class ResultsComponent implements OnInit {
 
   loadGames() {
     this.firestore
-      .collection('games', ref => ref.orderBy('timestamp', 'desc').limit(50))
+      .collection('games', ref => ref.orderBy('timestamp', 'desc').limit(150))
       .snapshotChanges()
       .subscribe(logs => {
         this.games = logs.map(log => {
