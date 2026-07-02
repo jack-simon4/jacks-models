@@ -114,25 +114,6 @@
     "rank": 6
   },
   {
-    "matchup": "Tampa Bay Rays @ Kansas City Royals",
-    "awayTeam": "Tampa Bay Rays",
-    "homeTeam": "Kansas City Royals",
-    "awayPitcher": "TBD",
-    "homePitcher": "TBD",
-    "pick": "Kansas City Royals",
-    "prediction": "Kansas City Royals -120",
-    "odds": "-120",
-    "winProb": 0.541,
-    "edge": 0.041,
-    "confidence": "Lean",
-    "predictedScore": "Tampa Bay Rays 3.3 \u2013 Kansas City Royals 3.6",
-    "predictedHomeScore": 3.63,
-    "predictedAwayScore": 3.27,
-    "gameTime": "2026-07-02T23:40:00Z",
-    "gamePk": 824093,
-    "rank": 7
-  },
-  {
     "matchup": "Chicago White Sox @ Cleveland Guardians",
     "awayTeam": "Chicago White Sox",
     "homeTeam": "Cleveland Guardians",
@@ -149,6 +130,6 @@
     "predictedAwayScore": 4.2,
     "gameTime": "2026-07-02T22:40:00Z",
     "gamePk": 824416,
-    "rank": 8
+    "rank": 7
   }
 ]
