@@ -38,25 +38,6 @@
     "rank": 2
   },
   {
-    "matchup": "San Diego Padres @ Los Angeles Dodgers",
-    "awayTeam": "San Diego Padres",
-    "homeTeam": "Los Angeles Dodgers",
-    "awayPitcher": "Randy V\u00e1squez",
-    "homePitcher": "Roki Sasaki",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -195",
-    "odds": "-195",
-    "winProb": 0.659,
-    "edge": 0.159,
-    "confidence": "Elite",
-    "predictedScore": "San Diego Padres 3.7 \u2013 Los Angeles Dodgers 5.2",
-    "predictedHomeScore": 5.18,
-    "predictedAwayScore": 3.72,
-    "gameTime": "2026-07-03T02:10:00Z",
-    "gamePk": 823935,
-    "rank": 3
-  },
-  {
     "matchup": "Los Angeles Angels @ Seattle Mariners",
     "awayTeam": "Los Angeles Angels",
     "homeTeam": "Seattle Mariners",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 4.0,
     "gameTime": "2026-07-03T01:40:00Z",
     "gamePk": 823119,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Cincinnati Reds @ Milwaukee Brewers",
@@ -92,6 +73,25 @@
     "predictedAwayScore": 3.08,
     "gameTime": "2026-07-02T18:10:00Z",
     "gamePk": 823765,
+    "rank": 4
+  },
+  {
+    "matchup": "San Diego Padres @ Los Angeles Dodgers",
+    "awayTeam": "San Diego Padres",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Randy V\u00e1squez",
+    "homePitcher": "Roki Sasaki",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -140",
+    "odds": "-140",
+    "winProb": 0.584,
+    "edge": 0.084,
+    "confidence": "Strong",
+    "predictedScore": "San Diego Padres 4.4 \u2013 Los Angeles Dodgers 5.2",
+    "predictedHomeScore": 5.18,
+    "predictedAwayScore": 4.42,
+    "gameTime": "2026-07-03T02:10:00Z",
+    "gamePk": 823935,
     "rank": 5
   },
   {
