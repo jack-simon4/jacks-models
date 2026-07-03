@@ -2,8 +2,8 @@ name: Update MLB Lineups (Hourly)
 
 on:
   schedule:
-    # Noon–1 AM ET (16:00–05:00 UTC) — picks up pre-game submissions and late West Coast finishes
-    - cron: '0 16-23 * * *'
+    # 9 AM–1 AM ET (13:00–05:00 UTC) — morning coverage through late West Coast finishes
+    - cron: '0 13-23 * * *'
     - cron: '0 0-5 * * *'
   workflow_dispatch:
 
