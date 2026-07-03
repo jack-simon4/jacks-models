@@ -19,29 +19,10 @@
     "rank": 1
   },
   {
-    "matchup": "Tampa Bay Rays @ Houston Astros",
-    "awayTeam": "Tampa Bay Rays",
-    "homeTeam": "Houston Astros",
-    "awayPitcher": "Nick Martinez",
-    "homePitcher": "Spencer Arrighetti",
-    "pick": "Houston Astros",
-    "prediction": "Houston Astros -160",
-    "odds": "-160",
-    "winProb": 0.614,
-    "edge": 0.114,
-    "confidence": "Strong",
-    "predictedScore": "Tampa Bay Rays 3.1 \u2013 Houston Astros 4.1",
-    "predictedHomeScore": 4.13,
-    "predictedAwayScore": 3.09,
-    "gameTime": "2026-07-04T00:15:00Z",
-    "gamePk": 824173,
-    "rank": 2
-  },
-  {
     "matchup": "San Francisco Giants @ Colorado Rockies",
     "awayTeam": "San Francisco Giants",
     "homeTeam": "Colorado Rockies",
-    "awayPitcher": "TBD",
+    "awayPitcher": "Logan Webb",
     "homePitcher": "Ryan Feltner",
     "pick": "San Francisco Giants",
     "prediction": "San Francisco Giants -150",
@@ -54,6 +35,25 @@
     "predictedAwayScore": 5.37,
     "gameTime": "2026-07-04T00:10:00Z",
     "gamePk": 824336,
+    "rank": 2
+  },
+  {
+    "matchup": "Toronto Blue Jays @ Seattle Mariners",
+    "awayTeam": "Toronto Blue Jays",
+    "homeTeam": "Seattle Mariners",
+    "awayPitcher": "Dylan Cease",
+    "homePitcher": "Luis Castillo",
+    "pick": "Toronto Blue Jays",
+    "prediction": "Toronto Blue Jays -150",
+    "odds": "-150",
+    "winProb": 0.601,
+    "edge": 0.101,
+    "confidence": "Strong",
+    "predictedScore": "Toronto Blue Jays 4.0 \u2013 Seattle Mariners 3.1",
+    "predictedHomeScore": 3.08,
+    "predictedAwayScore": 4.0,
+    "gameTime": "2026-07-04T02:10:00Z",
+    "gamePk": 823120,
     "rank": 3
   },
   {
@@ -76,6 +76,25 @@
     "rank": 4
   },
   {
+    "matchup": "Tampa Bay Rays @ Houston Astros",
+    "awayTeam": "Tampa Bay Rays",
+    "homeTeam": "Houston Astros",
+    "awayPitcher": "Nick Martinez",
+    "homePitcher": "Spencer Arrighetti",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -135",
+    "odds": "-135",
+    "winProb": 0.579,
+    "edge": 0.079,
+    "confidence": "Lean",
+    "predictedScore": "Tampa Bay Rays 3.4 \u2013 Houston Astros 4.1",
+    "predictedHomeScore": 4.13,
+    "predictedAwayScore": 3.42,
+    "gameTime": "2026-07-04T00:15:00Z",
+    "gamePk": 824173,
+    "rank": 5
+  },
+  {
     "matchup": "Pittsburgh Pirates @ Washington Nationals",
     "awayTeam": "Pittsburgh Pirates",
     "homeTeam": "Washington Nationals",
@@ -92,7 +111,26 @@
     "predictedAwayScore": 5.4,
     "gameTime": "2026-07-03T22:45:00Z",
     "gamePk": 822714,
-    "rank": 5
+    "rank": 6
+  },
+  {
+    "matchup": "Miami Marlins @ Athletics",
+    "awayTeam": "Miami Marlins",
+    "homeTeam": "Athletics",
+    "awayPitcher": "Tyler Phillips",
+    "homePitcher": "Jack Perkins",
+    "pick": "Athletics",
+    "prediction": "Athletics -135",
+    "odds": "-135",
+    "winProb": 0.577,
+    "edge": 0.077,
+    "confidence": "Lean",
+    "predictedScore": "Miami Marlins 3.3 \u2013 Athletics 4.0",
+    "predictedHomeScore": 4.01,
+    "predictedAwayScore": 3.32,
+    "gameTime": "2026-07-04T01:40:00Z",
+    "gamePk": 824982,
+    "rank": 7
   },
   {
     "matchup": "New York Mets @ Atlanta Braves",
@@ -111,7 +149,26 @@
     "predictedAwayScore": 4.77,
     "gameTime": "2026-07-03T23:15:00Z",
     "gamePk": 824904,
-    "rank": 6
+    "rank": 8
+  },
+  {
+    "matchup": "Boston Red Sox @ Los Angeles Angels",
+    "awayTeam": "Boston Red Sox",
+    "homeTeam": "Los Angeles Angels",
+    "awayPitcher": "Jake Bennett",
+    "homePitcher": "Reid Detmers",
+    "pick": "Boston Red Sox",
+    "prediction": "Boston Red Sox -130",
+    "odds": "-130",
+    "winProb": 0.57,
+    "edge": 0.07,
+    "confidence": "Lean",
+    "predictedScore": "Boston Red Sox 3.9 \u2013 Los Angeles Angels 3.2",
+    "predictedHomeScore": 3.24,
+    "predictedAwayScore": 3.86,
+    "gameTime": "2026-07-04T01:38:00Z",
+    "gamePk": 824013,
+    "rank": 9
   },
   {
     "matchup": "Baltimore Orioles @ Cincinnati Reds",
@@ -130,26 +187,7 @@
     "predictedAwayScore": 4.72,
     "gameTime": "2026-07-03T23:10:00Z",
     "gamePk": 824498,
-    "rank": 7
-  },
-  {
-    "matchup": "Toronto Blue Jays @ Seattle Mariners",
-    "awayTeam": "Toronto Blue Jays",
-    "homeTeam": "Seattle Mariners",
-    "awayPitcher": "Dylan Cease",
-    "homePitcher": "Luis Castillo",
-    "pick": "Toronto Blue Jays",
-    "prediction": "Toronto Blue Jays -130",
-    "odds": "-130",
-    "winProb": 0.566,
-    "edge": 0.066,
-    "confidence": "Lean",
-    "predictedScore": "Toronto Blue Jays 3.7 \u2013 Seattle Mariners 3.1",
-    "predictedHomeScore": 3.08,
-    "predictedAwayScore": 3.68,
-    "gameTime": "2026-07-04T02:10:00Z",
-    "gamePk": 823120,
-    "rank": 8
+    "rank": 10
   },
   {
     "matchup": "Minnesota Twins @ New York Yankees",
@@ -168,26 +206,7 @@
     "predictedAwayScore": 4.47,
     "gameTime": "2026-07-03T23:05:00Z",
     "gamePk": 823527,
-    "rank": 9
-  },
-  {
-    "matchup": "Miami Marlins @ Athletics",
-    "awayTeam": "Miami Marlins",
-    "homeTeam": "Athletics",
-    "awayPitcher": "Tyler Phillips",
-    "homePitcher": "Jack Perkins",
-    "pick": "Athletics",
-    "prediction": "Athletics -120",
-    "odds": "-120",
-    "winProb": 0.541,
-    "edge": 0.041,
-    "confidence": "Lean",
-    "predictedScore": "Miami Marlins 3.3 \u2013 Athletics 3.7",
-    "predictedHomeScore": 3.69,
-    "predictedAwayScore": 3.32,
-    "gameTime": "2026-07-04T01:40:00Z",
-    "gamePk": 824982,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "St. Louis Cardinals @ Chicago Cubs",
@@ -206,25 +225,6 @@
     "predictedAwayScore": 4.78,
     "gameTime": "2026-07-03T20:05:00Z",
     "gamePk": 824659,
-    "rank": 11
-  },
-  {
-    "matchup": "Boston Red Sox @ Los Angeles Angels",
-    "awayTeam": "Boston Red Sox",
-    "homeTeam": "Los Angeles Angels",
-    "awayPitcher": "Jake Bennett",
-    "homePitcher": "Reid Detmers",
-    "pick": "Boston Red Sox",
-    "prediction": "Boston Red Sox -115",
-    "odds": "-115",
-    "winProb": 0.532,
-    "edge": 0.032,
-    "confidence": "Lean",
-    "predictedScore": "Boston Red Sox 3.5 \u2013 Los Angeles Angels 3.2",
-    "predictedHomeScore": 3.24,
-    "predictedAwayScore": 3.52,
-    "gameTime": "2026-07-04T01:38:00Z",
-    "gamePk": 824013,
     "rank": 12
   }
 ]
