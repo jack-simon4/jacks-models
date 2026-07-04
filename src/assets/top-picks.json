@@ -38,6 +38,25 @@
     "rank": 2
   },
   {
+    "matchup": "Detroit Tigers @ Texas Rangers",
+    "awayTeam": "Detroit Tigers",
+    "homeTeam": "Texas Rangers",
+    "awayPitcher": "Jack Flaherty",
+    "homePitcher": "Cal Quantrill",
+    "pick": "Detroit Tigers",
+    "prediction": "Detroit Tigers -235",
+    "odds": "-235",
+    "winProb": 0.7,
+    "edge": 0.2,
+    "confidence": "Elite",
+    "predictedScore": "Detroit Tigers 5.3 \u2013 Texas Rangers 3.4",
+    "predictedHomeScore": 3.42,
+    "predictedAwayScore": 5.3,
+    "gameTime": "2026-07-04T20:05:00Z",
+    "gamePk": 822882,
+    "rank": 3
+  },
+  {
     "matchup": "New York Mets @ Atlanta Braves",
     "awayTeam": "New York Mets",
     "homeTeam": "Atlanta Braves",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 4.06,
     "gameTime": "2026-07-05T00:08:00Z",
     "gamePk": 824903,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "San Diego Padres @ Los Angeles Dodgers",
@@ -73,7 +92,7 @@
     "predictedAwayScore": 3.01,
     "gameTime": "2026-07-05T02:10:00Z",
     "gamePk": 823932,
-    "rank": 4
+    "rank": 5
   },
   {
     "matchup": "St. Louis Cardinals @ Chicago Cubs",
@@ -92,7 +111,7 @@
     "predictedAwayScore": 5.84,
     "gameTime": "2026-07-05T00:08:00Z",
     "gamePk": 824658,
-    "rank": 5
+    "rank": 6
   },
   {
     "matchup": "Milwaukee Brewers @ Arizona Diamondbacks",
@@ -111,7 +130,7 @@
     "predictedAwayScore": 4.58,
     "gameTime": "2026-07-05T01:40:00Z",
     "gamePk": 825063,
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "Minnesota Twins @ New York Yankees",
@@ -130,25 +149,6 @@
     "predictedAwayScore": 4.11,
     "gameTime": "2026-07-04T17:35:00Z",
     "gamePk": 823526,
-    "rank": 7
-  },
-  {
-    "matchup": "Detroit Tigers @ Texas Rangers",
-    "awayTeam": "Detroit Tigers",
-    "homeTeam": "Texas Rangers",
-    "awayPitcher": "Jack Flaherty",
-    "homePitcher": "Kumar Rocker",
-    "pick": "Detroit Tigers",
-    "prediction": "Detroit Tigers -150",
-    "odds": "-150",
-    "winProb": 0.602,
-    "edge": 0.102,
-    "confidence": "Strong",
-    "predictedScore": "Detroit Tigers 4.7 \u2013 Texas Rangers 3.7",
-    "predictedHomeScore": 3.74,
-    "predictedAwayScore": 4.66,
-    "gameTime": "2026-07-04T20:05:00Z",
-    "gamePk": 822882,
     "rank": 8
   },
   {
