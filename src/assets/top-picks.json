@@ -114,25 +114,6 @@
     "rank": 6
   },
   {
-    "matchup": "San Diego Padres @ Los Angeles Dodgers",
-    "awayTeam": "San Diego Padres",
-    "homeTeam": "Los Angeles Dodgers",
-    "awayPitcher": "Wandy Peralta",
-    "homePitcher": "Yoshinobu Yamamoto",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -165",
-    "odds": "-165",
-    "winProb": 0.622,
-    "edge": 0.122,
-    "confidence": "Strong",
-    "predictedScore": "San Diego Padres 3.0 \u2013 Los Angeles Dodgers 4.1",
-    "predictedHomeScore": 4.12,
-    "predictedAwayScore": 3.01,
-    "gameTime": "2026-07-05T02:10:00Z",
-    "gamePk": 823932,
-    "rank": 7
-  },
-  {
     "matchup": "Miami Marlins @ Athletics",
     "awayTeam": "Miami Marlins",
     "homeTeam": "Athletics",
@@ -149,6 +130,25 @@
     "predictedAwayScore": 4.91,
     "gameTime": "2026-07-05T01:40:00Z",
     "gamePk": 824983,
+    "rank": 7
+  },
+  {
+    "matchup": "San Diego Padres @ Los Angeles Dodgers",
+    "awayTeam": "San Diego Padres",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Wandy Peralta",
+    "homePitcher": "Yoshinobu Yamamoto",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -140",
+    "odds": "-140",
+    "winProb": 0.584,
+    "edge": 0.084,
+    "confidence": "Strong",
+    "predictedScore": "San Diego Padres 3.4 \u2013 Los Angeles Dodgers 4.1",
+    "predictedHomeScore": 4.12,
+    "predictedAwayScore": 3.36,
+    "gameTime": "2026-07-05T02:10:00Z",
+    "gamePk": 823932,
     "rank": 8
   },
   {
