@@ -19,25 +19,6 @@
     "rank": 1
   },
   {
-    "matchup": "San Francisco Giants @ Colorado Rockies",
-    "awayTeam": "San Francisco Giants",
-    "homeTeam": "Colorado Rockies",
-    "awayPitcher": "TBD",
-    "homePitcher": "Tomoyuki Sugano",
-    "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -235",
-    "odds": "-235",
-    "winProb": 0.702,
-    "edge": 0.202,
-    "confidence": "Elite",
-    "predictedScore": "San Francisco Giants 6.3 \u2013 Colorado Rockies 4.4",
-    "predictedHomeScore": 4.44,
-    "predictedAwayScore": 6.35,
-    "gameTime": "2026-07-05T00:10:00Z",
-    "gamePk": 824334,
-    "rank": 2
-  },
-  {
     "matchup": "San Diego Padres @ Los Angeles Dodgers",
     "awayTeam": "San Diego Padres",
     "homeTeam": "Los Angeles Dodgers",
@@ -54,6 +35,25 @@
     "predictedAwayScore": 3.01,
     "gameTime": "2026-07-05T02:10:00Z",
     "gamePk": 823932,
+    "rank": 2
+  },
+  {
+    "matchup": "San Francisco Giants @ Colorado Rockies",
+    "awayTeam": "San Francisco Giants",
+    "homeTeam": "Colorado Rockies",
+    "awayPitcher": "Robbie Ray",
+    "homePitcher": "Tomoyuki Sugano",
+    "pick": "San Francisco Giants",
+    "prediction": "San Francisco Giants -205",
+    "odds": "-205",
+    "winProb": 0.671,
+    "edge": 0.171,
+    "confidence": "Elite",
+    "predictedScore": "San Francisco Giants 6.3 \u2013 Colorado Rockies 4.8",
+    "predictedHomeScore": 4.77,
+    "predictedAwayScore": 6.35,
+    "gameTime": "2026-07-05T00:10:00Z",
+    "gamePk": 824334,
     "rank": 3
   },
   {
