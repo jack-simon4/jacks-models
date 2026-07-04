@@ -95,25 +95,6 @@
     "rank": 5
   },
   {
-    "matchup": "St. Louis Cardinals @ Chicago Cubs",
-    "awayTeam": "St. Louis Cardinals",
-    "homeTeam": "Chicago Cubs",
-    "awayPitcher": "Kyle Leahy",
-    "homePitcher": "Shota Imanaga",
-    "pick": "St. Louis Cardinals",
-    "prediction": "St. Louis Cardinals -185",
-    "odds": "-185",
-    "winProb": 0.649,
-    "edge": 0.149,
-    "confidence": "Elite",
-    "predictedScore": "St. Louis Cardinals 5.8 \u2013 Chicago Cubs 4.5",
-    "predictedHomeScore": 4.48,
-    "predictedAwayScore": 5.84,
-    "gameTime": "2026-07-05T00:08:00Z",
-    "gamePk": 824658,
-    "rank": 6
-  },
-  {
     "matchup": "Milwaukee Brewers @ Arizona Diamondbacks",
     "awayTeam": "Milwaukee Brewers",
     "homeTeam": "Arizona Diamondbacks",
@@ -130,7 +111,7 @@
     "predictedAwayScore": 4.58,
     "gameTime": "2026-07-05T01:40:00Z",
     "gamePk": 825063,
-    "rank": 7
+    "rank": 6
   },
   {
     "matchup": "Minnesota Twins @ New York Yankees",
@@ -149,6 +130,25 @@
     "predictedAwayScore": 4.11,
     "gameTime": "2026-07-04T17:35:00Z",
     "gamePk": 823526,
+    "rank": 7
+  },
+  {
+    "matchup": "St. Louis Cardinals @ Chicago Cubs",
+    "awayTeam": "St. Louis Cardinals",
+    "homeTeam": "Chicago Cubs",
+    "awayPitcher": "Kyle Leahy",
+    "homePitcher": "Shota Imanaga",
+    "pick": "St. Louis Cardinals",
+    "prediction": "St. Louis Cardinals -160",
+    "odds": "-160",
+    "winProb": 0.612,
+    "edge": 0.112,
+    "confidence": "Strong",
+    "predictedScore": "St. Louis Cardinals 5.5 \u2013 Chicago Cubs 4.5",
+    "predictedHomeScore": 4.48,
+    "predictedAwayScore": 5.49,
+    "gameTime": "2026-07-05T00:08:00Z",
+    "gamePk": 824658,
     "rank": 8
   },
   {
@@ -190,6 +190,25 @@
     "rank": 10
   },
   {
+    "matchup": "Chicago White Sox @ Cleveland Guardians",
+    "awayTeam": "Chicago White Sox",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "Sean Burke",
+    "homePitcher": "Parker Messick",
+    "pick": "Cleveland Guardians",
+    "prediction": "Cleveland Guardians -120",
+    "odds": "-120",
+    "winProb": 0.543,
+    "edge": 0.043,
+    "confidence": "Lean",
+    "predictedScore": "Chicago White Sox 3.5 \u2013 Cleveland Guardians 3.9",
+    "predictedHomeScore": 3.92,
+    "predictedAwayScore": 3.53,
+    "gameTime": "2026-07-04T23:10:00Z",
+    "gamePk": 824415,
+    "rank": 11
+  },
+  {
     "matchup": "Toronto Blue Jays @ Seattle Mariners",
     "awayTeam": "Toronto Blue Jays",
     "homeTeam": "Seattle Mariners",
@@ -206,25 +225,6 @@
     "predictedAwayScore": 3.68,
     "gameTime": "2026-07-04T20:10:00Z",
     "gamePk": 823118,
-    "rank": 11
-  },
-  {
-    "matchup": "Chicago White Sox @ Cleveland Guardians",
-    "awayTeam": "Chicago White Sox",
-    "homeTeam": "Cleveland Guardians",
-    "awayPitcher": "Sean Burke",
-    "homePitcher": "Parker Messick",
-    "pick": "Chicago White Sox",
-    "prediction": "Chicago White Sox -115",
-    "odds": "-115",
-    "winProb": 0.532,
-    "edge": 0.032,
-    "confidence": "Lean",
-    "predictedScore": "Chicago White Sox 3.9 \u2013 Cleveland Guardians 3.6",
-    "predictedHomeScore": 3.58,
-    "predictedAwayScore": 3.87,
-    "gameTime": "2026-07-04T23:10:00Z",
-    "gamePk": 824415,
     "rank": 12
   },
   {
