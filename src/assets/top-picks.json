@@ -171,6 +171,25 @@
     "rank": 9
   },
   {
+    "matchup": "Miami Marlins @ Athletics",
+    "awayTeam": "Miami Marlins",
+    "homeTeam": "Athletics",
+    "awayPitcher": "Sandy Alcantara",
+    "homePitcher": "Aaron Civale",
+    "pick": "Miami Marlins",
+    "prediction": "Miami Marlins -130",
+    "odds": "-130",
+    "winProb": 0.565,
+    "edge": 0.065,
+    "confidence": "Lean",
+    "predictedScore": "Miami Marlins 4.6 \u2013 Athletics 4.0",
+    "predictedHomeScore": 4.01,
+    "predictedAwayScore": 4.59,
+    "gameTime": "2026-07-05T01:40:00Z",
+    "gamePk": 824983,
+    "rank": 10
+  },
+  {
     "matchup": "Philadelphia Phillies @ Kansas City Royals",
     "awayTeam": "Philadelphia Phillies",
     "homeTeam": "Kansas City Royals",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 3.89,
     "gameTime": "2026-07-05T00:10:00Z",
     "gamePk": 824092,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Chicago White Sox @ Cleveland Guardians",
@@ -206,7 +225,7 @@
     "predictedAwayScore": 3.53,
     "gameTime": "2026-07-04T23:10:00Z",
     "gamePk": 824415,
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "Toronto Blue Jays @ Seattle Mariners",
@@ -225,25 +244,6 @@
     "predictedAwayScore": 3.68,
     "gameTime": "2026-07-04T20:10:00Z",
     "gamePk": 823118,
-    "rank": 12
-  },
-  {
-    "matchup": "Miami Marlins @ Athletics",
-    "awayTeam": "Miami Marlins",
-    "homeTeam": "Athletics",
-    "awayPitcher": "Sandy Alcantara",
-    "homePitcher": "Aaron Civale",
-    "pick": "Miami Marlins",
-    "prediction": "Miami Marlins -115",
-    "odds": "-115",
-    "winProb": 0.53,
-    "edge": 0.03,
-    "confidence": "Lean",
-    "predictedScore": "Miami Marlins 4.6 \u2013 Athletics 4.3",
-    "predictedHomeScore": 4.32,
-    "predictedAwayScore": 4.59,
-    "gameTime": "2026-07-05T01:40:00Z",
-    "gamePk": 824983,
     "rank": 13
   }
 ]
