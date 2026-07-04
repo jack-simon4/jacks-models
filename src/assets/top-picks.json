@@ -1,24 +1,5 @@
 [
   {
-    "matchup": "Pittsburgh Pirates @ Washington Nationals",
-    "awayTeam": "Pittsburgh Pirates",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Braxton Ashcraft",
-    "homePitcher": "Carson Palmquist",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -265",
-    "odds": "-265",
-    "winProb": 0.727,
-    "edge": 0.227,
-    "confidence": "Elite",
-    "predictedScore": "Pittsburgh Pirates 6.1 \u2013 Washington Nationals 4.0",
-    "predictedHomeScore": 3.97,
-    "predictedAwayScore": 6.15,
-    "gameTime": "2026-07-04T15:05:00Z",
-    "gamePk": 822716,
-    "rank": 1
-  },
-  {
     "matchup": "San Francisco Giants @ Colorado Rockies",
     "awayTeam": "San Francisco Giants",
     "homeTeam": "Colorado Rockies",
@@ -35,7 +16,7 @@
     "predictedAwayScore": 6.67,
     "gameTime": "2026-07-05T00:10:00Z",
     "gamePk": 824334,
-    "rank": 2
+    "rank": 1
   },
   {
     "matchup": "Detroit Tigers @ Texas Rangers",
@@ -54,7 +35,7 @@
     "predictedAwayScore": 5.3,
     "gameTime": "2026-07-04T20:05:00Z",
     "gamePk": 822882,
-    "rank": 3
+    "rank": 2
   },
   {
     "matchup": "New York Mets @ Atlanta Braves",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 4.06,
     "gameTime": "2026-07-05T00:08:00Z",
     "gamePk": 824903,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "San Diego Padres @ Los Angeles Dodgers",
@@ -92,6 +73,25 @@
     "predictedAwayScore": 3.01,
     "gameTime": "2026-07-05T02:10:00Z",
     "gamePk": 823932,
+    "rank": 4
+  },
+  {
+    "matchup": "Pittsburgh Pirates @ Washington Nationals",
+    "awayTeam": "Pittsburgh Pirates",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Braxton Ashcraft",
+    "homePitcher": "Carson Palmquist",
+    "pick": "Pittsburgh Pirates",
+    "prediction": "Pittsburgh Pirates -190",
+    "odds": "-190",
+    "winProb": 0.656,
+    "edge": 0.156,
+    "confidence": "Elite",
+    "predictedScore": "Pittsburgh Pirates 5.0 \u2013 Washington Nationals 3.6",
+    "predictedHomeScore": 3.59,
+    "predictedAwayScore": 5.03,
+    "gameTime": "2026-07-04T15:05:00Z",
+    "gamePk": 822716,
     "rank": 5
   },
   {
@@ -209,25 +209,6 @@
     "rank": 11
   },
   {
-    "matchup": "Baltimore Orioles @ Cincinnati Reds",
-    "awayTeam": "Baltimore Orioles",
-    "homeTeam": "Cincinnati Reds",
-    "awayPitcher": "Brandon Young",
-    "homePitcher": "Hunter Greene",
-    "pick": "Cincinnati Reds",
-    "prediction": "Cincinnati Reds -120",
-    "odds": "-120",
-    "winProb": 0.542,
-    "edge": 0.042,
-    "confidence": "Lean",
-    "predictedScore": "Baltimore Orioles 4.4 \u2013 Cincinnati Reds 4.8",
-    "predictedHomeScore": 4.77,
-    "predictedAwayScore": 4.39,
-    "gameTime": "2026-07-04T23:10:00Z",
-    "gamePk": 824499,
-    "rank": 12
-  },
-  {
     "matchup": "Chicago White Sox @ Cleveland Guardians",
     "awayTeam": "Chicago White Sox",
     "homeTeam": "Cleveland Guardians",
@@ -244,7 +225,7 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-04T23:10:00Z",
     "gamePk": 824415,
-    "rank": 13
+    "rank": 12
   },
   {
     "matchup": "Miami Marlins @ Athletics",
@@ -263,6 +244,6 @@
     "predictedAwayScore": 4.59,
     "gameTime": "2026-07-05T01:40:00Z",
     "gamePk": 824983,
-    "rank": 14
+    "rank": 13
   }
 ]
