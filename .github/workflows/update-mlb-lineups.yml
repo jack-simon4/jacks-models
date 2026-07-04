@@ -7,6 +7,10 @@ on:
     - cron: '0 0-5 * * *'
   workflow_dispatch:
 
+concurrency:
+  group: mlb-csv-update
+  cancel-in-progress: false
+
 jobs:
   update-lineups:
     runs-on: ubuntu-latest
