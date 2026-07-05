@@ -2,7 +2,7 @@ Team,Player
 New York Mets1,Francisco Lindor
 New York Mets2,Juan Soto
 New York Mets3,Bo Bichette
-New York Mets4,Mark Vientos
+New York Mets4,Jared Young
 New York Mets5,Carson Benge
 New York Mets6,Tyrone Taylor
 New York Mets7,A.J. Ewing
@@ -15,15 +15,15 @@ Atlanta Braves4,Michael Harris II
 Atlanta Braves5,Mauricio Dubon
 Atlanta Braves6,Dominic Smith
 Atlanta Braves7,Austin Riley
-Atlanta Braves8,Mike Yastrzemski
-Atlanta Braves9,Jim Jarvis
+Atlanta Braves8,Eli White
+Atlanta Braves9,Jorge Mateo
 Pittsburgh Pirates1,Konnor Griffin
 Pittsburgh Pirates2,Brandon Lowe
 Pittsburgh Pirates3,Bryan Reynolds
-Pittsburgh Pirates4,Esmerlyn Valdez
+Pittsburgh Pirates4,Billy Cook
 Pittsburgh Pirates5,Ryan O'Hearn
 Pittsburgh Pirates6,Nick Gonzales
-Pittsburgh Pirates7,Endy Rodriguez
+Pittsburgh Pirates7,Henry Davis
 Pittsburgh Pirates8,Jared Triolo
 Pittsburgh Pirates9,Jake Mangum
 Washington Nationals1,James Wood
@@ -33,16 +33,16 @@ Washington Nationals4,CJ Abrams
 Washington Nationals5,Daylen Lile
 Washington Nationals6,Dylan Crews
 Washington Nationals7,Jose Tena
-Washington Nationals8,Jorbit Vivas
-Washington Nationals9,Keibert Ruiz
+Washington Nationals8,Andres Chaparro
+Washington Nationals9,Drew Millas
 Baltimore Orioles1,Gunnar Henderson
 Baltimore Orioles2,Adley Rutschman
 Baltimore Orioles3,Taylor Ward
 Baltimore Orioles4,Pete Alonso
 Baltimore Orioles5,Samuel Basallo
-Baltimore Orioles6,Tyler O'Neill
+Baltimore Orioles6,Dylan Beavers
 Baltimore Orioles7,Leody Taveras
-Baltimore Orioles8,Jeremiah Jackson
+Baltimore Orioles8,Jackson Holliday
 Baltimore Orioles9,Blaze Alexander
 Cincinnati Reds1,Elly De La Cruz
 Cincinnati Reds2,Sal Stewart
@@ -97,7 +97,7 @@ St. Louis Cardinals5,Lars Nootbaar
 St. Louis Cardinals6,Masyn Winn
 St. Louis Cardinals7,Nathan Church
 St. Louis Cardinals8,Jose Fermin
-St. Louis Cardinals9,Bryan Torres
+St. Louis Cardinals9,Nelson Velazquez
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Alex Bregman
 Chicago Cubs3,Seiya Suzuki
@@ -106,7 +106,7 @@ Chicago Cubs5,Michael Busch
 Chicago Cubs6,Nico Hoerner
 Chicago Cubs7,Ian Happ
 Chicago Cubs8,Dansby Swanson
-Chicago Cubs9,Kevin Alcantara
+Chicago Cubs9,Pedro Ramirez
 Philadelphia Phillies1,Trea Turner
 Philadelphia Phillies2,Kyle Schwarber
 Philadelphia Phillies3,Bryce Harper
@@ -233,14 +233,23 @@ Seattle Mariners6,Cole Young
 Seattle Mariners7,Mitch Garver
 Seattle Mariners8,Colt Emerson
 Seattle Mariners9,Victor Robles
+San Diego Padres1,Fernando Tatis Jr.
+San Diego Padres2,Jake Cronenworth
+San Diego Padres3,Manny Machado
+San Diego Padres4,Gavin Sheets
+San Diego Padres5,Ty France
+San Diego Padres6,Jackson Merrill
+San Diego Padres7,Xander Bogaerts
+San Diego Padres8,Sung-Mun Song
+San Diego Padres9,Luis Campusano
 Los Angeles Dodgers1,Shohei Ohtani
 Los Angeles Dodgers2,Andy Pages
 Los Angeles Dodgers3,Freddie Freeman
 Los Angeles Dodgers4,Mookie Betts
-Los Angeles Dodgers5,Tommy Edman
-Los Angeles Dodgers6,Teoscar Hernandez
+Los Angeles Dodgers5,Teoscar Hernandez
+Los Angeles Dodgers6,Alex Call
 Los Angeles Dodgers7,Miguel Rojas
-Los Angeles Dodgers8,Alex Call
+Los Angeles Dodgers8,Alex Freeland
 Los Angeles Dodgers9,Eliezer Alfonzo
 Boston Red Sox1,Anthony Seigler
 Boston Red Sox2,Ceddanne Rafaela
@@ -260,12 +269,3 @@ Los Angeles Angels6,Jo Adell
 Los Angeles Angels7,Wade Meckler
 Los Angeles Angels8,Donovan Walton
 Los Angeles Angels9,Tyler Heineman
-San Diego Padres1,Fernando Tatis Jr.
-San Diego Padres2,Jake Cronenworth
-San Diego Padres3,Manny Machado
-San Diego Padres4,Gavin Sheets
-San Diego Padres5,Ty France
-San Diego Padres6,Xander Bogaerts
-San Diego Padres7,Jackson Merrill
-San Diego Padres8,Miguel Andujar
-San Diego Padres9,Luis Campusano

@@ -44,13 +44,13 @@
     "awayPitcher": "JP Sears",
     "homePitcher": "Emmet Sheehan",
     "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -225",
-    "odds": "-225",
-    "winProb": 0.694,
-    "edge": 0.194,
+    "prediction": "Los Angeles Dodgers -195",
+    "odds": "-195",
+    "winProb": 0.659,
+    "edge": 0.159,
     "confidence": "Elite",
-    "predictedScore": "San Diego Padres 4.4 \u2013 Los Angeles Dodgers 6.2",
-    "predictedHomeScore": 6.24,
+    "predictedScore": "San Diego Padres 4.4 \u2013 Los Angeles Dodgers 5.9",
+    "predictedHomeScore": 5.89,
     "predictedAwayScore": 4.42,
     "gameTime": "2026-07-05T23:20:00Z",
     "gamePk": 823931,
@@ -76,6 +76,25 @@
     "rank": 4
   },
   {
+    "matchup": "St. Louis Cardinals @ Chicago Cubs",
+    "awayTeam": "St. Louis Cardinals",
+    "homeTeam": "Chicago Cubs",
+    "awayPitcher": "Matthew Liberatore",
+    "homePitcher": "Javier Assad",
+    "pick": "Chicago Cubs",
+    "prediction": "Chicago Cubs -165",
+    "odds": "-165",
+    "winProb": 0.623,
+    "edge": 0.123,
+    "confidence": "Strong",
+    "predictedScore": "St. Louis Cardinals 5.1 \u2013 Chicago Cubs 6.2",
+    "predictedHomeScore": 6.25,
+    "predictedAwayScore": 5.14,
+    "gameTime": "2026-07-05T18:30:00Z",
+    "gamePk": 824656,
+    "rank": 5
+  },
+  {
     "matchup": "Minnesota Twins @ New York Yankees",
     "awayTeam": "Minnesota Twins",
     "homeTeam": "New York Yankees",
@@ -92,7 +111,7 @@
     "predictedAwayScore": 5.18,
     "gameTime": "2026-07-05T17:35:00Z",
     "gamePk": 823525,
-    "rank": 5
+    "rank": 6
   },
   {
     "matchup": "Miami Marlins @ Athletics",
@@ -111,7 +130,7 @@
     "predictedAwayScore": 3.0,
     "gameTime": "2026-07-05T20:30:00Z",
     "gamePk": 824980,
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "Chicago White Sox @ Cleveland Guardians",
@@ -130,7 +149,7 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-05T18:00:00Z",
     "gamePk": 824413,
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Baltimore Orioles @ Cincinnati Reds",
@@ -149,25 +168,6 @@
     "predictedAwayScore": 4.72,
     "gameTime": "2026-07-05T17:05:00Z",
     "gamePk": 824497,
-    "rank": 8
-  },
-  {
-    "matchup": "St. Louis Cardinals @ Chicago Cubs",
-    "awayTeam": "St. Louis Cardinals",
-    "homeTeam": "Chicago Cubs",
-    "awayPitcher": "Matthew Liberatore",
-    "homePitcher": "Javier Assad",
-    "pick": "Chicago Cubs",
-    "prediction": "Chicago Cubs -140",
-    "odds": "-140",
-    "winProb": 0.584,
-    "edge": 0.084,
-    "confidence": "Strong",
-    "predictedScore": "St. Louis Cardinals 5.1 \u2013 Chicago Cubs 5.9",
-    "predictedHomeScore": 5.89,
-    "predictedAwayScore": 5.14,
-    "gameTime": "2026-07-05T18:30:00Z",
-    "gamePk": 824656,
     "rank": 9
   },
   {
@@ -209,25 +209,6 @@
     "rank": 11
   },
   {
-    "matchup": "Pittsburgh Pirates @ Washington Nationals",
-    "awayTeam": "Pittsburgh Pirates",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Bubba Chandler",
-    "homePitcher": "Cade Cavalli",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -115",
-    "odds": "-115",
-    "winProb": 0.536,
-    "edge": 0.036,
-    "confidence": "Lean",
-    "predictedScore": "Pittsburgh Pirates 4.7 \u2013 Washington Nationals 4.3",
-    "predictedHomeScore": 4.34,
-    "predictedAwayScore": 4.66,
-    "gameTime": "2026-07-05T17:00:00Z",
-    "gamePk": 822715,
-    "rank": 12
-  },
-  {
     "matchup": "New York Mets @ Atlanta Braves",
     "awayTeam": "New York Mets",
     "homeTeam": "Atlanta Braves",
@@ -244,6 +225,6 @@
     "predictedAwayScore": 4.06,
     "gameTime": "2026-07-05T16:30:00Z",
     "gamePk": 824902,
-    "rank": 13
+    "rank": 12
   }
 ]
