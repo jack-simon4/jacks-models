@@ -57,22 +57,22 @@
     "rank": 3
   },
   {
-    "matchup": "Tampa Bay Rays @ Houston Astros",
-    "awayTeam": "Tampa Bay Rays",
-    "homeTeam": "Houston Astros",
-    "awayPitcher": "Mason Englert",
-    "homePitcher": "Peter Lambert",
-    "pick": "Houston Astros",
-    "prediction": "Houston Astros -185",
-    "odds": "-185",
-    "winProb": 0.648,
-    "edge": 0.148,
+    "matchup": "Chicago White Sox @ Cleveland Guardians",
+    "awayTeam": "Chicago White Sox",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "Chris Murphy",
+    "homePitcher": "Tanner Bibee",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -180",
+    "odds": "-180",
+    "winProb": 0.642,
+    "edge": 0.142,
     "confidence": "Elite",
-    "predictedScore": "Tampa Bay Rays 3.1 \u2013 Houston Astros 4.5",
-    "predictedHomeScore": 4.45,
-    "predictedAwayScore": 3.09,
-    "gameTime": "2026-07-05T19:30:00Z",
-    "gamePk": 824172,
+    "predictedScore": "Chicago White Sox 4.2 \u2013 Cleveland Guardians 2.9",
+    "predictedHomeScore": 2.91,
+    "predictedAwayScore": 4.2,
+    "gameTime": "2026-07-05T18:00:00Z",
+    "gamePk": 824413,
     "rank": 4
   },
   {
@@ -95,6 +95,25 @@
     "rank": 5
   },
   {
+    "matchup": "Tampa Bay Rays @ Houston Astros",
+    "awayTeam": "Tampa Bay Rays",
+    "homeTeam": "Houston Astros",
+    "awayPitcher": "Mason Englert",
+    "homePitcher": "Peter Lambert",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -160",
+    "odds": "-160",
+    "winProb": 0.614,
+    "edge": 0.114,
+    "confidence": "Strong",
+    "predictedScore": "Tampa Bay Rays 3.4 \u2013 Houston Astros 4.5",
+    "predictedHomeScore": 4.45,
+    "predictedAwayScore": 3.42,
+    "gameTime": "2026-07-05T19:30:00Z",
+    "gamePk": 824172,
+    "rank": 6
+  },
+  {
     "matchup": "Minnesota Twins @ New York Yankees",
     "awayTeam": "Minnesota Twins",
     "homeTeam": "New York Yankees",
@@ -111,7 +130,7 @@
     "predictedAwayScore": 5.18,
     "gameTime": "2026-07-05T17:35:00Z",
     "gamePk": 823525,
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "Miami Marlins @ Athletics",
@@ -130,25 +149,6 @@
     "predictedAwayScore": 3.0,
     "gameTime": "2026-07-05T20:30:00Z",
     "gamePk": 824980,
-    "rank": 7
-  },
-  {
-    "matchup": "Chicago White Sox @ Cleveland Guardians",
-    "awayTeam": "Chicago White Sox",
-    "homeTeam": "Cleveland Guardians",
-    "awayPitcher": "Chris Murphy",
-    "homePitcher": "Tanner Bibee",
-    "pick": "Chicago White Sox",
-    "prediction": "Chicago White Sox -155",
-    "odds": "-155",
-    "winProb": 0.606,
-    "edge": 0.106,
-    "confidence": "Strong",
-    "predictedScore": "Chicago White Sox 3.9 \u2013 Cleveland Guardians 2.9",
-    "predictedHomeScore": 2.91,
-    "predictedAwayScore": 3.87,
-    "gameTime": "2026-07-05T18:00:00Z",
-    "gamePk": 824413,
     "rank": 8
   },
   {
