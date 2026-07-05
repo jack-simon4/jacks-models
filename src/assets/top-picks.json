@@ -114,6 +114,25 @@
     "rank": 6
   },
   {
+    "matchup": "Pittsburgh Pirates @ Washington Nationals",
+    "awayTeam": "Pittsburgh Pirates",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Bubba Chandler",
+    "homePitcher": "Cade Cavalli",
+    "pick": "Pittsburgh Pirates",
+    "prediction": "Pittsburgh Pirates -160",
+    "odds": "-160",
+    "winProb": 0.618,
+    "edge": 0.118,
+    "confidence": "Strong",
+    "predictedScore": "Pittsburgh Pirates 4.7 \u2013 Washington Nationals 3.6",
+    "predictedHomeScore": 3.59,
+    "predictedAwayScore": 4.66,
+    "gameTime": "2026-07-05T17:00:00Z",
+    "gamePk": 822715,
+    "rank": 7
+  },
+  {
     "matchup": "Chicago White Sox @ Cleveland Guardians",
     "awayTeam": "Chicago White Sox",
     "homeTeam": "Cleveland Guardians",
@@ -130,7 +149,7 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-05T18:00:00Z",
     "gamePk": 824413,
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Detroit Tigers @ Texas Rangers",
@@ -149,25 +168,6 @@
     "predictedAwayScore": 4.66,
     "gameTime": "2026-07-05T19:30:00Z",
     "gamePk": 822879,
-    "rank": 8
-  },
-  {
-    "matchup": "Pittsburgh Pirates @ Washington Nationals",
-    "awayTeam": "Pittsburgh Pirates",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Bubba Chandler",
-    "homePitcher": "Cade Cavalli",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -135",
-    "odds": "-135",
-    "winProb": 0.577,
-    "edge": 0.077,
-    "confidence": "Lean",
-    "predictedScore": "Pittsburgh Pirates 4.3 \u2013 Washington Nationals 3.6",
-    "predictedHomeScore": 3.59,
-    "predictedAwayScore": 4.29,
-    "gameTime": "2026-07-05T17:00:00Z",
-    "gamePk": 822715,
     "rank": 9
   },
   {
