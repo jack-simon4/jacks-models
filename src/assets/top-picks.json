@@ -114,6 +114,25 @@
     "rank": 6
   },
   {
+    "matchup": "Chicago White Sox @ Cleveland Guardians",
+    "awayTeam": "Chicago White Sox",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "Chris Murphy",
+    "homePitcher": "Tanner Bibee",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -155",
+    "odds": "-155",
+    "winProb": 0.606,
+    "edge": 0.106,
+    "confidence": "Strong",
+    "predictedScore": "Chicago White Sox 3.9 \u2013 Cleveland Guardians 2.9",
+    "predictedHomeScore": 2.91,
+    "predictedAwayScore": 3.87,
+    "gameTime": "2026-07-05T18:00:00Z",
+    "gamePk": 824413,
+    "rank": 7
+  },
+  {
     "matchup": "Detroit Tigers @ Texas Rangers",
     "awayTeam": "Detroit Tigers",
     "homeTeam": "Texas Rangers",
@@ -130,7 +149,7 @@
     "predictedAwayScore": 4.66,
     "gameTime": "2026-07-05T19:30:00Z",
     "gamePk": 822879,
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Pittsburgh Pirates @ Washington Nationals",
@@ -149,7 +168,7 @@
     "predictedAwayScore": 4.29,
     "gameTime": "2026-07-05T17:00:00Z",
     "gamePk": 822715,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Miami Marlins @ Athletics",
@@ -168,7 +187,7 @@
     "predictedAwayScore": 3.32,
     "gameTime": "2026-07-05T20:30:00Z",
     "gamePk": 824980,
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "New York Mets @ Atlanta Braves",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 4.06,
     "gameTime": "2026-07-05T16:30:00Z",
     "gamePk": 824902,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Boston Red Sox @ Los Angeles Angels",
@@ -206,7 +225,7 @@
     "predictedAwayScore": 4.53,
     "gameTime": "2026-07-06T01:30:00Z",
     "gamePk": 824010,
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "Milwaukee Brewers @ Arizona Diamondbacks",
@@ -225,7 +244,7 @@
     "predictedAwayScore": 3.9,
     "gameTime": "2026-07-05T20:00:00Z",
     "gamePk": 825061,
-    "rank": 12
+    "rank": 13
   },
   {
     "matchup": "Tampa Bay Rays @ Houston Astros",
@@ -244,7 +263,7 @@
     "predictedAwayScore": 3.09,
     "gameTime": "2026-07-05T19:30:00Z",
     "gamePk": 824172,
-    "rank": 13
+    "rank": 14
   },
   {
     "matchup": "Philadelphia Phillies @ Kansas City Royals",
@@ -263,6 +282,6 @@
     "predictedAwayScore": 4.21,
     "gameTime": "2026-07-05T19:00:00Z",
     "gamePk": 824091,
-    "rank": 14
+    "rank": 15
   }
 ]
