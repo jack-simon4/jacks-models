@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      id-token: write  # needed for Firebase deploy
 
     steps:
       - name: Check out repository
@@ -49,14 +50,41 @@ jobs:
         run: python scripts/upload_to_storage.py
 
       - name: Commit and push updated CSVs
+        id: commit
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git add src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv src/assets/top-picks.json
           if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
             echo "No lineup changes — nothing to commit."
           else
             git commit -m "chore: auto-update lineups $(date -u +%Y-%m-%dT%H:%M)"
             git pull --rebase origin main
             git push
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
+
+      - name: Set up Node.js
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install npm dependencies
+        if: steps.commit.outputs.changed == 'true'
+        run: npm ci
+
+      - name: Build Angular app
+        if: steps.commit.outputs.changed == 'true'
+        run: npm run build
+
+      - name: Deploy to Firebase Hosting
+        if: steps.commit.outputs.changed == 'true'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}'
+          channelId: live
+          projectId: jesimon4-scoreboard
