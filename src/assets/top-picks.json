@@ -76,6 +76,25 @@
     "rank": 4
   },
   {
+    "matchup": "New York Yankees @ Tampa Bay Rays",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Tampa Bay Rays",
+    "awayPitcher": "Cam Schlittler",
+    "homePitcher": "Griffin Jax",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -135",
+    "odds": "-135",
+    "winProb": 0.574,
+    "edge": 0.074,
+    "confidence": "Lean",
+    "predictedScore": "New York Yankees 4.1 \u2013 Tampa Bay Rays 3.4",
+    "predictedHomeScore": 3.43,
+    "predictedAwayScore": 4.1,
+    "gameTime": "2026-07-06T22:40:00Z",
+    "gamePk": 822958,
+    "rank": 5
+  },
+  {
     "matchup": "Toronto Blue Jays @ San Francisco Giants",
     "awayTeam": "Toronto Blue Jays",
     "homeTeam": "San Francisco Giants",
@@ -92,25 +111,6 @@
     "predictedAwayScore": 2.92,
     "gameTime": "2026-07-07T01:45:00Z",
     "gamePk": 823205,
-    "rank": 5
-  },
-  {
-    "matchup": "New York Yankees @ Tampa Bay Rays",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Tampa Bay Rays",
-    "awayPitcher": "Cam Schlittler",
-    "homePitcher": "Griffin Jax",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -115",
-    "odds": "-115",
-    "winProb": 0.534,
-    "edge": 0.034,
-    "confidence": "Lean",
-    "predictedScore": "New York Yankees 4.1 \u2013 Tampa Bay Rays 3.8",
-    "predictedHomeScore": 3.79,
-    "predictedAwayScore": 4.1,
-    "gameTime": "2026-07-06T22:40:00Z",
-    "gamePk": 822958,
     "rank": 6
   },
   {
