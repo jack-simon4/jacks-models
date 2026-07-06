@@ -1,193 +1,4 @@
 Team,Player
-New York Mets1,Francisco Lindor
-New York Mets2,Juan Soto
-New York Mets3,Bo Bichette
-New York Mets4,Jared Young
-New York Mets5,Carson Benge
-New York Mets6,Tyrone Taylor
-New York Mets7,A.J. Ewing
-New York Mets8,Luis Torrens
-New York Mets9,Brett Baty
-Atlanta Braves1,Drake Baldwin
-Atlanta Braves2,Ozzie Albies
-Atlanta Braves3,Matt Olson
-Atlanta Braves4,Michael Harris II
-Atlanta Braves5,Mauricio Dubon
-Atlanta Braves6,Dominic Smith
-Atlanta Braves7,Austin Riley
-Atlanta Braves8,Eli White
-Atlanta Braves9,Jorge Mateo
-Pittsburgh Pirates1,Konnor Griffin
-Pittsburgh Pirates2,Brandon Lowe
-Pittsburgh Pirates3,Bryan Reynolds
-Pittsburgh Pirates4,Billy Cook
-Pittsburgh Pirates5,Ryan O'Hearn
-Pittsburgh Pirates6,Nick Gonzales
-Pittsburgh Pirates7,Henry Davis
-Pittsburgh Pirates8,Jared Triolo
-Pittsburgh Pirates9,Jake Mangum
-Washington Nationals1,James Wood
-Washington Nationals2,Luis Garcia Jr.
-Washington Nationals3,Curtis Mead
-Washington Nationals4,CJ Abrams
-Washington Nationals5,Daylen Lile
-Washington Nationals6,Dylan Crews
-Washington Nationals7,Jose Tena
-Washington Nationals8,Andres Chaparro
-Washington Nationals9,Drew Millas
-Baltimore Orioles1,Gunnar Henderson
-Baltimore Orioles2,Adley Rutschman
-Baltimore Orioles3,Taylor Ward
-Baltimore Orioles4,Pete Alonso
-Baltimore Orioles5,Samuel Basallo
-Baltimore Orioles6,Dylan Beavers
-Baltimore Orioles7,Leody Taveras
-Baltimore Orioles8,Jackson Holliday
-Baltimore Orioles9,Blaze Alexander
-Cincinnati Reds1,Elly De La Cruz
-Cincinnati Reds2,Sal Stewart
-Cincinnati Reds3,JJ Bleday
-Cincinnati Reds4,Eugenio Suarez
-Cincinnati Reds5,Spencer Steer
-Cincinnati Reds6,Tyler Stephenson
-Cincinnati Reds7,Noelvi Marte
-Cincinnati Reds8,TJ Friedl
-Cincinnati Reds9,Edwin Arroyo
-Minnesota Twins1,Austin Martin
-Minnesota Twins2,Kyler Fedko
-Minnesota Twins3,Kody Clemens
-Minnesota Twins4,Josh Bell
-Minnesota Twins5,Royce Lewis
-Minnesota Twins6,Victor Caratini
-Minnesota Twins7,Brooks Lee
-Minnesota Twins8,Ryan Kreidler
-Minnesota Twins9,Luke Keaschall
-New York Yankees1,Trent Grisham
-New York Yankees2,Ben Rice
-New York Yankees3,Jasson Dominguez
-New York Yankees4,Cody Bellinger
-New York Yankees5,Anthony Volpe
-New York Yankees6,Amed Rosario
-New York Yankees7,Max Schuemann
-New York Yankees8,Austin Wells
-New York Yankees9,Jose Caballero
-Chicago White Sox1,Sam Antonacci
-Chicago White Sox2,Miguel Vargas
-Chicago White Sox3,Kyle Teel
-Chicago White Sox4,Andrew Benintendi
-Chicago White Sox5,Colson Montgomery
-Chicago White Sox6,Braden Montgomery
-Chicago White Sox7,Chase Meidroth
-Chicago White Sox8,Tristan Peters
-Chicago White Sox9,Luisangel Acuna
-Cleveland Guardians1,Travis Bazzana
-Cleveland Guardians2,Kahlil Watson
-Cleveland Guardians3,Chase DeLauter
-Cleveland Guardians4,Rhys Hoskins
-Cleveland Guardians5,Gabriel Arias
-Cleveland Guardians6,Cooper Ingle
-Cleveland Guardians7,Daniel Schneemann
-Cleveland Guardians8,Brayan Rocchio
-Cleveland Guardians9,Austin Hedges
-St. Louis Cardinals1,JJ Wetherholt
-St. Louis Cardinals2,Ivan Herrera
-St. Louis Cardinals3,Alec Burleson
-St. Louis Cardinals4,Jordan Walker
-St. Louis Cardinals5,Lars Nootbaar
-St. Louis Cardinals6,Masyn Winn
-St. Louis Cardinals7,Nathan Church
-St. Louis Cardinals8,Jose Fermin
-St. Louis Cardinals9,Nelson Velazquez
-Chicago Cubs1,Pete Crow-Armstrong
-Chicago Cubs2,Alex Bregman
-Chicago Cubs3,Seiya Suzuki
-Chicago Cubs4,Carson Kelly
-Chicago Cubs5,Michael Busch
-Chicago Cubs6,Nico Hoerner
-Chicago Cubs7,Ian Happ
-Chicago Cubs8,Dansby Swanson
-Chicago Cubs9,Pedro Ramirez
-Philadelphia Phillies1,Trea Turner
-Philadelphia Phillies2,Kyle Schwarber
-Philadelphia Phillies3,Bryce Harper
-Philadelphia Phillies4,Brandon Marsh
-Philadelphia Phillies5,Alec Bohm
-Philadelphia Phillies6,Bryson Stott
-Philadelphia Phillies7,Gabriel Rincones Jr.
-Philadelphia Phillies8,Justin Crawford
-Philadelphia Phillies9,Garrett Stubbs
-Kansas City Royals1,Carter Jensen
-Kansas City Royals2,Bobby Witt Jr.
-Kansas City Royals3,Jac Caglianone
-Kansas City Royals4,Lane Thomas
-Kansas City Royals5,Nick Loftin
-Kansas City Royals6,Salvador Perez
-Kansas City Royals7,Josh Rojas
-Kansas City Royals8,Kameron Misner
-Kansas City Royals9,Isaac Collins
-Tampa Bay Rays1,Yandy Diaz
-Tampa Bay Rays2,Jonathan Aranda
-Tampa Bay Rays3,Junior Caminero
-Tampa Bay Rays4,Ryan Vilade
-Tampa Bay Rays5,Chandler Simpson
-Tampa Bay Rays6,Ben Williamson
-Tampa Bay Rays7,Victor Mesa Jr.
-Tampa Bay Rays8,Jonny DeLuca
-Tampa Bay Rays9,Nick Fortes
-Houston Astros1,Jose Altuve
-Houston Astros2,Yordan Alvarez
-Houston Astros3,Isaac Paredes
-Houston Astros4,Christian Walker
-Houston Astros5,Brice Matthews
-Houston Astros6,Cam Smith
-Houston Astros7,Zach Dezenzo
-Houston Astros8,Nick Allen
-Houston Astros9,Christian Vazquez
-Detroit Tigers1,Kevin McGonigle
-Detroit Tigers2,Dillon Dingler
-Detroit Tigers3,Matt Vierling
-Detroit Tigers4,Riley Greene
-Detroit Tigers5,Spencer Torkelson
-Detroit Tigers6,Hao-Yu Lee
-Detroit Tigers7,Zach McKinstry
-Detroit Tigers8,Jake Rogers
-Detroit Tigers9,James Outman
-Texas Rangers1,Joc Pederson
-Texas Rangers2,Jake Burger
-Texas Rangers3,Brandon Nimmo
-Texas Rangers4,Ezequiel Duran
-Texas Rangers5,Evan Carter
-Texas Rangers6,Elias Diaz
-Texas Rangers7,Josh Smith
-Texas Rangers8,Alejandro Osuna
-Texas Rangers9,Nicky Lopez
-San Francisco Giants1,Luis Arraez
-San Francisco Giants2,Casey Schmitt
-San Francisco Giants3,Heliot Ramos
-San Francisco Giants4,Rafael Devers
-San Francisco Giants5,Jonah Cox
-San Francisco Giants6,Willy Adames
-San Francisco Giants7,Bryce Eldridge
-San Francisco Giants8,Drew Gilbert
-San Francisco Giants9,Drew Cavanaugh
-Colorado Rockies1,Jake McCarthy
-Colorado Rockies2,Cole Carrigg
-Colorado Rockies3,Hunter Goodman
-Colorado Rockies4,TJ Rumfield
-Colorado Rockies5,Tyler Freeman
-Colorado Rockies6,Kyle Karros
-Colorado Rockies7,Edouard Julien
-Colorado Rockies8,Brett Sullivan
-Colorado Rockies9,Willi Castro
-Milwaukee Brewers1,Brice Turang
-Milwaukee Brewers2,Jackson Chourio
-Milwaukee Brewers3,Christian Yelich
-Milwaukee Brewers4,Sal Frelick
-Milwaukee Brewers5,Jake Bauers
-Milwaukee Brewers6,Garrett Mitchell
-Milwaukee Brewers7,Gary Sanchez
-Milwaukee Brewers8,David Hamilton
-Milwaukee Brewers9,Joey Ortiz
 Arizona Diamondbacks1,Ketel Marte
 Arizona Diamondbacks2,Geraldo Perdomo
 Arizona Diamondbacks3,Corbin Carroll
@@ -197,51 +8,42 @@ Arizona Diamondbacks6,Ildemaro Vargas
 Arizona Diamondbacks7,Tim Tawa
 Arizona Diamondbacks8,Pavin Smith
 Arizona Diamondbacks9,Tommy Troy
-Miami Marlins1,Otto Lopez
-Miami Marlins2,Heriberto Hernandez
-Miami Marlins3,Liam Hicks
-Miami Marlins4,Xavier Edwards
-Miami Marlins5,Javier Sanoja
-Miami Marlins6,Esteury Ruiz
-Miami Marlins7,Leo Jimenez
-Miami Marlins8,Griffin Conine
-Miami Marlins9,Brian Navarreto
-Athletics1,Henry Bolte
-Athletics2,Nick Kurtz
-Athletics3,Zack Gelof
-Athletics4,Lawrence Butler
-Athletics5,Joshua Kuroda-Grauer
-Athletics6,Carlos Cortes
-Athletics7,Max Muncy
-Athletics8,Jonah Heim
-Athletics9,Brian Serven
-Toronto Blue Jays1,Nathan Lukes
-Toronto Blue Jays2,Vladimir Guerrero Jr.
-Toronto Blue Jays3,Kazuma Okamoto
-Toronto Blue Jays4,Alejandro Kirk
-Toronto Blue Jays5,Daulton Varsho
-Toronto Blue Jays6,Ernie Clement
-Toronto Blue Jays7,Brandon Valenzuela
-Toronto Blue Jays8,Luis Urias
-Toronto Blue Jays9,Myles Straw
-Seattle Mariners1,J.P. Crawford
-Seattle Mariners2,Randy Arozarena
-Seattle Mariners3,Cal Raleigh
-Seattle Mariners4,Josh Naylor
-Seattle Mariners5,Luke Raley
-Seattle Mariners6,Cole Young
-Seattle Mariners7,Mitch Garver
-Seattle Mariners8,Colt Emerson
-Seattle Mariners9,Victor Robles
-San Diego Padres1,Fernando Tatis Jr.
-San Diego Padres2,Jake Cronenworth
-San Diego Padres3,Manny Machado
-San Diego Padres4,Gavin Sheets
-San Diego Padres5,Ty France
-San Diego Padres6,Jackson Merrill
-San Diego Padres7,Xander Bogaerts
-San Diego Padres8,Sung-Mun Song
-San Diego Padres9,Luis Campusano
+Atlanta Braves1,Drake Baldwin
+Atlanta Braves2,Ozzie Albies
+Atlanta Braves3,Matt Olson
+Atlanta Braves4,Michael Harris II
+Atlanta Braves5,Mauricio Dubon
+Atlanta Braves6,Dominic Smith
+Atlanta Braves7,Austin Riley
+Atlanta Braves8,Eli White
+Atlanta Braves9,Jorge Mateo
+Colorado Rockies1,Jake McCarthy
+Colorado Rockies2,Cole Carrigg
+Colorado Rockies3,Hunter Goodman
+Colorado Rockies4,TJ Rumfield
+Colorado Rockies5,Tyler Freeman
+Colorado Rockies6,Kyle Karros
+Colorado Rockies7,Edouard Julien
+Colorado Rockies8,Brett Sullivan
+Colorado Rockies9,Willi Castro
+Houston Astros1,Jose Altuve
+Houston Astros2,Yordan Alvarez
+Houston Astros3,Isaac Paredes
+Houston Astros4,Christian Walker
+Houston Astros5,Brice Matthews
+Houston Astros6,Cam Smith
+Houston Astros7,Zach Dezenzo
+Houston Astros8,Nick Allen
+Houston Astros9,Christian Vazquez
+Kansas City Royals1,Carter Jensen
+Kansas City Royals2,Bobby Witt Jr.
+Kansas City Royals3,Jac Caglianone
+Kansas City Royals4,Lane Thomas
+Kansas City Royals5,Nick Loftin
+Kansas City Royals6,Salvador Perez
+Kansas City Royals7,Josh Rojas
+Kansas City Royals8,Kameron Misner
+Kansas City Royals9,Isaac Collins
 Los Angeles Dodgers1,Shohei Ohtani
 Los Angeles Dodgers2,Andy Pages
 Los Angeles Dodgers3,Freddie Freeman
@@ -251,6 +53,114 @@ Los Angeles Dodgers6,Alex Call
 Los Angeles Dodgers7,Miguel Rojas
 Los Angeles Dodgers8,Alex Freeland
 Los Angeles Dodgers9,Eliezer Alfonzo
+Milwaukee Brewers1,Brice Turang
+Milwaukee Brewers2,Jackson Chourio
+Milwaukee Brewers3,Christian Yelich
+Milwaukee Brewers4,Sal Frelick
+Milwaukee Brewers5,Jake Bauers
+Milwaukee Brewers6,Garrett Mitchell
+Milwaukee Brewers7,Gary Sanchez
+Milwaukee Brewers8,David Hamilton
+Milwaukee Brewers9,Joey Ortiz
+New York Mets1,Francisco Lindor
+New York Mets2,Juan Soto
+New York Mets3,Bo Bichette
+New York Mets4,Jared Young
+New York Mets5,Carson Benge
+New York Mets6,Tyrone Taylor
+New York Mets7,A.J. Ewing
+New York Mets8,Luis Torrens
+New York Mets9,Brett Baty
+New York Yankees1,Trent Grisham
+New York Yankees2,Ben Rice
+New York Yankees3,Jasson Dominguez
+New York Yankees4,Cody Bellinger
+New York Yankees5,Anthony Volpe
+New York Yankees6,Amed Rosario
+New York Yankees7,Max Schuemann
+New York Yankees8,Austin Wells
+New York Yankees9,Jose Caballero
+Philadelphia Phillies1,Trea Turner
+Philadelphia Phillies2,Kyle Schwarber
+Philadelphia Phillies3,Bryce Harper
+Philadelphia Phillies4,Brandon Marsh
+Philadelphia Phillies5,Alec Bohm
+Philadelphia Phillies6,Bryson Stott
+Philadelphia Phillies7,Gabriel Rincones Jr.
+Philadelphia Phillies8,Justin Crawford
+Philadelphia Phillies9,Garrett Stubbs
+San Diego Padres1,Fernando Tatis Jr.
+San Diego Padres2,Jake Cronenworth
+San Diego Padres3,Manny Machado
+San Diego Padres4,Gavin Sheets
+San Diego Padres5,Ty France
+San Diego Padres6,Jackson Merrill
+San Diego Padres7,Xander Bogaerts
+San Diego Padres8,Sung-Mun Song
+San Diego Padres9,Luis Campusano
+San Francisco Giants1,Luis Arraez
+San Francisco Giants2,Casey Schmitt
+San Francisco Giants3,Heliot Ramos
+San Francisco Giants4,Rafael Devers
+San Francisco Giants5,Jonah Cox
+San Francisco Giants6,Willy Adames
+San Francisco Giants7,Bryce Eldridge
+San Francisco Giants8,Drew Gilbert
+San Francisco Giants9,Drew Cavanaugh
+St. Louis Cardinals1,JJ Wetherholt
+St. Louis Cardinals2,Ivan Herrera
+St. Louis Cardinals3,Alec Burleson
+St. Louis Cardinals4,Jordan Walker
+St. Louis Cardinals5,Lars Nootbaar
+St. Louis Cardinals6,Masyn Winn
+St. Louis Cardinals7,Nathan Church
+St. Louis Cardinals8,Jose Fermin
+St. Louis Cardinals9,Nelson Velazquez
+Tampa Bay Rays1,Yandy Diaz
+Tampa Bay Rays2,Jonathan Aranda
+Tampa Bay Rays3,Junior Caminero
+Tampa Bay Rays4,Ryan Vilade
+Tampa Bay Rays5,Chandler Simpson
+Tampa Bay Rays6,Ben Williamson
+Tampa Bay Rays7,Victor Mesa Jr.
+Tampa Bay Rays8,Jonny DeLuca
+Tampa Bay Rays9,Nick Fortes
+Toronto Blue Jays1,Nathan Lukes
+Toronto Blue Jays2,Vladimir Guerrero Jr.
+Toronto Blue Jays3,Kazuma Okamoto
+Toronto Blue Jays4,Alejandro Kirk
+Toronto Blue Jays5,Daulton Varsho
+Toronto Blue Jays6,Ernie Clement
+Toronto Blue Jays7,Brandon Valenzuela
+Toronto Blue Jays8,Luis Urias
+Toronto Blue Jays9,Myles Straw
+Washington Nationals1,James Wood
+Washington Nationals2,Luis Garcia Jr.
+Washington Nationals3,Curtis Mead
+Washington Nationals4,CJ Abrams
+Washington Nationals5,Daylen Lile
+Washington Nationals6,Dylan Crews
+Washington Nationals7,Jose Tena
+Washington Nationals8,Andres Chaparro
+Washington Nationals9,Drew Millas
+Athletics1,Henry Bolte
+Athletics2,Nick Kurtz
+Athletics3,Zack Gelof
+Athletics4,Lawrence Butler
+Athletics5,Joshua Kuroda-Grauer
+Athletics6,Carlos Cortes
+Athletics7,Max Muncy
+Athletics8,Jonah Heim
+Athletics9,Brian Serven
+Baltimore Orioles1,Gunnar Henderson
+Baltimore Orioles2,Adley Rutschman
+Baltimore Orioles3,Taylor Ward
+Baltimore Orioles4,Pete Alonso
+Baltimore Orioles5,Samuel Basallo
+Baltimore Orioles6,Dylan Beavers
+Baltimore Orioles7,Leody Taveras
+Baltimore Orioles8,Jackson Holliday
+Baltimore Orioles9,Blaze Alexander
 Boston Red Sox1,Anthony Seigler
 Boston Red Sox2,Ceddanne Rafaela
 Boston Red Sox3,Wilyer Abreu
@@ -260,6 +170,51 @@ Boston Red Sox6,Caleb Durbin
 Boston Red Sox7,Jarren Duran
 Boston Red Sox8,Carlos Narvaez
 Boston Red Sox9,Tsung-Che Cheng
+Chicago Cubs1,Pete Crow-Armstrong
+Chicago Cubs2,Alex Bregman
+Chicago Cubs3,Seiya Suzuki
+Chicago Cubs4,Carson Kelly
+Chicago Cubs5,Michael Busch
+Chicago Cubs6,Nico Hoerner
+Chicago Cubs7,Ian Happ
+Chicago Cubs8,Dansby Swanson
+Chicago Cubs9,Pedro Ramirez
+Chicago White Sox1,Sam Antonacci
+Chicago White Sox2,Miguel Vargas
+Chicago White Sox3,Kyle Teel
+Chicago White Sox4,Andrew Benintendi
+Chicago White Sox5,Colson Montgomery
+Chicago White Sox6,Braden Montgomery
+Chicago White Sox7,Chase Meidroth
+Chicago White Sox8,Tristan Peters
+Chicago White Sox9,Luisangel Acuna
+Cincinnati Reds1,Elly De La Cruz
+Cincinnati Reds2,Sal Stewart
+Cincinnati Reds3,JJ Bleday
+Cincinnati Reds4,Eugenio Suarez
+Cincinnati Reds5,Spencer Steer
+Cincinnati Reds6,Tyler Stephenson
+Cincinnati Reds7,Noelvi Marte
+Cincinnati Reds8,TJ Friedl
+Cincinnati Reds9,Edwin Arroyo
+Cleveland Guardians1,Travis Bazzana
+Cleveland Guardians2,Kahlil Watson
+Cleveland Guardians3,Chase DeLauter
+Cleveland Guardians4,Rhys Hoskins
+Cleveland Guardians5,Gabriel Arias
+Cleveland Guardians6,Cooper Ingle
+Cleveland Guardians7,Daniel Schneemann
+Cleveland Guardians8,Brayan Rocchio
+Cleveland Guardians9,Austin Hedges
+Detroit Tigers1,Kevin McGonigle
+Detroit Tigers2,Dillon Dingler
+Detroit Tigers3,Matt Vierling
+Detroit Tigers4,Riley Greene
+Detroit Tigers5,Spencer Torkelson
+Detroit Tigers6,Hao-Yu Lee
+Detroit Tigers7,Zach McKinstry
+Detroit Tigers8,Jake Rogers
+Detroit Tigers9,James Outman
 Los Angeles Angels1,Zach Neto
 Los Angeles Angels2,Denzer Guzman
 Los Angeles Angels3,Vaughn Grissom
@@ -269,3 +224,48 @@ Los Angeles Angels6,Jo Adell
 Los Angeles Angels7,Jose Siri
 Los Angeles Angels8,Logan O'Hoppe
 Los Angeles Angels9,Josh Lowe
+Miami Marlins1,Otto Lopez
+Miami Marlins2,Heriberto Hernandez
+Miami Marlins3,Liam Hicks
+Miami Marlins4,Xavier Edwards
+Miami Marlins5,Javier Sanoja
+Miami Marlins6,Esteury Ruiz
+Miami Marlins7,Leo Jimenez
+Miami Marlins8,Griffin Conine
+Miami Marlins9,Brian Navarreto
+Minnesota Twins1,Austin Martin
+Minnesota Twins2,Kyler Fedko
+Minnesota Twins3,Kody Clemens
+Minnesota Twins4,Josh Bell
+Minnesota Twins5,Royce Lewis
+Minnesota Twins6,Victor Caratini
+Minnesota Twins7,Brooks Lee
+Minnesota Twins8,Ryan Kreidler
+Minnesota Twins9,Luke Keaschall
+Pittsburgh Pirates1,Konnor Griffin
+Pittsburgh Pirates2,Brandon Lowe
+Pittsburgh Pirates3,Bryan Reynolds
+Pittsburgh Pirates4,Billy Cook
+Pittsburgh Pirates5,Ryan O'Hearn
+Pittsburgh Pirates6,Nick Gonzales
+Pittsburgh Pirates7,Henry Davis
+Pittsburgh Pirates8,Jared Triolo
+Pittsburgh Pirates9,Jake Mangum
+Seattle Mariners1,J.P. Crawford
+Seattle Mariners2,Randy Arozarena
+Seattle Mariners3,Cal Raleigh
+Seattle Mariners4,Josh Naylor
+Seattle Mariners5,Luke Raley
+Seattle Mariners6,Cole Young
+Seattle Mariners7,Mitch Garver
+Seattle Mariners8,Colt Emerson
+Seattle Mariners9,Victor Robles
+Texas Rangers1,Joc Pederson
+Texas Rangers2,Jake Burger
+Texas Rangers3,Brandon Nimmo
+Texas Rangers4,Ezequiel Duran
+Texas Rangers5,Evan Carter
+Texas Rangers6,Elias Diaz
+Texas Rangers7,Josh Smith
+Texas Rangers8,Alejandro Osuna
+Texas Rangers9,Nicky Lopez
