@@ -1,5 +1,24 @@
 [
   {
+    "matchup": "Colorado Rockies @ Los Angeles Dodgers",
+    "awayTeam": "Colorado Rockies",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Michael Lorenzen",
+    "homePitcher": "Justin Wrobleski",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -195",
+    "odds": "-195",
+    "winProb": 0.659,
+    "edge": 0.159,
+    "confidence": "Elite",
+    "predictedScore": "Colorado Rockies 4.4 \u2013 Los Angeles Dodgers 5.9",
+    "predictedHomeScore": 5.89,
+    "predictedAwayScore": 4.42,
+    "gameTime": "2026-07-08T02:10:00Z",
+    "gamePk": 823929,
+    "rank": 1
+  },
+  {
     "matchup": "Kansas City Royals @ New York Mets",
     "awayTeam": "Kansas City Royals",
     "homeTeam": "New York Mets",
@@ -16,25 +35,6 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-07T23:10:00Z",
     "gamePk": 823607,
-    "rank": 1
-  },
-  {
-    "matchup": "Colorado Rockies @ Los Angeles Dodgers",
-    "awayTeam": "Colorado Rockies",
-    "homeTeam": "Los Angeles Dodgers",
-    "awayPitcher": "Michael Lorenzen",
-    "homePitcher": "Justin Wrobleski",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -165",
-    "odds": "-165",
-    "winProb": 0.622,
-    "edge": 0.122,
-    "confidence": "Strong",
-    "predictedScore": "Colorado Rockies 4.8 \u2013 Los Angeles Dodgers 5.9",
-    "predictedHomeScore": 5.89,
-    "predictedAwayScore": 4.78,
-    "gameTime": "2026-07-08T02:10:00Z",
-    "gamePk": 823929,
     "rank": 2
   },
   {
