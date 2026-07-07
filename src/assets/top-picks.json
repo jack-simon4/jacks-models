@@ -76,44 +76,6 @@
     "rank": 4
   },
   {
-    "matchup": "Toronto Blue Jays @ San Francisco Giants",
-    "awayTeam": "Toronto Blue Jays",
-    "homeTeam": "San Francisco Giants",
-    "awayPitcher": "TBD",
-    "homePitcher": "Trevor McDonald",
-    "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -150",
-    "odds": "-150",
-    "winProb": 0.599,
-    "edge": 0.099,
-    "confidence": "Strong",
-    "predictedScore": "Toronto Blue Jays 2.6 \u2013 San Francisco Giants 3.5",
-    "predictedHomeScore": 3.53,
-    "predictedAwayScore": 2.64,
-    "gameTime": "2026-07-08T01:45:00Z",
-    "gamePk": 823203,
-    "rank": 5
-  },
-  {
-    "matchup": "Milwaukee Brewers @ St. Louis Cardinals",
-    "awayTeam": "Milwaukee Brewers",
-    "homeTeam": "St. Louis Cardinals",
-    "awayPitcher": "Robert Gasser",
-    "homePitcher": "TBD",
-    "pick": "St. Louis Cardinals",
-    "prediction": "St. Louis Cardinals -140",
-    "odds": "-140",
-    "winProb": 0.58,
-    "edge": 0.08,
-    "confidence": "Lean",
-    "predictedScore": "Milwaukee Brewers 3.5 \u2013 St. Louis Cardinals 4.2",
-    "predictedHomeScore": 4.2,
-    "predictedAwayScore": 3.48,
-    "gameTime": "2026-07-07T23:45:00Z",
-    "gamePk": 823035,
-    "rank": 6
-  },
-  {
     "matchup": "Arizona Diamondbacks @ San Diego Padres",
     "awayTeam": "Arizona Diamondbacks",
     "homeTeam": "San Diego Padres",
@@ -130,7 +92,7 @@
     "predictedAwayScore": 4.78,
     "gameTime": "2026-07-08T01:40:00Z",
     "gamePk": 823280,
-    "rank": 7
+    "rank": 5
   },
   {
     "matchup": "Cleveland Guardians @ Minnesota Twins",
@@ -149,7 +111,26 @@
     "predictedAwayScore": 3.76,
     "gameTime": "2026-07-07T23:40:00Z",
     "gamePk": 823687,
-    "rank": 8
+    "rank": 6
+  },
+  {
+    "matchup": "Toronto Blue Jays @ San Francisco Giants",
+    "awayTeam": "Toronto Blue Jays",
+    "homeTeam": "San Francisco Giants",
+    "awayPitcher": "Spencer Miles",
+    "homePitcher": "Trevor McDonald",
+    "pick": "San Francisco Giants",
+    "prediction": "San Francisco Giants -115",
+    "odds": "-115",
+    "winProb": 0.537,
+    "edge": 0.037,
+    "confidence": "Lean",
+    "predictedScore": "Toronto Blue Jays 2.6 \u2013 San Francisco Giants 3.0",
+    "predictedHomeScore": 2.97,
+    "predictedAwayScore": 2.64,
+    "gameTime": "2026-07-08T01:45:00Z",
+    "gamePk": 823203,
+    "rank": 7
   },
   {
     "matchup": "Atlanta Braves @ Pittsburgh Pirates",
@@ -168,7 +149,7 @@
     "predictedAwayScore": 3.5,
     "gameTime": "2026-07-07T22:40:00Z",
     "gamePk": 823361,
-    "rank": 9
+    "rank": 8
   },
   {
     "matchup": "Boston Red Sox @ Chicago White Sox",
@@ -187,7 +168,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-07-07T23:40:00Z",
     "gamePk": 824579,
-    "rank": 10
+    "rank": 9
   },
   {
     "matchup": "Philadelphia Phillies @ Cincinnati Reds",
@@ -206,6 +187,6 @@
     "predictedAwayScore": 4.07,
     "gameTime": "2026-07-07T23:10:00Z",
     "gamePk": 824495,
-    "rank": 11
+    "rank": 10
   }
 ]
