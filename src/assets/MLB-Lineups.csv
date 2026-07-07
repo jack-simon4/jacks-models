@@ -17,6 +17,24 @@ St. Louis Cardinals6,Bryan Torres
 St. Louis Cardinals7,Nathan Church
 St. Louis Cardinals8,Jose Fermin
 St. Louis Cardinals9,Pedro Pages
+Milwaukee Brewers1,Christian Yelich
+Milwaukee Brewers2,Luis Lara
+Milwaukee Brewers3,Brice Turang
+Milwaukee Brewers4,Andrew Vaughn
+Milwaukee Brewers5,Jake Bauers
+Milwaukee Brewers6,Gary Sanchez
+Milwaukee Brewers7,Sal Frelick
+Milwaukee Brewers8,Cooper Pratt
+Milwaukee Brewers9,Joey Ortiz
+St. Louis Cardinals1,JJ Wetherholt
+St. Louis Cardinals2,Ivan Herrera
+St. Louis Cardinals3,Jordan Walker
+St. Louis Cardinals4,Nelson Velazquez
+St. Louis Cardinals5,Alec Burleson
+St. Louis Cardinals6,Masyn Winn
+St. Louis Cardinals7,Jose Fermin
+St. Louis Cardinals8,Blaze Jordan
+St. Louis Cardinals9,Nathan Church
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Alex Bregman
 Chicago Cubs3,Michael Busch
@@ -215,6 +233,42 @@ Texas Rangers6,Evan Carter
 Texas Rangers7,Alejandro Osuna
 Texas Rangers8,Elias Diaz
 Texas Rangers9,Nicky Lopez
+Arizona Diamondbacks1,Ketel Marte
+Arizona Diamondbacks2,Geraldo Perdomo
+Arizona Diamondbacks3,Corbin Carroll
+Arizona Diamondbacks4,Gabriel Moreno
+Arizona Diamondbacks5,Max Kepler
+Arizona Diamondbacks6,Nolan Arenado
+Arizona Diamondbacks7,Pavin Smith
+Arizona Diamondbacks8,James McCann
+Arizona Diamondbacks9,Tim Tawa
+San Diego Padres1,Fernando Tatis Jr.
+San Diego Padres2,Jackson Merrill
+San Diego Padres3,Xander Bogaerts
+San Diego Padres4,Manny Machado
+San Diego Padres5,Gavin Sheets
+San Diego Padres6,Jake Cronenworth
+San Diego Padres7,Luis Campusano
+San Diego Padres8,Samad Taylor
+San Diego Padres9,Sung-Mun Song
+Toronto Blue Jays1,Ernie Clement
+Toronto Blue Jays2,Nathan Lukes
+Toronto Blue Jays3,Vladimir Guerrero Jr.
+Toronto Blue Jays4,Kazuma Okamoto
+Toronto Blue Jays5,Brandon Valenzuela
+Toronto Blue Jays6,Daulton Varsho
+Toronto Blue Jays7,Sean Keys
+Toronto Blue Jays8,Jonatan Clase
+Toronto Blue Jays9,Andres Gimenez
+San Francisco Giants1,Heliot Ramos
+San Francisco Giants2,Luis Arraez
+San Francisco Giants3,Casey Schmitt
+San Francisco Giants4,Rafael Devers
+San Francisco Giants5,Jung Hoo Lee
+San Francisco Giants6,Willy Adames
+San Francisco Giants7,Bryce Eldridge
+San Francisco Giants8,Victor Bericoto
+San Francisco Giants9,Drew Cavanaugh
 Colorado Rockies1,Willi Castro
 Colorado Rockies2,Kyle Karros
 Colorado Rockies3,Hunter Goodman
@@ -224,48 +278,12 @@ Colorado Rockies6,Tyler Freeman
 Colorado Rockies7,Ezequiel Tovar
 Colorado Rockies8,Mickey Moniak
 Colorado Rockies9,Braxton Fulford
-Arizona Diamondbacks1,Ketel Marte
-Arizona Diamondbacks2,Geraldo Perdomo
-Arizona Diamondbacks3,Corbin Carroll
-Arizona Diamondbacks4,Gabriel Moreno
-Arizona Diamondbacks5,Lourdes Gurriel Jr.
-Arizona Diamondbacks6,Max Kepler
-Arizona Diamondbacks7,Nolan Arenado
-Arizona Diamondbacks8,Ildemaro Vargas
-Arizona Diamondbacks9,Tommy Troy
 Los Angeles Dodgers1,Shohei Ohtani
 Los Angeles Dodgers2,Andy Pages
 Los Angeles Dodgers3,Freddie Freeman
-Los Angeles Dodgers4,Mookie Betts
-Los Angeles Dodgers5,Kyle Tucker
-Los Angeles Dodgers6,Teoscar Hernandez
-Los Angeles Dodgers7,Max Muncy
-Los Angeles Dodgers8,Miguel Rojas
-Los Angeles Dodgers9,Dalton Rushing
-San Diego Padres1,Fernando Tatis Jr.
-San Diego Padres2,Jake Cronenworth
-San Diego Padres3,Manny Machado
-San Diego Padres4,Gavin Sheets
-San Diego Padres5,Ty France
-San Diego Padres6,Jackson Merrill
-San Diego Padres7,Samad Taylor
-San Diego Padres8,Sung-Mun Song
-San Diego Padres9,Rodolfo Duran
-San Francisco Giants1,Heliot Ramos
-San Francisco Giants2,Luis Arraez
-San Francisco Giants3,Casey Schmitt
-San Francisco Giants4,Rafael Devers
-San Francisco Giants5,Jung Hoo Lee
-San Francisco Giants6,Willy Adames
-San Francisco Giants7,Bryce Eldridge
-San Francisco Giants8,Victor Bericoto
-San Francisco Giants9,Eric Haase
-Toronto Blue Jays1,Nathan Lukes
-Toronto Blue Jays2,Vladimir Guerrero Jr.
-Toronto Blue Jays3,Kazuma Okamoto
-Toronto Blue Jays4,Alejandro Kirk
-Toronto Blue Jays5,Daulton Varsho
-Toronto Blue Jays6,Ernie Clement
-Toronto Blue Jays7,Brandon Valenzuela
-Toronto Blue Jays8,Luis Urias
-Toronto Blue Jays9,Myles Straw
+Los Angeles Dodgers4,Max Muncy
+Los Angeles Dodgers5,Tommy Edman
+Los Angeles Dodgers6,Kyle Tucker
+Los Angeles Dodgers7,Dalton Rushing
+Los Angeles Dodgers8,Alex Freeland
+Los Angeles Dodgers9,Miguel Rojas

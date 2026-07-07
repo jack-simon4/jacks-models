@@ -1,24 +1,5 @@
 [
   {
-    "matchup": "Colorado Rockies @ Los Angeles Dodgers",
-    "awayTeam": "Colorado Rockies",
-    "homeTeam": "Los Angeles Dodgers",
-    "awayPitcher": "Michael Lorenzen",
-    "homePitcher": "Justin Wrobleski",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -195",
-    "odds": "-195",
-    "winProb": 0.659,
-    "edge": 0.159,
-    "confidence": "Elite",
-    "predictedScore": "Colorado Rockies 4.8 \u2013 Los Angeles Dodgers 6.2",
-    "predictedHomeScore": 6.24,
-    "predictedAwayScore": 4.78,
-    "gameTime": "2026-07-08T02:10:00Z",
-    "gamePk": 823929,
-    "rank": 1
-  },
-  {
     "matchup": "Kansas City Royals @ New York Mets",
     "awayTeam": "Kansas City Royals",
     "homeTeam": "New York Mets",
@@ -35,6 +16,25 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-07T23:10:00Z",
     "gamePk": 823607,
+    "rank": 1
+  },
+  {
+    "matchup": "Colorado Rockies @ Los Angeles Dodgers",
+    "awayTeam": "Colorado Rockies",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Michael Lorenzen",
+    "homePitcher": "Justin Wrobleski",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -165",
+    "odds": "-165",
+    "winProb": 0.622,
+    "edge": 0.122,
+    "confidence": "Strong",
+    "predictedScore": "Colorado Rockies 4.8 \u2013 Los Angeles Dodgers 5.9",
+    "predictedHomeScore": 5.89,
+    "predictedAwayScore": 4.78,
+    "gameTime": "2026-07-08T02:10:00Z",
+    "gamePk": 823929,
     "rank": 2
   },
   {
@@ -44,14 +44,14 @@
     "awayPitcher": "Jacob Misiorowski",
     "homePitcher": "Matt Svanson",
     "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -180",
-    "odds": "-180",
-    "winProb": 0.64,
-    "edge": 0.14,
-    "confidence": "Elite",
-    "predictedScore": "Milwaukee Brewers 3.8 \u2013 St. Louis Cardinals 2.5",
+    "prediction": "Milwaukee Brewers -155",
+    "odds": "-155",
+    "winProb": 0.605,
+    "edge": 0.105,
+    "confidence": "Strong",
+    "predictedScore": "Milwaukee Brewers 3.5 \u2013 St. Louis Cardinals 2.5",
     "predictedHomeScore": 2.53,
-    "predictedAwayScore": 3.81,
+    "predictedAwayScore": 3.48,
     "gameTime": "2026-07-07T18:15:00Z",
     "gamePk": 823062,
     "rank": 3
@@ -76,25 +76,6 @@
     "rank": 4
   },
   {
-    "matchup": "Arizona Diamondbacks @ San Diego Padres",
-    "awayTeam": "Arizona Diamondbacks",
-    "homeTeam": "San Diego Padres",
-    "awayPitcher": "Zac Gallen",
-    "homePitcher": "Germ\u00e1n M\u00e1rquez",
-    "pick": "Arizona Diamondbacks",
-    "prediction": "Arizona Diamondbacks -130",
-    "odds": "-130",
-    "winProb": 0.568,
-    "edge": 0.068,
-    "confidence": "Lean",
-    "predictedScore": "Arizona Diamondbacks 4.8 \u2013 San Diego Padres 4.2",
-    "predictedHomeScore": 4.17,
-    "predictedAwayScore": 4.78,
-    "gameTime": "2026-07-08T01:40:00Z",
-    "gamePk": 823280,
-    "rank": 5
-  },
-  {
     "matchup": "Los Angeles Angels @ Texas Rangers",
     "awayTeam": "Los Angeles Angels",
     "homeTeam": "Texas Rangers",
@@ -111,7 +92,7 @@
     "predictedAwayScore": 3.69,
     "gameTime": "2026-07-08T00:05:00Z",
     "gamePk": 822881,
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "Houston Astros @ Washington Nationals",
@@ -130,7 +111,7 @@
     "predictedAwayScore": 3.92,
     "gameTime": "2026-07-07T22:45:00Z",
     "gamePk": 822713,
-    "rank": 7
+    "rank": 6
   },
   {
     "matchup": "Cleveland Guardians @ Minnesota Twins",
@@ -149,7 +130,7 @@
     "predictedAwayScore": 3.76,
     "gameTime": "2026-07-07T23:40:00Z",
     "gamePk": 823687,
-    "rank": 8
+    "rank": 7
   },
   {
     "matchup": "Chicago Cubs @ Baltimore Orioles",
@@ -168,7 +149,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-07-07T22:35:00Z",
     "gamePk": 824820,
-    "rank": 9
+    "rank": 8
   },
   {
     "matchup": "Toronto Blue Jays @ San Francisco Giants",
@@ -187,7 +168,7 @@
     "predictedAwayScore": 2.64,
     "gameTime": "2026-07-08T01:45:00Z",
     "gamePk": 823203,
-    "rank": 10
+    "rank": 9
   },
   {
     "matchup": "Seattle Mariners @ Miami Marlins",
@@ -206,6 +187,6 @@
     "predictedAwayScore": 3.86,
     "gameTime": "2026-07-07T22:40:00Z",
     "gamePk": 823847,
-    "rank": 11
+    "rank": 10
   }
 ]
