@@ -114,6 +114,25 @@
     "rank": 6
   },
   {
+    "matchup": "Kansas City Royals @ New York Mets",
+    "awayTeam": "Kansas City Royals",
+    "homeTeam": "New York Mets",
+    "awayPitcher": "Steven Cruz",
+    "homePitcher": "Christian Scott",
+    "pick": "New York Mets",
+    "prediction": "New York Mets -140",
+    "odds": "-140",
+    "winProb": 0.581,
+    "edge": 0.081,
+    "confidence": "Strong",
+    "predictedScore": "Kansas City Royals 3.5 \u2013 New York Mets 4.3",
+    "predictedHomeScore": 4.25,
+    "predictedAwayScore": 3.53,
+    "gameTime": "2026-07-08T23:10:00Z",
+    "gamePk": 823605,
+    "rank": 7
+  },
+  {
     "matchup": "Seattle Mariners @ Miami Marlins",
     "awayTeam": "Seattle Mariners",
     "homeTeam": "Miami Marlins",
@@ -130,7 +149,7 @@
     "predictedAwayScore": 3.52,
     "gameTime": "2026-07-08T22:40:00Z",
     "gamePk": 823848,
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Boston Red Sox @ Chicago White Sox",
@@ -149,7 +168,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-07-08T23:40:00Z",
     "gamePk": 824578,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Milwaukee Brewers @ St. Louis Cardinals",
@@ -168,25 +187,6 @@
     "predictedAwayScore": 4.48,
     "gameTime": "2026-07-08T23:45:00Z",
     "gamePk": 823032,
-    "rank": 9
-  },
-  {
-    "matchup": "Kansas City Royals @ New York Mets",
-    "awayTeam": "Kansas City Royals",
-    "homeTeam": "New York Mets",
-    "awayPitcher": "TBD",
-    "homePitcher": "Christian Scott",
-    "pick": "New York Mets",
-    "prediction": "New York Mets -120",
-    "odds": "-120",
-    "winProb": 0.543,
-    "edge": 0.043,
-    "confidence": "Lean",
-    "predictedScore": "Kansas City Royals 3.5 \u2013 New York Mets 3.9",
-    "predictedHomeScore": 3.92,
-    "predictedAwayScore": 3.53,
-    "gameTime": "2026-07-08T23:10:00Z",
-    "gamePk": 823605,
     "rank": 10
   }
 ]
