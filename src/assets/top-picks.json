@@ -6,13 +6,13 @@
     "awayPitcher": "Jeffrey Springs",
     "homePitcher": "Troy Melton",
     "pick": "Detroit Tigers",
-    "prediction": "Detroit Tigers -205",
-    "odds": "-205",
-    "winProb": 0.673,
-    "edge": 0.173,
+    "prediction": "Detroit Tigers -180",
+    "odds": "-180",
+    "winProb": 0.642,
+    "edge": 0.142,
     "confidence": "Elite",
-    "predictedScore": "Athletics 3.2 \u2013 Detroit Tigers 4.8",
-    "predictedHomeScore": 4.85,
+    "predictedScore": "Athletics 3.2 \u2013 Detroit Tigers 4.5",
+    "predictedHomeScore": 4.54,
     "predictedAwayScore": 3.24,
     "gameTime": "2026-07-08T22:40:00Z",
     "gamePk": 824253,
@@ -57,25 +57,6 @@
     "rank": 3
   },
   {
-    "matchup": "Atlanta Braves @ Pittsburgh Pirates",
-    "awayTeam": "Atlanta Braves",
-    "homeTeam": "Pittsburgh Pirates",
-    "awayPitcher": "Grant Holmes",
-    "homePitcher": "Jared Jones",
-    "pick": "Atlanta Braves",
-    "prediction": "Atlanta Braves -160",
-    "odds": "-160",
-    "winProb": 0.616,
-    "edge": 0.116,
-    "confidence": "Strong",
-    "predictedScore": "Atlanta Braves 5.3 \u2013 Pittsburgh Pirates 4.3",
-    "predictedHomeScore": 4.29,
-    "predictedAwayScore": 5.34,
-    "gameTime": "2026-07-08T22:40:00Z",
-    "gamePk": 823360,
-    "rank": 4
-  },
-  {
     "matchup": "Cleveland Guardians @ Minnesota Twins",
     "awayTeam": "Cleveland Guardians",
     "homeTeam": "Minnesota Twins",
@@ -92,7 +73,7 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-07-08T23:40:00Z",
     "gamePk": 823684,
-    "rank": 5
+    "rank": 4
   },
   {
     "matchup": "Kansas City Royals @ New York Mets",
@@ -111,7 +92,7 @@
     "predictedAwayScore": 3.53,
     "gameTime": "2026-07-08T23:10:00Z",
     "gamePk": 823605,
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "Seattle Mariners @ Miami Marlins",
@@ -130,6 +111,25 @@
     "predictedAwayScore": 3.52,
     "gameTime": "2026-07-08T22:40:00Z",
     "gamePk": 823848,
+    "rank": 6
+  },
+  {
+    "matchup": "Atlanta Braves @ Pittsburgh Pirates",
+    "awayTeam": "Atlanta Braves",
+    "homeTeam": "Pittsburgh Pirates",
+    "awayPitcher": "Grant Holmes",
+    "homePitcher": "Jared Jones",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -135",
+    "odds": "-135",
+    "winProb": 0.576,
+    "edge": 0.076,
+    "confidence": "Lean",
+    "predictedScore": "Atlanta Braves 5.0 \u2013 Pittsburgh Pirates 4.3",
+    "predictedHomeScore": 4.29,
+    "predictedAwayScore": 4.97,
+    "gameTime": "2026-07-08T22:40:00Z",
+    "gamePk": 823360,
     "rank": 7
   },
   {
@@ -171,6 +171,44 @@
     "rank": 9
   },
   {
+    "matchup": "New York Yankees @ Tampa Bay Rays",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Tampa Bay Rays",
+    "awayPitcher": "Gerrit Cole",
+    "homePitcher": "Shane McClanahan",
+    "pick": "Tampa Bay Rays",
+    "prediction": "Tampa Bay Rays -120",
+    "odds": "-120",
+    "winProb": 0.546,
+    "edge": 0.046,
+    "confidence": "Lean",
+    "predictedScore": "New York Yankees 4.1 \u2013 Tampa Bay Rays 4.5",
+    "predictedHomeScore": 4.5,
+    "predictedAwayScore": 4.1,
+    "gameTime": "2026-07-08T22:40:00Z",
+    "gamePk": 822957,
+    "rank": 10
+  },
+  {
+    "matchup": "Philadelphia Phillies @ Cincinnati Reds",
+    "awayTeam": "Philadelphia Phillies",
+    "homeTeam": "Cincinnati Reds",
+    "awayPitcher": "TBD",
+    "homePitcher": "Chase Burns",
+    "pick": "Cincinnati Reds",
+    "prediction": "Cincinnati Reds -120",
+    "odds": "-120",
+    "winProb": 0.542,
+    "edge": 0.042,
+    "confidence": "Lean",
+    "predictedScore": "Philadelphia Phillies 3.7 \u2013 Cincinnati Reds 4.1",
+    "predictedHomeScore": 4.12,
+    "predictedAwayScore": 3.74,
+    "gameTime": "2026-07-08T23:10:00Z",
+    "gamePk": 824496,
+    "rank": 11
+  },
+  {
     "matchup": "Milwaukee Brewers @ St. Louis Cardinals",
     "awayTeam": "Milwaukee Brewers",
     "homeTeam": "St. Louis Cardinals",
@@ -187,6 +225,6 @@
     "predictedAwayScore": 4.48,
     "gameTime": "2026-07-08T23:45:00Z",
     "gamePk": 823032,
-    "rank": 10
+    "rank": 12
   }
 ]
