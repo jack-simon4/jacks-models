@@ -1,13 +1,13 @@
 Team,Player
 Arizona Diamondbacks1,Ketel Marte
-Arizona Diamondbacks2,Geraldo Perdomo
+Arizona Diamondbacks2,Ildemaro Vargas
 Arizona Diamondbacks3,Corbin Carroll
 Arizona Diamondbacks4,Gabriel Moreno
 Arizona Diamondbacks5,Max Kepler
-Arizona Diamondbacks6,Nolan Arenado
-Arizona Diamondbacks7,Pavin Smith
-Arizona Diamondbacks8,James McCann
-Arizona Diamondbacks9,Tim Tawa
+Arizona Diamondbacks6,Lourdes Gurriel Jr.
+Arizona Diamondbacks7,Nolan Arenado
+Arizona Diamondbacks8,Pavin Smith
+Arizona Diamondbacks9,Tommy Troy
 Athletics1,Zack Gelof
 Athletics2,Nick Kurtz
 Athletics3,Shea Langeliers
@@ -80,15 +80,15 @@ Cleveland Guardians6,Gabriel Arias
 Cleveland Guardians7,Kyle Manzardo
 Cleveland Guardians8,Austin Hedges
 Cleveland Guardians9,Kahlil Watson
-Colorado Rockies1,Willi Castro
-Colorado Rockies2,Kyle Karros
-Colorado Rockies3,TJ Rumfield
-Colorado Rockies4,Cole Carrigg
-Colorado Rockies5,Tyler Freeman
-Colorado Rockies6,Jake McCarthy
-Colorado Rockies7,Ezequiel Tovar
-Colorado Rockies8,Braxton Fulford
-Colorado Rockies9,Mickey Moniak
+Colorado Rockies1,Jake McCarthy
+Colorado Rockies2,Mickey Moniak
+Colorado Rockies3,Cole Carrigg
+Colorado Rockies4,TJ Rumfield
+Colorado Rockies5,Kyle Karros
+Colorado Rockies6,Troy Johnston
+Colorado Rockies7,Edouard Julien
+Colorado Rockies8,Ezequiel Tovar
+Colorado Rockies9,Brett Sullivan
 Detroit Tigers1,Matt Vierling
 Detroit Tigers2,Dillon Dingler
 Detroit Tigers3,Kevin McGonigle
@@ -126,19 +126,19 @@ Los Angeles Angels7,Jose Siri
 Los Angeles Angels8,Logan O'Hoppe
 Los Angeles Angels9,Josh Lowe
 Los Angeles Dodgers1,Shohei Ohtani
-Los Angeles Dodgers2,Andy Pages
+Los Angeles Dodgers2,Tommy Edman
 Los Angeles Dodgers3,Freddie Freeman
-Los Angeles Dodgers4,Max Muncy
-Los Angeles Dodgers5,Tommy Edman
-Los Angeles Dodgers6,Kyle Tucker
-Los Angeles Dodgers7,Dalton Rushing
-Los Angeles Dodgers8,Alex Freeland
-Los Angeles Dodgers9,Miguel Rojas
+Los Angeles Dodgers4,Mookie Betts
+Los Angeles Dodgers5,Max Muncy
+Los Angeles Dodgers6,Teoscar Hernandez
+Los Angeles Dodgers7,Kyle Tucker
+Los Angeles Dodgers8,Alex Call
+Los Angeles Dodgers9,Eliezer Alfonzo
 Miami Marlins1,Liam Hicks
 Miami Marlins2,Otto Lopez
 Miami Marlins3,Xavier Edwards
 Miami Marlins4,Kyle Stowers
-Miami Marlins5,Owen Caissie
+Miami Marlins5,Griffin Conine
 Miami Marlins6,Heriberto Hernandez
 Miami Marlins7,Jakob Marsee
 Miami Marlins8,Joe Mack
@@ -200,11 +200,11 @@ Pittsburgh Pirates9,Henry Davis
 San Diego Padres1,Fernando Tatis Jr.
 San Diego Padres2,Jackson Merrill
 San Diego Padres3,Xander Bogaerts
-San Diego Padres4,Manny Machado
-San Diego Padres5,Gavin Sheets
-San Diego Padres6,Jake Cronenworth
-San Diego Padres7,Luis Campusano
-San Diego Padres8,Samad Taylor
+San Diego Padres4,Gavin Sheets
+San Diego Padres5,Jake Cronenworth
+San Diego Padres6,Luis Campusano
+San Diego Padres7,Miguel Andujar
+San Diego Padres8,Jase Bowen
 San Diego Padres9,Sung-Mun Song
 San Francisco Giants1,Heliot Ramos
 San Francisco Giants2,Luis Arraez
@@ -214,7 +214,7 @@ San Francisco Giants5,Jung Hoo Lee
 San Francisco Giants6,Willy Adames
 San Francisco Giants7,Bryce Eldridge
 San Francisco Giants8,Drew Gilbert
-San Francisco Giants9,Eric Haase
+San Francisco Giants9,Drew Cavanaugh
 Seattle Mariners1,J.P. Crawford
 Seattle Mariners2,Randy Arozarena
 Seattle Mariners3,Dominic Canzone
@@ -258,7 +258,7 @@ Toronto Blue Jays4,George Springer
 Toronto Blue Jays5,Daulton Varsho
 Toronto Blue Jays6,Kazuma Okamoto
 Toronto Blue Jays7,Alejandro Kirk
-Toronto Blue Jays8,Jonatan Clase
+Toronto Blue Jays8,Myles Straw
 Toronto Blue Jays9,Andres Gimenez
 Washington Nationals1,James Wood
 Washington Nationals2,Luis Garcia Jr.
