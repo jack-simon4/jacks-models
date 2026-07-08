@@ -152,6 +152,25 @@
     "rank": 8
   },
   {
+    "matchup": "Toronto Blue Jays @ San Francisco Giants",
+    "awayTeam": "Toronto Blue Jays",
+    "homeTeam": "San Francisco Giants",
+    "awayPitcher": "Dylan Cease",
+    "homePitcher": "Logan Webb",
+    "pick": "Toronto Blue Jays",
+    "prediction": "Toronto Blue Jays -125",
+    "odds": "-125",
+    "winProb": 0.557,
+    "edge": 0.057,
+    "confidence": "Lean",
+    "predictedScore": "Toronto Blue Jays 3.2 \u2013 San Francisco Giants 2.7",
+    "predictedHomeScore": 2.69,
+    "predictedAwayScore": 3.2,
+    "gameTime": "2026-07-08T19:45:00Z",
+    "gamePk": 823202,
+    "rank": 9
+  },
+  {
     "matchup": "Milwaukee Brewers @ St. Louis Cardinals",
     "awayTeam": "Milwaukee Brewers",
     "homeTeam": "St. Louis Cardinals",
@@ -168,6 +187,6 @@
     "predictedAwayScore": 4.48,
     "gameTime": "2026-07-08T23:45:00Z",
     "gamePk": 823032,
-    "rank": 9
+    "rank": 10
   }
 ]
