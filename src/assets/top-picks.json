@@ -38,25 +38,6 @@
     "rank": 2
   },
   {
-    "matchup": "Colorado Rockies @ Los Angeles Dodgers",
-    "awayTeam": "Colorado Rockies",
-    "homeTeam": "Los Angeles Dodgers",
-    "awayPitcher": "Ryan Feltner",
-    "homePitcher": "Roki Sasaki",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -165",
-    "odds": "-165",
-    "winProb": 0.622,
-    "edge": 0.122,
-    "confidence": "Strong",
-    "predictedScore": "Colorado Rockies 4.4 \u2013 Los Angeles Dodgers 5.5",
-    "predictedHomeScore": 5.53,
-    "predictedAwayScore": 4.42,
-    "gameTime": "2026-07-09T02:10:00Z",
-    "gamePk": 823928,
-    "rank": 3
-  },
-  {
     "matchup": "Houston Astros @ Washington Nationals",
     "awayTeam": "Houston Astros",
     "homeTeam": "Washington Nationals",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 5.03,
     "gameTime": "2026-07-08T22:45:00Z",
     "gamePk": 822710,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Atlanta Braves @ Pittsburgh Pirates",
@@ -92,7 +73,7 @@
     "predictedAwayScore": 5.34,
     "gameTime": "2026-07-08T22:40:00Z",
     "gamePk": 823360,
-    "rank": 5
+    "rank": 4
   },
   {
     "matchup": "Cleveland Guardians @ Minnesota Twins",
@@ -111,7 +92,7 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-07-08T23:40:00Z",
     "gamePk": 823684,
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "Kansas City Royals @ New York Mets",
@@ -130,7 +111,7 @@
     "predictedAwayScore": 3.53,
     "gameTime": "2026-07-08T23:10:00Z",
     "gamePk": 823605,
-    "rank": 7
+    "rank": 6
   },
   {
     "matchup": "Seattle Mariners @ Miami Marlins",
@@ -149,7 +130,7 @@
     "predictedAwayScore": 3.52,
     "gameTime": "2026-07-08T22:40:00Z",
     "gamePk": 823848,
-    "rank": 8
+    "rank": 7
   },
   {
     "matchup": "Boston Red Sox @ Chicago White Sox",
@@ -168,7 +149,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-07-08T23:40:00Z",
     "gamePk": 824578,
-    "rank": 9
+    "rank": 8
   },
   {
     "matchup": "Milwaukee Brewers @ St. Louis Cardinals",
@@ -187,6 +168,6 @@
     "predictedAwayScore": 4.48,
     "gameTime": "2026-07-08T23:45:00Z",
     "gamePk": 823032,
-    "rank": 10
+    "rank": 9
   }
 ]
