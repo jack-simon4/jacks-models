@@ -95,6 +95,25 @@
     "rank": 5
   },
   {
+    "matchup": "Colorado Rockies @ San Francisco Giants",
+    "awayTeam": "Colorado Rockies",
+    "homeTeam": "San Francisco Giants",
+    "awayPitcher": "Ryan Feltner",
+    "homePitcher": "Carson Whisenhunt",
+    "pick": "San Francisco Giants",
+    "prediction": "San Francisco Giants -130",
+    "odds": "-130",
+    "winProb": 0.568,
+    "edge": 0.068,
+    "confidence": "Lean",
+    "predictedScore": "Colorado Rockies 3.5 \u2013 San Francisco Giants 4.1",
+    "predictedHomeScore": 4.09,
+    "predictedAwayScore": 3.48,
+    "gameTime": "2026-07-10T01:45:00Z",
+    "gamePk": 823201,
+    "rank": 6
+  },
+  {
     "matchup": "Chicago Cubs @ Baltimore Orioles",
     "awayTeam": "Chicago Cubs",
     "homeTeam": "Baltimore Orioles",
@@ -111,25 +130,6 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-07-09T17:35:00Z",
     "gamePk": 824816,
-    "rank": 6
-  },
-  {
-    "matchup": "Colorado Rockies @ San Francisco Giants",
-    "awayTeam": "Colorado Rockies",
-    "homeTeam": "San Francisco Giants",
-    "awayPitcher": "Ryan Feltner",
-    "homePitcher": "Carson Whisenhunt",
-    "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -115",
-    "odds": "-115",
-    "winProb": 0.537,
-    "edge": 0.037,
-    "confidence": "Lean",
-    "predictedScore": "Colorado Rockies 3.5 \u2013 San Francisco Giants 3.8",
-    "predictedHomeScore": 3.81,
-    "predictedAwayScore": 3.48,
-    "gameTime": "2026-07-10T01:45:00Z",
-    "gamePk": 823201,
     "rank": 7
   },
   {
