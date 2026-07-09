@@ -76,25 +76,6 @@
     "rank": 4
   },
   {
-    "matchup": "Colorado Rockies @ San Francisco Giants",
-    "awayTeam": "Colorado Rockies",
-    "homeTeam": "San Francisco Giants",
-    "awayPitcher": "Ryan Feltner",
-    "homePitcher": "TBD",
-    "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -130",
-    "odds": "-130",
-    "winProb": 0.568,
-    "edge": 0.068,
-    "confidence": "Lean",
-    "predictedScore": "Colorado Rockies 3.2 \u2013 San Francisco Giants 3.8",
-    "predictedHomeScore": 3.81,
-    "predictedAwayScore": 3.2,
-    "gameTime": "2026-07-10T01:45:00Z",
-    "gamePk": 823201,
-    "rank": 5
-  },
-  {
     "matchup": "Los Angeles Angels @ Texas Rangers",
     "awayTeam": "Los Angeles Angels",
     "homeTeam": "Texas Rangers",
@@ -111,7 +92,7 @@
     "predictedAwayScore": 4.01,
     "gameTime": "2026-07-10T00:05:00Z",
     "gamePk": 822877,
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "Athletics @ Detroit Tigers",
@@ -130,6 +111,25 @@
     "predictedAwayScore": 4.18,
     "gameTime": "2026-07-09T22:40:00Z",
     "gamePk": 824251,
+    "rank": 6
+  },
+  {
+    "matchup": "New York Yankees @ Tampa Bay Rays",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Tampa Bay Rays",
+    "awayPitcher": "Paul Blackburn",
+    "homePitcher": "Drew Rasmussen",
+    "pick": "Tampa Bay Rays",
+    "prediction": "Tampa Bay Rays -120",
+    "odds": "-120",
+    "winProb": 0.546,
+    "edge": 0.046,
+    "confidence": "Lean",
+    "predictedScore": "New York Yankees 3.7 \u2013 Tampa Bay Rays 4.1",
+    "predictedHomeScore": 4.15,
+    "predictedAwayScore": 3.74,
+    "gameTime": "2026-07-09T17:10:00Z",
+    "gamePk": 822954,
     "rank": 7
   },
   {
