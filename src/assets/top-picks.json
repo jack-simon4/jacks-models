@@ -19,6 +19,25 @@
     "rank": 1
   },
   {
+    "matchup": "Arizona Diamondbacks @ San Diego Padres",
+    "awayTeam": "Arizona Diamondbacks",
+    "homeTeam": "San Diego Padres",
+    "awayPitcher": "Merrill Kelly",
+    "homePitcher": "Griffin Canning",
+    "pick": "San Diego Padres",
+    "prediction": "San Diego Padres -140",
+    "odds": "-140",
+    "winProb": 0.579,
+    "edge": 0.079,
+    "confidence": "Lean",
+    "predictedScore": "Arizona Diamondbacks 3.8 \u2013 San Diego Padres 4.5",
+    "predictedHomeScore": 4.5,
+    "predictedAwayScore": 3.79,
+    "gameTime": "2026-07-10T01:40:00Z",
+    "gamePk": 823277,
+    "rank": 2
+  },
+  {
     "matchup": "Cleveland Guardians @ Minnesota Twins",
     "awayTeam": "Cleveland Guardians",
     "homeTeam": "Minnesota Twins",
@@ -35,7 +54,7 @@
     "predictedAwayScore": 4.84,
     "gameTime": "2026-07-09T17:40:00Z",
     "gamePk": 823683,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Boston Red Sox @ Chicago White Sox",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-07-09T18:10:00Z",
     "gamePk": 824577,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Colorado Rockies @ San Francisco Giants",
@@ -73,7 +92,45 @@
     "predictedAwayScore": 3.2,
     "gameTime": "2026-07-10T01:45:00Z",
     "gamePk": 823201,
-    "rank": 4
+    "rank": 5
+  },
+  {
+    "matchup": "Los Angeles Angels @ Texas Rangers",
+    "awayTeam": "Los Angeles Angels",
+    "homeTeam": "Texas Rangers",
+    "awayPitcher": "Reid Detmers",
+    "homePitcher": "Nathan Eovaldi",
+    "pick": "Los Angeles Angels",
+    "prediction": "Los Angeles Angels -130",
+    "odds": "-130",
+    "winProb": 0.566,
+    "edge": 0.066,
+    "confidence": "Lean",
+    "predictedScore": "Los Angeles Angels 4.0 \u2013 Texas Rangers 3.4",
+    "predictedHomeScore": 3.42,
+    "predictedAwayScore": 4.01,
+    "gameTime": "2026-07-10T00:05:00Z",
+    "gamePk": 822877,
+    "rank": 6
+  },
+  {
+    "matchup": "Athletics @ Detroit Tigers",
+    "awayTeam": "Athletics",
+    "homeTeam": "Detroit Tigers",
+    "awayPitcher": "Jack Perkins",
+    "homePitcher": "Framber Valdez",
+    "pick": "Athletics",
+    "prediction": "Athletics -130",
+    "odds": "-130",
+    "winProb": 0.564,
+    "edge": 0.064,
+    "confidence": "Lean",
+    "predictedScore": "Athletics 4.2 \u2013 Detroit Tigers 3.6",
+    "predictedHomeScore": 3.6,
+    "predictedAwayScore": 4.18,
+    "gameTime": "2026-07-09T22:40:00Z",
+    "gamePk": 824251,
+    "rank": 7
   },
   {
     "matchup": "Chicago Cubs @ Baltimore Orioles",
@@ -92,26 +149,26 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-07-09T17:35:00Z",
     "gamePk": 824816,
-    "rank": 5
+    "rank": 8
   },
   {
-    "matchup": "Arizona Diamondbacks @ San Diego Padres",
-    "awayTeam": "Arizona Diamondbacks",
-    "homeTeam": "San Diego Padres",
-    "awayPitcher": "Merrill Kelly",
-    "homePitcher": "Griffin Canning",
-    "pick": "San Diego Padres",
-    "prediction": "San Diego Padres -120",
-    "odds": "-120",
-    "winProb": 0.543,
-    "edge": 0.043,
+    "matchup": "Atlanta Braves @ Pittsburgh Pirates",
+    "awayTeam": "Atlanta Braves",
+    "homeTeam": "Pittsburgh Pirates",
+    "awayPitcher": "Bryce Elder",
+    "homePitcher": "Mitch Keller",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -115",
+    "odds": "-115",
+    "winProb": 0.536,
+    "edge": 0.036,
     "confidence": "Lean",
-    "predictedScore": "Arizona Diamondbacks 3.8 \u2013 San Diego Padres 4.2",
-    "predictedHomeScore": 4.17,
-    "predictedAwayScore": 3.79,
-    "gameTime": "2026-07-10T01:40:00Z",
-    "gamePk": 823277,
-    "rank": 6
+    "predictedScore": "Atlanta Braves 5.0 \u2013 Pittsburgh Pirates 4.7",
+    "predictedHomeScore": 4.65,
+    "predictedAwayScore": 4.97,
+    "gameTime": "2026-07-09T16:35:00Z",
+    "gamePk": 823359,
+    "rank": 9
   },
   {
     "matchup": "Kansas City Royals @ New York Mets",
@@ -130,7 +187,7 @@
     "predictedAwayScore": 4.54,
     "gameTime": "2026-07-09T17:10:00Z",
     "gamePk": 823606,
-    "rank": 7
+    "rank": 10
   },
   {
     "matchup": "Seattle Mariners @ Miami Marlins",
@@ -149,7 +206,7 @@
     "predictedAwayScore": 4.53,
     "gameTime": "2026-07-09T22:40:00Z",
     "gamePk": 823846,
-    "rank": 8
+    "rank": 11
   },
   {
     "matchup": "Milwaukee Brewers @ St. Louis Cardinals",
@@ -168,25 +225,6 @@
     "predictedAwayScore": 3.81,
     "gameTime": "2026-07-09T23:45:00Z",
     "gamePk": 823034,
-    "rank": 9
-  },
-  {
-    "matchup": "Los Angeles Angels @ Texas Rangers",
-    "awayTeam": "Los Angeles Angels",
-    "homeTeam": "Texas Rangers",
-    "awayPitcher": "Reid Detmers",
-    "homePitcher": "Nathan Eovaldi",
-    "pick": "Los Angeles Angels",
-    "prediction": "Los Angeles Angels -115",
-    "odds": "-115",
-    "winProb": 0.531,
-    "edge": 0.031,
-    "confidence": "Lean",
-    "predictedScore": "Los Angeles Angels 3.7 \u2013 Texas Rangers 3.4",
-    "predictedHomeScore": 3.42,
-    "predictedAwayScore": 3.69,
-    "gameTime": "2026-07-10T00:05:00Z",
-    "gamePk": 822877,
-    "rank": 10
+    "rank": 12
   }
 ]
