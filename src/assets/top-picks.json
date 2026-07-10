@@ -95,25 +95,6 @@
     "rank": 5
   },
   {
-    "matchup": "New York Yankees @ Washington Nationals",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Ryan Weathers",
-    "homePitcher": "Carson Palmquist",
-    "pick": "Washington Nationals",
-    "prediction": "Washington Nationals -145",
-    "odds": "-145",
-    "winProb": 0.588,
-    "edge": 0.088,
-    "confidence": "Strong",
-    "predictedScore": "New York Yankees 5.4 \u2013 Washington Nationals 6.2",
-    "predictedHomeScore": 6.2,
-    "predictedAwayScore": 5.4,
-    "gameTime": "2026-07-10T22:45:00Z",
-    "gamePk": 822709,
-    "rank": 6
-  },
-  {
     "matchup": "Milwaukee Brewers @ Pittsburgh Pirates",
     "awayTeam": "Milwaukee Brewers",
     "homeTeam": "Pittsburgh Pirates",
@@ -130,7 +111,7 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-10T22:40:00Z",
     "gamePk": 823357,
-    "rank": 7
+    "rank": 6
   },
   {
     "matchup": "Philadelphia Phillies @ Detroit Tigers",
@@ -149,6 +130,25 @@
     "predictedAwayScore": 3.55,
     "gameTime": "2026-07-10T22:40:00Z",
     "gamePk": 824252,
+    "rank": 7
+  },
+  {
+    "matchup": "Atlanta Braves @ St. Louis Cardinals",
+    "awayTeam": "Atlanta Braves",
+    "homeTeam": "St. Louis Cardinals",
+    "awayPitcher": "Chris Sale",
+    "homePitcher": "Kyle Leahy",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -130",
+    "odds": "-130",
+    "winProb": 0.569,
+    "edge": 0.069,
+    "confidence": "Lean",
+    "predictedScore": "Atlanta Braves 4.1 \u2013 St. Louis Cardinals 3.5",
+    "predictedHomeScore": 3.53,
+    "predictedAwayScore": 4.15,
+    "gameTime": "2026-07-11T00:15:00Z",
+    "gamePk": 823033,
     "rank": 8
   },
   {
@@ -171,6 +171,25 @@
     "rank": 9
   },
   {
+    "matchup": "New York Yankees @ Washington Nationals",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Ryan Weathers",
+    "homePitcher": "Carson Palmquist",
+    "pick": "Washington Nationals",
+    "prediction": "Washington Nationals -120",
+    "odds": "-120",
+    "winProb": 0.547,
+    "edge": 0.047,
+    "confidence": "Lean",
+    "predictedScore": "New York Yankees 5.8 \u2013 Washington Nationals 6.2",
+    "predictedHomeScore": 6.2,
+    "predictedAwayScore": 5.78,
+    "gameTime": "2026-07-10T22:45:00Z",
+    "gamePk": 822709,
+    "rank": 10
+  },
+  {
     "matchup": "Los Angeles Angels @ Minnesota Twins",
     "awayTeam": "Los Angeles Angels",
     "homeTeam": "Minnesota Twins",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 5.19,
     "gameTime": "2026-07-11T00:10:00Z",
     "gamePk": 823685,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Cleveland Guardians @ Miami Marlins",
@@ -206,7 +225,7 @@
     "predictedAwayScore": 3.52,
     "gameTime": "2026-07-10T23:10:00Z",
     "gamePk": 823845,
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "Seattle Mariners @ Tampa Bay Rays",
@@ -225,7 +244,7 @@
     "predictedAwayScore": 4.45,
     "gameTime": "2026-07-10T23:10:00Z",
     "gamePk": 822955,
-    "rank": 12
+    "rank": 13
   },
   {
     "matchup": "Athletics @ Chicago White Sox",
@@ -244,25 +263,6 @@
     "predictedAwayScore": 4.69,
     "gameTime": "2026-07-10T23:40:00Z",
     "gamePk": 824575,
-    "rank": 13
-  },
-  {
-    "matchup": "Atlanta Braves @ St. Louis Cardinals",
-    "awayTeam": "Atlanta Braves",
-    "homeTeam": "St. Louis Cardinals",
-    "awayPitcher": "Chris Sale",
-    "homePitcher": "Kyle Leahy",
-    "pick": "Atlanta Braves",
-    "prediction": "Atlanta Braves -115",
-    "odds": "-115",
-    "winProb": 0.532,
-    "edge": 0.032,
-    "confidence": "Lean",
-    "predictedScore": "Atlanta Braves 4.1 \u2013 St. Louis Cardinals 3.9",
-    "predictedHomeScore": 3.86,
-    "predictedAwayScore": 4.15,
-    "gameTime": "2026-07-11T00:15:00Z",
-    "gamePk": 823033,
     "rank": 14
   }
 ]
