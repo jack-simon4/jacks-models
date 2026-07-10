@@ -1,5 +1,24 @@
 [
   {
+    "matchup": "Houston Astros @ Texas Rangers",
+    "awayTeam": "Houston Astros",
+    "homeTeam": "Texas Rangers",
+    "awayPitcher": "Hunter Brown",
+    "homePitcher": "Cal Quantrill",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -270",
+    "odds": "-270",
+    "winProb": 0.73,
+    "edge": 0.23,
+    "confidence": "Elite",
+    "predictedScore": "Houston Astros 5.3 \u2013 Texas Rangers 3.1",
+    "predictedHomeScore": 3.1,
+    "predictedAwayScore": 5.3,
+    "gameTime": "2026-07-11T00:05:00Z",
+    "gamePk": 822878,
+    "rank": 1
+  },
+  {
     "matchup": "Chicago Cubs @ Cincinnati Reds",
     "awayTeam": "Chicago Cubs",
     "homeTeam": "Cincinnati Reds",
@@ -16,45 +35,7 @@
     "predictedAwayScore": 4.39,
     "gameTime": "2026-07-10T23:10:00Z",
     "gamePk": 824493,
-    "rank": 1
-  },
-  {
-    "matchup": "Houston Astros @ Texas Rangers",
-    "awayTeam": "Houston Astros",
-    "homeTeam": "Texas Rangers",
-    "awayPitcher": "Hunter Brown",
-    "homePitcher": "Cal Quantrill",
-    "pick": "Houston Astros",
-    "prediction": "Houston Astros -235",
-    "odds": "-235",
-    "winProb": 0.7,
-    "edge": 0.2,
-    "confidence": "Elite",
-    "predictedScore": "Houston Astros 5.0 \u2013 Texas Rangers 3.1",
-    "predictedHomeScore": 3.1,
-    "predictedAwayScore": 4.98,
-    "gameTime": "2026-07-11T00:05:00Z",
-    "gamePk": 822878,
     "rank": 2
-  },
-  {
-    "matchup": "Arizona Diamondbacks @ Los Angeles Dodgers",
-    "awayTeam": "Arizona Diamondbacks",
-    "homeTeam": "Los Angeles Dodgers",
-    "awayPitcher": "Eduardo Rodriguez",
-    "homePitcher": "Shohei Ohtani",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -225",
-    "odds": "-225",
-    "winProb": 0.694,
-    "edge": 0.194,
-    "confidence": "Elite",
-    "predictedScore": "Arizona Diamondbacks 3.0 \u2013 Los Angeles Dodgers 4.8",
-    "predictedHomeScore": 4.83,
-    "predictedAwayScore": 3.01,
-    "gameTime": "2026-07-11T02:10:00Z",
-    "gamePk": 823927,
-    "rank": 3
   },
   {
     "matchup": "Boston Red Sox @ New York Mets",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 2.86,
     "gameTime": "2026-07-10T23:15:00Z",
     "gamePk": 823604,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Colorado Rockies @ San Francisco Giants",
@@ -92,6 +73,25 @@
     "predictedAwayScore": 3.48,
     "gameTime": "2026-07-11T02:15:00Z",
     "gamePk": 823200,
+    "rank": 4
+  },
+  {
+    "matchup": "Arizona Diamondbacks @ Los Angeles Dodgers",
+    "awayTeam": "Arizona Diamondbacks",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Eduardo Rodriguez",
+    "homePitcher": "Kyle Hurt",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -195",
+    "odds": "-195",
+    "winProb": 0.659,
+    "edge": 0.159,
+    "confidence": "Elite",
+    "predictedScore": "Arizona Diamondbacks 3.4 \u2013 Los Angeles Dodgers 4.8",
+    "predictedHomeScore": 4.83,
+    "predictedAwayScore": 3.36,
+    "gameTime": "2026-07-11T02:10:00Z",
+    "gamePk": 823927,
     "rank": 5
   },
   {
@@ -133,25 +133,6 @@
     "rank": 7
   },
   {
-    "matchup": "Atlanta Braves @ St. Louis Cardinals",
-    "awayTeam": "Atlanta Braves",
-    "homeTeam": "St. Louis Cardinals",
-    "awayPitcher": "Chris Sale",
-    "homePitcher": "Kyle Leahy",
-    "pick": "Atlanta Braves",
-    "prediction": "Atlanta Braves -130",
-    "odds": "-130",
-    "winProb": 0.569,
-    "edge": 0.069,
-    "confidence": "Lean",
-    "predictedScore": "Atlanta Braves 4.1 \u2013 St. Louis Cardinals 3.5",
-    "predictedHomeScore": 3.53,
-    "predictedAwayScore": 4.15,
-    "gameTime": "2026-07-11T00:15:00Z",
-    "gamePk": 823033,
-    "rank": 8
-  },
-  {
     "matchup": "Toronto Blue Jays @ San Diego Padres",
     "awayTeam": "Toronto Blue Jays",
     "homeTeam": "San Diego Padres",
@@ -168,7 +149,7 @@
     "predictedAwayScore": 4.78,
     "gameTime": "2026-07-11T01:40:00Z",
     "gamePk": 823278,
-    "rank": 9
+    "rank": 8
   },
   {
     "matchup": "Los Angeles Angels @ Minnesota Twins",
@@ -187,6 +168,25 @@
     "predictedAwayScore": 5.19,
     "gameTime": "2026-07-11T00:10:00Z",
     "gamePk": 823685,
+    "rank": 9
+  },
+  {
+    "matchup": "Athletics @ Chicago White Sox",
+    "awayTeam": "Athletics",
+    "homeTeam": "Chicago White Sox",
+    "awayPitcher": "Jacob Lopez",
+    "homePitcher": "Sean Burke",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -120",
+    "odds": "-120",
+    "winProb": 0.545,
+    "edge": 0.045,
+    "confidence": "Lean",
+    "predictedScore": "Athletics 4.3 \u2013 Chicago White Sox 4.7",
+    "predictedHomeScore": 4.74,
+    "predictedAwayScore": 4.34,
+    "gameTime": "2026-07-10T23:40:00Z",
+    "gamePk": 824575,
     "rank": 10
   },
   {
@@ -209,6 +209,25 @@
     "rank": 11
   },
   {
+    "matchup": "New York Yankees @ Washington Nationals",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Ryan Weathers",
+    "homePitcher": "Carson Palmquist",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -115",
+    "odds": "-115",
+    "winProb": 0.536,
+    "edge": 0.036,
+    "confidence": "Lean",
+    "predictedScore": "New York Yankees 6.1 \u2013 Washington Nationals 5.8",
+    "predictedHomeScore": 5.83,
+    "predictedAwayScore": 6.15,
+    "gameTime": "2026-07-10T22:45:00Z",
+    "gamePk": 822709,
+    "rank": 12
+  },
+  {
     "matchup": "Seattle Mariners @ Tampa Bay Rays",
     "awayTeam": "Seattle Mariners",
     "homeTeam": "Tampa Bay Rays",
@@ -225,6 +244,25 @@
     "predictedAwayScore": 4.45,
     "gameTime": "2026-07-10T23:10:00Z",
     "gamePk": 822955,
-    "rank": 12
+    "rank": 13
+  },
+  {
+    "matchup": "Atlanta Braves @ St. Louis Cardinals",
+    "awayTeam": "Atlanta Braves",
+    "homeTeam": "St. Louis Cardinals",
+    "awayPitcher": "Chris Sale",
+    "homePitcher": "Kyle Leahy",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -115",
+    "odds": "-115",
+    "winProb": 0.532,
+    "edge": 0.032,
+    "confidence": "Lean",
+    "predictedScore": "Atlanta Braves 4.1 \u2013 St. Louis Cardinals 3.9",
+    "predictedHomeScore": 3.86,
+    "predictedAwayScore": 4.15,
+    "gameTime": "2026-07-11T00:15:00Z",
+    "gamePk": 823033,
+    "rank": 14
   }
 ]
