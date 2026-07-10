@@ -76,9 +76,12 @@ jobs:
         if: steps.commit.outputs.changed == 'true'
         run: npm ci
 
-      - name: Build Angular app
+      - name: Stamp deploy date and build
         if: steps.commit.outputs.changed == 'true'
-        run: npm run build
+        run: |
+          TODAY=$(date +'%B %-d, %Y')
+          sed -i "s/Last Updated: [A-Za-z]* [0-9]*, [0-9]*/Last Updated: $TODAY/" src/app/app.component.html
+          npm run build
 
       - name: Deploy to Firebase Hosting
         if: steps.commit.outputs.changed == 'true'
