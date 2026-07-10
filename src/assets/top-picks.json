@@ -1,5 +1,24 @@
 [
   {
+    "matchup": "Chicago Cubs @ Cincinnati Reds",
+    "awayTeam": "Chicago Cubs",
+    "homeTeam": "Cincinnati Reds",
+    "awayPitcher": "Shota Imanaga",
+    "homePitcher": "Hunter Greene",
+    "pick": "Cincinnati Reds",
+    "prediction": "Cincinnati Reds -245",
+    "odds": "-245",
+    "winProb": 0.712,
+    "edge": 0.212,
+    "confidence": "Elite",
+    "predictedScore": "Chicago Cubs 4.4 \u2013 Cincinnati Reds 6.4",
+    "predictedHomeScore": 6.4,
+    "predictedAwayScore": 4.39,
+    "gameTime": "2026-07-10T23:10:00Z",
+    "gamePk": 824493,
+    "rank": 1
+  },
+  {
     "matchup": "Houston Astros @ Texas Rangers",
     "awayTeam": "Houston Astros",
     "homeTeam": "Texas Rangers",
@@ -16,7 +35,7 @@
     "predictedAwayScore": 4.98,
     "gameTime": "2026-07-11T00:05:00Z",
     "gamePk": 822878,
-    "rank": 1
+    "rank": 2
   },
   {
     "matchup": "Arizona Diamondbacks @ Los Angeles Dodgers",
@@ -35,7 +54,7 @@
     "predictedAwayScore": 3.01,
     "gameTime": "2026-07-11T02:10:00Z",
     "gamePk": 823927,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Boston Red Sox @ New York Mets",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 2.86,
     "gameTime": "2026-07-10T23:15:00Z",
     "gamePk": 823604,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Colorado Rockies @ San Francisco Giants",
@@ -73,26 +92,26 @@
     "predictedAwayScore": 3.48,
     "gameTime": "2026-07-11T02:15:00Z",
     "gamePk": 823200,
-    "rank": 4
+    "rank": 5
   },
   {
-    "matchup": "Chicago Cubs @ Cincinnati Reds",
-    "awayTeam": "Chicago Cubs",
-    "homeTeam": "Cincinnati Reds",
-    "awayPitcher": "Shota Imanaga",
-    "homePitcher": "Hunter Greene",
-    "pick": "Cincinnati Reds",
-    "prediction": "Cincinnati Reds -215",
-    "odds": "-215",
-    "winProb": 0.681,
-    "edge": 0.181,
-    "confidence": "Elite",
-    "predictedScore": "Chicago Cubs 4.4 \u2013 Cincinnati Reds 6.1",
-    "predictedHomeScore": 6.08,
-    "predictedAwayScore": 4.39,
-    "gameTime": "2026-07-10T23:10:00Z",
-    "gamePk": 824493,
-    "rank": 5
+    "matchup": "Philadelphia Phillies @ Detroit Tigers",
+    "awayTeam": "Philadelphia Phillies",
+    "homeTeam": "Detroit Tigers",
+    "awayPitcher": "Aaron Nola",
+    "homePitcher": "Jack Flaherty",
+    "pick": "Detroit Tigers",
+    "prediction": "Detroit Tigers -155",
+    "odds": "-155",
+    "winProb": 0.609,
+    "edge": 0.109,
+    "confidence": "Strong",
+    "predictedScore": "Philadelphia Phillies 3.6 \u2013 Detroit Tigers 4.5",
+    "predictedHomeScore": 4.54,
+    "predictedAwayScore": 3.55,
+    "gameTime": "2026-07-10T22:40:00Z",
+    "gamePk": 824252,
+    "rank": 6
   },
   {
     "matchup": "Milwaukee Brewers @ Pittsburgh Pirates",
@@ -111,25 +130,6 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-10T22:40:00Z",
     "gamePk": 823357,
-    "rank": 6
-  },
-  {
-    "matchup": "Philadelphia Phillies @ Detroit Tigers",
-    "awayTeam": "Philadelphia Phillies",
-    "homeTeam": "Detroit Tigers",
-    "awayPitcher": "Aaron Nola",
-    "homePitcher": "Jack Flaherty",
-    "pick": "Detroit Tigers",
-    "prediction": "Detroit Tigers -135",
-    "odds": "-135",
-    "winProb": 0.575,
-    "edge": 0.075,
-    "confidence": "Lean",
-    "predictedScore": "Philadelphia Phillies 3.6 \u2013 Detroit Tigers 4.2",
-    "predictedHomeScore": 4.23,
-    "predictedAwayScore": 3.55,
-    "gameTime": "2026-07-10T22:40:00Z",
-    "gamePk": 824252,
     "rank": 7
   },
   {
@@ -171,25 +171,6 @@
     "rank": 9
   },
   {
-    "matchup": "New York Yankees @ Washington Nationals",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Ryan Weathers",
-    "homePitcher": "Carson Palmquist",
-    "pick": "Washington Nationals",
-    "prediction": "Washington Nationals -120",
-    "odds": "-120",
-    "winProb": 0.547,
-    "edge": 0.047,
-    "confidence": "Lean",
-    "predictedScore": "New York Yankees 5.8 \u2013 Washington Nationals 6.2",
-    "predictedHomeScore": 6.2,
-    "predictedAwayScore": 5.78,
-    "gameTime": "2026-07-10T22:45:00Z",
-    "gamePk": 822709,
-    "rank": 10
-  },
-  {
     "matchup": "Los Angeles Angels @ Minnesota Twins",
     "awayTeam": "Los Angeles Angels",
     "homeTeam": "Minnesota Twins",
@@ -206,7 +187,7 @@
     "predictedAwayScore": 5.19,
     "gameTime": "2026-07-11T00:10:00Z",
     "gamePk": 823685,
-    "rank": 11
+    "rank": 10
   },
   {
     "matchup": "Cleveland Guardians @ Miami Marlins",
@@ -225,7 +206,7 @@
     "predictedAwayScore": 3.52,
     "gameTime": "2026-07-10T23:10:00Z",
     "gamePk": 823845,
-    "rank": 12
+    "rank": 11
   },
   {
     "matchup": "Seattle Mariners @ Tampa Bay Rays",
@@ -244,25 +225,6 @@
     "predictedAwayScore": 4.45,
     "gameTime": "2026-07-10T23:10:00Z",
     "gamePk": 822955,
-    "rank": 13
-  },
-  {
-    "matchup": "Athletics @ Chicago White Sox",
-    "awayTeam": "Athletics",
-    "homeTeam": "Chicago White Sox",
-    "awayPitcher": "Jacob Lopez",
-    "homePitcher": "Sean Burke",
-    "pick": "Athletics",
-    "prediction": "Athletics -115",
-    "odds": "-115",
-    "winProb": 0.533,
-    "edge": 0.033,
-    "confidence": "Lean",
-    "predictedScore": "Athletics 4.7 \u2013 Chicago White Sox 4.4",
-    "predictedHomeScore": 4.39,
-    "predictedAwayScore": 4.69,
-    "gameTime": "2026-07-10T23:40:00Z",
-    "gamePk": 824575,
-    "rank": 14
+    "rank": 12
   }
 ]
