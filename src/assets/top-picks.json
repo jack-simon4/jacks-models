@@ -76,25 +76,6 @@
     "rank": 4
   },
   {
-    "matchup": "Kansas City Royals @ Baltimore Orioles",
-    "awayTeam": "Kansas City Royals",
-    "homeTeam": "Baltimore Orioles",
-    "awayPitcher": "Noah Cameron",
-    "homePitcher": "Kyle Bradish",
-    "pick": "Baltimore Orioles",
-    "prediction": "Baltimore Orioles -190",
-    "odds": "-190",
-    "winProb": 0.656,
-    "edge": 0.156,
-    "confidence": "Elite",
-    "predictedScore": "Kansas City Royals 3.6 \u2013 Baltimore Orioles 5.1",
-    "predictedHomeScore": 5.08,
-    "predictedAwayScore": 3.64,
-    "gameTime": "2026-07-11T23:05:00Z",
-    "gamePk": 824813,
-    "rank": 5
-  },
-  {
     "matchup": "Toronto Blue Jays @ San Diego Padres",
     "awayTeam": "Toronto Blue Jays",
     "homeTeam": "San Diego Padres",
@@ -111,7 +92,7 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-07-12T00:40:00Z",
     "gamePk": 823276,
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "Los Angeles Angels @ Minnesota Twins",
@@ -130,6 +111,25 @@
     "predictedAwayScore": 4.48,
     "gameTime": "2026-07-11T18:10:00Z",
     "gamePk": 823682,
+    "rank": 6
+  },
+  {
+    "matchup": "Kansas City Royals @ Baltimore Orioles",
+    "awayTeam": "Kansas City Royals",
+    "homeTeam": "Baltimore Orioles",
+    "awayPitcher": "Noah Cameron",
+    "homePitcher": "Kyle Bradish",
+    "pick": "Baltimore Orioles",
+    "prediction": "Baltimore Orioles -165",
+    "odds": "-165",
+    "winProb": 0.62,
+    "edge": 0.12,
+    "confidence": "Strong",
+    "predictedScore": "Kansas City Royals 4.0 \u2013 Baltimore Orioles 5.1",
+    "predictedHomeScore": 5.08,
+    "predictedAwayScore": 3.99,
+    "gameTime": "2026-07-11T23:05:00Z",
+    "gamePk": 824813,
     "rank": 7
   },
   {

@@ -3,7 +3,7 @@ Milwaukee Brewers1,Christian Yelich
 Milwaukee Brewers2,Jackson Chourio
 Milwaukee Brewers3,Brice Turang
 Milwaukee Brewers4,William Contreras
-Milwaukee Brewers5,Jake Bauers
+Milwaukee Brewers5,Andrew Vaughn
 Milwaukee Brewers6,Luis Lara
 Milwaukee Brewers7,Cooper Pratt
 Milwaukee Brewers8,Sal Frelick
@@ -17,6 +17,15 @@ Pittsburgh Pirates6,Nick Gonzales
 Pittsburgh Pirates7,Billy Cook
 Pittsburgh Pirates8,Jared Triolo
 Pittsburgh Pirates9,Henry Davis
+Pittsburgh Pirates1,Nick Gonzales
+Pittsburgh Pirates2,Brandon Lowe
+Pittsburgh Pirates3,Bryan Reynolds
+Pittsburgh Pirates4,Esmerlyn Valdez
+Pittsburgh Pirates5,Ryan O'Hearn
+Pittsburgh Pirates6,Marcell Ozuna
+Pittsburgh Pirates7,Rafael Flores Jr.
+Pittsburgh Pirates8,Jared Triolo
+Pittsburgh Pirates9,Billy Cook
 Los Angeles Angels1,Zach Neto
 Los Angeles Angels2,Mike Trout
 Los Angeles Angels3,Nolan Schanuel
@@ -41,8 +50,8 @@ Athletics3,Shea Langeliers
 Athletics4,Jonah Heim
 Athletics5,Joshua Kuroda-Grauer
 Athletics6,Lawrence Butler
-Athletics7,Carlos Cortes
-Athletics8,Jeff McNeil
+Athletics7,Colby Thomas
+Athletics8,Alika Williams
 Athletics9,Henry Bolte
 Chicago White Sox1,Randal Grichuk
 Chicago White Sox2,Munetaka Murakami
@@ -51,7 +60,7 @@ Chicago White Sox4,Colson Montgomery
 Chicago White Sox5,Chase Meidroth
 Chicago White Sox6,Braden Montgomery
 Chicago White Sox7,Luisangel Acuna
-Chicago White Sox8,Junior Perez
+Chicago White Sox8,Tristan Peters
 Chicago White Sox9,Drew Romo
 Colorado Rockies1,Jake McCarthy
 Colorado Rockies2,Mickey Moniak
@@ -143,6 +152,42 @@ Miami Marlins6,Griffin Conine
 Miami Marlins7,Jakob Marsee
 Miami Marlins8,Joe Mack
 Miami Marlins9,Javier Sanoja
+Philadelphia Phillies1,Trea Turner
+Philadelphia Phillies2,Kyle Schwarber
+Philadelphia Phillies3,Bryce Harper
+Philadelphia Phillies4,Brandon Marsh
+Philadelphia Phillies5,Alec Bohm
+Philadelphia Phillies6,Bryson Stott
+Philadelphia Phillies7,J.T. Realmuto
+Philadelphia Phillies8,Gabriel Rincones Jr.
+Philadelphia Phillies9,Derek Hill
+Detroit Tigers1,Matt Vierling
+Detroit Tigers2,Kevin McGonigle
+Detroit Tigers3,Dillon Dingler
+Detroit Tigers4,Spencer Torkelson
+Detroit Tigers5,Riley Greene
+Detroit Tigers6,Eduardo Valencia
+Detroit Tigers7,Hao-Yu Lee
+Detroit Tigers8,Ben Malgeri
+Detroit Tigers9,Zach McKinstry
+Kansas City Royals1,Carter Jensen
+Kansas City Royals2,Bobby Witt Jr.
+Kansas City Royals3,Jac Caglianone
+Kansas City Royals4,Lane Thomas
+Kansas City Royals5,Vinnie Pasquantino
+Kansas City Royals6,Salvador Perez
+Kansas City Royals7,Michael Massey
+Kansas City Royals8,Nick Loftin
+Kansas City Royals9,Isaac Collins
+Houston Astros1,Jeremy Pena
+Houston Astros2,Yordan Alvarez
+Houston Astros3,Isaac Paredes
+Houston Astros4,Christian Walker
+Houston Astros5,Jose Altuve
+Houston Astros6,LaMonte Wade Jr.
+Houston Astros7,Yainer Diaz
+Houston Astros8,Taylor Trammell
+Houston Astros9,Christian Vazquez
 Texas Rangers1,Joc Pederson
 Texas Rangers2,Wyatt Langford
 Texas Rangers3,Josh Jung
@@ -197,33 +242,6 @@ Chicago Cubs6,Nico Hoerner
 Chicago Cubs7,Michael Conforto
 Chicago Cubs8,Carson Kelly
 Chicago Cubs9,Dansby Swanson
-Detroit Tigers1,Kevin McGonigle
-Detroit Tigers2,Colt Keith
-Detroit Tigers3,Riley Greene
-Detroit Tigers4,Spencer Torkelson
-Detroit Tigers5,Kerry Carpenter
-Detroit Tigers6,Eduardo Valencia
-Detroit Tigers7,Zach McKinstry
-Detroit Tigers8,James Outman
-Detroit Tigers9,Jake Rogers
-Houston Astros1,Jeremy Pena
-Houston Astros2,Yordan Alvarez
-Houston Astros3,Isaac Paredes
-Houston Astros4,Christian Walker
-Houston Astros5,Jose Altuve
-Houston Astros6,LaMonte Wade Jr.
-Houston Astros7,Cam Smith
-Houston Astros8,Yainer Diaz
-Houston Astros9,Brice Matthews
-Kansas City Royals1,Carter Jensen
-Kansas City Royals2,Bobby Witt Jr.
-Kansas City Royals3,Jac Caglianone
-Kansas City Royals4,Lane Thomas
-Kansas City Royals5,Michael Massey
-Kansas City Royals6,Salvador Perez
-Kansas City Royals7,Josh Rojas
-Kansas City Royals8,Nick Loftin
-Kansas City Royals9,Isaac Collins
 Los Angeles Dodgers1,Shohei Ohtani
 Los Angeles Dodgers2,Andy Pages
 Los Angeles Dodgers3,Freddie Freeman
@@ -233,15 +251,6 @@ Los Angeles Dodgers6,Kyle Tucker
 Los Angeles Dodgers7,Teoscar Hernandez
 Los Angeles Dodgers8,Miguel Rojas
 Los Angeles Dodgers9,Dalton Rushing
-Philadelphia Phillies1,Trea Turner
-Philadelphia Phillies2,Kyle Schwarber
-Philadelphia Phillies3,Bryce Harper
-Philadelphia Phillies4,Brandon Marsh
-Philadelphia Phillies5,Alec Bohm
-Philadelphia Phillies6,Bryson Stott
-Philadelphia Phillies7,Gabriel Rincones Jr.
-Philadelphia Phillies8,Derek Hill
-Philadelphia Phillies9,Rafael Marchan
 San Diego Padres1,Fernando Tatis Jr.
 San Diego Padres2,Jackson Merrill
 San Diego Padres3,Xander Bogaerts
