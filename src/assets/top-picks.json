@@ -212,25 +212,6 @@
     "matchup": "Milwaukee Brewers @ Pittsburgh Pirates",
     "awayTeam": "Milwaukee Brewers",
     "homeTeam": "Pittsburgh Pirates",
-    "awayPitcher": "Brandon Sproat",
-    "homePitcher": "Braxton Ashcraft",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -120",
-    "odds": "-120",
-    "winProb": 0.547,
-    "edge": 0.047,
-    "confidence": "Lean",
-    "predictedScore": "Milwaukee Brewers 3.9 \u2013 Pittsburgh Pirates 4.3",
-    "predictedHomeScore": 4.29,
-    "predictedAwayScore": 3.87,
-    "gameTime": "2026-07-11T16:05:00Z",
-    "gamePk": 823357,
-    "rank": 12
-  },
-  {
-    "matchup": "Milwaukee Brewers @ Pittsburgh Pirates",
-    "awayTeam": "Milwaukee Brewers",
-    "homeTeam": "Pittsburgh Pirates",
     "awayPitcher": "Shane Drohan",
     "homePitcher": "Bubba Chandler",
     "pick": "Pittsburgh Pirates",
@@ -244,7 +225,7 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-11T20:05:00Z",
     "gamePk": 823356,
-    "rank": 13
+    "rank": 12
   },
   {
     "matchup": "Athletics @ Chicago White Sox",
@@ -263,6 +244,6 @@
     "predictedAwayScore": 3.65,
     "gameTime": "2026-07-11T18:10:00Z",
     "gamePk": 824576,
-    "rank": 14
+    "rank": 13
   }
 ]
