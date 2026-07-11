@@ -25,14 +25,14 @@
     "awayPitcher": "Kyle Freeland",
     "homePitcher": "Tyler Mahle",
     "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -220",
-    "odds": "-220",
-    "winProb": 0.686,
-    "edge": 0.186,
+    "prediction": "San Francisco Giants -250",
+    "odds": "-250",
+    "winProb": 0.713,
+    "edge": 0.213,
     "confidence": "Elite",
-    "predictedScore": "Colorado Rockies 3.5 \u2013 San Francisco Giants 5.2",
+    "predictedScore": "Colorado Rockies 3.2 \u2013 San Francisco Giants 5.2",
     "predictedHomeScore": 5.22,
-    "predictedAwayScore": 3.48,
+    "predictedAwayScore": 3.2,
     "gameTime": "2026-07-11T20:05:00Z",
     "gamePk": 823198,
     "rank": 2
@@ -57,6 +57,25 @@
     "rank": 3
   },
   {
+    "matchup": "New York Yankees @ Washington Nationals",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Cam Schlittler",
+    "homePitcher": "PJ Poulin",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -190",
+    "odds": "-190",
+    "winProb": 0.656,
+    "edge": 0.156,
+    "confidence": "Elite",
+    "predictedScore": "New York Yankees 5.4 \u2013 Washington Nationals 4.0",
+    "predictedHomeScore": 3.97,
+    "predictedAwayScore": 5.4,
+    "gameTime": "2026-07-11T20:05:00Z",
+    "gamePk": 822711,
+    "rank": 4
+  },
+  {
     "matchup": "Kansas City Royals @ Baltimore Orioles",
     "awayTeam": "Kansas City Royals",
     "homeTeam": "Baltimore Orioles",
@@ -73,7 +92,7 @@
     "predictedAwayScore": 3.64,
     "gameTime": "2026-07-11T23:05:00Z",
     "gamePk": 824813,
-    "rank": 4
+    "rank": 5
   },
   {
     "matchup": "Toronto Blue Jays @ San Diego Padres",
@@ -92,7 +111,7 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-07-12T00:40:00Z",
     "gamePk": 823276,
-    "rank": 5
+    "rank": 6
   },
   {
     "matchup": "Los Angeles Angels @ Minnesota Twins",
@@ -111,25 +130,6 @@
     "predictedAwayScore": 4.48,
     "gameTime": "2026-07-11T18:10:00Z",
     "gamePk": 823682,
-    "rank": 6
-  },
-  {
-    "matchup": "New York Yankees @ Washington Nationals",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Cam Schlittler",
-    "homePitcher": "PJ Poulin",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -160",
-    "odds": "-160",
-    "winProb": 0.618,
-    "edge": 0.118,
-    "confidence": "Strong",
-    "predictedScore": "New York Yankees 5.0 \u2013 Washington Nationals 4.0",
-    "predictedHomeScore": 3.97,
-    "predictedAwayScore": 5.03,
-    "gameTime": "2026-07-11T20:05:00Z",
-    "gamePk": 822711,
     "rank": 7
   },
   {
@@ -247,25 +247,6 @@
     "rank": 13
   },
   {
-    "matchup": "Seattle Mariners @ Tampa Bay Rays",
-    "awayTeam": "Seattle Mariners",
-    "homeTeam": "Tampa Bay Rays",
-    "awayPitcher": "Logan Gilbert",
-    "homePitcher": "Griffin Jax",
-    "pick": "Seattle Mariners",
-    "prediction": "Seattle Mariners -115",
-    "odds": "-115",
-    "winProb": 0.534,
-    "edge": 0.034,
-    "confidence": "Lean",
-    "predictedScore": "Seattle Mariners 4.1 \u2013 Tampa Bay Rays 3.8",
-    "predictedHomeScore": 3.79,
-    "predictedAwayScore": 4.1,
-    "gameTime": "2026-07-11T20:10:00Z",
-    "gamePk": 822953,
-    "rank": 14
-  },
-  {
     "matchup": "Chicago Cubs @ Cincinnati Reds",
     "awayTeam": "Chicago Cubs",
     "homeTeam": "Cincinnati Reds",
@@ -282,6 +263,6 @@
     "predictedAwayScore": 5.05,
     "gameTime": "2026-07-11T23:10:00Z",
     "gamePk": 824492,
-    "rank": 15
+    "rank": 14
   }
 ]
