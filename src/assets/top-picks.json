@@ -25,14 +25,14 @@
     "awayPitcher": "Kyle Freeland",
     "homePitcher": "Tyler Mahle",
     "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -250",
-    "odds": "-250",
-    "winProb": 0.713,
-    "edge": 0.213,
+    "prediction": "San Francisco Giants -220",
+    "odds": "-220",
+    "winProb": 0.686,
+    "edge": 0.186,
     "confidence": "Elite",
-    "predictedScore": "Colorado Rockies 3.2 \u2013 San Francisco Giants 5.2",
+    "predictedScore": "Colorado Rockies 3.5 \u2013 San Francisco Giants 5.2",
     "predictedHomeScore": 5.22,
-    "predictedAwayScore": 3.2,
+    "predictedAwayScore": 3.48,
     "gameTime": "2026-07-11T20:05:00Z",
     "gamePk": 823198,
     "rank": 2
@@ -95,25 +95,6 @@
     "rank": 5
   },
   {
-    "matchup": "New York Yankees @ Washington Nationals",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Cam Schlittler",
-    "homePitcher": "PJ Poulin",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -160",
-    "odds": "-160",
-    "winProb": 0.618,
-    "edge": 0.118,
-    "confidence": "Strong",
-    "predictedScore": "New York Yankees 5.0 \u2013 Washington Nationals 4.0",
-    "predictedHomeScore": 3.97,
-    "predictedAwayScore": 5.03,
-    "gameTime": "2026-07-11T20:05:00Z",
-    "gamePk": 822711,
-    "rank": 6
-  },
-  {
     "matchup": "Cleveland Guardians @ Miami Marlins",
     "awayTeam": "Cleveland Guardians",
     "homeTeam": "Miami Marlins",
@@ -130,7 +111,7 @@
     "predictedAwayScore": 3.18,
     "gameTime": "2026-07-11T20:10:00Z",
     "gamePk": 823844,
-    "rank": 7
+    "rank": 6
   },
   {
     "matchup": "Houston Astros @ Texas Rangers",
@@ -149,7 +130,7 @@
     "predictedAwayScore": 4.33,
     "gameTime": "2026-07-11T23:05:00Z",
     "gamePk": 822875,
-    "rank": 8
+    "rank": 7
   },
   {
     "matchup": "Los Angeles Angels @ Minnesota Twins",
@@ -168,7 +149,7 @@
     "predictedAwayScore": 4.48,
     "gameTime": "2026-07-11T18:10:00Z",
     "gamePk": 823682,
-    "rank": 9
+    "rank": 8
   },
   {
     "matchup": "Boston Red Sox @ New York Mets",
@@ -187,6 +168,25 @@
     "predictedAwayScore": 3.19,
     "gameTime": "2026-07-11T20:10:00Z",
     "gamePk": 823603,
+    "rank": 9
+  },
+  {
+    "matchup": "New York Yankees @ Washington Nationals",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Cam Schlittler",
+    "homePitcher": "PJ Poulin",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -135",
+    "odds": "-135",
+    "winProb": 0.577,
+    "edge": 0.077,
+    "confidence": "Lean",
+    "predictedScore": "New York Yankees 4.7 \u2013 Washington Nationals 4.0",
+    "predictedHomeScore": 3.97,
+    "predictedAwayScore": 4.66,
+    "gameTime": "2026-07-11T20:05:00Z",
+    "gamePk": 822711,
     "rank": 10
   },
   {
