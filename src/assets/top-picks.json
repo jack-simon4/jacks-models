@@ -190,6 +190,25 @@
     "rank": 10
   },
   {
+    "matchup": "Athletics @ Chicago White Sox",
+    "awayTeam": "Athletics",
+    "homeTeam": "Chicago White Sox",
+    "awayPitcher": "Gage Jump",
+    "homePitcher": "Bryan Hudson",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -140",
+    "odds": "-140",
+    "winProb": 0.583,
+    "edge": 0.083,
+    "confidence": "Strong",
+    "predictedScore": "Athletics 3.6 \u2013 Chicago White Sox 4.4",
+    "predictedHomeScore": 4.39,
+    "predictedAwayScore": 3.65,
+    "gameTime": "2026-07-11T18:10:00Z",
+    "gamePk": 824576,
+    "rank": 11
+  },
+  {
     "matchup": "Boston Red Sox @ New York Mets",
     "awayTeam": "Boston Red Sox",
     "homeTeam": "New York Mets",
@@ -206,7 +225,7 @@
     "predictedAwayScore": 3.19,
     "gameTime": "2026-07-11T20:10:00Z",
     "gamePk": 823603,
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "Philadelphia Phillies @ Detroit Tigers",
@@ -225,7 +244,7 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-11T22:10:00Z",
     "gamePk": 824249,
-    "rank": 12
+    "rank": 13
   },
   {
     "matchup": "Milwaukee Brewers @ Pittsburgh Pirates",
@@ -244,7 +263,7 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-11T16:05:00Z",
     "gamePk": 823357,
-    "rank": 13
+    "rank": 14
   },
   {
     "matchup": "Seattle Mariners @ Tampa Bay Rays",
@@ -263,25 +282,6 @@
     "predictedAwayScore": 4.1,
     "gameTime": "2026-07-11T20:10:00Z",
     "gamePk": 822953,
-    "rank": 14
-  },
-  {
-    "matchup": "Athletics @ Chicago White Sox",
-    "awayTeam": "Athletics",
-    "homeTeam": "Chicago White Sox",
-    "awayPitcher": "Gage Jump",
-    "homePitcher": "Erick Fedde",
-    "pick": "Athletics",
-    "prediction": "Athletics -115",
-    "odds": "-115",
-    "winProb": 0.533,
-    "edge": 0.033,
-    "confidence": "Lean",
-    "predictedScore": "Athletics 4.7 \u2013 Chicago White Sox 4.4",
-    "predictedHomeScore": 4.39,
-    "predictedAwayScore": 4.69,
-    "gameTime": "2026-07-11T18:10:00Z",
-    "gamePk": 824576,
     "rank": 15
   },
   {
