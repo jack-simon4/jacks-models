@@ -29,30 +29,38 @@
   <div class="recent-section">
     <div class="recent-header">
       <h2>Recent Predictions</h2>
-      <span class="overall-badge" *ngIf="recordedGames.length > 0">
-        {{ totalCorrect }}/{{ recordedGames.length }} correct &nbsp;·&nbsp; {{ overallWinRate }}
+      <span class="overall-badge" *ngIf="filteredGames.length > 0">
+        {{ totalCorrect }}/{{ filteredGames.length }} correct &nbsp;·&nbsp; {{ overallWinRate }}
       </span>
+    </div>
+
+    <!-- Sport filter pills -->
+    <div class="filter-bar" *ngIf="!loading && recordedGames.length > 0">
+      <button
+        *ngFor="let sport of availableSports"
+        class="filter-pill"
+        [class.active]="selectedSport === sport"
+        (click)="selectSport(sport)"
+      >{{ sport }}</button>
     </div>
 
     <div *ngIf="loading" class="empty-state">Loading predictions…</div>
 
-    <div *ngIf="!loading && recordedGames.length === 0" class="empty-state">
+    <div *ngIf="!loading && filteredGames.length === 0" class="empty-state">
       No completed predictions yet.
     </div>
 
-    <div *ngIf="!loading && recordedGames.length > 0" class="game-log">
+    <div *ngIf="!loading && filteredGames.length > 0" class="game-log">
       <div
-        *ngFor="let game of recordedGames"
+        *ngFor="let game of pagedGames"
         class="game-row"
         [ngClass]="isPredictionCorrect(game) ? 'correct' : 'incorrect'"
       >
-        <!-- Result badge -->
         <div class="result-badge">
           <span *ngIf="isPredictionCorrect(game)"  class="badge-win">W</span>
           <span *ngIf="!isPredictionCorrect(game)" class="badge-loss">L</span>
         </div>
 
-        <!-- Matchup info -->
         <div class="game-info">
           <div class="game-matchup">
             <span class="sport-chip">{{ game.sport }}</span>
@@ -63,7 +71,6 @@
           </div>
         </div>
 
-        <!-- Scores -->
         <div class="scores">
           <div class="score-col">
             <div class="score-label">Predicted</div>
@@ -81,12 +88,23 @@
           </div>
         </div>
 
-        <!-- Pick -->
         <div class="pick-col">
           <div class="score-label">Pick</div>
           <div class="pick-name">{{ predictedWinner(game) }}</div>
         </div>
       </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination" *ngIf="!loading && totalPages > 1">
+      <button class="page-btn" [disabled]="currentPage === 0" (click)="goToPage(currentPage - 1)">‹</button>
+      <button
+        *ngFor="let p of [].constructor(totalPages); let i = index"
+        class="page-btn"
+        [class.active]="currentPage === i"
+        (click)="goToPage(i)"
+      >{{ i + 1 }}</button>
+      <button class="page-btn" [disabled]="currentPage === totalPages - 1" (click)="goToPage(currentPage + 1)">›</button>
     </div>
   </div>
 

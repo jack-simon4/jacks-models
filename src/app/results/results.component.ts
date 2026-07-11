@@ -21,6 +21,8 @@ interface LeagueStat {
   games: number;
 }
 
+const PAGE_SIZE = 8;
+
 @Component({
   selector: 'app-results',
   templateUrl: './results.component.html',
@@ -30,6 +32,8 @@ export class ResultsComponent implements OnInit {
 
   games: Game[] = [];
   loading = true;
+  selectedSport = 'All';
+  currentPage = 0;
 
   leagueStats: LeagueStat[] = [
     {
@@ -102,8 +106,14 @@ export class ResultsComponent implements OnInit {
     },
   ];
 
-  get totalCorrect(): number {
-    return this.games.filter(g => this.isPredictionCorrect(g)).length;
+  get availableSports(): string[] {
+    const sports = [...new Set(
+      this.games
+        .filter(g => g.actualHomeScore != null)
+        .map(g => g.sport)
+        .filter(Boolean)
+    )].sort();
+    return ['All', ...sports];
   }
 
   get recordedGames(): Game[] {
@@ -116,11 +126,38 @@ export class ResultsComponent implements OnInit {
       });
   }
 
+  get filteredGames(): Game[] {
+    if (this.selectedSport === 'All') return this.recordedGames;
+    return this.recordedGames.filter(g => g.sport === this.selectedSport);
+  }
+
+  get pagedGames(): Game[] {
+    const start = this.currentPage * PAGE_SIZE;
+    return this.filteredGames.slice(start, start + PAGE_SIZE);
+  }
+
+  get totalPages(): number {
+    return Math.ceil(this.filteredGames.length / PAGE_SIZE);
+  }
+
+  get totalCorrect(): number {
+    return this.filteredGames.filter(g => this.isPredictionCorrect(g)).length;
+  }
+
   get overallWinRate(): string {
-    const completed = this.recordedGames.length;
+    const completed = this.filteredGames.length;
     if (completed === 0) return '—';
     const pct = Math.round((this.totalCorrect / completed) * 100);
     return `${pct}%`;
+  }
+
+  selectSport(sport: string) {
+    this.selectedSport = sport;
+    this.currentPage = 0;
+  }
+
+  goToPage(page: number) {
+    this.currentPage = page;
   }
 
   constructor(private firestore: AngularFirestore) {}
