@@ -19,25 +19,6 @@
     "rank": 1
   },
   {
-    "matchup": "New York Yankees @ Washington Nationals",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Cam Schlittler",
-    "homePitcher": "Miles Mikolas",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -315",
-    "odds": "-315",
-    "winProb": 0.759,
-    "edge": 0.259,
-    "confidence": "Elite",
-    "predictedScore": "New York Yankees 6.5 \u2013 Washington Nationals 4.0",
-    "predictedHomeScore": 3.97,
-    "predictedAwayScore": 6.52,
-    "gameTime": "2026-07-11T20:05:00Z",
-    "gamePk": 822711,
-    "rank": 2
-  },
-  {
     "matchup": "Colorado Rockies @ San Francisco Giants",
     "awayTeam": "Colorado Rockies",
     "homeTeam": "San Francisco Giants",
@@ -54,7 +35,7 @@
     "predictedAwayScore": 3.48,
     "gameTime": "2026-07-11T20:05:00Z",
     "gamePk": 823198,
-    "rank": 3
+    "rank": 2
   },
   {
     "matchup": "Atlanta Braves @ St. Louis Cardinals",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 5.48,
     "gameTime": "2026-07-11T23:15:00Z",
     "gamePk": 823030,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Los Angeles Angels @ Minnesota Twins",
@@ -92,7 +73,7 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-07-11T18:10:00Z",
     "gamePk": 823682,
-    "rank": 5
+    "rank": 4
   },
   {
     "matchup": "Kansas City Royals @ Baltimore Orioles",
@@ -111,7 +92,7 @@
     "predictedAwayScore": 3.64,
     "gameTime": "2026-07-11T23:05:00Z",
     "gamePk": 824813,
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "Toronto Blue Jays @ San Diego Padres",
@@ -130,6 +111,25 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-07-12T00:40:00Z",
     "gamePk": 823276,
+    "rank": 6
+  },
+  {
+    "matchup": "New York Yankees @ Washington Nationals",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Cam Schlittler",
+    "homePitcher": "PJ Poulin",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -160",
+    "odds": "-160",
+    "winProb": 0.618,
+    "edge": 0.118,
+    "confidence": "Strong",
+    "predictedScore": "New York Yankees 5.0 \u2013 Washington Nationals 4.0",
+    "predictedHomeScore": 3.97,
+    "predictedAwayScore": 5.03,
+    "gameTime": "2026-07-11T20:05:00Z",
+    "gamePk": 822711,
     "rank": 7
   },
   {
@@ -174,6 +174,25 @@
     "matchup": "Milwaukee Brewers @ Pittsburgh Pirates",
     "awayTeam": "Milwaukee Brewers",
     "homeTeam": "Pittsburgh Pirates",
+    "awayPitcher": "Brandon Sproat",
+    "homePitcher": "Braxton Ashcraft",
+    "pick": "Pittsburgh Pirates",
+    "prediction": "Pittsburgh Pirates -140",
+    "odds": "-140",
+    "winProb": 0.587,
+    "edge": 0.087,
+    "confidence": "Strong",
+    "predictedScore": "Milwaukee Brewers 3.9 \u2013 Pittsburgh Pirates 4.7",
+    "predictedHomeScore": 4.65,
+    "predictedAwayScore": 3.87,
+    "gameTime": "2026-07-11T16:05:00Z",
+    "gamePk": 823357,
+    "rank": 10
+  },
+  {
+    "matchup": "Milwaukee Brewers @ Pittsburgh Pirates",
+    "awayTeam": "Milwaukee Brewers",
+    "homeTeam": "Pittsburgh Pirates",
     "awayPitcher": "Shane Drohan",
     "homePitcher": "Bubba Chandler",
     "pick": "Pittsburgh Pirates",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-11T20:05:00Z",
     "gamePk": 823356,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Athletics @ Chicago White Sox",
@@ -206,7 +225,7 @@
     "predictedAwayScore": 3.65,
     "gameTime": "2026-07-11T18:10:00Z",
     "gamePk": 824576,
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "Boston Red Sox @ New York Mets",
@@ -225,7 +244,7 @@
     "predictedAwayScore": 3.19,
     "gameTime": "2026-07-11T20:10:00Z",
     "gamePk": 823603,
-    "rank": 12
+    "rank": 13
   },
   {
     "matchup": "Philadelphia Phillies @ Detroit Tigers",
@@ -244,25 +263,6 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-11T22:10:00Z",
     "gamePk": 824249,
-    "rank": 13
-  },
-  {
-    "matchup": "Milwaukee Brewers @ Pittsburgh Pirates",
-    "awayTeam": "Milwaukee Brewers",
-    "homeTeam": "Pittsburgh Pirates",
-    "awayPitcher": "TBD",
-    "homePitcher": "TBD",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -120",
-    "odds": "-120",
-    "winProb": 0.547,
-    "edge": 0.047,
-    "confidence": "Lean",
-    "predictedScore": "Milwaukee Brewers 3.9 \u2013 Pittsburgh Pirates 4.3",
-    "predictedHomeScore": 4.29,
-    "predictedAwayScore": 3.87,
-    "gameTime": "2026-07-11T16:05:00Z",
-    "gamePk": 823357,
     "rank": 14
   },
   {
