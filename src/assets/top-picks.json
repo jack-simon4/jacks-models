@@ -57,25 +57,6 @@
     "rank": 3
   },
   {
-    "matchup": "New York Yankees @ Washington Nationals",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Cam Schlittler",
-    "homePitcher": "PJ Poulin",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -190",
-    "odds": "-190",
-    "winProb": 0.656,
-    "edge": 0.156,
-    "confidence": "Elite",
-    "predictedScore": "New York Yankees 5.4 \u2013 Washington Nationals 4.0",
-    "predictedHomeScore": 3.97,
-    "predictedAwayScore": 5.4,
-    "gameTime": "2026-07-11T20:05:00Z",
-    "gamePk": 822711,
-    "rank": 4
-  },
-  {
     "matchup": "Toronto Blue Jays @ San Diego Padres",
     "awayTeam": "Toronto Blue Jays",
     "homeTeam": "San Diego Padres",
@@ -92,26 +73,7 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-07-12T00:40:00Z",
     "gamePk": 823276,
-    "rank": 5
-  },
-  {
-    "matchup": "Los Angeles Angels @ Minnesota Twins",
-    "awayTeam": "Los Angeles Angels",
-    "homeTeam": "Minnesota Twins",
-    "awayPitcher": "Ryan Johnson",
-    "homePitcher": "Joe Ryan",
-    "pick": "Minnesota Twins",
-    "prediction": "Minnesota Twins -165",
-    "odds": "-165",
-    "winProb": 0.624,
-    "edge": 0.124,
-    "confidence": "Strong",
-    "predictedScore": "Los Angeles Angels 4.5 \u2013 Minnesota Twins 5.6",
-    "predictedHomeScore": 5.6,
-    "predictedAwayScore": 4.48,
-    "gameTime": "2026-07-11T18:10:00Z",
-    "gamePk": 823682,
-    "rank": 6
+    "rank": 4
   },
   {
     "matchup": "Kansas City Royals @ Baltimore Orioles",
@@ -130,7 +92,26 @@
     "predictedAwayScore": 3.99,
     "gameTime": "2026-07-11T23:05:00Z",
     "gamePk": 824813,
-    "rank": 7
+    "rank": 5
+  },
+  {
+    "matchup": "New York Yankees @ Washington Nationals",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Cam Schlittler",
+    "homePitcher": "PJ Poulin",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -160",
+    "odds": "-160",
+    "winProb": 0.618,
+    "edge": 0.118,
+    "confidence": "Strong",
+    "predictedScore": "New York Yankees 5.0 \u2013 Washington Nationals 4.0",
+    "predictedHomeScore": 3.97,
+    "predictedAwayScore": 5.03,
+    "gameTime": "2026-07-11T20:05:00Z",
+    "gamePk": 822711,
+    "rank": 6
   },
   {
     "matchup": "Cleveland Guardians @ Miami Marlins",
@@ -149,7 +130,7 @@
     "predictedAwayScore": 3.18,
     "gameTime": "2026-07-11T20:10:00Z",
     "gamePk": 823844,
-    "rank": 8
+    "rank": 7
   },
   {
     "matchup": "Houston Astros @ Texas Rangers",
@@ -168,6 +149,25 @@
     "predictedAwayScore": 4.33,
     "gameTime": "2026-07-11T23:05:00Z",
     "gamePk": 822875,
+    "rank": 8
+  },
+  {
+    "matchup": "Los Angeles Angels @ Minnesota Twins",
+    "awayTeam": "Los Angeles Angels",
+    "homeTeam": "Minnesota Twins",
+    "awayPitcher": "Ryan Johnson",
+    "homePitcher": "Joe Ryan",
+    "pick": "Minnesota Twins",
+    "prediction": "Minnesota Twins -140",
+    "odds": "-140",
+    "winProb": 0.585,
+    "edge": 0.085,
+    "confidence": "Strong",
+    "predictedScore": "Los Angeles Angels 4.5 \u2013 Minnesota Twins 5.2",
+    "predictedHomeScore": 5.24,
+    "predictedAwayScore": 4.48,
+    "gameTime": "2026-07-11T18:10:00Z",
+    "gamePk": 823682,
     "rank": 9
   },
   {
