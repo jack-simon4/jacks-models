@@ -19,6 +19,44 @@
     "rank": 1
   },
   {
+    "matchup": "Seattle Mariners @ Tampa Bay Rays",
+    "awayTeam": "Seattle Mariners",
+    "homeTeam": "Tampa Bay Rays",
+    "awayPitcher": "Emerson Hancock",
+    "homePitcher": "Ian Seymour",
+    "pick": "Tampa Bay Rays",
+    "prediction": "Tampa Bay Rays -165",
+    "odds": "-165",
+    "winProb": 0.623,
+    "edge": 0.123,
+    "confidence": "Strong",
+    "predictedScore": "Seattle Mariners 3.4 \u2013 Tampa Bay Rays 4.5",
+    "predictedHomeScore": 4.5,
+    "predictedAwayScore": 3.38,
+    "gameTime": "2026-07-12T17:40:00Z",
+    "gamePk": 822951,
+    "rank": 2
+  },
+  {
+    "matchup": "Boston Red Sox @ New York Mets",
+    "awayTeam": "Boston Red Sox",
+    "homeTeam": "New York Mets",
+    "awayPitcher": "Payton Tolle",
+    "homePitcher": "Zach Thornton",
+    "pick": "New York Mets",
+    "prediction": "New York Mets -160",
+    "odds": "-160",
+    "winProb": 0.617,
+    "edge": 0.117,
+    "confidence": "Strong",
+    "predictedScore": "Boston Red Sox 3.2 \u2013 New York Mets 4.3",
+    "predictedHomeScore": 4.25,
+    "predictedAwayScore": 3.19,
+    "gameTime": "2026-07-12T17:40:00Z",
+    "gamePk": 823602,
+    "rank": 3
+  },
+  {
     "matchup": "Cleveland Guardians @ Miami Marlins",
     "awayTeam": "Cleveland Guardians",
     "homeTeam": "Miami Marlins",
@@ -35,7 +73,26 @@
     "predictedAwayScore": 3.18,
     "gameTime": "2026-07-12T17:40:00Z",
     "gamePk": 823842,
-    "rank": 2
+    "rank": 4
+  },
+  {
+    "matchup": "Los Angeles Angels @ Minnesota Twins",
+    "awayTeam": "Los Angeles Angels",
+    "homeTeam": "Minnesota Twins",
+    "awayPitcher": "Jos\u00e9 Soriano",
+    "homePitcher": "Taj Bradley",
+    "pick": "Los Angeles Angels",
+    "prediction": "Los Angeles Angels -160",
+    "odds": "-160",
+    "winProb": 0.613,
+    "edge": 0.113,
+    "confidence": "Strong",
+    "predictedScore": "Los Angeles Angels 4.5 \u2013 Minnesota Twins 3.5",
+    "predictedHomeScore": 3.45,
+    "predictedAwayScore": 4.48,
+    "gameTime": "2026-07-12T18:10:00Z",
+    "gamePk": 823681,
+    "rank": 5
   },
   {
     "matchup": "Toronto Blue Jays @ San Diego Padres",
@@ -54,7 +111,7 @@
     "predictedAwayScore": 4.45,
     "gameTime": "2026-07-12T20:10:00Z",
     "gamePk": 823274,
-    "rank": 3
+    "rank": 6
   },
   {
     "matchup": "Houston Astros @ Texas Rangers",
@@ -68,12 +125,12 @@
     "winProb": 0.602,
     "edge": 0.102,
     "confidence": "Strong",
-    "predictedScore": "Houston Astros 4.3 \u2013 Texas Rangers 3.4",
-    "predictedHomeScore": 3.42,
-    "predictedAwayScore": 4.33,
+    "predictedScore": "Houston Astros 4.7 \u2013 Texas Rangers 3.7",
+    "predictedHomeScore": 3.74,
+    "predictedAwayScore": 4.66,
     "gameTime": "2026-07-12T18:35:00Z",
     "gamePk": 822876,
-    "rank": 4
+    "rank": 7
   },
   {
     "matchup": "Philadelphia Phillies @ Detroit Tigers",
@@ -92,26 +149,7 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-12T17:40:00Z",
     "gamePk": 824250,
-    "rank": 5
-  },
-  {
-    "matchup": "Seattle Mariners @ Tampa Bay Rays",
-    "awayTeam": "Seattle Mariners",
-    "homeTeam": "Tampa Bay Rays",
-    "awayPitcher": "Emerson Hancock",
-    "homePitcher": "Ian Seymour",
-    "pick": "Tampa Bay Rays",
-    "prediction": "Tampa Bay Rays -140",
-    "odds": "-140",
-    "winProb": 0.585,
-    "edge": 0.085,
-    "confidence": "Strong",
-    "predictedScore": "Seattle Mariners 3.7 \u2013 Tampa Bay Rays 4.5",
-    "predictedHomeScore": 4.5,
-    "predictedAwayScore": 3.74,
-    "gameTime": "2026-07-12T17:40:00Z",
-    "gamePk": 822951,
-    "rank": 6
+    "rank": 8
   },
   {
     "matchup": "Kansas City Royals @ Baltimore Orioles",
@@ -130,64 +168,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-07-12T17:35:00Z",
     "gamePk": 824814,
-    "rank": 7
-  },
-  {
-    "matchup": "Boston Red Sox @ New York Mets",
-    "awayTeam": "Boston Red Sox",
-    "homeTeam": "New York Mets",
-    "awayPitcher": "Payton Tolle",
-    "homePitcher": "Zach Thornton",
-    "pick": "New York Mets",
-    "prediction": "New York Mets -140",
-    "odds": "-140",
-    "winProb": 0.581,
-    "edge": 0.081,
-    "confidence": "Strong",
-    "predictedScore": "Boston Red Sox 3.2 \u2013 New York Mets 3.9",
-    "predictedHomeScore": 3.92,
-    "predictedAwayScore": 3.19,
-    "gameTime": "2026-07-12T17:40:00Z",
-    "gamePk": 823602,
-    "rank": 8
-  },
-  {
-    "matchup": "Los Angeles Angels @ Minnesota Twins",
-    "awayTeam": "Los Angeles Angels",
-    "homeTeam": "Minnesota Twins",
-    "awayPitcher": "Jos\u00e9 Soriano",
-    "homePitcher": "Taj Bradley",
-    "pick": "Los Angeles Angels",
-    "prediction": "Los Angeles Angels -135",
-    "odds": "-135",
-    "winProb": 0.574,
-    "edge": 0.074,
-    "confidence": "Lean",
-    "predictedScore": "Los Angeles Angels 4.1 \u2013 Minnesota Twins 3.5",
-    "predictedHomeScore": 3.45,
-    "predictedAwayScore": 4.12,
-    "gameTime": "2026-07-12T18:10:00Z",
-    "gamePk": 823681,
     "rank": 9
-  },
-  {
-    "matchup": "Atlanta Braves @ St. Louis Cardinals",
-    "awayTeam": "Atlanta Braves",
-    "homeTeam": "St. Louis Cardinals",
-    "awayPitcher": "Danny Young",
-    "homePitcher": "Dustin May",
-    "pick": "Atlanta Braves",
-    "prediction": "Atlanta Braves -130",
-    "odds": "-130",
-    "winProb": 0.569,
-    "edge": 0.069,
-    "confidence": "Lean",
-    "predictedScore": "Atlanta Braves 4.1 \u2013 St. Louis Cardinals 3.5",
-    "predictedHomeScore": 3.53,
-    "predictedAwayScore": 4.15,
-    "gameTime": "2026-07-12T18:15:00Z",
-    "gamePk": 823029,
-    "rank": 10
   },
   {
     "matchup": "Milwaukee Brewers @ Pittsburgh Pirates",
@@ -206,7 +187,7 @@
     "predictedAwayScore": 3.5,
     "gameTime": "2026-07-12T16:15:00Z",
     "gamePk": 823358,
-    "rank": 11
+    "rank": 10
   },
   {
     "matchup": "New York Yankees @ Washington Nationals",
@@ -225,7 +206,7 @@
     "predictedAwayScore": 4.29,
     "gameTime": "2026-07-12T17:35:00Z",
     "gamePk": 822708,
-    "rank": 12
+    "rank": 11
   },
   {
     "matchup": "Athletics @ Chicago White Sox",
@@ -244,6 +225,25 @@
     "predictedAwayScore": 4.69,
     "gameTime": "2026-07-12T18:10:00Z",
     "gamePk": 824574,
+    "rank": 12
+  },
+  {
+    "matchup": "Atlanta Braves @ St. Louis Cardinals",
+    "awayTeam": "Atlanta Braves",
+    "homeTeam": "St. Louis Cardinals",
+    "awayPitcher": "Danny Young",
+    "homePitcher": "Dustin May",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -115",
+    "odds": "-115",
+    "winProb": 0.532,
+    "edge": 0.032,
+    "confidence": "Lean",
+    "predictedScore": "Atlanta Braves 4.1 \u2013 St. Louis Cardinals 3.9",
+    "predictedHomeScore": 3.86,
+    "predictedAwayScore": 4.15,
+    "gameTime": "2026-07-12T18:15:00Z",
+    "gamePk": 823029,
     "rank": 13
   },
   {
