@@ -209,6 +209,25 @@
     "rank": 11
   },
   {
+    "matchup": "Arizona Diamondbacks @ Los Angeles Dodgers",
+    "awayTeam": "Arizona Diamondbacks",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Mitch Bratt",
+    "homePitcher": "Emmet Sheehan",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -120",
+    "odds": "-120",
+    "winProb": 0.545,
+    "edge": 0.045,
+    "confidence": "Lean",
+    "predictedScore": "Arizona Diamondbacks 4.1 \u2013 Los Angeles Dodgers 4.5",
+    "predictedHomeScore": 4.47,
+    "predictedAwayScore": 4.07,
+    "gameTime": "2026-07-12T20:10:00Z",
+    "gamePk": 823925,
+    "rank": 12
+  },
+  {
     "matchup": "Athletics @ Chicago White Sox",
     "awayTeam": "Athletics",
     "homeTeam": "Chicago White Sox",
@@ -225,7 +244,7 @@
     "predictedAwayScore": 4.69,
     "gameTime": "2026-07-12T18:10:00Z",
     "gamePk": 824574,
-    "rank": 12
+    "rank": 13
   },
   {
     "matchup": "Atlanta Braves @ St. Louis Cardinals",
@@ -244,7 +263,7 @@
     "predictedAwayScore": 4.15,
     "gameTime": "2026-07-12T18:15:00Z",
     "gamePk": 823029,
-    "rank": 13
+    "rank": 14
   },
   {
     "matchup": "Chicago Cubs @ Cincinnati Reds",
@@ -263,6 +282,6 @@
     "predictedAwayScore": 5.05,
     "gameTime": "2026-07-12T17:40:00Z",
     "gamePk": 824491,
-    "rank": 14
+    "rank": 15
   }
 ]
