@@ -95,6 +95,25 @@
     "rank": 5
   },
   {
+    "matchup": "Milwaukee Brewers @ Pittsburgh Pirates",
+    "awayTeam": "Milwaukee Brewers",
+    "homeTeam": "Pittsburgh Pirates",
+    "awayPitcher": "Robert Gasser",
+    "homePitcher": "Paul Skenes",
+    "pick": "Pittsburgh Pirates",
+    "prediction": "Pittsburgh Pirates -140",
+    "odds": "-140",
+    "winProb": 0.587,
+    "edge": 0.087,
+    "confidence": "Strong",
+    "predictedScore": "Milwaukee Brewers 3.5 \u2013 Pittsburgh Pirates 4.3",
+    "predictedHomeScore": 4.29,
+    "predictedAwayScore": 3.5,
+    "gameTime": "2026-07-12T16:15:00Z",
+    "gamePk": 823358,
+    "rank": 6
+  },
+  {
     "matchup": "Kansas City Royals @ Baltimore Orioles",
     "awayTeam": "Kansas City Royals",
     "homeTeam": "Baltimore Orioles",
@@ -111,7 +130,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-07-12T17:35:00Z",
     "gamePk": 824814,
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "Boston Red Sox @ New York Mets",
@@ -130,7 +149,7 @@
     "predictedAwayScore": 3.53,
     "gameTime": "2026-07-12T17:40:00Z",
     "gamePk": 823602,
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Los Angeles Angels @ Minnesota Twins",
@@ -149,7 +168,7 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-07-12T18:10:00Z",
     "gamePk": 823681,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Toronto Blue Jays @ San Diego Padres",
@@ -168,7 +187,7 @@
     "predictedAwayScore": 4.45,
     "gameTime": "2026-07-12T20:10:00Z",
     "gamePk": 823274,
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Philadelphia Phillies @ Detroit Tigers",
@@ -187,25 +206,6 @@
     "predictedAwayScore": 3.55,
     "gameTime": "2026-07-12T17:40:00Z",
     "gamePk": 824250,
-    "rank": 10
-  },
-  {
-    "matchup": "Milwaukee Brewers @ Pittsburgh Pirates",
-    "awayTeam": "Milwaukee Brewers",
-    "homeTeam": "Pittsburgh Pirates",
-    "awayPitcher": "Robert Gasser",
-    "homePitcher": "Paul Skenes",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -120",
-    "odds": "-120",
-    "winProb": 0.547,
-    "edge": 0.047,
-    "confidence": "Lean",
-    "predictedScore": "Milwaukee Brewers 3.5 \u2013 Pittsburgh Pirates 3.9",
-    "predictedHomeScore": 3.92,
-    "predictedAwayScore": 3.5,
-    "gameTime": "2026-07-12T16:15:00Z",
-    "gamePk": 823358,
     "rank": 11
   },
   {
@@ -245,24 +245,5 @@
     "gameTime": "2026-07-12T18:15:00Z",
     "gamePk": 823029,
     "rank": 13
-  },
-  {
-    "matchup": "Chicago Cubs @ Cincinnati Reds",
-    "awayTeam": "Chicago Cubs",
-    "homeTeam": "Cincinnati Reds",
-    "awayPitcher": "Matthew Boyd",
-    "homePitcher": "Andrew Abbott",
-    "pick": "Chicago Cubs",
-    "prediction": "Chicago Cubs -115",
-    "odds": "-115",
-    "winProb": 0.531,
-    "edge": 0.031,
-    "confidence": "Lean",
-    "predictedScore": "Chicago Cubs 4.7 \u2013 Cincinnati Reds 4.4",
-    "predictedHomeScore": 4.44,
-    "predictedAwayScore": 4.72,
-    "gameTime": "2026-07-12T17:40:00Z",
-    "gamePk": 824491,
-    "rank": 14
   }
 ]
