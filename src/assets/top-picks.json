@@ -1,24 +1,5 @@
 [
   {
-    "matchup": "Colorado Rockies @ San Francisco Giants",
-    "awayTeam": "Colorado Rockies",
-    "homeTeam": "San Francisco Giants",
-    "awayPitcher": "Michael Lorenzen",
-    "homePitcher": "Trevor McDonald",
-    "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -170",
-    "odds": "-170",
-    "winProb": 0.629,
-    "edge": 0.129,
-    "confidence": "Strong",
-    "predictedScore": "Colorado Rockies 3.2 \u2013 San Francisco Giants 4.4",
-    "predictedHomeScore": 4.37,
-    "predictedAwayScore": 3.2,
-    "gameTime": "2026-07-12T20:05:00Z",
-    "gamePk": 823199,
-    "rank": 1
-  },
-  {
     "matchup": "Seattle Mariners @ Tampa Bay Rays",
     "awayTeam": "Seattle Mariners",
     "homeTeam": "Tampa Bay Rays",
@@ -35,7 +16,7 @@
     "predictedAwayScore": 3.38,
     "gameTime": "2026-07-12T17:40:00Z",
     "gamePk": 822951,
-    "rank": 2
+    "rank": 1
   },
   {
     "matchup": "Boston Red Sox @ New York Mets",
@@ -54,7 +35,7 @@
     "predictedAwayScore": 3.19,
     "gameTime": "2026-07-12T17:40:00Z",
     "gamePk": 823602,
-    "rank": 3
+    "rank": 2
   },
   {
     "matchup": "Cleveland Guardians @ Miami Marlins",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 3.18,
     "gameTime": "2026-07-12T17:40:00Z",
     "gamePk": 823842,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Los Angeles Angels @ Minnesota Twins",
@@ -92,7 +73,7 @@
     "predictedAwayScore": 4.48,
     "gameTime": "2026-07-12T18:10:00Z",
     "gamePk": 823681,
-    "rank": 5
+    "rank": 4
   },
   {
     "matchup": "Toronto Blue Jays @ San Diego Padres",
@@ -111,7 +92,7 @@
     "predictedAwayScore": 4.45,
     "gameTime": "2026-07-12T20:10:00Z",
     "gamePk": 823274,
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "Houston Astros @ Texas Rangers",
@@ -130,6 +111,25 @@
     "predictedAwayScore": 4.66,
     "gameTime": "2026-07-12T18:35:00Z",
     "gamePk": 822876,
+    "rank": 6
+  },
+  {
+    "matchup": "Colorado Rockies @ San Francisco Giants",
+    "awayTeam": "Colorado Rockies",
+    "homeTeam": "San Francisco Giants",
+    "awayPitcher": "Michael Lorenzen",
+    "homePitcher": "Trevor McDonald",
+    "pick": "San Francisco Giants",
+    "prediction": "San Francisco Giants -150",
+    "odds": "-150",
+    "winProb": 0.599,
+    "edge": 0.099,
+    "confidence": "Strong",
+    "predictedScore": "Colorado Rockies 3.2 \u2013 San Francisco Giants 4.1",
+    "predictedHomeScore": 4.09,
+    "predictedAwayScore": 3.2,
+    "gameTime": "2026-07-12T20:05:00Z",
+    "gamePk": 823199,
     "rank": 7
   },
   {
