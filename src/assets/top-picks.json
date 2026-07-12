@@ -57,6 +57,25 @@
     "rank": 3
   },
   {
+    "matchup": "Houston Astros @ Texas Rangers",
+    "awayTeam": "Houston Astros",
+    "homeTeam": "Texas Rangers",
+    "awayPitcher": "Cristian Javier",
+    "homePitcher": "MacKenzie Gore",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -150",
+    "odds": "-150",
+    "winProb": 0.602,
+    "edge": 0.102,
+    "confidence": "Strong",
+    "predictedScore": "Houston Astros 4.3 \u2013 Texas Rangers 3.4",
+    "predictedHomeScore": 3.42,
+    "predictedAwayScore": 4.33,
+    "gameTime": "2026-07-12T18:35:00Z",
+    "gamePk": 822876,
+    "rank": 4
+  },
+  {
     "matchup": "New York Yankees @ Washington Nationals",
     "awayTeam": "New York Yankees",
     "homeTeam": "Washington Nationals",
@@ -73,7 +92,7 @@
     "predictedAwayScore": 4.29,
     "gameTime": "2026-07-12T17:35:00Z",
     "gamePk": 822708,
-    "rank": 4
+    "rank": 5
   },
   {
     "matchup": "Kansas City Royals @ Baltimore Orioles",
@@ -92,7 +111,7 @@
     "predictedAwayScore": 4.34,
     "gameTime": "2026-07-12T17:35:00Z",
     "gamePk": 824814,
-    "rank": 5
+    "rank": 6
   },
   {
     "matchup": "Boston Red Sox @ New York Mets",
@@ -111,7 +130,7 @@
     "predictedAwayScore": 3.53,
     "gameTime": "2026-07-12T17:40:00Z",
     "gamePk": 823602,
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "Los Angeles Angels @ Minnesota Twins",
@@ -130,7 +149,7 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-07-12T18:10:00Z",
     "gamePk": 823681,
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Toronto Blue Jays @ San Diego Padres",
@@ -149,7 +168,7 @@
     "predictedAwayScore": 4.45,
     "gameTime": "2026-07-12T20:10:00Z",
     "gamePk": 823274,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Philadelphia Phillies @ Detroit Tigers",
@@ -168,7 +187,7 @@
     "predictedAwayScore": 3.55,
     "gameTime": "2026-07-12T17:40:00Z",
     "gamePk": 824250,
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Milwaukee Brewers @ Pittsburgh Pirates",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 3.5,
     "gameTime": "2026-07-12T16:15:00Z",
     "gamePk": 823358,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Seattle Mariners @ Tampa Bay Rays",
@@ -206,7 +225,7 @@
     "predictedAwayScore": 4.1,
     "gameTime": "2026-07-12T17:40:00Z",
     "gamePk": 822951,
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "Atlanta Braves @ St. Louis Cardinals",
@@ -225,7 +244,7 @@
     "predictedAwayScore": 4.15,
     "gameTime": "2026-07-12T18:15:00Z",
     "gamePk": 823029,
-    "rank": 12
+    "rank": 13
   },
   {
     "matchup": "Chicago Cubs @ Cincinnati Reds",
@@ -244,6 +263,6 @@
     "predictedAwayScore": 4.72,
     "gameTime": "2026-07-12T17:40:00Z",
     "gamePk": 824491,
-    "rank": 13
+    "rank": 14
   }
 ]
