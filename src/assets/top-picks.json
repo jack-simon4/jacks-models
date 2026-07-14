@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "matchup": "American League All-Stars @ National League All-Stars",
+    "awayTeam": "American League All-Stars",
+    "homeTeam": "National League All-Stars",
+    "awayPitcher": "Dylan Cease",
+    "homePitcher": "Cristopher S\u00e1nchez",
+    "pick": "American League All-Stars",
+    "prediction": "American League All-Stars -155",
+    "odds": "-155",
+    "winProb": 0.605,
+    "edge": 0.105,
+    "confidence": "Strong",
+    "predictedScore": "American League All-Stars 4.5 \u2013 National League All-Stars 3.5",
+    "predictedHomeScore": 3.54,
+    "predictedAwayScore": 4.49,
+    "gameTime": "2026-07-15T00:00:00Z",
+    "gamePk": 823443,
+    "rank": 1
+  }
+]
