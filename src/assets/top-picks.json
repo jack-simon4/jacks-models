@@ -114,6 +114,25 @@
     "rank": 6
   },
   {
+    "matchup": "St. Louis Cardinals @ Arizona Diamondbacks",
+    "awayTeam": "St. Louis Cardinals",
+    "homeTeam": "Arizona Diamondbacks",
+    "awayPitcher": "TBD",
+    "homePitcher": "Merrill Kelly",
+    "pick": "St. Louis Cardinals",
+    "prediction": "St. Louis Cardinals -155",
+    "odds": "-155",
+    "winProb": 0.607,
+    "edge": 0.107,
+    "confidence": "Strong",
+    "predictedScore": "St. Louis Cardinals 4.9 \u2013 Arizona Diamondbacks 3.9",
+    "predictedHomeScore": 3.95,
+    "predictedAwayScore": 4.92,
+    "gameTime": "2026-07-18T01:40:00Z",
+    "gamePk": 825060,
+    "rank": 7
+  },
+  {
     "matchup": "Tampa Bay Rays @ Boston Red Sox",
     "awayTeam": "Tampa Bay Rays",
     "homeTeam": "Boston Red Sox",
@@ -130,7 +149,7 @@
     "predictedAwayScore": 3.24,
     "gameTime": "2026-07-17T17:35:00Z",
     "gamePk": 824766,
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Los Angeles Dodgers @ New York Yankees",
@@ -149,7 +168,7 @@
     "predictedAwayScore": 5.18,
     "gameTime": "2026-07-17T23:05:00Z",
     "gamePk": 823524,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "San Diego Padres @ Kansas City Royals",
@@ -168,7 +187,7 @@
     "predictedAwayScore": 4.21,
     "gameTime": "2026-07-18T00:10:00Z",
     "gamePk": 824090,
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Miami Marlins @ Milwaukee Brewers",
@@ -187,6 +206,6 @@
     "predictedAwayScore": 4.3,
     "gameTime": "2026-07-17T23:40:00Z",
     "gamePk": 823766,
-    "rank": 10
+    "rank": 11
   }
 ]
