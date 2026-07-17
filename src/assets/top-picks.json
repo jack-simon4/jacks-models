@@ -57,6 +57,25 @@
     "rank": 3
   },
   {
+    "matchup": "Chicago White Sox @ Toronto Blue Jays",
+    "awayTeam": "Chicago White Sox",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Anthony Kay",
+    "homePitcher": "Spencer Miles",
+    "pick": "Toronto Blue Jays",
+    "prediction": "Toronto Blue Jays -180",
+    "odds": "-180",
+    "winProb": 0.644,
+    "edge": 0.144,
+    "confidence": "Elite",
+    "predictedScore": "Chicago White Sox 3.3 \u2013 Toronto Blue Jays 4.6",
+    "predictedHomeScore": 4.63,
+    "predictedAwayScore": 3.32,
+    "gameTime": "2026-07-17T23:15:00Z",
+    "gamePk": 822789,
+    "rank": 4
+  },
+  {
     "matchup": "San Francisco Giants @ Seattle Mariners",
     "awayTeam": "San Francisco Giants",
     "homeTeam": "Seattle Mariners",
@@ -73,7 +92,7 @@
     "predictedAwayScore": 4.0,
     "gameTime": "2026-07-18T02:10:00Z",
     "gamePk": 823115,
-    "rank": 4
+    "rank": 5
   },
   {
     "matchup": "Baltimore Orioles @ Houston Astros",
@@ -92,25 +111,6 @@
     "predictedAwayScore": 3.42,
     "gameTime": "2026-07-18T00:10:00Z",
     "gamePk": 824170,
-    "rank": 5
-  },
-  {
-    "matchup": "Chicago White Sox @ Toronto Blue Jays",
-    "awayTeam": "Chicago White Sox",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "Anthony Kay",
-    "homePitcher": "Spencer Miles",
-    "pick": "Toronto Blue Jays",
-    "prediction": "Toronto Blue Jays -155",
-    "odds": "-155",
-    "winProb": 0.611,
-    "edge": 0.111,
-    "confidence": "Strong",
-    "predictedScore": "Chicago White Sox 3.3 \u2013 Toronto Blue Jays 4.3",
-    "predictedHomeScore": 4.32,
-    "predictedAwayScore": 3.32,
-    "gameTime": "2026-07-17T23:15:00Z",
-    "gamePk": 822789,
     "rank": 6
   },
   {
@@ -133,25 +133,6 @@
     "rank": 7
   },
   {
-    "matchup": "Los Angeles Dodgers @ New York Yankees",
-    "awayTeam": "Los Angeles Dodgers",
-    "homeTeam": "New York Yankees",
-    "awayPitcher": "Roki Sasaki",
-    "homePitcher": "Gerrit Cole",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -135",
-    "odds": "-135",
-    "winProb": 0.574,
-    "edge": 0.074,
-    "confidence": "Lean",
-    "predictedScore": "Los Angeles Dodgers 5.2 \u2013 New York Yankees 4.5",
-    "predictedHomeScore": 4.52,
-    "predictedAwayScore": 5.18,
-    "gameTime": "2026-07-17T23:05:00Z",
-    "gamePk": 823524,
-    "rank": 8
-  },
-  {
     "matchup": "San Diego Padres @ Kansas City Royals",
     "awayTeam": "San Diego Padres",
     "homeTeam": "Kansas City Royals",
@@ -168,7 +149,7 @@
     "predictedAwayScore": 4.21,
     "gameTime": "2026-07-18T00:10:00Z",
     "gamePk": 824090,
-    "rank": 9
+    "rank": 8
   },
   {
     "matchup": "Miami Marlins @ Milwaukee Brewers",
@@ -187,7 +168,7 @@
     "predictedAwayScore": 4.3,
     "gameTime": "2026-07-17T23:40:00Z",
     "gamePk": 823766,
-    "rank": 10
+    "rank": 9
   },
   {
     "matchup": "St. Louis Cardinals @ Arizona Diamondbacks",
@@ -206,6 +187,25 @@
     "predictedAwayScore": 4.92,
     "gameTime": "2026-07-18T01:40:00Z",
     "gamePk": 825060,
+    "rank": 10
+  },
+  {
+    "matchup": "Pittsburgh Pirates @ Cleveland Guardians",
+    "awayTeam": "Pittsburgh Pirates",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "Jared Jones",
+    "homePitcher": "Gavin Williams",
+    "pick": "Pittsburgh Pirates",
+    "prediction": "Pittsburgh Pirates -115",
+    "odds": "-115",
+    "winProb": 0.532,
+    "edge": 0.032,
+    "confidence": "Lean",
+    "predictedScore": "Pittsburgh Pirates 3.9 \u2013 Cleveland Guardians 3.6",
+    "predictedHomeScore": 3.58,
+    "predictedAwayScore": 3.87,
+    "gameTime": "2026-07-17T23:10:00Z",
+    "gamePk": 824414,
     "rank": 11
   }
 ]
