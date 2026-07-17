@@ -57,25 +57,6 @@
     "rank": 3
   },
   {
-    "matchup": "San Francisco Giants @ Seattle Mariners",
-    "awayTeam": "San Francisco Giants",
-    "homeTeam": "Seattle Mariners",
-    "awayPitcher": "Landen Roupp",
-    "homePitcher": "Bryce Miller",
-    "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -175",
-    "odds": "-175",
-    "winProb": 0.635,
-    "edge": 0.135,
-    "confidence": "Strong",
-    "predictedScore": "San Francisco Giants 4.0 \u2013 Seattle Mariners 2.8",
-    "predictedHomeScore": 2.76,
-    "predictedAwayScore": 4.0,
-    "gameTime": "2026-07-18T02:10:00Z",
-    "gamePk": 823115,
-    "rank": 4
-  },
-  {
     "matchup": "Baltimore Orioles @ Houston Astros",
     "awayTeam": "Baltimore Orioles",
     "homeTeam": "Houston Astros",
@@ -92,7 +73,7 @@
     "predictedAwayScore": 3.42,
     "gameTime": "2026-07-18T00:10:00Z",
     "gamePk": 824170,
-    "rank": 5
+    "rank": 4
   },
   {
     "matchup": "Cincinnati Reds @ Colorado Rockies",
@@ -111,7 +92,7 @@
     "predictedAwayScore": 4.06,
     "gameTime": "2026-07-18T00:40:00Z",
     "gamePk": 824332,
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "Tampa Bay Rays @ Boston Red Sox",
@@ -130,7 +111,64 @@
     "predictedAwayScore": 3.55,
     "gameTime": "2026-07-17T23:10:00Z",
     "gamePk": 824737,
+    "rank": 6
+  },
+  {
+    "matchup": "San Francisco Giants @ Seattle Mariners",
+    "awayTeam": "San Francisco Giants",
+    "homeTeam": "Seattle Mariners",
+    "awayPitcher": "Landen Roupp",
+    "homePitcher": "Bryce Miller",
+    "pick": "San Francisco Giants",
+    "prediction": "San Francisco Giants -150",
+    "odds": "-150",
+    "winProb": 0.601,
+    "edge": 0.101,
+    "confidence": "Strong",
+    "predictedScore": "San Francisco Giants 4.0 \u2013 Seattle Mariners 3.1",
+    "predictedHomeScore": 3.08,
+    "predictedAwayScore": 4.0,
+    "gameTime": "2026-07-18T02:10:00Z",
+    "gamePk": 823115,
     "rank": 7
+  },
+  {
+    "matchup": "San Diego Padres @ Kansas City Royals",
+    "awayTeam": "San Diego Padres",
+    "homeTeam": "Kansas City Royals",
+    "awayPitcher": "Michael King",
+    "homePitcher": "Seth Lugo",
+    "pick": "San Diego Padres",
+    "prediction": "San Diego Padres -150",
+    "odds": "-150",
+    "winProb": 0.599,
+    "edge": 0.099,
+    "confidence": "Strong",
+    "predictedScore": "San Diego Padres 4.5 \u2013 Kansas City Royals 3.6",
+    "predictedHomeScore": 3.63,
+    "predictedAwayScore": 4.52,
+    "gameTime": "2026-07-18T00:10:00Z",
+    "gamePk": 824090,
+    "rank": 8
+  },
+  {
+    "matchup": "Washington Nationals @ Athletics",
+    "awayTeam": "Washington Nationals",
+    "homeTeam": "Athletics",
+    "awayPitcher": "Cade Cavalli",
+    "homePitcher": "Gage Jump",
+    "pick": "Athletics",
+    "prediction": "Athletics -135",
+    "odds": "-135",
+    "winProb": 0.577,
+    "edge": 0.077,
+    "confidence": "Lean",
+    "predictedScore": "Washington Nationals 3.6 \u2013 Athletics 4.3",
+    "predictedHomeScore": 4.32,
+    "predictedAwayScore": 3.64,
+    "gameTime": "2026-07-18T01:40:00Z",
+    "gamePk": 824981,
+    "rank": 9
   },
   {
     "matchup": "Tampa Bay Rays @ Boston Red Sox",
@@ -149,26 +187,7 @@
     "predictedAwayScore": 3.24,
     "gameTime": "2026-07-17T17:35:00Z",
     "gamePk": 824766,
-    "rank": 8
-  },
-  {
-    "matchup": "San Diego Padres @ Kansas City Royals",
-    "awayTeam": "San Diego Padres",
-    "homeTeam": "Kansas City Royals",
-    "awayPitcher": "Michael King",
-    "homePitcher": "Seth Lugo",
-    "pick": "San Diego Padres",
-    "prediction": "San Diego Padres -130",
-    "odds": "-130",
-    "winProb": 0.564,
-    "edge": 0.064,
-    "confidence": "Lean",
-    "predictedScore": "San Diego Padres 4.2 \u2013 Kansas City Royals 3.6",
-    "predictedHomeScore": 3.63,
-    "predictedAwayScore": 4.21,
-    "gameTime": "2026-07-18T00:10:00Z",
-    "gamePk": 824090,
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "Miami Marlins @ Milwaukee Brewers",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 4.3,
     "gameTime": "2026-07-17T23:40:00Z",
     "gamePk": 823766,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "St. Louis Cardinals @ Arizona Diamondbacks",
@@ -206,7 +225,7 @@
     "predictedAwayScore": 4.92,
     "gameTime": "2026-07-18T01:40:00Z",
     "gamePk": 825060,
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "Pittsburgh Pirates @ Cleveland Guardians",
@@ -225,6 +244,6 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-17T23:10:00Z",
     "gamePk": 824414,
-    "rank": 12
+    "rank": 13
   }
 ]
