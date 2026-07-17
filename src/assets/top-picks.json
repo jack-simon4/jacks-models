@@ -38,25 +38,6 @@
     "rank": 2
   },
   {
-    "matchup": "Cincinnati Reds @ Colorado Rockies",
-    "awayTeam": "Cincinnati Reds",
-    "homeTeam": "Colorado Rockies",
-    "awayPitcher": "Brady Singer",
-    "homePitcher": "Gabriel Hughes",
-    "pick": "Colorado Rockies",
-    "prediction": "Colorado Rockies -185",
-    "odds": "-185",
-    "winProb": 0.648,
-    "edge": 0.148,
-    "confidence": "Elite",
-    "predictedScore": "Cincinnati Reds 4.1 \u2013 Colorado Rockies 5.4",
-    "predictedHomeScore": 5.42,
-    "predictedAwayScore": 4.06,
-    "gameTime": "2026-07-18T00:40:00Z",
-    "gamePk": 824332,
-    "rank": 3
-  },
-  {
     "matchup": "Chicago White Sox @ Toronto Blue Jays",
     "awayTeam": "Chicago White Sox",
     "homeTeam": "Toronto Blue Jays",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 3.32,
     "gameTime": "2026-07-17T23:15:00Z",
     "gamePk": 822789,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "San Francisco Giants @ Seattle Mariners",
@@ -92,7 +73,7 @@
     "predictedAwayScore": 4.0,
     "gameTime": "2026-07-18T02:10:00Z",
     "gamePk": 823115,
-    "rank": 5
+    "rank": 4
   },
   {
     "matchup": "Baltimore Orioles @ Houston Astros",
@@ -111,7 +92,45 @@
     "predictedAwayScore": 3.42,
     "gameTime": "2026-07-18T00:10:00Z",
     "gamePk": 824170,
+    "rank": 5
+  },
+  {
+    "matchup": "Cincinnati Reds @ Colorado Rockies",
+    "awayTeam": "Cincinnati Reds",
+    "homeTeam": "Colorado Rockies",
+    "awayPitcher": "Brady Singer",
+    "homePitcher": "Gabriel Hughes",
+    "pick": "Colorado Rockies",
+    "prediction": "Colorado Rockies -160",
+    "odds": "-160",
+    "winProb": 0.614,
+    "edge": 0.114,
+    "confidence": "Strong",
+    "predictedScore": "Cincinnati Reds 4.1 \u2013 Colorado Rockies 5.1",
+    "predictedHomeScore": 5.09,
+    "predictedAwayScore": 4.06,
+    "gameTime": "2026-07-18T00:40:00Z",
+    "gamePk": 824332,
     "rank": 6
+  },
+  {
+    "matchup": "Tampa Bay Rays @ Boston Red Sox",
+    "awayTeam": "Tampa Bay Rays",
+    "homeTeam": "Boston Red Sox",
+    "awayPitcher": "Mason Englert",
+    "homePitcher": "Eduardo Rivera",
+    "pick": "Boston Red Sox",
+    "prediction": "Boston Red Sox -155",
+    "odds": "-155",
+    "winProb": 0.609,
+    "edge": 0.109,
+    "confidence": "Strong",
+    "predictedScore": "Tampa Bay Rays 3.6 \u2013 Boston Red Sox 4.5",
+    "predictedHomeScore": 4.54,
+    "predictedAwayScore": 3.55,
+    "gameTime": "2026-07-17T23:10:00Z",
+    "gamePk": 824737,
+    "rank": 7
   },
   {
     "matchup": "Tampa Bay Rays @ Boston Red Sox",
@@ -130,7 +149,7 @@
     "predictedAwayScore": 3.24,
     "gameTime": "2026-07-17T17:35:00Z",
     "gamePk": 824766,
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "San Diego Padres @ Kansas City Royals",
@@ -149,7 +168,7 @@
     "predictedAwayScore": 4.21,
     "gameTime": "2026-07-18T00:10:00Z",
     "gamePk": 824090,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Miami Marlins @ Milwaukee Brewers",
@@ -168,7 +187,7 @@
     "predictedAwayScore": 4.3,
     "gameTime": "2026-07-17T23:40:00Z",
     "gamePk": 823766,
-    "rank": 9
+    "rank": 10
   },
   {
     "matchup": "St. Louis Cardinals @ Arizona Diamondbacks",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 4.92,
     "gameTime": "2026-07-18T01:40:00Z",
     "gamePk": 825060,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "Pittsburgh Pirates @ Cleveland Guardians",
@@ -206,6 +225,6 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-17T23:10:00Z",
     "gamePk": 824414,
-    "rank": 11
+    "rank": 12
   }
 ]
