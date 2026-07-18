@@ -57,6 +57,25 @@
     "rank": 3
   },
   {
+    "matchup": "Cincinnati Reds @ Colorado Rockies",
+    "awayTeam": "Cincinnati Reds",
+    "homeTeam": "Colorado Rockies",
+    "awayPitcher": "Rhett Lowder",
+    "homePitcher": "Tomoyuki Sugano",
+    "pick": "Cincinnati Reds",
+    "prediction": "Cincinnati Reds -175",
+    "odds": "-175",
+    "winProb": 0.638,
+    "edge": 0.138,
+    "confidence": "Strong",
+    "predictedScore": "Cincinnati Reds 6.0 \u2013 Colorado Rockies 4.8",
+    "predictedHomeScore": 4.77,
+    "predictedAwayScore": 6.02,
+    "gameTime": "2026-07-18T19:10:00Z",
+    "gamePk": 824331,
+    "rank": 4
+  },
+  {
     "matchup": "New York Mets @ Philadelphia Phillies",
     "awayTeam": "New York Mets",
     "homeTeam": "Philadelphia Phillies",
@@ -73,7 +92,7 @@
     "predictedAwayScore": 3.79,
     "gameTime": "2026-07-18T20:05:00Z",
     "gamePk": 823441,
-    "rank": 4
+    "rank": 5
   },
   {
     "matchup": "Pittsburgh Pirates @ Cleveland Guardians",
@@ -92,7 +111,7 @@
     "predictedAwayScore": 4.2,
     "gameTime": "2026-07-18T23:10:00Z",
     "gamePk": 824412,
-    "rank": 5
+    "rank": 6
   },
   {
     "matchup": "Texas Rangers @ Atlanta Braves",
@@ -111,25 +130,6 @@
     "predictedAwayScore": 4.06,
     "gameTime": "2026-07-18T20:10:00Z",
     "gamePk": 824899,
-    "rank": 6
-  },
-  {
-    "matchup": "Cincinnati Reds @ Colorado Rockies",
-    "awayTeam": "Cincinnati Reds",
-    "homeTeam": "Colorado Rockies",
-    "awayPitcher": "Rhett Lowder",
-    "homePitcher": "TBD",
-    "pick": "Colorado Rockies",
-    "prediction": "Colorado Rockies -135",
-    "odds": "-135",
-    "winProb": 0.578,
-    "edge": 0.078,
-    "confidence": "Lean",
-    "predictedScore": "Cincinnati Reds 4.1 \u2013 Colorado Rockies 4.8",
-    "predictedHomeScore": 4.77,
-    "predictedAwayScore": 4.06,
-    "gameTime": "2026-07-18T19:10:00Z",
-    "gamePk": 824331,
     "rank": 7
   },
   {
@@ -156,7 +156,7 @@
     "awayTeam": "San Diego Padres",
     "homeTeam": "Kansas City Royals",
     "awayPitcher": "Griffin Canning",
-    "homePitcher": "TBD",
+    "homePitcher": "Randy Dobnak",
     "pick": "Kansas City Royals",
     "prediction": "Kansas City Royals -120",
     "odds": "-120",
