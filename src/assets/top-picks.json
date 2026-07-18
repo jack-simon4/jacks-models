@@ -114,25 +114,6 @@
     "rank": 6
   },
   {
-    "matchup": "Pittsburgh Pirates @ Cleveland Guardians",
-    "awayTeam": "Pittsburgh Pirates",
-    "homeTeam": "Cleveland Guardians",
-    "awayPitcher": "TBD",
-    "homePitcher": "Logan Allen",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -155",
-    "odds": "-155",
-    "winProb": 0.606,
-    "edge": 0.106,
-    "confidence": "Strong",
-    "predictedScore": "Pittsburgh Pirates 4.2 \u2013 Cleveland Guardians 3.2",
-    "predictedHomeScore": 3.24,
-    "predictedAwayScore": 4.2,
-    "gameTime": "2026-07-18T23:10:00Z",
-    "gamePk": 824412,
-    "rank": 7
-  },
-  {
     "matchup": "Tampa Bay Rays @ Boston Red Sox",
     "awayTeam": "Tampa Bay Rays",
     "homeTeam": "Boston Red Sox",
@@ -149,6 +130,25 @@
     "predictedAwayScore": 3.55,
     "gameTime": "2026-07-18T20:10:00Z",
     "gamePk": 824738,
+    "rank": 7
+  },
+  {
+    "matchup": "Pittsburgh Pirates @ Cleveland Guardians",
+    "awayTeam": "Pittsburgh Pirates",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "TBD",
+    "homePitcher": "Logan Allen",
+    "pick": "Pittsburgh Pirates",
+    "prediction": "Pittsburgh Pirates -130",
+    "odds": "-130",
+    "winProb": 0.57,
+    "edge": 0.07,
+    "confidence": "Lean",
+    "predictedScore": "Pittsburgh Pirates 3.9 \u2013 Cleveland Guardians 3.2",
+    "predictedHomeScore": 3.24,
+    "predictedAwayScore": 3.87,
+    "gameTime": "2026-07-18T23:10:00Z",
+    "gamePk": 824412,
     "rank": 8
   },
   {
@@ -226,24 +226,5 @@
     "gameTime": "2026-07-18T20:10:00Z",
     "gamePk": 825059,
     "rank": 12
-  },
-  {
-    "matchup": "Pittsburgh Pirates @ Cleveland Guardians",
-    "awayTeam": "Pittsburgh Pirates",
-    "homeTeam": "Cleveland Guardians",
-    "awayPitcher": "Jared Jones",
-    "homePitcher": "Gavin Williams",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -115",
-    "odds": "-115",
-    "winProb": 0.532,
-    "edge": 0.032,
-    "confidence": "Lean",
-    "predictedScore": "Pittsburgh Pirates 3.9 \u2013 Cleveland Guardians 3.6",
-    "predictedHomeScore": 3.58,
-    "predictedAwayScore": 3.87,
-    "gameTime": "2026-07-18T17:10:00Z",
-    "gamePk": 824414,
-    "rank": 13
   }
 ]
