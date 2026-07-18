@@ -1,24 +1,5 @@
 [
   {
-    "matchup": "Washington Nationals @ Athletics",
-    "awayTeam": "Washington Nationals",
-    "homeTeam": "Athletics",
-    "awayPitcher": "Zack Littell",
-    "homePitcher": "J.T. Ginn",
-    "pick": "Athletics",
-    "prediction": "Athletics -240",
-    "odds": "-240",
-    "winProb": 0.707,
-    "edge": 0.207,
-    "confidence": "Elite",
-    "predictedScore": "Washington Nationals 3.6 \u2013 Athletics 5.6",
-    "predictedHomeScore": 5.59,
-    "predictedAwayScore": 3.64,
-    "gameTime": "2026-07-19T02:05:00Z",
-    "gamePk": 824979,
-    "rank": 1
-  },
-  {
     "matchup": "Los Angeles Dodgers @ New York Yankees",
     "awayTeam": "Los Angeles Dodgers",
     "homeTeam": "New York Yankees",
@@ -35,6 +16,25 @@
     "predictedAwayScore": 6.25,
     "gameTime": "2026-07-19T00:08:00Z",
     "gamePk": 823523,
+    "rank": 1
+  },
+  {
+    "matchup": "Washington Nationals @ Athletics",
+    "awayTeam": "Washington Nationals",
+    "homeTeam": "Athletics",
+    "awayPitcher": "Zack Littell",
+    "homePitcher": "J.T. Ginn",
+    "pick": "Athletics",
+    "prediction": "Athletics -210",
+    "odds": "-210",
+    "winProb": 0.676,
+    "edge": 0.176,
+    "confidence": "Elite",
+    "predictedScore": "Washington Nationals 4.0 \u2013 Athletics 5.6",
+    "predictedHomeScore": 5.59,
+    "predictedAwayScore": 3.96,
+    "gameTime": "2026-07-19T02:05:00Z",
+    "gamePk": 824979,
     "rank": 2
   },
   {
@@ -76,6 +76,25 @@
     "rank": 4
   },
   {
+    "matchup": "Texas Rangers @ Atlanta Braves",
+    "awayTeam": "Texas Rangers",
+    "homeTeam": "Atlanta Braves",
+    "awayPitcher": "MacKenzie Gore",
+    "homePitcher": "Owen Murphy",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -165",
+    "odds": "-165",
+    "winProb": 0.622,
+    "edge": 0.122,
+    "confidence": "Strong",
+    "predictedScore": "Texas Rangers 4.1 \u2013 Atlanta Braves 5.2",
+    "predictedHomeScore": 5.17,
+    "predictedAwayScore": 4.06,
+    "gameTime": "2026-07-18T20:10:00Z",
+    "gamePk": 824899,
+    "rank": 5
+  },
+  {
     "matchup": "New York Mets @ Philadelphia Phillies",
     "awayTeam": "New York Mets",
     "homeTeam": "Philadelphia Phillies",
@@ -90,9 +109,9 @@
     "predictedScore": "New York Mets 3.8 \u2013 Philadelphia Phillies 4.8",
     "predictedHomeScore": 4.75,
     "predictedAwayScore": 3.79,
-    "gameTime": "2026-07-18T20:05:00Z",
+    "gameTime": "2026-07-18T19:05:00Z",
     "gamePk": 823441,
-    "rank": 5
+    "rank": 6
   },
   {
     "matchup": "Pittsburgh Pirates @ Cleveland Guardians",
@@ -111,25 +130,6 @@
     "predictedAwayScore": 4.2,
     "gameTime": "2026-07-18T23:10:00Z",
     "gamePk": 824412,
-    "rank": 6
-  },
-  {
-    "matchup": "Texas Rangers @ Atlanta Braves",
-    "awayTeam": "Texas Rangers",
-    "homeTeam": "Atlanta Braves",
-    "awayPitcher": "MacKenzie Gore",
-    "homePitcher": "Owen Murphy",
-    "pick": "Atlanta Braves",
-    "prediction": "Atlanta Braves -140",
-    "odds": "-140",
-    "winProb": 0.584,
-    "edge": 0.084,
-    "confidence": "Strong",
-    "predictedScore": "Texas Rangers 4.1 \u2013 Atlanta Braves 4.8",
-    "predictedHomeScore": 4.82,
-    "predictedAwayScore": 4.06,
-    "gameTime": "2026-07-18T20:10:00Z",
-    "gamePk": 824899,
     "rank": 7
   },
   {
