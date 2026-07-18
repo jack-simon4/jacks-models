@@ -76,25 +76,6 @@
     "rank": 4
   },
   {
-    "matchup": "Texas Rangers @ Atlanta Braves",
-    "awayTeam": "Texas Rangers",
-    "homeTeam": "Atlanta Braves",
-    "awayPitcher": "MacKenzie Gore",
-    "homePitcher": "Owen Murphy",
-    "pick": "Atlanta Braves",
-    "prediction": "Atlanta Braves -195",
-    "odds": "-195",
-    "winProb": 0.659,
-    "edge": 0.159,
-    "confidence": "Elite",
-    "predictedScore": "Texas Rangers 3.7 \u2013 Atlanta Braves 5.2",
-    "predictedHomeScore": 5.17,
-    "predictedAwayScore": 3.71,
-    "gameTime": "2026-07-18T20:10:00Z",
-    "gamePk": 824899,
-    "rank": 5
-  },
-  {
     "matchup": "Detroit Tigers @ Los Angeles Angels",
     "awayTeam": "Detroit Tigers",
     "homeTeam": "Los Angeles Angels",
@@ -111,6 +92,25 @@
     "predictedAwayScore": 5.2,
     "gameTime": "2026-07-19T02:07:00Z",
     "gamePk": 824008,
+    "rank": 5
+  },
+  {
+    "matchup": "Texas Rangers @ Atlanta Braves",
+    "awayTeam": "Texas Rangers",
+    "homeTeam": "Atlanta Braves",
+    "awayPitcher": "MacKenzie Gore",
+    "homePitcher": "Owen Murphy",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -165",
+    "odds": "-165",
+    "winProb": 0.622,
+    "edge": 0.122,
+    "confidence": "Strong",
+    "predictedScore": "Texas Rangers 4.1 \u2013 Atlanta Braves 5.2",
+    "predictedHomeScore": 5.17,
+    "predictedAwayScore": 4.06,
+    "gameTime": "2026-07-18T20:10:00Z",
+    "gamePk": 824899,
     "rank": 6
   },
   {
@@ -171,6 +171,25 @@
     "rank": 9
   },
   {
+    "matchup": "St. Louis Cardinals @ Arizona Diamondbacks",
+    "awayTeam": "St. Louis Cardinals",
+    "homeTeam": "Arizona Diamondbacks",
+    "awayPitcher": "Dustin May",
+    "homePitcher": "Brandon Pfaadt",
+    "pick": "St. Louis Cardinals",
+    "prediction": "St. Louis Cardinals -135",
+    "odds": "-135",
+    "winProb": 0.57,
+    "edge": 0.07,
+    "confidence": "Lean",
+    "predictedScore": "St. Louis Cardinals 4.9 \u2013 Arizona Diamondbacks 4.3",
+    "predictedHomeScore": 4.29,
+    "predictedAwayScore": 4.92,
+    "gameTime": "2026-07-18T20:10:00Z",
+    "gamePk": 825059,
+    "rank": 10
+  },
+  {
     "matchup": "Chicago White Sox @ Toronto Blue Jays",
     "awayTeam": "Chicago White Sox",
     "homeTeam": "Toronto Blue Jays",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 4.9,
     "gameTime": "2026-07-18T19:07:00Z",
     "gamePk": 822790,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "San Diego Padres @ Kansas City Royals",
@@ -206,25 +225,6 @@
     "predictedAwayScore": 3.58,
     "gameTime": "2026-07-18T20:10:00Z",
     "gamePk": 824088,
-    "rank": 11
-  },
-  {
-    "matchup": "St. Louis Cardinals @ Arizona Diamondbacks",
-    "awayTeam": "St. Louis Cardinals",
-    "homeTeam": "Arizona Diamondbacks",
-    "awayPitcher": "Dustin May",
-    "homePitcher": "Brandon Pfaadt",
-    "pick": "St. Louis Cardinals",
-    "prediction": "St. Louis Cardinals -115",
-    "odds": "-115",
-    "winProb": 0.533,
-    "edge": 0.033,
-    "confidence": "Lean",
-    "predictedScore": "St. Louis Cardinals 4.9 \u2013 Arizona Diamondbacks 4.6",
-    "predictedHomeScore": 4.63,
-    "predictedAwayScore": 4.92,
-    "gameTime": "2026-07-18T20:10:00Z",
-    "gamePk": 825059,
     "rank": 12
   }
 ]
