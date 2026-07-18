@@ -57,6 +57,25 @@
     "rank": 3
   },
   {
+    "matchup": "Texas Rangers @ Atlanta Braves",
+    "awayTeam": "Texas Rangers",
+    "homeTeam": "Atlanta Braves",
+    "awayPitcher": "MacKenzie Gore",
+    "homePitcher": "Owen Murphy",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -195",
+    "odds": "-195",
+    "winProb": 0.659,
+    "edge": 0.159,
+    "confidence": "Elite",
+    "predictedScore": "Texas Rangers 3.7 \u2013 Atlanta Braves 5.2",
+    "predictedHomeScore": 5.17,
+    "predictedAwayScore": 3.71,
+    "gameTime": "2026-07-18T20:10:00Z",
+    "gamePk": 824899,
+    "rank": 4
+  },
+  {
     "matchup": "Detroit Tigers @ Los Angeles Angels",
     "awayTeam": "Detroit Tigers",
     "homeTeam": "Los Angeles Angels",
@@ -73,7 +92,7 @@
     "predictedAwayScore": 5.2,
     "gameTime": "2026-07-19T02:07:00Z",
     "gamePk": 824008,
-    "rank": 4
+    "rank": 5
   },
   {
     "matchup": "Cincinnati Reds @ Colorado Rockies",
@@ -92,25 +111,6 @@
     "predictedAwayScore": 6.02,
     "gameTime": "2026-07-18T19:10:00Z",
     "gamePk": 824331,
-    "rank": 5
-  },
-  {
-    "matchup": "Texas Rangers @ Atlanta Braves",
-    "awayTeam": "Texas Rangers",
-    "homeTeam": "Atlanta Braves",
-    "awayPitcher": "MacKenzie Gore",
-    "homePitcher": "Owen Murphy",
-    "pick": "Atlanta Braves",
-    "prediction": "Atlanta Braves -165",
-    "odds": "-165",
-    "winProb": 0.622,
-    "edge": 0.122,
-    "confidence": "Strong",
-    "predictedScore": "Texas Rangers 4.1 \u2013 Atlanta Braves 5.2",
-    "predictedHomeScore": 5.17,
-    "predictedAwayScore": 4.06,
-    "gameTime": "2026-07-18T20:10:00Z",
-    "gamePk": 824899,
     "rank": 6
   },
   {
@@ -171,6 +171,25 @@
     "rank": 9
   },
   {
+    "matchup": "Baltimore Orioles @ Houston Astros",
+    "awayTeam": "Baltimore Orioles",
+    "homeTeam": "Houston Astros",
+    "awayPitcher": "Trevor Rogers",
+    "homePitcher": "Spencer Arrighetti",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -120",
+    "odds": "-120",
+    "winProb": 0.542,
+    "edge": 0.042,
+    "confidence": "Lean",
+    "predictedScore": "Baltimore Orioles 3.7 \u2013 Houston Astros 4.1",
+    "predictedHomeScore": 4.13,
+    "predictedAwayScore": 3.75,
+    "gameTime": "2026-07-18T20:10:00Z",
+    "gamePk": 824169,
+    "rank": 10
+  },
+  {
     "matchup": "San Diego Padres @ Kansas City Royals",
     "awayTeam": "San Diego Padres",
     "homeTeam": "Kansas City Royals",
@@ -187,7 +206,7 @@
     "predictedAwayScore": 3.58,
     "gameTime": "2026-07-18T20:10:00Z",
     "gamePk": 824088,
-    "rank": 10
+    "rank": 11
   },
   {
     "matchup": "St. Louis Cardinals @ Arizona Diamondbacks",
@@ -206,7 +225,7 @@
     "predictedAwayScore": 4.92,
     "gameTime": "2026-07-18T20:10:00Z",
     "gamePk": 825059,
-    "rank": 11
+    "rank": 12
   },
   {
     "matchup": "Pittsburgh Pirates @ Cleveland Guardians",
@@ -225,6 +244,6 @@
     "predictedAwayScore": 3.87,
     "gameTime": "2026-07-18T17:10:00Z",
     "gamePk": 824414,
-    "rank": 12
+    "rank": 13
   }
 ]
