@@ -17,7 +17,25 @@ Cleveland Guardians6,Kahlil Watson
 Cleveland Guardians7,Gabriel Arias
 Cleveland Guardians8,Patrick Bailey
 Cleveland Guardians9,Steven Kwan
-Minnesota Twins1,Austin Martin
+Pittsburgh Pirates1,Jake Mangum
+Pittsburgh Pirates2,Nick Gonzales
+Pittsburgh Pirates3,Bryan Reynolds
+Pittsburgh Pirates4,Esmerlyn Valdez
+Pittsburgh Pirates5,Ryan O'Hearn
+Pittsburgh Pirates6,Marcell Ozuna
+Pittsburgh Pirates7,Brandon Lowe
+Pittsburgh Pirates8,Rafael Flores Jr.
+Pittsburgh Pirates9,Jared Triolo
+Cleveland Guardians1,Travis Bazzana
+Cleveland Guardians2,Brayan Rocchio
+Cleveland Guardians3,Chase DeLauter
+Cleveland Guardians4,Rhys Hoskins
+Cleveland Guardians5,Daniel Schneemann
+Cleveland Guardians6,David Fry
+Cleveland Guardians7,Petey Halpin
+Cleveland Guardians8,Austin Hedges
+Cleveland Guardians9,Steven Kwan
+Minnesota Twins1,Alan Roden
 Minnesota Twins2,Ryan Jeffers
 Minnesota Twins3,Josh Bell
 Minnesota Twins4,Victor Caratini
@@ -48,7 +66,7 @@ Philadelphia Phillies1,Trea Turner
 Philadelphia Phillies2,Kyle Schwarber
 Philadelphia Phillies3,Bryce Harper
 Philadelphia Phillies4,Alec Bohm
-Philadelphia Phillies5,Edmundo Sosa
+Philadelphia Phillies5,Justin Crawford
 Philadelphia Phillies6,Brandon Marsh
 Philadelphia Phillies7,J.T. Realmuto
 Philadelphia Phillies8,Derek Hill
@@ -61,7 +79,7 @@ Chicago White Sox5,Andrew Benintendi
 Chicago White Sox6,Kyle Teel
 Chicago White Sox7,Braden Montgomery
 Chicago White Sox8,Tristan Peters
-Chicago White Sox9,Chase Meidroth
+Chicago White Sox9,Luisangel Acuna
 Toronto Blue Jays1,Ernie Clement
 Toronto Blue Jays2,Nathan Lukes
 Toronto Blue Jays3,Vladimir Guerrero Jr.
@@ -70,7 +88,7 @@ Toronto Blue Jays5,Kazuma Okamoto
 Toronto Blue Jays6,Daulton Varsho
 Toronto Blue Jays7,Alejandro Kirk
 Toronto Blue Jays8,Andres Gimenez
-Toronto Blue Jays9,Jonatan Clase
+Toronto Blue Jays9,Myles Straw
 Cincinnati Reds1,Elly De La Cruz
 Cincinnati Reds2,Sal Stewart
 Cincinnati Reds3,JJ Bleday
@@ -79,10 +97,10 @@ Cincinnati Reds5,Eugenio Suarez
 Cincinnati Reds6,Noelvi Marte
 Cincinnati Reds7,Dane Myers
 Cincinnati Reds8,Jose Trevino
-Cincinnati Reds9,Edwin Arroyo
+Cincinnati Reds9,Nathaniel Lowe
 Colorado Rockies1,Jake McCarthy
 Colorado Rockies2,Mickey Moniak
-Colorado Rockies3,Cole Carrigg
+Colorado Rockies3,Braxton Fulford
 Colorado Rockies4,TJ Rumfield
 Colorado Rockies5,Willi Castro
 Colorado Rockies6,Troy Johnston
@@ -98,11 +116,11 @@ Baltimore Orioles6,Dylan Beavers
 Baltimore Orioles7,Colton Cowser
 Baltimore Orioles8,Christian Encarnacion-Strand
 Baltimore Orioles9,Jackson Holliday
-Houston Astros1,Jeremy Pena
+Houston Astros1,Nick Allen
 Houston Astros2,Yordan Alvarez
 Houston Astros3,Isaac Paredes
 Houston Astros4,Jose Altuve
-Houston Astros5,Christian Walker
+Houston Astros5,LaMonte Wade Jr.
 Houston Astros6,Yainer Diaz
 Houston Astros7,Cam Smith
 Houston Astros8,Zach Dezenzo
@@ -197,10 +215,19 @@ Milwaukee Brewers6,Luis Lara
 Milwaukee Brewers7,Cooper Pratt
 Milwaukee Brewers8,Braden Shewmake
 Milwaukee Brewers9,Joey Ortiz
+San Francisco Giants1,Luis Arraez
+San Francisco Giants2,Bryce Eldridge
+San Francisco Giants3,Casey Schmitt
+San Francisco Giants4,Rafael Devers
+San Francisco Giants5,Heliot Ramos
+San Francisco Giants6,Jung Hoo Lee
+San Francisco Giants7,Willy Adames
+San Francisco Giants8,Drew Gilbert
+San Francisco Giants9,Daniel Susac
 Seattle Mariners1,J.P. Crawford
 Seattle Mariners2,Julio Rodriguez
-Seattle Mariners3,Randy Arozarena
-Seattle Mariners4,Dominic Canzone
+Seattle Mariners3,Dominic Canzone
+Seattle Mariners4,Randy Arozarena
 Seattle Mariners5,Josh Naylor
 Seattle Mariners6,Cal Raleigh
 Seattle Mariners7,Cole Young
@@ -251,15 +278,6 @@ New York Yankees6,Jazz Chisholm Jr.
 New York Yankees7,Jose Caballero
 New York Yankees8,Ryan McMahon
 New York Yankees9,Austin Wells
-San Francisco Giants1,Luis Arraez
-San Francisco Giants2,Bryce Eldridge
-San Francisco Giants3,Casey Schmitt
-San Francisco Giants4,Rafael Devers
-San Francisco Giants5,Heliot Ramos
-San Francisco Giants6,Jung Hoo Lee
-San Francisco Giants7,Willy Adames
-San Francisco Giants8,Drew Gilbert
-San Francisco Giants9,Drew Cavanaugh
 Washington Nationals1,James Wood
 Washington Nationals2,Curtis Mead
 Washington Nationals3,Andres Chaparro

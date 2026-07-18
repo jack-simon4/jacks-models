@@ -38,6 +38,25 @@
     "rank": 2
   },
   {
+    "matchup": "Cincinnati Reds @ Colorado Rockies",
+    "awayTeam": "Cincinnati Reds",
+    "homeTeam": "Colorado Rockies",
+    "awayPitcher": "Rhett Lowder",
+    "homePitcher": "Tomoyuki Sugano",
+    "pick": "Cincinnati Reds",
+    "prediction": "Cincinnati Reds -205",
+    "odds": "-205",
+    "winProb": 0.671,
+    "edge": 0.171,
+    "confidence": "Elite",
+    "predictedScore": "Cincinnati Reds 6.0 \u2013 Colorado Rockies 4.4",
+    "predictedHomeScore": 4.44,
+    "predictedAwayScore": 6.02,
+    "gameTime": "2026-07-18T19:10:00Z",
+    "gamePk": 824331,
+    "rank": 3
+  },
+  {
     "matchup": "New York Mets @ Philadelphia Phillies",
     "awayTeam": "New York Mets",
     "homeTeam": "Philadelphia Phillies",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 3.48,
     "gameTime": "2026-07-18T19:05:00Z",
     "gamePk": 823441,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Texas Rangers @ Atlanta Braves",
@@ -73,7 +92,7 @@
     "predictedAwayScore": 3.71,
     "gameTime": "2026-07-18T20:10:00Z",
     "gamePk": 824899,
-    "rank": 4
+    "rank": 5
   },
   {
     "matchup": "Detroit Tigers @ Los Angeles Angels",
@@ -92,25 +111,6 @@
     "predictedAwayScore": 5.2,
     "gameTime": "2026-07-19T02:07:00Z",
     "gamePk": 824008,
-    "rank": 5
-  },
-  {
-    "matchup": "Cincinnati Reds @ Colorado Rockies",
-    "awayTeam": "Cincinnati Reds",
-    "homeTeam": "Colorado Rockies",
-    "awayPitcher": "Rhett Lowder",
-    "homePitcher": "Tomoyuki Sugano",
-    "pick": "Cincinnati Reds",
-    "prediction": "Cincinnati Reds -175",
-    "odds": "-175",
-    "winProb": 0.638,
-    "edge": 0.138,
-    "confidence": "Strong",
-    "predictedScore": "Cincinnati Reds 6.0 \u2013 Colorado Rockies 4.8",
-    "predictedHomeScore": 4.77,
-    "predictedAwayScore": 6.02,
-    "gameTime": "2026-07-18T19:10:00Z",
-    "gamePk": 824331,
     "rank": 6
   },
   {
@@ -136,8 +136,8 @@
     "matchup": "Pittsburgh Pirates @ Cleveland Guardians",
     "awayTeam": "Pittsburgh Pirates",
     "homeTeam": "Cleveland Guardians",
-    "awayPitcher": "TBD",
-    "homePitcher": "Logan Allen",
+    "awayPitcher": "Jared Jones",
+    "homePitcher": "Gavin Williams",
     "pick": "Pittsburgh Pirates",
     "prediction": "Pittsburgh Pirates -130",
     "odds": "-130",
@@ -147,9 +147,28 @@
     "predictedScore": "Pittsburgh Pirates 3.9 \u2013 Cleveland Guardians 3.2",
     "predictedHomeScore": 3.24,
     "predictedAwayScore": 3.87,
+    "gameTime": "2026-07-18T17:10:00Z",
+    "gamePk": 824414,
+    "rank": 8
+  },
+  {
+    "matchup": "Pittsburgh Pirates @ Cleveland Guardians",
+    "awayTeam": "Pittsburgh Pirates",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "Mason Montgomery",
+    "homePitcher": "Logan Allen",
+    "pick": "Pittsburgh Pirates",
+    "prediction": "Pittsburgh Pirates -130",
+    "odds": "-130",
+    "winProb": 0.57,
+    "edge": 0.07,
+    "confidence": "Lean",
+    "predictedScore": "Pittsburgh Pirates 4.2 \u2013 Cleveland Guardians 3.6",
+    "predictedHomeScore": 3.58,
+    "predictedAwayScore": 4.2,
     "gameTime": "2026-07-18T23:10:00Z",
     "gamePk": 824412,
-    "rank": 8
+    "rank": 9
   },
   {
     "matchup": "Chicago White Sox @ Toronto Blue Jays",
@@ -168,25 +187,6 @@
     "predictedAwayScore": 4.9,
     "gameTime": "2026-07-18T19:07:00Z",
     "gamePk": 822790,
-    "rank": 9
-  },
-  {
-    "matchup": "Baltimore Orioles @ Houston Astros",
-    "awayTeam": "Baltimore Orioles",
-    "homeTeam": "Houston Astros",
-    "awayPitcher": "Trevor Rogers",
-    "homePitcher": "Spencer Arrighetti",
-    "pick": "Houston Astros",
-    "prediction": "Houston Astros -120",
-    "odds": "-120",
-    "winProb": 0.542,
-    "edge": 0.042,
-    "confidence": "Lean",
-    "predictedScore": "Baltimore Orioles 3.7 \u2013 Houston Astros 4.1",
-    "predictedHomeScore": 4.13,
-    "predictedAwayScore": 3.75,
-    "gameTime": "2026-07-18T20:10:00Z",
-    "gamePk": 824169,
     "rank": 10
   },
   {
