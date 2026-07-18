@@ -113,9 +113,9 @@ Baltimore Orioles3,Taylor Ward
 Baltimore Orioles4,Pete Alonso
 Baltimore Orioles5,Samuel Basallo
 Baltimore Orioles6,Tyler O'Neill
-Baltimore Orioles7,Colton Cowser
+Baltimore Orioles7,Leody Taveras
 Baltimore Orioles8,Christian Encarnacion-Strand
-Baltimore Orioles9,Jackson Holliday
+Baltimore Orioles9,Jeremiah Jackson
 Houston Astros1,Nick Allen
 Houston Astros2,Yordan Alvarez
 Houston Astros3,Isaac Paredes
@@ -158,13 +158,13 @@ Arizona Diamondbacks3,Corbin Carroll
 Arizona Diamondbacks4,Gabriel Moreno
 Arizona Diamondbacks5,Max Kepler
 Arizona Diamondbacks6,Nolan Arenado
-Arizona Diamondbacks7,Tim Tawa
+Arizona Diamondbacks7,Ildemaro Vargas
 Arizona Diamondbacks8,James McCann
 Arizona Diamondbacks9,Jorge Barrosa
 Tampa Bay Rays1,Yandy Diaz
 Tampa Bay Rays2,Jonny DeLuca
 Tampa Bay Rays3,Junior Caminero
-Tampa Bay Rays4,Ryan Vilade
+Tampa Bay Rays4,Jonathan Aranda
 Tampa Bay Rays5,Chandler Simpson
 Tampa Bay Rays6,Ben Williamson
 Tampa Bay Rays7,Victor Mesa Jr.
@@ -178,7 +178,7 @@ Boston Red Sox5,Romy Gonzalez
 Boston Red Sox6,Caleb Durbin
 Boston Red Sox7,Andruw Monasterio
 Boston Red Sox8,Jarren Duran
-Boston Red Sox9,Carlos Narvaez
+Boston Red Sox9,Connor Wong
 Texas Rangers1,Justin Foscue
 Texas Rangers2,Wyatt Langford
 Texas Rangers3,Josh Jung
@@ -195,7 +195,7 @@ Atlanta Braves4,Michael Harris II
 Atlanta Braves5,Mauricio Dubon
 Atlanta Braves6,Eli White
 Atlanta Braves7,Austin Riley
-Atlanta Braves8,Joey Bart
+Atlanta Braves8,Raisel Iglesias
 Atlanta Braves9,Jim Jarvis
 Miami Marlins1,Otto Lopez
 Miami Marlins2,Heriberto Hernandez
@@ -251,6 +251,15 @@ Athletics6,Donovan Walton
 Athletics7,Jonah Heim
 Athletics8,Lawrence Butler
 Athletics9,Jeff McNeil
+Detroit Tigers1,Kevin McGonigle
+Detroit Tigers2,Dillon Dingler
+Detroit Tigers3,Colt Keith
+Detroit Tigers4,Riley Greene
+Detroit Tigers5,Spencer Torkelson
+Detroit Tigers6,Kerry Carpenter
+Detroit Tigers7,Zach McKinstry
+Detroit Tigers8,Matt Vierling
+Detroit Tigers9,James Outman
 Los Angeles Angels1,Zach Neto
 Los Angeles Angels2,Mike Trout
 Los Angeles Angels3,Vaughn Grissom
@@ -260,15 +269,6 @@ Los Angeles Angels6,Nolan Schanuel
 Los Angeles Angels7,Denzer Guzman
 Los Angeles Angels8,Jose Siri
 Los Angeles Angels9,Logan O'Hoppe
-Detroit Tigers1,Matt Vierling
-Detroit Tigers2,Kevin McGonigle
-Detroit Tigers3,Dillon Dingler
-Detroit Tigers4,Spencer Torkelson
-Detroit Tigers5,Riley Greene
-Detroit Tigers6,Eduardo Valencia
-Detroit Tigers7,Hao-Yu Lee
-Detroit Tigers8,Ben Malgeri
-Detroit Tigers9,Zach McKinstry
 Los Angeles Dodgers1,Shohei Ohtani
 Los Angeles Dodgers2,Andy Pages
 Los Angeles Dodgers3,Freddie Freeman
