@@ -19,6 +19,25 @@
     "rank": 1
   },
   {
+    "matchup": "Baltimore Orioles @ Houston Astros",
+    "awayTeam": "Baltimore Orioles",
+    "homeTeam": "Houston Astros",
+    "awayPitcher": "Brandon Young",
+    "homePitcher": "Hunter Brown",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -185",
+    "odds": "-185",
+    "winProb": 0.648,
+    "edge": 0.148,
+    "confidence": "Elite",
+    "predictedScore": "Baltimore Orioles 2.8 \u2013 Houston Astros 4.1",
+    "predictedHomeScore": 4.13,
+    "predictedAwayScore": 2.77,
+    "gameTime": "2026-07-19T18:10:00Z",
+    "gamePk": 824168,
+    "rank": 2
+  },
+  {
     "matchup": "New York Mets @ Philadelphia Phillies",
     "awayTeam": "New York Mets",
     "homeTeam": "Philadelphia Phillies",
@@ -35,25 +54,6 @@
     "predictedAwayScore": 4.09,
     "gameTime": "2026-07-19T17:35:00Z",
     "gamePk": 823439,
-    "rank": 2
-  },
-  {
-    "matchup": "Baltimore Orioles @ Houston Astros",
-    "awayTeam": "Baltimore Orioles",
-    "homeTeam": "Houston Astros",
-    "awayPitcher": "Brandon Young",
-    "homePitcher": "Hunter Brown",
-    "pick": "Houston Astros",
-    "prediction": "Houston Astros -160",
-    "odds": "-160",
-    "winProb": 0.614,
-    "edge": 0.114,
-    "confidence": "Strong",
-    "predictedScore": "Baltimore Orioles 3.1 \u2013 Houston Astros 4.1",
-    "predictedHomeScore": 4.13,
-    "predictedAwayScore": 3.09,
-    "gameTime": "2026-07-19T18:10:00Z",
-    "gamePk": 824168,
     "rank": 3
   },
   {
