@@ -35,6 +35,24 @@ New York Yankees6,Jazz Chisholm Jr.
 New York Yankees7,Anthony Volpe
 New York Yankees8,Ryan McMahon
 New York Yankees9,Ali Sanchez
+Los Angeles Dodgers1,Shohei Ohtani
+Los Angeles Dodgers2,Andy Pages
+Los Angeles Dodgers3,Freddie Freeman
+Los Angeles Dodgers4,Mookie Betts
+Los Angeles Dodgers5,Kyle Tucker
+Los Angeles Dodgers6,Miguel Rojas
+Los Angeles Dodgers7,Teoscar Hernandez
+Los Angeles Dodgers8,Max Muncy
+Los Angeles Dodgers9,Eliezer Alfonzo
+New York Yankees1,Trent Grisham
+New York Yankees2,Ben Rice
+New York Yankees3,Paul Goldschmidt
+New York Yankees4,Cody Bellinger
+New York Yankees5,Jasson Dominguez
+New York Yankees6,Jazz Chisholm Jr.
+New York Yankees7,Anthony Volpe
+New York Yankees8,Austin Wells
+New York Yankees9,Jose Caballero
 Tampa Bay Rays1,Yandy Diaz
 Tampa Bay Rays2,Jonathan Aranda
 Tampa Bay Rays3,Junior Caminero
@@ -123,18 +141,18 @@ Houston Astros4,LaMonte Wade Jr.
 Houston Astros5,Yainer Diaz
 Houston Astros6,Lucas Spence
 Houston Astros7,Cam Smith
-Houston Astros8,Raynel Delgado
+Houston Astros8,Zach Dezenzo
 Houston Astros9,Nick Allen
-San Diego Padres1,Fernando Tatis Jr.
+San Diego Padres1,Freddy Fermin
 San Diego Padres2,Jackson Merrill
-San Diego Padres3,Manny Machado
+San Diego Padres3,Wandy Peralta
 San Diego Padres4,Ty France
-San Diego Padres5,Xander Bogaerts
+San Diego Padres5,Gavin Sheets
 San Diego Padres6,Miguel Andujar
 San Diego Padres7,Luis Rengifo
 San Diego Padres8,Jase Bowen
-San Diego Padres9,Luis Campusano
-Kansas City Royals1,Carter Jensen
+San Diego Padres9,Sung-Mun Song
+Kansas City Royals1,Michael Massey
 Kansas City Royals2,Nick Loftin
 Kansas City Royals3,Jac Caglianone
 Kansas City Royals4,Lane Thomas
@@ -147,8 +165,8 @@ Miami Marlins1,Xavier Edwards
 Miami Marlins2,Heriberto Hernandez
 Miami Marlins3,Kyle Stowers
 Miami Marlins4,Javier Sanoja
-Miami Marlins5,Liam Hicks
-Miami Marlins6,Leo Jimenez
+Miami Marlins5,Joe Mack
+Miami Marlins6,Graham Pauley
 Miami Marlins7,Griffin Conine
 Miami Marlins8,Esteury Ruiz
 Miami Marlins9,Jakob Marsee
@@ -156,35 +174,35 @@ Milwaukee Brewers1,Christian Yelich
 Milwaukee Brewers2,Jackson Chourio
 Milwaukee Brewers3,Brice Turang
 Milwaukee Brewers4,Andrew Vaughn
-Milwaukee Brewers5,Jake Bauers
+Milwaukee Brewers5,William Contreras
 Milwaukee Brewers6,Garrett Mitchell
-Milwaukee Brewers7,Gary Sanchez
-Milwaukee Brewers8,Braden Shewmake
+Milwaukee Brewers7,Cooper Pratt
+Milwaukee Brewers8,Luis Lara
 Milwaukee Brewers9,Joey Ortiz
 Minnesota Twins1,Austin Martin
 Minnesota Twins2,Alex Jackson
 Minnesota Twins3,Josh Bell
 Minnesota Twins4,Royce Lewis
-Minnesota Twins5,Victor Caratini
-Minnesota Twins6,Kody Clemens
+Minnesota Twins5,Tristan Gray
+Minnesota Twins6,Alan Roden
 Minnesota Twins7,Luke Keaschall
 Minnesota Twins8,Brooks Lee
 Minnesota Twins9,Ryan Kreidler
-Chicago Cubs1,Pete Crow-Armstrong
-Chicago Cubs2,Seiya Suzuki
+Chicago Cubs1,Justin Dean
+Chicago Cubs2,Michael Conforto
 Chicago Cubs3,Michael Busch
 Chicago Cubs4,Alex Bregman
-Chicago Cubs5,Ian Happ
+Chicago Cubs5,Kevin Alcantara
 Chicago Cubs6,Nico Hoerner
 Chicago Cubs7,Pedro Ramirez
 Chicago Cubs8,Carson Kelly
 Chicago Cubs9,Dansby Swanson
 Cincinnati Reds1,Elly De La Cruz
-Cincinnati Reds2,Sal Stewart
+Cincinnati Reds2,Edwin Arroyo
 Cincinnati Reds3,JJ Bleday
 Cincinnati Reds4,Spencer Steer
 Cincinnati Reds5,Nathaniel Lowe
-Cincinnati Reds6,Eugenio Suarez
+Cincinnati Reds6,Ke'Bryan Hayes
 Cincinnati Reds7,Tyler Stephenson
 Cincinnati Reds8,TJ Friedl
 Cincinnati Reds9,Dane Myers
@@ -254,7 +272,7 @@ Seattle Mariners9,Colt Emerson
 St. Louis Cardinals1,JJ Wetherholt
 St. Louis Cardinals2,Ivan Herrera
 St. Louis Cardinals3,Jordan Walker
-St. Louis Cardinals4,Nelson Velazquez
+St. Louis Cardinals4,Nathan Church
 St. Louis Cardinals5,Alec Burleson
 St. Louis Cardinals6,Masyn Winn
 St. Louis Cardinals7,Jose Fermin
