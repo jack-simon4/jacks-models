@@ -116,6 +116,15 @@ Baltimore Orioles6,Leody Taveras
 Baltimore Orioles7,Colton Cowser
 Baltimore Orioles8,Coby Mayo
 Baltimore Orioles9,Jackson Holliday
+Houston Astros1,Jose Altuve
+Houston Astros2,Yordan Alvarez
+Houston Astros3,Isaac Paredes
+Houston Astros4,LaMonte Wade Jr.
+Houston Astros5,Yainer Diaz
+Houston Astros6,Lucas Spence
+Houston Astros7,Cam Smith
+Houston Astros8,Raynel Delgado
+Houston Astros9,Nick Allen
 San Diego Padres1,Fernando Tatis Jr.
 San Diego Padres2,Jackson Merrill
 San Diego Padres3,Manny Machado
@@ -143,6 +152,15 @@ Miami Marlins6,Leo Jimenez
 Miami Marlins7,Griffin Conine
 Miami Marlins8,Esteury Ruiz
 Miami Marlins9,Jakob Marsee
+Milwaukee Brewers1,Christian Yelich
+Milwaukee Brewers2,Jackson Chourio
+Milwaukee Brewers3,Brice Turang
+Milwaukee Brewers4,Andrew Vaughn
+Milwaukee Brewers5,Jake Bauers
+Milwaukee Brewers6,Garrett Mitchell
+Milwaukee Brewers7,Gary Sanchez
+Milwaukee Brewers8,Braden Shewmake
+Milwaukee Brewers9,Joey Ortiz
 Minnesota Twins1,Austin Martin
 Minnesota Twins2,Ryan Jeffers
 Minnesota Twins3,Josh Bell
@@ -170,6 +188,33 @@ Cincinnati Reds6,Eugenio Suarez
 Cincinnati Reds7,Tyler Stephenson
 Cincinnati Reds8,TJ Friedl
 Cincinnati Reds9,Dane Myers
+Colorado Rockies1,Jake McCarthy
+Colorado Rockies2,Mickey Moniak
+Colorado Rockies3,Hunter Goodman
+Colorado Rockies4,TJ Rumfield
+Colorado Rockies5,Willi Castro
+Colorado Rockies6,Kyle Karros
+Colorado Rockies7,Troy Johnston
+Colorado Rockies8,Tyler Freeman
+Colorado Rockies9,Edouard Julien
+Athletics1,Jacob Wilson
+Athletics2,Tyler Soderstrom
+Athletics3,Shea Langeliers
+Athletics4,Jonah Heim
+Athletics5,Joshua Kuroda-Grauer
+Athletics6,Colby Thomas
+Athletics7,Tommy White
+Athletics8,Henry Bolte
+Athletics9,Alika Williams
+San Francisco Giants1,Luis Arraez
+San Francisco Giants2,Bryce Eldridge
+San Francisco Giants3,Casey Schmitt
+San Francisco Giants4,Rafael Devers
+San Francisco Giants5,Heliot Ramos
+San Francisco Giants6,Jung Hoo Lee
+San Francisco Giants7,Willy Adames
+San Francisco Giants8,Grant McCray
+San Francisco Giants9,Drew Cavanaugh
 Arizona Diamondbacks1,Ketel Marte
 Arizona Diamondbacks2,Geraldo Perdomo
 Arizona Diamondbacks3,Corbin Carroll
@@ -179,24 +224,6 @@ Arizona Diamondbacks6,Nolan Arenado
 Arizona Diamondbacks7,Ildemaro Vargas
 Arizona Diamondbacks8,James McCann
 Arizona Diamondbacks9,Jorge Barrosa
-Athletics1,Jacob Wilson
-Athletics2,Tyler Soderstrom
-Athletics3,Shea Langeliers
-Athletics4,Carlos Cortes
-Athletics5,Joshua Kuroda-Grauer
-Athletics6,Donovan Walton
-Athletics7,Jonah Heim
-Athletics8,Lawrence Butler
-Athletics9,Jeff McNeil
-Colorado Rockies1,Jake McCarthy
-Colorado Rockies2,Mickey Moniak
-Colorado Rockies3,Braxton Fulford
-Colorado Rockies4,TJ Rumfield
-Colorado Rockies5,Willi Castro
-Colorado Rockies6,Troy Johnston
-Colorado Rockies7,Edouard Julien
-Colorado Rockies8,Brett Sullivan
-Colorado Rockies9,Ezequiel Tovar
 Detroit Tigers1,Kevin McGonigle
 Detroit Tigers2,Dillon Dingler
 Detroit Tigers3,Colt Keith
@@ -206,15 +233,6 @@ Detroit Tigers6,Kerry Carpenter
 Detroit Tigers7,Zach McKinstry
 Detroit Tigers8,Matt Vierling
 Detroit Tigers9,James Outman
-Houston Astros1,Nick Allen
-Houston Astros2,Yordan Alvarez
-Houston Astros3,Isaac Paredes
-Houston Astros4,Jose Altuve
-Houston Astros5,LaMonte Wade Jr.
-Houston Astros6,Yainer Diaz
-Houston Astros7,Cam Smith
-Houston Astros8,Zach Dezenzo
-Houston Astros9,Lucas Spence
 Los Angeles Angels1,Zach Neto
 Los Angeles Angels2,Mike Trout
 Los Angeles Angels3,Vaughn Grissom
@@ -224,24 +242,6 @@ Los Angeles Angels6,Nolan Schanuel
 Los Angeles Angels7,Denzer Guzman
 Los Angeles Angels8,Jose Siri
 Los Angeles Angels9,Logan O'Hoppe
-Milwaukee Brewers1,Christian Yelich
-Milwaukee Brewers2,Jackson Chourio
-Milwaukee Brewers3,Jake Bauers
-Milwaukee Brewers4,William Contreras
-Milwaukee Brewers5,Garrett Mitchell
-Milwaukee Brewers6,Luis Lara
-Milwaukee Brewers7,Cooper Pratt
-Milwaukee Brewers8,Braden Shewmake
-Milwaukee Brewers9,Joey Ortiz
-San Francisco Giants1,Luis Arraez
-San Francisco Giants2,Bryce Eldridge
-San Francisco Giants3,Casey Schmitt
-San Francisco Giants4,Rafael Devers
-San Francisco Giants5,Heliot Ramos
-San Francisco Giants6,Jung Hoo Lee
-San Francisco Giants7,Willy Adames
-San Francisco Giants8,Drew Gilbert
-San Francisco Giants9,Daniel Susac
 Seattle Mariners1,J.P. Crawford
 Seattle Mariners2,Julio Rodriguez
 Seattle Mariners3,Dominic Canzone
