@@ -19,25 +19,6 @@
     "rank": 1
   },
   {
-    "matchup": "Chicago White Sox @ Toronto Blue Jays",
-    "awayTeam": "Chicago White Sox",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "Sean Burke",
-    "homePitcher": "Trey Yesavage",
-    "pick": "Toronto Blue Jays",
-    "prediction": "Toronto Blue Jays -180",
-    "odds": "-180",
-    "winProb": 0.644,
-    "edge": 0.144,
-    "confidence": "Elite",
-    "predictedScore": "Chicago White Sox 3.0 \u2013 Toronto Blue Jays 4.3",
-    "predictedHomeScore": 4.32,
-    "predictedAwayScore": 3.0,
-    "gameTime": "2026-07-19T16:15:00Z",
-    "gamePk": 822786,
-    "rank": 2
-  },
-  {
     "matchup": "Detroit Tigers @ Los Angeles Angels",
     "awayTeam": "Detroit Tigers",
     "homeTeam": "Los Angeles Angels",
@@ -54,7 +35,7 @@
     "predictedAwayScore": 5.54,
     "gameTime": "2026-07-19T20:07:00Z",
     "gamePk": 824007,
-    "rank": 3
+    "rank": 2
   },
   {
     "matchup": "Cincinnati Reds @ Colorado Rockies",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 5.37,
     "gameTime": "2026-07-19T19:10:00Z",
     "gamePk": 824330,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Baltimore Orioles @ Houston Astros",
@@ -92,7 +73,45 @@
     "predictedAwayScore": 3.09,
     "gameTime": "2026-07-19T18:10:00Z",
     "gamePk": 824168,
+    "rank": 4
+  },
+  {
+    "matchup": "Los Angeles Dodgers @ New York Yankees",
+    "awayTeam": "Los Angeles Dodgers",
+    "homeTeam": "New York Yankees",
+    "awayPitcher": "Yoshinobu Yamamoto",
+    "homePitcher": "Cam Schlittler",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -160",
+    "odds": "-160",
+    "winProb": 0.613,
+    "edge": 0.113,
+    "confidence": "Strong",
+    "predictedScore": "Los Angeles Dodgers 4.1 \u2013 New York Yankees 3.1",
+    "predictedHomeScore": 3.09,
+    "predictedAwayScore": 4.11,
+    "gameTime": "2026-07-19T16:35:00Z",
+    "gamePk": 823523,
     "rank": 5
+  },
+  {
+    "matchup": "Chicago White Sox @ Toronto Blue Jays",
+    "awayTeam": "Chicago White Sox",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Sean Burke",
+    "homePitcher": "Trey Yesavage",
+    "pick": "Toronto Blue Jays",
+    "prediction": "Toronto Blue Jays -155",
+    "odds": "-155",
+    "winProb": 0.611,
+    "edge": 0.111,
+    "confidence": "Strong",
+    "predictedScore": "Chicago White Sox 3.0 \u2013 Toronto Blue Jays 4.0",
+    "predictedHomeScore": 4.0,
+    "predictedAwayScore": 3.0,
+    "gameTime": "2026-07-19T16:15:00Z",
+    "gamePk": 822786,
+    "rank": 6
   },
   {
     "matchup": "New York Mets @ Philadelphia Phillies",
@@ -111,7 +130,7 @@
     "predictedAwayScore": 4.09,
     "gameTime": "2026-07-19T17:35:00Z",
     "gamePk": 823439,
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "Miami Marlins @ Milwaukee Brewers",
@@ -130,7 +149,7 @@
     "predictedAwayScore": 5.52,
     "gameTime": "2026-07-19T18:10:00Z",
     "gamePk": 823764,
-    "rank": 7
+    "rank": 8
   },
   {
     "matchup": "Washington Nationals @ Athletics",
@@ -149,25 +168,6 @@
     "predictedAwayScore": 4.27,
     "gameTime": "2026-07-19T20:05:00Z",
     "gamePk": 824978,
-    "rank": 8
-  },
-  {
-    "matchup": "Los Angeles Dodgers @ New York Yankees",
-    "awayTeam": "Los Angeles Dodgers",
-    "homeTeam": "New York Yankees",
-    "awayPitcher": "Yoshinobu Yamamoto",
-    "homePitcher": "Cam Schlittler",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -135",
-    "odds": "-135",
-    "winProb": 0.574,
-    "edge": 0.074,
-    "confidence": "Lean",
-    "predictedScore": "Los Angeles Dodgers 4.1 \u2013 New York Yankees 3.4",
-    "predictedHomeScore": 3.45,
-    "predictedAwayScore": 4.11,
-    "gameTime": "2026-07-19T16:35:00Z",
-    "gamePk": 823523,
     "rank": 9
   },
   {
