@@ -38,25 +38,6 @@
     "rank": 2
   },
   {
-    "matchup": "New York Mets @ Milwaukee Brewers",
-    "awayTeam": "New York Mets",
-    "homeTeam": "Milwaukee Brewers",
-    "awayPitcher": "Zac Thornton",
-    "homePitcher": "Brandon Sproat",
-    "pick": "New York Mets",
-    "prediction": "New York Mets -170",
-    "odds": "-170",
-    "winProb": 0.629,
-    "edge": 0.129,
-    "confidence": "Strong",
-    "predictedScore": "New York Mets 5.5 \u2013 Milwaukee Brewers 4.3",
-    "predictedHomeScore": 4.35,
-    "predictedAwayScore": 5.52,
-    "gameTime": "2026-07-21T23:40:00Z",
-    "gamePk": 823760,
-    "rank": 3
-  },
-  {
     "matchup": "Pittsburgh Pirates @ New York Yankees",
     "awayTeam": "Pittsburgh Pirates",
     "homeTeam": "New York Yankees",
@@ -73,7 +54,7 @@
     "predictedAwayScore": 4.83,
     "gameTime": "2026-07-21T23:05:00Z",
     "gamePk": 823519,
-    "rank": 4
+    "rank": 3
   },
   {
     "matchup": "Los Angeles Dodgers @ Philadelphia Phillies",
@@ -92,7 +73,7 @@
     "predictedAwayScore": 3.18,
     "gameTime": "2026-07-21T22:40:00Z",
     "gamePk": 823437,
-    "rank": 5
+    "rank": 4
   },
   {
     "matchup": "Cincinnati Reds @ Seattle Mariners",
@@ -111,7 +92,7 @@
     "predictedAwayScore": 4.0,
     "gameTime": "2026-07-22T01:40:00Z",
     "gamePk": 823114,
-    "rank": 6
+    "rank": 5
   },
   {
     "matchup": "San Francisco Giants @ Kansas City Royals",
@@ -130,6 +111,25 @@
     "predictedAwayScore": 4.52,
     "gameTime": "2026-07-21T23:40:00Z",
     "gamePk": 824085,
+    "rank": 6
+  },
+  {
+    "matchup": "New York Mets @ Milwaukee Brewers",
+    "awayTeam": "New York Mets",
+    "homeTeam": "Milwaukee Brewers",
+    "awayPitcher": "Zac Thornton",
+    "homePitcher": "Brandon Sproat",
+    "pick": "New York Mets",
+    "prediction": "New York Mets -140",
+    "odds": "-140",
+    "winProb": 0.585,
+    "edge": 0.085,
+    "confidence": "Strong",
+    "predictedScore": "New York Mets 5.1 \u2013 Milwaukee Brewers 4.3",
+    "predictedHomeScore": 4.35,
+    "predictedAwayScore": 5.11,
+    "gameTime": "2026-07-21T23:40:00Z",
+    "gamePk": 823760,
     "rank": 7
   },
   {
@@ -152,6 +152,25 @@
     "rank": 8
   },
   {
+    "matchup": "Chicago White Sox @ Texas Rangers",
+    "awayTeam": "Chicago White Sox",
+    "homeTeam": "Texas Rangers",
+    "awayPitcher": "Noah Schultz",
+    "homePitcher": "Kumar Rocker",
+    "pick": "Texas Rangers",
+    "prediction": "Texas Rangers -120",
+    "odds": "-120",
+    "winProb": 0.542,
+    "edge": 0.042,
+    "confidence": "Lean",
+    "predictedScore": "Chicago White Sox 4.3 \u2013 Texas Rangers 4.7",
+    "predictedHomeScore": 4.71,
+    "predictedAwayScore": 4.33,
+    "gameTime": "2026-07-22T00:05:00Z",
+    "gamePk": 822871,
+    "rank": 9
+  },
+  {
     "matchup": "Detroit Tigers @ Chicago Cubs",
     "awayTeam": "Detroit Tigers",
     "homeTeam": "Chicago Cubs",
@@ -168,25 +187,6 @@
     "predictedAwayScore": 4.78,
     "gameTime": "2026-07-22T00:05:00Z",
     "gamePk": 824652,
-    "rank": 9
-  },
-  {
-    "matchup": "Athletics @ Arizona Diamondbacks",
-    "awayTeam": "Athletics",
-    "homeTeam": "Arizona Diamondbacks",
-    "awayPitcher": "Jack Perkins",
-    "homePitcher": "Kohl Drake",
-    "pick": "Athletics",
-    "prediction": "Athletics -115",
-    "odds": "-115",
-    "winProb": 0.533,
-    "edge": 0.033,
-    "confidence": "Lean",
-    "predictedScore": "Athletics 3.9 \u2013 Arizona Diamondbacks 3.6",
-    "predictedHomeScore": 3.61,
-    "predictedAwayScore": 3.9,
-    "gameTime": "2026-07-22T01:40:00Z",
-    "gamePk": 825056,
     "rank": 10
   },
   {
@@ -207,24 +207,5 @@
     "gameTime": "2026-07-22T00:10:00Z",
     "gamePk": 824165,
     "rank": 11
-  },
-  {
-    "matchup": "Washington Nationals @ Colorado Rockies",
-    "awayTeam": "Washington Nationals",
-    "homeTeam": "Colorado Rockies",
-    "awayPitcher": "Carson Palmquist",
-    "homePitcher": "Michael Lorenzen",
-    "pick": "Washington Nationals",
-    "prediction": "Washington Nationals -115",
-    "odds": "-115",
-    "winProb": 0.531,
-    "edge": 0.031,
-    "confidence": "Lean",
-    "predictedScore": "Washington Nationals 5.4 \u2013 Colorado Rockies 5.1",
-    "predictedHomeScore": 5.09,
-    "predictedAwayScore": 5.37,
-    "gameTime": "2026-07-22T00:40:00Z",
-    "gamePk": 824329,
-    "rank": 12
   }
 ]
