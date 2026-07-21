@@ -19,6 +19,25 @@
     "rank": 1
   },
   {
+    "matchup": "Minnesota Twins @ Cleveland Guardians",
+    "awayTeam": "Minnesota Twins",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "Kendry Rojas",
+    "homePitcher": "Parker Messick",
+    "pick": "Minnesota Twins",
+    "prediction": "Minnesota Twins -180",
+    "odds": "-180",
+    "winProb": 0.642,
+    "edge": 0.142,
+    "confidence": "Elite",
+    "predictedScore": "Minnesota Twins 3.9 \u2013 Cleveland Guardians 2.6",
+    "predictedHomeScore": 2.57,
+    "predictedAwayScore": 3.87,
+    "gameTime": "2026-07-21T22:40:00Z",
+    "gamePk": 824409,
+    "rank": 2
+  },
+  {
     "matchup": "Pittsburgh Pirates @ New York Yankees",
     "awayTeam": "Pittsburgh Pirates",
     "homeTeam": "New York Yankees",
@@ -35,7 +54,7 @@
     "predictedAwayScore": 4.83,
     "gameTime": "2026-07-21T23:05:00Z",
     "gamePk": 823519,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Los Angeles Dodgers @ Philadelphia Phillies",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 3.18,
     "gameTime": "2026-07-21T22:40:00Z",
     "gamePk": 823437,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Cincinnati Reds @ Seattle Mariners",
@@ -73,7 +92,7 @@
     "predictedAwayScore": 4.0,
     "gameTime": "2026-07-22T01:40:00Z",
     "gamePk": 823114,
-    "rank": 4
+    "rank": 5
   },
   {
     "matchup": "San Francisco Giants @ Kansas City Royals",
@@ -92,7 +111,7 @@
     "predictedAwayScore": 4.52,
     "gameTime": "2026-07-21T23:40:00Z",
     "gamePk": 824085,
-    "rank": 5
+    "rank": 6
   },
   {
     "matchup": "New York Mets @ Milwaukee Brewers",
@@ -111,7 +130,7 @@
     "predictedAwayScore": 5.52,
     "gameTime": "2026-07-21T23:40:00Z",
     "gamePk": 823760,
-    "rank": 6
+    "rank": 7
   },
   {
     "matchup": "San Diego Padres @ Atlanta Braves",
@@ -130,44 +149,25 @@
     "predictedAwayScore": 4.06,
     "gameTime": "2026-07-21T23:15:00Z",
     "gamePk": 824895,
-    "rank": 7
-  },
-  {
-    "matchup": "Chicago White Sox @ Texas Rangers",
-    "awayTeam": "Chicago White Sox",
-    "homeTeam": "Texas Rangers",
-    "awayPitcher": "Noah Schultz",
-    "homePitcher": "TBD",
-    "pick": "Texas Rangers",
-    "prediction": "Texas Rangers -135",
-    "odds": "-135",
-    "winProb": 0.577,
-    "edge": 0.077,
-    "confidence": "Lean",
-    "predictedScore": "Chicago White Sox 3.7 \u2013 Texas Rangers 4.4",
-    "predictedHomeScore": 4.38,
-    "predictedAwayScore": 3.69,
-    "gameTime": "2026-07-22T00:05:00Z",
-    "gamePk": 822871,
     "rank": 8
   },
   {
-    "matchup": "Minnesota Twins @ Cleveland Guardians",
-    "awayTeam": "Minnesota Twins",
-    "homeTeam": "Cleveland Guardians",
-    "awayPitcher": "TBD",
-    "homePitcher": "Parker Messick",
-    "pick": "Minnesota Twins",
-    "prediction": "Minnesota Twins -130",
+    "matchup": "Baltimore Orioles @ Boston Red Sox",
+    "awayTeam": "Baltimore Orioles",
+    "homeTeam": "Boston Red Sox",
+    "awayPitcher": "Kyle Bradish",
+    "homePitcher": "Ranger Suarez",
+    "pick": "Baltimore Orioles",
+    "prediction": "Baltimore Orioles -130",
     "odds": "-130",
-    "winProb": 0.57,
-    "edge": 0.07,
+    "winProb": 0.564,
+    "edge": 0.064,
     "confidence": "Lean",
-    "predictedScore": "Minnesota Twins 3.9 \u2013 Cleveland Guardians 3.2",
-    "predictedHomeScore": 3.24,
-    "predictedAwayScore": 3.87,
-    "gameTime": "2026-07-21T22:40:00Z",
-    "gamePk": 824409,
+    "predictedScore": "Baltimore Orioles 3.9 \u2013 Boston Red Sox 3.3",
+    "predictedHomeScore": 3.29,
+    "predictedAwayScore": 3.86,
+    "gameTime": "2026-07-21T23:10:00Z",
+    "gamePk": 824735,
     "rank": 9
   },
   {
@@ -226,5 +226,24 @@
     "gameTime": "2026-07-22T01:40:00Z",
     "gamePk": 825056,
     "rank": 12
+  },
+  {
+    "matchup": "Chicago White Sox @ Texas Rangers",
+    "awayTeam": "Chicago White Sox",
+    "homeTeam": "Texas Rangers",
+    "awayPitcher": "Noah Schultz",
+    "homePitcher": "Kumar Rocker",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -115",
+    "odds": "-115",
+    "winProb": 0.531,
+    "edge": 0.031,
+    "confidence": "Lean",
+    "predictedScore": "Chicago White Sox 4.7 \u2013 Texas Rangers 4.4",
+    "predictedHomeScore": 4.38,
+    "predictedAwayScore": 4.66,
+    "gameTime": "2026-07-22T00:05:00Z",
+    "gamePk": 822871,
+    "rank": 13
   }
 ]
