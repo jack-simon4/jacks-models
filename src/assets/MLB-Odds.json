@@ -1,1 +1,100 @@
-{}
+{
+  "Cleveland Guardians": {
+    "home_team": "Cleveland Guardians",
+    "away_team": "Minnesota Twins",
+    "home_ml": "-130",
+    "away_ml": "+110",
+    "book": "fanduel"
+  },
+  "Toronto Blue Jays": {
+    "home_team": "Toronto Blue Jays",
+    "away_team": "Tampa Bay Rays",
+    "home_ml": "+3500",
+    "away_ml": "-50000",
+    "book": "fanduel"
+  },
+  "Atlanta Braves": {
+    "home_team": "Atlanta Braves",
+    "away_team": "San Diego Padres",
+    "home_ml": "+1000",
+    "away_ml": "-3000",
+    "book": "fanduel"
+  },
+  "Kansas City Royals": {
+    "home_team": "Kansas City Royals",
+    "away_team": "San Francisco Giants",
+    "home_ml": "-102",
+    "away_ml": "-116",
+    "book": "fanduel"
+  },
+  "Milwaukee Brewers": {
+    "home_team": "Milwaukee Brewers",
+    "away_team": "New York Mets",
+    "home_ml": "-142",
+    "away_ml": "+120",
+    "book": "fanduel"
+  },
+  "Philadelphia Phillies": {
+    "home_team": "Philadelphia Phillies",
+    "away_team": "Los Angeles Dodgers",
+    "home_ml": "-104",
+    "away_ml": "-112",
+    "book": "fanduel"
+  },
+  "Chicago Cubs": {
+    "home_team": "Chicago Cubs",
+    "away_team": "Detroit Tigers",
+    "home_ml": "-124",
+    "away_ml": "+106",
+    "book": "fanduel"
+  },
+  "Texas Rangers": {
+    "home_team": "Texas Rangers",
+    "away_team": "Chicago White Sox",
+    "home_ml": "-112",
+    "away_ml": "-104",
+    "book": "fanduel"
+  },
+  "Houston Astros": {
+    "home_team": "Houston Astros",
+    "away_team": "Miami Marlins",
+    "home_ml": "-122",
+    "away_ml": "+104",
+    "book": "fanduel"
+  },
+  "Colorado Rockies": {
+    "home_team": "Colorado Rockies",
+    "away_team": "Washington Nationals",
+    "home_ml": "+112",
+    "away_ml": "-132",
+    "book": "fanduel"
+  },
+  "Los Angeles Angels": {
+    "home_team": "Los Angeles Angels",
+    "away_team": "St. Louis Cardinals",
+    "home_ml": "-118",
+    "away_ml": "+100",
+    "book": "fanduel"
+  },
+  "Arizona Diamondbacks": {
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Athletics",
+    "home_ml": "-118",
+    "away_ml": "+100",
+    "book": "fanduel"
+  },
+  "Seattle Mariners": {
+    "home_team": "Seattle Mariners",
+    "away_team": "Cincinnati Reds",
+    "home_ml": "-152",
+    "away_ml": "+128",
+    "book": "fanduel"
+  },
+  "Boston Red Sox": {
+    "home_team": "Boston Red Sox",
+    "away_team": "Baltimore Orioles",
+    "home_ml": "-142",
+    "away_ml": "+120",
+    "book": "fanduel"
+  }
+}
