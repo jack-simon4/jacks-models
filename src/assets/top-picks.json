@@ -17,43 +17,5 @@
     "gameTime": "2026-07-22T18:10:00Z",
     "gamePk": 824083,
     "rank": 1
-  },
-  {
-    "matchup": "Athletics @ Arizona Diamondbacks",
-    "awayTeam": "Athletics",
-    "homeTeam": "Arizona Diamondbacks",
-    "awayPitcher": "Gage Jump",
-    "homePitcher": "Merrill Kelly",
-    "pick": "Athletics",
-    "prediction": "Athletics -150",
-    "odds": "-150",
-    "winProb": 0.597,
-    "edge": 0.097,
-    "confidence": "Strong",
-    "predictedScore": "Athletics 4.9 \u2013 Arizona Diamondbacks 3.6",
-    "predictedHomeScore": 3.61,
-    "predictedAwayScore": 4.92,
-    "gameTime": "2026-07-22T19:40:00Z",
-    "gamePk": 825055,
-    "rank": 2
-  },
-  {
-    "matchup": "Baltimore Orioles @ Boston Red Sox",
-    "awayTeam": "Baltimore Orioles",
-    "homeTeam": "Boston Red Sox",
-    "awayPitcher": "Dean Kremer",
-    "homePitcher": "Jake Bennett",
-    "pick": "Boston Red Sox",
-    "prediction": "Boston Red Sox -122",
-    "odds": "-122",
-    "winProb": 0.596,
-    "edge": 0.096,
-    "confidence": "Strong",
-    "predictedScore": "Baltimore Orioles 2.9 \u2013 Boston Red Sox 4.2",
-    "predictedHomeScore": 4.23,
-    "predictedAwayScore": 2.93,
-    "gameTime": "2026-07-22T17:35:00Z",
-    "gamePk": 824735,
-    "rank": 3
   }
 ]

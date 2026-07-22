@@ -1,25 +1,4 @@
 {
-  "Seattle Mariners": {
-    "home_team": "Seattle Mariners",
-    "away_team": "Cincinnati Reds",
-    "home_ml": "+1400",
-    "away_ml": "-6000",
-    "book": "fanduel"
-  },
-  "Los Angeles Angels": {
-    "home_team": "Los Angeles Angels",
-    "away_team": "St. Louis Cardinals",
-    "home_ml": "+250",
-    "away_ml": "-340",
-    "book": "fanduel"
-  },
-  "Philadelphia Phillies": {
-    "home_team": "Philadelphia Phillies",
-    "away_team": "Los Angeles Dodgers",
-    "home_ml": "+102",
-    "away_ml": "-120",
-    "book": "fanduel"
-  },
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "Minnesota Twins",
@@ -27,11 +6,11 @@
     "away_ml": "+110",
     "book": "fanduel"
   },
-  "New York Yankees": {
-    "home_team": "New York Yankees",
-    "away_team": "Pittsburgh Pirates",
-    "home_ml": "-184",
-    "away_ml": "+154",
+  "Philadelphia Phillies": {
+    "home_team": "Philadelphia Phillies",
+    "away_team": "Los Angeles Dodgers",
+    "home_ml": "-122",
+    "away_ml": "-104",
     "book": "fanduel"
   },
   "Toronto Blue Jays": {
@@ -41,11 +20,18 @@
     "away_ml": "-110",
     "book": "fanduel"
   },
+  "New York Yankees": {
+    "home_team": "New York Yankees",
+    "away_team": "Pittsburgh Pirates",
+    "home_ml": "-215",
+    "away_ml": "+164",
+    "book": "fanduel"
+  },
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "Baltimore Orioles",
-    "home_ml": "-122",
-    "away_ml": "+104",
+    "home_ml": "+390",
+    "away_ml": "-590",
     "book": "fanduel"
   },
   "Atlanta Braves": {
@@ -58,8 +44,8 @@
   "Chicago Cubs": {
     "home_team": "Chicago Cubs",
     "away_team": "Detroit Tigers",
-    "home_ml": "-120",
-    "away_ml": "+102",
+    "home_ml": "-124",
+    "away_ml": "+106",
     "book": "fanduel"
   },
   "Texas Rangers": {
@@ -72,8 +58,8 @@
   "Houston Astros": {
     "home_team": "Houston Astros",
     "away_team": "Miami Marlins",
-    "home_ml": "-116",
-    "away_ml": "-102",
+    "home_ml": "-110",
+    "away_ml": "-106",
     "book": "fanduel"
   },
   "St. Louis Cardinals": {
