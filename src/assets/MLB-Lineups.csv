@@ -17,6 +17,15 @@ New York Yankees6,Jazz Chisholm Jr.
 New York Yankees7,Jose Caballero
 New York Yankees8,Ryan McMahon
 New York Yankees9,Austin Wells
+Baltimore Orioles1,Taylor Ward
+Baltimore Orioles2,Pete Alonso
+Baltimore Orioles3,Gunnar Henderson
+Baltimore Orioles4,Tyler O'Neill
+Baltimore Orioles5,Coby Mayo
+Baltimore Orioles6,Leody Taveras
+Baltimore Orioles7,Christian Encarnacion-Strand
+Baltimore Orioles8,Jackson Holliday
+Baltimore Orioles9,Sam Huff
 Boston Red Sox1,Masataka Yoshida
 Boston Red Sox2,Ceddanne Rafaela
 Boston Red Sox3,Wilyer Abreu
@@ -26,6 +35,15 @@ Boston Red Sox6,Romy Gonzalez
 Boston Red Sox7,Jarren Duran
 Boston Red Sox8,Connor Wong
 Boston Red Sox9,Tsung-Che Cheng
+San Francisco Giants1,Luis Arraez
+San Francisco Giants2,Bryce Eldridge
+San Francisco Giants3,Heliot Ramos
+San Francisco Giants4,Rafael Devers
+San Francisco Giants5,Casey Schmitt
+San Francisco Giants6,Jung Hoo Lee
+San Francisco Giants7,Willy Adames
+San Francisco Giants8,Drew Gilbert
+San Francisco Giants9,Drew Cavanaugh
 Kansas City Royals1,Carter Jensen
 Kansas City Royals2,Lane Thomas
 Kansas City Royals3,Vinnie Pasquantino
@@ -35,6 +53,24 @@ Kansas City Royals6,Isaac Collins
 Kansas City Royals7,Starling Marte
 Kansas City Royals8,Josh Rojas
 Kansas City Royals9,Andrew Velazquez
+New York Mets1,A.J. Ewing
+New York Mets2,Francisco Lindor
+New York Mets3,Bo Bichette
+New York Mets4,Carson Benge
+New York Mets5,Jorge Polanco
+New York Mets6,Jared Young
+New York Mets7,Marcus Semien
+New York Mets8,Brett Baty
+New York Mets9,Francisco Alvarez
+Milwaukee Brewers1,Christian Yelich
+Milwaukee Brewers2,Jackson Chourio
+Milwaukee Brewers3,Brice Turang
+Milwaukee Brewers4,William Contreras
+Milwaukee Brewers5,Garrett Mitchell
+Milwaukee Brewers6,Andrew Vaughn
+Milwaukee Brewers7,Jake Bauers
+Milwaukee Brewers8,Cooper Pratt
+Milwaukee Brewers9,Joey Ortiz
 Arizona Diamondbacks1,Ketel Marte
 Arizona Diamondbacks2,Geraldo Perdomo
 Arizona Diamondbacks3,Corbin Carroll
@@ -62,15 +98,6 @@ Atlanta Braves6,Mauricio Dubon
 Atlanta Braves7,Mike Yastrzemski
 Atlanta Braves8,Brewer Hicklen
 Atlanta Braves9,Jim Jarvis
-Baltimore Orioles1,Taylor Ward
-Baltimore Orioles2,Pete Alonso
-Baltimore Orioles3,Gunnar Henderson
-Baltimore Orioles4,Tyler O'Neill
-Baltimore Orioles5,Coby Mayo
-Baltimore Orioles6,Leody Taveras
-Baltimore Orioles7,Christian Encarnacion-Strand
-Baltimore Orioles8,Jackson Holliday
-Baltimore Orioles9,Chadwick Tromp
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Seiya Suzuki
 Chicago Cubs3,Alex Bregman
@@ -161,15 +188,6 @@ Miami Marlins6,Griffin Conine
 Miami Marlins7,Jakob Marsee
 Miami Marlins8,Javier Sanoja
 Miami Marlins9,Joe Mack
-Milwaukee Brewers1,Jackson Chourio
-Milwaukee Brewers2,Brice Turang
-Milwaukee Brewers3,William Contreras
-Milwaukee Brewers4,Andrew Vaughn
-Milwaukee Brewers5,Garrett Mitchell
-Milwaukee Brewers6,Gary Sanchez
-Milwaukee Brewers7,Luis Lara
-Milwaukee Brewers8,Cooper Pratt
-Milwaukee Brewers9,Joey Ortiz
 Minnesota Twins1,Austin Martin
 Minnesota Twins2,Byron Buxton
 Minnesota Twins3,Ryan Jeffers
@@ -179,15 +197,6 @@ Minnesota Twins6,Victor Caratini
 Minnesota Twins7,Kody Clemens
 Minnesota Twins8,Luke Keaschall
 Minnesota Twins9,Ryan Kreidler
-New York Mets1,A.J. Ewing
-New York Mets2,Juan Soto
-New York Mets3,Bo Bichette
-New York Mets4,Francisco Lindor
-New York Mets5,Carson Benge
-New York Mets6,Luis Robert Jr.
-New York Mets7,Jared Young
-New York Mets8,Marcus Semien
-New York Mets9,Luis Torrens
 Philadelphia Phillies1,Trea Turner
 Philadelphia Phillies2,Kyle Schwarber
 Philadelphia Phillies3,Bryce Harper
@@ -206,15 +215,6 @@ San Diego Padres6,Luis Campusano
 San Diego Padres7,Gavin Sheets
 San Diego Padres8,Xander Bogaerts
 San Diego Padres9,Luis Rengifo
-San Francisco Giants1,Heliot Ramos
-San Francisco Giants2,Bryce Eldridge
-San Francisco Giants3,Casey Schmitt
-San Francisco Giants4,Rafael Devers
-San Francisco Giants5,Willy Adames
-San Francisco Giants6,Jung Hoo Lee
-San Francisco Giants7,Jesus Rodriguez
-San Francisco Giants8,Drew Gilbert
-San Francisco Giants9,Christian Koss
 Seattle Mariners1,Cole Young
 Seattle Mariners2,Randy Arozarena
 Seattle Mariners3,Dominic Canzone

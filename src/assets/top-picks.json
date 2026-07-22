@@ -1,24 +1,5 @@
 [
   {
-    "matchup": "San Francisco Giants @ Kansas City Royals",
-    "awayTeam": "San Francisco Giants",
-    "homeTeam": "Kansas City Royals",
-    "awayPitcher": "Landen Roupp",
-    "homePitcher": "Seth Lugo",
-    "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -124",
-    "odds": "-124",
-    "winProb": 0.612,
-    "edge": 0.112,
-    "confidence": "Strong",
-    "predictedScore": "San Francisco Giants 4.8 \u2013 Kansas City Royals 3.3",
-    "predictedHomeScore": 3.32,
-    "predictedAwayScore": 4.83,
-    "gameTime": "2026-07-22T18:10:00Z",
-    "gamePk": 824083,
-    "rank": 1
-  },
-  {
     "matchup": "Baltimore Orioles @ Boston Red Sox",
     "awayTeam": "Baltimore Orioles",
     "homeTeam": "Boston Red Sox",
@@ -35,6 +16,25 @@
     "predictedAwayScore": 2.93,
     "gameTime": "2026-07-22T17:35:00Z",
     "gamePk": 824735,
+    "rank": 1
+  },
+  {
+    "matchup": "San Francisco Giants @ Kansas City Royals",
+    "awayTeam": "San Francisco Giants",
+    "homeTeam": "Kansas City Royals",
+    "awayPitcher": "Landen Roupp",
+    "homePitcher": "Seth Lugo",
+    "pick": "San Francisco Giants",
+    "prediction": "San Francisco Giants -124",
+    "odds": "-124",
+    "winProb": 0.589,
+    "edge": 0.089,
+    "confidence": "Strong",
+    "predictedScore": "San Francisco Giants 4.5 \u2013 Kansas City Royals 3.3",
+    "predictedHomeScore": 3.32,
+    "predictedAwayScore": 4.52,
+    "gameTime": "2026-07-22T18:10:00Z",
+    "gamePk": 824083,
     "rank": 2
   }
 ]
