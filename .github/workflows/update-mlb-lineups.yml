@@ -37,7 +37,16 @@ jobs:
         run: |
           python scripts/fetch_mlb_lineups.py
           python scripts/fetch_mlb_player_props.py
-          python scripts/generate_top_picks.py
+
+      - name: Fetch Vegas moneylines
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python scripts/fetch_mlb_odds.py
+
+      - name: Generate top picks
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
+        run: python scripts/generate_top_picks.py
 
       - name: Update completed game results in Firestore
         env:
@@ -54,7 +63,7 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv src/assets/top-picks.json
+          git add src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv src/assets/top-picks.json src/assets/MLB-Odds.json
           if git diff --staged --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
             echo "No lineup changes — nothing to commit."

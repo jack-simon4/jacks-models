@@ -47,8 +47,11 @@ LG_AVG = {
     'wRops': 1.0, 'wLops': 1.0,
 }
 
-# Win-probability logistic scale factor (1 run diff ≈ 58% win probability)
-WIN_PROB_K = 0.45
+# Win-probability logistic scale factor.
+# Calibrated to MLB empirical data: 1-run expected advantage ≈ 57% actual win rate.
+# K=0.30 gives sigmoid(0.30*1) ≈ 0.574, matching that baseline.
+# Previous value of 0.45 was systematically overconfident.
+WIN_PROB_K = 0.30
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -92,13 +95,12 @@ def prob_to_american(prob: float) -> str:
 
 
 def confidence_label(edge: float):
-    """edge = win_prob - 0.5.  Returns None if below minimum threshold."""
+    """edge = win_prob - 0.5.  Returns None if below minimum threshold.
+    Lean tier removed — too low a bar to be meaningful predictors."""
     if edge >= 0.14:
         return 'Elite'
     if edge >= 0.08:
         return 'Strong'
-    if edge >= 0.03:
-        return 'Lean'
     return None
 
 
@@ -150,6 +152,39 @@ def save_picks_to_firestore(picks: list):
 
 
 # ── Data loaders ───────────────────────────────────────────────────────────
+def load_vegas_odds() -> dict:
+    """Load pre-fetched Vegas moneylines from MLB-Odds.json.
+    Returns {home_team_name: {'home_ml': '-145', 'away_ml': '+125', ...}}."""
+    odds_path = os.path.join(ASSETS, 'MLB-Odds.json')
+    if not os.path.exists(odds_path):
+        print('[TopPicks] MLB-Odds.json not found — no Vegas odds available.')
+        return {}
+    try:
+        with open(odds_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        print(f'[TopPicks] Loaded Vegas odds for {len(data)} games.')
+        return data
+    except Exception as exc:
+        print(f'[TopPicks] Failed to load MLB-Odds.json: {exc}')
+        return {}
+
+
+def vegas_favorite(odds_entry: dict | None, home_team: str, away_team: str) -> str | None:
+    """Return the Vegas-favored team name, or None if no line available."""
+    if not odds_entry:
+        return None
+    try:
+        home_ml = int(odds_entry['home_ml'])
+        away_ml = int(odds_entry['away_ml'])
+    except (KeyError, ValueError, TypeError):
+        return None
+    if home_ml < away_ml:
+        return home_team
+    elif away_ml < home_ml:
+        return away_team
+    return None  # pick'em / exactly equal
+
+
 def load_pitchers() -> dict:
     """Returns {ascii_name: stat_dict}."""
     df = pd.read_csv(os.path.join(ASSETS, 'MLB-Pitchers.csv'), encoding='utf-8')
@@ -330,10 +365,11 @@ def generate_top_picks():
     today = date.today().strftime('%m/%d/%Y')
     print(f'[TopPicks] Generating picks for {today}')
 
-    pitchers  = load_pitchers()
-    hitters   = load_hitters()
-    ballparks = load_ballparks()
-    lineups   = load_lineups()
+    pitchers    = load_pitchers()
+    hitters     = load_hitters()
+    ballparks   = load_ballparks()
+    lineups     = load_lineups()
+    vegas_odds  = load_vegas_odds()
 
     try:
         schedule = statsapi.schedule(date=today, sportId=1)
@@ -385,7 +421,24 @@ def generate_top_picks():
             print(f'    Edge {edge:.3f} below threshold — skipping.')
             continue
 
-        odds = prob_to_american(pick_wp)
+        # Vegas consensus filter: only keep picks where Vegas agrees on winner.
+        # If no odds are available, skip the consensus check and keep the pick.
+        game_odds = vegas_odds.get(home_name)
+        vfav = vegas_favorite(game_odds, home_name, away_name)
+        if vfav is not None and vfav != pick_team:
+            print(f'    Model favors {pick_team} but Vegas favors {vfav} — skipping (no consensus).')
+            continue
+
+        # Use real Vegas odds if available; fall back to model-derived odds
+        if game_odds:
+            if pick_team == home_name:
+                odds = game_odds['home_ml']
+            else:
+                odds = game_odds['away_ml']
+            print(f'    Using Vegas odds: {pick_team} {odds}')
+        else:
+            odds = prob_to_american(pick_wp)
+            print(f'    No Vegas line — using model odds: {pick_team} {odds}')
 
         picks.append({
             'matchup':             f'{away_name} @ {home_name}',

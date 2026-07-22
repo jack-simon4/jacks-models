@@ -68,67 +68,6 @@
   color: #ffffff;
   font-size: 14px;
 }
-.wc-banner {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  width: 90%;
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 18px 24px;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-  border: 2px solid gold;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
-  flex-wrap: wrap;
-}
-
-.wc-badge {
-  background: gold;
-  color: #111;
-  font-size: 11px;
-  font-weight: 800;
-  padding: 3px 8px;
-  border-radius: 6px;
-  letter-spacing: 1px;
-  white-space: nowrap;
-  align-self: flex-start;
-}
-
-.wc-text {
-  flex: 1;
-  min-width: 180px;
-}
-
-.wc-text h2 {
-  color: #ffffff;
-  font-size: 20px;
-  margin: 0 0 4px;
-}
-
-.wc-text p {
-  color: #aaa;
-  font-size: 14px;
-  margin: 0;
-}
-
-.wc-btn {
-  padding: 10px 24px;
-  background: linear-gradient(135deg, #b8860b, #ffd700);
-  border: none;
-  border-radius: 25px;
-  color: #111;
-  font-weight: 700;
-  font-size: 14px;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: 0.2s;
-}
-
-.wc-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
-}
 
 .top-picks-container {
   width: 90%;
