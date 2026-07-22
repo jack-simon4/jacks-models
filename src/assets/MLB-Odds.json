@@ -1,11 +1,4 @@
 {
-  "Arizona Diamondbacks": {
-    "home_team": "Arizona Diamondbacks",
-    "away_team": "Athletics",
-    "home_ml": "-116",
-    "away_ml": "-102",
-    "book": "fanduel"
-  },
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "Pittsburgh Pirates",
@@ -39,6 +32,13 @@
     "away_team": "Washington Nationals",
     "home_ml": "+112",
     "away_ml": "-132",
+    "book": "fanduel"
+  },
+  "Arizona Diamondbacks": {
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Athletics",
+    "home_ml": "-116",
+    "away_ml": "-102",
     "book": "fanduel"
   },
   "Seattle Mariners": {
