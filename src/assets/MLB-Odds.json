@@ -1,18 +1,4 @@
 {
-  "Cleveland Guardians": {
-    "home_team": "Cleveland Guardians",
-    "away_team": "Minnesota Twins",
-    "home_ml": "-130",
-    "away_ml": "+110",
-    "book": "fanduel"
-  },
-  "Philadelphia Phillies": {
-    "home_team": "Philadelphia Phillies",
-    "away_team": "Los Angeles Dodgers",
-    "home_ml": "-122",
-    "away_ml": "-104",
-    "book": "fanduel"
-  },
   "Toronto Blue Jays": {
     "home_team": "Toronto Blue Jays",
     "away_team": "Tampa Bay Rays",
@@ -23,15 +9,15 @@
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "Pittsburgh Pirates",
-    "home_ml": "-215",
-    "away_ml": "+164",
+    "home_ml": "-1400",
+    "away_ml": "+680",
     "book": "fanduel"
   },
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "Baltimore Orioles",
-    "home_ml": "+390",
-    "away_ml": "-590",
+    "home_ml": "+1700",
+    "away_ml": "-10000",
     "book": "fanduel"
   },
   "Atlanta Braves": {
@@ -41,25 +27,32 @@
     "away_ml": "+188",
     "book": "fanduel"
   },
-  "Chicago Cubs": {
-    "home_team": "Chicago Cubs",
-    "away_team": "Detroit Tigers",
-    "home_ml": "-124",
-    "away_ml": "+106",
-    "book": "fanduel"
-  },
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "Chicago White Sox",
-    "home_ml": "+104",
-    "away_ml": "-122",
+    "home_ml": "+144",
+    "away_ml": "-186",
+    "book": "fanduel"
+  },
+  "Chicago Cubs": {
+    "home_team": "Chicago Cubs",
+    "away_team": "Detroit Tigers",
+    "home_ml": "+420",
+    "away_ml": "-650",
     "book": "fanduel"
   },
   "Houston Astros": {
     "home_team": "Houston Astros",
     "away_team": "Miami Marlins",
-    "home_ml": "-110",
-    "away_ml": "-106",
+    "home_ml": "-132",
+    "away_ml": "+104",
+    "book": "fanduel"
+  },
+  "Cleveland Guardians": {
+    "home_team": "Cleveland Guardians",
+    "away_team": "Minnesota Twins",
+    "home_ml": "-130",
+    "away_ml": "+110",
     "book": "fanduel"
   },
   "St. Louis Cardinals": {
