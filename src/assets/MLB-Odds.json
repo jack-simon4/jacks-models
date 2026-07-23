@@ -1,16 +1,9 @@
 {
-  "Cleveland Guardians": {
-    "home_team": "Cleveland Guardians",
-    "away_team": "Minnesota Twins",
-    "home_ml": "-330",
-    "away_ml": "+240",
-    "book": "fanduel"
-  },
   "Toronto Blue Jays": {
     "home_team": "Toronto Blue Jays",
     "away_team": "Tampa Bay Rays",
-    "home_ml": "-102",
-    "away_ml": "-116",
+    "home_ml": "-520",
+    "away_ml": "+350",
     "book": "fanduel"
   },
   "St. Louis Cardinals": {
@@ -23,8 +16,8 @@
   "Detroit Tigers": {
     "home_team": "Detroit Tigers",
     "away_team": "Kansas City Royals",
-    "home_ml": "-245",
-    "away_ml": "+200",
+    "home_ml": "-255",
+    "away_ml": "+210",
     "book": "fanduel"
   },
   "Milwaukee Brewers": {
@@ -55,6 +48,13 @@
     "away_ml": "+102",
     "book": "fanduel"
   },
+  "Baltimore Orioles": {
+    "home_team": "Baltimore Orioles",
+    "away_team": "Atlanta Braves",
+    "home_ml": "-116",
+    "away_ml": "-102",
+    "book": "fanduel"
+  },
   "Tampa Bay Rays": {
     "home_team": "Tampa Bay Rays",
     "away_team": "Cleveland Guardians",
@@ -72,8 +72,8 @@
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "San Diego Padres",
-    "home_ml": "-142",
-    "away_ml": "+120",
+    "home_ml": "-136",
+    "away_ml": "+116",
     "book": "fanduel"
   },
   "Boston Red Sox": {
