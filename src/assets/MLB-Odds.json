@@ -2,15 +2,15 @@
   "Atlanta Braves": {
     "home_team": "Atlanta Braves",
     "away_team": "San Diego Padres",
-    "home_ml": "-235",
-    "away_ml": "+194",
+    "home_ml": "-260",
+    "away_ml": "+215",
     "book": "fanduel"
   },
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "Minnesota Twins",
-    "home_ml": "-130",
-    "away_ml": "+110",
+    "home_ml": "-142",
+    "away_ml": "+120",
     "book": "fanduel"
   },
   "Toronto Blue Jays": {
@@ -23,15 +23,15 @@
   "St. Louis Cardinals": {
     "home_team": "St. Louis Cardinals",
     "away_team": "Arizona Diamondbacks",
-    "home_ml": "-126",
-    "away_ml": "+108",
+    "home_ml": "-120",
+    "away_ml": "+102",
     "book": "fanduel"
   },
   "Detroit Tigers": {
     "home_team": "Detroit Tigers",
     "away_team": "Kansas City Royals",
-    "home_ml": "-205",
-    "away_ml": "+172",
+    "home_ml": "-215",
+    "away_ml": "+180",
     "book": "fanduel"
   }
 }
