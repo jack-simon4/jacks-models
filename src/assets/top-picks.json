@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "matchup": "San Diego Padres @ Atlanta Braves",
+    "awayTeam": "San Diego Padres",
+    "homeTeam": "Atlanta Braves",
+    "awayPitcher": "Kyle Hart",
+    "homePitcher": "Chris Sale",
+    "pick": "Atlanta Braves",
+    "prediction": "Atlanta Braves -155",
+    "odds": "-155",
+    "winProb": 0.608,
+    "edge": 0.108,
+    "confidence": "Strong",
+    "predictedScore": "San Diego Padres 3.7 \u2013 Atlanta Braves 5.2",
+    "predictedHomeScore": 5.17,
+    "predictedAwayScore": 3.71,
+    "gameTime": "2026-07-23T16:15:00Z",
+    "gamePk": 824893,
+    "rank": 1
+  }
+]
