@@ -9,22 +9,22 @@
   "Pittsburgh Pirates": {
     "home_team": "Pittsburgh Pirates",
     "away_team": "Chicago Cubs",
-    "home_ml": "-134",
-    "away_ml": "+116",
+    "home_ml": "-132",
+    "away_ml": "+112",
     "book": "fanduel"
   },
   "Detroit Tigers": {
     "home_team": "Detroit Tigers",
     "away_team": "Kansas City Royals",
-    "home_ml": "-184",
-    "away_ml": "+154",
+    "home_ml": "-178",
+    "away_ml": "+150",
     "book": "fanduel"
   },
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Arizona Diamondbacks",
-    "home_ml": "-130",
-    "away_ml": "+110",
+    "home_ml": "-134",
+    "away_ml": "+116",
     "book": "fanduel"
   },
   "Philadelphia Phillies": {
@@ -44,8 +44,8 @@
   "Tampa Bay Rays": {
     "home_team": "Tampa Bay Rays",
     "away_team": "Cleveland Guardians",
-    "home_ml": "-130",
-    "away_ml": "+110",
+    "home_ml": "-134",
+    "away_ml": "+116",
     "book": "fanduel"
   },
   "New York Mets": {
@@ -65,8 +65,8 @@
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "Toronto Blue Jays",
-    "home_ml": "-112",
-    "away_ml": "-104",
+    "home_ml": "-110",
+    "away_ml": "-106",
     "book": "fanduel"
   },
   "Chicago White Sox": {
@@ -86,8 +86,8 @@
   "Minnesota Twins": {
     "home_team": "Minnesota Twins",
     "away_team": "Athletics",
-    "home_ml": "-144",
-    "away_ml": "+122",
+    "home_ml": "-162",
+    "away_ml": "+136",
     "book": "fanduel"
   },
   "St. Louis Cardinals": {
@@ -100,8 +100,8 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Los Angeles Angels",
-    "home_ml": "-120",
-    "away_ml": "+102",
+    "home_ml": "-126",
+    "away_ml": "+108",
     "book": "fanduel"
   }
 }

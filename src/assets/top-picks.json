@@ -6,8 +6,8 @@
     "awayPitcher": "Grayson Rodriguez",
     "homePitcher": "Logan Webb",
     "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -120",
-    "odds": "-120",
+    "prediction": "San Francisco Giants -126",
+    "odds": "-126",
     "winProb": 0.627,
     "edge": 0.127,
     "confidence": "Strong",
@@ -36,24 +36,5 @@
     "gameTime": "2026-07-24T20:10:00Z",
     "gamePk": 823759,
     "rank": 2
-  },
-  {
-    "matchup": "Los Angeles Dodgers @ New York Mets",
-    "awayTeam": "Los Angeles Dodgers",
-    "homeTeam": "New York Mets",
-    "awayPitcher": "Roki Sasaki",
-    "homePitcher": "Sean Manaea",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -148",
-    "odds": "-148",
-    "winProb": 0.596,
-    "edge": 0.096,
-    "confidence": "Strong",
-    "predictedScore": "Los Angeles Dodgers 5.6 \u2013 New York Mets 4.3",
-    "predictedHomeScore": 4.25,
-    "predictedAwayScore": 5.55,
-    "gameTime": "2026-07-24T23:10:00Z",
-    "gamePk": 823601,
-    "rank": 3
   }
 ]
