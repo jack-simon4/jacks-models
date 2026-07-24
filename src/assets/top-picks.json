@@ -1,5 +1,24 @@
 [
   {
+    "matchup": "Colorado Rockies @ Milwaukee Brewers",
+    "awayTeam": "Colorado Rockies",
+    "homeTeam": "Milwaukee Brewers",
+    "awayPitcher": "Tomoyuki Sugano",
+    "homePitcher": "Shane Drohan",
+    "pick": "Milwaukee Brewers",
+    "prediction": "Milwaukee Brewers -215",
+    "odds": "-215",
+    "winProb": 0.651,
+    "edge": 0.151,
+    "confidence": "Elite",
+    "predictedScore": "Colorado Rockies 4.7 \u2013 Milwaukee Brewers 6.8",
+    "predictedHomeScore": 6.79,
+    "predictedAwayScore": 4.71,
+    "gameTime": "2026-07-24T20:10:00Z",
+    "gamePk": 823759,
+    "rank": 1
+  },
+  {
     "matchup": "Los Angeles Angels @ San Francisco Giants",
     "awayTeam": "Los Angeles Angels",
     "homeTeam": "San Francisco Giants",
@@ -16,25 +35,6 @@
     "predictedAwayScore": 2.92,
     "gameTime": "2026-07-25T02:15:00Z",
     "gamePk": 823196,
-    "rank": 1
-  },
-  {
-    "matchup": "Colorado Rockies @ Milwaukee Brewers",
-    "awayTeam": "Colorado Rockies",
-    "homeTeam": "Milwaukee Brewers",
-    "awayPitcher": "Tomoyuki Sugano",
-    "homePitcher": "Shane Drohan",
-    "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -215",
-    "odds": "-215",
-    "winProb": 0.623,
-    "edge": 0.123,
-    "confidence": "Strong",
-    "predictedScore": "Colorado Rockies 4.7 \u2013 Milwaukee Brewers 6.4",
-    "predictedHomeScore": 6.38,
-    "predictedAwayScore": 4.71,
-    "gameTime": "2026-07-24T20:10:00Z",
-    "gamePk": 823759,
     "rank": 2
   }
 ]
