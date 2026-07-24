@@ -1,11 +1,4 @@
 {
-  "St. Louis Cardinals": {
-    "home_team": "St. Louis Cardinals",
-    "away_team": "Cincinnati Reds",
-    "home_ml": "-164",
-    "away_ml": "+138",
-    "book": "fanduel"
-  },
   "Detroit Tigers": {
     "home_team": "Detroit Tigers",
     "away_team": "Kansas City Royals",
@@ -95,6 +88,13 @@
     "away_team": "Athletics",
     "home_ml": "-148",
     "away_ml": "+126",
+    "book": "fanduel"
+  },
+  "St. Louis Cardinals": {
+    "home_team": "St. Louis Cardinals",
+    "away_team": "Cincinnati Reds",
+    "home_ml": "-164",
+    "away_ml": "+138",
     "book": "fanduel"
   },
   "San Francisco Giants": {
