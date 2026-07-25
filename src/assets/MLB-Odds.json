@@ -1,11 +1,4 @@
 {
-  "Detroit Tigers": {
-    "home_team": "Detroit Tigers",
-    "away_team": "Kansas City Royals",
-    "home_ml": "-158",
-    "away_ml": "+124",
-    "book": "fanduel"
-  },
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Arizona Diamondbacks",
@@ -16,8 +9,8 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Los Angeles Angels",
-    "home_ml": "-130",
-    "away_ml": "+110",
+    "home_ml": "-110",
+    "away_ml": "-106",
     "book": "fanduel"
   },
   "Boston Red Sox": {
