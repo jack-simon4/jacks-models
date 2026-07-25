@@ -96,5 +96,12 @@
     "home_ml": "-108",
     "away_ml": "-108",
     "book": "fanduel"
+  },
+  "Detroit Tigers": {
+    "home_team": "Detroit Tigers",
+    "away_team": "Kansas City Royals",
+    "home_ml": "-184",
+    "away_ml": "+154",
+    "book": "fanduel"
   }
 }
