@@ -17,24 +17,5 @@
     "gameTime": "2026-07-25T22:40:00Z",
     "gamePk": 823355,
     "rank": 1
-  },
-  {
-    "matchup": "San Diego Padres @ Miami Marlins",
-    "awayTeam": "San Diego Padres",
-    "homeTeam": "Miami Marlins",
-    "awayPitcher": "JP Sears",
-    "homePitcher": "Eury P\u00e9rez",
-    "pick": "Miami Marlins",
-    "prediction": "Miami Marlins -134",
-    "odds": "-134",
-    "winProb": 0.603,
-    "edge": 0.103,
-    "confidence": "Strong",
-    "predictedScore": "San Diego Padres 3.5 \u2013 Miami Marlins 4.9",
-    "predictedHomeScore": 4.91,
-    "predictedAwayScore": 3.52,
-    "gameTime": "2026-07-25T20:10:00Z",
-    "gamePk": 823841,
-    "rank": 2
   }
 ]
