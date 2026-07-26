@@ -11,9 +11,9 @@
     "winProb": 0.775,
     "edge": 0.275,
     "confidence": "Elite",
-    "predictedScore": "Colorado Rockies 2.7 \u2013 Milwaukee Brewers 6.8",
-    "predictedHomeScore": 6.79,
-    "predictedAwayScore": 2.67,
+    "predictedScore": "Colorado Rockies 3.1 \u2013 Milwaukee Brewers 7.2",
+    "predictedHomeScore": 7.2,
+    "predictedAwayScore": 3.08,
     "gameTime": "2026-07-26T18:10:00Z",
     "gamePk": 823755,
     "rank": 1
@@ -36,5 +36,24 @@
     "gameTime": "2026-07-26T17:35:00Z",
     "gamePk": 822706,
     "rank": 2
+  },
+  {
+    "matchup": "Chicago Cubs @ Pittsburgh Pirates",
+    "awayTeam": "Chicago Cubs",
+    "homeTeam": "Pittsburgh Pirates",
+    "awayPitcher": "Jameson Taillon",
+    "homePitcher": "Braxton Ashcraft",
+    "pick": "Pittsburgh Pirates",
+    "prediction": "Pittsburgh Pirates -132",
+    "odds": "-132",
+    "winProb": 0.586,
+    "edge": 0.086,
+    "confidence": "Strong",
+    "predictedScore": "Chicago Cubs 4.2 \u2013 Pittsburgh Pirates 5.4",
+    "predictedHomeScore": 5.39,
+    "predictedAwayScore": 4.24,
+    "gameTime": "2026-07-26T17:35:00Z",
+    "gamePk": 823354,
+    "rank": 3
   }
 ]
