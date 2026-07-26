@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-25T12:56:48Z",
-  "today": "2026-07-25",
+  "generated": "2026-07-26T12:53:48Z",
+  "today": "2026-07-26",
   "upcoming": [],
   "recentResults": [
     {
@@ -22,8 +22,8 @@
       "round": "3rd Place",
       "homeTeam": "France",
       "awayTeam": "England",
-      "predictedHomeScore": 3.07,
-      "predictedAwayScore": 2.24,
+      "predictedHomeScore": 3.08,
+      "predictedAwayScore": 2.25,
       "homeWinProb": 0.669,
       "gameDate": "2026-07-18",
       "gameTime": "2026-07-18T21:00:00Z",
@@ -51,8 +51,8 @@
       "homeTeam": "France",
       "awayTeam": "Spain",
       "predictedHomeScore": 0.25,
-      "predictedAwayScore": 1.64,
-      "homeWinProb": 0.235,
+      "predictedAwayScore": 1.65,
+      "homeWinProb": 0.233,
       "gameDate": "2026-07-14",
       "gameTime": "2026-07-14T19:00:00Z",
       "status": "FINISHED",
