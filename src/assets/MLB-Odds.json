@@ -1,100 +1,93 @@
 {
-  "Tampa Bay Rays": {
-    "home_team": "Tampa Bay Rays",
-    "away_team": "Cleveland Guardians",
-    "home_ml": "-156",
-    "away_ml": "+122",
-    "book": "fanduel"
-  },
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Arizona Diamondbacks",
-    "home_ml": "+100",
-    "away_ml": "-118",
+    "home_ml": "-136",
+    "away_ml": "+106",
     "book": "fanduel"
   },
   "Baltimore Orioles": {
     "home_team": "Baltimore Orioles",
     "away_team": "Atlanta Braves",
-    "home_ml": "-106",
-    "away_ml": "-110",
+    "home_ml": "+300",
+    "away_ml": "-430",
     "book": "fanduel"
   },
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "Toronto Blue Jays",
-    "home_ml": "-142",
-    "away_ml": "+120",
+    "home_ml": "-1600",
+    "away_ml": "+750",
     "book": "fanduel"
   },
   "Pittsburgh Pirates": {
     "home_team": "Pittsburgh Pirates",
-    "away_team": "Chicago Cubs",
-    "home_ml": "-132",
-    "away_ml": "+112",
-    "book": "fanduel"
-  },
-  "Detroit Tigers": {
-    "home_team": "Detroit Tigers",
-    "away_team": "Kansas City Royals",
-    "home_ml": "-190",
-    "away_ml": "+160",
+    "away_team": "Arizona Diamondbacks",
+    "home_ml": "-120",
+    "away_ml": "+102",
     "book": "fanduel"
   },
   "New York Mets": {
     "home_team": "New York Mets",
-    "away_team": "Los Angeles Dodgers",
-    "home_ml": "+126",
-    "away_ml": "-148",
+    "away_team": "Atlanta Braves",
+    "home_ml": "+102",
+    "away_ml": "-120",
     "book": "fanduel"
   },
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "San Diego Padres",
-    "home_ml": "-124",
-    "away_ml": "+106",
+    "home_ml": "-410",
+    "away_ml": "+290",
+    "book": "fanduel"
+  },
+  "Detroit Tigers": {
+    "home_team": "Detroit Tigers",
+    "away_team": "Baltimore Orioles",
+    "home_ml": "-112",
+    "away_ml": "-104",
     "book": "fanduel"
   },
   "Minnesota Twins": {
     "home_team": "Minnesota Twins",
     "away_team": "Athletics",
-    "home_ml": "-156",
-    "away_ml": "+132",
+    "home_ml": "-5000",
+    "away_ml": "+1300",
     "book": "fanduel"
   },
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
-    "away_team": "Houston Astros",
-    "home_ml": "-110",
-    "away_ml": "-106",
+    "away_team": "New York Yankees",
+    "home_ml": "+126",
+    "away_ml": "-148",
     "book": "fanduel"
   },
   "Milwaukee Brewers": {
     "home_team": "Milwaukee Brewers",
     "away_team": "Colorado Rockies",
-    "home_ml": "-360",
-    "away_ml": "+290",
+    "home_ml": "-3500",
+    "away_ml": "+1060",
     "book": "fanduel"
   },
   "St. Louis Cardinals": {
     "home_team": "St. Louis Cardinals",
     "away_team": "Cincinnati Reds",
-    "home_ml": "-134",
-    "away_ml": "+116",
+    "home_ml": "-170",
+    "away_ml": "+132",
     "book": "fanduel"
   },
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "Seattle Mariners",
-    "home_ml": "-110",
-    "away_ml": "-106",
+    "home_ml": "+112",
+    "away_ml": "-132",
     "book": "fanduel"
   },
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
-    "away_team": "Los Angeles Angels",
-    "home_ml": "-104",
-    "away_ml": "-112",
+    "away_team": "Milwaukee Brewers",
+    "home_ml": "+106",
+    "away_ml": "-124",
     "book": "fanduel"
   },
   "Philadelphia Phillies": {
@@ -102,6 +95,27 @@
     "away_team": "New York Yankees",
     "home_ml": "-184",
     "away_ml": "+154",
+    "book": "fanduel"
+  },
+  "Cincinnati Reds": {
+    "home_team": "Cincinnati Reds",
+    "away_team": "Cleveland Guardians",
+    "home_ml": "-166",
+    "away_ml": "+140",
+    "book": "fanduel"
+  },
+  "Los Angeles Angels": {
+    "home_team": "Los Angeles Angels",
+    "away_team": "Houston Astros",
+    "home_ml": "+104",
+    "away_ml": "-122",
+    "book": "fanduel"
+  },
+  "Athletics": {
+    "home_team": "Athletics",
+    "away_team": "Boston Red Sox",
+    "home_ml": "+142",
+    "away_ml": "-168",
     "book": "fanduel"
   }
 }

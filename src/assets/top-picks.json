@@ -6,8 +6,8 @@
     "awayPitcher": "Kyle Freeland",
     "homePitcher": "Jacob Misiorowski",
     "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -360",
-    "odds": "-360",
+    "prediction": "Milwaukee Brewers -3500",
+    "odds": "-3500",
     "winProb": 0.775,
     "edge": 0.275,
     "confidence": "Elite",
@@ -19,33 +19,14 @@
     "rank": 1
   },
   {
-    "matchup": "Arizona Diamondbacks @ Washington Nationals",
-    "awayTeam": "Arizona Diamondbacks",
-    "homeTeam": "Washington Nationals",
-    "awayPitcher": "Kohl Drake",
-    "homePitcher": "Miles Mikolas",
-    "pick": "Arizona Diamondbacks",
-    "prediction": "Arizona Diamondbacks -118",
-    "odds": "-118",
-    "winProb": 0.632,
-    "edge": 0.132,
-    "confidence": "Strong",
-    "predictedScore": "Arizona Diamondbacks 6.1 \u2013 Washington Nationals 4.3",
-    "predictedHomeScore": 4.34,
-    "predictedAwayScore": 6.15,
-    "gameTime": "2026-07-26T17:35:00Z",
-    "gamePk": 822706,
-    "rank": 2
-  },
-  {
     "matchup": "Chicago Cubs @ Pittsburgh Pirates",
     "awayTeam": "Chicago Cubs",
     "homeTeam": "Pittsburgh Pirates",
     "awayPitcher": "Jameson Taillon",
     "homePitcher": "Braxton Ashcraft",
     "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -132",
-    "odds": "-132",
+    "prediction": "Pittsburgh Pirates -120",
+    "odds": "-120",
     "winProb": 0.586,
     "edge": 0.086,
     "confidence": "Strong",
@@ -54,6 +35,6 @@
     "predictedAwayScore": 4.24,
     "gameTime": "2026-07-26T17:35:00Z",
     "gamePk": 823354,
-    "rank": 3
+    "rank": 2
   }
 ]
