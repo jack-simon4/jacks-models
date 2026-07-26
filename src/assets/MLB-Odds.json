@@ -2,8 +2,8 @@
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "New York Yankees",
-    "home_ml": "-210",
-    "away_ml": "+176",
+    "home_ml": "-650",
+    "away_ml": "+420",
     "book": "fanduel"
   },
   "Texas Rangers": {
@@ -51,15 +51,15 @@
   "Cincinnati Reds": {
     "home_team": "Cincinnati Reds",
     "away_team": "Cleveland Guardians",
-    "home_ml": "-166",
-    "away_ml": "+140",
+    "home_ml": "-174",
+    "away_ml": "+146",
     "book": "fanduel"
   },
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "New York Yankees",
-    "home_ml": "+126",
-    "away_ml": "-148",
+    "home_ml": "+120",
+    "away_ml": "-142",
     "book": "fanduel"
   },
   "Los Angeles Angels": {
