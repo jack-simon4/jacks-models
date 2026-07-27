@@ -76,6 +76,13 @@
     "away_ml": "-132",
     "book": "fanduel"
   },
+  "Tampa Bay Rays": {
+    "home_team": "Tampa Bay Rays",
+    "away_team": "Texas Rangers",
+    "home_ml": "-178",
+    "away_ml": "+150",
+    "book": "fanduel"
+  },
   "Minnesota Twins": {
     "home_team": "Minnesota Twins",
     "away_team": "Kansas City Royals",
