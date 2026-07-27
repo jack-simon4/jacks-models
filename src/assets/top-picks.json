@@ -36,24 +36,5 @@
     "gameTime": "2026-07-27T23:40:00Z",
     "gamePk": 824570,
     "rank": 2
-  },
-  {
-    "matchup": "Houston Astros @ Los Angeles Angels",
-    "awayTeam": "Houston Astros",
-    "homeTeam": "Los Angeles Angels",
-    "awayPitcher": "Tatsuya Imai",
-    "homePitcher": "Walbert Ure\u00f1a",
-    "pick": "Los Angeles Angels",
-    "prediction": "Los Angeles Angels -108",
-    "odds": "-108",
-    "winProb": 0.603,
-    "edge": 0.103,
-    "confidence": "Strong",
-    "predictedScore": "Houston Astros 2.5 \u2013 Los Angeles Angels 3.9",
-    "predictedHomeScore": 3.91,
-    "predictedAwayScore": 2.51,
-    "gameTime": "2026-07-28T01:38:00Z",
-    "gamePk": 824001,
-    "rank": 3
   }
 ]

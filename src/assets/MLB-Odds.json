@@ -1,11 +1,4 @@
 {
-  "Pittsburgh Pirates": {
-    "home_team": "Pittsburgh Pirates",
-    "away_team": "Arizona Diamondbacks",
-    "home_ml": "-112",
-    "away_ml": "-104",
-    "book": "fanduel"
-  },
   "Detroit Tigers": {
     "home_team": "Detroit Tigers",
     "away_team": "Baltimore Orioles",
@@ -18,6 +11,13 @@
     "away_team": "Philadelphia Phillies",
     "home_ml": "-108",
     "away_ml": "-108",
+    "book": "fanduel"
+  },
+  "Pittsburgh Pirates": {
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "Arizona Diamondbacks",
+    "home_ml": "-112",
+    "away_ml": "-104",
     "book": "fanduel"
   },
   "Washington Nationals": {
@@ -34,19 +34,19 @@
     "away_ml": "-162",
     "book": "fanduel"
   },
-  "Cincinnati Reds": {
-    "home_team": "Cincinnati Reds",
-    "away_team": "Cleveland Guardians",
-    "home_ml": "+112",
-    "away_ml": "-132",
-    "book": "fanduel"
-  },
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "New York Yankees",
     "home_ml": "+114",
     "away_ml": "-134",
     "book": "fanduel"
+  },
+  "Cincinnati Reds": {
+    "home_team": "Cincinnati Reds",
+    "away_team": "Cleveland Guardians",
+    "home_ml": "+112",
+    "away_ml": "-135",
+    "book": "draftkings"
   },
   "St. Louis Cardinals": {
     "home_team": "St. Louis Cardinals",
