@@ -2,22 +2,22 @@
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "Seattle Mariners",
-    "home_ml": "+112",
-    "away_ml": "-132",
+    "home_ml": "+114",
+    "away_ml": "-134",
     "book": "fanduel"
   },
   "Pittsburgh Pirates": {
     "home_team": "Pittsburgh Pirates",
     "away_team": "Arizona Diamondbacks",
-    "home_ml": "-120",
-    "away_ml": "+102",
+    "home_ml": "-124",
+    "away_ml": "+106",
     "book": "fanduel"
   },
   "Detroit Tigers": {
     "home_team": "Detroit Tigers",
     "away_team": "Baltimore Orioles",
-    "home_ml": "-112",
-    "away_ml": "-104",
+    "home_ml": "-116",
+    "away_ml": "-102",
     "book": "fanduel"
   },
   "Miami Marlins": {
@@ -58,8 +58,8 @@
   "St. Louis Cardinals": {
     "home_team": "St. Louis Cardinals",
     "away_team": "Chicago Cubs",
-    "home_ml": "-104",
-    "away_ml": "-112",
+    "home_ml": "-106",
+    "away_ml": "-110",
     "book": "fanduel"
   },
   "Los Angeles Angels": {
