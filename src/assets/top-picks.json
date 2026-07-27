@@ -19,30 +19,11 @@
     "rank": 1
   },
   {
-    "matchup": "New York Yankees @ Chicago White Sox",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Chicago White Sox",
-    "awayPitcher": "Max Fried",
-    "homePitcher": "Noah Schultz",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -146",
-    "odds": "-146",
-    "winProb": 0.624,
-    "edge": 0.124,
-    "confidence": "Strong",
-    "predictedScore": "New York Yankees 5.0 \u2013 Chicago White Sox 3.4",
-    "predictedHomeScore": 3.35,
-    "predictedAwayScore": 5.04,
-    "gameTime": "2026-07-27T23:40:00Z",
-    "gamePk": 824570,
-    "rank": 2
-  },
-  {
     "matchup": "Toronto Blue Jays @ Washington Nationals",
     "awayTeam": "Toronto Blue Jays",
     "homeTeam": "Washington Nationals",
     "awayPitcher": "Max Scherzer",
-    "homePitcher": "Andrew Alvarez",
+    "homePitcher": "Eddy Yean",
     "pick": "Washington Nationals",
     "prediction": "Washington Nationals -122",
     "odds": "-122",
@@ -54,6 +35,25 @@
     "predictedAwayScore": 4.66,
     "gameTime": "2026-07-27T22:45:00Z",
     "gamePk": 822705,
+    "rank": 2
+  },
+  {
+    "matchup": "New York Yankees @ Chicago White Sox",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Chicago White Sox",
+    "awayPitcher": "Max Fried",
+    "homePitcher": "Noah Schultz",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -146",
+    "odds": "-146",
+    "winProb": 0.599,
+    "edge": 0.099,
+    "confidence": "Strong",
+    "predictedScore": "New York Yankees 5.0 \u2013 Chicago White Sox 3.7",
+    "predictedHomeScore": 3.7,
+    "predictedAwayScore": 5.04,
+    "gameTime": "2026-07-27T23:40:00Z",
+    "gamePk": 824570,
     "rank": 3
   }
 ]
