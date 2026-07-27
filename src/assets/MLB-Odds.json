@@ -1,11 +1,4 @@
 {
-  "Texas Rangers": {
-    "home_team": "Texas Rangers",
-    "away_team": "Seattle Mariners",
-    "home_ml": "-280",
-    "away_ml": "+210",
-    "book": "fanduel"
-  },
   "Pittsburgh Pirates": {
     "home_team": "Pittsburgh Pirates",
     "away_team": "Arizona Diamondbacks",
