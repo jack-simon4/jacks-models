@@ -27,13 +27,6 @@
     "away_ml": "+116",
     "book": "fanduel"
   },
-  "Washington Nationals": {
-    "home_team": "Washington Nationals",
-    "away_team": "Toronto Blue Jays",
-    "home_ml": "+106",
-    "away_ml": "-124",
-    "book": "fanduel"
-  },
   "Cincinnati Reds": {
     "home_team": "Cincinnati Reds",
     "away_team": "Cleveland Guardians",
@@ -60,6 +53,13 @@
     "away_team": "Chicago Cubs",
     "home_ml": "-104",
     "away_ml": "-112",
+    "book": "fanduel"
+  },
+  "Washington Nationals": {
+    "home_team": "Washington Nationals",
+    "away_team": "Toronto Blue Jays",
+    "home_ml": "+106",
+    "away_ml": "-124",
     "book": "fanduel"
   },
   "Los Angeles Angels": {

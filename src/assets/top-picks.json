@@ -38,6 +38,25 @@
     "rank": 2
   },
   {
+    "matchup": "Boston Red Sox @ Athletics",
+    "awayTeam": "Boston Red Sox",
+    "homeTeam": "Athletics",
+    "awayPitcher": "Jake Bennett",
+    "homePitcher": "Gage Jump",
+    "pick": "Boston Red Sox",
+    "prediction": "Boston Red Sox -142",
+    "odds": "-142",
+    "winProb": 0.591,
+    "edge": 0.091,
+    "confidence": "Strong",
+    "predictedScore": "Boston Red Sox 4.6 \u2013 Athletics 3.4",
+    "predictedHomeScore": 3.37,
+    "predictedAwayScore": 4.59,
+    "gameTime": "2026-07-29T01:40:00Z",
+    "gamePk": 824976,
+    "rank": 3
+  },
+  {
     "matchup": "Texas Rangers @ Tampa Bay Rays",
     "awayTeam": "Texas Rangers",
     "homeTeam": "Tampa Bay Rays",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 4.1,
     "gameTime": "2026-07-28T22:40:00Z",
     "gamePk": 822949,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Kansas City Royals @ Minnesota Twins",
@@ -73,6 +92,6 @@
     "predictedAwayScore": 4.12,
     "gameTime": "2026-07-28T23:40:00Z",
     "gamePk": 823676,
-    "rank": 4
+    "rank": 5
   }
 ]
