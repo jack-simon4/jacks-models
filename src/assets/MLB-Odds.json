@@ -41,13 +41,6 @@
     "away_ml": "-134",
     "book": "fanduel"
   },
-  "Cincinnati Reds": {
-    "home_team": "Cincinnati Reds",
-    "away_team": "Cleveland Guardians",
-    "home_ml": "+112",
-    "away_ml": "-135",
-    "book": "draftkings"
-  },
   "St. Louis Cardinals": {
     "home_team": "St. Louis Cardinals",
     "away_team": "Chicago Cubs",
@@ -76,6 +69,13 @@
     "away_ml": "-132",
     "book": "fanduel"
   },
+  "Cincinnati Reds": {
+    "home_team": "Cincinnati Reds",
+    "away_team": "Cleveland Guardians",
+    "home_ml": "-146",
+    "away_ml": "+124",
+    "book": "fanduel"
+  },
   "Tampa Bay Rays": {
     "home_team": "Tampa Bay Rays",
     "away_team": "Texas Rangers",
@@ -93,8 +93,8 @@
   "San Diego Padres": {
     "home_team": "San Diego Padres",
     "away_team": "Colorado Rockies",
-    "home_ml": "-174",
-    "away_ml": "+146",
+    "home_ml": "-172",
+    "away_ml": "+144",
     "book": "fanduel"
   }
 }
