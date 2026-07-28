@@ -2,22 +2,22 @@
   "Cincinnati Reds": {
     "home_team": "Cincinnati Reds",
     "away_team": "Cleveland Guardians",
-    "home_ml": "+118",
-    "away_ml": "-138",
+    "home_ml": "+110",
+    "away_ml": "-130",
     "book": "fanduel"
   },
   "Pittsburgh Pirates": {
     "home_team": "Pittsburgh Pirates",
     "away_team": "Arizona Diamondbacks",
-    "home_ml": "-110",
-    "away_ml": "-106",
+    "home_ml": "-116",
+    "away_ml": "-102",
     "book": "fanduel"
   },
   "Detroit Tigers": {
     "home_team": "Detroit Tigers",
     "away_team": "Baltimore Orioles",
-    "home_ml": "-142",
-    "away_ml": "+120",
+    "home_ml": "-144",
+    "away_ml": "+122",
     "book": "fanduel"
   },
   "Miami Marlins": {
@@ -37,8 +37,8 @@
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Toronto Blue Jays",
-    "home_ml": "-136",
-    "away_ml": "+116",
+    "home_ml": "-142",
+    "away_ml": "+120",
     "book": "fanduel"
   },
   "New York Mets": {
@@ -51,8 +51,8 @@
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "New York Yankees",
-    "home_ml": "+114",
-    "away_ml": "-134",
+    "home_ml": "+110",
+    "away_ml": "-130",
     "book": "fanduel"
   },
   "Minnesota Twins": {
@@ -79,29 +79,29 @@
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Boston Red Sox",
-    "home_ml": "+122",
-    "away_ml": "-144",
+    "home_ml": "+124",
+    "away_ml": "-146",
     "book": "fanduel"
   },
   "San Diego Padres": {
     "home_team": "San Diego Padres",
     "away_team": "Colorado Rockies",
-    "home_ml": "-180",
-    "away_ml": "+152",
+    "home_ml": "-196",
+    "away_ml": "+164",
     "book": "fanduel"
   },
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Milwaukee Brewers",
-    "home_ml": "+114",
-    "away_ml": "-134",
+    "home_ml": "+126",
+    "away_ml": "-148",
     "book": "fanduel"
   },
   "Los Angeles Dodgers": {
     "home_team": "Los Angeles Dodgers",
     "away_team": "Seattle Mariners",
-    "home_ml": "-184",
-    "away_ml": "+154",
+    "home_ml": "-190",
+    "away_ml": "+160",
     "book": "fanduel"
   }
 }
