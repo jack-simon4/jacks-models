@@ -98,6 +98,15 @@ Atlanta Braves6,Mauricio Dubon
 Atlanta Braves7,Mike Yastrzemski
 Atlanta Braves8,Austin Riley
 Atlanta Braves9,Jim Jarvis
+New York Mets1,Francisco Lindor
+New York Mets2,Bo Bichette
+New York Mets3,Luis Robert Jr.
+New York Mets4,Francisco Alvarez
+New York Mets5,Tyrone Taylor
+New York Mets6,Marcus Semien
+New York Mets7,Carson Benge
+New York Mets8,Eric Wagaman
+New York Mets9,Luis Torrens
 Milwaukee Brewers1,Brice Turang
 Milwaukee Brewers2,Jackson Chourio
 Milwaukee Brewers3,Jake Bauers
@@ -114,7 +123,7 @@ San Francisco Giants4,Rafael Devers
 San Francisco Giants5,Jung Hoo Lee
 San Francisco Giants6,Willy Adames
 San Francisco Giants7,Daniel Susac
-San Francisco Giants8,Grant McCray
+San Francisco Giants8,Jesus Rodriguez
 San Francisco Giants9,Christian Koss
 Colorado Rockies1,Jake McCarthy
 Colorado Rockies2,Cole Carrigg
@@ -197,6 +206,15 @@ New York Yankees6,Jazz Chisholm Jr.
 New York Yankees7,Ryan McMahon
 New York Yankees8,Jose Caballero
 New York Yankees9,Austin Wells
+Chicago White Sox1,Sam Antonacci
+Chicago White Sox2,Munetaka Murakami
+Chicago White Sox3,Miguel Vargas
+Chicago White Sox4,Colson Montgomery
+Chicago White Sox5,Andrew Benintendi
+Chicago White Sox6,Braden Montgomery
+Chicago White Sox7,Tristan Peters
+Chicago White Sox8,Chase Meidroth
+Chicago White Sox9,Drew Romo
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Seiya Suzuki
 Chicago Cubs3,Michael Busch
@@ -215,15 +233,24 @@ St. Louis Cardinals6,Jose Fermin
 St. Louis Cardinals7,Blaze Jordan
 St. Louis Cardinals8,Nathan Church
 St. Louis Cardinals9,Pedro Pages
+Los Angeles Angels1,Zach Neto
+Los Angeles Angels2,Mike Trout
+Los Angeles Angels3,Nolan Schanuel
+Los Angeles Angels4,Vaughn Grissom
+Los Angeles Angels5,Jo Adell
+Los Angeles Angels6,Wade Meckler
+Los Angeles Angels7,Denzer Guzman
+Los Angeles Angels8,Josh Lowe
+Los Angeles Angels9,Tyler Heineman
 Athletics1,Jacob Wilson
 Athletics2,Nick Kurtz
-Athletics3,Jonah Heim
+Athletics3,Tommy White
 Athletics4,Tyler Soderstrom
-Athletics5,Tommy White
+Athletics5,Jonah Heim
 Athletics6,Colby Thomas
 Athletics7,Henry Bolte
-Athletics8,Alika Williams
-Athletics9,Brian Serven
+Athletics8,Lawrence Butler
+Athletics9,Alika Williams
 Boston Red Sox1,Jahmai Jones
 Boston Red Sox2,Romy Gonzalez
 Boston Red Sox3,Willson Contreras
@@ -233,15 +260,6 @@ Boston Red Sox6,Caleb Durbin
 Boston Red Sox7,Jarren Duran
 Boston Red Sox8,Andruw Monasterio
 Boston Red Sox9,Carlos Narvaez
-Chicago White Sox1,Sam Antonacci
-Chicago White Sox2,Munetaka Murakami
-Chicago White Sox3,Miguel Vargas
-Chicago White Sox4,Colson Montgomery
-Chicago White Sox5,Andrew Benintendi
-Chicago White Sox6,Braden Montgomery
-Chicago White Sox7,Tristan Peters
-Chicago White Sox8,Chase Meidroth
-Chicago White Sox9,Drew Romo
 Houston Astros1,Jeremy Pena
 Houston Astros2,Yordan Alvarez
 Houston Astros3,Isaac Paredes
@@ -251,15 +269,6 @@ Houston Astros6,Cam Smith
 Houston Astros7,Taylor Trammell
 Houston Astros8,Zach Dezenzo
 Houston Astros9,Christian Vazquez
-Los Angeles Angels1,Zach Neto
-Los Angeles Angels2,Mike Trout
-Los Angeles Angels3,Nolan Schanuel
-Los Angeles Angels4,Jorge Soler
-Los Angeles Angels5,Vaughn Grissom
-Los Angeles Angels6,Wade Meckler
-Los Angeles Angels7,Jo Adell
-Los Angeles Angels8,Oswald Peraza
-Los Angeles Angels9,Logan O'Hoppe
 Los Angeles Dodgers1,Shohei Ohtani
 Los Angeles Dodgers2,Andy Pages
 Los Angeles Dodgers3,Freddie Freeman
