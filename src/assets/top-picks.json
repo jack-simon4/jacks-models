@@ -6,8 +6,8 @@
     "awayPitcher": "Trey Yesavage",
     "homePitcher": "Zack Littell",
     "pick": "Toronto Blue Jays",
-    "prediction": "Toronto Blue Jays -128",
-    "odds": "-128",
+    "prediction": "Toronto Blue Jays -280",
+    "odds": "-280",
     "winProb": 0.683,
     "edge": 0.183,
     "confidence": "Elite",
@@ -17,24 +17,5 @@
     "gameTime": "2026-07-29T17:05:00Z",
     "gamePk": 822702,
     "rank": 1
-  },
-  {
-    "matchup": "Atlanta Braves @ New York Mets",
-    "awayTeam": "Atlanta Braves",
-    "homeTeam": "New York Mets",
-    "awayPitcher": "AJ Smith-Shawver",
-    "homePitcher": "Sean Manaea",
-    "pick": "Atlanta Braves",
-    "prediction": "Atlanta Braves -154",
-    "odds": "-154",
-    "winProb": 0.596,
-    "edge": 0.096,
-    "confidence": "Strong",
-    "predictedScore": "Atlanta Braves 5.2 \u2013 New York Mets 3.9",
-    "predictedHomeScore": 3.92,
-    "predictedAwayScore": 5.22,
-    "gameTime": "2026-07-29T17:10:00Z",
-    "gamePk": 823596,
-    "rank": 2
   }
 ]
