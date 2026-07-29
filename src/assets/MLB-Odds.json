@@ -1,11 +1,4 @@
 {
-  "San Diego Padres": {
-    "home_team": "San Diego Padres",
-    "away_team": "San Francisco Giants",
-    "home_ml": "-124",
-    "away_ml": "+106",
-    "book": "fanduel"
-  },
   "Tampa Bay Rays": {
     "home_team": "Tampa Bay Rays",
     "away_team": "Texas Rangers",
@@ -74,6 +67,13 @@
     "away_team": "Washington Nationals",
     "home_ml": "-142",
     "away_ml": "+120",
+    "book": "fanduel"
+  },
+  "San Diego Padres": {
+    "home_team": "San Diego Padres",
+    "away_team": "San Francisco Giants",
+    "home_ml": "-124",
+    "away_ml": "+106",
     "book": "fanduel"
   }
 }
