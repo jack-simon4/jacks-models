@@ -1,11 +1,4 @@
 {
-  "San Francisco Giants": {
-    "home_team": "San Francisco Giants",
-    "away_team": "Milwaukee Brewers",
-    "home_ml": "-10000",
-    "away_ml": "+3300",
-    "book": "betmgm"
-  },
   "San Diego Padres": {
     "home_team": "San Diego Padres",
     "away_team": "San Francisco Giants",
