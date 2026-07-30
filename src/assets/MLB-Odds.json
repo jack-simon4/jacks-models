@@ -2,15 +2,15 @@
   "Tampa Bay Rays": {
     "home_team": "Tampa Bay Rays",
     "away_team": "Texas Rangers",
-    "home_ml": "-178",
-    "away_ml": "+150",
+    "home_ml": "-205",
+    "away_ml": "+158",
     "book": "fanduel"
   },
   "Minnesota Twins": {
     "home_team": "Minnesota Twins",
     "away_team": "Kansas City Royals",
-    "home_ml": "-142",
-    "away_ml": "+120",
+    "home_ml": "-136",
+    "away_ml": "+116",
     "book": "fanduel"
   },
   "Chicago White Sox": {
@@ -51,15 +51,15 @@
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Boston Red Sox",
-    "home_ml": "+146",
-    "away_ml": "-174",
+    "home_ml": "+152",
+    "away_ml": "-180",
     "book": "fanduel"
   },
   "San Diego Padres": {
     "home_team": "San Diego Padres",
     "away_team": "San Francisco Giants",
-    "home_ml": "-148",
-    "away_ml": "+126",
+    "home_ml": "-154",
+    "away_ml": "+130",
     "book": "fanduel"
   },
   "Los Angeles Dodgers": {
