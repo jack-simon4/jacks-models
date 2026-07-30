@@ -1,23 +1,16 @@
 {
-  "Minnesota Twins": {
-    "home_team": "Minnesota Twins",
-    "away_team": "Kansas City Royals",
-    "home_ml": "+700",
-    "away_ml": "-1450",
-    "book": "fanduel"
-  },
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "New York Yankees",
-    "home_ml": "-122",
-    "away_ml": "-104",
+    "home_ml": "-210",
+    "away_ml": "+162",
     "book": "fanduel"
   },
   "St. Louis Cardinals": {
     "home_team": "St. Louis Cardinals",
     "away_team": "Chicago Cubs",
-    "home_ml": "-130",
-    "away_ml": "+102",
+    "home_ml": "-113",
+    "away_ml": "-113",
     "book": "fanduel"
   },
   "Cincinnati Reds": {
@@ -44,8 +37,8 @@
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Boston Red Sox",
-    "home_ml": "+158",
-    "away_ml": "-188",
+    "home_ml": "+162",
+    "away_ml": "-194",
     "book": "fanduel"
   },
   "San Diego Padres": {

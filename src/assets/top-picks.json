@@ -17,5 +17,24 @@
     "gameTime": "2026-07-30T23:15:00Z",
     "gamePk": 824894,
     "rank": 1
+  },
+  {
+    "matchup": "New York Yankees @ Chicago White Sox",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Chicago White Sox",
+    "awayPitcher": "Ryan Weathers",
+    "homePitcher": "Sean Burke",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -210",
+    "odds": "-210",
+    "winProb": 0.581,
+    "edge": 0.081,
+    "confidence": "Strong",
+    "predictedScore": "New York Yankees 4.3 \u2013 Chicago White Sox 5.4",
+    "predictedHomeScore": 5.44,
+    "predictedAwayScore": 4.34,
+    "gameTime": "2026-07-30T18:10:00Z",
+    "gamePk": 824568,
+    "rank": 2
   }
 ]
