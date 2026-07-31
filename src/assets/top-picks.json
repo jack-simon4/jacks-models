@@ -36,24 +36,5 @@
     "gameTime": "2026-08-01T01:38:00Z",
     "gamePk": 823999,
     "rank": 2
-  },
-  {
-    "matchup": "Detroit Tigers @ Athletics",
-    "awayTeam": "Detroit Tigers",
-    "homeTeam": "Athletics",
-    "awayPitcher": "TBD",
-    "homePitcher": "Jeffrey Springs",
-    "pick": "Detroit Tigers",
-    "prediction": "Detroit Tigers -132",
-    "odds": "-132",
-    "winProb": 0.591,
-    "edge": 0.091,
-    "confidence": "Strong",
-    "predictedScore": "Detroit Tigers 5.2 \u2013 Athletics 4.0",
-    "predictedHomeScore": 4.01,
-    "predictedAwayScore": 5.23,
-    "gameTime": "2026-08-01T01:40:00Z",
-    "gamePk": 824975,
-    "rank": 3
   }
 ]

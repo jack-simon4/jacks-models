@@ -2,8 +2,8 @@
   "Cincinnati Reds": {
     "home_team": "Cincinnati Reds",
     "away_team": "Pittsburgh Pirates",
-    "home_ml": "+102",
-    "away_ml": "-112",
+    "home_ml": "+106",
+    "away_ml": "-114",
     "book": "fanduel"
   },
   "Baltimore Orioles": {
@@ -51,8 +51,8 @@
   "Houston Astros": {
     "home_team": "Houston Astros",
     "away_team": "Texas Rangers",
-    "home_ml": "+114",
-    "away_ml": "-122",
+    "home_ml": "+110",
+    "away_ml": "-120",
     "book": "fanduel"
   },
   "Colorado Rockies": {
@@ -93,8 +93,8 @@
   "Seattle Mariners": {
     "home_team": "Seattle Mariners",
     "away_team": "Minnesota Twins",
-    "home_ml": "-156",
-    "away_ml": "+144",
+    "home_ml": "-164",
+    "away_ml": "+150",
     "book": "fanduel"
   },
   "Chicago Cubs": {
