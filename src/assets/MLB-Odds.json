@@ -72,15 +72,15 @@
   "Los Angeles Angels": {
     "home_team": "Los Angeles Angels",
     "away_team": "Milwaukee Brewers",
-    "home_ml": "+144",
-    "away_ml": "-156",
+    "home_ml": "+106",
+    "away_ml": "-114",
     "book": "fanduel"
   },
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Detroit Tigers",
     "home_ml": "+122",
-    "away_ml": "-132",
+    "away_ml": "-130",
     "book": "fanduel"
   },
   "San Diego Padres": {
@@ -93,8 +93,8 @@
   "Los Angeles Dodgers": {
     "home_team": "Los Angeles Dodgers",
     "away_team": "Boston Red Sox",
-    "home_ml": "-156",
-    "away_ml": "+144",
+    "home_ml": "-160",
+    "away_ml": "+148",
     "book": "fanduel"
   },
   "Seattle Mariners": {
