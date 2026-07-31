@@ -1,13 +1,32 @@
 [
   {
+    "matchup": "Boston Red Sox @ Los Angeles Dodgers",
+    "awayTeam": "Boston Red Sox",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Ranger Suarez",
+    "homePitcher": "Edgardo Henriquez",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -120",
+    "odds": "-120",
+    "winProb": 0.633,
+    "edge": 0.133,
+    "confidence": "Strong",
+    "predictedScore": "Boston Red Sox 2.7 \u2013 Los Angeles Dodgers 4.5",
+    "predictedHomeScore": 4.47,
+    "predictedAwayScore": 2.65,
+    "gameTime": "2026-08-01T02:10:00Z",
+    "gamePk": 823922,
+    "rank": 1
+  },
+  {
     "matchup": "Milwaukee Brewers @ Los Angeles Angels",
     "awayTeam": "Milwaukee Brewers",
     "homeTeam": "Los Angeles Angels",
     "awayPitcher": "Shane Drohan",
     "homePitcher": "Ryan Johnson",
     "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -162",
-    "odds": "-162",
+    "prediction": "Milwaukee Brewers -156",
+    "odds": "-156",
     "winProb": 0.596,
     "edge": 0.096,
     "confidence": "Strong",
@@ -16,6 +35,25 @@
     "predictedAwayScore": 5.2,
     "gameTime": "2026-08-01T01:38:00Z",
     "gamePk": 823999,
-    "rank": 1
+    "rank": 2
+  },
+  {
+    "matchup": "Detroit Tigers @ Athletics",
+    "awayTeam": "Detroit Tigers",
+    "homeTeam": "Athletics",
+    "awayPitcher": "TBD",
+    "homePitcher": "Jeffrey Springs",
+    "pick": "Detroit Tigers",
+    "prediction": "Detroit Tigers -132",
+    "odds": "-132",
+    "winProb": 0.591,
+    "edge": 0.091,
+    "confidence": "Strong",
+    "predictedScore": "Detroit Tigers 5.2 \u2013 Athletics 4.0",
+    "predictedHomeScore": 4.01,
+    "predictedAwayScore": 5.23,
+    "gameTime": "2026-08-01T01:40:00Z",
+    "gamePk": 824975,
+    "rank": 3
   }
 ]
