@@ -1,11 +1,4 @@
 {
-  "Chicago Cubs": {
-    "home_team": "Chicago Cubs",
-    "away_team": "New York Yankees",
-    "home_ml": "+114",
-    "away_ml": "-124",
-    "book": "fanduel"
-  },
   "Cincinnati Reds": {
     "home_team": "Cincinnati Reds",
     "away_team": "Pittsburgh Pirates",
@@ -102,6 +95,13 @@
     "away_team": "Minnesota Twins",
     "home_ml": "-156",
     "away_ml": "+144",
+    "book": "fanduel"
+  },
+  "Chicago Cubs": {
+    "home_team": "Chicago Cubs",
+    "away_team": "New York Yankees",
+    "home_ml": "+114",
+    "away_ml": "-124",
     "book": "fanduel"
   }
 }
