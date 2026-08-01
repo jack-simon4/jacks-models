@@ -1,16 +1,9 @@
 {
-  "Los Angeles Dodgers": {
-    "home_team": "Los Angeles Dodgers",
-    "away_team": "Boston Red Sox",
-    "home_ml": "-154",
-    "away_ml": "+142",
-    "book": "fanduel"
-  },
   "Toronto Blue Jays": {
     "home_team": "Toronto Blue Jays",
     "away_team": "St. Louis Cardinals",
-    "home_ml": "-136",
-    "away_ml": "+126",
+    "home_ml": "-142",
+    "away_ml": "+132",
     "book": "fanduel"
   },
   "Tampa Bay Rays": {
@@ -30,22 +23,22 @@
   "Seattle Mariners": {
     "home_team": "Seattle Mariners",
     "away_team": "Minnesota Twins",
-    "home_ml": "-164",
-    "away_ml": "+150",
+    "home_ml": "-158",
+    "away_ml": "+146",
     "book": "fanduel"
   },
   "Cincinnati Reds": {
     "home_team": "Cincinnati Reds",
     "away_team": "Pittsburgh Pirates",
-    "home_ml": "+106",
-    "away_ml": "-114",
+    "home_ml": "+102",
+    "away_ml": "-112",
     "book": "fanduel"
   },
   "Baltimore Orioles": {
     "home_team": "Baltimore Orioles",
     "away_team": "Philadelphia Phillies",
-    "home_ml": "+120",
-    "away_ml": "-130",
+    "home_ml": "+130",
+    "away_ml": "-140",
     "book": "fanduel"
   },
   "Houston Astros": {
@@ -58,50 +51,57 @@
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "Arizona Diamondbacks",
-    "home_ml": "-154",
-    "away_ml": "+142",
+    "home_ml": "-166",
+    "away_ml": "+152",
     "book": "fanduel"
   },
   "Atlanta Braves": {
     "home_team": "Atlanta Braves",
     "away_team": "Washington Nationals",
-    "home_ml": "-184",
-    "away_ml": "+170",
+    "home_ml": "-172",
+    "away_ml": "+158",
     "book": "fanduel"
   },
   "Chicago Cubs": {
     "home_team": "Chicago Cubs",
     "away_team": "New York Yankees",
-    "home_ml": "+110",
-    "away_ml": "-120",
+    "home_ml": "-106",
+    "away_ml": "-102",
     "book": "fanduel"
   },
   "Colorado Rockies": {
     "home_team": "Colorado Rockies",
     "away_team": "Kansas City Royals",
     "home_ml": "-114",
-    "away_ml": "+104",
+    "away_ml": "+106",
     "book": "fanduel"
   },
   "San Diego Padres": {
     "home_team": "San Diego Padres",
     "away_team": "San Francisco Giants",
-    "home_ml": "-134",
-    "away_ml": "+124",
+    "home_ml": "-138",
+    "away_ml": "+128",
+    "book": "fanduel"
+  },
+  "Los Angeles Dodgers": {
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Boston Red Sox",
+    "home_ml": "-156",
+    "away_ml": "+144",
     "book": "fanduel"
   },
   "Los Angeles Angels": {
     "home_team": "Los Angeles Angels",
     "away_team": "Milwaukee Brewers",
-    "home_ml": "+106",
-    "away_ml": "-114",
+    "home_ml": "+104",
+    "away_ml": "-112",
     "book": "fanduel"
   },
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Detroit Tigers",
-    "home_ml": "+122",
-    "away_ml": "-132",
+    "home_ml": "+128",
+    "away_ml": "-138",
     "book": "fanduel"
   }
 }
