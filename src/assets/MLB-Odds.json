@@ -1,11 +1,4 @@
 {
-  "Tampa Bay Rays": {
-    "home_team": "Tampa Bay Rays",
-    "away_team": "Chicago White Sox",
-    "home_ml": "-138",
-    "away_ml": "+128",
-    "book": "fanduel"
-  },
   "Seattle Mariners": {
     "home_team": "Seattle Mariners",
     "away_team": "Minnesota Twins",
@@ -102,6 +95,13 @@
     "away_team": "St. Louis Cardinals",
     "home_ml": "-110",
     "away_ml": "+100",
+    "book": "fanduel"
+  },
+  "Tampa Bay Rays": {
+    "home_team": "Tampa Bay Rays",
+    "away_team": "Chicago White Sox",
+    "home_ml": "-138",
+    "away_ml": "+128",
     "book": "fanduel"
   }
 }
