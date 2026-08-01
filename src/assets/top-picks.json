@@ -1,5 +1,24 @@
 [
   {
+    "matchup": "Boston Red Sox @ Los Angeles Dodgers",
+    "awayTeam": "Boston Red Sox",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Payton Tolle",
+    "homePitcher": "Yoshinobu Yamamoto",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -154",
+    "odds": "-154",
+    "winProb": 0.657,
+    "edge": 0.157,
+    "confidence": "Elite",
+    "predictedScore": "Boston Red Sox 3.0 \u2013 Los Angeles Dodgers 5.2",
+    "predictedHomeScore": 5.18,
+    "predictedAwayScore": 3.01,
+    "gameTime": "2026-08-02T01:10:00Z",
+    "gamePk": 823920,
+    "rank": 1
+  },
+  {
     "matchup": "Washington Nationals @ Atlanta Braves",
     "awayTeam": "Washington Nationals",
     "homeTeam": "Atlanta Braves",
@@ -16,25 +35,6 @@
     "predictedAwayScore": 4.41,
     "gameTime": "2026-08-01T23:15:00Z",
     "gamePk": 824890,
-    "rank": 1
-  },
-  {
-    "matchup": "Boston Red Sox @ Los Angeles Dodgers",
-    "awayTeam": "Boston Red Sox",
-    "homeTeam": "Los Angeles Dodgers",
-    "awayPitcher": "Payton Tolle",
-    "homePitcher": "Yoshinobu Yamamoto",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -154",
-    "odds": "-154",
-    "winProb": 0.633,
-    "edge": 0.133,
-    "confidence": "Strong",
-    "predictedScore": "Boston Red Sox 3.0 \u2013 Los Angeles Dodgers 4.8",
-    "predictedHomeScore": 4.83,
-    "predictedAwayScore": 3.01,
-    "gameTime": "2026-08-02T01:10:00Z",
-    "gamePk": 823920,
     "rank": 2
   }
 ]
