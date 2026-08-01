@@ -36,24 +36,5 @@
     "gameTime": "2026-08-02T01:10:00Z",
     "gamePk": 823920,
     "rank": 2
-  },
-  {
-    "matchup": "Chicago White Sox @ Tampa Bay Rays",
-    "awayTeam": "Chicago White Sox",
-    "homeTeam": "Tampa Bay Rays",
-    "awayPitcher": "Noah Schultz",
-    "homePitcher": "Drew Rasmussen",
-    "pick": "Tampa Bay Rays",
-    "prediction": "Tampa Bay Rays -160",
-    "odds": "-160",
-    "winProb": 0.583,
-    "edge": 0.083,
-    "confidence": "Strong",
-    "predictedScore": "Chicago White Sox 3.7 \u2013 Tampa Bay Rays 4.9",
-    "predictedHomeScore": 4.86,
-    "predictedAwayScore": 3.74,
-    "gameTime": "2026-08-01T20:10:00Z",
-    "gamePk": 822944,
-    "rank": 3
   }
 ]
