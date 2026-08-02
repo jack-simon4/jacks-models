@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "matchup": "Texas Rangers @ Houston Astros",
+    "awayTeam": "Texas Rangers",
+    "homeTeam": "Houston Astros",
+    "awayPitcher": "Kumar Rocker",
+    "homePitcher": "Peter Lambert",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -126",
+    "odds": "-126",
+    "winProb": 0.6,
+    "edge": 0.1,
+    "confidence": "Strong",
+    "predictedScore": "Texas Rangers 3.1 \u2013 Houston Astros 4.5",
+    "predictedHomeScore": 4.45,
+    "predictedAwayScore": 3.09,
+    "gameTime": "2026-08-02T18:10:00Z",
+    "gamePk": 824163,
+    "rank": 1
+  }
+]
