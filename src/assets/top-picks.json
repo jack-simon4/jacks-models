@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "matchup": "St. Louis Cardinals @ New York Yankees",
+    "awayTeam": "St. Louis Cardinals",
+    "homeTeam": "New York Yankees",
+    "awayPitcher": "Michael McGreevy",
+    "homePitcher": "Cam Schlittler",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -180",
+    "odds": "-180",
+    "winProb": 0.634,
+    "edge": 0.134,
+    "confidence": "Strong",
+    "predictedScore": "St. Louis Cardinals 3.4 \u2013 New York Yankees 5.2",
+    "predictedHomeScore": 5.23,
+    "predictedAwayScore": 3.4,
+    "gameTime": "2026-08-03T23:05:00Z",
+    "gamePk": 823520,
+    "rank": 1
+  },
+  {
+    "matchup": "Toronto Blue Jays @ Houston Astros",
+    "awayTeam": "Toronto Blue Jays",
+    "homeTeam": "Houston Astros",
+    "awayPitcher": "Shane Bieber",
+    "homePitcher": "Cristian Javier",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -126",
+    "odds": "-126",
+    "winProb": 0.6,
+    "edge": 0.1,
+    "confidence": "Strong",
+    "predictedScore": "Toronto Blue Jays 3.7 \u2013 Houston Astros 5.1",
+    "predictedHomeScore": 5.11,
+    "predictedAwayScore": 3.75,
+    "gameTime": "2026-08-04T00:10:00Z",
+    "gamePk": 824160,
+    "rank": 2
+  }
+]

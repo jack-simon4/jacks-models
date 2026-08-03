@@ -2,8 +2,8 @@
   "Los Angeles Dodgers": {
     "home_team": "Los Angeles Dodgers",
     "away_team": "Boston Red Sox",
-    "home_ml": "+120",
-    "away_ml": "-135",
+    "home_ml": "+500",
+    "away_ml": "-650",
     "book": "fanduel"
   },
   "Philadelphia Phillies": {
