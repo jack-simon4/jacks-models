@@ -9,8 +9,8 @@
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "St. Louis Cardinals",
-    "home_ml": "-205",
-    "away_ml": "+190",
+    "home_ml": "-225",
+    "away_ml": "+205",
     "book": "fanduel"
   },
   "Milwaukee Brewers": {
@@ -30,8 +30,8 @@
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "San Francisco Giants",
-    "home_ml": "-118",
-    "away_ml": "+110",
+    "home_ml": "-122",
+    "away_ml": "+114",
     "book": "fanduel"
   },
   "Houston Astros": {
@@ -51,8 +51,8 @@
   "Arizona Diamondbacks": {
     "home_team": "Arizona Diamondbacks",
     "away_team": "San Diego Padres",
-    "home_ml": "-112",
-    "away_ml": "+102",
+    "home_ml": "-110",
+    "away_ml": "+100",
     "book": "fanduel"
   },
   "Cincinnati Reds": {
@@ -65,8 +65,8 @@
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "New York Mets",
-    "home_ml": "-137",
-    "away_ml": "+114",
+    "home_ml": "-142",
+    "away_ml": "+118",
     "book": "draftkings"
   },
   "Kansas City Royals": {
