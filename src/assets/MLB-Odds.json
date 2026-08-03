@@ -2,50 +2,50 @@
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "Washington Nationals",
-    "home_ml": "-156",
-    "away_ml": "+144",
+    "home_ml": "-225",
+    "away_ml": "+205",
     "book": "fanduel"
   },
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "St. Louis Cardinals",
-    "home_ml": "-198",
-    "away_ml": "+182",
+    "home_ml": "-205",
+    "away_ml": "+186",
     "book": "fanduel"
   },
   "Milwaukee Brewers": {
     "home_team": "Milwaukee Brewers",
     "away_team": "Pittsburgh Pirates",
-    "home_ml": "-140",
-    "away_ml": "+130",
-    "book": "fanduel"
+    "home_ml": "-168",
+    "away_ml": "+139",
+    "book": "draftkings"
   },
   "Chicago Cubs": {
     "home_team": "Chicago Cubs",
     "away_team": "Los Angeles Dodgers",
-    "home_ml": "+184",
+    "home_ml": "+182",
     "away_ml": "-198",
     "book": "fanduel"
   },
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "San Francisco Giants",
-    "home_ml": "-116",
-    "away_ml": "+106",
+    "home_ml": "-118",
+    "away_ml": "+110",
     "book": "fanduel"
   },
   "Houston Astros": {
     "home_team": "Houston Astros",
     "away_team": "Toronto Blue Jays",
-    "home_ml": "-124",
-    "away_ml": "+114",
+    "home_ml": "-126",
+    "away_ml": "+118",
     "book": "fanduel"
   },
   "Colorado Rockies": {
     "home_team": "Colorado Rockies",
     "away_team": "Tampa Bay Rays",
-    "home_ml": "+148",
-    "away_ml": "-160",
+    "home_ml": "+158",
+    "away_ml": "-172",
     "book": "fanduel"
   },
   "Arizona Diamondbacks": {
@@ -53,6 +53,27 @@
     "away_team": "San Diego Padres",
     "home_ml": "-112",
     "away_ml": "+102",
+    "book": "fanduel"
+  },
+  "Cincinnati Reds": {
+    "home_team": "Cincinnati Reds",
+    "away_team": "Athletics",
+    "home_ml": "-142",
+    "away_ml": "+118",
+    "book": "draftkings"
+  },
+  "Cleveland Guardians": {
+    "home_team": "Cleveland Guardians",
+    "away_team": "New York Mets",
+    "home_ml": "-137",
+    "away_ml": "+114",
+    "book": "draftkings"
+  },
+  "Kansas City Royals": {
+    "home_team": "Kansas City Royals",
+    "away_team": "Minnesota Twins",
+    "home_ml": "+130",
+    "away_ml": "-140",
     "book": "fanduel"
   }
 }
