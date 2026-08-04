@@ -16,8 +16,8 @@
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "New York Mets",
-    "home_ml": "+102",
-    "away_ml": "-120",
+    "home_ml": "+100",
+    "away_ml": "-118",
     "book": "fanduel"
   },
   "Philadelphia Phillies": {
@@ -65,8 +65,8 @@
   "Chicago Cubs": {
     "home_team": "Chicago Cubs",
     "away_team": "Los Angeles Dodgers",
-    "home_ml": "-126",
-    "away_ml": "+108",
+    "home_ml": "-124",
+    "away_ml": "+106",
     "book": "fanduel"
   },
   "Texas Rangers": {
@@ -79,8 +79,8 @@
   "Houston Astros": {
     "home_team": "Houston Astros",
     "away_team": "Toronto Blue Jays",
-    "home_ml": "-104",
-    "away_ml": "-112",
+    "home_ml": "-166",
+    "away_ml": "+140",
     "book": "fanduel"
   },
   "Colorado Rockies": {
