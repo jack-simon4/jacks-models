@@ -1,11 +1,4 @@
 {
-  "Philadelphia Phillies": {
-    "home_team": "Philadelphia Phillies",
-    "away_team": "Washington Nationals",
-    "home_ml": "-240",
-    "away_ml": "+198",
-    "book": "fanduel"
-  },
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "St. Louis Cardinals",
@@ -74,6 +67,13 @@
     "away_team": "New York Mets",
     "home_ml": "-142",
     "away_ml": "+120",
+    "book": "fanduel"
+  },
+  "Philadelphia Phillies": {
+    "home_team": "Philadelphia Phillies",
+    "away_team": "Washington Nationals",
+    "home_ml": "-225",
+    "away_ml": "+188",
     "book": "fanduel"
   },
   "Boston Red Sox": {
