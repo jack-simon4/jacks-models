@@ -9,8 +9,8 @@
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "St. Louis Cardinals",
-    "home_ml": "-225",
-    "away_ml": "+205",
+    "home_ml": "-166",
+    "away_ml": "+140",
     "book": "fanduel"
   },
   "Milwaukee Brewers": {
@@ -30,8 +30,8 @@
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "San Francisco Giants",
-    "home_ml": "-122",
-    "away_ml": "+114",
+    "home_ml": "-198",
+    "away_ml": "+166",
     "book": "fanduel"
   },
   "Houston Astros": {
@@ -44,36 +44,64 @@
   "Colorado Rockies": {
     "home_team": "Colorado Rockies",
     "away_team": "Tampa Bay Rays",
-    "home_ml": "+158",
-    "away_ml": "-172",
+    "home_ml": "+110",
+    "away_ml": "-130",
     "book": "fanduel"
   },
   "Arizona Diamondbacks": {
     "home_team": "Arizona Diamondbacks",
     "away_team": "San Diego Padres",
-    "home_ml": "-110",
-    "away_ml": "+100",
+    "home_ml": "-122",
+    "away_ml": "+112",
+    "book": "fanduel"
+  },
+  "Baltimore Orioles": {
+    "home_team": "Baltimore Orioles",
+    "away_team": "Los Angeles Angels",
+    "home_ml": "-132",
+    "away_ml": "+112",
     "book": "fanduel"
   },
   "Cincinnati Reds": {
     "home_team": "Cincinnati Reds",
     "away_team": "Athletics",
-    "home_ml": "-142",
-    "away_ml": "+118",
-    "book": "draftkings"
+    "home_ml": "-130",
+    "away_ml": "+110",
+    "book": "fanduel"
   },
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "New York Mets",
     "home_ml": "-142",
+    "away_ml": "+120",
+    "book": "fanduel"
+  },
+  "Boston Red Sox": {
+    "home_team": "Boston Red Sox",
+    "away_team": "Chicago White Sox",
+    "home_ml": "-122",
+    "away_ml": "+114",
+    "book": "fanduel"
+  },
+  "Atlanta Braves": {
+    "home_team": "Atlanta Braves",
+    "away_team": "Miami Marlins",
+    "home_ml": "-138",
     "away_ml": "+118",
-    "book": "draftkings"
+    "book": "fanduel"
   },
   "Kansas City Royals": {
     "home_team": "Kansas City Royals",
     "away_team": "Minnesota Twins",
     "home_ml": "+126",
     "away_ml": "-148",
+    "book": "fanduel"
+  },
+  "Seattle Mariners": {
+    "home_team": "Seattle Mariners",
+    "away_team": "Detroit Tigers",
+    "home_ml": "-154",
+    "away_ml": "+130",
     "book": "fanduel"
   }
 }
