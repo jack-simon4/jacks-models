@@ -1,13 +1,32 @@
 [
   {
+    "matchup": "Los Angeles Angels @ Baltimore Orioles",
+    "awayTeam": "Los Angeles Angels",
+    "homeTeam": "Baltimore Orioles",
+    "awayPitcher": "Grayson Rodriguez",
+    "homePitcher": "TBD",
+    "pick": "Baltimore Orioles",
+    "prediction": "Baltimore Orioles -142",
+    "odds": "-142",
+    "winProb": 0.678,
+    "edge": 0.178,
+    "confidence": "Elite",
+    "predictedScore": "Los Angeles Angels 3.6 \u2013 Baltimore Orioles 6.1",
+    "predictedHomeScore": 6.12,
+    "predictedAwayScore": 3.64,
+    "gameTime": "2026-08-04T22:35:00Z",
+    "gamePk": 824805,
+    "rank": 1
+  },
+  {
     "matchup": "Washington Nationals @ Philadelphia Phillies",
     "awayTeam": "Washington Nationals",
     "homeTeam": "Philadelphia Phillies",
     "awayPitcher": "Zack Littell",
     "homePitcher": "Jes\u00fas Luzardo",
     "pick": "Philadelphia Phillies",
-    "prediction": "Philadelphia Phillies -225",
-    "odds": "-225",
+    "prediction": "Philadelphia Phillies -235",
+    "odds": "-235",
     "winProb": 0.637,
     "edge": 0.137,
     "confidence": "Strong",
@@ -16,6 +35,6 @@
     "predictedAwayScore": 3.18,
     "gameTime": "2026-08-04T22:40:00Z",
     "gamePk": 823432,
-    "rank": 1
+    "rank": 2
   }
 ]
