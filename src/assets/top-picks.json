@@ -6,8 +6,8 @@
     "awayPitcher": "Jameson Taillon",
     "homePitcher": "Hunter Brown",
     "pick": "Houston Astros",
-    "prediction": "Houston Astros -205",
-    "odds": "-205",
+    "prediction": "Houston Astros -220",
+    "odds": "-220",
     "winProb": 0.669,
     "edge": 0.169,
     "confidence": "Elite",
@@ -17,24 +17,5 @@
     "gameTime": "2026-08-05T18:10:00Z",
     "gamePk": 824158,
     "rank": 1
-  },
-  {
-    "matchup": "New York Mets @ Cleveland Guardians",
-    "awayTeam": "New York Mets",
-    "homeTeam": "Cleveland Guardians",
-    "awayPitcher": "Christian Scott",
-    "homePitcher": "Tanner Bibee",
-    "pick": "New York Mets",
-    "prediction": "New York Mets -104",
-    "odds": "-104",
-    "winProb": 0.596,
-    "edge": 0.096,
-    "confidence": "Strong",
-    "predictedScore": "New York Mets 4.2 \u2013 Cleveland Guardians 2.9",
-    "predictedHomeScore": 2.91,
-    "predictedAwayScore": 4.2,
-    "gameTime": "2026-08-05T22:40:00Z",
-    "gamePk": 824402,
-    "rank": 2
   }
 ]
