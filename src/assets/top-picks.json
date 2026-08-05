@@ -1,5 +1,24 @@
 [
   {
+    "matchup": "Toronto Blue Jays @ Houston Astros",
+    "awayTeam": "Toronto Blue Jays",
+    "homeTeam": "Houston Astros",
+    "awayPitcher": "Jameson Taillon",
+    "homePitcher": "Hunter Brown",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -200",
+    "odds": "-200",
+    "winProb": 0.669,
+    "edge": 0.169,
+    "confidence": "Elite",
+    "predictedScore": "Toronto Blue Jays 3.1 \u2013 Houston Astros 5.4",
+    "predictedHomeScore": 5.43,
+    "predictedAwayScore": 3.09,
+    "gameTime": "2026-08-05T18:10:00Z",
+    "gamePk": 824158,
+    "rank": 1
+  },
+  {
     "matchup": "New York Mets @ Cleveland Guardians",
     "awayTeam": "New York Mets",
     "homeTeam": "Cleveland Guardians",
@@ -16,6 +35,6 @@
     "predictedAwayScore": 4.2,
     "gameTime": "2026-08-05T22:40:00Z",
     "gamePk": 824402,
-    "rank": 1
+    "rank": 2
   }
 ]

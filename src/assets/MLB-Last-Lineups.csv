@@ -8,14 +8,14 @@ American League All-Stars6,Cody Bellinger
 American League All-Stars7,Ben Rice
 American League All-Stars8,Riley Greene
 American League All-Stars9,Ernie Clement
-Arizona Diamondbacks1,Corbin Carroll
-Arizona Diamondbacks2,Geraldo Perdomo
-Arizona Diamondbacks3,Max Kepler
-Arizona Diamondbacks4,Ketel Marte
-Arizona Diamondbacks5,Nolan Arenado
-Arizona Diamondbacks6,Lars Nootbaar
-Arizona Diamondbacks7,Tim Tawa
-Arizona Diamondbacks8,James McCann
+Arizona Diamondbacks1,Lars Nootbaar
+Arizona Diamondbacks2,Corbin Carroll
+Arizona Diamondbacks3,Geraldo Perdomo
+Arizona Diamondbacks4,Gabriel Moreno
+Arizona Diamondbacks5,Tim Tawa
+Arizona Diamondbacks6,Ildemaro Vargas
+Arizona Diamondbacks7,James McCann
+Arizona Diamondbacks8,Tyler Locklear
 Arizona Diamondbacks9,Ryan Waldschmidt
 Athletics1,Lawrence Butler
 Athletics2,Jacob Wilson
@@ -56,7 +56,7 @@ Boston Red Sox9,Connor Wong
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Seiya Suzuki
 Chicago Cubs3,Alex Bregman
-Chicago Cubs4,Carson Kelly
+Chicago Cubs4,Miguel Amaya
 Chicago Cubs5,Michael Busch
 Chicago Cubs6,Nico Hoerner
 Chicago Cubs7,Ian Happ
@@ -91,7 +91,7 @@ Cleveland Guardians8,Patrick Bailey
 Cleveland Guardians9,Angel Genao
 Colorado Rockies1,Jake McCarthy
 Colorado Rockies2,Cole Carrigg
-Colorado Rockies3,Mickey Moniak
+Colorado Rockies3,Hunter Goodman
 Colorado Rockies4,Kyle Karros
 Colorado Rockies5,TJ Rumfield
 Colorado Rockies6,Jordan Beck
@@ -105,7 +105,7 @@ Detroit Tigers4,Riley Greene
 Detroit Tigers5,Colt Keith
 Detroit Tigers6,Spencer Torkelson
 Detroit Tigers7,Max Clark
-Detroit Tigers8,Javier Baez
+Detroit Tigers8,Eduardo Valencia
 Detroit Tigers9,Zach McKinstry
 Houston Astros1,Jeremy Pena
 Houston Astros2,Yordan Alvarez
@@ -135,7 +135,7 @@ Los Angeles Angels7,Josh Lowe
 Los Angeles Angels8,Jose Siri
 Los Angeles Angels9,Adam Frazier
 Los Angeles Dodgers1,Shohei Ohtani
-Los Angeles Dodgers2,Alex Call
+Los Angeles Dodgers2,Ben Rortvedt
 Los Angeles Dodgers3,Enrique Hernandez
 Los Angeles Dodgers4,Tommy Edman
 Los Angeles Dodgers5,Kyle Tucker
@@ -210,18 +210,18 @@ Pittsburgh Pirates1,Jake Mangum
 Pittsburgh Pirates2,Brandon Lowe
 Pittsburgh Pirates3,Bryan Reynolds
 Pittsburgh Pirates4,Esmerlyn Valdez
-Pittsburgh Pirates5,Spencer Horwitz
-Pittsburgh Pirates6,Nick Gonzales
-Pittsburgh Pirates7,Endy Rodriguez
-Pittsburgh Pirates8,Jacob Gonzalez
-Pittsburgh Pirates9,Jared Triolo
+Pittsburgh Pirates5,Nick Gonzales
+Pittsburgh Pirates6,Endy Rodriguez
+Pittsburgh Pirates7,Jared Triolo
+Pittsburgh Pirates8,Rafael Flores Jr.
+Pittsburgh Pirates9,Jhostynxon Garcia
 San Diego Padres1,Fernando Tatis Jr.
 San Diego Padres2,Luis Rengifo
 San Diego Padres3,Manny Machado
 San Diego Padres4,Ty France
 San Diego Padres5,Jackson Merrill
 San Diego Padres6,Xander Bogaerts
-San Diego Padres7,Freddy Fermin
+San Diego Padres7,Luis Campusano
 San Diego Padres8,Jake Cronenworth
 San Diego Padres9,Jase Bowen
 San Francisco Giants1,Bryce Eldridge
@@ -231,7 +231,7 @@ San Francisco Giants4,Rafael Devers
 San Francisco Giants5,Osleivis Basabe
 San Francisco Giants6,Nate Furman
 San Francisco Giants7,Grant McCray
-San Francisco Giants8,Eddys Leonard
+San Francisco Giants8,Drew Gilbert
 San Francisco Giants9,Drew Cavanaugh
 Seattle Mariners1,Cole Young
 Seattle Mariners2,Randy Arozarena
@@ -257,7 +257,7 @@ Tampa Bay Rays3,Junior Caminero
 Tampa Bay Rays4,Liam Hicks
 Tampa Bay Rays5,Chandler Simpson
 Tampa Bay Rays6,Cedric Mullins
-Tampa Bay Rays7,Ben Williamson
+Tampa Bay Rays7,Ryan Vilade
 Tampa Bay Rays8,Taylor Walls
 Tampa Bay Rays9,Nick Fortes
 Texas Rangers1,Wyatt Langford
