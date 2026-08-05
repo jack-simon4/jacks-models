@@ -58,8 +58,8 @@
   "Kansas City Royals": {
     "home_team": "Kansas City Royals",
     "away_team": "Minnesota Twins",
-    "home_ml": "-116",
-    "away_ml": "-102",
+    "home_ml": "-112",
+    "away_ml": "-104",
     "book": "fanduel"
   },
   "Chicago Cubs": {
@@ -93,8 +93,8 @@
   "Arizona Diamondbacks": {
     "home_team": "Arizona Diamondbacks",
     "away_team": "San Diego Padres",
-    "home_ml": "-108",
-    "away_ml": "-108",
+    "home_ml": "-116",
+    "away_ml": "-102",
     "book": "fanduel"
   },
   "Seattle Mariners": {
