@@ -93,9 +93,9 @@
   "Seattle Mariners": {
     "home_team": "Seattle Mariners",
     "away_team": "Tampa Bay Rays",
-    "home_ml": "-120",
-    "away_ml": "+102",
-    "book": "fanduel"
+    "home_ml": "-121",
+    "away_ml": "+101",
+    "book": "draftkings"
   },
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
