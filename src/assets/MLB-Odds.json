@@ -2,8 +2,8 @@
   "Pittsburgh Pirates": {
     "home_team": "Pittsburgh Pirates",
     "away_team": "New York Mets",
-    "home_ml": "-132",
-    "away_ml": "+122",
+    "home_ml": "-128",
+    "away_ml": "+120",
     "book": "fanduel"
   },
   "Philadelphia Phillies": {
@@ -16,15 +16,15 @@
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Cincinnati Reds",
-    "home_ml": "-114",
-    "away_ml": "+104",
+    "home_ml": "-120",
+    "away_ml": "+110",
     "book": "fanduel"
   },
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "Atlanta Braves",
-    "home_ml": "-132",
-    "away_ml": "+122",
+    "home_ml": "-134",
+    "away_ml": "+124",
     "book": "fanduel"
   },
   "Boston Red Sox": {
@@ -37,29 +37,29 @@
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "Los Angeles Angels",
-    "home_ml": "-148",
-    "away_ml": "+138",
+    "home_ml": "-142",
+    "away_ml": "+132",
     "book": "fanduel"
   },
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "Cleveland Guardians",
     "home_ml": "+126",
-    "away_ml": "-136",
+    "away_ml": "-138",
     "book": "fanduel"
   },
   "Milwaukee Brewers": {
     "home_team": "Milwaukee Brewers",
     "away_team": "Minnesota Twins",
-    "home_ml": "-180",
-    "away_ml": "+166",
+    "home_ml": "-164",
+    "away_ml": "+150",
     "book": "fanduel"
   },
   "Kansas City Royals": {
     "home_team": "Kansas City Royals",
     "away_team": "Chicago Cubs",
-    "home_ml": "+148",
-    "away_ml": "-160",
+    "home_ml": "+150",
+    "away_ml": "-164",
     "book": "fanduel"
   },
   "Texas Rangers": {
@@ -79,8 +79,8 @@
   "Arizona Diamondbacks": {
     "home_team": "Arizona Diamondbacks",
     "away_team": "Los Angeles Dodgers",
-    "home_ml": "+156",
-    "away_ml": "-168",
+    "home_ml": "+152",
+    "away_ml": "-166",
     "book": "fanduel"
   },
   "San Diego Padres": {
@@ -100,8 +100,8 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Detroit Tigers",
-    "home_ml": "+110",
-    "away_ml": "-130",
+    "home_ml": "+116",
+    "away_ml": "-126",
     "book": "fanduel"
   }
 }
