@@ -58,9 +58,9 @@
   "Kansas City Royals": {
     "home_team": "Kansas City Royals",
     "away_team": "Chicago Cubs",
-    "home_ml": "+150",
-    "away_ml": "-164",
-    "book": "fanduel"
+    "home_ml": "+141",
+    "away_ml": "-171",
+    "book": "draftkings"
   },
   "Texas Rangers": {
     "home_team": "Texas Rangers",
