@@ -16,8 +16,8 @@
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Cincinnati Reds",
-    "home_ml": "-120",
-    "away_ml": "+110",
+    "home_ml": "-114",
+    "away_ml": "+104",
     "book": "fanduel"
   },
   "New York Yankees": {
@@ -51,8 +51,8 @@
   "Milwaukee Brewers": {
     "home_team": "Milwaukee Brewers",
     "away_team": "Minnesota Twins",
-    "home_ml": "-164",
-    "away_ml": "+150",
+    "home_ml": "-166",
+    "away_ml": "+152",
     "book": "fanduel"
   },
   "Kansas City Royals": {
