@@ -72,15 +72,15 @@
   "St. Louis Cardinals": {
     "home_team": "St. Louis Cardinals",
     "away_team": "Colorado Rockies",
-    "home_ml": "-158",
-    "away_ml": "+146",
+    "home_ml": "-164",
+    "away_ml": "+150",
     "book": "fanduel"
   },
   "Arizona Diamondbacks": {
     "home_team": "Arizona Diamondbacks",
     "away_team": "Los Angeles Dodgers",
-    "home_ml": "+152",
-    "away_ml": "-166",
+    "home_ml": "+156",
+    "away_ml": "-168",
     "book": "fanduel"
   },
   "San Diego Padres": {
@@ -100,8 +100,8 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Detroit Tigers",
-    "home_ml": "+116",
-    "away_ml": "-126",
+    "home_ml": "+118",
+    "away_ml": "-128",
     "book": "fanduel"
   }
 }
