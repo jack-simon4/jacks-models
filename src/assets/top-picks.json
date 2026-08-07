@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "matchup": "Minnesota Twins @ Milwaukee Brewers",
+    "awayTeam": "Minnesota Twins",
+    "homeTeam": "Milwaukee Brewers",
+    "awayPitcher": "Zebby Matthews",
+    "homePitcher": "Shane Drohan",
+    "pick": "Milwaukee Brewers",
+    "prediction": "Milwaukee Brewers -162",
+    "odds": "-162",
+    "winProb": 0.594,
+    "edge": 0.094,
+    "confidence": "Strong",
+    "predictedScore": "Minnesota Twins 4.3 \u2013 Milwaukee Brewers 5.6",
+    "predictedHomeScore": 5.57,
+    "predictedAwayScore": 4.3,
+    "gameTime": "2026-08-07T23:40:00Z",
+    "gamePk": 823750,
+    "rank": 1
+  }
+]
