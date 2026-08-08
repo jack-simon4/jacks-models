@@ -17,15 +17,42 @@ New York Yankees6,George Lombard Jr.
 New York Yankees7,Spencer Jones
 New York Yankees8,Jose Caballero
 New York Yankees9,Austin Wells
+Athletics1,Henry Bolte
+Athletics2,Jacob Wilson
+Athletics3,Jonah Heim
+Athletics4,Tyler Soderstrom
+Athletics5,Tommy White
+Athletics6,Brian Serven
+Athletics7,Lawrence Butler
+Athletics8,Max Muncy
+Athletics9,Alika Williams
 Boston Red Sox1,Jahmai Jones
 Boston Red Sox2,Ceddanne Rafaela
-Boston Red Sox3,Wilyer Abreu
+Boston Red Sox3,Caleb Durbin
 Boston Red Sox4,Willson Contreras
-Boston Red Sox5,Caleb Durbin
-Boston Red Sox6,Andruw Monasterio
-Boston Red Sox7,Eli White
-Boston Red Sox8,Nick Sogard
+Boston Red Sox5,Andruw Monasterio
+Boston Red Sox6,Eli White
+Boston Red Sox7,Nick Sogard
+Boston Red Sox8,Jarren Duran
 Boston Red Sox9,Connor Wong
+Los Angeles Angels1,Wade Meckler
+Los Angeles Angels2,Mike Trout
+Los Angeles Angels3,Nolan Schanuel
+Los Angeles Angels4,Zach Neto
+Los Angeles Angels5,Vaughn Grissom
+Los Angeles Angels6,Moises Ballesteros
+Los Angeles Angels7,Denzer Guzman
+Los Angeles Angels8,Josh Lowe
+Los Angeles Angels9,Tyler Heineman
+Miami Marlins1,Jakob Marsee
+Miami Marlins2,Xavier Edwards
+Miami Marlins3,Kyle Stowers
+Miami Marlins4,Otto Lopez
+Miami Marlins5,Griffin Conine
+Miami Marlins6,Heriberto Hernandez
+Miami Marlins7,Owen Caissie
+Miami Marlins8,Joe Mack
+Miami Marlins9,Javier Sanoja
 Arizona Diamondbacks1,Geraldo Perdomo
 Arizona Diamondbacks2,Corbin Carroll
 Arizona Diamondbacks3,Gabriel Moreno
@@ -35,15 +62,6 @@ Arizona Diamondbacks6,Nolan Arenado
 Arizona Diamondbacks7,Max Kepler
 Arizona Diamondbacks8,Tim Tawa
 Arizona Diamondbacks9,Ryan Waldschmidt
-Athletics1,Henry Bolte
-Athletics2,Jacob Wilson
-Athletics3,Jonah Heim
-Athletics4,Tyler Soderstrom
-Athletics5,Tommy White
-Athletics6,Brian Serven
-Athletics7,Lawrence Butler
-Athletics8,Max Muncy
-Athletics9,Jonathan Ornelas
 Baltimore Orioles1,Gunnar Henderson
 Baltimore Orioles2,Pete Alonso
 Baltimore Orioles3,Jackson Holliday
@@ -125,15 +143,6 @@ Kansas City Royals6,Nick Loftin
 Kansas City Royals7,Michael Massey
 Kansas City Royals8,Starling Marte
 Kansas City Royals9,Tyler Tolbert
-Los Angeles Angels1,Wade Meckler
-Los Angeles Angels2,Mike Trout
-Los Angeles Angels3,Nolan Schanuel
-Los Angeles Angels4,Zach Neto
-Los Angeles Angels5,Vaughn Grissom
-Los Angeles Angels6,Moises Ballesteros
-Los Angeles Angels7,Oswald Peraza
-Los Angeles Angels8,Josh Lowe
-Los Angeles Angels9,Tyler Heineman
 Los Angeles Dodgers1,Shohei Ohtani
 Los Angeles Dodgers2,Andy Pages
 Los Angeles Dodgers3,Freddie Freeman
@@ -143,15 +152,6 @@ Los Angeles Dodgers6,Kyle Tucker
 Los Angeles Dodgers7,Teoscar Hernandez
 Los Angeles Dodgers8,Tommy Edman
 Los Angeles Dodgers9,Hunter Feduccia
-Miami Marlins1,Kyle Stowers
-Miami Marlins2,Otto Lopez
-Miami Marlins3,Griffin Conine
-Miami Marlins4,Xavier Edwards
-Miami Marlins5,Owen Caissie
-Miami Marlins6,Leo Jimenez
-Miami Marlins7,Jakob Marsee
-Miami Marlins8,Joe Mack
-Miami Marlins9,Esteury Ruiz
 Milwaukee Brewers1,Brice Turang
 Milwaukee Brewers2,Jackson Chourio
 Milwaukee Brewers3,Jake Bauers
