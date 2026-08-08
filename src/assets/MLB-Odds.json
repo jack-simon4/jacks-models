@@ -9,8 +9,8 @@
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "Athletics",
-    "home_ml": "-700",
-    "away_ml": "+550",
+    "home_ml": "-150",
+    "away_ml": "+135",
     "book": "fanduel"
   },
   "Miami Marlins": {
@@ -23,8 +23,8 @@
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "Toronto Blue Jays",
-    "home_ml": "-164",
-    "away_ml": "+150",
+    "home_ml": "-200",
+    "away_ml": "+168",
     "book": "fanduel"
   },
   "Pittsburgh Pirates": {
@@ -93,8 +93,8 @@
   "Arizona Diamondbacks": {
     "home_team": "Arizona Diamondbacks",
     "away_team": "Los Angeles Dodgers",
-    "home_ml": "+124",
-    "away_ml": "-146",
+    "home_ml": "+130",
+    "away_ml": "-154",
     "book": "fanduel"
   },
   "Seattle Mariners": {
