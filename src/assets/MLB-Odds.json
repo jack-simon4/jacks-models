@@ -9,8 +9,8 @@
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "Athletics",
-    "home_ml": "-250",
-    "away_ml": "+230",
+    "home_ml": "-700",
+    "away_ml": "+550",
     "book": "fanduel"
   },
   "Miami Marlins": {
@@ -37,8 +37,8 @@
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Cincinnati Reds",
-    "home_ml": "+128",
-    "away_ml": "-138",
+    "home_ml": "+122",
+    "away_ml": "-130",
     "book": "fanduel"
   },
   "Kansas City Royals": {
