@@ -1,51 +1,44 @@
 {
-  "Seattle Mariners": {
-    "home_team": "Seattle Mariners",
-    "away_team": "Tampa Bay Rays",
-    "home_ml": "+420",
-    "away_ml": "-550",
-    "book": "fanduel"
-  },
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Cincinnati Reds",
-    "home_ml": "-104",
-    "away_ml": "-112",
+    "home_ml": "+100",
+    "away_ml": "-108",
     "book": "fanduel"
   },
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "Athletics",
-    "home_ml": "-259",
-    "away_ml": "+209",
-    "book": "draftkings"
+    "home_ml": "-225",
+    "away_ml": "+205",
+    "book": "fanduel"
   },
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "Atlanta Braves",
-    "home_ml": "-152",
-    "away_ml": "+128",
+    "home_ml": "-140",
+    "away_ml": "+130",
     "book": "fanduel"
   },
   "Pittsburgh Pirates": {
     "home_team": "Pittsburgh Pirates",
     "away_team": "New York Mets",
-    "home_ml": "-144",
-    "away_ml": "+122",
+    "home_ml": "-136",
+    "away_ml": "+126",
     "book": "fanduel"
   },
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "Toronto Blue Jays",
-    "home_ml": "-200",
-    "away_ml": "+168",
+    "home_ml": "-190",
+    "away_ml": "+176",
     "book": "fanduel"
   },
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "Los Angeles Angels",
-    "home_ml": "-158",
-    "away_ml": "+134",
+    "home_ml": "-144",
+    "away_ml": "+122",
     "book": "fanduel"
   },
   "Kansas City Royals": {
@@ -86,8 +79,8 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Detroit Tigers",
-    "home_ml": "+102",
-    "away_ml": "-120",
+    "home_ml": "+100",
+    "away_ml": "-118",
     "book": "fanduel"
   },
   "Arizona Diamondbacks": {
@@ -100,8 +93,8 @@
   "San Diego Padres": {
     "home_team": "San Diego Padres",
     "away_team": "Houston Astros",
-    "home_ml": "-131",
-    "away_ml": "+109",
-    "book": "draftkings"
+    "home_ml": "-118",
+    "away_ml": "+100",
+    "book": "fanduel"
   }
 }
