@@ -1,16 +1,9 @@
 {
-  "Arizona Diamondbacks": {
-    "home_team": "Arizona Diamondbacks",
-    "away_team": "Los Angeles Dodgers",
-    "home_ml": "+124",
-    "away_ml": "-146",
-    "book": "fanduel"
-  },
   "Seattle Mariners": {
     "home_team": "Seattle Mariners",
     "away_team": "Tampa Bay Rays",
-    "home_ml": "-230",
-    "away_ml": "+200",
+    "home_ml": "+420",
+    "away_ml": "-550",
     "book": "fanduel"
   },
   "Washington Nationals": {
@@ -19,6 +12,13 @@
     "home_ml": "-104",
     "away_ml": "-112",
     "book": "fanduel"
+  },
+  "Boston Red Sox": {
+    "home_team": "Boston Red Sox",
+    "away_team": "Athletics",
+    "home_ml": "-259",
+    "away_ml": "+209",
+    "book": "draftkings"
   },
   "New York Yankees": {
     "home_team": "New York Yankees",
@@ -89,5 +89,19 @@
     "home_ml": "+102",
     "away_ml": "-120",
     "book": "fanduel"
+  },
+  "Arizona Diamondbacks": {
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Los Angeles Dodgers",
+    "home_ml": "+124",
+    "away_ml": "-146",
+    "book": "fanduel"
+  },
+  "San Diego Padres": {
+    "home_team": "San Diego Padres",
+    "away_team": "Houston Astros",
+    "home_ml": "-131",
+    "away_ml": "+109",
+    "book": "draftkings"
   }
 }
