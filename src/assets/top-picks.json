@@ -6,8 +6,8 @@
     "awayPitcher": "Connor Prielipp",
     "homePitcher": "Jacob Misiorowski",
     "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -240",
-    "odds": "-240",
+    "prediction": "Milwaukee Brewers -245",
+    "odds": "-245",
     "winProb": 0.679,
     "edge": 0.179,
     "confidence": "Elite",
@@ -57,6 +57,25 @@
     "rank": 3
   },
   {
+    "matchup": "Athletics @ Boston Red Sox",
+    "awayTeam": "Athletics",
+    "homeTeam": "Boston Red Sox",
+    "awayPitcher": "J.T. Ginn",
+    "homePitcher": "Erik Miller",
+    "pick": "Boston Red Sox",
+    "prediction": "Boston Red Sox -235",
+    "odds": "-235",
+    "winProb": 0.596,
+    "edge": 0.096,
+    "confidence": "Strong",
+    "predictedScore": "Athletics 2.6 \u2013 Boston Red Sox 3.9",
+    "predictedHomeScore": 3.91,
+    "predictedAwayScore": 2.62,
+    "gameTime": "2026-08-09T17:35:00Z",
+    "gamePk": 824724,
+    "rank": 4
+  },
+  {
     "matchup": "New York Mets @ Pittsburgh Pirates",
     "awayTeam": "New York Mets",
     "homeTeam": "Pittsburgh Pirates",
@@ -73,6 +92,6 @@
     "predictedAwayScore": 4.24,
     "gameTime": "2026-08-09T17:35:00Z",
     "gamePk": 823345,
-    "rank": 4
+    "rank": 5
   }
 ]
