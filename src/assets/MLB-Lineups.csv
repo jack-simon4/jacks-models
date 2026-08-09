@@ -179,6 +179,15 @@ St. Louis Cardinals6,Masyn Winn
 St. Louis Cardinals7,Nathan Church
 St. Louis Cardinals8,Jose Fermin
 St. Louis Cardinals9,Bryan Torres
+Baltimore Orioles1,Gunnar Henderson
+Baltimore Orioles2,Pete Alonso
+Baltimore Orioles3,Jackson Holliday
+Baltimore Orioles4,Tyler O'Neill
+Baltimore Orioles5,Dylan Beavers
+Baltimore Orioles6,Leody Taveras
+Baltimore Orioles7,Coby Mayo
+Baltimore Orioles8,Colton Cowser
+Baltimore Orioles9,Carlos Narvaez
 Texas Rangers1,Wyatt Langford
 Texas Rangers2,Corey Seager
 Texas Rangers3,Ezequiel Duran
@@ -188,6 +197,15 @@ Texas Rangers6,Justin Foscue
 Texas Rangers7,Elias Diaz
 Texas Rangers8,Jonah Bride
 Texas Rangers9,Cam Cauley
+Detroit Tigers1,Kevin McGonigle
+Detroit Tigers2,Gleyber Torres
+Detroit Tigers3,Dillon Dingler
+Detroit Tigers4,Riley Greene
+Detroit Tigers5,Colt Keith
+Detroit Tigers6,Spencer Torkelson
+Detroit Tigers7,Max Clark
+Detroit Tigers8,Eduardo Valencia
+Detroit Tigers9,Zach McKinstry
 San Francisco Giants1,Bryce Eldridge
 San Francisco Giants2,Jung Hoo Lee
 San Francisco Giants3,Willy Adames
@@ -197,6 +215,24 @@ San Francisco Giants6,Drew Gilbert
 San Francisco Giants7,Daniel Susac
 San Francisco Giants8,Grant McCray
 San Francisco Giants9,Christian Koss
+Los Angeles Dodgers1,Shohei Ohtani
+Los Angeles Dodgers2,Andy Pages
+Los Angeles Dodgers3,Freddie Freeman
+Los Angeles Dodgers4,Tommy Edman
+Los Angeles Dodgers5,Mookie Betts
+Los Angeles Dodgers6,Kyle Tucker
+Los Angeles Dodgers7,Teoscar Hernandez
+Los Angeles Dodgers8,Enrique Hernandez
+Los Angeles Dodgers9,Ben Rortvedt
+Seattle Mariners1,Taylor Ward
+Seattle Mariners2,Cole Young
+Seattle Mariners3,Randy Arozarena
+Seattle Mariners4,Dominic Canzone
+Seattle Mariners5,Julio Rodriguez
+Seattle Mariners6,Josh Naylor
+Seattle Mariners7,Cal Raleigh
+Seattle Mariners8,Weston Wilson
+Seattle Mariners9,Colt Emerson
 Arizona Diamondbacks1,Geraldo Perdomo
 Arizona Diamondbacks2,Corbin Carroll
 Arizona Diamondbacks3,Gabriel Moreno
@@ -206,24 +242,6 @@ Arizona Diamondbacks6,Nolan Arenado
 Arizona Diamondbacks7,Tim Tawa
 Arizona Diamondbacks8,James McCann
 Arizona Diamondbacks9,Ryan Waldschmidt
-Baltimore Orioles1,Gunnar Henderson
-Baltimore Orioles2,Pete Alonso
-Baltimore Orioles3,Jackson Holliday
-Baltimore Orioles4,Tyler O'Neill
-Baltimore Orioles5,Dylan Beavers
-Baltimore Orioles6,Leody Taveras
-Baltimore Orioles7,Christian Encarnacion-Strand
-Baltimore Orioles8,Colton Cowser
-Baltimore Orioles9,Carlos Narvaez
-Detroit Tigers1,Kevin McGonigle
-Detroit Tigers2,Gleyber Torres
-Detroit Tigers3,Dillon Dingler
-Detroit Tigers4,Riley Greene
-Detroit Tigers5,Colt Keith
-Detroit Tigers6,Spencer Torkelson
-Detroit Tigers7,Max Clark
-Detroit Tigers8,Javier Baez
-Detroit Tigers9,Zach McKinstry
 Houston Astros1,Jeremy Pena
 Houston Astros2,Yordan Alvarez
 Houston Astros3,Isaac Paredes
@@ -233,15 +251,6 @@ Houston Astros6,Daulton Varsho
 Houston Astros7,Cam Smith
 Houston Astros8,Taylor Trammell
 Houston Astros9,Christian Vazquez
-Los Angeles Dodgers1,Shohei Ohtani
-Los Angeles Dodgers2,Andy Pages
-Los Angeles Dodgers3,Freddie Freeman
-Los Angeles Dodgers4,Max Muncy
-Los Angeles Dodgers5,Mookie Betts
-Los Angeles Dodgers6,Kyle Tucker
-Los Angeles Dodgers7,Tommy Edman
-Los Angeles Dodgers8,Teoscar Hernandez
-Los Angeles Dodgers9,Hunter Feduccia
 San Diego Padres1,Fernando Tatis Jr.
 San Diego Padres2,Jake Cronenworth
 San Diego Padres3,Manny Machado
@@ -251,15 +260,6 @@ San Diego Padres6,Luis Campusano
 San Diego Padres7,Gavin Sheets
 San Diego Padres8,Xander Bogaerts
 San Diego Padres9,Luis Rengifo
-Seattle Mariners1,Taylor Ward
-Seattle Mariners2,Cole Young
-Seattle Mariners3,Randy Arozarena
-Seattle Mariners4,Dominic Canzone
-Seattle Mariners5,Julio Rodriguez
-Seattle Mariners6,Josh Naylor
-Seattle Mariners7,Brendan Donovan
-Seattle Mariners8,Cal Raleigh
-Seattle Mariners9,Colt Emerson
 Tampa Bay Rays1,Yandy Diaz
 Tampa Bay Rays2,Jonathan Aranda
 Tampa Bay Rays3,Junior Caminero

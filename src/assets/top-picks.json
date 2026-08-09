@@ -6,8 +6,8 @@
     "awayPitcher": "Connor Prielipp",
     "homePitcher": "Jacob Misiorowski",
     "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -245",
-    "odds": "-245",
+    "prediction": "Milwaukee Brewers -260",
+    "odds": "-260",
     "winProb": 0.679,
     "edge": 0.179,
     "confidence": "Elite",
@@ -57,14 +57,52 @@
     "rank": 3
   },
   {
+    "matchup": "Detroit Tigers @ San Francisco Giants",
+    "awayTeam": "Detroit Tigers",
+    "homeTeam": "San Francisco Giants",
+    "awayPitcher": "Troy Melton",
+    "homePitcher": "Logan Webb",
+    "pick": "Detroit Tigers",
+    "prediction": "Detroit Tigers -116",
+    "odds": "-116",
+    "winProb": 0.6,
+    "edge": 0.1,
+    "confidence": "Strong",
+    "predictedScore": "Detroit Tigers 3.8 \u2013 San Francisco Giants 2.4",
+    "predictedHomeScore": 2.41,
+    "predictedAwayScore": 3.76,
+    "gameTime": "2026-08-09T20:05:00Z",
+    "gamePk": 823190,
+    "rank": 4
+  },
+  {
+    "matchup": "Baltimore Orioles @ Texas Rangers",
+    "awayTeam": "Baltimore Orioles",
+    "homeTeam": "Texas Rangers",
+    "awayPitcher": "Cade Povich",
+    "homePitcher": "Kumar Rocker",
+    "pick": "Texas Rangers",
+    "prediction": "Texas Rangers -126",
+    "odds": "-126",
+    "winProb": 0.599,
+    "edge": 0.099,
+    "confidence": "Strong",
+    "predictedScore": "Baltimore Orioles 4.0 \u2013 Texas Rangers 5.4",
+    "predictedHomeScore": 5.35,
+    "predictedAwayScore": 4.01,
+    "gameTime": "2026-08-09T18:35:00Z",
+    "gamePk": 822862,
+    "rank": 5
+  },
+  {
     "matchup": "Athletics @ Boston Red Sox",
     "awayTeam": "Athletics",
     "homeTeam": "Boston Red Sox",
     "awayPitcher": "J.T. Ginn",
     "homePitcher": "Erik Miller",
     "pick": "Boston Red Sox",
-    "prediction": "Boston Red Sox -225",
-    "odds": "-225",
+    "prediction": "Boston Red Sox -205",
+    "odds": "-205",
     "winProb": 0.596,
     "edge": 0.096,
     "confidence": "Strong",
@@ -73,7 +111,7 @@
     "predictedAwayScore": 2.62,
     "gameTime": "2026-08-09T17:35:00Z",
     "gamePk": 824724,
-    "rank": 4
+    "rank": 6
   },
   {
     "matchup": "New York Mets @ Pittsburgh Pirates",
@@ -92,7 +130,7 @@
     "predictedAwayScore": 4.24,
     "gameTime": "2026-08-09T17:35:00Z",
     "gamePk": 823345,
-    "rank": 5
+    "rank": 7
   },
   {
     "matchup": "Atlanta Braves @ New York Yankees",
@@ -111,6 +149,6 @@
     "predictedAwayScore": 3.75,
     "gameTime": "2026-08-09T17:35:00Z",
     "gamePk": 823513,
-    "rank": 6
+    "rank": 8
   }
 ]
