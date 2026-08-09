@@ -2,71 +2,71 @@
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Cincinnati Reds",
-    "home_ml": "-390",
-    "away_ml": "+330",
+    "home_ml": "-10000",
+    "away_ml": "+2200",
+    "book": "betmgm"
+  },
+  "Philadelphia Phillies": {
+    "home_team": "Philadelphia Phillies",
+    "away_team": "Toronto Blue Jays",
+    "home_ml": "-700",
+    "away_ml": "+550",
     "book": "fanduel"
   },
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "Athletics",
-    "home_ml": "-205",
-    "away_ml": "+190",
-    "book": "fanduel"
-  },
-  "New York Yankees": {
-    "home_team": "New York Yankees",
-    "away_team": "Atlanta Braves",
-    "home_ml": "-138",
-    "away_ml": "+128",
+    "home_ml": "-240",
+    "away_ml": "+210",
     "book": "fanduel"
   },
   "Pittsburgh Pirates": {
     "home_team": "Pittsburgh Pirates",
     "away_team": "New York Mets",
-    "home_ml": "-142",
-    "away_ml": "+132",
+    "home_ml": "+600",
+    "away_ml": "-800",
     "book": "fanduel"
   },
-  "Philadelphia Phillies": {
-    "home_team": "Philadelphia Phillies",
-    "away_team": "Toronto Blue Jays",
-    "home_ml": "-220",
-    "away_ml": "+200",
+  "New York Yankees": {
+    "home_team": "New York Yankees",
+    "away_team": "Atlanta Braves",
+    "home_ml": "-140",
+    "away_ml": "+125",
     "book": "fanduel"
   },
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "Los Angeles Angels",
-    "home_ml": "-138",
-    "away_ml": "+128",
+    "home_ml": "-310",
+    "away_ml": "+270",
     "book": "fanduel"
   },
   "Kansas City Royals": {
     "home_team": "Kansas City Royals",
     "away_team": "Chicago Cubs",
-    "home_ml": "+142",
-    "away_ml": "-154",
+    "home_ml": "+170",
+    "away_ml": "-195",
     "book": "fanduel"
   },
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "Cleveland Guardians",
-    "home_ml": "+116",
-    "away_ml": "-126",
+    "home_ml": "-105",
+    "away_ml": "-110",
     "book": "fanduel"
   },
   "Milwaukee Brewers": {
     "home_team": "Milwaukee Brewers",
     "away_team": "Minnesota Twins",
-    "home_ml": "-260",
-    "away_ml": "+235",
+    "home_ml": "-430",
+    "away_ml": "+360",
     "book": "fanduel"
   },
   "St. Louis Cardinals": {
     "home_team": "St. Louis Cardinals",
-    "away_team": "Colorado Rockies",
-    "home_ml": "-158",
-    "away_ml": "+146",
+    "away_team": "Philadelphia Phillies",
+    "home_ml": "-106",
+    "away_ml": "-110",
     "book": "fanduel"
   },
   "Texas Rangers": {
@@ -79,15 +79,15 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Detroit Tigers",
-    "home_ml": "+108",
-    "away_ml": "-116",
+    "home_ml": "+112",
+    "away_ml": "-122",
     "book": "fanduel"
   },
   "Arizona Diamondbacks": {
     "home_team": "Arizona Diamondbacks",
     "away_team": "Los Angeles Dodgers",
-    "home_ml": "+132",
-    "away_ml": "-142",
+    "home_ml": "+126",
+    "away_ml": "-138",
     "book": "fanduel"
   },
   "Seattle Mariners": {
@@ -102,6 +102,41 @@
     "away_team": "Houston Astros",
     "home_ml": "-116",
     "away_ml": "+106",
+    "book": "fanduel"
+  },
+  "Toronto Blue Jays": {
+    "home_team": "Toronto Blue Jays",
+    "away_team": "Boston Red Sox",
+    "home_ml": "+130",
+    "away_ml": "-154",
+    "book": "fanduel"
+  },
+  "Atlanta Braves": {
+    "home_team": "Atlanta Braves",
+    "away_team": "New York Mets",
+    "home_ml": "-157",
+    "away_ml": "+130",
+    "book": "draftkings"
+  },
+  "Minnesota Twins": {
+    "home_team": "Minnesota Twins",
+    "away_team": "Baltimore Orioles",
+    "home_ml": "-104",
+    "away_ml": "-112",
+    "book": "fanduel"
+  },
+  "Los Angeles Angels": {
+    "home_team": "Los Angeles Angels",
+    "away_team": "Texas Rangers",
+    "home_ml": "-102",
+    "away_ml": "-116",
+    "book": "fanduel"
+  },
+  "Los Angeles Dodgers": {
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Kansas City Royals",
+    "home_ml": "-300",
+    "away_ml": "+245",
     "book": "fanduel"
   }
 }
