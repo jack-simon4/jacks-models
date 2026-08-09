@@ -54,13 +54,13 @@ Boston Red Sox7,Jarren Duran
 Boston Red Sox8,Eli White
 Boston Red Sox9,Jake Rogers
 Chicago Cubs1,Pete Crow-Armstrong
-Chicago Cubs2,Seiya Suzuki
-Chicago Cubs3,Michael Busch
-Chicago Cubs4,Alex Bregman
-Chicago Cubs5,Ian Happ
+Chicago Cubs2,Michael Busch
+Chicago Cubs3,Alex Bregman
+Chicago Cubs4,Ian Happ
+Chicago Cubs5,Michael Conforto
 Chicago Cubs6,Nico Hoerner
-Chicago Cubs7,Carson Kelly
-Chicago Cubs8,Dansby Swanson
+Chicago Cubs7,Dansby Swanson
+Chicago Cubs8,Miguel Amaya
 Chicago Cubs9,Tyrone Taylor
 Chicago White Sox1,Brenton Doyle
 Chicago White Sox2,Munetaka Murakami
@@ -81,13 +81,13 @@ Cincinnati Reds7,Dane Myers
 Cincinnati Reds8,Matt McLain
 Cincinnati Reds9,Ke'Bryan Hayes
 Cleveland Guardians1,Steven Kwan
-Cleveland Guardians2,Jo Adell
-Cleveland Guardians3,Chase DeLauter
-Cleveland Guardians4,Angel Martinez
-Cleveland Guardians5,Rhys Hoskins
-Cleveland Guardians6,Brayan Rocchio
-Cleveland Guardians7,Travis Bazzana
-Cleveland Guardians8,Austin Hedges
+Cleveland Guardians2,Chase DeLauter
+Cleveland Guardians3,Jose Ramirez
+Cleveland Guardians4,Nathaniel Lowe
+Cleveland Guardians5,Jo Adell
+Cleveland Guardians6,Travis Bazzana
+Cleveland Guardians7,Brayan Rocchio
+Cleveland Guardians8,Patrick Bailey
 Cleveland Guardians9,Angel Genao
 Colorado Rockies1,Jake McCarthy
 Colorado Rockies2,Cole Carrigg
@@ -182,11 +182,11 @@ National League All-Stars9,Drake Baldwin
 New York Mets1,A.J. Ewing
 New York Mets2,Francisco Lindor
 New York Mets3,Bo Bichette
-New York Mets4,Jared Young
+New York Mets4,Carson Benge
 New York Mets5,Luis Robert Jr.
-New York Mets6,Brett Baty
+New York Mets6,Jared Young
 New York Mets7,Marcus Semien
-New York Mets8,Jorge Polanco
+New York Mets8,Brett Baty
 New York Mets9,Francisco Alvarez
 New York Yankees1,Trent Grisham
 New York Yankees2,Ben Rice
@@ -230,8 +230,8 @@ San Francisco Giants3,Willy Adames
 San Francisco Giants4,Rafael Devers
 San Francisco Giants5,Osleivis Basabe
 San Francisco Giants6,Drew Gilbert
-San Francisco Giants7,Eddys Leonard
-San Francisco Giants8,Drew Cavanaugh
+San Francisco Giants7,Daniel Susac
+San Francisco Giants8,Grant McCray
 San Francisco Giants9,Christian Koss
 Seattle Mariners1,Taylor Ward
 Seattle Mariners2,Cole Young
@@ -260,15 +260,15 @@ Tampa Bay Rays6,Cedric Mullins
 Tampa Bay Rays7,Richie Palacios
 Tampa Bay Rays8,Nick Fortes
 Tampa Bay Rays9,Taylor Walls
-Texas Rangers1,Joc Pederson
-Texas Rangers2,Wyatt Langford
-Texas Rangers3,Corey Seager
+Texas Rangers1,Wyatt Langford
+Texas Rangers2,Corey Seager
+Texas Rangers3,Ezequiel Duran
 Texas Rangers4,Brandon Nimmo
-Texas Rangers5,Ezequiel Duran
-Texas Rangers6,Evan Carter
-Texas Rangers7,Jake Burger
-Texas Rangers8,Austin Wynns
-Texas Rangers9,Nicky Lopez
+Texas Rangers5,Jake Burger
+Texas Rangers6,Justin Foscue
+Texas Rangers7,Elias Diaz
+Texas Rangers8,Jonah Bride
+Texas Rangers9,Cam Cauley
 Toronto Blue Jays1,Brett Bateman
 Toronto Blue Jays2,Vladimir Guerrero Jr.
 Toronto Blue Jays3,Alejandro Kirk
