@@ -65,8 +65,8 @@
   "Los Angeles Dodgers": {
     "home_team": "Los Angeles Dodgers",
     "away_team": "Kansas City Royals",
-    "home_ml": "-310",
-    "away_ml": "+270",
+    "home_ml": "-270",
+    "away_ml": "+240",
     "book": "fanduel"
   }
 }
