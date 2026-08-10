@@ -11,6 +11,9 @@ lineup for every team and is updated whenever live data arrives.
 This ensures late-game teams (e.g. Dodgers with 7 PM starts) always appear
 in the props table even before their lineup is officially posted.
 
+Pitchers are excluded from all lineups (live and history) by cross-referencing
+against MLB-Pitchers.csv and the player's position code in the API response.
+
 Output format: Team column like "Arizona Diamondbacks1", Player column.
 """
 
@@ -26,12 +29,26 @@ def _ascii(name):
     """Strip accents and non-ASCII so names match the hitters/pitchers CSV keys."""
     return unicodedata.normalize('NFKD', str(name)).encode('ascii', 'ignore').decode('ascii')
 
-OUTPUT = os.path.normpath(
-    os.path.join(os.path.dirname(__file__), '..', 'src', 'assets', 'MLB-Lineups.csv')
-)
-HISTORY = os.path.normpath(
-    os.path.join(os.path.dirname(__file__), '..', 'src', 'assets', 'MLB-Last-Lineups.csv')
-)
+
+def _is_pitcher_position(position_dict: dict) -> bool:
+    """Return True if the position code indicates a pitcher."""
+    abbrev = str(position_dict.get('abbreviation', '')).strip().upper()
+    code   = str(position_dict.get('code', '')).strip()
+    return abbrev == 'P' or code == '1'
+
+
+OUTPUT  = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'src', 'assets', 'MLB-Lineups.csv'))
+HISTORY = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'src', 'assets', 'MLB-Last-Lineups.csv'))
+PITCHERS_CSV = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'src', 'assets', 'MLB-Pitchers.csv'))
+
+
+def _load_pitcher_names() -> set:
+    """Load pitcher names from MLB-Pitchers.csv as an ASCII-normalised set."""
+    try:
+        df = pd.read_csv(PITCHERS_CSV, encoding='utf-8')
+        return {_ascii(str(n).strip()) for n in df['Name'] if n}
+    except Exception:
+        return set()
 
 
 def _load_history():
@@ -54,6 +71,9 @@ def _save_history(history):
 def fetch_mlb_lineups():
     today = date.today().strftime('%m/%d/%Y')
     print('[Lineups] Fetching lineups for', today)
+
+    pitcher_names = _load_pitcher_names()
+    print(f'[Lineups] Loaded {len(pitcher_names)} pitcher names for filtering.')
 
     # Load persistent history as the fallback source
     history = _load_history()
@@ -97,22 +117,34 @@ def fetch_mlb_lineups():
                     teams_with_live.add(team_name)
                     for slot, player in enumerate(gd_players[:9], start=1):
                         full_name = player.get('fullName', '')
-                        if full_name:
-                            live_rows.append({'Team': team_name + str(slot), 'Player': _ascii(full_name)})
+                        primary_pos = player.get('primaryPosition', {})
+                        if not full_name:
+                            continue
+                        if _is_pitcher_position(primary_pos):
+                            print(f'[Lineups]   Skipping pitcher {full_name} in {team_name} slot {slot}')
+                            continue
+                        if _ascii(full_name) in pitcher_names:
+                            print(f'[Lineups]   Skipping pitcher {full_name} in {team_name} slot {slot} (CSV match)')
+                            continue
+                        live_rows.append({'Team': team_name + str(slot), 'Player': _ascii(full_name)})
                 continue
 
             teams_with_live.add(team_name)
             for slot, pid in enumerate(batting_order[:9], start=1):
-                full_name = (
-                    players
-                    .get('ID' + str(pid), {})
-                    .get('person', {})
-                    .get('fullName', '')
-                )
-                if full_name:
-                    live_rows.append({'Team': team_name + str(slot), 'Player': _ascii(full_name)})
+                player_data = players.get('ID' + str(pid), {})
+                full_name   = player_data.get('person', {}).get('fullName', '')
+                position    = player_data.get('position', {})
+                if not full_name:
+                    continue
+                if _is_pitcher_position(position):
+                    print(f'[Lineups]   Skipping pitcher {full_name} in {team_name} slot {slot}')
+                    continue
+                if _ascii(full_name) in pitcher_names:
+                    print(f'[Lineups]   Skipping pitcher {full_name} in {team_name} slot {slot} (CSV match)')
+                    continue
+                live_rows.append({'Team': team_name + str(slot), 'Player': _ascii(full_name)})
 
-    # Update history with every live slot we just received
+    # Update history with every live slot we just received (pitchers already filtered above)
     for row in live_rows:
         history[row['Team']] = row['Player']
 
@@ -139,8 +171,12 @@ def fetch_mlb_lineups():
         slots = [history.get(team_name + str(s), '') for s in range(1, 10)]
         if any(slots):
             for slot, player in enumerate(slots, start=1):
-                if player:
-                    fallback_rows.append({'Team': team_name + str(slot), 'Player': _ascii(player)})
+                if not player:
+                    continue
+                if _ascii(player) in pitcher_names:
+                    print(f'[Lineups]   Removing pitcher {player} from {team_name} history (slot {slot})')
+                    continue
+                fallback_rows.append({'Team': team_name + str(slot), 'Player': _ascii(player)})
             fallback_count += 1
             print('[Lineups]   Using last known lineup for', team_name, '(playing today)')
         else:
@@ -151,11 +187,14 @@ def fetch_mlb_lineups():
         slots = [history.get(team_name + str(s), '') for s in range(1, 10)]
         if any(slots):
             for slot, player in enumerate(slots, start=1):
-                if player:
-                    fallback_rows.append({'Team': team_name + str(slot), 'Player': _ascii(player)})
+                if not player:
+                    continue
+                if _ascii(player) in pitcher_names:
+                    continue
+                fallback_rows.append({'Team': team_name + str(slot), 'Player': _ascii(player)})
             fallback_count += 1
 
-    # Save updated history (includes today's live slots)
+    # Save updated history (includes today's live slots; pitchers were never added)
     _save_history(history)
 
     # Write today's complete lineup file
