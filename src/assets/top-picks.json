@@ -1,24 +1,5 @@
 [
   {
-    "matchup": "Kansas City Royals @ Los Angeles Dodgers",
-    "awayTeam": "Kansas City Royals",
-    "homeTeam": "Los Angeles Dodgers",
-    "awayPitcher": "Noah Cameron",
-    "homePitcher": "Tarik Skubal",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -270",
-    "odds": "-270",
-    "winProb": 0.588,
-    "edge": 0.088,
-    "confidence": "Strong",
-    "predictedScore": "Kansas City Royals 4.2 \u2013 Los Angeles Dodgers 5.4",
-    "predictedHomeScore": 5.44,
-    "predictedAwayScore": 4.25,
-    "gameTime": "2026-08-11T02:10:00Z",
-    "gamePk": 823918,
-    "rank": 1
-  },
-  {
     "matchup": "Tampa Bay Rays @ Athletics",
     "awayTeam": "Tampa Bay Rays",
     "homeTeam": "Athletics",
@@ -35,6 +16,25 @@
     "predictedAwayScore": 6.54,
     "gameTime": "2026-08-11T01:40:00Z",
     "gamePk": 824969,
+    "rank": 1
+  },
+  {
+    "matchup": "Kansas City Royals @ Los Angeles Dodgers",
+    "awayTeam": "Kansas City Royals",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Noah Cameron",
+    "homePitcher": "Tarik Skubal",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -270",
+    "odds": "-270",
+    "winProb": 0.585,
+    "edge": 0.085,
+    "confidence": "Strong",
+    "predictedScore": "Kansas City Royals 4.3 \u2013 Los Angeles Dodgers 5.5",
+    "predictedHomeScore": 5.46,
+    "predictedAwayScore": 4.32,
+    "gameTime": "2026-08-11T02:10:00Z",
+    "gamePk": 823918,
     "rank": 2
   }
 ]
