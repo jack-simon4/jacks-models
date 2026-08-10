@@ -2,8 +2,8 @@
   "Toronto Blue Jays": {
     "home_team": "Toronto Blue Jays",
     "away_team": "Boston Red Sox",
-    "home_ml": "-154",
-    "away_ml": "+130",
+    "home_ml": "-158",
+    "away_ml": "+134",
     "book": "fanduel"
   },
   "Atlanta Braves": {
@@ -79,8 +79,8 @@
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "Pittsburgh Pirates",
-    "home_ml": "+100",
-    "away_ml": "-118",
+    "home_ml": "+104",
+    "away_ml": "-122",
     "book": "fanduel"
   },
   "New York Yankees": {
@@ -93,8 +93,8 @@
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "Cincinnati Reds",
-    "home_ml": "-162",
-    "away_ml": "+136",
+    "home_ml": "-166",
+    "away_ml": "+140",
     "book": "fanduel"
   }
 }
