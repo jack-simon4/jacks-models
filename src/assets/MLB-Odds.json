@@ -2,8 +2,8 @@
   "Toronto Blue Jays": {
     "home_team": "Toronto Blue Jays",
     "away_team": "Boston Red Sox",
-    "home_ml": "+132",
-    "away_ml": "-156",
+    "home_ml": "+138",
+    "away_ml": "-164",
     "book": "fanduel"
   },
   "Atlanta Braves": {
@@ -37,8 +37,8 @@
   "Arizona Diamondbacks": {
     "home_team": "Arizona Diamondbacks",
     "away_team": "Colorado Rockies",
-    "home_ml": "-164",
-    "away_ml": "+138",
+    "home_ml": "-168",
+    "away_ml": "+142",
     "book": "fanduel"
   },
   "Athletics": {
@@ -51,8 +51,8 @@
   "San Diego Padres": {
     "home_team": "San Diego Padres",
     "away_team": "Milwaukee Brewers",
-    "home_ml": "-112",
-    "away_ml": "-104",
+    "home_ml": "-108",
+    "away_ml": "-108",
     "book": "fanduel"
   },
   "San Francisco Giants": {
