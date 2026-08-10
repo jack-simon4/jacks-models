@@ -14,7 +14,6 @@ Free tier: 500 requests/month.  This script makes 1 request per run.
 
 import json
 import os
-import sys
 
 import requests
 
@@ -58,8 +57,10 @@ def fetch_mlb_odds():
         resp = requests.get(API_URL, params=params, timeout=15)
         resp.raise_for_status()
     except requests.RequestException as exc:
-        print(f'[Odds] API request failed: {exc}')
-        sys.exit(1)
+        print(f'[Odds] API request failed: {exc} — writing empty odds file and continuing.')
+        with open(OUTPUT, 'w', encoding='utf-8') as f:
+            json.dump({}, f)
+        return
 
     remaining = resp.headers.get('x-requests-remaining', '?')
     print(f'[Odds] Requests remaining this month: {remaining}')
