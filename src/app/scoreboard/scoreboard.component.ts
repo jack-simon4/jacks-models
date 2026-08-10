@@ -131,6 +131,7 @@ export class ScoreboardComponent implements OnInit {
   nbaStats: NBAStats ={};
   ncaafStats: NCAAFStats = {};
   nflstats: NFLStats = {};
+  nflLeagueAvg = { rushYPA: 4.44, rushAtt: 26.95, passYPA: 7.175, passAtt: 32.69, ydsPt: 15.053, ptsPP: 0.3715, playsG: 62.084 };
   nhlstats: NHLStats = {};
   ncaamSpreads: { [team: string]: number } = {};
   nbaSpreads: { [team: string]: number } = {};
@@ -505,38 +506,50 @@ resetScores() {
       oRushPerGame: number, dRushPerGame: number, oPassPerGame: number, dPassPerGame: number,
      oYdsPerPoint: number, dYdsPerPoint: number, oPtsPerPlay: number, dPtsPerPlay: number,
       oPlaysGame: number, dPlaysGame: number,HomeAdv: number  } } = {};
-  
+
     if (csvData) {
-      const lines = csvData.split('\n').slice(1); // Remove the header row
-  
+      const lines = csvData.split('\n').slice(1).filter(l => l.trim());
+
       lines.forEach(line => {
         const [team, RushYdsAtt, dRushYdsAtt, PassYdsAtt, dPassYdsAtt,
           oRushPerGame, dRushPerGame, oPassPerGame, dPassPerGame,
          oYdsPerPoint, dYdsPerPoint, oPtsPerPlay, dPtsPerPlay,
           oPlaysGame, dPlaysGame, HomeAdv] = line.trim().split(',');
         projscore[team] = {
-          RushYdsAtt: parseFloat(RushYdsAtt), // Convert to number
-          dRushYdsAtt:parseFloat(dRushYdsAtt), // Convert to number
-           PassYdsAtt:parseFloat(PassYdsAtt), // Convert to number
-            dPassYdsAtt:parseFloat(dPassYdsAtt), // Convert to number
-          oRushPerGame:parseFloat(oRushPerGame), // Convert to number
-           dRushPerGame:parseFloat(dRushPerGame), // Convert to number
-            oPassPerGame:parseFloat(oPassPerGame), // Convert to number
-             dPassPerGame:parseFloat(dPassPerGame), // Convert to number
-         oYdsPerPoint:parseFloat(oYdsPerPoint), // Convert to number
-          dYdsPerPoint:parseFloat(dYdsPerPoint), // Convert to number
-           oPtsPerPlay:parseFloat(oPtsPerPlay), // Convert to number
-            dPtsPerPlay:parseFloat(dPtsPerPlay), // Convert to number
-          oPlaysGame: parseFloat(oPlaysGame), // Convert to number
-          dPlaysGame:parseFloat(dPlaysGame), // Convert to number
-          HomeAdv:parseFloat(HomeAdv), // Convert to number
-      
+          RushYdsAtt: parseFloat(RushYdsAtt),
+          dRushYdsAtt: parseFloat(dRushYdsAtt),
+          PassYdsAtt: parseFloat(PassYdsAtt),
+          dPassYdsAtt: parseFloat(dPassYdsAtt),
+          oRushPerGame: parseFloat(oRushPerGame),
+          dRushPerGame: parseFloat(dRushPerGame),
+          oPassPerGame: parseFloat(oPassPerGame),
+          dPassPerGame: parseFloat(dPassPerGame),
+          oYdsPerPoint: parseFloat(oYdsPerPoint),
+          dYdsPerPoint: parseFloat(dYdsPerPoint),
+          oPtsPerPlay: parseFloat(oPtsPerPlay),
+          dPtsPerPlay: parseFloat(dPtsPerPlay),
+          oPlaysGame: parseFloat(oPlaysGame),
+          dPlaysGame: parseFloat(dPlaysGame),
+          HomeAdv: parseFloat(HomeAdv),
         };
       });
-  
-     
+
+      // Compute league averages directly from the loaded data so they
+      // stay in sync whenever NFL-Stats.csv is updated with new season data.
+      const teams = Object.values(projscore).filter(t => !isNaN(t.RushYdsAtt));
+      const avg = (fn: (t: typeof teams[0]) => number) =>
+        teams.reduce((s, t) => s + fn(t), 0) / teams.length;
+      this.nflLeagueAvg = {
+        rushYPA:  avg(t => t.RushYdsAtt),
+        rushAtt:  avg(t => t.oRushPerGame),
+        passYPA:  avg(t => t.PassYdsAtt),
+        passAtt:  avg(t => t.oPassPerGame),
+        ydsPt:    avg(t => t.oYdsPerPoint),
+        ptsPP:    avg(t => t.oPtsPerPlay),
+        playsG:   avg(t => t.oPlaysGame),
+      };
     }
-  
+
     return projscore;
   }
 
@@ -1150,40 +1163,40 @@ parseNHLStats(csvData: string | undefined) {
    const homeTeamNFL = this.nflstats[this.selectedHomeTeam];
    const awayTeamNFL = this.nflstats[this.selectedAwayTeam];
    if (homeTeamNFL && awayTeamNFL) {
-    // Calculate various intermediate values
-    const HrYdsAtt = (.85 * homeTeamNFL.RushYdsAtt * (awayTeamNFL.dRushYdsAtt / 4.44))+(.15* 4.44); //4.45 = avg
-    const ArYdsAtt = (.85 * awayTeamNFL.RushYdsAtt * (homeTeamNFL.dRushYdsAtt / 4.44)) + (.15* 4.44); //4.45 = avg
-    const HrAtt = (.85 * homeTeamNFL.oRushPerGame * (awayTeamNFL.dRushPerGame / 26.95)) + (.15* 26.95); //27.2 avg
-    const ArAtt = (.85 * awayTeamNFL.oRushPerGame * (homeTeamNFL.dRushPerGame / 26.95)) + (.15*26.95); //27.2 avg
-    const hRushYds = HrYdsAtt * HrAtt;
-    const aRushYds = ArYdsAtt * ArAtt;
-    const HpYdsAtt = (.85 * homeTeamNFL.PassYdsAtt * (awayTeamNFL.dPassYdsAtt / 7.175)) + (.15* 7.175); //6.55 = avg
-    const ApYdsAtt = (.85 * awayTeamNFL.PassYdsAtt * (homeTeamNFL.dPassYdsAtt / 7.175)) + (.15 * 7.175); //6.55 = avg
-    const HpAtt = (.85 * homeTeamNFL.oPassPerGame * (awayTeamNFL.dPassPerGame / 32.69)) + (.15 * 32.69); //33.42 avg
-    const ApAtt = (.85 * awayTeamNFL.oPassPerGame * (homeTeamNFL.dPassPerGame / 32.69)) + (.15* 32.69); //33.42 avg
-    const hPassYds = HpYdsAtt * HpAtt;
-    const aPassYds = ApYdsAtt * ApAtt;
-    const homeAdvModifier = this.isNeutralSite ? 0 : homeTeamNFL.HomeAdv/2;
+    const lg = this.nflLeagueAvg;
+    const homeAdvModifier = this.isNeutralSite ? 0 : homeTeamNFL.HomeAdv / 2;
+
+    const HrYdsAtt  = (.85 * homeTeamNFL.RushYdsAtt  * (awayTeamNFL.dRushYdsAtt / lg.rushYPA)) + (.15 * lg.rushYPA);
+    const ArYdsAtt  = (.85 * awayTeamNFL.RushYdsAtt  * (homeTeamNFL.dRushYdsAtt / lg.rushYPA)) + (.15 * lg.rushYPA);
+    const HrAtt     = (.85 * homeTeamNFL.oRushPerGame * (awayTeamNFL.dRushPerGame / lg.rushAtt)) + (.15 * lg.rushAtt);
+    const ArAtt     = (.85 * awayTeamNFL.oRushPerGame * (homeTeamNFL.dRushPerGame / lg.rushAtt)) + (.15 * lg.rushAtt);
+    const hRushYds  = HrYdsAtt * HrAtt;
+    const aRushYds  = ArYdsAtt * ArAtt;
+
+    const HpYdsAtt  = (.85 * homeTeamNFL.PassYdsAtt  * (awayTeamNFL.dPassYdsAtt / lg.passYPA)) + (.15 * lg.passYPA);
+    const ApYdsAtt  = (.85 * awayTeamNFL.PassYdsAtt  * (homeTeamNFL.dPassYdsAtt / lg.passYPA)) + (.15 * lg.passYPA);
+    const HpAtt     = (.85 * homeTeamNFL.oPassPerGame * (awayTeamNFL.dPassPerGame / lg.passAtt)) + (.15 * lg.passAtt);
+    const ApAtt     = (.85 * awayTeamNFL.oPassPerGame * (homeTeamNFL.dPassPerGame / lg.passAtt)) + (.15 * lg.passAtt);
+    const hPassYds  = HpYdsAtt * HpAtt;
+    const aPassYds  = ApYdsAtt * ApAtt;
+
     const hTotalYds = hPassYds + hRushYds;
     const aTotalYds = aPassYds + aRushYds;
-    const HoYP = (.85 * homeTeamNFL.oYdsPerPoint * (awayTeamNFL.dYdsPerPoint / 15.053)) + (.15* 15.053); //15.55 = avg
-    const AoYP = (.85 * awayTeamNFL.oYdsPerPoint * (homeTeamNFL.dYdsPerPoint / 15.053)) + (.15 * 15.053); //15.55 = avg
+
+    const HoYP      = (.85 * homeTeamNFL.oYdsPerPoint * (awayTeamNFL.dYdsPerPoint / lg.ydsPt)) + (.15 * lg.ydsPt);
+    const AoYP      = (.85 * awayTeamNFL.oYdsPerPoint * (homeTeamNFL.dYdsPerPoint / lg.ydsPt)) + (.15 * lg.ydsPt);
     const hYdsScore = hTotalYds / HoYP;
     const AYdsScore = aTotalYds / AoYP;
-    const HoPPlay = (.85 * homeTeamNFL.oPtsPerPlay * (awayTeamNFL.dPtsPerPlay / 0.3715)) + (.15 * .3715); // .3493 avg
-    const AoPPlay = (.85 * awayTeamNFL.oPtsPerPlay * (homeTeamNFL.dPtsPerPlay / 0.3715)) + (.15 * .3715); // .3493 avg
-    const hPlaysGame = (.85 * homeTeamNFL.oPlaysGame * (awayTeamNFL.dPlaysGame / 62.084)) + (.15* 62.084); //63.04 avg
-    const aPlaysGame = (.85 * awayTeamNFL.oPlaysGame * (homeTeamNFL.dPlaysGame / 62.084)) + (.15* 62.084); //63.04 avg
+
+    const HoPPlay   = (.85 * homeTeamNFL.oPtsPerPlay * (awayTeamNFL.dPtsPerPlay / lg.ptsPP)) + (.15 * lg.ptsPP);
+    const AoPPlay   = (.85 * awayTeamNFL.oPtsPerPlay * (homeTeamNFL.dPtsPerPlay / lg.ptsPP)) + (.15 * lg.ptsPP);
+    const hPlaysGame = (.85 * homeTeamNFL.oPlaysGame * (awayTeamNFL.dPlaysGame / lg.playsG)) + (.15 * lg.playsG);
+    const aPlaysGame = (.85 * awayTeamNFL.oPlaysGame * (homeTeamNFL.dPlaysGame / lg.playsG)) + (.15 * lg.playsG);
     const hPlaysScore = HoPPlay * hPlaysGame;
     const aPlaysScore = AoPPlay * aPlaysGame;
-   
 
-
-    // Calculate the home team's total score
-    this.homeTeamScore = Math.floor(((hYdsScore + hPlaysScore) / 2) + homeAdvModifier);
-
-    // Calculate the away team's total score
-    this.awayTeamScore = Math.floor(((AYdsScore + aPlaysScore) / 2) - homeAdvModifier);
+    this.homeTeamScore = +(((hYdsScore + hPlaysScore) / 2) + homeAdvModifier).toFixed(2);
+    this.awayTeamScore = +(((AYdsScore + aPlaysScore) / 2) - homeAdvModifier).toFixed(2);
   }
 
   this.showDetailsButton = true;
