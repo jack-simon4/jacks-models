@@ -104,8 +104,8 @@ def confidence_label(edge: float):
     return None
 
 
-def save_picks_to_firestore(picks: list):
-    """Write today's qualifying picks to Firestore. No-op if creds unavailable."""
+def save_games_to_firestore(all_games: list):
+    """Write every simulated game to Firestore. No-op if creds unavailable."""
     sa_json = os.environ.get('FIREBASE_SERVICE_ACCOUNT')
     if not sa_json:
         print('[TopPicks] FIREBASE_SERVICE_ACCOUNT not set — skipping Firestore save.')
@@ -119,8 +119,8 @@ def save_picks_to_firestore(picks: list):
     db = fb_firestore.client()
 
     saved = 0
-    for pick in picks:
-        game_pk = pick.get('gamePk')
+    for game in all_games:
+        game_pk = game.get('gamePk')
         if not game_pk:
             continue
         doc_ref = db.collection('games').document(str(game_pk))
@@ -128,27 +128,27 @@ def save_picks_to_firestore(picks: list):
         if not doc_ref.get().exists:
             doc_ref.set({
                 'sport': 'MLB',
-                'homeTeam': pick['homeTeam'],
-                'awayTeam': pick['awayTeam'],
-                'predictedHomeScore': pick['predictedHomeScore'],
-                'predictedAwayScore': pick['predictedAwayScore'],
+                'homeTeam': game['homeTeam'],
+                'awayTeam': game['awayTeam'],
+                'predictedHomeScore': game['predictedHomeScore'],
+                'predictedAwayScore': game['predictedAwayScore'],
                 'actualHomeScore': None,
                 'actualAwayScore': None,
-                'pick': pick['pick'],
-                'winProb': pick['winProb'],
-                'odds': pick['odds'],
-                'confidence': pick['confidence'],
+                'pick': game.get('pick', ''),
+                'winProb': game.get('winProb', 0),
+                'odds': game.get('odds', ''),
+                'confidence': game.get('confidence', ''),
                 'gamePk': game_pk,
-                'gameTime': pick['gameTime'],
-                'awayPitcher': pick.get('awayPitcher', ''),
-                'homePitcher': pick.get('homePitcher', ''),
+                'gameTime': game['gameTime'],
+                'awayPitcher': game.get('awayPitcher', ''),
+                'homePitcher': game.get('homePitcher', ''),
                 'timestamp': fb_firestore.SERVER_TIMESTAMP,
             })
             saved += 1
-            print(f'  [Firestore] Saved: {pick["awayTeam"]} @ {pick["homeTeam"]}')
+            print(f'  [Firestore] Saved: {game["awayTeam"]} @ {game["homeTeam"]}')
 
     firebase_admin.delete_app(app)
-    print(f'[TopPicks] {saved} new picks written to Firestore.')
+    print(f'[TopPicks] {saved} new game(s) written to Firestore.')
 
 
 # ── Data loaders ───────────────────────────────────────────────────────────
@@ -291,37 +291,39 @@ def fill_batter(raw: dict | None) -> dict:
     return out
 
 
+# wOBA linear weights — must match scoreboard.component.ts
+_LW_BB  = 0.69
+_LW_1B  = 0.89
+_LW_2B  = 1.27
+_LW_3B  = 1.62
+_LW_HR  = 2.10
+_WOBA_SCALE = 0.411
+_HFA        = 0.15  # home-field advantage in runs
+
+
 # ── Core model ─────────────────────────────────────────────────────────────
 def _team_score(batters: list, opp_pitcher: dict, opp_hand: str,
                 park: dict, is_home: bool) -> float:
     """
-    Compute expected runs for one team — direct port of the TypeScript MLB
-    model inner loop (lines 1299-1452 of scoreboard.component.ts).
+    Compute expected runs via wOBA linear weights — matches the TypeScript
+    MLB model update in scoreboard.component.ts (Aug 2026 revision).
     """
-    xbases_list = []
+    woba_num = 0.0
 
     for i, b in enumerate(batters):
-        platoon     = b['wRops'] if opp_hand == 'R' else b['wLops']
-        platoon_rev = b['wLops'] if opp_hand == 'R' else b['wRops']  # strikeouts reversed
+        platoon = b['wRops'] if opp_hand == 'R' else b['wLops']
 
         single = log5(b['single_pct'], opp_pitcher['single_pct'], 0.13425) * platoon * park['w1B']
         double = log5(b['double_pct'], opp_pitcher['double_pct'], 0.0409)  * platoon * park['w2B']
         triple = log5(b['triple_pct'], opp_pitcher['triple_pct'], 0.00367) * platoon * park['w3B']
         hr     = log5(b['hr_pct'],     opp_pitcher['hr_pct'],     0.02555) * platoon * park['wHR']
-        _k     = log5(b['k_percent'] / 100, opp_pitcher['k_percent'] / 100, 0.21377) * platoon_rev * park['wSO']  # noqa: F841
         bb     = log5(b['bb_percent'] / 100, opp_pitcher['bb_percent'] / 100, 0.093317) * platoon * park['wBB']
-        ab     = PA_SLOTS[i] * (1 - bb)
-        xslg   = (b['xslg'] * (opp_pitcher['xslg'] / 0.3878)) * platoon
 
-        # xBases per batter — rounded to 2dp like TypeScript's .toFixed(2)
-        xb = round(
-            ((xslg * ab) + ((single + double * 2 + triple * 3 + hr * 4) * PA_SLOTS[i])) / 2 - 0.19,
-            2,
+        woba_num += PA_SLOTS[i] * (
+            bb * _LW_BB + single * _LW_1B + double * _LW_2B + triple * _LW_3B + hr * _LW_HR
         )
-        xbases_list.append(max(xb, 0.0))
 
-    offset = 0.125 if is_home else 0.175
-    return math.floor(sum(xbases_list)) / park['TB_R'] - offset
+    return round(woba_num * _WOBA_SCALE + (_HFA if is_home else 0.0), 2)
 
 
 def simulate_game(
@@ -384,7 +386,8 @@ def generate_top_picks():
         return
 
     print(f'[TopPicks] {len(schedule)} games today.')
-    picks = []
+    all_games = []  # every simulated game — goes to Firestore
+    picks = []      # only best bets — goes to top-picks.json
 
     for game in schedule:
         away_name    = game.get('away_name', '')
@@ -417,30 +420,19 @@ def generate_top_picks():
 
         edge  = pick_wp - 0.5
         label = confidence_label(edge)
-        if label is None:
-            print(f'    Edge {edge:.3f} below threshold — skipping.')
-            continue
 
-        # Vegas consensus filter: only keep picks where Vegas agrees on winner.
-        # If no odds are available, skip the consensus check and keep the pick.
+        # Vegas consensus check (only affects best-bets filter, not Firestore logging)
         game_odds = vegas_odds.get(home_name)
         vfav = vegas_favorite(game_odds, home_name, away_name)
-        if vfav is not None and vfav != pick_team:
-            print(f'    Model favors {pick_team} but Vegas favors {vfav} — skipping (no consensus).')
-            continue
+        vegas_agrees = vfav is None or vfav == pick_team
 
         # Use real Vegas odds if available; fall back to model-derived odds
         if game_odds:
-            if pick_team == home_name:
-                odds = game_odds['home_ml']
-            else:
-                odds = game_odds['away_ml']
-            print(f'    Using Vegas odds: {pick_team} {odds}')
+            odds = game_odds['home_ml'] if pick_team == home_name else game_odds['away_ml']
         else:
             odds = prob_to_american(pick_wp)
-            print(f'    No Vegas line — using model odds: {pick_team} {odds}')
 
-        picks.append({
+        game_record = {
             'matchup':             f'{away_name} @ {home_name}',
             'awayTeam':            away_name,
             'homeTeam':            home_name,
@@ -451,13 +443,25 @@ def generate_top_picks():
             'odds':                odds,
             'winProb':             round(pick_wp, 3),
             'edge':                round(edge, 3),
-            'confidence':          label,
+            'confidence':          label or '',
             'predictedScore':      f'{away_name} {away_runs:.1f} – {home_name} {home_runs:.1f}',
             'predictedHomeScore':  round(home_runs, 2),
             'predictedAwayScore':  round(away_runs, 2),
             'gameTime':            game_time,
             'gamePk':              game_pk,
-        })
+        }
+        all_games.append(game_record)
+
+        # Best-bets filter: must clear confidence threshold AND Vegas consensus
+        if label is None:
+            print(f'    Edge {edge:.3f} below threshold — logging only.')
+            continue
+        if not vegas_agrees:
+            print(f'    Model favors {pick_team} but Vegas favors {vfav} — logging only.')
+            continue
+
+        print(f'    {"Vegas" if game_odds else "Model"} odds: {pick_team} {odds}')
+        picks.append(game_record)
 
     picks.sort(key=lambda x: x['edge'], reverse=True)
     for i, p in enumerate(picks):
@@ -466,8 +470,9 @@ def generate_top_picks():
     with open(OUTPUT, 'w', encoding='utf-8') as f:
         json.dump(picks, f, indent=2)
     print(f'[TopPicks] Saved {len(picks)} qualifying picks -> {OUTPUT}')
+    print(f'[TopPicks] Total games simulated today: {len(all_games)}')
 
-    save_picks_to_firestore(picks)
+    save_games_to_firestore(all_games)
 
 
 if __name__ == '__main__':

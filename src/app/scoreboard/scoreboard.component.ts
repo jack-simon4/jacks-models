@@ -1438,19 +1438,31 @@ this.awayHitPercent = awayHitPercent
 const homexBases: number[] = [];
 const awayxBases: number[] = [];
 
-// Loop through home batters and calculate xBases for each
+// Build xBases arrays for display (unchanged formula)
 for (let i = 0; i < homeBatters.length; i++) {
   const xBases = Number(((HomeXslg[i] * HomeAB[i]) + ((HomeSingle[i] + (HomeDouble[i] * 2) + (HomeTriple[i] * 3) + (HomeHR[i] * 4)) * PA[i])) / 2 - 0.19).toFixed(2);
   homexBases.push(Number(xBases));
-  this.homeTeamScore = Number((Math.floor(homexBases[2]+ homexBases[3] +homexBases[4]+ homexBases[5]+ homexBases[6]+ homexBases[7] + homexBases[8]+ homexBases[1]+ homexBases[0])/ ParkFactor.TB_R - 0.125).toFixed(2)); 
 }
-
-// Loop through away batters and calculate xBases for each
 for (let i = 0; i < awayBatters.length; i++) {
   const xBases = Number(((awayXslg[i] * awayAB[i]) + ((awaySingle[i] + (awayDouble[i] * 2) + (awayTriple[i] * 3) + (awayHR[i] * 4)) * PA[i])) / 2 - 0.19).toFixed(2);
   awayxBases.push(Number(xBases));
-  this.awayTeamScore = Number((Math.floor(awayxBases[0] + awayxBases[1] + awayxBases[2] + awayxBases[3] + awayxBases[4] + awayxBases[5] + awayxBases[6] + awayxBases[7] + awayxBases[8]) / ParkFactor.TB_R - 0.175).toFixed(2));
 }
+
+// wOBA linear weights → expected runs
+// Scale factor 0.411 calibrates sum to ~4.5 R/G for a league-average matchup.
+// 0.15 run home field advantage applied to home team.
+const LW_BB = 0.69, LW_1B = 0.89, LW_2B = 1.27, LW_3B = 1.62, LW_HR = 2.10;
+const WOBA_SCALE = 0.411;
+
+let homeWobaNum = 0;
+let awayWobaNum = 0;
+for (let i = 0; i < 9; i++) {
+  homeWobaNum += PA[i] * (HomeBB[i] * LW_BB + HomeSingle[i] * LW_1B + HomeDouble[i] * LW_2B + HomeTriple[i] * LW_3B + HomeHR[i] * LW_HR);
+  awayWobaNum += PA[i] * (awayBB[i] * LW_BB + awaySingle[i] * LW_1B + awayDouble[i] * LW_2B + awayTriple[i] * LW_3B + awayHR[i] * LW_HR);
+}
+
+this.homeTeamScore = +(homeWobaNum * WOBA_SCALE + 0.15).toFixed(2);
+this.awayTeamScore = +(awayWobaNum * WOBA_SCALE).toFixed(2);
 
 // Assign the arrays to component properties
 this.homexBases = homexBases;

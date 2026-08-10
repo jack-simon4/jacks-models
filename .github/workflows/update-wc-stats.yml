@@ -4,9 +4,6 @@ name: Update World Cup Stats (Daily)
 # Disable or delete this workflow after the tournament ends.
 
 on:
-  schedule:
-    # 8 AM ET (12:00 UTC) — captures overnight and early-morning matches
-    - cron: '0 12 * * *'
   workflow_dispatch:
 
 jobs:
