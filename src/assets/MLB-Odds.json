@@ -37,8 +37,8 @@
   "Arizona Diamondbacks": {
     "home_team": "Arizona Diamondbacks",
     "away_team": "Colorado Rockies",
-    "home_ml": "-186",
-    "away_ml": "+174",
+    "home_ml": "-194",
+    "away_ml": "+180",
     "book": "fanduel"
   },
   "Athletics": {
@@ -58,8 +58,8 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Houston Astros",
-    "home_ml": "+136",
-    "away_ml": "-146",
+    "home_ml": "+132",
+    "away_ml": "-142",
     "book": "fanduel"
   },
   "Los Angeles Dodgers": {
