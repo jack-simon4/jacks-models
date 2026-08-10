@@ -44,8 +44,8 @@
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Tampa Bay Rays",
-    "home_ml": "+144",
-    "away_ml": "-156",
+    "home_ml": "+136",
+    "away_ml": "-162",
     "book": "fanduel"
   },
   "San Diego Padres": {
@@ -58,8 +58,8 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Houston Astros",
-    "home_ml": "+132",
-    "away_ml": "-142",
+    "home_ml": "+168",
+    "away_ml": "-200",
     "book": "fanduel"
   },
   "Los Angeles Dodgers": {

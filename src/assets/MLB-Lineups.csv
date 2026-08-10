@@ -53,6 +53,15 @@ Minnesota Twins6,Brooks Lee
 Minnesota Twins7,Kaelen Culpepper
 Minnesota Twins8,Victor Caratini
 Minnesota Twins9,Ryan Kreidler
+Philadelphia Phillies1,Kyle Schwarber
+Philadelphia Phillies2,Bryson Stott
+Philadelphia Phillies3,Bryce Harper
+Philadelphia Phillies4,Luis Arraez
+Philadelphia Phillies5,Brandon Marsh
+Philadelphia Phillies6,Derek Hill
+Philadelphia Phillies7,Justin Crawford
+Philadelphia Phillies8,Edmundo Sosa
+Philadelphia Phillies9,Garrett Stubbs
 St. Louis Cardinals1,JJ Wetherholt
 St. Louis Cardinals2,Ivan Herrera
 St. Louis Cardinals3,Alec Burleson
@@ -61,6 +70,33 @@ St. Louis Cardinals5,Nathan Church
 St. Louis Cardinals6,Masyn Winn
 St. Louis Cardinals8,Jimmy Crooks
 St. Louis Cardinals9,Cesar Prieto
+Colorado Rockies1,Jake McCarthy
+Colorado Rockies2,Cole Carrigg
+Colorado Rockies3,TJ Rumfield
+Colorado Rockies4,Hunter Goodman
+Colorado Rockies5,Mickey Moniak
+Colorado Rockies6,Kyle Karros
+Colorado Rockies7,Willi Castro
+Colorado Rockies8,Troy Johnston
+Colorado Rockies9,Jordan Beck
+Athletics1,Jeff McNeil
+Athletics2,Tyler Soderstrom
+Athletics3,Jacob Wilson
+Athletics4,Carlos Cortes
+Athletics5,Lawrence Butler
+Athletics6,Jonah Heim
+Athletics7,Henry Bolte
+Athletics8,Donovan Walton
+Athletics9,Zack Gelof
+San Diego Padres1,Fernando Tatis Jr.
+San Diego Padres2,Jake Cronenworth
+San Diego Padres3,Manny Machado
+San Diego Padres4,Ty France
+San Diego Padres5,Jackson Merrill
+San Diego Padres6,Luis Rengifo
+San Diego Padres7,Gavin Sheets
+San Diego Padres8,Freddy Fermin
+San Diego Padres9,Sung-Mun Song
 Arizona Diamondbacks1,Geraldo Perdomo
 Arizona Diamondbacks2,Corbin Carroll
 Arizona Diamondbacks3,Gabriel Moreno
@@ -70,24 +106,6 @@ Arizona Diamondbacks6,Ildemaro Vargas
 Arizona Diamondbacks7,Tim Tawa
 Arizona Diamondbacks8,Jorge Barrosa
 Arizona Diamondbacks9,Ryan Waldschmidt
-Athletics1,Henry Bolte
-Athletics2,Jacob Wilson
-Athletics3,Jonah Heim
-Athletics4,Tyler Soderstrom
-Athletics5,Tommy White
-Athletics6,Lawrence Butler
-Athletics7,Donovan Walton
-Athletics8,Max Muncy
-Athletics9,Jeff McNeil
-Colorado Rockies1,Jake McCarthy
-Colorado Rockies2,Cole Carrigg
-Colorado Rockies3,TJ Rumfield
-Colorado Rockies4,Hunter Goodman
-Colorado Rockies5,Mickey Moniak
-Colorado Rockies6,Kyle Karros
-Colorado Rockies7,Willi Castro
-Colorado Rockies8,Brett Sullivan
-Colorado Rockies9,Ezequiel Tovar
 Houston Astros1,Jeremy Pena
 Houston Astros2,Yordan Alvarez
 Houston Astros3,Isaac Paredes
@@ -131,24 +149,6 @@ Milwaukee Brewers5,Jake Bauers
 Milwaukee Brewers6,Luis Lara
 Milwaukee Brewers8,Jihwan Bae
 Milwaukee Brewers9,David Hamilton
-Philadelphia Phillies1,Garrett Stubbs
-Philadelphia Phillies2,Trea Turner
-Philadelphia Phillies3,Bryce Harper
-Philadelphia Phillies4,Luis Arraez
-Philadelphia Phillies5,J.T. Realmuto
-Philadelphia Phillies6,Bryson Stott
-Philadelphia Phillies7,Brandon Marsh
-Philadelphia Phillies8,Alec Bohm
-Philadelphia Phillies9,Derek Hill
-San Diego Padres1,Fernando Tatis Jr.
-San Diego Padres2,Jake Cronenworth
-San Diego Padres3,Manny Machado
-San Diego Padres4,Ty France
-San Diego Padres5,Jackson Merrill
-San Diego Padres6,Luis Rengifo
-San Diego Padres7,Gavin Sheets
-San Diego Padres8,Xander Bogaerts
-San Diego Padres9,Freddy Fermin
 San Francisco Giants1,Bryce Eldridge
 San Francisco Giants2,Jung Hoo Lee
 San Francisco Giants3,Willy Adames
