@@ -80,11 +80,26 @@ interface NCAAFStats {
 }
 
 
-interface NFLStats { 
+interface NFLStats {
   [team: string]: { RushYdsAtt: number; dRushYdsAtt: number; PassYdsAtt: number, dPassYdsAtt: number,
      oRushPerGame: number, dRushPerGame: number, oPassPerGame: number, dPassPerGame: number,
     oYdsPerPoint: number, dYdsPerPoint: number, oPtsPerPlay: number, dPtsPerPlay: number,
      oPlaysGame: number, dPlaysGame: number,HomeAdv: number};
+}
+
+interface NFLQBStats {
+  name: string;
+  passYdsAtt: number;
+  passAttGame: number;
+  compPct: number;
+  tdRate: number;
+  intRate: number;
+}
+
+interface NFLRBStats {
+  name: string;
+  rushYdsCarry: number;
+  rushAttGame: number;
 }
 
 interface NHLStats { [team: string]: {ShotsF:number, PP:number, ShotsA:number, S:number}}
@@ -132,6 +147,8 @@ export class ScoreboardComponent implements OnInit {
   ncaafStats: NCAAFStats = {};
   nflstats: NFLStats = {};
   nflLeagueAvg = { rushYPA: 4.44, rushAtt: 26.95, passYPA: 7.175, passAtt: 32.69, ydsPt: 15.053, ptsPP: 0.3715, playsG: 62.084 };
+  nflQBs: { [team: string]: NFLQBStats } = {};
+  nflRBs: { [team: string]: NFLRBStats[] } = {};
   nhlstats: NHLStats = {};
   ncaamSpreads: { [team: string]: number } = {};
   nbaSpreads: { [team: string]: number } = {};
@@ -242,6 +259,7 @@ getATeamColor(): string {
     this.loadNBAStatsData();
     this.loadNCAAFStatsData();
     this.loadNFLStatsData();
+    this.loadNFLPlayersData();
     this.loadNHLStatsData();
     this.loadNCAAMSpreadsData();
     this.loadNBASpreadsData();
@@ -555,7 +573,55 @@ resetScores() {
 
 
 
-  //NCAAF STUFF  
+  loadNFLPlayersData() {
+    this.http.get('assets/NFL-QBs.csv', { responseType: 'text' })
+      .toPromise()
+      .then(csv => { if (csv) this.nflQBs = this.parseNFLQBs(csv); })
+      .catch(() => {});
+
+    this.http.get('assets/NFL-RBs.csv', { responseType: 'text' })
+      .toPromise()
+      .then(csv => { if (csv) this.nflRBs = this.parseNFLRBs(csv); })
+      .catch(() => {});
+  }
+
+  parseNFLQBs(csv: string): { [team: string]: NFLQBStats } {
+    const result: { [team: string]: NFLQBStats } = {};
+    csv.split('\n').slice(1).filter(l => l.trim()).forEach(line => {
+      const [team, name, PassYdsAtt, PassAttGame, CompPct, TDRate, INTRate] = line.trim().split(',');
+      if (team && name) {
+        result[team.trim()] = {
+          name:        name.trim(),
+          passYdsAtt:  parseFloat(PassYdsAtt),
+          passAttGame: parseFloat(PassAttGame),
+          compPct:     parseFloat(CompPct),
+          tdRate:      parseFloat(TDRate),
+          intRate:     parseFloat(INTRate),
+        };
+      }
+    });
+    return result;
+  }
+
+  parseNFLRBs(csv: string): { [team: string]: NFLRBStats[] } {
+    const result: { [team: string]: NFLRBStats[] } = {};
+    csv.split('\n').slice(1).filter(l => l.trim()).forEach(line => {
+      const [team, name, RushYdsCarry, RushAttGame] = line.trim().split(',');
+      if (team && name) {
+        const t = team.trim();
+        if (!result[t]) result[t] = [];
+        result[t].push({
+          name:         name.trim(),
+          rushYdsCarry: parseFloat(RushYdsCarry),
+          rushAttGame:  parseFloat(RushAttGame),
+        });
+      }
+    });
+    return result;
+  }
+
+
+  //NCAAF STUFF
   loadNCAAFStatsData() {
     const NCAAFStatsUrl = 'assets/NCAAF-Stats.csv';
     this.http.get(NCAAFStatsUrl, { responseType: 'text' })
@@ -1166,17 +1232,35 @@ parseNHLStats(csvData: string | undefined) {
     const lg = this.nflLeagueAvg;
     const homeAdvModifier = this.isNeutralSite ? 0 : homeTeamNFL.HomeAdv / 2;
 
-    const HrYdsAtt  = (.85 * homeTeamNFL.RushYdsAtt  * (awayTeamNFL.dRushYdsAtt / lg.rushYPA)) + (.15 * lg.rushYPA);
-    const ArYdsAtt  = (.85 * awayTeamNFL.RushYdsAtt  * (homeTeamNFL.dRushYdsAtt / lg.rushYPA)) + (.15 * lg.rushYPA);
+    // QB-level passing stats; fall back to team averages if player data not loaded yet
+    const hQB = this.nflQBs[this.selectedHomeTeam];
+    const aQB = this.nflQBs[this.selectedAwayTeam];
+    const hPassYPA = hQB?.passYdsAtt  ?? homeTeamNFL.PassYdsAtt;
+    const hPassAPG = hQB?.passAttGame ?? homeTeamNFL.oPassPerGame;
+    const aPassYPA = aQB?.passYdsAtt  ?? awayTeamNFL.PassYdsAtt;
+    const aPassAPG = aQB?.passAttGame ?? awayTeamNFL.oPassPerGame;
+
+    // Carry-weighted RB rush YPC; fall back to team average if no player data
+    const hRBs = this.nflRBs[this.selectedHomeTeam] ?? [];
+    const aRBs = this.nflRBs[this.selectedAwayTeam] ?? [];
+    const wgtYPC = (rbs: NFLRBStats[], fallback: number) => {
+      const totalAtt = rbs.reduce((s, rb) => s + rb.rushAttGame, 0);
+      return totalAtt > 0 ? rbs.reduce((s, rb) => s + rb.rushYdsCarry * rb.rushAttGame, 0) / totalAtt : fallback;
+    };
+    const hRushYPC = wgtYPC(hRBs, homeTeamNFL.RushYdsAtt);
+    const aRushYPC = wgtYPC(aRBs, awayTeamNFL.RushYdsAtt);
+
+    const HrYdsAtt  = (.85 * hRushYPC           * (awayTeamNFL.dRushYdsAtt / lg.rushYPA)) + (.15 * lg.rushYPA);
+    const ArYdsAtt  = (.85 * aRushYPC           * (homeTeamNFL.dRushYdsAtt / lg.rushYPA)) + (.15 * lg.rushYPA);
     const HrAtt     = (.85 * homeTeamNFL.oRushPerGame * (awayTeamNFL.dRushPerGame / lg.rushAtt)) + (.15 * lg.rushAtt);
     const ArAtt     = (.85 * awayTeamNFL.oRushPerGame * (homeTeamNFL.dRushPerGame / lg.rushAtt)) + (.15 * lg.rushAtt);
     const hRushYds  = HrYdsAtt * HrAtt;
     const aRushYds  = ArYdsAtt * ArAtt;
 
-    const HpYdsAtt  = (.85 * homeTeamNFL.PassYdsAtt  * (awayTeamNFL.dPassYdsAtt / lg.passYPA)) + (.15 * lg.passYPA);
-    const ApYdsAtt  = (.85 * awayTeamNFL.PassYdsAtt  * (homeTeamNFL.dPassYdsAtt / lg.passYPA)) + (.15 * lg.passYPA);
-    const HpAtt     = (.85 * homeTeamNFL.oPassPerGame * (awayTeamNFL.dPassPerGame / lg.passAtt)) + (.15 * lg.passAtt);
-    const ApAtt     = (.85 * awayTeamNFL.oPassPerGame * (homeTeamNFL.dPassPerGame / lg.passAtt)) + (.15 * lg.passAtt);
+    const HpYdsAtt  = (.85 * hPassYPA           * (awayTeamNFL.dPassYdsAtt / lg.passYPA)) + (.15 * lg.passYPA);
+    const ApYdsAtt  = (.85 * aPassYPA           * (homeTeamNFL.dPassYdsAtt / lg.passYPA)) + (.15 * lg.passYPA);
+    const HpAtt     = (.85 * hPassAPG           * (awayTeamNFL.dPassPerGame / lg.passAtt)) + (.15 * lg.passAtt);
+    const ApAtt     = (.85 * aPassAPG           * (homeTeamNFL.dPassPerGame / lg.passAtt)) + (.15 * lg.passAtt);
     const hPassYds  = HpYdsAtt * HpAtt;
     const aPassYds  = ApYdsAtt * ApAtt;
 

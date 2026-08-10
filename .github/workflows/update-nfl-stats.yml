@@ -6,6 +6,8 @@ on:
     - cron: '0 6 * * 2'
     # Tuesday 2 AM ET (06:00 UTC) — captures Monday Night Football
     - cron: '0 6 * * 3'
+    # Thursday 2 AM ET (06:00 UTC) — captures roster/injury updates mid-week
+    - cron: '0 6 * * 5'
   workflow_dispatch:
 
 jobs:
@@ -30,11 +32,14 @@ jobs:
       - name: Fetch and update NFL team stats
         run: python scripts/fetch_nfl_stats.py
 
+      - name: Fetch and update NFL player stats (QBs and RBs)
+        run: python scripts/fetch_nfl_players.py
+
       - name: Commit updated NFL stats
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/NFL-Stats.csv
+          git add src/assets/NFL-Stats.csv src/assets/NFL-QBs.csv src/assets/NFL-RBs.csv
           if git diff --staged --quiet; then
             echo "No NFL stat changes — nothing to commit."
           else
