@@ -9,8 +9,8 @@
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "Pittsburgh Pirates",
-    "home_ml": "+102",
-    "away_ml": "-110",
+    "home_ml": "+100",
+    "away_ml": "-108",
     "book": "fanduel"
   },
   "Washington Nationals": {
