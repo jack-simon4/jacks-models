@@ -9,22 +9,15 @@
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "Pittsburgh Pirates",
-    "home_ml": "-102",
-    "away_ml": "-106",
+    "home_ml": "-290",
+    "away_ml": "+250",
     "book": "fanduel"
   },
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Chicago Cubs",
-    "home_ml": "+162",
-    "away_ml": "-178",
-    "book": "fanduel"
-  },
-  "New York Yankees": {
-    "home_team": "New York Yankees",
-    "away_team": "Seattle Mariners",
-    "home_ml": "-118",
-    "away_ml": "+100",
+    "home_ml": "-130",
+    "away_ml": "+115",
     "book": "fanduel"
   },
   "Toronto Blue Jays": {
@@ -34,11 +27,11 @@
     "away_ml": "-126",
     "book": "fanduel"
   },
-  "Atlanta Braves": {
-    "home_team": "Atlanta Braves",
-    "away_team": "New York Mets",
-    "home_ml": "-164",
-    "away_ml": "+138",
+  "New York Yankees": {
+    "home_team": "New York Yankees",
+    "away_team": "Seattle Mariners",
+    "home_ml": "-118",
+    "away_ml": "+100",
     "book": "fanduel"
   },
   "Minnesota Twins": {
@@ -54,6 +47,13 @@
     "home_ml": "-152",
     "away_ml": "+128",
     "book": "fanduel"
+  },
+  "Atlanta Braves": {
+    "home_team": "Atlanta Braves",
+    "away_team": "New York Mets",
+    "home_ml": "-162",
+    "away_ml": "+134",
+    "book": "draftkings"
   },
   "St. Louis Cardinals": {
     "home_team": "St. Louis Cardinals",
