@@ -9,8 +9,8 @@
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "Pittsburgh Pirates",
-    "home_ml": "+100",
-    "away_ml": "-108",
+    "home_ml": "-102",
+    "away_ml": "-106",
     "book": "fanduel"
   },
   "Washington Nationals": {
@@ -58,8 +58,8 @@
   "St. Louis Cardinals": {
     "home_team": "St. Louis Cardinals",
     "away_team": "Philadelphia Phillies",
-    "home_ml": "+136",
-    "away_ml": "-162",
+    "home_ml": "+138",
+    "away_ml": "-164",
     "book": "fanduel"
   },
   "Los Angeles Angels": {
@@ -79,8 +79,8 @@
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Tampa Bay Rays",
-    "home_ml": "+158",
-    "away_ml": "-172",
+    "home_ml": "+166",
+    "away_ml": "-180",
     "book": "fanduel"
   },
   "San Diego Padres": {
