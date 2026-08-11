@@ -16,8 +16,8 @@
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Chicago Cubs",
-    "home_ml": "+148",
-    "away_ml": "-160",
+    "home_ml": "+162",
+    "away_ml": "-178",
     "book": "fanduel"
   },
   "New York Yankees": {
@@ -51,8 +51,8 @@
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "Cincinnati Reds",
-    "home_ml": "-148",
-    "away_ml": "+138",
+    "home_ml": "-154",
+    "away_ml": "+142",
     "book": "fanduel"
   },
   "St. Louis Cardinals": {
@@ -100,8 +100,8 @@
   "Los Angeles Dodgers": {
     "home_team": "Los Angeles Dodgers",
     "away_team": "Kansas City Royals",
-    "home_ml": "-260",
-    "away_ml": "+235",
+    "home_ml": "-250",
+    "away_ml": "+230",
     "book": "fanduel"
   }
 }
