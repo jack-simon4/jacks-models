@@ -1,23 +1,9 @@
 {
-  "St. Louis Cardinals": {
-    "home_team": "St. Louis Cardinals",
-    "away_team": "Philadelphia Phillies",
-    "home_ml": "+138",
-    "away_ml": "-164",
-    "book": "fanduel"
-  },
   "Los Angeles Angels": {
     "home_team": "Los Angeles Angels",
     "away_team": "Texas Rangers",
     "home_ml": "+122",
     "away_ml": "-144",
-    "book": "fanduel"
-  },
-  "Arizona Diamondbacks": {
-    "home_team": "Arizona Diamondbacks",
-    "away_team": "Colorado Rockies",
-    "home_ml": "-168",
-    "away_ml": "+142",
     "book": "fanduel"
   },
   "Athletics": {
@@ -102,6 +88,20 @@
     "away_team": "Cincinnati Reds",
     "home_ml": "-166",
     "away_ml": "+140",
+    "book": "fanduel"
+  },
+  "St. Louis Cardinals": {
+    "home_team": "St. Louis Cardinals",
+    "away_team": "Philadelphia Phillies",
+    "home_ml": "+138",
+    "away_ml": "-164",
+    "book": "fanduel"
+  },
+  "Arizona Diamondbacks": {
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Colorado Rockies",
+    "home_ml": "-168",
+    "away_ml": "+142",
     "book": "fanduel"
   }
 }
