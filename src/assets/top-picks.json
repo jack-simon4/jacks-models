@@ -1,13 +1,32 @@
 [
   {
+    "matchup": "Houston Astros @ San Francisco Giants",
+    "awayTeam": "Houston Astros",
+    "homeTeam": "San Francisco Giants",
+    "awayPitcher": "Hunter Brown",
+    "homePitcher": "Carson Whisenhunt",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -180",
+    "odds": "-180",
+    "winProb": 0.632,
+    "edge": 0.132,
+    "confidence": "Strong",
+    "predictedScore": "Houston Astros 6.2 \u2013 San Francisco Giants 4.4",
+    "predictedHomeScore": 4.36,
+    "predictedAwayScore": 6.16,
+    "gameTime": "2026-08-12T01:45:00Z",
+    "gamePk": 823186,
+    "rank": 1
+  },
+  {
     "matchup": "Texas Rangers @ Los Angeles Angels",
     "awayTeam": "Texas Rangers",
     "homeTeam": "Los Angeles Angels",
     "awayPitcher": "Cody Bradford",
     "homePitcher": "Ryan Johnson",
     "pick": "Texas Rangers",
-    "prediction": "Texas Rangers -134",
-    "odds": "-134",
+    "prediction": "Texas Rangers -148",
+    "odds": "-148",
     "winProb": 0.617,
     "edge": 0.117,
     "confidence": "Strong",
@@ -16,7 +35,7 @@
     "predictedAwayScore": 6.41,
     "gameTime": "2026-08-12T01:38:00Z",
     "gamePk": 823997,
-    "rank": 1
+    "rank": 2
   },
   {
     "matchup": "Boston Red Sox @ Toronto Blue Jays",
@@ -25,8 +44,8 @@
     "awayPitcher": "Patrick Sandoval",
     "homePitcher": "Dylan Cease",
     "pick": "Toronto Blue Jays",
-    "prediction": "Toronto Blue Jays -142",
-    "odds": "-142",
+    "prediction": "Toronto Blue Jays -136",
+    "odds": "-136",
     "winProb": 0.613,
     "edge": 0.113,
     "confidence": "Strong",
@@ -35,6 +54,6 @@
     "predictedAwayScore": 4.52,
     "gameTime": "2026-08-11T23:07:00Z",
     "gamePk": 822778,
-    "rank": 2
+    "rank": 3
   }
 ]
