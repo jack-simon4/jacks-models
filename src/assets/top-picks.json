@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "matchup": "Tampa Bay Rays @ Athletics",
+    "awayTeam": "Tampa Bay Rays",
+    "homeTeam": "Athletics",
+    "awayPitcher": "Drew Rasmussen",
+    "homePitcher": "Jack Perkins",
+    "pick": "Tampa Bay Rays",
+    "prediction": "Tampa Bay Rays -200",
+    "odds": "-200",
+    "winProb": 0.594,
+    "edge": 0.094,
+    "confidence": "Strong",
+    "predictedScore": "Tampa Bay Rays 5.8 \u2013 Athletics 4.6",
+    "predictedHomeScore": 4.58,
+    "predictedAwayScore": 5.85,
+    "gameTime": "2026-08-12T19:05:00Z",
+    "gamePk": 824967,
+    "rank": 1
+  }
+]
