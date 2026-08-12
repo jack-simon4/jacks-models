@@ -3,12 +3,12 @@ Baltimore Orioles1,Gunnar Henderson
 Baltimore Orioles2,Pete Alonso
 Baltimore Orioles3,Jackson Holliday
 Baltimore Orioles4,Tyler O'Neill
-Baltimore Orioles5,Dylan Beavers
+Baltimore Orioles5,Jeremiah Jackson
 Baltimore Orioles6,Christian Encarnacion-Strand
 Baltimore Orioles7,Leody Taveras
 Baltimore Orioles8,Christian Franklin
-Baltimore Orioles9,Carlos Narvaez
-Minnesota Twins1,Trevor Larnach
+Baltimore Orioles9,Colton Cowser
+Minnesota Twins1,Austin Martin
 Minnesota Twins2,Royce Lewis
 Minnesota Twins3,Josh Bell
 Minnesota Twins4,Kody Clemens
@@ -22,7 +22,7 @@ Philadelphia Phillies2,Trea Turner
 Philadelphia Phillies3,Bryce Harper
 Philadelphia Phillies4,Luis Arraez
 Philadelphia Phillies5,Bryson Stott
-Philadelphia Phillies6,Brandon Marsh
+Philadelphia Phillies6,Bryan De La Cruz
 Philadelphia Phillies7,J.T. Realmuto
 Philadelphia Phillies8,Alec Bohm
 Philadelphia Phillies9,Justin Crawford
@@ -33,6 +33,7 @@ St. Louis Cardinals4,Jordan Walker
 St. Louis Cardinals5,Nathan Church
 St. Louis Cardinals6,Masyn Winn
 St. Louis Cardinals7,Blaze Jordan
+St. Louis Cardinals8,Everson Pereira
 St. Louis Cardinals9,Jimmy Crooks
 Tampa Bay Rays1,Yandy Diaz
 Tampa Bay Rays2,Jonathan Aranda
@@ -133,6 +134,15 @@ Miami Marlins6,Agustin Ramirez
 Miami Marlins7,Owen Caissie
 Miami Marlins8,Leo Jimenez
 Miami Marlins9,Joe Mack
+Chicago Cubs1,Pete Crow-Armstrong
+Chicago Cubs2,Seiya Suzuki
+Chicago Cubs3,Alex Bregman
+Chicago Cubs4,Carson Kelly
+Chicago Cubs5,Michael Busch
+Chicago Cubs6,Nico Hoerner
+Chicago Cubs7,Tyrone Taylor
+Chicago Cubs8,Pedro Ramirez
+Chicago Cubs9,Dansby Swanson
 Washington Nationals1,Dylan Crews
 Washington Nationals2,Andres Chaparro
 Washington Nationals3,Brady House
@@ -214,15 +224,6 @@ Chicago White Sox6,Chase Meidroth
 Chicago White Sox7,Tristan Peters
 Chicago White Sox8,Brenton Doyle
 Chicago White Sox9,Drew Romo
-Chicago Cubs1,Pete Crow-Armstrong
-Chicago Cubs2,Seiya Suzuki
-Chicago Cubs3,Michael Busch
-Chicago Cubs4,Alex Bregman
-Chicago Cubs5,Ian Happ
-Chicago Cubs6,Nico Hoerner
-Chicago Cubs7,Michael Conforto
-Chicago Cubs8,Carson Kelly
-Chicago Cubs9,Dansby Swanson
 Detroit Tigers1,Kevin McGonigle
 Detroit Tigers2,Gleyber Torres
 Detroit Tigers3,Dillon Dingler
