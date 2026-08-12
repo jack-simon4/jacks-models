@@ -34,6 +34,15 @@ St. Louis Cardinals5,Nathan Church
 St. Louis Cardinals6,Masyn Winn
 St. Louis Cardinals7,Cesar Prieto
 St. Louis Cardinals9,Jimmy Crooks
+Tampa Bay Rays1,Yandy Diaz
+Tampa Bay Rays2,Jonathan Aranda
+Tampa Bay Rays3,Junior Caminero
+Tampa Bay Rays4,Liam Hicks
+Tampa Bay Rays5,Victor Mesa Jr.
+Tampa Bay Rays6,Jonny DeLuca
+Tampa Bay Rays7,Cedric Mullins
+Tampa Bay Rays8,Richie Palacios
+Tampa Bay Rays9,Taylor Walls
 Athletics1,Donovan Walton
 Athletics2,Tyler Soderstrom
 Athletics3,Zack Gelof
@@ -52,6 +61,24 @@ Colorado Rockies6,Willi Castro
 Colorado Rockies7,Zac Veen
 Colorado Rockies8,Connor Norby
 Colorado Rockies9,Brett Sullivan
+Arizona Diamondbacks1,Geraldo Perdomo
+Arizona Diamondbacks2,Corbin Carroll
+Arizona Diamondbacks3,Gabriel Moreno
+Arizona Diamondbacks4,Ketel Marte
+Arizona Diamondbacks5,Lars Nootbaar
+Arizona Diamondbacks6,Nolan Arenado
+Arizona Diamondbacks7,Max Kepler
+Arizona Diamondbacks8,Tim Tawa
+Arizona Diamondbacks9,Ryan Waldschmidt
+Houston Astros1,Jeremy Pena
+Houston Astros2,Yordan Alvarez
+Houston Astros3,Isaac Paredes
+Houston Astros4,Daulton Varsho
+Houston Astros5,LaMonte Wade Jr.
+Houston Astros6,Cam Smith
+Houston Astros7,Taylor Trammell
+Houston Astros8,Nick Allen
+Houston Astros9,Christian Vazquez
 San Francisco Giants1,Jung Hoo Lee
 San Francisco Giants2,Willy Adames
 San Francisco Giants3,Bryce Eldridge
@@ -61,6 +88,15 @@ San Francisco Giants6,Drew Gilbert
 San Francisco Giants7,Osleivis Basabe
 San Francisco Giants8,Drew Cavanaugh
 San Francisco Giants9,Christian Koss
+Milwaukee Brewers1,Jackson Chourio
+Milwaukee Brewers2,Brice Turang
+Milwaukee Brewers3,Andrew Vaughn
+Milwaukee Brewers4,Jake Bauers
+Milwaukee Brewers5,William Contreras
+Milwaukee Brewers6,Gary Sanchez
+Milwaukee Brewers7,Brandon Lockridge
+Milwaukee Brewers8,David Hamilton
+Milwaukee Brewers9,Joey Ortiz
 San Diego Padres1,Luis Rengifo
 San Diego Padres2,Jake Cronenworth
 San Diego Padres3,Manny Machado
@@ -70,15 +106,6 @@ San Diego Padres6,Austin Hays
 San Diego Padres7,Gavin Sheets
 San Diego Padres8,Xander Bogaerts
 San Diego Padres9,Freddy Fermin
-Arizona Diamondbacks1,Lars Nootbaar
-Arizona Diamondbacks2,Corbin Carroll
-Arizona Diamondbacks3,Gabriel Moreno
-Arizona Diamondbacks4,Ketel Marte
-Arizona Diamondbacks5,Nolan Arenado
-Arizona Diamondbacks6,James McCann
-Arizona Diamondbacks7,Tim Tawa
-Arizona Diamondbacks8,Ildemaro Vargas
-Arizona Diamondbacks9,Ryan Waldschmidt
 Atlanta Braves1,Drake Baldwin
 Atlanta Braves2,Ronald Acuna Jr.
 Atlanta Braves3,Matt Olson
@@ -142,15 +169,6 @@ Detroit Tigers6,Spencer Torkelson
 Detroit Tigers7,Max Clark
 Detroit Tigers8,Javier Baez
 Detroit Tigers9,Zach McKinstry
-Houston Astros1,Jeremy Pena
-Houston Astros2,Yordan Alvarez
-Houston Astros3,Isaac Paredes
-Houston Astros4,Jose Altuve
-Houston Astros5,Christian Walker
-Houston Astros6,Nelson Velazquez
-Houston Astros7,Daulton Varsho
-Houston Astros8,Cam Smith
-Houston Astros9,Yainer Diaz
 Kansas City Royals1,Nick Loftin
 Kansas City Royals2,Bobby Witt Jr.
 Kansas City Royals3,Jac Caglianone
@@ -186,15 +204,6 @@ Miami Marlins6,Javier Sanoja
 Miami Marlins7,Owen Caissie
 Miami Marlins8,Joe Mack
 Miami Marlins9,Esteury Ruiz
-Milwaukee Brewers1,Brice Turang
-Milwaukee Brewers2,Jackson Chourio
-Milwaukee Brewers3,Garrett Mitchell
-Milwaukee Brewers4,Jake Bauers
-Milwaukee Brewers5,William Contreras
-Milwaukee Brewers6,Christian Yelich
-Milwaukee Brewers7,Luis Lara
-Milwaukee Brewers8,David Hamilton
-Milwaukee Brewers9,Jihwan Bae
 New York Mets1,A.J. Ewing
 New York Mets2,Francisco Lindor
 New York Mets3,Bo Bichette
@@ -231,15 +240,6 @@ Seattle Mariners6,Cal Raleigh
 Seattle Mariners7,Brendan Donovan
 Seattle Mariners8,Weston Wilson
 Seattle Mariners9,Colt Emerson
-Tampa Bay Rays1,Yandy Diaz
-Tampa Bay Rays2,Jonathan Aranda
-Tampa Bay Rays3,Junior Caminero
-Tampa Bay Rays4,Liam Hicks
-Tampa Bay Rays5,Chandler Simpson
-Tampa Bay Rays6,Victor Mesa Jr.
-Tampa Bay Rays7,Cedric Mullins
-Tampa Bay Rays8,Richie Palacios
-Tampa Bay Rays9,Taylor Walls
 Texas Rangers1,Joc Pederson
 Texas Rangers2,Wyatt Langford
 Texas Rangers3,Corey Seager
