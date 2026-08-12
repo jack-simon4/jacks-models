@@ -1,16 +1,16 @@
 {
   "Minnesota Twins": {
     "home_team": "Minnesota Twins",
-    "away_team": "Baltimore Orioles",
-    "home_ml": "+120",
-    "away_ml": "-135",
+    "away_team": "Philadelphia Phillies",
+    "home_ml": "-112",
+    "away_ml": "-104",
     "book": "fanduel"
   },
   "St. Louis Cardinals": {
     "home_team": "St. Louis Cardinals",
     "away_team": "Philadelphia Phillies",
-    "home_ml": "+150",
-    "away_ml": "-164",
+    "home_ml": "-125",
+    "away_ml": "+110",
     "book": "fanduel"
   },
   "Athletics": {
@@ -30,8 +30,8 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Houston Astros",
-    "home_ml": "+134",
-    "away_ml": "-144",
+    "home_ml": "+130",
+    "away_ml": "-140",
     "book": "fanduel"
   },
   "San Diego Padres": {
@@ -44,36 +44,36 @@
   "Detroit Tigers": {
     "home_team": "Detroit Tigers",
     "away_team": "Cleveland Guardians",
-    "home_ml": "-120",
-    "away_ml": "+110",
+    "home_ml": "+104",
+    "away_ml": "-122",
     "book": "fanduel"
   },
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "Pittsburgh Pirates",
-    "home_ml": "-106",
-    "away_ml": "-102",
+    "home_ml": "+110",
+    "away_ml": "-130",
     "book": "fanduel"
   },
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Chicago Cubs",
-    "home_ml": "+144",
-    "away_ml": "-156",
+    "home_ml": "+118",
+    "away_ml": "-138",
     "book": "fanduel"
   },
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "Seattle Mariners",
-    "home_ml": "-124",
-    "away_ml": "+114",
+    "home_ml": "-146",
+    "away_ml": "+124",
     "book": "fanduel"
   },
   "Toronto Blue Jays": {
     "home_team": "Toronto Blue Jays",
     "away_team": "Boston Red Sox",
-    "home_ml": "+110",
-    "away_ml": "-118",
+    "home_ml": "+138",
+    "away_ml": "-164",
     "book": "fanduel"
   },
   "Atlanta Braves": {
@@ -86,8 +86,8 @@
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "Cincinnati Reds",
-    "home_ml": "-138",
-    "away_ml": "+128",
+    "home_ml": "-136",
+    "away_ml": "+116",
     "book": "fanduel"
   },
   "Los Angeles Dodgers": {
