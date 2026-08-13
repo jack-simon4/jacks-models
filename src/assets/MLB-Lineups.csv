@@ -17,6 +17,24 @@ Detroit Tigers6,Hao-Yu Lee
 Detroit Tigers7,Max Clark
 Detroit Tigers8,Javier Baez
 Detroit Tigers9,Ben Malgeri
+Cincinnati Reds1,Elly De La Cruz
+Cincinnati Reds2,Sal Stewart
+Cincinnati Reds3,JJ Bleday
+Cincinnati Reds4,Tyler Stephenson
+Cincinnati Reds5,Eugenio Suarez
+Cincinnati Reds6,Dane Myers
+Cincinnati Reds7,Hector Rodriguez
+Cincinnati Reds8,Matt McLain
+Cincinnati Reds9,Ke'Bryan Hayes
+Chicago White Sox1,Chase Meidroth
+Chicago White Sox2,Randal Grichuk
+Chicago White Sox3,Miguel Vargas
+Chicago White Sox4,Braden Montgomery
+Chicago White Sox5,Brenton Doyle
+Chicago White Sox6,Colson Montgomery
+Chicago White Sox7,Edgar Quero
+Chicago White Sox8,Sam Antonacci
+Chicago White Sox9,Luisangel Acuna
 Pittsburgh Pirates1,Spencer Horwitz
 Pittsburgh Pirates2,Brandon Lowe
 Pittsburgh Pirates3,Bryan Reynolds
@@ -35,15 +53,33 @@ Miami Marlins6,Leo Jimenez
 Miami Marlins7,Owen Caissie
 Miami Marlins8,Javier Sanoja
 Miami Marlins9,Esteury Ruiz
-Cincinnati Reds1,Elly De La Cruz
-Cincinnati Reds2,Sal Stewart
-Cincinnati Reds3,JJ Bleday
-Cincinnati Reds4,Tyler Stephenson
-Cincinnati Reds5,Eugenio Suarez
-Cincinnati Reds6,Dane Myers
-Cincinnati Reds7,Hector Rodriguez
-Cincinnati Reds8,Matt McLain
-Cincinnati Reds9,Ke'Bryan Hayes
+Seattle Mariners1,Randy Arozarena
+Seattle Mariners2,Julio Rodriguez
+Seattle Mariners3,Dominic Canzone
+Seattle Mariners4,Cal Raleigh
+Seattle Mariners5,Josh Naylor
+Seattle Mariners6,Brendan Donovan
+Seattle Mariners7,Weston Wilson
+Seattle Mariners8,Jhonny Pereda
+Seattle Mariners9,Leo Rivas
+New York Yankees1,Trent Grisham
+New York Yankees2,Ben Rice
+New York Yankees3,Spencer Jones
+New York Yankees4,Luis Garcia Jr.
+New York Yankees5,George Lombard Jr.
+New York Yankees6,Jazz Chisholm Jr.
+New York Yankees7,Jose Caballero
+New York Yankees8,Ryan McMahon
+New York Yankees9,Ali Sanchez
+Toronto Blue Jays1,Charles McAdoo
+Toronto Blue Jays2,Ernie Clement
+Toronto Blue Jays3,Vladimir Guerrero Jr.
+Toronto Blue Jays4,George Springer
+Toronto Blue Jays5,Kazuma Okamoto
+Toronto Blue Jays6,Andres Gimenez
+Toronto Blue Jays7,Brandon Valenzuela
+Toronto Blue Jays8,Myles Straw
+Toronto Blue Jays9,Nathan Lukes
 Boston Red Sox1,Masataka Yoshida
 Boston Red Sox2,Ceddanne Rafaela
 Boston Red Sox3,Adley Rutschman
@@ -62,15 +98,6 @@ Chicago Cubs6,Nico Hoerner
 Chicago Cubs7,Tyrone Taylor
 Chicago Cubs8,Pedro Ramirez
 Chicago Cubs9,Dansby Swanson
-Chicago White Sox1,Sam Antonacci
-Chicago White Sox2,Munetaka Murakami
-Chicago White Sox3,Andrew Benintendi
-Chicago White Sox4,Braden Montgomery
-Chicago White Sox5,Colson Montgomery
-Chicago White Sox6,Chase Meidroth
-Chicago White Sox7,Tristan Peters
-Chicago White Sox8,Brenton Doyle
-Chicago White Sox9,Drew Romo
 Los Angeles Angels1,Wade Meckler
 Los Angeles Angels2,Mike Trout
 Los Angeles Angels3,Nolan Schanuel
@@ -106,15 +133,6 @@ Minnesota Twins6,Luke Keaschall
 Minnesota Twins7,Victor Caratini
 Minnesota Twins8,Alan Roden
 Minnesota Twins9,Ryan Kreidler
-New York Yankees1,Trent Grisham
-New York Yankees2,Ben Rice
-New York Yankees3,Spencer Jones
-New York Yankees4,Luis Garcia Jr.
-New York Yankees5,Heliot Ramos
-New York Yankees6,Jazz Chisholm Jr.
-New York Yankees7,Ryan McMahon
-New York Yankees8,Austin Wells
-New York Yankees9,George Lombard Jr.
 Philadelphia Phillies1,Kyle Schwarber
 Philadelphia Phillies2,Trea Turner
 Philadelphia Phillies3,Bryce Harper
@@ -124,15 +142,6 @@ Philadelphia Phillies6,Bryan De La Cruz
 Philadelphia Phillies7,J.T. Realmuto
 Philadelphia Phillies8,Alec Bohm
 Philadelphia Phillies9,Justin Crawford
-Seattle Mariners1,Taylor Ward
-Seattle Mariners2,Cole Young
-Seattle Mariners3,Randy Arozarena
-Seattle Mariners4,Dominic Canzone
-Seattle Mariners5,Julio Rodriguez
-Seattle Mariners6,Josh Naylor
-Seattle Mariners7,Brendan Donovan
-Seattle Mariners8,Cal Raleigh
-Seattle Mariners9,Colt Emerson
 Texas Rangers1,Joc Pederson
 Texas Rangers2,Brandon Nimmo
 Texas Rangers3,Corey Seager
@@ -142,15 +151,6 @@ Texas Rangers6,Jake Burger
 Texas Rangers7,Evan Carter
 Texas Rangers8,Elias Diaz
 Texas Rangers9,Nicky Lopez
-Toronto Blue Jays1,Charles McAdoo
-Toronto Blue Jays2,Brett Bateman
-Toronto Blue Jays3,Vladimir Guerrero Jr.
-Toronto Blue Jays4,Alejandro Kirk
-Toronto Blue Jays5,Kazuma Okamoto
-Toronto Blue Jays6,Andres Gimenez
-Toronto Blue Jays7,Ernie Clement
-Toronto Blue Jays8,Jesus Sanchez
-Toronto Blue Jays9,Myles Straw
 Washington Nationals1,Dylan Crews
 Washington Nationals2,Andres Chaparro
 Washington Nationals3,Brady House
