@@ -1,30 +1,16 @@
 {
-  "New York Yankees": {
-    "home_team": "New York Yankees",
-    "away_team": "Seattle Mariners",
-    "home_ml": "+4100",
-    "away_ml": "-6000",
-    "book": "fanduel"
-  },
-  "Toronto Blue Jays": {
-    "home_team": "Toronto Blue Jays",
-    "away_team": "New York Yankees",
-    "home_ml": "+130",
-    "away_ml": "-154",
-    "book": "fanduel"
-  },
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Chicago Cubs",
-    "home_ml": "+115",
-    "away_ml": "-130",
+    "home_ml": "-6000",
+    "away_ml": "+4600",
     "book": "fanduel"
   },
   "Minnesota Twins": {
     "home_team": "Minnesota Twins",
     "away_team": "Philadelphia Phillies",
-    "home_ml": "-106",
-    "away_ml": "-102",
+    "home_ml": "-104",
+    "away_ml": "-104",
     "book": "fanduel"
   },
   "Los Angeles Angels": {
@@ -74,6 +60,13 @@
     "away_team": "Washington Nationals",
     "home_ml": "-126",
     "away_ml": "+108",
+    "book": "fanduel"
+  },
+  "Toronto Blue Jays": {
+    "home_team": "Toronto Blue Jays",
+    "away_team": "New York Yankees",
+    "home_ml": "+130",
+    "away_ml": "-154",
     "book": "fanduel"
   },
   "Houston Astros": {
