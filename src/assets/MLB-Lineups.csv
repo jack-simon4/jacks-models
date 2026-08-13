@@ -23,16 +23,16 @@ Cincinnati Reds3,JJ Bleday
 Cincinnati Reds4,Tyler Stephenson
 Cincinnati Reds5,Eugenio Suarez
 Cincinnati Reds6,Dane Myers
-Cincinnati Reds7,Hector Rodriguez
+Cincinnati Reds7,TJ Friedl
 Cincinnati Reds8,Matt McLain
 Cincinnati Reds9,Ke'Bryan Hayes
 Chicago White Sox1,Chase Meidroth
 Chicago White Sox2,Andrew Benintendi
 Chicago White Sox3,Miguel Vargas
 Chicago White Sox4,Braden Montgomery
-Chicago White Sox5,Brenton Doyle
+Chicago White Sox5,Munetaka Murakami
 Chicago White Sox6,Colson Montgomery
-Chicago White Sox7,Edgar Quero
+Chicago White Sox7,Drew Romo
 Chicago White Sox8,Sam Antonacci
 Chicago White Sox9,Tristan Peters
 Pittsburgh Pirates1,Spencer Horwitz
@@ -54,7 +54,7 @@ Miami Marlins7,Owen Caissie
 Miami Marlins9,Esteury Ruiz
 Seattle Mariners1,Randy Arozarena
 Seattle Mariners2,Julio Rodriguez
-Seattle Mariners3,Dominic Canzone
+Seattle Mariners3,Victor Robles
 Seattle Mariners4,Cal Raleigh
 Seattle Mariners5,Josh Naylor
 Seattle Mariners6,Brendan Donovan
@@ -63,13 +63,13 @@ Seattle Mariners8,Jhonny Pereda
 Seattle Mariners9,Cole Young
 New York Yankees1,Trent Grisham
 New York Yankees2,Ben Rice
-New York Yankees3,Spencer Jones
+New York Yankees3,Heliot Ramos
 New York Yankees4,Luis Garcia Jr.
 New York Yankees5,George Lombard Jr.
 New York Yankees6,Jazz Chisholm Jr.
 New York Yankees7,Jose Caballero
 New York Yankees8,Ryan McMahon
-New York Yankees9,Ali Sanchez
+New York Yankees9,Austin Wells
 Boston Red Sox1,Nick Sogard
 Boston Red Sox2,Ceddanne Rafaela
 Boston Red Sox3,Wilyer Abreu
@@ -106,6 +106,15 @@ Washington Nationals6,Jorbit Vivas
 Washington Nationals7,Andres Chaparro
 Washington Nationals8,Keibert Ruiz
 Washington Nationals9,Andrew Pinckney
+Philadelphia Phillies1,Kyle Schwarber
+Philadelphia Phillies2,Trea Turner
+Philadelphia Phillies3,Bryce Harper
+Philadelphia Phillies4,Luis Arraez
+Philadelphia Phillies5,Bryson Stott
+Philadelphia Phillies6,Alec Bohm
+Philadelphia Phillies7,Brandon Marsh
+Philadelphia Phillies8,J.T. Realmuto
+Philadelphia Phillies9,Justin Crawford
 Minnesota Twins1,Trevor Larnach
 Minnesota Twins2,Byron Buxton
 Minnesota Twins3,Ryan Jeffers
@@ -141,15 +150,6 @@ Milwaukee Brewers6,Gary Sanchez
 Milwaukee Brewers7,Garrett Mitchell
 Milwaukee Brewers8,David Hamilton
 Milwaukee Brewers9,Joey Ortiz
-Philadelphia Phillies1,Kyle Schwarber
-Philadelphia Phillies2,Trea Turner
-Philadelphia Phillies3,Bryce Harper
-Philadelphia Phillies4,Luis Arraez
-Philadelphia Phillies5,Bryson Stott
-Philadelphia Phillies6,Bryan De La Cruz
-Philadelphia Phillies7,J.T. Realmuto
-Philadelphia Phillies8,Alec Bohm
-Philadelphia Phillies9,Justin Crawford
 Texas Rangers1,Joc Pederson
 Texas Rangers2,Brandon Nimmo
 Texas Rangers3,Corey Seager
