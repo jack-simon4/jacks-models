@@ -1,11 +1,4 @@
 {
-  "Chicago Cubs": {
-    "home_team": "Chicago Cubs",
-    "away_team": "St. Louis Cardinals",
-    "home_ml": "-174",
-    "away_ml": "+146",
-    "book": "fanduel"
-  },
   "Cincinnati Reds": {
     "home_team": "Cincinnati Reds",
     "away_team": "Miami Marlins",
@@ -79,9 +72,9 @@
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Texas Rangers",
-    "home_ml": "-102",
-    "away_ml": "-106",
-    "book": "fanduel"
+    "home_ml": "+109",
+    "away_ml": "-131",
+    "book": "draftkings"
   },
   "Los Angeles Dodgers": {
     "home_team": "Los Angeles Dodgers",
@@ -95,6 +88,13 @@
     "away_team": "Colorado Rockies",
     "home_ml": "-190",
     "away_ml": "+160",
+    "book": "fanduel"
+  },
+  "Chicago Cubs": {
+    "home_team": "Chicago Cubs",
+    "away_team": "St. Louis Cardinals",
+    "home_ml": "-174",
+    "away_ml": "+146",
     "book": "fanduel"
   },
   "Minnesota Twins": {
