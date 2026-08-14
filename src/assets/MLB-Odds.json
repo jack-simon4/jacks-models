@@ -37,8 +37,8 @@
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "San Diego Padres",
-    "home_ml": "-126",
-    "away_ml": "+116",
+    "home_ml": "-116",
+    "away_ml": "+106",
     "book": "fanduel"
   },
   "New York Mets": {

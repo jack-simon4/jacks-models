@@ -19,25 +19,6 @@
     "rank": 1
   },
   {
-    "matchup": "New York Yankees @ Toronto Blue Jays",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "Gerrit Cole",
-    "homePitcher": "Shane Bieber",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -140",
-    "odds": "-140",
-    "winProb": 0.601,
-    "edge": 0.101,
-    "confidence": "Strong",
-    "predictedScore": "New York Yankees 6.2 \u2013 Toronto Blue Jays 4.8",
-    "predictedHomeScore": 4.84,
-    "predictedAwayScore": 6.2,
-    "gameTime": "2026-08-14T23:15:00Z",
-    "gamePk": 822777,
-    "rank": 2
-  },
-  {
     "matchup": "Colorado Rockies @ San Francisco Giants",
     "awayTeam": "Colorado Rockies",
     "homeTeam": "San Francisco Giants",
@@ -54,6 +35,25 @@
     "predictedAwayScore": 4.94,
     "gameTime": "2026-08-15T02:15:00Z",
     "gamePk": 823185,
+    "rank": 2
+  },
+  {
+    "matchup": "New York Yankees @ Toronto Blue Jays",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Gerrit Cole",
+    "homePitcher": "Shane Bieber",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -140",
+    "odds": "-140",
+    "winProb": 0.591,
+    "edge": 0.091,
+    "confidence": "Strong",
+    "predictedScore": "New York Yankees 6.2 \u2013 Toronto Blue Jays 5.0",
+    "predictedHomeScore": 4.97,
+    "predictedAwayScore": 6.2,
+    "gameTime": "2026-08-14T23:15:00Z",
+    "gamePk": 822777,
     "rank": 3
   }
 ]
