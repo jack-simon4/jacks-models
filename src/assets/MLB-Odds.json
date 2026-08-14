@@ -30,15 +30,15 @@
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "San Diego Padres",
-    "home_ml": "-116",
-    "away_ml": "+106",
+    "home_ml": "-110",
+    "away_ml": "-105",
     "book": "fanduel"
   },
   "New York Mets": {
     "home_team": "New York Mets",
     "away_team": "Washington Nationals",
-    "home_ml": "-116",
-    "away_ml": "+106",
+    "home_ml": "-130",
+    "away_ml": "+115",
     "book": "fanduel"
   },
   "Atlanta Braves": {
