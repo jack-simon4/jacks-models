@@ -35,15 +35,15 @@ Atlanta Braves6,Mauricio Dubon
 Atlanta Braves7,Mike Yastrzemski
 Atlanta Braves8,Austin Riley
 Atlanta Braves9,Jim Jarvis
-Baltimore Orioles1,Gunnar Henderson
-Baltimore Orioles2,Pete Alonso
-Baltimore Orioles3,Jackson Holliday
+Baltimore Orioles1,Pete Alonso
+Baltimore Orioles2,Jackson Holliday
+Baltimore Orioles3,Coby Mayo
 Baltimore Orioles4,Tyler O'Neill
-Baltimore Orioles5,Jeremiah Jackson
+Baltimore Orioles5,Gunnar Henderson
 Baltimore Orioles6,Christian Encarnacion-Strand
 Baltimore Orioles7,Leody Taveras
-Baltimore Orioles8,Christian Franklin
-Baltimore Orioles9,Colton Cowser
+Baltimore Orioles8,Colton Cowser
+Baltimore Orioles9,Carlos Narvaez
 Boston Red Sox1,Nick Sogard
 Boston Red Sox2,Masataka Yoshida
 Boston Red Sox3,Adley Rutschman
@@ -110,11 +110,11 @@ Detroit Tigers9,Max Clark
 Houston Astros1,Jeremy Pena
 Houston Astros2,Yordan Alvarez
 Houston Astros3,Isaac Paredes
-Houston Astros4,Daulton Varsho
-Houston Astros5,Christian Walker
-Houston Astros6,Cam Smith
-Houston Astros7,Taylor Trammell
-Houston Astros8,Nick Allen
+Houston Astros4,Taylor Trammell
+Houston Astros5,Jose Altuve
+Houston Astros6,Daulton Varsho
+Houston Astros7,Christian Walker
+Houston Astros8,Cam Smith
 Houston Astros9,Christian Vazquez
 Kansas City Royals1,Nick Loftin
 Kansas City Royals2,Bobby Witt Jr.
@@ -189,13 +189,13 @@ New York Mets8,Jared Young
 New York Mets9,Luis Torrens
 New York Yankees1,Trent Grisham
 New York Yankees2,Ben Rice
-New York Yankees3,Heliot Ramos
+New York Yankees3,Spencer Jones
 New York Yankees4,Luis Garcia Jr.
-New York Yankees5,George Lombard Jr.
-New York Yankees6,Jazz Chisholm Jr.
-New York Yankees7,Jose Caballero
-New York Yankees8,Ryan McMahon
-New York Yankees9,Austin Wells
+New York Yankees5,Jazz Chisholm Jr.
+New York Yankees6,Heliot Ramos
+New York Yankees7,Ryan McMahon
+New York Yankees8,Austin Wells
+New York Yankees9,George Lombard Jr.
 Philadelphia Phillies1,Kyle Schwarber
 Philadelphia Phillies2,Trea Turner
 Philadelphia Phillies3,Bryce Harper
@@ -214,15 +214,15 @@ Pittsburgh Pirates6,Rafael Flores Jr.
 Pittsburgh Pirates7,Jake Mangum
 Pittsburgh Pirates8,Jared Triolo
 Pittsburgh Pirates9,Henry Davis
-San Diego Padres1,Luis Rengifo
+San Diego Padres1,Fernando Tatis Jr.
 San Diego Padres2,Jake Cronenworth
 San Diego Padres3,Manny Machado
 San Diego Padres4,Ty France
 San Diego Padres5,Jackson Merrill
 San Diego Padres6,Luis Campusano
-San Diego Padres7,Jase Bowen
+San Diego Padres7,Gavin Sheets
 San Diego Padres8,Xander Bogaerts
-San Diego Padres9,Fernando Tatis Jr.
+San Diego Padres9,Luis Rengifo
 San Francisco Giants1,Jung Hoo Lee
 San Francisco Giants2,Buddy Kennedy
 San Francisco Giants3,Bryce Eldridge
@@ -279,10 +279,10 @@ Toronto Blue Jays8,Jesus Sanchez
 Toronto Blue Jays9,Ernie Clement
 Washington Nationals1,CJ Abrams
 Washington Nationals2,Abimelec Ortiz
-Washington Nationals3,Dylan Crews
+Washington Nationals3,Brady House
 Washington Nationals4,Daylen Lile
-Washington Nationals5,Brady House
-Washington Nationals6,Jorbit Vivas
-Washington Nationals7,Andres Chaparro
-Washington Nationals8,Keibert Ruiz
-Washington Nationals9,Andrew Pinckney
+Washington Nationals5,Keibert Ruiz
+Washington Nationals6,Jose Tena
+Washington Nationals7,Nasim Nunez
+Washington Nationals8,Jorbit Vivas
+Washington Nationals9,Jacob Young
