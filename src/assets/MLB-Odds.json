@@ -51,8 +51,8 @@
   "Toronto Blue Jays": {
     "home_team": "Toronto Blue Jays",
     "away_team": "New York Yankees",
-    "home_ml": "+126",
-    "away_ml": "-136",
+    "home_ml": "+134",
+    "away_ml": "-144",
     "book": "fanduel"
   },
   "Houston Astros": {
@@ -72,9 +72,9 @@
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Texas Rangers",
-    "home_ml": "+109",
-    "away_ml": "-131",
-    "book": "draftkings"
+    "home_ml": "+124",
+    "away_ml": "-146",
+    "book": "fanduel"
   },
   "Los Angeles Dodgers": {
     "home_team": "Los Angeles Dodgers",

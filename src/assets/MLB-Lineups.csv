@@ -178,6 +178,15 @@ Houston Astros6,Daulton Varsho
 Houston Astros7,Christian Walker
 Houston Astros8,Cam Smith
 Houston Astros9,Christian Vazquez
+Kansas City Royals1,Carter Jensen
+Kansas City Royals2,Bobby Witt Jr.
+Kansas City Royals3,Jac Caglianone
+Kansas City Royals4,Nick Loftin
+Kansas City Royals5,Michael Massey
+Kansas City Royals6,Isaac Collins
+Kansas City Royals7,John Rave
+Kansas City Royals8,Josh Rojas
+Kansas City Royals9,Kyle Isbel
 Los Angeles Angels1,Wade Meckler
 Los Angeles Angels2,Mike Trout
 Los Angeles Angels3,Nolan Schanuel
@@ -187,6 +196,23 @@ Los Angeles Angels6,Vaughn Grissom
 Los Angeles Angels7,Josh Lowe
 Los Angeles Angels8,Denzer Guzman
 Los Angeles Angels9,Tyler Heineman
+Athletics1,Jeff McNeil
+Athletics2,Jacob Wilson
+Athletics3,Tyler Soderstrom
+Athletics4,Zack Gelof
+Athletics5,Lawrence Butler
+Athletics6,Carlos Cortes
+Athletics7,Donovan Walton
+Athletics8,Jonah Heim
+Athletics9,Henry Bolte
+Los Angeles Dodgers2,Andy Pages
+Los Angeles Dodgers3,Teoscar Hernandez
+Los Angeles Dodgers4,Mookie Betts
+Los Angeles Dodgers5,Tommy Edman
+Los Angeles Dodgers6,Kyle Tucker
+Los Angeles Dodgers7,Max Muncy
+Los Angeles Dodgers8,Enrique Hernandez
+Los Angeles Dodgers9,Hunter Feduccia
 Colorado Rockies1,Jake McCarthy
 Colorado Rockies2,Mickey Moniak
 Colorado Rockies3,Willi Castro
@@ -196,32 +222,15 @@ Colorado Rockies6,Connor Norby
 Colorado Rockies7,Zac Veen
 Colorado Rockies8,Ezequiel Tovar
 Colorado Rockies9,Brett Sullivan
-Athletics1,Donovan Walton
-Athletics2,Tyler Soderstrom
-Athletics3,Zack Gelof
-Athletics4,Carlos Cortes
-Athletics5,Lawrence Butler
-Athletics6,Henry Bolte
-Athletics7,Max Muncy
-Athletics8,Tommy White
-Athletics9,Brian Serven
-Kansas City Royals1,Nick Loftin
-Kansas City Royals2,Bobby Witt Jr.
-Kansas City Royals3,Jac Caglianone
-Kansas City Royals4,Salvador Perez
-Kansas City Royals5,Starling Marte
-Kansas City Royals6,Carter Jensen
-Kansas City Royals7,Isaac Collins
-Kansas City Royals8,Tyler Tolbert
-Kansas City Royals9,Josh Rojas
-Los Angeles Dodgers2,Andy Pages
-Los Angeles Dodgers3,Tommy Edman
-Los Angeles Dodgers4,Freddie Freeman
-Los Angeles Dodgers5,Teoscar Hernandez
-Los Angeles Dodgers6,Miguel Rojas
-Los Angeles Dodgers7,Kyle Tucker
-Los Angeles Dodgers8,Enrique Hernandez
-Los Angeles Dodgers9,Ben Rortvedt
+San Francisco Giants1,Jonah Cox
+San Francisco Giants2,Rafael Devers
+San Francisco Giants3,Bryce Eldridge
+San Francisco Giants4,Victor Bericoto
+San Francisco Giants5,Jung Hoo Lee
+San Francisco Giants6,Osleivis Basabe
+San Francisco Giants7,Buddy Kennedy
+San Francisco Giants8,Andrew Knizner
+San Francisco Giants9,Christian Koss
 Milwaukee Brewers1,Jackson Chourio
 Milwaukee Brewers2,Garrett Mitchell
 Milwaukee Brewers3,Gary Sanchez
@@ -231,15 +240,6 @@ Milwaukee Brewers6,Christian Yelich
 Milwaukee Brewers7,William Contreras
 Milwaukee Brewers8,Joey Ortiz
 Milwaukee Brewers9,David Hamilton
-San Francisco Giants1,Jung Hoo Lee
-San Francisco Giants2,Buddy Kennedy
-San Francisco Giants3,Bryce Eldridge
-San Francisco Giants4,Rafael Devers
-San Francisco Giants5,Victor Bericoto
-San Francisco Giants6,Drew Gilbert
-San Francisco Giants7,Osleivis Basabe
-San Francisco Giants8,Andrew Knizner
-San Francisco Giants9,Christian Koss
 Texas Rangers1,Joc Pederson
 Texas Rangers2,Wyatt Langford
 Texas Rangers3,Corey Seager
