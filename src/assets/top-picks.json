@@ -8,15 +8,34 @@
     "pick": "Chicago Cubs",
     "prediction": "Chicago Cubs -172",
     "odds": "-172",
-    "winProb": 0.635,
-    "edge": 0.135,
+    "winProb": 0.633,
+    "edge": 0.133,
     "confidence": "Strong",
-    "predictedScore": "St. Louis Cardinals 4.3 \u2013 Chicago Cubs 6.2",
-    "predictedHomeScore": 6.16,
+    "predictedScore": "St. Louis Cardinals 4.3 \u2013 Chicago Cubs 6.1",
+    "predictedHomeScore": 6.13,
     "predictedAwayScore": 4.32,
     "gameTime": "2026-08-14T18:20:00Z",
     "gamePk": 824643,
     "rank": 1
+  },
+  {
+    "matchup": "New York Yankees @ Toronto Blue Jays",
+    "awayTeam": "New York Yankees",
+    "homeTeam": "Toronto Blue Jays",
+    "awayPitcher": "Gerrit Cole",
+    "homePitcher": "Shane Bieber",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -142",
+    "odds": "-142",
+    "winProb": 0.601,
+    "edge": 0.101,
+    "confidence": "Strong",
+    "predictedScore": "New York Yankees 6.2 \u2013 Toronto Blue Jays 4.8",
+    "predictedHomeScore": 4.84,
+    "predictedAwayScore": 6.2,
+    "gameTime": "2026-08-14T23:15:00Z",
+    "gamePk": 822777,
+    "rank": 2
   },
   {
     "matchup": "Milwaukee Brewers @ Los Angeles Dodgers",
@@ -27,15 +46,15 @@
     "pick": "Los Angeles Dodgers",
     "prediction": "Los Angeles Dodgers -178",
     "odds": "-178",
-    "winProb": 0.594,
-    "edge": 0.094,
+    "winProb": 0.593,
+    "edge": 0.093,
     "confidence": "Strong",
-    "predictedScore": "Milwaukee Brewers 4.0 \u2013 Los Angeles Dodgers 5.3",
-    "predictedHomeScore": 5.26,
+    "predictedScore": "Milwaukee Brewers 4.0 \u2013 Los Angeles Dodgers 5.2",
+    "predictedHomeScore": 5.25,
     "predictedAwayScore": 3.99,
     "gameTime": "2026-08-15T02:10:00Z",
     "gamePk": 823913,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Colorado Rockies @ San Francisco Giants",
@@ -54,6 +73,6 @@
     "predictedAwayScore": 4.94,
     "gameTime": "2026-08-15T02:15:00Z",
     "gamePk": 823185,
-    "rank": 3
+    "rank": 4
   }
 ]
