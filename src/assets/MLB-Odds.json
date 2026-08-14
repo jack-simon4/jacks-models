@@ -2,8 +2,8 @@
   "Minnesota Twins": {
     "home_team": "Minnesota Twins",
     "away_team": "Philadelphia Phillies",
-    "home_ml": "+145",
-    "away_ml": "-165",
+    "home_ml": "+1000",
+    "away_ml": "-1300",
     "book": "fanduel"
   },
   "Los Angeles Angels": {
@@ -41,6 +41,13 @@
     "away_ml": "-144",
     "book": "fanduel"
   },
+  "Detroit Tigers": {
+    "home_team": "Detroit Tigers",
+    "away_team": "Chicago White Sox",
+    "home_ml": "-154",
+    "away_ml": "+130",
+    "book": "fanduel"
+  },
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "San Diego Padres",
@@ -72,8 +79,8 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Colorado Rockies",
-    "home_ml": "-120",
-    "away_ml": "+102",
+    "home_ml": "-124",
+    "away_ml": "+106",
     "book": "fanduel"
   }
 }
