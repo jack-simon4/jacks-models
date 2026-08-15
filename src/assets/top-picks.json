@@ -25,8 +25,8 @@
     "awayPitcher": "Michael Lorenzen",
     "homePitcher": "Logan Webb",
     "pick": "San Francisco Giants",
-    "prediction": "San Francisco Giants -142",
-    "odds": "-142",
+    "prediction": "San Francisco Giants -130",
+    "odds": "-130",
     "winProb": 0.59,
     "edge": 0.09,
     "confidence": "Strong",
@@ -36,24 +36,5 @@
     "gameTime": "2026-08-15T20:05:00Z",
     "gamePk": 823184,
     "rank": 2
-  },
-  {
-    "matchup": "Philadelphia Phillies @ Minnesota Twins",
-    "awayTeam": "Philadelphia Phillies",
-    "homeTeam": "Minnesota Twins",
-    "awayPitcher": "Jes\u00fas Luzardo",
-    "homePitcher": "Connor Prielipp",
-    "pick": "Philadelphia Phillies",
-    "prediction": "Philadelphia Phillies -110",
-    "odds": "-110",
-    "winProb": 0.582,
-    "edge": 0.082,
-    "confidence": "Strong",
-    "predictedScore": "Philadelphia Phillies 5.8 \u2013 Minnesota Twins 4.7",
-    "predictedHomeScore": 4.72,
-    "predictedAwayScore": 5.82,
-    "gameTime": "2026-08-15T23:10:00Z",
-    "gamePk": 823671,
-    "rank": 3
   }
 ]

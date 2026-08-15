@@ -33,7 +33,7 @@ Chicago Cubs4,Alex Bregman
 Chicago Cubs5,Ian Happ
 Chicago Cubs6,Nico Hoerner
 Chicago Cubs7,Pedro Ramirez
-Chicago Cubs8,Michael Conforto
+Chicago Cubs8,Tyrone Taylor
 Chicago Cubs9,Miguel Amaya
 New York Yankees1,Trent Grisham
 New York Yankees2,Ben Rice
@@ -47,11 +47,11 @@ New York Yankees9,Austin Wells
 Toronto Blue Jays1,Brett Bateman
 Toronto Blue Jays2,Nathan Lukes
 Toronto Blue Jays3,Alejandro Kirk
-Toronto Blue Jays4,Jesus Sanchez
+Toronto Blue Jays4,Myles Straw
 Toronto Blue Jays5,Kazuma Okamoto
 Toronto Blue Jays6,Andres Gimenez
 Toronto Blue Jays7,Brandon Valenzuela
-Toronto Blue Jays8,Josh Smith
+Toronto Blue Jays8,Ernie Clement
 Toronto Blue Jays9,Charles McAdoo
 Colorado Rockies1,Jake McCarthy
 Colorado Rockies2,Cole Carrigg
@@ -161,6 +161,15 @@ Houston Astros6,Christian Walker
 Houston Astros7,Taylor Trammell
 Houston Astros8,Cam Smith
 Houston Astros9,Christian Vazquez
+Philadelphia Phillies1,Kyle Schwarber
+Philadelphia Phillies2,Trea Turner
+Philadelphia Phillies3,Bryce Harper
+Philadelphia Phillies4,Luis Arraez
+Philadelphia Phillies5,Alec Bohm
+Philadelphia Phillies6,Edmundo Sosa
+Philadelphia Phillies7,Bryson Stott
+Philadelphia Phillies8,J.T. Realmuto
+Philadelphia Phillies9,Derek Hill
 Minnesota Twins1,Austin Martin
 Minnesota Twins2,Byron Buxton
 Minnesota Twins3,Ryan Jeffers
@@ -206,6 +215,15 @@ Atlanta Braves6,Mauricio Dubon
 Atlanta Braves7,Lane Thomas
 Atlanta Braves8,Austin Riley
 Atlanta Braves9,Sean Murphy
+Milwaukee Brewers1,Jackson Chourio
+Milwaukee Brewers2,Luis Lara
+Milwaukee Brewers3,Andrew Vaughn
+Milwaukee Brewers4,Jake Bauers
+Milwaukee Brewers5,Gary Sanchez
+Milwaukee Brewers6,Christian Yelich
+Milwaukee Brewers7,William Contreras
+Milwaukee Brewers8,Joey Ortiz
+Milwaukee Brewers9,Jonathan Ornelas
 Los Angeles Dodgers2,Freddie Freeman
 Los Angeles Dodgers3,Andy Pages
 Los Angeles Dodgers4,Max Muncy
@@ -241,24 +259,6 @@ Los Angeles Angels6,Vaughn Grissom
 Los Angeles Angels7,Josh Lowe
 Los Angeles Angels8,Denzer Guzman
 Los Angeles Angels9,Tyler Heineman
-Milwaukee Brewers1,Garrett Mitchell
-Milwaukee Brewers2,Jackson Chourio
-Milwaukee Brewers3,Jake Bauers
-Milwaukee Brewers4,Andrew Vaughn
-Milwaukee Brewers5,Christian Yelich
-Milwaukee Brewers6,William Contreras
-Milwaukee Brewers7,Luis Lara
-Milwaukee Brewers8,David Hamilton
-Milwaukee Brewers9,Joey Ortiz
-Philadelphia Phillies1,Kyle Schwarber
-Philadelphia Phillies2,Trea Turner
-Philadelphia Phillies3,Bryce Harper
-Philadelphia Phillies4,Luis Arraez
-Philadelphia Phillies5,Bryson Stott
-Philadelphia Phillies6,Alec Bohm
-Philadelphia Phillies7,Brandon Marsh
-Philadelphia Phillies8,J.T. Realmuto
-Philadelphia Phillies9,Justin Crawford
 Texas Rangers1,Wyatt Langford
 Texas Rangers2,Brandon Nimmo
 Texas Rangers3,Corey Seager
