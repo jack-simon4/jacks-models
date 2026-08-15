@@ -55,24 +55,5 @@
     "gameTime": "2026-08-15T20:05:00Z",
     "gamePk": 823184,
     "rank": 3
-  },
-  {
-    "matchup": "San Diego Padres @ Cleveland Guardians",
-    "awayTeam": "San Diego Padres",
-    "homeTeam": "Cleveland Guardians",
-    "awayPitcher": "TBD",
-    "homePitcher": "Joey Cantillo",
-    "pick": "San Diego Padres",
-    "prediction": "San Diego Padres -3000",
-    "odds": "-3000",
-    "winProb": 0.587,
-    "edge": 0.087,
-    "confidence": "Strong",
-    "predictedScore": "San Diego Padres 5.7 \u2013 Cleveland Guardians 4.5",
-    "predictedHomeScore": 4.48,
-    "predictedAwayScore": 5.65,
-    "gameTime": "2026-08-15T23:10:00Z",
-    "gamePk": 824400,
-    "rank": 4
   }
 ]
