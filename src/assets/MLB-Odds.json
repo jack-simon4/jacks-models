@@ -1,11 +1,4 @@
 {
-  "Houston Astros": {
-    "home_team": "Houston Astros",
-    "away_team": "Seattle Mariners",
-    "home_ml": "-118",
-    "away_ml": "+100",
-    "book": "fanduel"
-  },
   "Los Angeles Angels": {
     "home_team": "Los Angeles Angels",
     "away_team": "Kansas City Royals",
@@ -81,6 +74,13 @@
     "away_team": "San Diego Padres",
     "home_ml": "-120",
     "away_ml": "+102",
+    "book": "fanduel"
+  },
+  "Houston Astros": {
+    "home_team": "Houston Astros",
+    "away_team": "Seattle Mariners",
+    "home_ml": "-118",
+    "away_ml": "+100",
     "book": "fanduel"
   },
   "Minnesota Twins": {
