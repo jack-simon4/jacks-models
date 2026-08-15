@@ -71,6 +71,51 @@ San Francisco Giants6,Drew Cavanaugh
 San Francisco Giants7,Turner Hill
 San Francisco Giants8,Buddy Kennedy
 San Francisco Giants9,Christian Koss
+Washington Nationals1,Dylan Crews
+Washington Nationals2,Andres Chaparro
+Washington Nationals3,Brady House
+Washington Nationals4,CJ Abrams
+Washington Nationals5,Harry Ford
+Washington Nationals6,Jacob Young
+Washington Nationals7,Daylen Lile
+Washington Nationals8,Nasim Nunez
+Washington Nationals9,Andrew Pinckney
+New York Mets1,A.J. Ewing
+New York Mets2,Francisco Lindor
+New York Mets3,Bo Bichette
+New York Mets4,Carson Benge
+New York Mets5,Jared Young
+New York Mets6,Marcus Semien
+New York Mets7,Brett Baty
+New York Mets8,Jorge Polanco
+New York Mets9,Francisco Alvarez
+Tampa Bay Rays1,Yandy Diaz
+Tampa Bay Rays2,Jonathan Aranda
+Tampa Bay Rays3,Junior Caminero
+Tampa Bay Rays4,Liam Hicks
+Tampa Bay Rays5,Chandler Simpson
+Tampa Bay Rays6,Jonny DeLuca
+Tampa Bay Rays7,Cedric Mullins
+Tampa Bay Rays8,Richie Palacios
+Tampa Bay Rays9,Taylor Walls
+Cincinnati Reds1,Elly De La Cruz
+Cincinnati Reds2,Sal Stewart
+Cincinnati Reds3,JJ Bleday
+Cincinnati Reds4,Tyler Stephenson
+Cincinnati Reds5,Eugenio Suarez
+Cincinnati Reds6,Dane Myers
+Cincinnati Reds7,Noelvi Marte
+Cincinnati Reds8,Ke'Bryan Hayes
+Cincinnati Reds9,Matt McLain
+Minnesota Twins1,Austin Martin
+Minnesota Twins2,Byron Buxton
+Minnesota Twins3,Ryan Jeffers
+Minnesota Twins4,Royce Lewis
+Minnesota Twins5,Josh Bell
+Minnesota Twins6,Luke Keaschall
+Minnesota Twins7,Brooks Lee
+Minnesota Twins8,Ryan Kreidler
+Minnesota Twins9,Kaelen Culpepper
 Arizona Diamondbacks1,Geraldo Perdomo
 Arizona Diamondbacks2,Corbin Carroll
 Arizona Diamondbacks3,Gabriel Moreno
@@ -116,15 +161,6 @@ Boston Red Sox6,Caleb Durbin
 Boston Red Sox7,Jarren Duran
 Boston Red Sox8,Andruw Monasterio
 Boston Red Sox9,Eli White
-Cincinnati Reds1,Elly De La Cruz
-Cincinnati Reds2,Sal Stewart
-Cincinnati Reds3,JJ Bleday
-Cincinnati Reds4,Tyler Stephenson
-Cincinnati Reds5,Eugenio Suarez
-Cincinnati Reds6,Michael Toglia
-Cincinnati Reds7,Dane Myers
-Cincinnati Reds8,Noelvi Marte
-Cincinnati Reds9,Matt McLain
 Cleveland Guardians1,Steven Kwan
 Cleveland Guardians2,Chase DeLauter
 Cleveland Guardians3,Angel Martinez
@@ -187,24 +223,6 @@ Milwaukee Brewers6,William Contreras
 Milwaukee Brewers7,Luis Lara
 Milwaukee Brewers8,David Hamilton
 Milwaukee Brewers9,Joey Ortiz
-Minnesota Twins1,Trevor Larnach
-Minnesota Twins2,Byron Buxton
-Minnesota Twins3,Ryan Jeffers
-Minnesota Twins4,Josh Bell
-Minnesota Twins5,Royce Lewis
-Minnesota Twins6,Kody Clemens
-Minnesota Twins7,Luke Keaschall
-Minnesota Twins8,Brooks Lee
-Minnesota Twins9,Kaelen Culpepper
-New York Mets1,A.J. Ewing
-New York Mets2,Francisco Lindor
-New York Mets3,Bo Bichette
-New York Mets4,Luis Robert Jr.
-New York Mets5,Carson Benge
-New York Mets6,Francisco Alvarez
-New York Mets7,Marcus Semien
-New York Mets8,Jared Young
-New York Mets9,Luis Torrens
 Philadelphia Phillies1,Kyle Schwarber
 Philadelphia Phillies2,Trea Turner
 Philadelphia Phillies3,Bryce Harper
@@ -241,15 +259,6 @@ Seattle Mariners6,Brendan Donovan
 Seattle Mariners7,Cal Raleigh
 Seattle Mariners8,Victor Robles
 Seattle Mariners9,Brock Rodden
-Tampa Bay Rays1,Yandy Diaz
-Tampa Bay Rays2,Jonathan Aranda
-Tampa Bay Rays3,Chandler Simpson
-Tampa Bay Rays4,Junior Caminero
-Tampa Bay Rays5,Liam Hicks
-Tampa Bay Rays6,Victor Mesa Jr.
-Tampa Bay Rays7,Cedric Mullins
-Tampa Bay Rays8,Richie Palacios
-Tampa Bay Rays9,Taylor Walls
 Texas Rangers1,Wyatt Langford
 Texas Rangers2,Brandon Nimmo
 Texas Rangers3,Corey Seager
@@ -259,15 +268,6 @@ Texas Rangers6,Justin Foscue
 Texas Rangers7,Cody Freeman
 Texas Rangers8,Elias Diaz
 Texas Rangers9,Evan Carter
-Washington Nationals1,CJ Abrams
-Washington Nationals2,Abimelec Ortiz
-Washington Nationals3,Brady House
-Washington Nationals4,Daylen Lile
-Washington Nationals5,Keibert Ruiz
-Washington Nationals6,Jose Tena
-Washington Nationals7,Nasim Nunez
-Washington Nationals8,Jorbit Vivas
-Washington Nationals9,Jacob Young
 American League All-Stars1,Mike Trout
 American League All-Stars2,Yordan Alvarez
 American League All-Stars3,Shea Langeliers

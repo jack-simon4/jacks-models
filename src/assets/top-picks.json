@@ -1,13 +1,32 @@
 [
   {
+    "matchup": "Chicago White Sox @ Detroit Tigers",
+    "awayTeam": "Chicago White Sox",
+    "homeTeam": "Detroit Tigers",
+    "awayPitcher": "Anthony Kay",
+    "homePitcher": "Troy Melton",
+    "pick": "Detroit Tigers",
+    "prediction": "Detroit Tigers -112",
+    "odds": "-112",
+    "winProb": 0.637,
+    "edge": 0.137,
+    "confidence": "Strong",
+    "predictedScore": "Chicago White Sox 4.1 \u2013 Detroit Tigers 5.9",
+    "predictedHomeScore": 5.93,
+    "predictedAwayScore": 4.06,
+    "gameTime": "2026-08-15T17:10:00Z",
+    "gamePk": 824239,
+    "rank": 1
+  },
+  {
     "matchup": "Milwaukee Brewers @ Los Angeles Dodgers",
     "awayTeam": "Milwaukee Brewers",
     "homeTeam": "Los Angeles Dodgers",
     "awayPitcher": "Jacob Misiorowski",
     "homePitcher": "Justin Wrobleski",
     "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -126",
-    "odds": "-126",
+    "prediction": "Milwaukee Brewers -122",
+    "odds": "-122",
     "winProb": 0.6,
     "edge": 0.1,
     "confidence": "Strong",
@@ -16,7 +35,7 @@
     "predictedAwayScore": 5.35,
     "gameTime": "2026-08-15T23:15:00Z",
     "gamePk": 823914,
-    "rank": 1
+    "rank": 2
   },
   {
     "matchup": "Colorado Rockies @ San Francisco Giants",
@@ -35,6 +54,44 @@
     "predictedAwayScore": 4.7,
     "gameTime": "2026-08-15T20:05:00Z",
     "gamePk": 823184,
-    "rank": 2
+    "rank": 3
+  },
+  {
+    "matchup": "San Diego Padres @ Cleveland Guardians",
+    "awayTeam": "San Diego Padres",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "TBD",
+    "homePitcher": "Joey Cantillo",
+    "pick": "San Diego Padres",
+    "prediction": "San Diego Padres -110",
+    "odds": "-110",
+    "winProb": 0.586,
+    "edge": 0.086,
+    "confidence": "Strong",
+    "predictedScore": "San Diego Padres 5.7 \u2013 Cleveland Guardians 4.5",
+    "predictedHomeScore": 4.51,
+    "predictedAwayScore": 5.67,
+    "gameTime": "2026-08-15T23:10:00Z",
+    "gamePk": 824400,
+    "rank": 4
+  },
+  {
+    "matchup": "Philadelphia Phillies @ Minnesota Twins",
+    "awayTeam": "Philadelphia Phillies",
+    "homeTeam": "Minnesota Twins",
+    "awayPitcher": "Jes\u00fas Luzardo",
+    "homePitcher": "Connor Prielipp",
+    "pick": "Philadelphia Phillies",
+    "prediction": "Philadelphia Phillies -110",
+    "odds": "-110",
+    "winProb": 0.582,
+    "edge": 0.082,
+    "confidence": "Strong",
+    "predictedScore": "Philadelphia Phillies 5.8 \u2013 Minnesota Twins 4.7",
+    "predictedHomeScore": 4.72,
+    "predictedAwayScore": 5.82,
+    "gameTime": "2026-08-15T23:10:00Z",
+    "gamePk": 823671,
+    "rank": 5
   }
 ]
