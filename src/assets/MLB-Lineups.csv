@@ -1,5 +1,5 @@
 Team,Player
-Chicago White Sox1,Sam Antonacci
+Chicago White Sox1,Randal Grichuk
 Chicago White Sox2,Munetaka Murakami
 Chicago White Sox3,Miguel Vargas
 Chicago White Sox4,Andrew Benintendi
@@ -14,9 +14,9 @@ Detroit Tigers3,Dillon Dingler
 Detroit Tigers4,Kevin McGonigle
 Detroit Tigers5,Eduardo Valencia
 Detroit Tigers6,Spencer Torkelson
-Detroit Tigers7,Ben Malgeri
+Detroit Tigers7,Max Clark
 Detroit Tigers8,Javier Baez
-Detroit Tigers9,Corey Julks
+Detroit Tigers9,Zach McKinstry
 St. Louis Cardinals1,JJ Wetherholt
 St. Louis Cardinals2,Ivan Herrera
 St. Louis Cardinals3,Jordan Walker
@@ -55,12 +55,12 @@ Toronto Blue Jays8,Josh Smith
 Toronto Blue Jays9,Charles McAdoo
 Colorado Rockies1,Jake McCarthy
 Colorado Rockies2,Cole Carrigg
-Colorado Rockies3,TJ Rumfield
-Colorado Rockies4,Hunter Goodman
-Colorado Rockies5,Mickey Moniak
-Colorado Rockies6,Willi Castro
-Colorado Rockies7,Zac Veen
-Colorado Rockies8,Connor Norby
+Colorado Rockies3,Mickey Moniak
+Colorado Rockies4,TJ Rumfield
+Colorado Rockies5,Willi Castro
+Colorado Rockies6,Zac Veen
+Colorado Rockies7,Connor Norby
+Colorado Rockies8,Brett Sullivan
 Colorado Rockies9,Ezequiel Tovar
 San Francisco Giants1,Drew Gilbert
 San Francisco Giants2,Rafael Devers
@@ -89,6 +89,15 @@ New York Mets6,Marcus Semien
 New York Mets7,Brett Baty
 New York Mets8,Jorge Polanco
 New York Mets9,Francisco Alvarez
+Baltimore Orioles1,Tyler O'Neill
+Baltimore Orioles2,Pete Alonso
+Baltimore Orioles3,Jackson Holliday
+Baltimore Orioles4,Coby Mayo
+Baltimore Orioles5,Gunnar Henderson
+Baltimore Orioles6,Christian Encarnacion-Strand
+Baltimore Orioles7,Christian Franklin
+Baltimore Orioles8,Leody Taveras
+Baltimore Orioles9,Carlos Narvaez
 Tampa Bay Rays1,Yandy Diaz
 Tampa Bay Rays2,Jonathan Aranda
 Tampa Bay Rays3,Junior Caminero
@@ -107,6 +116,24 @@ Cincinnati Reds6,Dane Myers
 Cincinnati Reds7,Noelvi Marte
 Cincinnati Reds8,Ke'Bryan Hayes
 Cincinnati Reds9,Matt McLain
+Cleveland Guardians1,Steven Kwan
+Cleveland Guardians2,Chase DeLauter
+Cleveland Guardians3,Jose Ramirez
+Cleveland Guardians4,Jo Adell
+Cleveland Guardians5,Nathaniel Lowe
+Cleveland Guardians6,Angel Genao
+Cleveland Guardians7,Travis Bazzana
+Cleveland Guardians8,Patrick Bailey
+Cleveland Guardians9,Petey Halpin
+Houston Astros1,Jeremy Pena
+Houston Astros2,Yordan Alvarez
+Houston Astros3,Isaac Paredes
+Houston Astros4,Daulton Varsho
+Houston Astros5,Jose Altuve
+Houston Astros6,Christian Walker
+Houston Astros7,Taylor Trammell
+Houston Astros8,Cam Smith
+Houston Astros9,Christian Vazquez
 Minnesota Twins1,Austin Martin
 Minnesota Twins2,Byron Buxton
 Minnesota Twins3,Ryan Jeffers
@@ -116,15 +143,23 @@ Minnesota Twins6,Luke Keaschall
 Minnesota Twins7,Brooks Lee
 Minnesota Twins8,Ryan Kreidler
 Minnesota Twins9,Kaelen Culpepper
-Arizona Diamondbacks1,Geraldo Perdomo
+Arizona Diamondbacks1,Lars Nootbaar
 Arizona Diamondbacks2,Corbin Carroll
-Arizona Diamondbacks3,Gabriel Moreno
-Arizona Diamondbacks4,Ketel Marte
-Arizona Diamondbacks5,Nolan Arenado
-Arizona Diamondbacks6,Ildemaro Vargas
+Arizona Diamondbacks3,Geraldo Perdomo
+Arizona Diamondbacks4,Gabriel Moreno
+Arizona Diamondbacks5,Max Kepler
+Arizona Diamondbacks6,Nolan Arenado
 Arizona Diamondbacks7,Tim Tawa
-Arizona Diamondbacks8,Tyler Locklear
+Arizona Diamondbacks8,Ildemaro Vargas
 Arizona Diamondbacks9,Ryan Waldschmidt
+Los Angeles Dodgers2,Freddie Freeman
+Los Angeles Dodgers3,Andy Pages
+Los Angeles Dodgers4,Max Muncy
+Los Angeles Dodgers5,Mookie Betts
+Los Angeles Dodgers6,Tommy Edman
+Los Angeles Dodgers7,Teoscar Hernandez
+Los Angeles Dodgers8,Alex Call
+Los Angeles Dodgers9,Hunter Feduccia
 Athletics1,Jeff McNeil
 Athletics2,Jacob Wilson
 Athletics3,Tyler Soderstrom
@@ -143,15 +178,6 @@ Atlanta Braves6,Mauricio Dubon
 Atlanta Braves7,Mike Yastrzemski
 Atlanta Braves8,Austin Riley
 Atlanta Braves9,Jim Jarvis
-Baltimore Orioles1,Pete Alonso
-Baltimore Orioles2,Jackson Holliday
-Baltimore Orioles3,Coby Mayo
-Baltimore Orioles4,Tyler O'Neill
-Baltimore Orioles5,Gunnar Henderson
-Baltimore Orioles6,Christian Encarnacion-Strand
-Baltimore Orioles7,Leody Taveras
-Baltimore Orioles8,Colton Cowser
-Baltimore Orioles9,Carlos Narvaez
 Boston Red Sox1,Nick Sogard
 Boston Red Sox2,Masataka Yoshida
 Boston Red Sox3,Adley Rutschman
@@ -161,24 +187,6 @@ Boston Red Sox6,Caleb Durbin
 Boston Red Sox7,Jarren Duran
 Boston Red Sox8,Andruw Monasterio
 Boston Red Sox9,Eli White
-Cleveland Guardians1,Steven Kwan
-Cleveland Guardians2,Chase DeLauter
-Cleveland Guardians3,Angel Martinez
-Cleveland Guardians4,Nathaniel Lowe
-Cleveland Guardians5,Travis Bazzana
-Cleveland Guardians6,Angel Genao
-Cleveland Guardians7,Petey Halpin
-Cleveland Guardians8,Patrick Bailey
-Cleveland Guardians9,Brayan Rocchio
-Houston Astros1,Jeremy Pena
-Houston Astros2,Yordan Alvarez
-Houston Astros3,Isaac Paredes
-Houston Astros4,Taylor Trammell
-Houston Astros5,Jose Altuve
-Houston Astros6,Daulton Varsho
-Houston Astros7,Christian Walker
-Houston Astros8,Cam Smith
-Houston Astros9,Christian Vazquez
 Kansas City Royals1,Carter Jensen
 Kansas City Royals2,Bobby Witt Jr.
 Kansas City Royals3,Jac Caglianone
@@ -197,14 +205,6 @@ Los Angeles Angels6,Vaughn Grissom
 Los Angeles Angels7,Josh Lowe
 Los Angeles Angels8,Denzer Guzman
 Los Angeles Angels9,Tyler Heineman
-Los Angeles Dodgers2,Andy Pages
-Los Angeles Dodgers3,Teoscar Hernandez
-Los Angeles Dodgers4,Mookie Betts
-Los Angeles Dodgers5,Tommy Edman
-Los Angeles Dodgers6,Kyle Tucker
-Los Angeles Dodgers7,Max Muncy
-Los Angeles Dodgers8,Enrique Hernandez
-Los Angeles Dodgers9,Hunter Feduccia
 Miami Marlins1,Jakob Marsee
 Miami Marlins2,Xavier Edwards
 Miami Marlins3,Otto Lopez
