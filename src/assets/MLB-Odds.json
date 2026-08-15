@@ -2,29 +2,29 @@
   "Detroit Tigers": {
     "home_team": "Detroit Tigers",
     "away_team": "Chicago White Sox",
-    "home_ml": "-134",
-    "away_ml": "+124",
+    "home_ml": "-136",
+    "away_ml": "+126",
     "book": "fanduel"
   },
   "Chicago Cubs": {
     "home_team": "Chicago Cubs",
     "away_team": "St. Louis Cardinals",
-    "home_ml": "-172",
-    "away_ml": "+158",
+    "home_ml": "-180",
+    "away_ml": "+166",
     "book": "fanduel"
   },
   "Toronto Blue Jays": {
     "home_team": "Toronto Blue Jays",
     "away_team": "New York Yankees",
-    "home_ml": "+152",
-    "away_ml": "-164",
+    "home_ml": "+160",
+    "away_ml": "-172",
     "book": "fanduel"
   },
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Colorado Rockies",
-    "home_ml": "-168",
-    "away_ml": "+156",
+    "home_ml": "-160",
+    "away_ml": "+148",
     "book": "fanduel"
   },
   "New York Mets": {
@@ -51,22 +51,22 @@
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "San Diego Padres",
-    "home_ml": "-118",
-    "away_ml": "+110",
+    "home_ml": "-116",
+    "away_ml": "+106",
     "book": "fanduel"
   },
   "Houston Astros": {
     "home_team": "Houston Astros",
     "away_team": "Seattle Mariners",
-    "home_ml": "-116",
-    "away_ml": "+108",
+    "home_ml": "-120",
+    "away_ml": "+110",
     "book": "fanduel"
   },
   "Minnesota Twins": {
     "home_team": "Minnesota Twins",
     "away_team": "Philadelphia Phillies",
-    "home_ml": "+130",
-    "away_ml": "-140",
+    "home_ml": "+118",
+    "away_ml": "-126",
     "book": "fanduel"
   },
   "Atlanta Braves": {
@@ -79,8 +79,8 @@
   "Los Angeles Dodgers": {
     "home_team": "Los Angeles Dodgers",
     "away_team": "Milwaukee Brewers",
-    "home_ml": "+114",
-    "away_ml": "-124",
+    "home_ml": "+118",
+    "away_ml": "-128",
     "book": "fanduel"
   },
   "Pittsburgh Pirates": {
@@ -100,8 +100,8 @@
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Texas Rangers",
-    "home_ml": "+130",
-    "away_ml": "-140",
+    "home_ml": "+134",
+    "away_ml": "-144",
     "book": "fanduel"
   }
 }
