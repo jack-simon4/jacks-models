@@ -1,11 +1,4 @@
 {
-  "Detroit Tigers": {
-    "home_team": "Detroit Tigers",
-    "away_team": "Chicago White Sox",
-    "home_ml": "-112",
-    "away_ml": "-104",
-    "book": "fanduel"
-  },
   "Chicago Cubs": {
     "home_team": "Chicago Cubs",
     "away_team": "St. Louis Cardinals",
@@ -102,6 +95,13 @@
     "away_team": "Texas Rangers",
     "home_ml": "+120",
     "away_ml": "-142",
+    "book": "fanduel"
+  },
+  "Detroit Tigers": {
+    "home_team": "Detroit Tigers",
+    "away_team": "Chicago White Sox",
+    "home_ml": "-112",
+    "away_ml": "-104",
     "book": "fanduel"
   }
 }
