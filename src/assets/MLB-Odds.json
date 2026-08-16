@@ -16,8 +16,8 @@
   "Pittsburgh Pirates": {
     "home_team": "Pittsburgh Pirates",
     "away_team": "Boston Red Sox",
-    "home_ml": "+104",
-    "away_ml": "-112",
+    "home_ml": "+100",
+    "away_ml": "-110",
     "book": "fanduel"
   },
   "Toronto Blue Jays": {
@@ -44,8 +44,8 @@
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "San Diego Padres",
-    "home_ml": "+102",
-    "away_ml": "-112",
+    "home_ml": "+100",
+    "away_ml": "-110",
     "book": "fanduel"
   },
   "New York Mets": {
@@ -65,8 +65,8 @@
   "Chicago Cubs": {
     "home_team": "Chicago Cubs",
     "away_team": "St. Louis Cardinals",
-    "home_ml": "-164",
-    "away_ml": "+150",
+    "home_ml": "-172",
+    "away_ml": "+158",
     "book": "fanduel"
   },
   "San Francisco Giants": {
@@ -100,8 +100,8 @@
   "Houston Astros": {
     "home_team": "Houston Astros",
     "away_team": "Seattle Mariners",
-    "home_ml": "-130",
-    "away_ml": "+120",
+    "home_ml": "-116",
+    "away_ml": "+108",
     "book": "fanduel"
   }
 }
