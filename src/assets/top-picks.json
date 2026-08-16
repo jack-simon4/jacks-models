@@ -17,24 +17,5 @@
     "gameTime": "2026-08-16T17:40:00Z",
     "gamePk": 823590,
     "rank": 1
-  },
-  {
-    "matchup": "Texas Rangers @ Athletics",
-    "awayTeam": "Texas Rangers",
-    "homeTeam": "Athletics",
-    "awayPitcher": "Cody Bradford",
-    "homePitcher": "Jacob Lopez",
-    "pick": "Texas Rangers",
-    "prediction": "Texas Rangers -115",
-    "odds": "-115",
-    "winProb": 0.583,
-    "edge": 0.083,
-    "confidence": "Strong",
-    "predictedScore": "Texas Rangers 6.1 \u2013 Athletics 5.0",
-    "predictedHomeScore": 4.98,
-    "predictedAwayScore": 6.1,
-    "gameTime": "2026-08-16T20:05:00Z",
-    "gamePk": 824965,
-    "rank": 2
   }
 ]
