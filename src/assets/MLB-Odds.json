@@ -1,11 +1,4 @@
 {
-  "Atlanta Braves": {
-    "home_team": "Atlanta Braves",
-    "away_team": "Arizona Diamondbacks",
-    "home_ml": "-126",
-    "away_ml": "+108",
-    "book": "fanduel"
-  },
   "Los Angeles Angels": {
     "home_team": "Los Angeles Angels",
     "away_team": "Kansas City Royals",
@@ -27,11 +20,18 @@
     "away_ml": "+122",
     "book": "fanduel"
   },
+  "Atlanta Braves": {
+    "home_team": "Atlanta Braves",
+    "away_team": "Arizona Diamondbacks",
+    "home_ml": "-126",
+    "away_ml": "+108",
+    "book": "fanduel"
+  },
   "Pittsburgh Pirates": {
     "home_team": "Pittsburgh Pirates",
     "away_team": "Boston Red Sox",
-    "home_ml": "-120",
-    "away_ml": "+102",
+    "home_ml": "+100",
+    "away_ml": "-118",
     "book": "fanduel"
   },
   "Toronto Blue Jays": {

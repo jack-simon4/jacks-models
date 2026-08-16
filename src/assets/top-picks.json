@@ -1,24 +1,5 @@
 [
   {
-    "matchup": "Boston Red Sox @ Pittsburgh Pirates",
-    "awayTeam": "Boston Red Sox",
-    "homeTeam": "Pittsburgh Pirates",
-    "awayPitcher": "Patrick Sandoval",
-    "homePitcher": "Paul Skenes",
-    "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -120",
-    "odds": "-120",
-    "winProb": 0.634,
-    "edge": 0.134,
-    "confidence": "Strong",
-    "predictedScore": "Boston Red Sox 4.4 \u2013 Pittsburgh Pirates 6.2",
-    "predictedHomeScore": 6.24,
-    "predictedAwayScore": 4.41,
-    "gameTime": "2026-08-16T17:35:00Z",
-    "gamePk": 823344,
-    "rank": 1
-  },
-  {
     "matchup": "Texas Rangers @ Athletics",
     "awayTeam": "Texas Rangers",
     "homeTeam": "Athletics",
@@ -35,7 +16,7 @@
     "predictedAwayScore": 6.25,
     "gameTime": "2026-08-16T20:05:00Z",
     "gamePk": 824965,
-    "rank": 2
+    "rank": 1
   },
   {
     "matchup": "Washington Nationals @ New York Mets",
@@ -54,6 +35,6 @@
     "predictedAwayScore": 4.39,
     "gameTime": "2026-08-16T17:40:00Z",
     "gamePk": 823590,
-    "rank": 3
+    "rank": 2
   }
 ]
