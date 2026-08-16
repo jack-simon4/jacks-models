@@ -2,8 +2,8 @@
   "Atlanta Braves": {
     "home_team": "Atlanta Braves",
     "away_team": "Arizona Diamondbacks",
-    "home_ml": "-280",
-    "away_ml": "+240",
+    "home_ml": "-175",
+    "away_ml": "+155",
     "book": "fanduel"
   },
   "Pittsburgh Pirates": {
@@ -16,22 +16,22 @@
   "Toronto Blue Jays": {
     "home_team": "Toronto Blue Jays",
     "away_team": "New York Yankees",
-    "home_ml": "+160",
-    "away_ml": "-180",
+    "home_ml": "-105",
+    "away_ml": "-110",
     "book": "fanduel"
   },
   "Detroit Tigers": {
     "home_team": "Detroit Tigers",
     "away_team": "Chicago White Sox",
-    "home_ml": "-600",
-    "away_ml": "+470",
+    "home_ml": "-190",
+    "away_ml": "+170",
     "book": "fanduel"
   },
   "Cincinnati Reds": {
     "home_team": "Cincinnati Reds",
     "away_team": "Miami Marlins",
-    "home_ml": "+115",
-    "away_ml": "-130",
+    "home_ml": "-140",
+    "away_ml": "+125",
     "book": "fanduel"
   },
   "New York Mets": {
@@ -48,13 +48,6 @@
     "away_ml": "-118",
     "book": "fanduel"
   },
-  "Cleveland Guardians": {
-    "home_team": "Cleveland Guardians",
-    "away_team": "San Diego Padres",
-    "home_ml": "+100",
-    "away_ml": "-110",
-    "book": "fanduel"
-  },
   "Chicago Cubs": {
     "home_team": "Chicago Cubs",
     "away_team": "Chicago White Sox",
@@ -65,8 +58,8 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Colorado Rockies",
-    "home_ml": "-130",
-    "away_ml": "+120",
+    "home_ml": "-124",
+    "away_ml": "+114",
     "book": "fanduel"
   },
   "Athletics": {
@@ -90,6 +83,13 @@
     "away_ml": "+166",
     "book": "fanduel"
   },
+  "Cleveland Guardians": {
+    "home_team": "Cleveland Guardians",
+    "away_team": "San Diego Padres",
+    "home_ml": "+100",
+    "away_ml": "-110",
+    "book": "fanduel"
+  },
   "Houston Astros": {
     "home_team": "Houston Astros",
     "away_team": "Seattle Mariners",
@@ -100,8 +100,8 @@
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "Miami Marlins",
-    "home_ml": "-220",
-    "away_ml": "+184",
+    "home_ml": "-240",
+    "away_ml": "+198",
     "book": "fanduel"
   },
   "Colorado Rockies": {
