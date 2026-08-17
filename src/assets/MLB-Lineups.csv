@@ -17,6 +17,24 @@ Cincinnati Reds6,Michael Toglia
 Cincinnati Reds7,Matt McLain
 Cincinnati Reds8,Noelvi Marte
 Cincinnati Reds9,JJ Bleday
+St. Louis Cardinals1,JJ Wetherholt
+St. Louis Cardinals2,Ivan Herrera
+St. Louis Cardinals3,Alec Burleson
+St. Louis Cardinals4,Jordan Walker
+St. Louis Cardinals5,Joshua Baez
+St. Louis Cardinals6,Nathan Church
+St. Louis Cardinals7,Masyn Winn
+St. Louis Cardinals8,Bryan Torres
+St. Louis Cardinals9,Blaze Jordan
+Baltimore Orioles1,Tyler O'Neill
+Baltimore Orioles2,Pete Alonso
+Baltimore Orioles3,Jackson Holliday
+Baltimore Orioles4,Coby Mayo
+Baltimore Orioles5,Gunnar Henderson
+Baltimore Orioles6,Christian Encarnacion-Strand
+Baltimore Orioles7,Jeremiah Jackson
+Baltimore Orioles8,Carlos Narvaez
+Baltimore Orioles9,Christian Franklin
 Tampa Bay Rays1,Yandy Diaz
 Tampa Bay Rays2,Jonathan Aranda
 Tampa Bay Rays3,Junior Caminero
@@ -62,15 +80,15 @@ Pittsburgh Pirates6,Rafael Flores Jr.
 Pittsburgh Pirates7,Jake Mangum
 Pittsburgh Pirates8,Nick Yorke
 Pittsburgh Pirates9,Henry Davis
-Boston Red Sox1,Jahmai Jones
+Boston Red Sox1,Nick Sogard
 Boston Red Sox2,Ceddanne Rafaela
 Boston Red Sox3,Wilyer Abreu
 Boston Red Sox4,Willson Contreras
 Boston Red Sox5,Adley Rutschman
 Boston Red Sox6,Caleb Durbin
 Boston Red Sox7,Andruw Monasterio
-Boston Red Sox8,Eli White
-Boston Red Sox9,Nick Sogard
+Boston Red Sox8,Mickey Gasper
+Boston Red Sox9,Eli White
 New York Mets1,A.J. Ewing
 New York Mets2,Francisco Lindor
 New York Mets3,Bo Bichette
@@ -80,6 +98,15 @@ New York Mets6,Jared Young
 New York Mets7,Marcus Semien
 New York Mets8,Jorge Polanco
 New York Mets9,Francisco Alvarez
+Athletics1,Jeff McNeil
+Athletics2,Jacob Wilson
+Athletics3,Lawrence Butler
+Athletics4,Zack Gelof
+Athletics5,Carlos Cortes
+Athletics6,Henry Bolte
+Athletics7,Donovan Walton
+Athletics8,Tommy White
+Athletics9,Brian Serven
 Kansas City Royals1,Carter Jensen
 Kansas City Royals2,Bobby Witt Jr.
 Kansas City Royals3,Jac Caglianone
@@ -134,24 +161,6 @@ Arizona Diamondbacks6,Ildemaro Vargas
 Arizona Diamondbacks7,Tim Tawa
 Arizona Diamondbacks8,James McCann
 Arizona Diamondbacks9,Jorge Barrosa
-Athletics1,Henry Bolte
-Athletics2,Zack Gelof
-Athletics3,Jacob Wilson
-Athletics4,Jonah Heim
-Athletics5,Tommy White
-Athletics6,Lawrence Butler
-Athletics7,Max Muncy
-Athletics8,Alika Williams
-Athletics9,Jeff McNeil
-Baltimore Orioles1,Jackson Holliday
-Baltimore Orioles2,Christian Franklin
-Baltimore Orioles3,Jeremiah Jackson
-Baltimore Orioles4,Christian Encarnacion-Strand
-Baltimore Orioles5,Dylan Beavers
-Baltimore Orioles6,Leody Taveras
-Baltimore Orioles7,Colton Cowser
-Baltimore Orioles8,Coby Mayo
-Baltimore Orioles9,Yohel Pozo
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Seiya Suzuki
 Chicago Cubs3,Alex Bregman
