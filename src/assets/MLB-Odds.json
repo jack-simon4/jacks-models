@@ -30,7 +30,7 @@
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "Arizona Diamondbacks",
-    "home_ml": "-138",
+    "home_ml": "-136",
     "away_ml": "+126",
     "book": "fanduel"
   },
@@ -65,8 +65,8 @@
   "Colorado Rockies": {
     "home_team": "Colorado Rockies",
     "away_team": "Los Angeles Dodgers",
-    "home_ml": "+240",
-    "away_ml": "-270",
+    "home_ml": "+235",
+    "away_ml": "-260",
     "book": "fanduel"
   }
 }
