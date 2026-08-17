@@ -16,8 +16,8 @@
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "Miami Marlins",
-    "home_ml": "-245",
-    "away_ml": "+225",
+    "home_ml": "-240",
+    "away_ml": "+198",
     "book": "fanduel"
   },
   "Pittsburgh Pirates": {
@@ -58,8 +58,8 @@
   "Chicago Cubs": {
     "home_team": "Chicago Cubs",
     "away_team": "Chicago White Sox",
-    "home_ml": "-158",
-    "away_ml": "+146",
+    "home_ml": "-164",
+    "away_ml": "+138",
     "book": "fanduel"
   },
   "Colorado Rockies": {
