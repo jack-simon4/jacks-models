@@ -1,65 +1,72 @@
 {
+  "Cincinnati Reds": {
+    "home_team": "Cincinnati Reds",
+    "away_team": "St. Louis Cardinals",
+    "home_ml": "+106",
+    "away_ml": "-116",
+    "book": "fanduel"
+  },
   "Tampa Bay Rays": {
     "home_team": "Tampa Bay Rays",
     "away_team": "Baltimore Orioles",
-    "home_ml": "-156",
-    "away_ml": "+132",
+    "home_ml": "-158",
+    "away_ml": "+146",
     "book": "fanduel"
   },
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "Miami Marlins",
-    "home_ml": "-250",
-    "away_ml": "+205",
+    "home_ml": "-245",
+    "away_ml": "+225",
     "book": "fanduel"
   },
   "Pittsburgh Pirates": {
     "home_team": "Pittsburgh Pirates",
     "away_team": "Detroit Tigers",
     "home_ml": "+100",
-    "away_ml": "-118",
+    "away_ml": "-110",
     "book": "fanduel"
   },
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "Arizona Diamondbacks",
-    "home_ml": "-144",
-    "away_ml": "+122",
+    "home_ml": "-138",
+    "away_ml": "+126",
     "book": "fanduel"
   },
   "New York Mets": {
     "home_team": "New York Mets",
     "away_team": "San Diego Padres",
-    "home_ml": "-122",
-    "away_ml": "+104",
+    "home_ml": "-116",
+    "away_ml": "+108",
     "book": "fanduel"
   },
   "Kansas City Royals": {
     "home_team": "Kansas City Royals",
     "away_team": "Athletics",
-    "home_ml": "-180",
-    "away_ml": "+152",
+    "home_ml": "-186",
+    "away_ml": "+174",
     "book": "fanduel"
   },
   "Minnesota Twins": {
     "home_team": "Minnesota Twins",
     "away_team": "Atlanta Braves",
-    "home_ml": "+104",
-    "away_ml": "-122",
+    "home_ml": "+110",
+    "away_ml": "-120",
     "book": "fanduel"
   },
   "Chicago Cubs": {
     "home_team": "Chicago Cubs",
     "away_team": "Chicago White Sox",
-    "home_ml": "-162",
-    "away_ml": "+136",
+    "home_ml": "-160",
+    "away_ml": "+148",
     "book": "fanduel"
   },
   "Colorado Rockies": {
     "home_team": "Colorado Rockies",
     "away_team": "Los Angeles Dodgers",
-    "home_ml": "+210",
-    "away_ml": "-255",
+    "home_ml": "+240",
+    "away_ml": "-270",
     "book": "fanduel"
   }
 }
