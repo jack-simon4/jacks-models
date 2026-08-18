@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "matchup": "Athletics @ Kansas City Royals",
+    "awayTeam": "Athletics",
+    "homeTeam": "Kansas City Royals",
+    "awayPitcher": "Brady Basso",
+    "homePitcher": "Daniel Lynch IV",
+    "pick": "Kansas City Royals",
+    "prediction": "Kansas City Royals -156",
+    "odds": "-156",
+    "winProb": 0.615,
+    "edge": 0.115,
+    "confidence": "Strong",
+    "predictedScore": "Athletics 5.1 \u2013 Kansas City Royals 6.7",
+    "predictedHomeScore": 6.68,
+    "predictedAwayScore": 5.12,
+    "gameTime": "2026-08-18T23:40:00Z",
+    "gamePk": 824075,
+    "rank": 1
+  }
+]
