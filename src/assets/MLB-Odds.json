@@ -44,8 +44,8 @@
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "Arizona Diamondbacks",
-    "home_ml": "-178",
-    "away_ml": "+150",
+    "home_ml": "-174",
+    "away_ml": "+146",
     "book": "fanduel"
   },
   "New York Mets": {
