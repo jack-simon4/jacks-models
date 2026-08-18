@@ -1,0 +1,48 @@
+name: Update Soccer Stats (Daily)
+
+# Runs every morning at 8 AM UTC — before European leagues kick off (~11:30 UTC earliest)
+# and well before MLS evening matches (~23:30 UTC).
+# Handles: Premier League, La Liga, Serie A, Bundesliga, Ligue 1, MLS.
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-soccer:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch and update soccer stats
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
+        run: python scripts/fetch_euro_stats.py
+
+      - name: Commit updated soccer stats
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add src/assets/Soccer-Stats.csv src/assets/soccer-today.json
+          if git diff --staged --quiet; then
+            echo "No soccer stat changes — nothing to commit."
+          else
+            git commit -m "chore: auto-update soccer stats $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+          fi

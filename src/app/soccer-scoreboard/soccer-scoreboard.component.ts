@@ -31,7 +31,7 @@ export class SoccerScoreboardComponent implements OnInit {
   soccerStats: SoccerStats = {};
   leaguesTeams: LeaguesTeams = {};
 
-  Leagues: string[] = ['World Cup', 'Premier League', 'La Liga', 'Serie A', 'Bundesliga', 'Ligue 1', 'Champions League'];
+  Leagues: string[] = ['World Cup', 'Premier League', 'La Liga', 'Serie A', 'Bundesliga', 'Ligue 1', 'Champions League', 'MLS'];
 
   constructor(private http: HttpClient, private dialog: MatDialog,  private firestore: AngularFirestore) { }
 
