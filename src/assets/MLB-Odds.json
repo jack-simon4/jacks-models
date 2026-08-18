@@ -16,8 +16,8 @@
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "San Francisco Giants",
-    "home_ml": "-184",
-    "away_ml": "+170",
+    "home_ml": "-190",
+    "away_ml": "+176",
     "book": "fanduel"
   },
   "Pittsburgh Pirates": {
@@ -93,9 +93,9 @@
   "Houston Astros": {
     "home_team": "Houston Astros",
     "away_team": "Los Angeles Angels",
-    "home_ml": "-168",
-    "away_ml": "+139",
-    "book": "draftkings"
+    "home_ml": "-158",
+    "away_ml": "+134",
+    "book": "fanduel"
   },
   "Colorado Rockies": {
     "home_team": "Colorado Rockies",
