@@ -1,18 +1,4 @@
 {
-  "Chicago Cubs": {
-    "home_team": "Chicago Cubs",
-    "away_team": "Chicago White Sox",
-    "home_ml": "-164",
-    "away_ml": "+138",
-    "book": "fanduel"
-  },
-  "Colorado Rockies": {
-    "home_team": "Colorado Rockies",
-    "away_team": "Los Angeles Dodgers",
-    "home_ml": "+146",
-    "away_ml": "-174",
-    "book": "fanduel"
-  },
   "Baltimore Orioles": {
     "home_team": "Baltimore Orioles",
     "away_team": "New York Yankees",
@@ -90,6 +76,13 @@
     "away_ml": "+128",
     "book": "fanduel"
   },
+  "Chicago Cubs": {
+    "home_team": "Chicago Cubs",
+    "away_team": "Chicago White Sox",
+    "home_ml": "-164",
+    "away_ml": "+138",
+    "book": "fanduel"
+  },
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "Washington Nationals",
@@ -102,6 +95,13 @@
     "away_team": "Los Angeles Angels",
     "home_ml": "-164",
     "away_ml": "+138",
+    "book": "fanduel"
+  },
+  "Colorado Rockies": {
+    "home_team": "Colorado Rockies",
+    "away_team": "Los Angeles Dodgers",
+    "home_ml": "+152",
+    "away_ml": "-180",
     "book": "fanduel"
   }
 }
