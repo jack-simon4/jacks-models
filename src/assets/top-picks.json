@@ -6,8 +6,8 @@
     "awayPitcher": "Max Scherzer",
     "homePitcher": "Drew Rasmussen",
     "pick": "Tampa Bay Rays",
-    "prediction": "Tampa Bay Rays -198",
-    "odds": "-198",
+    "prediction": "Tampa Bay Rays -184",
+    "odds": "-184",
     "winProb": 0.644,
     "edge": 0.144,
     "confidence": "Elite",
@@ -17,25 +17,6 @@
     "gameTime": "2026-08-19T22:40:00Z",
     "gamePk": 822937,
     "rank": 1
-  },
-  {
-    "matchup": "St. Louis Cardinals @ Cincinnati Reds",
-    "awayTeam": "St. Louis Cardinals",
-    "homeTeam": "Cincinnati Reds",
-    "awayPitcher": "Matthew Liberatore",
-    "homePitcher": "Chase Burns",
-    "pick": "Cincinnati Reds",
-    "prediction": "Cincinnati Reds -142",
-    "odds": "-142",
-    "winProb": 0.634,
-    "edge": 0.134,
-    "confidence": "Strong",
-    "predictedScore": "St. Louis Cardinals 4.6 \u2013 Cincinnati Reds 6.4",
-    "predictedHomeScore": 6.44,
-    "predictedAwayScore": 4.61,
-    "gameTime": "2026-08-19T22:40:00Z",
-    "gamePk": 824476,
-    "rank": 2
   },
   {
     "matchup": "Los Angeles Dodgers @ Colorado Rockies",
@@ -54,6 +35,6 @@
     "predictedAwayScore": 7.16,
     "gameTime": "2026-08-20T00:40:00Z",
     "gamePk": 824318,
-    "rank": 3
+    "rank": 2
   }
 ]
