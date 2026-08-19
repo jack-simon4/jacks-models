@@ -2,15 +2,8 @@
   "Chicago Cubs": {
     "home_team": "Chicago Cubs",
     "away_team": "Chicago White Sox",
-    "home_ml": "-200",
-    "away_ml": "+175",
-    "book": "fanduel"
-  },
-  "Colorado Rockies": {
-    "home_team": "Colorado Rockies",
-    "away_team": "Los Angeles Dodgers",
-    "home_ml": "+166",
-    "away_ml": "-198",
+    "home_ml": "-140",
+    "away_ml": "+130",
     "book": "fanduel"
   },
   "Pittsburgh Pirates": {
@@ -95,6 +88,13 @@
     "away_team": "Los Angeles Angels",
     "home_ml": "-158",
     "away_ml": "+134",
+    "book": "fanduel"
+  },
+  "Colorado Rockies": {
+    "home_team": "Colorado Rockies",
+    "away_team": "Los Angeles Dodgers",
+    "home_ml": "+166",
+    "away_ml": "-198",
     "book": "fanduel"
   }
 }
