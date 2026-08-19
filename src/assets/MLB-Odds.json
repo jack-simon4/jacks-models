@@ -16,8 +16,8 @@
   "Minnesota Twins": {
     "home_team": "Minnesota Twins",
     "away_team": "Atlanta Braves",
-    "home_ml": "-104",
-    "away_ml": "-104",
+    "home_ml": "-102",
+    "away_ml": "-106",
     "book": "fanduel"
   },
   "Chicago Cubs": {
@@ -65,8 +65,8 @@
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "San Francisco Giants",
-    "home_ml": "-210",
-    "away_ml": "+194",
+    "home_ml": "-220",
+    "away_ml": "+200",
     "book": "fanduel"
   },
   "Milwaukee Brewers": {
@@ -79,8 +79,8 @@
   "Kansas City Royals": {
     "home_team": "Kansas City Royals",
     "away_team": "Athletics",
-    "home_ml": "-136",
-    "away_ml": "+126",
+    "home_ml": "-142",
+    "away_ml": "+132",
     "book": "fanduel"
   },
   "Texas Rangers": {
