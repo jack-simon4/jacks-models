@@ -2,22 +2,22 @@
   "Cincinnati Reds": {
     "home_team": "Cincinnati Reds",
     "away_team": "St. Louis Cardinals",
-    "home_ml": "-250",
-    "away_ml": "+220",
-    "book": "fanduel"
+    "home_ml": "+3300",
+    "away_ml": "-10000",
+    "book": "betmgm"
   },
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "San Francisco Giants",
-    "home_ml": "-390",
-    "away_ml": "+330",
+    "home_ml": "-6000",
+    "away_ml": "+3600",
     "book": "fanduel"
   },
   "Tampa Bay Rays": {
     "home_team": "Tampa Bay Rays",
     "away_team": "Toronto Blue Jays",
-    "home_ml": "+250",
-    "away_ml": "-290",
+    "home_ml": "+4100",
+    "away_ml": "-6000",
     "book": "fanduel"
   },
   "Kansas City Royals": {
@@ -81,6 +81,27 @@
     "away_team": "Cleveland Guardians",
     "home_ml": "+132",
     "away_ml": "-156",
+    "book": "fanduel"
+  },
+  "Arizona Diamondbacks": {
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
+    "home_ml": "-144",
+    "away_ml": "+122",
+    "book": "fanduel"
+  },
+  "Seattle Mariners": {
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
+    "home_ml": "-108",
+    "away_ml": "-108",
+    "book": "fanduel"
+  },
+  "Los Angeles Dodgers": {
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
+    "home_ml": "-230",
+    "away_ml": "+190",
     "book": "fanduel"
   }
 }
