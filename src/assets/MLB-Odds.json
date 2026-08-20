@@ -9,8 +9,8 @@
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "Washington Nationals",
-    "home_ml": "-178",
-    "away_ml": "+164",
+    "home_ml": "-180",
+    "away_ml": "+166",
     "book": "fanduel"
   },
   "Houston Astros": {
@@ -23,8 +23,8 @@
   "Milwaukee Brewers": {
     "home_team": "Milwaukee Brewers",
     "away_team": "Atlanta Braves",
-    "home_ml": "-146",
-    "away_ml": "+124",
+    "home_ml": "-142",
+    "away_ml": "+120",
     "book": "fanduel"
   },
   "New York Yankees": {
