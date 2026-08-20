@@ -1,16 +1,9 @@
 {
-  "Boston Red Sox": {
-    "home_team": "Boston Red Sox",
-    "away_team": "Arizona Diamondbacks",
-    "home_ml": "-170",
-    "away_ml": "+150",
-    "book": "fanduel"
-  },
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "Miami Marlins",
-    "home_ml": "-1150",
-    "away_ml": "+950",
+    "home_ml": "-10000",
+    "away_ml": "+6500",
     "book": "fanduel"
   },
   "Baltimore Orioles": {
