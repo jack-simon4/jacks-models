@@ -1,25 +1,4 @@
 {
-  "Cincinnati Reds": {
-    "home_team": "Cincinnati Reds",
-    "away_team": "St. Louis Cardinals",
-    "home_ml": "+3300",
-    "away_ml": "-10000",
-    "book": "betmgm"
-  },
-  "Cleveland Guardians": {
-    "home_team": "Cleveland Guardians",
-    "away_team": "San Francisco Giants",
-    "home_ml": "-6000",
-    "away_ml": "+3600",
-    "book": "fanduel"
-  },
-  "Tampa Bay Rays": {
-    "home_team": "Tampa Bay Rays",
-    "away_team": "Toronto Blue Jays",
-    "home_ml": "+4100",
-    "away_ml": "-6000",
-    "book": "fanduel"
-  },
   "Kansas City Royals": {
     "home_team": "Kansas City Royals",
     "away_team": "Detroit Tigers",

@@ -15,7 +15,7 @@ Cincinnati Reds5,Matt McLain
 Cincinnati Reds6,Michael Toglia
 Cincinnati Reds7,Dane Myers
 Cincinnati Reds8,TJ Friedl
-Cincinnati Reds9,Ke'Bryan Hayes
+Cincinnati Reds9,Eugenio Suarez
 San Francisco Giants1,Andrew Knizner
 San Francisco Giants2,Rafael Devers
 San Francisco Giants3,Willy Adames
@@ -86,8 +86,8 @@ Chicago White Sox4,Andrew Benintendi
 Chicago White Sox5,Braden Montgomery
 Chicago White Sox6,Colson Montgomery
 Chicago White Sox7,Chase Meidroth
-Chicago White Sox8,Tristan Peters
-Chicago White Sox9,Drew Romo
+Chicago White Sox8,Brenton Doyle
+Chicago White Sox9,Jake Rogers
 Seattle Mariners1,Brendan Donovan
 Seattle Mariners2,Randy Arozarena
 Seattle Mariners3,Dominic Canzone
@@ -106,15 +106,33 @@ Milwaukee Brewers6,Joey Ortiz
 Milwaukee Brewers7,Garrett Mitchell
 Milwaukee Brewers8,David Hamilton
 Milwaukee Brewers9,Luis Lara
+New York Yankees1,Trent Grisham
+New York Yankees2,Ben Rice
+New York Yankees3,Heliot Ramos
+New York Yankees4,Luis Garcia Jr.
+New York Yankees5,Jazz Chisholm Jr.
+New York Yankees6,George Lombard Jr.
+New York Yankees7,Spencer Jones
+New York Yankees8,Austin Wells
+New York Yankees9,Jose Caballero
 Baltimore Orioles1,Jackson Holliday
 Baltimore Orioles2,Pete Alonso
 Baltimore Orioles3,Gunnar Henderson
 Baltimore Orioles4,Samuel Basallo
-Baltimore Orioles5,Coby Mayo
+Baltimore Orioles5,Christian Encarnacion-Strand
 Baltimore Orioles6,Dylan Beavers
 Baltimore Orioles7,Leody Taveras
 Baltimore Orioles8,Colton Cowser
 Baltimore Orioles9,Carlos Narvaez
+Texas Rangers1,Wyatt Langford
+Texas Rangers2,Corey Seager
+Texas Rangers3,Jake Burger
+Texas Rangers4,Brandon Nimmo
+Texas Rangers5,Ezequiel Duran
+Texas Rangers6,Justin Foscue
+Texas Rangers7,Danny Jansen
+Texas Rangers8,Cody Freeman
+Texas Rangers9,Evan Carter
 Houston Astros1,Jeremy Pena
 Houston Astros2,Yordan Alvarez
 Houston Astros3,Isaac Paredes
@@ -133,24 +151,6 @@ Los Angeles Angels6,Vaughn Grissom
 Los Angeles Angels7,Josh Lowe
 Los Angeles Angels8,Denzer Guzman
 Los Angeles Angels9,Oswald Peraza
-New York Yankees1,Trent Grisham
-New York Yankees2,Ben Rice
-New York Yankees3,Luis Garcia Jr.
-New York Yankees4,Heliot Ramos
-New York Yankees5,Jazz Chisholm Jr.
-New York Yankees6,Spencer Jones
-New York Yankees7,Ryan McMahon
-New York Yankees8,George Lombard Jr.
-New York Yankees9,Austin Wells
-Texas Rangers1,Joc Pederson
-Texas Rangers2,Corey Seager
-Texas Rangers3,Wyatt Langford
-Texas Rangers4,Brandon Nimmo
-Texas Rangers5,Ezequiel Duran
-Texas Rangers6,Evan Carter
-Texas Rangers7,Jarred Kelenic
-Texas Rangers8,Elias Diaz
-Texas Rangers9,Nicky Lopez
 Washington Nationals1,CJ Abrams
 Washington Nationals2,Abimelec Ortiz
 Washington Nationals3,Jose Tena
