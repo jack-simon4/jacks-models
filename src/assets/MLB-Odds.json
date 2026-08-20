@@ -13,13 +13,6 @@
     "away_ml": "+124",
     "book": "fanduel"
   },
-  "Chicago White Sox": {
-    "home_team": "Chicago White Sox",
-    "away_team": "New York Mets",
-    "home_ml": "-154",
-    "away_ml": "+130",
-    "book": "fanduel"
-  },
   "Baltimore Orioles": {
     "home_team": "Baltimore Orioles",
     "away_team": "Tampa Bay Rays",
@@ -30,14 +23,14 @@
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "Washington Nationals",
-    "home_ml": "-172",
-    "away_ml": "+158",
+    "home_ml": "-178",
+    "away_ml": "+164",
     "book": "fanduel"
   },
   "Houston Astros": {
     "home_team": "Houston Astros",
-    "away_team": "Los Angeles Angels",
-    "home_ml": "-178",
+    "away_team": "Athletics",
+    "home_ml": "-196",
     "away_ml": "+164",
     "book": "fanduel"
   },
@@ -55,11 +48,18 @@
     "away_ml": "+130",
     "book": "fanduel"
   },
+  "Chicago White Sox": {
+    "home_team": "Chicago White Sox",
+    "away_team": "New York Mets",
+    "home_ml": "-154",
+    "away_ml": "+130",
+    "book": "fanduel"
+  },
   "Colorado Rockies": {
     "home_team": "Colorado Rockies",
     "away_team": "Cleveland Guardians",
-    "home_ml": "+132",
-    "away_ml": "-156",
+    "home_ml": "+130",
+    "away_ml": "-154",
     "book": "fanduel"
   },
   "Arizona Diamondbacks": {
