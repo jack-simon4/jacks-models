@@ -1,11 +1,4 @@
 {
-  "Colorado Rockies": {
-    "home_team": "Colorado Rockies",
-    "away_team": "Los Angeles Dodgers",
-    "home_ml": "-105",
-    "away_ml": "-110",
-    "book": "fanduel"
-  },
   "Cincinnati Reds": {
     "home_team": "Cincinnati Reds",
     "away_team": "St. Louis Cardinals",
