@@ -38,25 +38,6 @@
     "rank": 2
   },
   {
-    "matchup": "Minnesota Twins @ San Diego Padres",
-    "awayTeam": "Minnesota Twins",
-    "homeTeam": "San Diego Padres",
-    "awayPitcher": "Connor Prielipp",
-    "homePitcher": "TBD",
-    "pick": "San Diego Padres",
-    "prediction": "San Diego Padres -156",
-    "odds": "-156",
-    "winProb": 0.588,
-    "edge": 0.088,
-    "confidence": "Strong",
-    "predictedScore": "Minnesota Twins 4.5 \u2013 San Diego Padres 5.7",
-    "predictedHomeScore": 5.67,
-    "predictedAwayScore": 4.48,
-    "gameTime": "2026-08-22T01:40:00Z",
-    "gamePk": 823262,
-    "rank": 3
-  },
-  {
     "matchup": "St. Louis Cardinals @ Philadelphia Phillies",
     "awayTeam": "St. Louis Cardinals",
     "homeTeam": "Philadelphia Phillies",
@@ -73,6 +54,25 @@
     "predictedAwayScore": 4.33,
     "gameTime": "2026-08-21T22:40:00Z",
     "gamePk": 823420,
+    "rank": 3
+  },
+  {
+    "matchup": "Pittsburgh Pirates @ Los Angeles Dodgers",
+    "awayTeam": "Pittsburgh Pirates",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Bubba Chandler",
+    "homePitcher": "Yoshinobu Yamamoto",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -255",
+    "odds": "-255",
+    "winProb": 0.582,
+    "edge": 0.082,
+    "confidence": "Strong",
+    "predictedScore": "Pittsburgh Pirates 3.8 \u2013 Los Angeles Dodgers 4.9",
+    "predictedHomeScore": 4.9,
+    "predictedAwayScore": 3.8,
+    "gameTime": "2026-08-22T02:10:00Z",
+    "gamePk": 823911,
     "rank": 4
   }
 ]

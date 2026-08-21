@@ -44,8 +44,8 @@
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "New York Mets",
-    "home_ml": "-122",
-    "away_ml": "+114",
+    "home_ml": "-118",
+    "away_ml": "+100",
     "book": "fanduel"
   },
   "Houston Astros": {
@@ -65,8 +65,8 @@
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "Los Angeles Angels",
-    "home_ml": "-140",
-    "away_ml": "+130",
+    "home_ml": "-138",
+    "away_ml": "+128",
     "book": "fanduel"
   },
   "Colorado Rockies": {
@@ -79,8 +79,8 @@
   "Arizona Diamondbacks": {
     "home_team": "Arizona Diamondbacks",
     "away_team": "Cincinnati Reds",
-    "home_ml": "-142",
-    "away_ml": "+132",
+    "home_ml": "-172",
+    "away_ml": "+144",
     "book": "fanduel"
   },
   "San Diego Padres": {
