@@ -98,6 +98,14 @@ export class ResultsComponent implements OnInit {
       games: 112,
     },
     {
+      sport: 'MLS', icon: '⚽',
+      rows: [
+        { label: 'Moneyline',  value: 'Tracking' },
+        { label: 'Tie No Bet', value: 'Tracking' },
+      ],
+      games: 0,
+    },
+    {
       sport: 'College Baseball', icon: '⚾',
       rows: [
         { label: 'Moneyline',  value: '76%' },
