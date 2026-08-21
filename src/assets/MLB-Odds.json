@@ -1,11 +1,4 @@
 {
-  "Baltimore Orioles": {
-    "home_team": "Baltimore Orioles",
-    "away_team": "Tampa Bay Rays",
-    "home_ml": "-136",
-    "away_ml": "+116",
-    "book": "fanduel"
-  },
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "Los Angeles Angels",
@@ -46,6 +39,13 @@
     "away_team": "Washington Nationals",
     "home_ml": "-154",
     "away_ml": "+130",
+    "book": "fanduel"
+  },
+  "Baltimore Orioles": {
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
+    "home_ml": "-136",
+    "away_ml": "+116",
     "book": "fanduel"
   },
   "Chicago White Sox": {
