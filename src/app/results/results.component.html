@@ -67,7 +67,7 @@
             {{ game.awayTeam }} @ {{ game.homeTeam }}
           </div>
           <div class="game-meta">
-            {{ game.timestamp | date:'MMM d, h:mm a' }}
+            {{ (game.gameTime || game.timestamp) | date:'MMM d, h:mm a' }}
           </div>
         </div>
 
