@@ -9,8 +9,8 @@
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "St. Louis Cardinals",
-    "home_ml": "-250",
-    "away_ml": "+230",
+    "home_ml": "-245",
+    "away_ml": "+225",
     "book": "fanduel"
   },
   "New York Yankees": {
