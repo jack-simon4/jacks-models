@@ -17,6 +17,29 @@
   <p>{{ data.selectedAwayPitcher }} Strikeouts: {{ data.awaySPK.toFixed(2) }}</p>
 </div>
 
+<div *ngIf="data.selectedSport === 'NFL' && data.nflProps" class="nfl-props">
+  <ng-container *ngFor="let side of [data.nflProps.home, data.nflProps.away]; let i = index">
+    <div class="props-team">
+      <div class="props-team-name">{{ i === 0 ? data.nflProps.homeTeam : data.nflProps.awayTeam }}</div>
+      <div *ngIf="side.qb" class="prop-row">
+        <span class="pos-chip qb-chip">QB</span>
+        <span class="prop-name">{{ side.qb.name }}</span>
+        <span class="prop-stat">{{ side.qb.passYds }} yds &nbsp;·&nbsp; {{ side.qb.passTDs | number:'1.1-1' }} TDs ({{ side.qb.passAtt }} att)</span>
+      </div>
+      <div *ngFor="let rb of side.rbs" class="prop-row">
+        <span class="pos-chip rb-chip">RB</span>
+        <span class="prop-name">{{ rb.name }}</span>
+        <span class="prop-stat">{{ rb.rushYds }} rush yds &nbsp;·&nbsp; {{ rb.carries | number:'1.1-1' }} car</span>
+      </div>
+      <div *ngFor="let r of side.receivers" class="prop-row">
+        <span class="pos-chip" [ngClass]="r.position === 'TE' ? 'te-chip' : 'wr-chip'">{{ r.position }}</span>
+        <span class="prop-name">{{ r.name }}</span>
+        <span class="prop-stat">{{ r.recYds }} rec yds &nbsp;·&nbsp; {{ r.targets | number:'1.1-1' }} tgt &nbsp;·&nbsp; {{ r.tds | number:'1.2-2' }} TD</span>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
 </div>
 <!-- Add this button at the bottom of your existing content -->
 <div mat-dialog-actions>

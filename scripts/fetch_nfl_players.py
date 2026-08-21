@@ -12,7 +12,7 @@ Starting QB determination:
   1. QB with the most pass attempts this season = de-facto starter.
   2. If that player appears on the most recent injury report as Out or
      Doubtful, promote the next QB by attempt count.
-  3. Off-season / no current-season data → use prior completed season.
+  3. Off-season / no current-season data -> use prior completed season.
 
 Early-season blend: when fewer than BLEND_FULL_WEEKS games have been played,
 stats are blended toward prior-season values (same logic as fetch_nfl_stats.py).
@@ -37,15 +37,18 @@ except ImportError:
 ASSETS     = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'src', 'assets'))
 QB_OUTPUT  = os.path.join(ASSETS, 'NFL-QBs.csv')
 RB_OUTPUT  = os.path.join(ASSETS, 'NFL-RBs.csv')
+REC_OUTPUT = os.path.join(ASSETS, 'NFL-Receivers.csv')
 
 _today       = date.today()
 SEASON_YEAR  = _today.year if _today.month >= 8 else _today.year - 1
 PRIOR_YEAR   = SEASON_YEAR - 1
 BLEND_FULL_WEEKS = 8
 
-MIN_QB_ATTEMPTS = 50   # minimum season attempts to qualify as a starter candidate
-MIN_RB_CARRIES  = 15   # minimum season carries to appear in RB output
+MIN_QB_ATTEMPTS  = 50   # minimum season attempts to qualify as a starter candidate
+MIN_RB_CARRIES   = 15   # minimum season carries to appear in RB output
+MIN_REC_TARGETS  = 20   # minimum season targets for a receiver to qualify
 MAX_RBS_PER_TEAM = 3
+MAX_REC_PER_TEAM = 4    # top WRs + TEs combined
 
 LG_PASS_YPA = 7.175
 LG_PASS_APG = 32.69
@@ -81,14 +84,47 @@ def _safe(val, fallback: float) -> float:
 
 
 def fetch_seasonal(year: int) -> pd.DataFrame | None:
-    """Return nfl_data_py seasonal stats for the given year, or None."""
+    """
+    Aggregate weekly data into per-player season totals for the given year.
+    Uses import_weekly_data (has team/position/name) instead of import_seasonal_data
+    (which only has player_id).
+    """
     print(f'[NFLPlayers] Fetching {year} seasonal data...')
+    cols = [
+        'player_id', 'player_display_name', 'position', 'recent_team', 'week',
+        'completions', 'attempts', 'passing_yards', 'passing_tds', 'interceptions',
+        'carries', 'rushing_yards', 'rushing_tds',
+        'targets', 'receptions', 'receiving_yards', 'receiving_tds',
+    ]
     try:
-        df = nfl.import_seasonal_data([year], s_type='REG')
-        if df is None or df.empty:
-            print(f'[NFLPlayers] No seasonal data for {year}.')
+        weekly = nfl.import_weekly_data([year], cols)
+        if weekly is None or weekly.empty:
+            print(f'[NFLPlayers] No weekly data for {year}.')
             return None
-        return df
+        # Regular season only
+        weekly = weekly[weekly['week'].between(1, 18)].copy()
+        if weekly.empty:
+            return None
+        # Aggregate to season totals, keeping last team/position seen
+        agg = weekly.groupby('player_id').agg(
+            player_display_name = ('player_display_name', 'last'),
+            position            = ('position',             'last'),
+            team                = ('recent_team',          'last'),
+            games               = ('week',                 'count'),
+            completions         = ('completions',          'sum'),
+            attempts            = ('attempts',             'sum'),
+            passing_yards       = ('passing_yards',        'sum'),
+            passing_tds         = ('passing_tds',          'sum'),
+            interceptions       = ('interceptions',        'sum'),
+            carries             = ('carries',              'sum'),
+            rushing_yards       = ('rushing_yards',        'sum'),
+            rushing_tds         = ('rushing_tds',          'sum'),
+            targets             = ('targets',              'sum'),
+            receiving_yards     = ('receiving_yards',      'sum'),
+            receiving_tds       = ('receiving_tds',        'sum'),
+        ).reset_index()
+        print(f'[NFLPlayers] {year}: {len(agg)} player-seasons aggregated.')
+        return agg
     except Exception as exc:
         print(f'[NFLPlayers] Seasonal fetch failed for {year}: {exc}')
         return None
@@ -224,8 +260,11 @@ def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
                 return w * c + (1 - w) * p
             return c if c is not None else (p if p is not None else fallback)
 
-        name_col = 'player_display_name' if cur_df is not None and 'player_display_name' in cur_df.columns else 'player_name'
-        starter_name = str((cur_row if cur_row is not None else prior_row).get(name_col, 'Unknown')).strip()
+        use_row = cur_row if cur_row is not None else prior_row
+        use_df  = prior_df if cur_row is None else cur_df
+        use_df_cols = list(use_df.columns) if use_df is not None else []
+        name_col = 'player_display_name' if 'player_display_name' in use_df_cols else 'player_name'
+        starter_name = str(use_row.get(name_col, use_row.get('player_display_name', 'Unknown'))).strip()
 
         rows.append({
             'Team':       team_name,
@@ -239,7 +278,7 @@ def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
         print(f'  [{team_name}] QB: {starter_name}  YPA={rows[-1]["PassYdsAtt"]}  APG={rows[-1]["PassAttGame"]}')
 
     pd.DataFrame(rows).to_csv(QB_OUTPUT, index=False)
-    print(f'[NFLPlayers] Wrote {len(rows)} QBs → {QB_OUTPUT}')
+    print(f'[NFLPlayers] Wrote {len(rows)} QBs -> {QB_OUTPUT}')
 
 
 def build_rb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
@@ -308,7 +347,78 @@ def build_rb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
         print(f'  [{team_name}] RBs: {names_str}')
 
     pd.DataFrame(rows).to_csv(RB_OUTPUT, index=False)
-    print(f'[NFLPlayers] Wrote {len(rows)} RB rows → {RB_OUTPUT}')
+    print(f'[NFLPlayers] Wrote {len(rows)} RB rows -> {RB_OUTPUT}')
+
+
+def build_receivers_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
+                        games_played: int):
+    """Write NFL-Receivers.csv — top WR/TE receivers per team."""
+    w = min(games_played / BLEND_FULL_WEEKS, 1.0) if games_played > 0 else 0.0
+    rows = []
+
+    REC_POSITIONS = {'WR', 'TE'}
+
+    def get_team_receivers(df: pd.DataFrame | None, abbr: str) -> pd.DataFrame:
+        if df is None or df.empty:
+            return pd.DataFrame()
+        mask = (
+            (df['team'] == abbr) &
+            (df['position'].isin(REC_POSITIONS)) &
+            (df['targets'] >= MIN_REC_TARGETS)
+        )
+        return df[mask].sort_values('targets', ascending=False).head(MAX_REC_PER_TEAM)
+
+    for abbr, team_name in sorted(TEAM_NAMES.items(), key=lambda x: x[1]):
+        cur_recs   = get_team_receivers(cur_df, abbr)
+        prior_recs = get_team_receivers(prior_df, abbr)
+        use_recs   = cur_recs if not cur_recs.empty else prior_recs
+        use_prior  = cur_recs.empty and not prior_recs.empty
+
+        if use_recs.empty:
+            print(f'  [{team_name}] No receiver data — skipping.')
+            continue
+
+        name_col = 'player_display_name' if 'player_display_name' in use_recs.columns else 'player_name'
+
+        for _, rec in use_recs.iterrows():
+            name    = str(rec.get(name_col, 'Unknown')).strip()
+            pos     = str(rec.get('position', 'WR')).strip()
+            tgts    = _safe(rec.get('targets', 0),          1)
+            yds     = _safe(rec.get('receiving_yards', 0),  tgts * 8.0)
+            tds     = max(float(rec.get('receiving_tds', 0) or 0), 0)
+            gp      = max(_safe(rec.get('games', 1), 1), 1)
+            cur_tpg = tgts / gp
+            cur_ypt = yds  / tgts
+            cur_tdg = tds  / gp
+
+            # Blend with prior if early season and same player found
+            if not use_prior and not prior_recs.empty and name_col in prior_recs.columns:
+                prior_match = prior_recs[prior_recs[name_col].str.strip() == name]
+                if not prior_match.empty:
+                    pr     = prior_match.iloc[0]
+                    pr_t   = _safe(pr.get('targets', 0),         1)
+                    pr_y   = _safe(pr.get('receiving_yards', 0), pr_t * 8.0)
+                    pr_td  = max(float(pr.get('receiving_tds', 0) or 0), 0)
+                    pr_g   = max(_safe(pr.get('games', 1), 1), 1)
+                    cur_tpg = w * cur_tpg + (1 - w) * (pr_t  / pr_g)
+                    cur_ypt = w * cur_ypt + (1 - w) * (pr_y  / pr_t)
+                    cur_tdg = w * cur_tdg + (1 - w) * (pr_td / pr_g)
+
+            rows.append({
+                'Team':        team_name,
+                'Name':        name,
+                'Position':    pos,
+                'TargetsGame': round(cur_tpg, 2),
+                'RecYdTarget': round(cur_ypt, 3),
+                'TDGame':      round(cur_tdg, 3),
+            })
+
+        team_recs = [r for r in rows if r['Team'] == team_name]
+        names_str = ', '.join(f'{r["Name"]} ({r["Position"]}, {r["TargetsGame"]} tgt/g)' for r in team_recs)
+        print(f'  [{team_name}] Receivers: {names_str}')
+
+    pd.DataFrame(rows).to_csv(REC_OUTPUT, index=False)
+    print(f'[NFLPlayers] Wrote {len(rows)} receiver rows -> {REC_OUTPUT}')
 
 
 def build():
@@ -325,11 +435,17 @@ def build():
         print(f'[NFLPlayers] No {SEASON_YEAR} data — using {PRIOR_YEAR} only.')
         cur_df = None
 
-    prior_df = fetch_seasonal(PRIOR_YEAR)
+    # Try prior years in order until we find data (library may not have latest season yet)
+    prior_df = None
+    for fallback_year in [PRIOR_YEAR, PRIOR_YEAR - 1, PRIOR_YEAR - 2]:
+        prior_df = fetch_seasonal(fallback_year)
+        if prior_df is not None and not prior_df.empty:
+            print(f'[NFLPlayers] Using {fallback_year} as baseline season.')
+            break
 
     # If we have no data at all, bail
     if cur_df is None and prior_df is None:
-        print('[NFLPlayers] No data for either season. Aborting.')
+        print('[NFLPlayers] No data available for any recent season. Aborting.')
         sys.exit(1)
 
     depth_chart  = fetch_depth_chart(SEASON_YEAR)
@@ -337,6 +453,7 @@ def build():
 
     build_qb_csv(cur_df, prior_df, games_played, depth_chart, injured_out)
     build_rb_csv(cur_df, prior_df, games_played)
+    build_receivers_csv(cur_df, prior_df, games_played)
 
 
 if __name__ == '__main__':

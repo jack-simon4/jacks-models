@@ -102,6 +102,14 @@ interface NFLRBStats {
   rushAttGame: number;
 }
 
+interface NFLReceiverStats {
+  name: string;
+  position: string;
+  targetsGame: number;
+  recYdTarget: number;
+  tdGame: number;
+}
+
 interface NHLStats { [team: string]: {ShotsF:number, PP:number, ShotsA:number, S:number}}
 
 interface Hitter {
@@ -149,6 +157,8 @@ export class ScoreboardComponent implements OnInit {
   nflLeagueAvg = { rushYPA: 4.44, rushAtt: 26.95, passYPA: 7.175, passAtt: 32.69, ydsPt: 15.053, ptsPP: 0.3715, playsG: 62.084 };
   nflQBs: { [team: string]: NFLQBStats } = {};
   nflRBs: { [team: string]: NFLRBStats[] } = {};
+  nflReceivers: { [team: string]: NFLReceiverStats[] } = {};
+  nflProps: any = null;
   nhlstats: NHLStats = {};
   ncaamSpreads: { [team: string]: number } = {};
   nbaSpreads: { [team: string]: number } = {};
@@ -583,6 +593,11 @@ resetScores() {
       .toPromise()
       .then(csv => { if (csv) this.nflRBs = this.parseNFLRBs(csv); })
       .catch(() => {});
+
+    this.http.get('assets/NFL-Receivers.csv', { responseType: 'text' })
+      .toPromise()
+      .then(csv => { if (csv) this.nflReceivers = this.parseNFLReceivers(csv); })
+      .catch(() => {});
   }
 
   parseNFLQBs(csv: string): { [team: string]: NFLQBStats } {
@@ -620,6 +635,25 @@ resetScores() {
     return result;
   }
 
+
+  parseNFLReceivers(csv: string): { [team: string]: NFLReceiverStats[] } {
+    const result: { [team: string]: NFLReceiverStats[] } = {};
+    csv.split('\n').slice(1).filter(l => l.trim()).forEach(line => {
+      const [team, name, position, TargetsGame, RecYdTarget, TDGame] = line.trim().split(',');
+      if (team && name) {
+        const t = team.trim();
+        if (!result[t]) result[t] = [];
+        result[t].push({
+          name:        name.trim(),
+          position:    (position || 'WR').trim(),
+          targetsGame: parseFloat(TargetsGame),
+          recYdTarget: parseFloat(RecYdTarget),
+          tdGame:      parseFloat(TDGame),
+        });
+      }
+    });
+    return result;
+  }
 
   //NCAAF STUFF
   loadNCAAFStatsData() {
@@ -1281,6 +1315,57 @@ parseNHLStats(csvData: string | undefined) {
 
     this.homeTeamScore = +(((hYdsScore + hPlaysScore) / 2) + homeAdvModifier).toFixed(2);
     this.awayTeamScore = +(((AYdsScore + aPlaysScore) / 2) - homeAdvModifier).toFixed(2);
+
+    // Player props: apply the same matchup factors to individual player baselines
+    const hPassMatchupFactor = (hPassYPA * hPassAPG) > 0 ? hPassYds / (hPassYPA * hPassAPG) : 1;
+    const aPassMatchupFactor = (aPassYPA * aPassAPG) > 0 ? aPassYds / (aPassYPA * aPassAPG) : 1;
+    const hRushMatchupFactor = (hRushYPC * homeTeamNFL.oRushPerGame) > 0 ? hRushYds / (hRushYPC * homeTeamNFL.oRushPerGame) : 1;
+    const aRushMatchupFactor = (aRushYPC * awayTeamNFL.oRushPerGame) > 0 ? aRushYds / (aRushYPC * awayTeamNFL.oRushPerGame) : 1;
+
+    this.nflProps = {
+      homeTeam: this.selectedHomeTeam,
+      awayTeam: this.selectedAwayTeam,
+      home: {
+        qb: hQB ? {
+          name:     hQB.name,
+          passYds:  Math.round(hPassYds),
+          passTDs:  +((hQB.tdRate * HpAtt).toFixed(2)),
+          passAtt:  Math.round(HpAtt),
+        } : null,
+        rbs: hRBs.map(rb => ({
+          name:    rb.name,
+          rushYds: Math.round(rb.rushYdsCarry * rb.rushAttGame * hRushMatchupFactor),
+          carries: +(rb.rushAttGame * hRushMatchupFactor).toFixed(1),
+        })),
+        receivers: (this.nflReceivers[this.selectedHomeTeam] ?? []).map(r => ({
+          name:     r.name,
+          position: r.position,
+          recYds:   Math.round(r.recYdTarget * r.targetsGame * hPassMatchupFactor),
+          targets:  +(r.targetsGame * hPassMatchupFactor).toFixed(1),
+          tds:      +(r.tdGame * hPassMatchupFactor).toFixed(2),
+        })),
+      },
+      away: {
+        qb: aQB ? {
+          name:     aQB.name,
+          passYds:  Math.round(aPassYds),
+          passTDs:  +((aQB.tdRate * ApAtt).toFixed(2)),
+          passAtt:  Math.round(ApAtt),
+        } : null,
+        rbs: aRBs.map(rb => ({
+          name:    rb.name,
+          rushYds: Math.round(rb.rushYdsCarry * rb.rushAttGame * aRushMatchupFactor),
+          carries: +(rb.rushAttGame * aRushMatchupFactor).toFixed(1),
+        })),
+        receivers: (this.nflReceivers[this.selectedAwayTeam] ?? []).map(r => ({
+          name:     r.name,
+          position: r.position,
+          recYds:   Math.round(r.recYdTarget * r.targetsGame * aPassMatchupFactor),
+          targets:  +(r.targetsGame * aPassMatchupFactor).toFixed(1),
+          tds:      +(r.tdGame * aPassMatchupFactor).toFixed(2),
+        })),
+      },
+    };
   }
 
   this.showDetailsButton = true;
@@ -1758,7 +1843,8 @@ const spreadText = winnerSpread ? `Actual Spread: ${winner} ${winnerSpread > 0 ?
       awaySPK: this.AwaySPK,   // Include AwaySPK
       selectedHomePitcher: this.selectedHomePitcher,
       selectedAwayPitcher: this.selectedAwayPitcher,
-      selectedSport: this.selectedSport
+      selectedSport: this.selectedSport,
+      nflProps: this.nflProps
     },
     
     

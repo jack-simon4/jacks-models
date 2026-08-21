@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/NFL-Stats.csv src/assets/NFL-QBs.csv src/assets/NFL-RBs.csv
+          git add src/assets/NFL-Stats.csv src/assets/NFL-QBs.csv src/assets/NFL-RBs.csv src/assets/NFL-Receivers.csv
           if git diff --staged --quiet; then
             echo "No NFL stat changes — nothing to commit."
           else
