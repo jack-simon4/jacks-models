@@ -6,8 +6,8 @@
     "awayPitcher": "Mason Fluharty",
     "homePitcher": "Cam Schlittler",
     "pick": "New York Yankees",
-    "prediction": "New York Yankees -118",
-    "odds": "-118",
+    "prediction": "New York Yankees -116",
+    "odds": "-116",
     "winProb": 0.608,
     "edge": 0.108,
     "confidence": "Strong",
@@ -38,6 +38,25 @@
     "rank": 2
   },
   {
+    "matchup": "Pittsburgh Pirates @ Los Angeles Dodgers",
+    "awayTeam": "Pittsburgh Pirates",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Bubba Chandler",
+    "homePitcher": "Yoshinobu Yamamoto",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -255",
+    "odds": "-255",
+    "winProb": 0.59,
+    "edge": 0.09,
+    "confidence": "Strong",
+    "predictedScore": "Pittsburgh Pirates 3.7 \u2013 Los Angeles Dodgers 4.9",
+    "predictedHomeScore": 4.9,
+    "predictedAwayScore": 3.69,
+    "gameTime": "2026-08-22T02:10:00Z",
+    "gamePk": 823911,
+    "rank": 3
+  },
+  {
     "matchup": "St. Louis Cardinals @ Philadelphia Phillies",
     "awayTeam": "St. Louis Cardinals",
     "homeTeam": "Philadelphia Phillies",
@@ -54,25 +73,6 @@
     "predictedAwayScore": 4.33,
     "gameTime": "2026-08-21T22:40:00Z",
     "gamePk": 823420,
-    "rank": 3
-  },
-  {
-    "matchup": "Pittsburgh Pirates @ Los Angeles Dodgers",
-    "awayTeam": "Pittsburgh Pirates",
-    "homeTeam": "Los Angeles Dodgers",
-    "awayPitcher": "Bubba Chandler",
-    "homePitcher": "Yoshinobu Yamamoto",
-    "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -255",
-    "odds": "-255",
-    "winProb": 0.582,
-    "edge": 0.082,
-    "confidence": "Strong",
-    "predictedScore": "Pittsburgh Pirates 3.8 \u2013 Los Angeles Dodgers 4.9",
-    "predictedHomeScore": 4.9,
-    "predictedAwayScore": 3.8,
-    "gameTime": "2026-08-22T02:10:00Z",
-    "gamePk": 823911,
     "rank": 4
   }
 ]

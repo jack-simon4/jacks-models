@@ -1,11 +1,4 @@
 {
-  "Milwaukee Brewers": {
-    "home_team": "Milwaukee Brewers",
-    "away_team": "Atlanta Braves",
-    "home_ml": "-166",
-    "away_ml": "+140",
-    "book": "fanduel"
-  },
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "St. Louis Cardinals",
@@ -16,8 +9,8 @@
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "Toronto Blue Jays",
-    "home_ml": "-118",
-    "away_ml": "+100",
+    "home_ml": "-116",
+    "away_ml": "-102",
     "book": "fanduel"
   },
   "Boston Red Sox": {
@@ -65,8 +58,8 @@
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "Los Angeles Angels",
-    "home_ml": "-138",
-    "away_ml": "+128",
+    "home_ml": "-134",
+    "away_ml": "+124",
     "book": "fanduel"
   },
   "Colorado Rockies": {
@@ -102,6 +95,13 @@
     "away_team": "Pittsburgh Pirates",
     "home_ml": "-255",
     "away_ml": "+210",
+    "book": "fanduel"
+  },
+  "Milwaukee Brewers": {
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Atlanta Braves",
+    "home_ml": "-166",
+    "away_ml": "+140",
     "book": "fanduel"
   }
 }
