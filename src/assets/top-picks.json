@@ -1,32 +1,13 @@
 [
   {
-    "matchup": "Detroit Tigers @ Kansas City Royals",
-    "awayTeam": "Detroit Tigers",
-    "homeTeam": "Kansas City Royals",
-    "awayPitcher": "Troy Melton",
-    "homePitcher": "Noah Cameron",
-    "pick": "Detroit Tigers",
-    "prediction": "Detroit Tigers -108",
-    "odds": "-108",
-    "winProb": 0.641,
-    "edge": 0.141,
-    "confidence": "Elite",
-    "predictedScore": "Detroit Tigers 6.0 \u2013 Kansas City Royals 4.1",
-    "predictedHomeScore": 4.12,
-    "predictedAwayScore": 6.05,
-    "gameTime": "2026-08-22T00:10:00Z",
-    "gamePk": 824072,
-    "rank": 1
-  },
-  {
     "matchup": "Toronto Blue Jays @ New York Yankees",
     "awayTeam": "Toronto Blue Jays",
     "homeTeam": "New York Yankees",
     "awayPitcher": "Mason Fluharty",
     "homePitcher": "Cam Schlittler",
     "pick": "New York Yankees",
-    "prediction": "New York Yankees -198",
-    "odds": "-198",
+    "prediction": "New York Yankees -118",
+    "odds": "-118",
     "winProb": 0.626,
     "edge": 0.126,
     "confidence": "Strong",
@@ -35,7 +16,7 @@
     "predictedAwayScore": 3.77,
     "gameTime": "2026-08-21T23:05:00Z",
     "gamePk": 823510,
-    "rank": 2
+    "rank": 1
   },
   {
     "matchup": "Cleveland Guardians @ Colorado Rockies",
@@ -44,8 +25,8 @@
     "awayPitcher": "Joey Cantillo",
     "homePitcher": "Tanner Gordon",
     "pick": "Cleveland Guardians",
-    "prediction": "Cleveland Guardians -154",
-    "odds": "-154",
+    "prediction": "Cleveland Guardians -142",
+    "odds": "-142",
     "winProb": 0.621,
     "edge": 0.121,
     "confidence": "Strong",
@@ -54,7 +35,7 @@
     "predictedAwayScore": 7.4,
     "gameTime": "2026-08-22T00:40:00Z",
     "gamePk": 824317,
-    "rank": 3
+    "rank": 2
   },
   {
     "matchup": "Minnesota Twins @ San Diego Padres",
@@ -63,8 +44,8 @@
     "awayPitcher": "Connor Prielipp",
     "homePitcher": "TBD",
     "pick": "San Diego Padres",
-    "prediction": "San Diego Padres -116",
-    "odds": "-116",
+    "prediction": "San Diego Padres -156",
+    "odds": "-156",
     "winProb": 0.621,
     "edge": 0.121,
     "confidence": "Strong",
@@ -73,6 +54,25 @@
     "predictedAwayScore": 4.28,
     "gameTime": "2026-08-22T01:40:00Z",
     "gamePk": 823262,
+    "rank": 3
+  },
+  {
+    "matchup": "St. Louis Cardinals @ Philadelphia Phillies",
+    "awayTeam": "St. Louis Cardinals",
+    "homeTeam": "Philadelphia Phillies",
+    "awayPitcher": "Hunter Dobbins",
+    "homePitcher": "Jes\u00fas Luzardo",
+    "pick": "Philadelphia Phillies",
+    "prediction": "Philadelphia Phillies -260",
+    "odds": "-260",
+    "winProb": 0.583,
+    "edge": 0.083,
+    "confidence": "Strong",
+    "predictedScore": "St. Louis Cardinals 4.3 \u2013 Philadelphia Phillies 5.5",
+    "predictedHomeScore": 5.45,
+    "predictedAwayScore": 4.33,
+    "gameTime": "2026-08-21T22:40:00Z",
+    "gamePk": 823420,
     "rank": 4
   }
 ]
