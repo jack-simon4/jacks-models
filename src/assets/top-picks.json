@@ -1,24 +1,5 @@
 [
   {
-    "matchup": "Toronto Blue Jays @ New York Yankees",
-    "awayTeam": "Toronto Blue Jays",
-    "homeTeam": "New York Yankees",
-    "awayPitcher": "Mason Fluharty",
-    "homePitcher": "Cam Schlittler",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -118",
-    "odds": "-118",
-    "winProb": 0.626,
-    "edge": 0.126,
-    "confidence": "Strong",
-    "predictedScore": "Toronto Blue Jays 3.8 \u2013 New York Yankees 5.5",
-    "predictedHomeScore": 5.48,
-    "predictedAwayScore": 3.77,
-    "gameTime": "2026-08-21T23:05:00Z",
-    "gamePk": 823510,
-    "rank": 1
-  },
-  {
     "matchup": "Cleveland Guardians @ Colorado Rockies",
     "awayTeam": "Cleveland Guardians",
     "homeTeam": "Colorado Rockies",
@@ -35,7 +16,7 @@
     "predictedAwayScore": 7.4,
     "gameTime": "2026-08-22T00:40:00Z",
     "gamePk": 824317,
-    "rank": 2
+    "rank": 1
   },
   {
     "matchup": "Minnesota Twins @ San Diego Padres",
@@ -54,6 +35,25 @@
     "predictedAwayScore": 4.28,
     "gameTime": "2026-08-22T01:40:00Z",
     "gamePk": 823262,
+    "rank": 2
+  },
+  {
+    "matchup": "Toronto Blue Jays @ New York Yankees",
+    "awayTeam": "Toronto Blue Jays",
+    "homeTeam": "New York Yankees",
+    "awayPitcher": "Mason Fluharty",
+    "homePitcher": "Cam Schlittler",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -118",
+    "odds": "-118",
+    "winProb": 0.608,
+    "edge": 0.108,
+    "confidence": "Strong",
+    "predictedScore": "Toronto Blue Jays 3.8 \u2013 New York Yankees 5.3",
+    "predictedHomeScore": 5.31,
+    "predictedAwayScore": 3.84,
+    "gameTime": "2026-08-21T23:05:00Z",
+    "gamePk": 823510,
     "rank": 3
   },
   {
@@ -63,8 +63,8 @@
     "awayPitcher": "Hunter Dobbins",
     "homePitcher": "Jes\u00fas Luzardo",
     "pick": "Philadelphia Phillies",
-    "prediction": "Philadelphia Phillies -260",
-    "odds": "-260",
+    "prediction": "Philadelphia Phillies -245",
+    "odds": "-245",
     "winProb": 0.583,
     "edge": 0.083,
     "confidence": "Strong",
