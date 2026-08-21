@@ -50,8 +50,17 @@ LG_AVG = {
 # Win-probability logistic scale factor.
 # Calibrated to MLB empirical data: 1-run expected advantage ≈ 57% actual win rate.
 # K=0.30 gives sigmoid(0.30*1) ≈ 0.574, matching that baseline.
-# Previous value of 0.45 was systematically overconfident.
 WIN_PROB_K = 0.30
+
+# Bullpen quality scaling.
+# The wOBA lineup model only covers the starting pitcher (~65% of innings).
+# BULLPEN_WEIGHT scales the opponent's run total toward the opposing team's
+# season RA/G, capturing bullpen quality for the remaining ~35% of innings.
+# factor = team_rapg / LEAGUE_AVG_RPG  (<1 = better pitching → fewer runs allowed)
+# final_away_runs = woba_away * (1 - BW + BW * home_rapg_factor)
+# Falls back to pure wOBA if standings data is unavailable.
+BULLPEN_WEIGHT = 0.35
+LEAGUE_AVG_RPG = 4.5   # MLB ~4.3-4.7 runs/game in recent seasons
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -102,6 +111,34 @@ def confidence_label(edge: float):
     if edge >= 0.08:
         return 'Strong'
     return None
+
+
+def fetch_team_rapg(season: int) -> dict:
+    """
+    Fetch each MLB team's season RA/G from the standings endpoint.
+    Returns {team_full_name: rapg_float}.
+    Returns {} on any failure so the caller can fall back to pure wOBA.
+    """
+    rapg = {}
+    try:
+        data = statsapi.get('standings', {
+            'leagueId': '103,104',
+            'season': season,
+            'standingsTypes': 'regularSeason',
+            'hydrate': 'team',
+        })
+        for division in data.get('records', []):
+            for tr in division.get('teamRecords', []):
+                name  = tr.get('team', {}).get('name', '')
+                games = tr.get('gamesPlayed', 0)
+                ra    = tr.get('runsAllowed')
+                if not name or games < 5 or ra is None:
+                    continue
+                rapg[name] = round(ra / games, 3)
+        print(f'[TeamRapg] RA/G loaded for {len(rapg)} teams.')
+    except Exception as exc:
+        print(f'[TeamRapg] Standings fetch failed: {exc} — will use pure wOBA model.')
+    return rapg
 
 
 def save_games_to_firestore(all_games: list):
@@ -367,11 +404,12 @@ def generate_top_picks():
     today = date.today().strftime('%m/%d/%Y')
     print(f'[TopPicks] Generating picks for {today}')
 
-    pitchers    = load_pitchers()
-    hitters     = load_hitters()
-    ballparks   = load_ballparks()
-    lineups     = load_lineups()
-    vegas_odds  = load_vegas_odds()
+    pitchers       = load_pitchers()
+    hitters        = load_hitters()
+    ballparks      = load_ballparks()
+    lineups        = load_lineups()
+    vegas_odds     = load_vegas_odds()
+    team_rapg = fetch_team_rapg(season=date.today().year)
 
     try:
         schedule = statsapi.schedule(date=today, sportId=1)
@@ -402,13 +440,26 @@ def generate_top_picks():
               f'SP: {away_pitcher or "TBD"} vs {home_pitcher or "TBD"}')
 
         try:
-            home_runs, away_runs = simulate_game(
+            home_woba, away_woba = simulate_game(
                 home_name, away_name, home_pitcher, away_pitcher,
                 pitchers, hitters, ballparks, lineups,
             )
         except Exception as exc:
             print(f'    Simulation failed: {exc}')
             continue
+
+        # Scale each team's run total by the opposing bullpen quality.
+        # home_rapg_factor < 1 means home team allows fewer runs than average
+        # → compress away team's expected runs accordingly, and vice versa.
+        if team_rapg:
+            home_rapg = team_rapg.get(home_name, LEAGUE_AVG_RPG)
+            away_rapg = team_rapg.get(away_name, LEAGUE_AVG_RPG)
+            home_rapg_factor = home_rapg / LEAGUE_AVG_RPG
+            away_rapg_factor = away_rapg / LEAGUE_AVG_RPG
+            home_runs = round(home_woba * (1 - BULLPEN_WEIGHT + BULLPEN_WEIGHT * away_rapg_factor), 2)
+            away_runs = round(away_woba * (1 - BULLPEN_WEIGHT + BULLPEN_WEIGHT * home_rapg_factor), 2)
+        else:
+            home_runs, away_runs = home_woba, away_woba
 
         home_wp = win_prob(home_runs, away_runs)
         away_wp = 1.0 - home_wp
