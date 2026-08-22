@@ -16,8 +16,8 @@
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "Washington Nationals",
-    "home_ml": "-178",
-    "away_ml": "+164",
+    "home_ml": "-180",
+    "away_ml": "+166",
     "book": "fanduel"
   },
   "Philadelphia Phillies": {
@@ -58,8 +58,8 @@
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "San Francisco Giants",
-    "home_ml": "-198",
-    "away_ml": "+182",
+    "home_ml": "-205",
+    "away_ml": "+190",
     "book": "fanduel"
   },
   "Seattle Mariners": {
