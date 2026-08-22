@@ -23,8 +23,8 @@
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "Los Angeles Angels",
-    "home_ml": "-158",
-    "away_ml": "+146",
+    "home_ml": "-166",
+    "away_ml": "+152",
     "book": "fanduel"
   },
   "Chicago White Sox": {
@@ -37,8 +37,8 @@
   "Houston Astros": {
     "home_team": "Houston Astros",
     "away_team": "Athletics",
-    "home_ml": "-240",
-    "away_ml": "+220",
+    "home_ml": "-225",
+    "away_ml": "+205",
     "book": "fanduel"
   },
   "Boston Red Sox": {
