@@ -17,5 +17,24 @@
     "gameTime": "2026-08-23T19:10:00Z",
     "gamePk": 824315,
     "rank": 1
+  },
+  {
+    "matchup": "Pittsburgh Pirates @ Los Angeles Dodgers",
+    "awayTeam": "Pittsburgh Pirates",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Lake Bachar",
+    "homePitcher": "Blake Snell",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -290",
+    "odds": "-290",
+    "winProb": 0.586,
+    "edge": 0.086,
+    "confidence": "Strong",
+    "predictedScore": "Pittsburgh Pirates 3.9 \u2013 Los Angeles Dodgers 5.0",
+    "predictedHomeScore": 5.02,
+    "predictedAwayScore": 3.86,
+    "gameTime": "2026-08-23T20:10:00Z",
+    "gamePk": 823909,
+    "rank": 2
   }
 ]

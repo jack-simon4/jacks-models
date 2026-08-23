@@ -1,11 +1,4 @@
 {
-  "San Diego Padres": {
-    "home_team": "San Diego Padres",
-    "away_team": "Minnesota Twins",
-    "home_ml": "-134",
-    "away_ml": "+116",
-    "book": "fanduel"
-  },
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "St. Louis Cardinals",
@@ -37,8 +30,8 @@
   "Kansas City Royals": {
     "home_team": "Kansas City Royals",
     "away_team": "Detroit Tigers",
-    "home_ml": "-110",
-    "away_ml": "-110",
+    "home_ml": "-105",
+    "away_ml": "-115",
     "book": "draftkings"
   },
   "Houston Astros": {
@@ -88,6 +81,13 @@
     "away_team": "Pittsburgh Pirates",
     "home_ml": "-290",
     "away_ml": "+235",
+    "book": "fanduel"
+  },
+  "San Diego Padres": {
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
+    "home_ml": "-142",
+    "away_ml": "+120",
     "book": "fanduel"
   },
   "Arizona Diamondbacks": {
