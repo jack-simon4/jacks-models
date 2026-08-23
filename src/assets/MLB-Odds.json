@@ -30,9 +30,9 @@
   "Kansas City Royals": {
     "home_team": "Kansas City Royals",
     "away_team": "Detroit Tigers",
-    "home_ml": "-105",
-    "away_ml": "-115",
-    "book": "draftkings"
+    "home_ml": "-112",
+    "away_ml": "-104",
+    "book": "fanduel"
   },
   "Houston Astros": {
     "home_team": "Houston Astros",
@@ -51,8 +51,8 @@
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "Los Angeles Angels",
-    "home_ml": "-158",
-    "away_ml": "+134",
+    "home_ml": "-164",
+    "away_ml": "+138",
     "book": "fanduel"
   },
   "Boston Red Sox": {
