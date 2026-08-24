@@ -34,6 +34,13 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
         run: python scripts/fetch_euro_stats.py
 
+      - name: Send daily results email
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python scripts/send_daily_email.py
+
       - name: Commit updated soccer stats
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
