@@ -16,29 +16,29 @@
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Colorado Rockies",
-    "home_ml": "-198",
-    "away_ml": "+182",
+    "home_ml": "-194",
+    "away_ml": "+180",
     "book": "fanduel"
   },
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "Texas Rangers",
-    "home_ml": "-106",
-    "away_ml": "-110",
+    "home_ml": "+102",
+    "away_ml": "-120",
     "book": "fanduel"
   },
   "Los Angeles Angels": {
     "home_team": "Los Angeles Angels",
     "away_team": "Cleveland Guardians",
-    "home_ml": "+118",
-    "away_ml": "-138",
+    "home_ml": "+122",
+    "away_ml": "-144",
     "book": "fanduel"
   },
   "Arizona Diamondbacks": {
     "home_team": "Arizona Diamondbacks",
     "away_team": "Chicago Cubs",
-    "home_ml": "-104",
-    "away_ml": "-112",
+    "home_ml": "-108",
+    "away_ml": "-108",
     "book": "fanduel"
   },
   "San Diego Padres": {
@@ -51,8 +51,8 @@
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Minnesota Twins",
-    "home_ml": "+124",
-    "away_ml": "-146",
+    "home_ml": "+126",
+    "away_ml": "-148",
     "book": "fanduel"
   },
   "Seattle Mariners": {
@@ -93,8 +93,8 @@
   "Atlanta Braves": {
     "home_team": "Atlanta Braves",
     "away_team": "Los Angeles Dodgers",
-    "home_ml": "+130",
-    "away_ml": "-154",
+    "home_ml": "+120",
+    "away_ml": "-142",
     "book": "fanduel"
   }
 }
