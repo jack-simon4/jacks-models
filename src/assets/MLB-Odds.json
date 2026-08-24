@@ -1,11 +1,4 @@
 {
-  "Milwaukee Brewers": {
-    "home_team": "Milwaukee Brewers",
-    "away_team": "Atlanta Braves",
-    "home_ml": "+440",
-    "away_ml": "-550",
-    "book": "fanduel"
-  },
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "Boston Red Sox",
