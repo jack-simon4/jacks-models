@@ -38,7 +38,12 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/Soccer-Stats.csv src/assets/soccer-today.json
+          git add src/assets/Soccer-Stats.csv src/assets/soccer-today.json \
+            "src/assets/Premier League-Teams.csv" \
+            "src/assets/La Liga-Teams.csv" \
+            "src/assets/Serie A-Teams.csv" \
+            "src/assets/Bundesliga-Teams.csv" \
+            "src/assets/Ligue 1-Teams.csv"
           if git diff --staged --quiet; then
             echo "No soccer stat changes — nothing to commit."
           else

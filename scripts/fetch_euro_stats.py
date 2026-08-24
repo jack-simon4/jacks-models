@@ -260,6 +260,16 @@ FD_TO_CSV: dict[str, str] = {
     'Vancouver Whitecaps':           'Vancouver Whitecaps',
 }
 
+# Maps league name → the Teams CSV file used by the Angular dropdown
+LEAGUE_TO_TEAMS_CSV: dict[str, str] = {
+    'Premier League': 'Premier League-Teams.csv',
+    'La Liga':        'La Liga-Teams.csv',
+    'Serie A':        'Serie A-Teams.csv',
+    'Bundesliga':     'Bundesliga-Teams.csv',
+    'Ligue 1':        'Ligue 1-Teams.csv',
+    # MLS omitted — free-tier API availability is inconsistent
+}
+
 ACTIVE_STATUSES = {'SCHEDULED', 'TIMED', 'IN_PLAY', 'PAUSED', 'LIVE'}
 
 
@@ -402,6 +412,24 @@ def update_csv(league_results: dict[str, dict[str, dict]], league_wratings: dict
     else:
         print('[Soccer] CSV already up to date.')
     return changed
+
+
+def update_teams_csv(league_name: str, teams: list[str]):
+    """
+    Rewrite the league's dropdown Teams CSV with the current season's team list.
+    Teams are derived from match data (all fixtures, not just finished games),
+    so promoted/relegated sides stay current without manual edits.
+    """
+    csv_file = LEAGUE_TO_TEAMS_CSV.get(league_name)
+    if not csv_file:
+        return
+    path = os.path.join(ASSETS, csv_file)
+    sorted_teams = sorted(set(t for t in teams if t))
+    with open(path, 'w', encoding='utf-8', newline='') as f:
+        f.write(league_name + '\n')
+        for team in sorted_teams:
+            f.write(team + '\n')
+    print(f'[{league_name}] Teams CSV updated: {len(sorted_teams)} teams.')
 
 
 # ── Soccer model ─────────────────────────────────────────────────────────────
@@ -616,6 +644,16 @@ def main():
         league_name       = meta['name']
         w_league          = meta['wLeague']
         league_wratings[league_name] = w_league
+
+        # Collect all teams in the season (from any fixture, scheduled or finished)
+        # so the dropdown CSV stays current even before games are played.
+        season_teams: list[str] = []
+        for m in matches:
+            home_csv = FD_TO_CSV.get(m['homeTeam']['name'], m['homeTeam']['name'])
+            away_csv = FD_TO_CSV.get(m['awayTeam']['name'], m['awayTeam']['name'])
+            season_teams.append(home_csv)
+            season_teams.append(away_csv)
+        update_teams_csv(league_name, season_teams)
 
         # Aggregate goals from finished matches
         team_results: dict[str, dict] = {}
