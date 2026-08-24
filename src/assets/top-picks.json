@@ -1,13 +1,32 @@
 [
   {
+    "matchup": "Cincinnati Reds @ San Francisco Giants",
+    "awayTeam": "Cincinnati Reds",
+    "homeTeam": "San Francisco Giants",
+    "awayPitcher": "Chase Burns",
+    "homePitcher": "Carson Whisenhunt",
+    "pick": "Cincinnati Reds",
+    "prediction": "Cincinnati Reds -154",
+    "odds": "-154",
+    "winProb": 0.606,
+    "edge": 0.106,
+    "confidence": "Strong",
+    "predictedScore": "Cincinnati Reds 5.9 \u2013 San Francisco Giants 4.5",
+    "predictedHomeScore": 4.48,
+    "predictedAwayScore": 5.91,
+    "gameTime": "2026-08-25T01:45:00Z",
+    "gamePk": 823183,
+    "rank": 1
+  },
+  {
     "matchup": "Colorado Rockies @ Washington Nationals",
     "awayTeam": "Colorado Rockies",
     "homeTeam": "Washington Nationals",
     "awayPitcher": "Ryan Feltner",
     "homePitcher": "Cade Cavalli",
     "pick": "Washington Nationals",
-    "prediction": "Washington Nationals -180",
-    "odds": "-180",
+    "prediction": "Washington Nationals -184",
+    "odds": "-184",
     "winProb": 0.59,
     "edge": 0.09,
     "confidence": "Strong",
@@ -16,6 +35,6 @@
     "predictedAwayScore": 5.21,
     "gameTime": "2026-08-24T22:45:00Z",
     "gamePk": 822695,
-    "rank": 1
+    "rank": 2
   }
 ]
