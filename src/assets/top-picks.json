@@ -6,8 +6,8 @@
     "awayPitcher": "Ryan Feltner",
     "homePitcher": "Cade Cavalli",
     "pick": "Washington Nationals",
-    "prediction": "Washington Nationals -194",
-    "odds": "-194",
+    "prediction": "Washington Nationals -198",
+    "odds": "-198",
     "winProb": 0.608,
     "edge": 0.108,
     "confidence": "Strong",
@@ -19,25 +19,6 @@
     "rank": 1
   },
   {
-    "matchup": "Cincinnati Reds @ San Francisco Giants",
-    "awayTeam": "Cincinnati Reds",
-    "homeTeam": "San Francisco Giants",
-    "awayPitcher": "Chase Burns",
-    "homePitcher": "Carson Whisenhunt",
-    "pick": "Cincinnati Reds",
-    "prediction": "Cincinnati Reds -154",
-    "odds": "-154",
-    "winProb": 0.606,
-    "edge": 0.106,
-    "confidence": "Strong",
-    "predictedScore": "Cincinnati Reds 5.9 \u2013 San Francisco Giants 4.5",
-    "predictedHomeScore": 4.48,
-    "predictedAwayScore": 5.91,
-    "gameTime": "2026-08-25T01:45:00Z",
-    "gamePk": 823183,
-    "rank": 2
-  },
-  {
     "matchup": "Tampa Bay Rays @ Detroit Tigers",
     "awayTeam": "Tampa Bay Rays",
     "homeTeam": "Detroit Tigers",
@@ -46,14 +27,14 @@
     "pick": "Tampa Bay Rays",
     "prediction": "Tampa Bay Rays -126",
     "odds": "-126",
-    "winProb": 0.58,
-    "edge": 0.08,
+    "winProb": 0.582,
+    "edge": 0.082,
     "confidence": "Strong",
     "predictedScore": "Tampa Bay Rays 5.2 \u2013 Detroit Tigers 4.1",
     "predictedHomeScore": 4.07,
-    "predictedAwayScore": 5.15,
+    "predictedAwayScore": 5.17,
     "gameTime": "2026-08-24T22:40:00Z",
     "gamePk": 824235,
-    "rank": 3
+    "rank": 2
   }
 ]
