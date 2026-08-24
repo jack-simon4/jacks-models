@@ -16,8 +16,8 @@
   "Washington Nationals": {
     "home_team": "Washington Nationals",
     "away_team": "Colorado Rockies",
-    "home_ml": "-184",
-    "away_ml": "+170",
+    "home_ml": "-194",
+    "away_ml": "+180",
     "book": "fanduel"
   },
   "Chicago White Sox": {
@@ -51,8 +51,8 @@
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Minnesota Twins",
-    "home_ml": "+140",
-    "away_ml": "-150",
+    "home_ml": "+134",
+    "away_ml": "-144",
     "book": "fanduel"
   },
   "Seattle Mariners": {
