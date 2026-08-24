@@ -2,8 +2,8 @@
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "Boston Red Sox",
-    "home_ml": "+114",
-    "away_ml": "-124",
+    "home_ml": "+112",
+    "away_ml": "-122",
     "book": "fanduel"
   },
   "Detroit Tigers": {
@@ -51,8 +51,8 @@
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Minnesota Twins",
-    "home_ml": "+138",
-    "away_ml": "-148",
+    "home_ml": "+140",
+    "away_ml": "-150",
     "book": "fanduel"
   },
   "Seattle Mariners": {
