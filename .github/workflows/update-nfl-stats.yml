@@ -35,11 +35,22 @@ jobs:
       - name: Fetch and update NFL player stats (QBs and RBs)
         run: python scripts/fetch_nfl_players.py
 
+      - name: Generate NFL picks
+        run: python scripts/generate_nfl_picks.py
+
+      - name: Post NFL picks tweet
+        env:
+          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+        run: python scripts/send_nfl_tweet.py
+
       - name: Commit updated NFL stats
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/NFL-Stats.csv src/assets/NFL-QBs.csv src/assets/NFL-RBs.csv src/assets/NFL-Receivers.csv
+          git add src/assets/NFL-Stats.csv src/assets/NFL-QBs.csv src/assets/NFL-RBs.csv src/assets/NFL-Receivers.csv src/assets/nfl-picks.json
           if git diff --staged --quiet; then
             echo "No NFL stat changes — nothing to commit."
           else
