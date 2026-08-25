@@ -44,8 +44,8 @@
   "Atlanta Braves": {
     "home_team": "Atlanta Braves",
     "away_team": "Los Angeles Dodgers",
-    "home_ml": "+140",
-    "away_ml": "-150",
+    "home_ml": "+138",
+    "away_ml": "-148",
     "book": "fanduel"
   },
   "Chicago White Sox": {
@@ -65,8 +65,8 @@
   "Los Angeles Angels": {
     "home_team": "Los Angeles Angels",
     "away_team": "Cleveland Guardians",
-    "home_ml": "+130",
-    "away_ml": "-140",
+    "home_ml": "+128",
+    "away_ml": "-138",
     "book": "fanduel"
   },
   "Arizona Diamondbacks": {
