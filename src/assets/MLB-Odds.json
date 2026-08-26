@@ -13,25 +13,11 @@
     "away_ml": "-108",
     "book": "fanduel"
   },
-  "San Diego Padres": {
-    "home_team": "San Diego Padres",
-    "away_team": "Pittsburgh Pirates",
-    "home_ml": "-126",
-    "away_ml": "+108",
-    "book": "fanduel"
-  },
-  "Athletics": {
-    "home_team": "Athletics",
-    "away_team": "Minnesota Twins",
-    "home_ml": "+120",
-    "away_ml": "-142",
-    "book": "fanduel"
-  },
-  "Seattle Mariners": {
-    "home_team": "Seattle Mariners",
-    "away_team": "Philadelphia Phillies",
-    "home_ml": "+108",
-    "away_ml": "-126",
+  "Detroit Tigers": {
+    "home_team": "Detroit Tigers",
+    "away_team": "Tampa Bay Rays",
+    "home_ml": "-120",
+    "away_ml": "+102",
     "book": "fanduel"
   },
   "San Francisco Giants": {
@@ -41,11 +27,18 @@
     "away_ml": "-104",
     "book": "fanduel"
   },
-  "Detroit Tigers": {
-    "home_team": "Detroit Tigers",
-    "away_team": "Tampa Bay Rays",
-    "home_ml": "-118",
-    "away_ml": "+100",
+  "Seattle Mariners": {
+    "home_team": "Seattle Mariners",
+    "away_team": "Philadelphia Phillies",
+    "home_ml": "+108",
+    "away_ml": "-126",
+    "book": "fanduel"
+  },
+  "San Diego Padres": {
+    "home_team": "San Diego Padres",
+    "away_team": "Pittsburgh Pirates",
+    "home_ml": "-126",
+    "away_ml": "+108",
     "book": "fanduel"
   },
   "Miami Marlins": {
@@ -102,6 +95,13 @@
     "away_team": "Baltimore Orioles",
     "home_ml": "-108",
     "away_ml": "-108",
+    "book": "fanduel"
+  },
+  "Athletics": {
+    "home_team": "Athletics",
+    "away_team": "Minnesota Twins",
+    "home_ml": "+120",
+    "away_ml": "-142",
     "book": "fanduel"
   }
 }
