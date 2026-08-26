@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "matchup": "Colorado Rockies @ Washington Nationals",
+    "awayTeam": "Colorado Rockies",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Tanner Gordon",
+    "homePitcher": "TBD",
+    "pick": "Washington Nationals",
+    "prediction": "Washington Nationals -170",
+    "odds": "-170",
+    "winProb": 0.631,
+    "edge": 0.131,
+    "confidence": "Strong",
+    "predictedScore": "Colorado Rockies 5.0 \u2013 Washington Nationals 6.8",
+    "predictedHomeScore": 6.84,
+    "predictedAwayScore": 5.05,
+    "gameTime": "2026-08-26T22:45:00Z",
+    "gamePk": 822692,
+    "rank": 1
+  }
+]
