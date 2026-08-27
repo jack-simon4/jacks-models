@@ -45,7 +45,7 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/MLB-Pitchers.csv src/assets/MLB-Hitters.csv src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv src/assets/top-picks.json
+          git add src/assets/MLB-Pitchers.csv src/assets/MLB-Hitters.csv src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv src/assets/top-picks.json src/assets/top-picks-yesterday.json
           if git diff --staged --quiet; then
             echo "No CSV changes — nothing to commit."
           else

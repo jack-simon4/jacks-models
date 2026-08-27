@@ -33,7 +33,8 @@ except ImportError:
 ASSETS = os.path.normpath(
     os.path.join(os.path.dirname(__file__), '..', 'src', 'assets')
 )
-OUTPUT = os.path.join(ASSETS, 'top-picks.json')
+OUTPUT           = os.path.join(ASSETS, 'top-picks.json')
+YESTERDAY_OUTPUT = os.path.join(ASSETS, 'top-picks-yesterday.json')
 
 # ── Model constants (match TypeScript LG_AVG_PITCHER / LG_AVG_BATTER) ─────
 PA_SLOTS = [4.65, 4.55, 4.43, 4.33, 4.24, 4.13, 4.01, 3.9, 3.77]
@@ -400,7 +401,27 @@ def simulate_game(
 
 
 # ── Main ───────────────────────────────────────────────────────────────────
+def _archive_yesterday_picks():
+    """If top-picks.json contains picks from a previous date, save them to top-picks-yesterday.json."""
+    if not os.path.exists(OUTPUT):
+        return
+    try:
+        with open(OUTPUT, encoding='utf-8') as f:
+            existing = json.load(f)
+        if not existing:
+            return
+        existing_date = existing[0].get('gameTime', '')[:10]
+        today_iso = date.today().strftime('%Y-%m-%d')
+        if existing_date and existing_date != today_iso:
+            with open(YESTERDAY_OUTPUT, 'w', encoding='utf-8') as f:
+                json.dump(existing, f, indent=2)
+            print(f'[TopPicks] Archived {existing_date} picks → top-picks-yesterday.json')
+    except Exception as exc:
+        print(f'[TopPicks] Could not archive yesterday picks: {exc}')
+
+
 def generate_top_picks():
+    _archive_yesterday_picks()
     today = date.today().strftime('%m/%d/%Y')
     print(f'[TopPicks] Generating picks for {today}')
 

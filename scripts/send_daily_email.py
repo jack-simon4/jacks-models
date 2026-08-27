@@ -20,10 +20,11 @@ from datetime import datetime, timedelta, timezone
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-ASSETS      = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'src', 'assets'))
-TODAY_PATH  = os.path.join(ASSETS, 'soccer-today.json')
-PICKS_PATH  = os.path.join(ASSETS, 'top-picks.json')
-NFL_PATH    = os.path.join(ASSETS, 'nfl-picks.json')
+ASSETS               = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'src', 'assets'))
+TODAY_PATH           = os.path.join(ASSETS, 'soccer-today.json')
+PICKS_PATH           = os.path.join(ASSETS, 'top-picks.json')
+YESTERDAY_PICKS_PATH = os.path.join(ASSETS, 'top-picks-yesterday.json')
+NFL_PATH             = os.path.join(ASSETS, 'nfl-picks.json')
 
 GMAIL_USER  = os.environ.get('GMAIL_USER', '')
 GMAIL_PASS  = os.environ.get('GMAIL_APP_PASSWORD', '')
@@ -112,14 +113,19 @@ def build_soccer_section(data: dict, yesterday: str, today_str: str) -> str:
         wp       = u.get('homeWinProb', 0.5)
         home_fav = wp >= 0.5
         fav      = u['homeTeam'] if home_fav else u['awayTeam']
+        und      = u['awayTeam'] if home_fav else u['homeTeam']
         fav_pct  = round(wp * 100) if home_fav else round((1 - wp) * 100)
         kickoff  = u.get('gameTime', '')[:16].replace('T', ' ') + ' UTC'
         cc       = '#28a745' if fav_pct >= 65 else ('#856404' if fav_pct >= 55 else '#6c757d')
+        h_pred   = u.get('predictedHomeScore', 0)
+        a_pred   = u.get('predictedAwayScore', 0)
+        pred_str = f'{a_pred:.2f}–{h_pred:.2f}' if h_pred or a_pred else '—'
         pick_rows += f"""
         <tr>
           <td style="{TD}">{u.get('league','')}</td>
           <td style="{TD}">{u.get('awayTeam','')} @ {u.get('homeTeam','')}</td>
           <td style="{TD};color:#666;font-size:13px">{kickoff}</td>
+          <td style="{TD};text-align:center;color:#555;font-size:13px">{pred_str}</td>
           <td style="{TD};font-weight:bold;color:{cc}">{fav} ({fav_pct}%)</td>
         </tr>"""
 
@@ -130,6 +136,7 @@ def build_soccer_section(data: dict, yesterday: str, today_str: str) -> str:
             <th style="padding:8px;text-align:left">League</th>
             <th style="padding:8px;text-align:left">Match</th>
             <th style="padding:8px;text-align:left">Kickoff</th>
+            <th style="padding:8px;text-align:center">Predicted</th>
             <th style="padding:8px;text-align:left">Model Pick</th>
           </tr></thead>
           <tbody>{pick_rows}</tbody>
@@ -167,15 +174,11 @@ def fetch_mlb_actuals(yesterday_dt: datetime) -> dict:
 
 
 def build_mlb_section_with_actuals(picks: list, yesterday: str, actuals: dict) -> str:
-    """Build MLB email section using pre-fetched actuals dict."""
+    """Build MLB email section using pre-fetched actuals dict.
+    `picks` should already be yesterday's archived picks — no date filtering needed."""
     if not picks:
         return ''
-
-    yesterday_picks = [p for p in picks if p.get('gameTime', '')[:10] == yesterday]
-    if not yesterday_picks:
-        yesterday_picks = picks
-
-    return _render_mlb_section(yesterday_picks, yesterday, actuals)
+    return _render_mlb_section(picks, yesterday, actuals)
 
 
 def build_mlb_section(picks: list, yesterday: str, yesterday_dt: datetime) -> str:
@@ -353,9 +356,14 @@ def build_tweet_drafts(
                 wp       = u.get('homeWinProb', 0.5)
                 home_fav = wp >= 0.5
                 fav      = u['homeTeam'] if home_fav else u['awayTeam']
+                und      = u['awayTeam'] if home_fav else u['homeTeam']
                 fav_pct  = round(wp * 100) if home_fav else round((1 - wp) * 100)
                 flag     = LEAGUE_FLAG.get(u.get('league', ''), '⚽')
-                lines.append(f'{flag} {fav} ({fav_pct}%)')
+                h_pred   = u.get('predictedHomeScore', 0)
+                a_pred   = u.get('predictedAwayScore', 0)
+                # show as Away-Home so it reads left team first
+                pred_str = f' ({a_pred:.2f}-{h_pred:.2f})' if h_pred or a_pred else ''
+                lines.append(f'{flag} {fav} ({fav_pct}%){pred_str}')
             lines.append('')
         lines.append(f'Full model 👉 {SOCCER_URL}')
         lines.append('#Soccer #SoccerPicks #EPL #LaLiga')
@@ -396,12 +404,14 @@ def build_tweet_drafts(
         top_picks = sorted(mlb_picks, key=lambda p: p.get('rank', 99))[:5]
         lines2 = [f'⚾ MLB Picks — {date_lbl}', '']
         for p in top_picks:
-            emoji = CONF_EMOJI.get(p.get('confidence', ''), '📊')
-            team  = p.get('pick', '')
-            odds  = p.get('odds', '')
-            wp    = round(p.get('winProb', 0) * 100)
-            opp   = p.get('awayTeam') if p.get('homeTeam') == team else p.get('homeTeam')
-            lines2.append(f'{emoji} {team} ML ({odds}) vs {opp} — {wp}%')
+            emoji    = CONF_EMOJI.get(p.get('confidence', ''), '📊')
+            team     = p.get('pick', '')
+            odds     = p.get('odds', '')
+            wp       = round(p.get('winProb', 0) * 100)
+            opp      = p.get('awayTeam') if p.get('homeTeam') == team else p.get('homeTeam')
+            pred_raw = p.get('predictedScore', '')
+            pred_str = f' · {pred_raw}' if pred_raw else ''
+            lines2.append(f'{emoji} {team} ML ({odds}) vs {opp} — {wp}%{pred_str}')
         lines2.append('')
         lines2.append(f'Full model + props 👉 {MLB_URL}')
         lines2.append('#MLB #BaseballPicks')
@@ -446,11 +456,12 @@ def main():
     today_str    = now.strftime('%Y-%m-%d')
     date_hdr     = now.strftime('%A, %B %d, %Y').replace(' 0', ' ')
 
-    sections     = []
-    soccer_data  = None
-    mlb_picks    = None
-    mlb_actuals  = {}
-    nfl_picks    = None
+    sections          = []
+    soccer_data       = None
+    mlb_picks_yest    = None   # yesterday's picks — used for results section
+    mlb_picks_today   = None   # today's picks — used for tweet drafts
+    mlb_actuals       = {}
+    nfl_picks         = None
 
     # Soccer
     if os.path.exists(TODAY_PATH):
@@ -460,16 +471,32 @@ def main():
     else:
         print('[Email] soccer-today.json not found — skipping soccer section.')
 
-    # MLB
-    if os.path.exists(PICKS_PATH):
-        with open(PICKS_PATH, encoding='utf-8') as f:
-            mlb_picks = json.load(f)
+    # MLB results — use archived yesterday picks so date filter matches correctly
+    if os.path.exists(YESTERDAY_PICKS_PATH):
+        with open(YESTERDAY_PICKS_PATH, encoding='utf-8') as f:
+            mlb_picks_yest = json.load(f)
         mlb_actuals = fetch_mlb_actuals(yesterday_dt)
-        mlb_html = build_mlb_section_with_actuals(mlb_picks, yesterday, mlb_actuals)
+        mlb_html = build_mlb_section_with_actuals(mlb_picks_yest, yesterday, mlb_actuals)
         if mlb_html:
             sections.append(mlb_html)
+        else:
+            print('[Email] No yesterday MLB picks matched — skipping MLB section.')
+    elif os.path.exists(PICKS_PATH):
+        # Fallback: top-picks.json not yet rotated (first run ever)
+        with open(PICKS_PATH, encoding='utf-8') as f:
+            mlb_picks_yest = json.load(f)
+        mlb_actuals = fetch_mlb_actuals(yesterday_dt)
+        mlb_html = build_mlb_section_with_actuals(mlb_picks_yest, yesterday, mlb_actuals)
+        if mlb_html:
+            sections.append(mlb_html)
+        print('[Email] top-picks-yesterday.json missing — fell back to top-picks.json')
     else:
-        print('[Email] top-picks.json not found — skipping MLB section.')
+        print('[Email] No MLB picks file found — skipping MLB section.')
+
+    # Today's picks for tweet draft
+    if os.path.exists(PICKS_PATH):
+        with open(PICKS_PATH, encoding='utf-8') as f:
+            mlb_picks_today = json.load(f)
 
     # NFL
     if os.path.exists(NFL_PATH):
@@ -483,8 +510,8 @@ def main():
         print('[Email] No data available — skipping.')
         sys.exit(0)
 
-    # Tweet drafts
-    tweet_html = build_tweet_drafts(soccer_data, mlb_picks, mlb_actuals, nfl_picks, yesterday, today_str)
+    # Tweet drafts — use today's MLB picks so the afternoon tweet box has fresh data
+    tweet_html = build_tweet_drafts(soccer_data, mlb_picks_today, mlb_actuals, nfl_picks, yesterday, today_str)
 
     body = '\n<br>\n'.join(sections)
     html = f"""<!DOCTYPE html>
