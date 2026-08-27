@@ -1,37 +1,16 @@
 {
-  "Atlanta Braves": {
-    "home_team": "Atlanta Braves",
-    "away_team": "Los Angeles Dodgers",
-    "home_ml": "-118",
-    "away_ml": "+100",
+  "Washington Nationals": {
+    "home_team": "Washington Nationals",
+    "away_team": "Colorado Rockies",
+    "home_ml": "-114",
+    "away_ml": "+104",
     "book": "fanduel"
-  },
-  "Chicago White Sox": {
-    "home_team": "Chicago White Sox",
-    "away_team": "Texas Rangers",
-    "home_ml": "-10000",
-    "away_ml": "+3300",
-    "book": "betmgm"
   },
   "St. Louis Cardinals": {
     "home_team": "St. Louis Cardinals",
     "away_team": "Baltimore Orioles",
     "home_ml": "+100",
     "away_ml": "-118",
-    "book": "fanduel"
-  },
-  "Athletics": {
-    "home_team": "Athletics",
-    "away_team": "Minnesota Twins",
-    "home_ml": "-105",
-    "away_ml": "-110",
-    "book": "fanduel"
-  },
-  "Washington Nationals": {
-    "home_team": "Washington Nationals",
-    "away_team": "Colorado Rockies",
-    "home_ml": "-116",
-    "away_ml": "-102",
     "book": "fanduel"
   },
   "New York Yankees": {
@@ -53,6 +32,13 @@
     "away_team": "Milwaukee Brewers",
     "home_ml": "+180",
     "away_ml": "-215",
+    "book": "fanduel"
+  },
+  "Atlanta Braves": {
+    "home_team": "Atlanta Braves",
+    "away_team": "Los Angeles Dodgers",
+    "home_ml": "-118",
+    "away_ml": "+100",
     "book": "fanduel"
   },
   "San Francisco Giants": {
