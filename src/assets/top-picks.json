@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "matchup": "Milwaukee Brewers @ New York Mets",
+    "awayTeam": "Milwaukee Brewers",
+    "homeTeam": "New York Mets",
+    "awayPitcher": "Jacob Misiorowski",
+    "homePitcher": "Sean Manaea",
+    "pick": "Milwaukee Brewers",
+    "prediction": "Milwaukee Brewers -215",
+    "odds": "-215",
+    "winProb": 0.626,
+    "edge": 0.126,
+    "confidence": "Strong",
+    "predictedScore": "Milwaukee Brewers 5.3 \u2013 New York Mets 3.6",
+    "predictedHomeScore": 3.6,
+    "predictedAwayScore": 5.31,
+    "gameTime": "2026-08-27T23:10:00Z",
+    "gamePk": 823581,
+    "rank": 1
+  },
+  {
+    "matchup": "Houston Astros @ New York Yankees",
+    "awayTeam": "Houston Astros",
+    "homeTeam": "New York Yankees",
+    "awayPitcher": "Hayden Wesneski",
+    "homePitcher": "Gerrit Cole",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -152",
+    "odds": "-152",
+    "winProb": 0.587,
+    "edge": 0.087,
+    "confidence": "Strong",
+    "predictedScore": "Houston Astros 4.4 \u2013 New York Yankees 5.6",
+    "predictedHomeScore": 5.61,
+    "predictedAwayScore": 4.44,
+    "gameTime": "2026-08-27T23:05:00Z",
+    "gamePk": 823503,
+    "rank": 2
+  }
+]
