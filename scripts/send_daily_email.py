@@ -166,6 +166,18 @@ def fetch_mlb_actuals(yesterday_dt: datetime) -> dict:
         return {}
 
 
+def build_mlb_section_with_actuals(picks: list, yesterday: str, actuals: dict) -> str:
+    """Build MLB email section using pre-fetched actuals dict."""
+    if not picks:
+        return ''
+
+    yesterday_picks = [p for p in picks if p.get('gameTime', '')[:10] == yesterday]
+    if not yesterday_picks:
+        yesterday_picks = picks
+
+    return _render_mlb_section(yesterday_picks, yesterday, actuals)
+
+
 def build_mlb_section(picks: list, yesterday: str, yesterday_dt: datetime) -> str:
     if not picks:
         return ''
@@ -177,6 +189,10 @@ def build_mlb_section(picks: list, yesterday: str, yesterday_dt: datetime) -> st
         yesterday_picks = picks
 
     actuals = fetch_mlb_actuals(yesterday_dt)
+    return _render_mlb_section(yesterday_picks, yesterday, actuals)
+
+
+def _render_mlb_section(yesterday_picks: list, yesterday: str, actuals: dict) -> str:
 
     rows    = ''
     correct = 0
@@ -277,6 +293,146 @@ def build_nfl_section(picks: list) -> str:
     </table>"""
 
 
+# ── Tweet drafts ─────────────────────────────────────────────────────────────
+
+LEAGUE_FLAG = {
+    'Premier League': '🏴󠁧󠁢󠁥󠁮󠁧󠁿',
+    'La Liga':        '🇪🇸',
+    'Serie A':        '🇮🇹',
+    'Bundesliga':     '🇩🇪',
+    'Ligue 1':        '🇫🇷',
+}
+CONF_EMOJI = {'Elite': '🔥', 'Strong': '💪', 'Lean': '📊'}
+
+TWEET_BOX = (
+    'background:#f8f9fa;border:1px solid #dee2e6;border-left:4px solid #1a1a2e;'
+    'border-radius:4px;padding:14px 16px;font-family:"Courier New",monospace;'
+    'font-size:13px;white-space:pre-wrap;line-height:1.6;margin-bottom:16px;color:#1a1a2e'
+)
+
+
+def _tweet_box(label: str, text: str) -> str:
+    char_count = len(text)
+    return f"""
+    <p style="margin:8px 0 4px;font-weight:bold;font-size:13px;color:#555">{label} &nbsp;<span style="font-weight:normal;color:#aaa">{char_count}/280 chars</span></p>
+    <div style="{TWEET_BOX}">{text}</div>"""
+
+
+def build_tweet_drafts(
+    soccer_data: dict | None,
+    mlb_picks: list | None,
+    mlb_actuals: dict,
+    nfl_picks: list | None,
+    yesterday: str,
+    today_str: str,
+) -> str:
+    now      = datetime.now(timezone.utc)
+    date_lbl = now.strftime('%b %-d').replace(' 0', ' ')
+    drafts   = []
+
+    # ── Soccer tweet ─────────────────────────────────────────────────────────
+    if soccer_data:
+        results  = [r for r in soccer_data.get('recentResults', []) if r.get('gameDate') == yesterday]
+        correct  = sum(1 for r in results
+                       if pick_correct_soccer(r['predictedHomeScore'], r['predictedAwayScore'],
+                                              r.get('actualHomeScore'), r.get('actualAwayScore')) is True)
+        total    = len(results)
+
+        upcoming = [u for u in soccer_data.get('upcoming', []) if u.get('gameDate') == today_str]
+        upcoming.sort(key=lambda x: abs(x.get('homeWinProb', 0.5) - 0.5), reverse=True)
+        top3     = upcoming[:4]
+
+        lines = [f'⚽ Soccer — {date_lbl}', '']
+        if total:
+            pct = round(correct / total * 100)
+            lines.append(f'Yesterday: {correct}/{total} ({pct}%) {"✅" if pct >= 55 else "❌"}')
+            lines.append('')
+        if top3:
+            lines.append("Today's picks:")
+            for u in top3:
+                wp       = u.get('homeWinProb', 0.5)
+                home_fav = wp >= 0.5
+                fav      = u['homeTeam'] if home_fav else u['awayTeam']
+                fav_pct  = round(wp * 100) if home_fav else round((1 - wp) * 100)
+                flag     = LEAGUE_FLAG.get(u.get('league', ''), '⚽')
+                lines.append(f'{flag} {fav} ({fav_pct}%)')
+            lines.append('')
+        lines.append(f'Full model 👉 {SOCCER_URL}')
+        lines.append('#Soccer #SoccerPicks #EPL #LaLiga')
+        drafts.append(_tweet_box('⚽ Soccer — post anytime today', '\n'.join(lines)))
+
+    # ── MLB tweet ────────────────────────────────────────────────────────────
+    if mlb_picks:
+        yesterday_picks = [p for p in mlb_picks if p.get('gameTime', '')[:10] == yesterday] or mlb_picks
+        mlb_correct = mlb_total = 0
+        hit_lines   = []
+        for p in yesterday_picks:
+            away, home = p.get('awayTeam', ''), p.get('homeTeam', '')
+            pick = p.get('pick', '')
+            act  = mlb_actuals.get((away, home))
+            if act:
+                ok = pick_correct_mlb(pick, away, home, act[0], act[1])
+                if ok is not None:
+                    mlb_total += 1
+                    if ok:
+                        mlb_correct += 1
+                        odds = p.get('odds', '')
+                        hit_lines.append(f'✅ {pick} ML {odds}')
+
+        lines = [f'⚾ MLB Model — {date_lbl}', '']
+        if mlb_total:
+            pct = round(mlb_correct / mlb_total * 100)
+            lines.append(f'Yesterday: {mlb_correct}/{mlb_total} ({pct}%) {"✅" if pct >= 55 else "❌"}')
+            if hit_lines:
+                lines.append('')
+                lines.extend(hit_lines[:3])
+        lines.append('')
+        lines.append(f"Today's picks drop ~3 PM ET 👇")
+        lines.append(f'Full model + player props 👉 {MLB_URL}')
+        lines.append('#MLB #BaseballPicks #SportsBetting')
+        drafts.append(_tweet_box('⚾ MLB — post in the morning', '\n'.join(lines)))
+
+        # Second MLB draft: today's picks (to post at ~3 PM after picks refresh)
+        top_picks = sorted(mlb_picks, key=lambda p: p.get('rank', 99))[:5]
+        lines2 = [f'⚾ MLB Picks — {date_lbl}', '']
+        for p in top_picks:
+            emoji = CONF_EMOJI.get(p.get('confidence', ''), '📊')
+            team  = p.get('pick', '')
+            odds  = p.get('odds', '')
+            wp    = round(p.get('winProb', 0) * 100)
+            opp   = p.get('awayTeam') if p.get('homeTeam') == team else p.get('homeTeam')
+            lines2.append(f'{emoji} {team} ML ({odds}) vs {opp} — {wp}%')
+        lines2.append('')
+        lines2.append(f'Full model + props 👉 {MLB_URL}')
+        lines2.append('#MLB #BaseballPicks')
+        drafts.append(_tweet_box('⚾ MLB — post at ~3 PM ET when today\'s picks are fresh', '\n'.join(lines2)))
+
+    # ── NFL tweet ────────────────────────────────────────────────────────────
+    if nfl_picks:
+        top  = nfl_picks[:5]
+        lines = [f'🏈 NFL Picks — {date_lbl}', '']
+        for p in top:
+            emoji = CONF_EMOJI.get(p.get('confidence', ''), '📊')
+            pick  = p['pick']
+            opp   = p['awayTeam'] if p['homeTeam'] == pick else p['homeTeam']
+            wp    = round(p['winProb'] * 100)
+            lines.append(f'{emoji} {pick} vs {opp} — {wp}%')
+        lines.append('')
+        lines.append(f'Full picks 👉 {MLB_URL}')
+        lines.append('#NFL #NFLPicks #SportsBetting')
+        drafts.append(_tweet_box('🏈 NFL — post Thursday or Sunday morning', '\n'.join(lines)))
+
+    if not drafts:
+        return ''
+
+    return f"""
+    <h3 style="border-bottom:2px solid #1a1a2e;padding-bottom:6px;margin-top:32px">
+      📋 Ready-to-Post Tweets
+    </h3>
+    <p style="color:#555;font-size:13px;margin-top:0">Copy and paste — each box is one tweet. Edit as you like before posting.</p>
+    {''.join(drafts)}"""
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
@@ -290,7 +446,11 @@ def main():
     today_str    = now.strftime('%Y-%m-%d')
     date_hdr     = now.strftime('%A, %B %d, %Y').replace(' 0', ' ')
 
-    sections = []
+    sections     = []
+    soccer_data  = None
+    mlb_picks    = None
+    mlb_actuals  = {}
+    nfl_picks    = None
 
     # Soccer
     if os.path.exists(TODAY_PATH):
@@ -304,7 +464,8 @@ def main():
     if os.path.exists(PICKS_PATH):
         with open(PICKS_PATH, encoding='utf-8') as f:
             mlb_picks = json.load(f)
-        mlb_html = build_mlb_section(mlb_picks, yesterday, yesterday_dt)
+        mlb_actuals = fetch_mlb_actuals(yesterday_dt)
+        mlb_html = build_mlb_section_with_actuals(mlb_picks, yesterday, mlb_actuals)
         if mlb_html:
             sections.append(mlb_html)
     else:
@@ -322,6 +483,9 @@ def main():
         print('[Email] No data available — skipping.')
         sys.exit(0)
 
+    # Tweet drafts
+    tweet_html = build_tweet_drafts(soccer_data, mlb_picks, mlb_actuals, nfl_picks, yesterday, today_str)
+
     body = '\n<br>\n'.join(sections)
     html = f"""<!DOCTYPE html>
 <html>
@@ -332,6 +496,7 @@ def main():
   </div>
   <div style="border:1px solid #ddd;border-top:none;padding:20px;border-radius:0 0 8px 8px">
     {body}
+    {tweet_html}
     <br>
     <p style="color:#aaa;font-size:12px;margin-top:24px">
       Generated automatically · Jack's Models
