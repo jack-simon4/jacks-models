@@ -157,6 +157,90 @@ def build_soccer_section(data: dict, yesterday: str, today_str: str) -> str:
 
 # ── MLB section ───────────────────────────────────────────────────────────────
 
+def fetch_mlb_from_firestore(yesterday: str) -> list:
+    """Return all MLB game docs from Firestore whose gameTime falls on `yesterday` (YYYY-MM-DD)."""
+    sa_json = os.environ.get('FIREBASE_SERVICE_ACCOUNT')
+    if not sa_json:
+        print('[Email] FIREBASE_SERVICE_ACCOUNT not set — skipping Firestore MLB fetch.')
+        return []
+    try:
+        import firebase_admin
+        from firebase_admin import credentials, firestore as fb_firestore
+        cred = credentials.Certificate(json.loads(sa_json))
+        app  = firebase_admin.initialize_app(cred, name='email_mlb')
+        db   = fb_firestore.client(app)
+        docs = db.collection('games').where('sport', '==', 'MLB').stream()
+        games = [d.to_dict() for d in docs if d.to_dict().get('gameTime', '')[:10] == yesterday]
+        firebase_admin.delete_app(app)
+        print(f'[Email] Firestore: {len(games)} MLB games for {yesterday}')
+        return games
+    except Exception as exc:
+        print(f'[Email] Firestore MLB fetch error: {exc}')
+        return []
+
+
+def build_mlb_section_firestore(games: list, yesterday: str) -> str:
+    if not games:
+        return ''
+
+    games.sort(key=lambda g: g.get('gameTime', ''))
+
+    rows    = ''
+    correct = 0
+    total   = 0
+    for g in games:
+        away      = g.get('awayTeam', '')
+        home      = g.get('homeTeam', '')
+        pick      = g.get('pick', '')
+        h_pred    = g.get('predictedHomeScore', 0)
+        a_pred    = g.get('predictedAwayScore', 0)
+        pred_str  = f'{a_pred:.2f}–{h_pred:.2f}'
+        h_act     = g.get('actualHomeScore')
+        a_act     = g.get('actualAwayScore')
+
+        if h_act is not None and a_act is not None:
+            ok         = pick_correct_mlb(pick, away, home, a_act, h_act)
+            actual_str = f'{a_act}–{h_act}'
+            icon       = '✅' if ok else '❌'
+            bg         = '#d4edda' if ok else '#f8d7da'
+            if ok is not None:
+                total += 1
+                if ok: correct += 1
+        else:
+            ok, actual_str, icon, bg = None, 'Pending', '⏳', '#fff'
+
+        rows += f"""
+        <tr style="background:{bg}">
+          <td style="{TD}">{away} @ {home}</td>
+          <td style="{TD};font-weight:bold">{pick}</td>
+          <td style="{TD};font-size:12px;color:#555">{pred_str}</td>
+          <td style="{TD};text-align:center">{actual_str}</td>
+          <td style="{TD};text-align:center">{icon}</td>
+        </tr>"""
+
+    if total:
+        pct     = round(correct / total * 100)
+        summary = f'<p style="font-size:17px;font-weight:bold;color:{summary_color(pct)}">{correct}/{total} correct ({pct}%)</p>'
+    else:
+        summary = ''
+
+    return f"""
+    <h3 style="border-bottom:2px solid #1a1a2e;padding-bottom:6px;margin-top:24px">
+      ⚾ MLB &nbsp;<span style="font-size:14px;color:#666">Yesterday ({yesterday})</span>
+    </h3>
+    {summary}
+    <table style="border-collapse:collapse;width:100%;font-size:14px">
+      <thead><tr style="{TABLE_HEADER_STYLE}">
+        <th style="padding:8px;text-align:left">Matchup</th>
+        <th style="padding:8px;text-align:left">Pick</th>
+        <th style="padding:8px;text-align:left">Predicted</th>
+        <th style="padding:8px;text-align:center">Actual</th>
+        <th style="padding:8px"></th>
+      </tr></thead>
+      <tbody>{rows}</tbody>
+    </table>"""
+
+
 def fetch_mlb_actuals(yesterday_dt: datetime) -> dict:
     """Return {(away_name, home_name): (away_score, home_score)} for finished games."""
     try:
@@ -328,6 +412,7 @@ def build_tweet_drafts(
     nfl_picks: list | None,
     yesterday: str,
     today_str: str,
+    mlb_yest_games: list | None = None,
 ) -> str:
     now      = datetime.now(timezone.utc)
     date_lbl = now.strftime('%b %-d').replace(' 0', ' ')
@@ -370,22 +455,40 @@ def build_tweet_drafts(
         drafts.append(_tweet_box('⚽ Soccer — post anytime today', '\n'.join(lines)))
 
     # ── MLB tweet ────────────────────────────────────────────────────────────
-    if mlb_picks:
-        yesterday_picks = [p for p in mlb_picks if p.get('gameTime', '')[:10] == yesterday] or mlb_picks
+    if mlb_picks or mlb_yest_games:
+        # Morning recap — use Firestore games (have actuals embedded) when available
         mlb_correct = mlb_total = 0
         hit_lines   = []
-        for p in yesterday_picks:
-            away, home = p.get('awayTeam', ''), p.get('homeTeam', '')
-            pick = p.get('pick', '')
-            act  = mlb_actuals.get((away, home))
-            if act:
-                ok = pick_correct_mlb(pick, away, home, act[0], act[1])
+        recap_source = mlb_yest_games or []
+        for g in recap_source:
+            pick  = g.get('pick', '')
+            if not pick:
+                continue
+            away, home = g.get('awayTeam', ''), g.get('homeTeam', '')
+            h_act = g.get('actualHomeScore')
+            a_act = g.get('actualAwayScore')
+            if h_act is not None and a_act is not None:
+                ok = pick_correct_mlb(pick, away, home, a_act, h_act)
                 if ok is not None:
                     mlb_total += 1
                     if ok:
                         mlb_correct += 1
-                        odds = p.get('odds', '')
+                        odds = g.get('odds', '')
                         hit_lines.append(f'✅ {pick} ML {odds}')
+        # Fallback: use actuals dict when no Firestore games
+        if not recap_source and mlb_picks:
+            for p in mlb_picks:
+                away, home = p.get('awayTeam', ''), p.get('homeTeam', '')
+                pick = p.get('pick', '')
+                act  = mlb_actuals.get((away, home))
+                if act:
+                    ok = pick_correct_mlb(pick, away, home, act[0], act[1])
+                    if ok is not None:
+                        mlb_total += 1
+                        if ok:
+                            mlb_correct += 1
+                            odds = p.get('odds', '')
+                            hit_lines.append(f'✅ {pick} ML {odds}')
 
         lines = [f'⚾ MLB Model — {date_lbl}', '']
         if mlb_total:
@@ -471,27 +574,30 @@ def main():
     else:
         print('[Email] soccer-today.json not found — skipping soccer section.')
 
-    # MLB results — use archived yesterday picks so date filter matches correctly
-    if os.path.exists(YESTERDAY_PICKS_PATH):
-        with open(YESTERDAY_PICKS_PATH, encoding='utf-8') as f:
-            mlb_picks_yest = json.load(f)
-        mlb_actuals = fetch_mlb_actuals(yesterday_dt)
-        mlb_html = build_mlb_section_with_actuals(mlb_picks_yest, yesterday, mlb_actuals)
+    # MLB results — pull from Firestore (has every game + accurate predicted scores)
+    mlb_fs_games = fetch_mlb_from_firestore(yesterday)
+    if mlb_fs_games:
+        mlb_html = build_mlb_section_firestore(mlb_fs_games, yesterday)
         if mlb_html:
             sections.append(mlb_html)
-        else:
-            print('[Email] No yesterday MLB picks matched — skipping MLB section.')
-    elif os.path.exists(PICKS_PATH):
-        # Fallback: top-picks.json not yet rotated (first run ever)
-        with open(PICKS_PATH, encoding='utf-8') as f:
-            mlb_picks_yest = json.load(f)
-        mlb_actuals = fetch_mlb_actuals(yesterday_dt)
-        mlb_html = build_mlb_section_with_actuals(mlb_picks_yest, yesterday, mlb_actuals)
-        if mlb_html:
-            sections.append(mlb_html)
-        print('[Email] top-picks-yesterday.json missing — fell back to top-picks.json')
+        # Build actuals dict for the tweet morning recap (yesterday W/L record)
+        for g in mlb_fs_games:
+            h_act = g.get('actualHomeScore')
+            a_act = g.get('actualAwayScore')
+            if h_act is not None and a_act is not None:
+                mlb_actuals[(g.get('awayTeam', ''), g.get('homeTeam', ''))] = (a_act, h_act)
+        mlb_picks_yest = mlb_fs_games  # expose for tweet draft morning recap
     else:
-        print('[Email] No MLB picks file found — skipping MLB section.')
+        # Fallback to archived file if Firestore unavailable
+        print('[Email] Firestore returned no games — falling back to top-picks-yesterday.json')
+        src = YESTERDAY_PICKS_PATH if os.path.exists(YESTERDAY_PICKS_PATH) else PICKS_PATH
+        if os.path.exists(src):
+            with open(src, encoding='utf-8') as f:
+                mlb_picks_yest = json.load(f)
+            mlb_actuals = fetch_mlb_actuals(yesterday_dt)
+            mlb_html = build_mlb_section_with_actuals(mlb_picks_yest, yesterday, mlb_actuals)
+            if mlb_html:
+                sections.append(mlb_html)
 
     # Today's picks for tweet draft
     if os.path.exists(PICKS_PATH):
@@ -510,8 +616,12 @@ def main():
         print('[Email] No data available — skipping.')
         sys.exit(0)
 
-    # Tweet drafts — use today's MLB picks so the afternoon tweet box has fresh data
-    tweet_html = build_tweet_drafts(soccer_data, mlb_picks_today, mlb_actuals, nfl_picks, yesterday, today_str)
+    # Tweet drafts — afternoon box uses today's picks; morning recap uses Firestore games
+    tweet_html = build_tweet_drafts(
+        soccer_data, mlb_picks_today, mlb_actuals, nfl_picks,
+        yesterday, today_str,
+        mlb_yest_games=mlb_fs_games if mlb_fs_games else None,
+    )
 
     body = '\n<br>\n'.join(sections)
     html = f"""<!DOCTYPE html>
