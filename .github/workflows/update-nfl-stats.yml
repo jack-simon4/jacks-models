@@ -39,6 +39,7 @@ jobs:
         run: python scripts/generate_nfl_picks.py
 
       - name: Post NFL picks tweet
+        continue-on-error: true
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
           TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}

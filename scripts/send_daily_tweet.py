@@ -123,12 +123,16 @@ def post_tweets(tweets: list[str]):
 
     reply_to = None
     for i, text in enumerate(tweets):
-        if reply_to:
-            resp = client.create_tweet(text=text, in_reply_to_tweet_id=reply_to)
-        else:
-            resp = client.create_tweet(text=text)
-        reply_to = resp.data['id']
-        print(f'[Tweet {i+1}] Posted (id={reply_to}): {text[:60]}...')
+        try:
+            if reply_to:
+                resp = client.create_tweet(text=text, in_reply_to_tweet_id=reply_to)
+            else:
+                resp = client.create_tweet(text=text)
+            reply_to = resp.data['id']
+            print(f'[Tweet {i+1}] Posted (id={reply_to}): {text[:60]}...')
+        except Exception as exc:
+            print(f'[Tweet {i+1}] Failed: {exc}')
+            break
 
 
 def main():

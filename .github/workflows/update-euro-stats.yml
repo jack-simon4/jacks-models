@@ -35,6 +35,7 @@ jobs:
         run: python scripts/fetch_euro_stats.py
 
       - name: Post daily picks tweet
+        continue-on-error: true
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
           TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
@@ -43,6 +44,7 @@ jobs:
         run: python scripts/send_daily_tweet.py
 
       - name: Send daily results email
+        continue-on-error: true
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}

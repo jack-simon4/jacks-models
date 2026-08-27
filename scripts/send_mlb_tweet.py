@@ -88,8 +88,11 @@ def main():
         access_token=ACC_TOKEN,
         access_token_secret=ACC_SECRET,
     )
-    resp = client.create_tweet(text=tweet)
-    print(f'[MLB Tweet] Posted (id={resp.data["id"]})')
+    try:
+        resp = client.create_tweet(text=tweet)
+        print(f'[MLB Tweet] Posted (id={resp.data["id"]})')
+    except Exception as exc:
+        print(f'[MLB Tweet] Failed: {exc}')
 
 
 if __name__ == '__main__':
