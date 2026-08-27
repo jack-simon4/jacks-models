@@ -140,6 +140,16 @@ export class ResultsComponent implements OnInit {
     return Math.ceil(this.filteredGames.length / PAGE_SIZE);
   }
 
+  get pageWindow(): number[] {
+    const size = 10;
+    let start = Math.max(0, this.currentPage - Math.floor(size / 2));
+    const end = Math.min(this.totalPages - 1, start + size - 1);
+    start = Math.max(0, end - size + 1);
+    const pages: number[] = [];
+    for (let i = start; i <= end; i++) pages.push(i);
+    return pages;
+  }
+
   get totalCorrect(): number {
     return this.filteredGames.filter(g => this.isPredictionCorrect(g)).length;
   }

@@ -97,14 +97,16 @@
 
     <!-- Pagination -->
     <div class="pagination" *ngIf="!loading && totalPages > 1">
+      <button class="page-btn" [disabled]="currentPage === 0" (click)="goToPage(0)">«</button>
       <button class="page-btn" [disabled]="currentPage === 0" (click)="goToPage(currentPage - 1)">‹</button>
       <button
-        *ngFor="let p of [].constructor(totalPages); let i = index"
+        *ngFor="let i of pageWindow"
         class="page-btn"
         [class.active]="currentPage === i"
         (click)="goToPage(i)"
       >{{ i + 1 }}</button>
       <button class="page-btn" [disabled]="currentPage === totalPages - 1" (click)="goToPage(currentPage + 1)">›</button>
+      <button class="page-btn" [disabled]="currentPage === totalPages - 1" (click)="goToPage(totalPages - 1)">»</button>
     </div>
   </div>
 
