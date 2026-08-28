@@ -42,9 +42,18 @@
   >
     <div class="pick-rank">#{{ pick.rank }}</div>
     <div class="pick-info">
-      <div class="matchup">{{ pick.matchup }}</div>
-      <div class="pitchers">{{ pick.awayPitcher }} vs {{ pick.homePitcher }}</div>
-      <div class="prediction">{{ pick.prediction }}</div>
+      <div class="pick-header">
+        <span class="sport-chip" [ngClass]="'sport-' + pick.sport.toLowerCase()">
+          {{ pick.league || pick.sport }}
+        </span>
+        <span class="matchup">{{ pick.matchup }}</span>
+      </div>
+      <div class="pick-line">
+        <span class="pick-team">{{ pick.pick }}</span>
+        <span class="pick-prob">&nbsp;{{ (pick.winProb * 100).toFixed(0) }}%</span>
+        <span *ngIf="pick.odds" class="pick-odds">&nbsp;{{ pick.odds }}</span>
+      </div>
+      <div class="predicted-score">{{ pick.predictedScore }}</div>
     </div>
     <div class="confidence">{{ pick.confidence }}</div>
   </div>

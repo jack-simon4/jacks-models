@@ -114,20 +114,59 @@
   padding: 0 15px;
 }
 
+.pick-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.sport-chip {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.sport-mlb     { background: #1a3a5c; color: #7ec8e3; }
+.sport-nfl     { background: #5c1a1a; color: #f5a623; }
+.sport-ncaaf   { background: #3d1a5c; color: #c97ff5; }
+.sport-soccer  { background: #1a5c2a; color: #7ef5a0; }
+
 .matchup {
   font-weight: bold;
   color: #ecf0f1;
 }
 
-.pitchers {
-  color: #c5c3c5;
-  font-size: 12px;
+.pick-line {
+  display: flex;
+  align-items: baseline;
   margin: 2px 0;
 }
 
-.prediction {
-  color: #ffffff;
-  font-size: 14px;
+.pick-team {
+  font-weight: 700;
+  color: #00ff95;
+  font-size: 15px;
+}
+
+.pick-prob {
+  color: #00ff95;
+  font-size: 13px;
+}
+
+.pick-odds {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.predicted-score {
+  color: #c5c3c5;
+  font-size: 12px;
 }
 
 .confidence {
