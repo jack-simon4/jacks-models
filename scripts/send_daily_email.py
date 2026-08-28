@@ -25,6 +25,7 @@ TODAY_PATH           = os.path.join(ASSETS, 'soccer-today.json')
 PICKS_PATH           = os.path.join(ASSETS, 'top-picks.json')
 YESTERDAY_PICKS_PATH = os.path.join(ASSETS, 'top-picks-yesterday.json')
 NFL_PATH             = os.path.join(ASSETS, 'nfl-picks.json')
+NCAAF_PATH           = os.path.join(ASSETS, 'ncaaf-picks.json')
 
 GMAIL_USER  = os.environ.get('GMAIL_USER', '')
 GMAIL_PASS  = os.environ.get('GMAIL_APP_PASSWORD', '')
@@ -416,6 +417,67 @@ def build_nfl_section(picks: list) -> str:
     </table>"""
 
 
+# ── NCAAF section ────────────────────────────────────────────────────────────
+
+def build_ncaaf_section(picks: list) -> str:
+    if not picks:
+        return ''
+
+    # Only show games in the next 7 days
+    now = datetime.now(timezone.utc)
+    upcoming = []
+    for p in picks:
+        try:
+            gt = datetime.fromisoformat(p.get('gameTime', '').replace('Z', '+00:00'))
+            if gt >= now:
+                upcoming.append((gt, p))
+        except (ValueError, AttributeError):
+            upcoming.append((now, p))
+
+    upcoming.sort(key=lambda x: x[0])
+    top = [p for _, p in upcoming[:8]]
+    if not top:
+        return ''
+
+    rows = ''
+    for p in top:
+        home = p['homeTeam']
+        away = p['awayTeam']
+        pick = p['pick']
+        wp   = round(p['winProb'] * 100)
+        h_sc = p['homePredicted']
+        a_sc = p['awayPredicted']
+        conf = p.get('confidence', '')
+        cc   = '#28a745' if wp >= 70 else ('#856404' if wp >= 60 else '#6c757d')
+        try:
+            gt_str = datetime.fromisoformat(p['gameTime'].replace('Z', '+00:00')).strftime('%a %-m/%-d %-I %p UTC')
+        except Exception:
+            gt_str = ''
+        rows += f"""
+        <tr>
+          <td style="{TD}">{away} @ {home}</td>
+          <td style="{TD};color:#555;font-size:12px">{gt_str}</td>
+          <td style="{TD};font-weight:bold;color:{cc}">{pick} ({wp}%)</td>
+          <td style="{TD};text-align:center;color:#555">{a_sc}–{h_sc}</td>
+          <td style="{TD};text-align:center;font-size:12px">{conf}</td>
+        </tr>"""
+
+    return f"""
+    <h3 style="border-bottom:2px solid #1a1a2e;padding-bottom:6px;margin-top:24px">
+      🏈 College Football Top Picks &nbsp;<span style="font-size:14px;color:#666">This Week</span>
+    </h3>
+    <table style="border-collapse:collapse;width:100%;font-size:14px">
+      <thead><tr style="{TABLE_HEADER_STYLE}">
+        <th style="padding:8px;text-align:left">Matchup</th>
+        <th style="padding:8px;text-align:left">Kickoff</th>
+        <th style="padding:8px;text-align:left">Pick</th>
+        <th style="padding:8px;text-align:center">Predicted Score</th>
+        <th style="padding:8px;text-align:center">Confidence</th>
+      </tr></thead>
+      <tbody>{rows}</tbody>
+    </table>"""
+
+
 # ── Tweet drafts ─────────────────────────────────────────────────────────────
 
 LEAGUE_FLAG = {
@@ -649,6 +711,14 @@ def main():
         nfl_html = build_nfl_section(nfl_picks)
         if nfl_html:
             sections.append(nfl_html)
+
+    # NCAAF
+    if os.path.exists(NCAAF_PATH):
+        with open(NCAAF_PATH, encoding='utf-8') as f:
+            ncaaf_picks = json.load(f)
+        ncaaf_html = build_ncaaf_section(ncaaf_picks)
+        if ncaaf_html:
+            sections.append(ncaaf_html)
 
     if not sections:
         print('[Email] No data available — skipping.')
