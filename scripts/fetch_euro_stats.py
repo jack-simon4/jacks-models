@@ -644,6 +644,7 @@ def save_to_firestore(all_matches: dict[str, list], stats: dict):
                     'actualAwayScore':    int(actual_away) if actual_away is not None else None,
                     'winProb':            wp,
                     'gameDate':           game_time[:10],
+                    'gameTime':           game_time,
                     'matchId':            m.get('id'),
                     'timestamp':          fb_firestore.SERVER_TIMESTAMP,
                 })

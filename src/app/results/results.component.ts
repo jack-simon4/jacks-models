@@ -178,7 +178,7 @@ export class ResultsComponent implements OnInit {
 
   loadGames() {
     this.firestore
-      .collection('games', ref => ref.orderBy('timestamp', 'desc').limit(600))
+      .collection('games', ref => ref.orderBy('timestamp', 'desc').limit(1500))
       .snapshotChanges()
       .subscribe(logs => {
         this.games = logs.map(log => {

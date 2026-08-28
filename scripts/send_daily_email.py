@@ -62,9 +62,45 @@ TD = 'padding:8px;border-bottom:1px solid #ddd'
 
 # ── Soccer section ────────────────────────────────────────────────────────────
 
-def build_soccer_section(data: dict, yesterday: str, today_str: str) -> str:
-    results  = [r for r in data.get('recentResults', []) if r.get('gameDate') == yesterday]
-    results.sort(key=lambda x: x.get('gameTime', ''))
+SOCCER_SPORTS = ['Premier League', 'La Liga', 'Serie A', 'Bundesliga', 'Ligue 1']
+
+
+def fetch_soccer_from_firestore(yesterday: str) -> list:
+    """Return yesterday's soccer game docs from Firestore with original predicted scores."""
+    sa_json = os.environ.get('FIREBASE_SERVICE_ACCOUNT')
+    if not sa_json:
+        print('[Email] FIREBASE_SERVICE_ACCOUNT not set — skipping Firestore soccer fetch.')
+        return []
+    try:
+        import firebase_admin
+        from firebase_admin import credentials, firestore as fb_firestore
+        cred = credentials.Certificate(json.loads(sa_json))
+        app  = firebase_admin.initialize_app(cred, name='email_soccer')
+        db   = fb_firestore.client(app)
+        docs = db.collection('games').where('sport', 'in', SOCCER_SPORTS).stream()
+        games = []
+        for d in docs:
+            data = d.to_dict()
+            if data.get('gameDate') == yesterday and data.get('actualHomeScore') is not None:
+                data.setdefault('league', data.get('sport', ''))
+                games.append(data)
+        firebase_admin.delete_app(app)
+        games.sort(key=lambda g: g.get('gameTime', g.get('gameDate', '')))
+        print(f'[Email] Firestore soccer: {len(games)} finished games for {yesterday}')
+        return games
+    except Exception as exc:
+        print(f'[Email] Firestore soccer fetch error: {exc}')
+        return []
+
+
+def build_soccer_section(data: dict, yesterday: str, today_str: str,
+                          firestore_results: list | None = None) -> str:
+    # Use Firestore results (original predicted scores) when available; fall back to json
+    if firestore_results is not None:
+        results = firestore_results
+    else:
+        results = [r for r in data.get('recentResults', []) if r.get('gameDate') == yesterday]
+        results.sort(key=lambda x: x.get('gameTime', ''))
     correct  = sum(1 for r in results
                    if pick_correct_soccer(r['predictedHomeScore'], r['predictedAwayScore'],
                                           r.get('actualHomeScore'), r.get('actualAwayScore')) is True)
@@ -570,7 +606,9 @@ def main():
     if os.path.exists(TODAY_PATH):
         with open(TODAY_PATH, encoding='utf-8') as f:
             soccer_data = json.load(f)
-        sections.append(build_soccer_section(soccer_data, yesterday, today_str))
+        soccer_fs = fetch_soccer_from_firestore(yesterday)
+        sections.append(build_soccer_section(soccer_data, yesterday, today_str,
+                                              firestore_results=soccer_fs if soccer_fs else None))
     else:
         print('[Email] soccer-today.json not found — skipping soccer section.')
 
