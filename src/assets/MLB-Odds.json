@@ -9,15 +9,15 @@
   "Athletics": {
     "home_team": "Athletics",
     "away_team": "Baltimore Orioles",
-    "home_ml": "+100",
-    "away_ml": "-115",
+    "home_ml": "+1600",
+    "away_ml": "-2000",
     "book": "fanduel"
   },
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Arizona Diamondbacks",
-    "home_ml": "+440",
-    "away_ml": "-550",
+    "home_ml": "+3100",
+    "away_ml": "-4000",
     "book": "fanduel"
   },
   "New York Yankees": {
