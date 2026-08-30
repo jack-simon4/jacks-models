@@ -1,5 +1,24 @@
 [
   {
+    "matchup": "Baltimore Orioles @ Athletics",
+    "awayTeam": "Baltimore Orioles",
+    "homeTeam": "Athletics",
+    "awayPitcher": "Chris Bassitt",
+    "homePitcher": "Jeffrey Springs",
+    "pick": "Baltimore Orioles",
+    "prediction": "Baltimore Orioles -146",
+    "odds": "-146",
+    "winProb": 0.641,
+    "edge": 0.141,
+    "confidence": "Elite",
+    "predictedScore": "Baltimore Orioles 7.5 \u2013 Athletics 5.6",
+    "predictedHomeScore": 5.62,
+    "predictedAwayScore": 7.55,
+    "gameTime": "2026-08-30T20:05:00Z",
+    "gamePk": 824959,
+    "rank": 1
+  },
+  {
     "matchup": "Philadelphia Phillies @ Los Angeles Angels",
     "awayTeam": "Philadelphia Phillies",
     "homeTeam": "Los Angeles Angels",
@@ -8,15 +27,15 @@
     "pick": "Philadelphia Phillies",
     "prediction": "Philadelphia Phillies -178",
     "odds": "-178",
-    "winProb": 0.637,
-    "edge": 0.137,
+    "winProb": 0.638,
+    "edge": 0.138,
     "confidence": "Strong",
     "predictedScore": "Philadelphia Phillies 6.3 \u2013 Los Angeles Angels 4.4",
-    "predictedHomeScore": 4.42,
+    "predictedHomeScore": 4.41,
     "predictedAwayScore": 6.3,
     "gameTime": "2026-08-30T20:07:00Z",
     "gamePk": 823987,
-    "rank": 1
+    "rank": 2
   },
   {
     "matchup": "San Diego Padres @ Tampa Bay Rays",
@@ -25,8 +44,8 @@
     "awayPitcher": "Robbie Ray",
     "homePitcher": "Drew Rasmussen",
     "pick": "Tampa Bay Rays",
-    "prediction": "Tampa Bay Rays -164",
-    "odds": "-164",
+    "prediction": "Tampa Bay Rays -158",
+    "odds": "-158",
     "winProb": 0.616,
     "edge": 0.116,
     "confidence": "Strong",
@@ -35,7 +54,7 @@
     "predictedAwayScore": 3.89,
     "gameTime": "2026-08-30T17:40:00Z",
     "gamePk": 822933,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Seattle Mariners @ Toronto Blue Jays",
@@ -44,8 +63,8 @@
     "awayPitcher": "Logan Gilbert",
     "homePitcher": "Max Scherzer",
     "pick": "Seattle Mariners",
-    "prediction": "Seattle Mariners -138",
-    "odds": "-138",
+    "prediction": "Seattle Mariners -132",
+    "odds": "-132",
     "winProb": 0.591,
     "edge": 0.091,
     "confidence": "Strong",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 6.14,
     "gameTime": "2026-08-30T17:37:00Z",
     "gamePk": 822766,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Pittsburgh Pirates @ St. Louis Cardinals",
@@ -63,8 +82,8 @@
     "awayPitcher": "Braxton Ashcraft",
     "homePitcher": "Matthew Liberatore",
     "pick": "Pittsburgh Pirates",
-    "prediction": "Pittsburgh Pirates -120",
-    "odds": "-120",
+    "prediction": "Pittsburgh Pirates -114",
+    "odds": "-114",
     "winProb": 0.586,
     "edge": 0.086,
     "confidence": "Strong",
@@ -73,6 +92,6 @@
     "predictedAwayScore": 5.71,
     "gameTime": "2026-08-30T18:15:00Z",
     "gamePk": 823010,
-    "rank": 4
+    "rank": 5
   }
 ]
