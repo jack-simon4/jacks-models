@@ -1,16 +1,9 @@
 {
-  "Chicago Cubs": {
-    "home_team": "Chicago Cubs",
-    "away_team": "Milwaukee Brewers",
-    "home_ml": "-112",
-    "away_ml": "-104",
-    "book": "fanduel"
-  },
   "Atlanta Braves": {
     "home_team": "Atlanta Braves",
     "away_team": "San Francisco Giants",
-    "home_ml": "-154",
-    "away_ml": "+130",
+    "home_ml": "-166",
+    "away_ml": "+140",
     "book": "fanduel"
   },
   "Cincinnati Reds": {
@@ -23,8 +16,8 @@
   "Tampa Bay Rays": {
     "home_team": "Tampa Bay Rays",
     "away_team": "New York Mets",
-    "home_ml": "-162",
-    "away_ml": "+136",
+    "home_ml": "-168",
+    "away_ml": "+142",
     "book": "fanduel"
   },
   "Boston Red Sox": {
@@ -41,6 +34,13 @@
     "away_ml": "-120",
     "book": "fanduel"
   },
+  "Chicago Cubs": {
+    "home_team": "Chicago Cubs",
+    "away_team": "Milwaukee Brewers",
+    "home_ml": "-112",
+    "away_ml": "-104",
+    "book": "fanduel"
+  },
   "Minnesota Twins": {
     "home_team": "Minnesota Twins",
     "away_team": "Detroit Tigers",
@@ -51,8 +51,8 @@
   "Texas Rangers": {
     "home_team": "Texas Rangers",
     "away_team": "Athletics",
-    "home_ml": "-215",
-    "away_ml": "+180",
+    "home_ml": "-225",
+    "away_ml": "+188",
     "book": "fanduel"
   },
   "Houston Astros": {
