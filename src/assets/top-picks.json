@@ -1,24 +1,5 @@
 [
   {
-    "matchup": "San Francisco Giants @ Atlanta Braves",
-    "awayTeam": "San Francisco Giants",
-    "homeTeam": "Atlanta Braves",
-    "awayPitcher": "Anthony Molina",
-    "homePitcher": "Bryce Elder",
-    "pick": "Atlanta Braves",
-    "prediction": "Atlanta Braves -190",
-    "odds": "-190",
-    "winProb": 0.731,
-    "edge": 0.231,
-    "confidence": "Elite",
-    "predictedScore": "San Francisco Giants 4.9 \u2013 Atlanta Braves 8.2",
-    "predictedHomeScore": 8.22,
-    "predictedAwayScore": 4.88,
-    "gameTime": "2026-08-31T22:05:00Z",
-    "gamePk": 824911,
-    "rank": 1
-  },
-  {
     "matchup": "Athletics @ Texas Rangers",
     "awayTeam": "Athletics",
     "homeTeam": "Texas Rangers",
@@ -35,7 +16,7 @@
     "predictedAwayScore": 4.42,
     "gameTime": "2026-09-01T00:05:00Z",
     "gamePk": 822855,
-    "rank": 2
+    "rank": 1
   },
   {
     "matchup": "New York Mets @ Tampa Bay Rays",
@@ -44,8 +25,8 @@
     "awayPitcher": "Robert Stock",
     "homePitcher": "Ian Seymour",
     "pick": "Tampa Bay Rays",
-    "prediction": "Tampa Bay Rays -126",
-    "odds": "-126",
+    "prediction": "Tampa Bay Rays -124",
+    "odds": "-124",
     "winProb": 0.588,
     "edge": 0.088,
     "confidence": "Strong",
@@ -54,6 +35,6 @@
     "predictedAwayScore": 4.93,
     "gameTime": "2026-08-31T22:40:00Z",
     "gamePk": 822932,
-    "rank": 3
+    "rank": 2
   }
 ]
