@@ -8,12 +8,12 @@
     "pick": "New York Yankees",
     "prediction": "New York Yankees -178",
     "odds": "-178",
-    "winProb": 0.623,
-    "edge": 0.123,
+    "winProb": 0.622,
+    "edge": 0.122,
     "confidence": "Strong",
     "predictedScore": "New York Yankees 5.9 \u2013 Los Angeles Angels 4.2",
-    "predictedHomeScore": 4.22,
-    "predictedAwayScore": 5.9,
+    "predictedHomeScore": 4.23,
+    "predictedAwayScore": 5.89,
     "gameTime": "2026-09-02T01:38:00Z",
     "gamePk": 823984,
     "rank": 1
@@ -38,25 +38,6 @@
     "rank": 2
   },
   {
-    "matchup": "Detroit Tigers @ Minnesota Twins",
-    "awayTeam": "Detroit Tigers",
-    "homeTeam": "Minnesota Twins",
-    "awayPitcher": "Troy Melton",
-    "homePitcher": "Connor Prielipp",
-    "pick": "Detroit Tigers",
-    "prediction": "Detroit Tigers -116",
-    "odds": "-116",
-    "winProb": 0.616,
-    "edge": 0.116,
-    "confidence": "Strong",
-    "predictedScore": "Detroit Tigers 6.1 \u2013 Minnesota Twins 4.5",
-    "predictedHomeScore": 4.52,
-    "predictedAwayScore": 6.09,
-    "gameTime": "2026-09-01T23:40:00Z",
-    "gamePk": 823661,
-    "rank": 3
-  },
-  {
     "matchup": "New York Mets @ Tampa Bay Rays",
     "awayTeam": "New York Mets",
     "homeTeam": "Tampa Bay Rays",
@@ -73,6 +54,25 @@
     "predictedAwayScore": 4.51,
     "gameTime": "2026-09-01T22:40:00Z",
     "gamePk": 822929,
+    "rank": 3
+  },
+  {
+    "matchup": "Detroit Tigers @ Minnesota Twins",
+    "awayTeam": "Detroit Tigers",
+    "homeTeam": "Minnesota Twins",
+    "awayPitcher": "Troy Melton",
+    "homePitcher": "Andrew Morris",
+    "pick": "Detroit Tigers",
+    "prediction": "Detroit Tigers -112",
+    "odds": "-112",
+    "winProb": 0.584,
+    "edge": 0.084,
+    "confidence": "Strong",
+    "predictedScore": "Detroit Tigers 5.7 \u2013 Minnesota Twins 4.5",
+    "predictedHomeScore": 4.52,
+    "predictedAwayScore": 5.65,
+    "gameTime": "2026-09-01T23:40:00Z",
+    "gamePk": 823661,
     "rank": 4
   }
 ]
