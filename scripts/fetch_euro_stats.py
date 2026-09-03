@@ -623,12 +623,21 @@ def save_to_firestore(all_matches: dict[str, list], stats: dict):
             existing = doc_ref.get()
 
             if existing.exists:
-                if actual_home is not None and existing.to_dict().get('actualHomeScore') is None:
-                    doc_ref.update({
-                        'actualHomeScore': int(actual_home),
-                        'actualAwayScore': int(actual_away),
-                    })
-                    print(f'  [Updated] {away_csv} @ {home_csv}: {actual_away}-{actual_home}')
+                existing_data  = existing.to_dict()
+                needs_scores   = actual_home is not None and existing_data.get('actualHomeScore') is None
+                needs_gametime = not existing_data.get('gameTime') and game_time
+
+                if needs_scores or needs_gametime:
+                    update_data = {}
+                    if needs_scores:
+                        update_data['actualHomeScore'] = int(actual_home)
+                        update_data['actualAwayScore'] = int(actual_away)
+                        print(f'  [Updated] {away_csv} @ {home_csv}: {actual_away}-{actual_home}')
+                    if needs_gametime:
+                        update_data['gameTime'] = game_time
+                        update_data['gameDate'] = game_time[:10]
+                        print(f'  [Patched gameTime] {away_csv} @ {home_csv}: {game_time}')
+                    doc_ref.update(update_data)
                     updated += 1
             else:
                 if status not in ('FINISHED', 'SCHEDULED', 'TIMED', *ACTIVE_STATUSES):
