@@ -1,23 +1,9 @@
 {
-  "Cleveland Guardians": {
-    "home_team": "Cleveland Guardians",
-    "away_team": "Toronto Blue Jays",
-    "home_ml": "-108",
-    "away_ml": "-108",
-    "book": "fanduel"
-  },
-  "Tampa Bay Rays": {
-    "home_team": "Tampa Bay Rays",
-    "away_team": "New York Mets",
-    "home_ml": "+1400",
-    "away_ml": "-6000",
-    "book": "fanduel"
-  },
   "Pittsburgh Pirates": {
     "home_team": "Pittsburgh Pirates",
     "away_team": "San Francisco Giants",
-    "home_ml": "+176",
-    "away_ml": "-230",
+    "home_ml": "-152",
+    "away_ml": "+128",
     "book": "fanduel"
   },
   "Chicago Cubs": {
@@ -30,8 +16,8 @@
   "Minnesota Twins": {
     "home_team": "Minnesota Twins",
     "away_team": "Detroit Tigers",
-    "home_ml": "+118",
-    "away_ml": "-150",
+    "home_ml": "+630",
+    "away_ml": "-1200",
     "book": "fanduel"
   },
   "Kansas City Royals": {
@@ -52,7 +38,7 @@
     "home_team": "Los Angeles Angels",
     "away_team": "New York Yankees",
     "home_ml": "+136",
-    "away_ml": "-162",
+    "away_ml": "-174",
     "book": "fanduel"
   },
   "Los Angeles Dodgers": {
@@ -60,6 +46,13 @@
     "away_team": "St. Louis Cardinals",
     "home_ml": "-300",
     "away_ml": "+245",
+    "book": "fanduel"
+  },
+  "Cleveland Guardians": {
+    "home_team": "Cleveland Guardians",
+    "away_team": "Toronto Blue Jays",
+    "home_ml": "-108",
+    "away_ml": "-108",
     "book": "fanduel"
   },
   "Baltimore Orioles": {
