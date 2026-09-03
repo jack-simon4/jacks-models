@@ -2,12 +2,12 @@ name: Update NCAAF Stats (Weekly)
 
 on:
   schedule:
-    # Thursday 8 AM ET (12:00 UTC) — picks for Thursday night games
-    - cron: '0 12 * * 4'
-    # Friday 8 AM ET (12:00 UTC) — picks for Friday night games
-    - cron: '0 12 * * 5'
-    # Saturday 8 AM ET (12:00 UTC) — picks for Saturday games
-    - cron: '0 12 * * 6'
+    # Thursday 7 AM ET (11:00 UTC) — picks for Thursday night games
+    - cron: '0 11 * * 4'
+    # Friday 7 AM ET (11:00 UTC) — picks for Friday night games
+    - cron: '0 11 * * 5'
+    # Saturday 7 AM ET (11:00 UTC) — picks for Saturday games
+    - cron: '0 11 * * 6'
     # Sunday 2 AM ET (06:00 UTC) — captures Saturday results, updates stats
     - cron: '0 6 * * 0'
     # Monday 2 AM ET (06:00 UTC) — captures Sunday game results
@@ -41,6 +41,7 @@ jobs:
       - name: Generate NCAAF picks
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
         run: python scripts/generate_ncaaf_picks.py
 
       - name: Commit updated NCAAF stats and picks

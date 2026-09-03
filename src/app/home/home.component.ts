@@ -52,8 +52,8 @@ export class HomeComponent implements OnInit {
 
   private normalizeFootball(p: any, sport: 'NFL' | 'NCAAF'): UnifiedPick | null {
     if (!p.confidence) return null;
-    const aSc = p.awayPredicted ?? 0;
-    const hSc = p.homePredicted ?? 0;
+    const aSc = p.predictedAwayScore ?? p.awayPredicted ?? 0;
+    const hSc = p.predictedHomeScore ?? p.homePredicted ?? 0;
     const aAbbr = (p.awayTeam ?? '').slice(0, 4).toUpperCase();
     const hAbbr = (p.homeTeam ?? '').slice(0, 4).toUpperCase();
     return {
