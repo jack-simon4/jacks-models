@@ -6,13 +6,6 @@
     "away_ml": "+118",
     "book": "fanduel"
   },
-  "Cincinnati Reds": {
-    "home_team": "Cincinnati Reds",
-    "away_team": "Milwaukee Brewers",
-    "home_ml": "+136",
-    "away_ml": "-162",
-    "book": "fanduel"
-  },
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "Atlanta Braves",
@@ -37,8 +30,8 @@
   "Miami Marlins": {
     "home_team": "Miami Marlins",
     "away_team": "Chicago Cubs",
-    "home_ml": "+136",
-    "away_ml": "-162",
+    "home_ml": "+140",
+    "away_ml": "-166",
     "book": "fanduel"
   },
   "New York Mets": {
@@ -46,6 +39,13 @@
     "away_team": "San Francisco Giants",
     "home_ml": "-180",
     "away_ml": "+152",
+    "book": "fanduel"
+  },
+  "Cincinnati Reds": {
+    "home_team": "Cincinnati Reds",
+    "away_team": "Milwaukee Brewers",
+    "home_ml": "+136",
+    "away_ml": "-162",
     "book": "fanduel"
   },
   "Chicago White Sox": {
