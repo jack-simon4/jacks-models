@@ -2,9 +2,10 @@
 Send a daily morning email covering all active sports:
   - Soccer: yesterday's results + today's upcoming picks (soccer-today.json)
   - MLB:    yesterday's top picks vs actual results (top-picks.json + statsapi)
+  - NCAAF:  yesterday's results (Firestore) + upcoming picks (ncaaf-picks.json)
   - NFL:    this week's top picks if nfl-picks.json exists and has entries
 
-Runs from the soccer workflow at 8 AM UTC.
+Runs from the soccer workflow at 12:30 UTC.
 
 Requires:
   GMAIL_USER         — sender Gmail address
@@ -419,11 +420,93 @@ def build_nfl_section(picks: list) -> str:
 
 # ── NCAAF section ────────────────────────────────────────────────────────────
 
-def build_ncaaf_section(picks: list) -> str:
+def fetch_ncaaf_from_firestore(yesterday: str) -> list:
+    """Return yesterday's finished NCAAF games from Firestore."""
+    sa_json = os.environ.get('FIREBASE_SERVICE_ACCOUNT')
+    if not sa_json:
+        print('[Email] FIREBASE_SERVICE_ACCOUNT not set — skipping Firestore NCAAF fetch.')
+        return []
+    try:
+        import firebase_admin
+        from firebase_admin import credentials, firestore as fb_firestore
+        cred = credentials.Certificate(json.loads(sa_json))
+        app  = firebase_admin.initialize_app(cred, name='email_ncaaf')
+        db   = fb_firestore.client(app)
+        docs = db.collection('games').where('sport', '==', 'NCAAF').stream()
+        games = []
+        for d in docs:
+            data = d.to_dict()
+            if data.get('gameDate') == yesterday and data.get('actualHomeScore') is not None:
+                games.append(data)
+        firebase_admin.delete_app(app)
+        games.sort(key=lambda g: g.get('gameTime', ''))
+        print(f'[Email] Firestore NCAAF: {len(games)} finished games for {yesterday}')
+        return games
+    except Exception as exc:
+        print(f'[Email] Firestore NCAAF fetch error: {exc}')
+        return []
+
+
+def build_ncaaf_results_section(games: list, yesterday: str) -> str:
+    if not games:
+        return ''
+
+    correct = total = 0
+    rows = ''
+    for g in games:
+        away   = g.get('awayTeam', '')
+        home   = g.get('homeTeam', '')
+        pick   = g.get('pick', '')
+        h_pred = g.get('predictedHomeScore', 0)
+        a_pred = g.get('predictedAwayScore', 0)
+        h_act  = g.get('actualHomeScore')
+        a_act  = g.get('actualAwayScore')
+        wp     = round(g.get('winProb', 0) * 100)
+        conf   = g.get('confidence', '')
+
+        ok  = pick_correct_mlb(pick, away, home, a_act, h_act)
+        bg  = '#d4edda' if ok else '#f8d7da'
+        icon = '✅' if ok else '❌'
+        if ok is not None:
+            total += 1
+            if ok: correct += 1
+
+        rows += f"""
+        <tr style="background:{bg}">
+          <td style="{TD}">{away} @ {home}</td>
+          <td style="{TD};font-weight:bold">{pick} ({wp}%)</td>
+          <td style="{TD};font-size:12px;color:#555">{a_pred:.1f}–{h_pred:.1f}</td>
+          <td style="{TD};text-align:center">{a_act}–{h_act}</td>
+          <td style="{TD};text-align:center">{icon}</td>
+        </tr>"""
+
+    if total:
+        pct     = round(correct / total * 100)
+        summary = f'<p style="font-size:17px;font-weight:bold;color:{summary_color(pct)}">{correct}/{total} correct ({pct}%)</p>'
+    else:
+        summary = ''
+
+    return f"""
+    <h3 style="border-bottom:2px solid #1a1a2e;padding-bottom:6px;margin-top:24px">
+      🏈 College Football &nbsp;<span style="font-size:14px;color:#666">Yesterday ({yesterday})</span>
+    </h3>
+    {summary}
+    <table style="border-collapse:collapse;width:100%;font-size:14px">
+      <thead><tr style="{TABLE_HEADER_STYLE}">
+        <th style="padding:8px;text-align:left">Matchup</th>
+        <th style="padding:8px;text-align:left">Pick</th>
+        <th style="padding:8px;text-align:left">Predicted</th>
+        <th style="padding:8px;text-align:center">Actual</th>
+        <th style="padding:8px"></th>
+      </tr></thead>
+      <tbody>{rows}</tbody>
+    </table>"""
+
+
+def build_ncaaf_picks_section(picks: list) -> str:
     if not picks:
         return ''
 
-    # Only show games in the next 7 days
     now = datetime.now(timezone.utc)
     upcoming = []
     for p in picks:
@@ -441,14 +524,14 @@ def build_ncaaf_section(picks: list) -> str:
 
     rows = ''
     for p in top:
-        home = p['homeTeam']
-        away = p['awayTeam']
-        pick = p['pick']
-        wp   = round(p['winProb'] * 100)
-        h_sc = p['homePredicted']
-        a_sc = p['awayPredicted']
-        conf = p.get('confidence', '')
-        cc   = '#28a745' if wp >= 70 else ('#856404' if wp >= 60 else '#6c757d')
+        home  = p['homeTeam']
+        away  = p['awayTeam']
+        pick  = p['pick']
+        wp    = round(p['winProb'] * 100)
+        h_sc  = p.get('predictedHomeScore', 0)
+        a_sc  = p.get('predictedAwayScore', 0)
+        conf  = p.get('confidence', '')
+        cc    = '#28a745' if wp >= 70 else ('#856404' if wp >= 60 else '#6c757d')
         try:
             gt_str = datetime.fromisoformat(p['gameTime'].replace('Z', '+00:00')).strftime('%a %-m/%-d %-I %p UTC')
         except Exception:
@@ -458,13 +541,13 @@ def build_ncaaf_section(picks: list) -> str:
           <td style="{TD}">{away} @ {home}</td>
           <td style="{TD};color:#555;font-size:12px">{gt_str}</td>
           <td style="{TD};font-weight:bold;color:{cc}">{pick} ({wp}%)</td>
-          <td style="{TD};text-align:center;color:#555">{a_sc}–{h_sc}</td>
+          <td style="{TD};text-align:center;color:#555">{a_sc:.1f}–{h_sc:.1f}</td>
           <td style="{TD};text-align:center;font-size:12px">{conf}</td>
         </tr>"""
 
     return f"""
     <h3 style="border-bottom:2px solid #1a1a2e;padding-bottom:6px;margin-top:24px">
-      🏈 College Football Top Picks &nbsp;<span style="font-size:14px;color:#666">This Week</span>
+      🏈 College Football Picks &nbsp;<span style="font-size:14px;color:#666">Upcoming</span>
     </h3>
     <table style="border-collapse:collapse;width:100%;font-size:14px">
       <thead><tr style="{TABLE_HEADER_STYLE}">
@@ -511,6 +594,8 @@ def build_tweet_drafts(
     yesterday: str,
     today_str: str,
     mlb_yest_games: list | None = None,
+    ncaaf_yest_games: list | None = None,
+    ncaaf_picks: list | None = None,
 ) -> str:
     now      = datetime.now(timezone.utc)
     date_lbl = now.strftime('%b %-d').replace(' 0', ' ')
@@ -618,6 +703,52 @@ def build_tweet_drafts(
         lines2.append('#MLB #BaseballPicks')
         drafts.append(_tweet_box('⚾ MLB — post at ~3 PM ET when today\'s picks are fresh', '\n'.join(lines2)))
 
+    # ── NCAAF tweet ──────────────────────────────────────────────────────────
+    if ncaaf_yest_games or ncaaf_picks:
+        ncaaf_correct = ncaaf_total = 0
+        for g in (ncaaf_yest_games or []):
+            pick  = g.get('pick', '')
+            away, home = g.get('awayTeam', ''), g.get('homeTeam', '')
+            h_act = g.get('actualHomeScore')
+            a_act = g.get('actualAwayScore')
+            if h_act is not None and a_act is not None:
+                ok = pick_correct_mlb(pick, away, home, a_act, h_act)
+                if ok is not None:
+                    ncaaf_total += 1
+                    if ok: ncaaf_correct += 1
+
+        now_utc  = datetime.now(timezone.utc)
+        upcoming = []
+        for p in (ncaaf_picks or []):
+            try:
+                gt = datetime.fromisoformat(p.get('gameTime', '').replace('Z', '+00:00'))
+                if gt >= now_utc:
+                    upcoming.append(p)
+            except (ValueError, AttributeError):
+                pass
+        upcoming.sort(key=lambda p: p.get('winProb', 0), reverse=True)
+
+        lines = [f'🏈 NCAAF Model — {date_lbl}', '']
+        if ncaaf_total:
+            pct = round(ncaaf_correct / ncaaf_total * 100)
+            lines.append(f'Yesterday: {ncaaf_correct}/{ncaaf_total} ({pct}%) {"✅" if pct >= 55 else "❌"}')
+            lines.append('')
+        if upcoming:
+            lines.append("Today's picks:")
+            for p in upcoming[:4]:
+                emoji = CONF_EMOJI.get(p.get('confidence', ''), '📊')
+                pick  = p.get('pick', '')
+                wp    = round(p.get('winProb', 0) * 100)
+                opp   = p.get('awayTeam') if p.get('homeTeam') == pick else p.get('homeTeam')
+                h_sc  = p.get('predictedHomeScore', 0)
+                a_sc  = p.get('predictedAwayScore', 0)
+                pred_str = f' ({a_sc:.1f}-{h_sc:.1f})' if h_sc or a_sc else ''
+                lines.append(f'{emoji} {pick} vs {opp} — {wp}%{pred_str}')
+            lines.append('')
+        lines.append(f'Full picks 👉 {MLB_URL}')
+        lines.append('#NCAAF #CollegeFootball #CFB #SportsBetting')
+        drafts.append(_tweet_box('🏈 NCAAF — post Thursday–Saturday morning', '\n'.join(lines)))
+
     # ── NFL tweet ────────────────────────────────────────────────────────────
     if nfl_picks:
         top  = nfl_picks[:5]
@@ -712,13 +843,23 @@ def main():
         if nfl_html:
             sections.append(nfl_html)
 
-    # NCAAF
+    # NCAAF results (Firestore) + upcoming picks (json)
+    ncaaf_picks_list   = None
+    ncaaf_yest_games   = []
+    ncaaf_results_html = ''
     if os.path.exists(NCAAF_PATH):
         with open(NCAAF_PATH, encoding='utf-8') as f:
-            ncaaf_picks = json.load(f)
-        ncaaf_html = build_ncaaf_section(ncaaf_picks)
-        if ncaaf_html:
-            sections.append(ncaaf_html)
+            ncaaf_picks_list = json.load(f)
+
+    ncaaf_yest_games = fetch_ncaaf_from_firestore(yesterday)
+    if ncaaf_yest_games:
+        ncaaf_results_html = build_ncaaf_results_section(ncaaf_yest_games, yesterday)
+        if ncaaf_results_html:
+            sections.append(ncaaf_results_html)
+
+    ncaaf_html = build_ncaaf_picks_section(ncaaf_picks_list or [])
+    if ncaaf_html:
+        sections.append(ncaaf_html)
 
     if not sections:
         print('[Email] No data available — skipping.')
@@ -729,6 +870,8 @@ def main():
         soccer_data, mlb_picks_today, mlb_actuals, nfl_picks,
         yesterday, today_str,
         mlb_yest_games=mlb_fs_games if mlb_fs_games else None,
+        ncaaf_yest_games=ncaaf_yest_games if ncaaf_yest_games else None,
+        ncaaf_picks=ncaaf_picks_list,
     )
 
     body = '\n<br>\n'.join(sections)
