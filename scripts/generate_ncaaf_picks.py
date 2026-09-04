@@ -27,6 +27,50 @@ ASSETS     = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'src
 STATS_PATH = os.path.join(ASSETS, 'NCAAF-Stats.csv')
 OUTPUT     = os.path.join(ASSETS, 'ncaaf-picks.json')
 
+# Maps CFBD API team names → NCAAF-Stats.csv team names (inverse of fetch_ncaaf_stats.TEAM_NAME_MAP)
+CFBD_TO_CSV: dict[str, str] = {
+    'Appalachian State':    'App State',
+    'Arizona State':        'Arizona St',
+    'Arkansas State':       'Arkansas St',
+    'Ball State':           'Ball St',
+    'Boise State':          'Boise St',
+    'Central Michigan':     'C Michigan',
+    'Coastal Carolina':     'Coastal Car',
+    'Colorado State':       'Colorado St',
+    'East Carolina':        'E Carolina',
+    'Eastern Michigan':     'E Michigan',
+    'Florida International':'Florida Intl',
+    'Florida State':        'Florida St',
+    'Fresno State':         'Fresno St',
+    'Georgia Southern':     'Georgia So',
+    'Georgia State':        'Georgia St',
+    'Hawaii':               "Hawai'i",
+    'James Madison':        'J Madison',
+    'Jacksonville State':   'Jacksonville St',
+    'Kansas State':         'Kansas St',
+    'Kent State':           'Kent St',
+    'Miami (OH)':           'Miami OH',
+    'Middle Tennessee':     'Middle Tenn',
+    'Ole Miss':             'Mississippi',
+    'Mississippi State':    'Mississippi St',
+    'Northern Illinois':    'N Illinois',
+    'North Texas':          'N Texas',
+    'New Mexico State':     'New Mexico St',
+    'Penn State':           'Penn St',
+    'South Alabama':        'S Alabama',
+    'South Florida':        'S Florida',
+    'San Diego State':      'San Diego St',
+    'San Jose State':       'San Jose St',
+    'Texas State':          'Texas St',
+    'Connecticut':          'UConn',
+    'Louisiana Monroe':     'UL Monroe',
+    'Massachusetts':        'UMass',
+    'Utah State':           'Utah St',
+    'Western Kentucky':     'W Kentucky',
+    'Western Michigan':     'W Michigan',
+    'Washington State':     'Washington St',
+}
+
 
 def load_stats() -> dict:
     """Parse NCAAF-Stats.csv by column position (has duplicate 'Last 3' headers)."""
@@ -210,8 +254,8 @@ def generate_ncaaf_picks():
     for g in games:
         game_id   = g.get('id')
         start_raw = g.get('start_date', '')
-        home      = g.get('home_team', '')
-        away      = g.get('away_team', '')
+        home      = CFBD_TO_CSV.get(g.get('home_team', ''), g.get('home_team', ''))
+        away      = CFBD_TO_CSV.get(g.get('away_team', ''), g.get('away_team', ''))
         h_pts     = g.get('home_points')
         a_pts     = g.get('away_points')
 
