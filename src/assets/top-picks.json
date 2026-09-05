@@ -1,22 +1,41 @@
 [
   {
+    "matchup": "San Francisco Giants @ New York Mets",
+    "awayTeam": "San Francisco Giants",
+    "homeTeam": "New York Mets",
+    "awayPitcher": "Anthony Molina",
+    "homePitcher": "Zac Thornton",
+    "pick": "New York Mets",
+    "prediction": "New York Mets -149",
+    "odds": "-149",
+    "winProb": 0.711,
+    "edge": 0.211,
+    "confidence": "Elite",
+    "predictedScore": "San Francisco Giants 4.4 \u2013 New York Mets 7.4",
+    "predictedHomeScore": 7.43,
+    "predictedAwayScore": 4.43,
+    "gameTime": "2026-09-05T20:10:00Z",
+    "gamePk": 823577,
+    "rank": 1
+  },
+  {
     "matchup": "Athletics @ Seattle Mariners",
     "awayTeam": "Athletics",
     "homeTeam": "Seattle Mariners",
     "awayPitcher": "Jeffrey Springs",
     "homePitcher": "George Kirby",
     "pick": "Seattle Mariners",
-    "prediction": "Seattle Mariners -215",
-    "odds": "-215",
-    "winProb": 0.642,
-    "edge": 0.142,
+    "prediction": "Seattle Mariners -198",
+    "odds": "-198",
+    "winProb": 0.657,
+    "edge": 0.157,
     "confidence": "Elite",
-    "predictedScore": "Athletics 4.9 \u2013 Seattle Mariners 6.8",
-    "predictedHomeScore": 6.83,
-    "predictedAwayScore": 4.88,
+    "predictedScore": "Athletics 4.8 \u2013 Seattle Mariners 6.9",
+    "predictedHomeScore": 6.93,
+    "predictedAwayScore": 4.76,
     "gameTime": "2026-09-06T01:40:00Z",
     "gamePk": 823094,
-    "rank": 1
+    "rank": 2
   },
   {
     "matchup": "Los Angeles Angels @ Pittsburgh Pirates",
@@ -35,7 +54,7 @@
     "predictedAwayScore": 4.4,
     "gameTime": "2026-09-05T22:40:00Z",
     "gamePk": 823335,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Washington Nationals @ Los Angeles Dodgers",
@@ -44,16 +63,16 @@
     "awayPitcher": "Cade Cavalli",
     "homePitcher": "Tyler Glasnow",
     "pick": "Los Angeles Dodgers",
-    "prediction": "Los Angeles Dodgers -205",
-    "odds": "-205",
-    "winProb": 0.606,
-    "edge": 0.106,
+    "prediction": "Los Angeles Dodgers -225",
+    "odds": "-225",
+    "winProb": 0.593,
+    "edge": 0.093,
     "confidence": "Strong",
-    "predictedScore": "Washington Nationals 3.8 \u2013 Los Angeles Dodgers 5.3",
-    "predictedHomeScore": 5.26,
+    "predictedScore": "Washington Nationals 3.8 \u2013 Los Angeles Dodgers 5.1",
+    "predictedHomeScore": 5.08,
     "predictedAwayScore": 3.83,
     "gameTime": "2026-09-06T01:10:00Z",
     "gamePk": 823904,
-    "rank": 3
+    "rank": 4
   }
 ]
