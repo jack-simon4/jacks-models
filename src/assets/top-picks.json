@@ -19,6 +19,25 @@
     "rank": 1
   },
   {
+    "matchup": "Athletics @ Seattle Mariners",
+    "awayTeam": "Athletics",
+    "homeTeam": "Seattle Mariners",
+    "awayPitcher": "Jeffrey Springs",
+    "homePitcher": "George Kirby",
+    "pick": "Seattle Mariners",
+    "prediction": "Seattle Mariners -235",
+    "odds": "-235",
+    "winProb": 0.642,
+    "edge": 0.142,
+    "confidence": "Elite",
+    "predictedScore": "Athletics 4.8 \u2013 Seattle Mariners 6.8",
+    "predictedHomeScore": 6.8,
+    "predictedAwayScore": 4.85,
+    "gameTime": "2026-09-06T01:40:00Z",
+    "gamePk": 823094,
+    "rank": 2
+  },
+  {
     "matchup": "Los Angeles Angels @ Pittsburgh Pirates",
     "awayTeam": "Los Angeles Angels",
     "homeTeam": "Pittsburgh Pirates",
@@ -30,12 +49,12 @@
     "winProb": 0.618,
     "edge": 0.118,
     "confidence": "Strong",
-    "predictedScore": "Los Angeles Angels 4.4 \u2013 Pittsburgh Pirates 6.0",
-    "predictedHomeScore": 5.97,
-    "predictedAwayScore": 4.37,
+    "predictedScore": "Los Angeles Angels 4.3 \u2013 Pittsburgh Pirates 6.0",
+    "predictedHomeScore": 5.96,
+    "predictedAwayScore": 4.35,
     "gameTime": "2026-09-05T22:40:00Z",
     "gamePk": 823335,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Washington Nationals @ Los Angeles Dodgers",
@@ -54,6 +73,6 @@
     "predictedAwayScore": 3.75,
     "gameTime": "2026-09-06T01:10:00Z",
     "gamePk": 823904,
-    "rank": 3
+    "rank": 4
   }
 ]
