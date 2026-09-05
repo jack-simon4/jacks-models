@@ -1,4 +1,31 @@
 Team,Player
+New York Mets1,Francisco Lindor
+New York Mets2,Juan Soto
+New York Mets3,Bo Bichette
+New York Mets4,Carson Benge
+New York Mets5,Jared Young
+New York Mets6,Marcus Semien
+New York Mets7,A.J. Ewing
+New York Mets8,Francisco Alvarez
+New York Mets9,Brett Baty
+Chicago Cubs1,Pete Crow-Armstrong
+Chicago Cubs2,Seiya Suzuki
+Chicago Cubs3,Michael Busch
+Chicago Cubs4,Alex Bregman
+Chicago Cubs5,Ian Happ
+Chicago Cubs6,Nico Hoerner
+Chicago Cubs7,Pedro Ramirez
+Chicago Cubs8,Michael Conforto
+Chicago Cubs9,Miguel Amaya
+Miami Marlins1,Kyle Stowers
+Miami Marlins2,Heriberto Hernandez
+Miami Marlins3,Griffin Conine
+Miami Marlins4,Otto Lopez
+Miami Marlins5,Jakob Marsee
+Miami Marlins6,Owen Caissie
+Miami Marlins7,Joe Mack
+Miami Marlins8,Graham Pauley
+Miami Marlins9,Javier Sanoja
 Arizona Diamondbacks1,Geraldo Perdomo
 Arizona Diamondbacks2,Corbin Carroll
 Arizona Diamondbacks3,Gabriel Moreno
@@ -44,15 +71,6 @@ Boston Red Sox6,Caleb Durbin
 Boston Red Sox7,Jarren Duran
 Boston Red Sox8,Trevor Story
 Boston Red Sox9,Eli White
-Chicago Cubs1,Pete Crow-Armstrong
-Chicago Cubs2,Seiya Suzuki
-Chicago Cubs3,Michael Busch
-Chicago Cubs4,Alex Bregman
-Chicago Cubs5,Ian Happ
-Chicago Cubs6,Nico Hoerner
-Chicago Cubs7,Pedro Ramirez
-Chicago Cubs8,Michael Conforto
-Chicago Cubs9,Carson Kelly
 Chicago White Sox1,Sam Antonacci
 Chicago White Sox2,Miguel Vargas
 Chicago White Sox3,Munetaka Murakami
@@ -134,15 +152,6 @@ Los Angeles Dodgers6,Miguel Rojas
 Los Angeles Dodgers7,Alex Call
 Los Angeles Dodgers8,Kyle Tucker
 Los Angeles Dodgers9,Enrique Hernandez
-Miami Marlins1,Heriberto Hernandez
-Miami Marlins2,Otto Lopez
-Miami Marlins3,Griffin Conine
-Miami Marlins4,Javier Sanoja
-Miami Marlins5,Agustin Ramirez
-Miami Marlins6,Esteury Ruiz
-Miami Marlins7,Deyvison De Los Santos
-Miami Marlins8,Jared Serna
-Miami Marlins9,Brian Navarreto
 Milwaukee Brewers1,Sal Frelick
 Milwaukee Brewers2,Jake Bauers
 Milwaukee Brewers3,Jackson Chourio
@@ -161,15 +170,6 @@ Minnesota Twins6,Trevor Larnach
 Minnesota Twins7,Royce Lewis
 Minnesota Twins8,Kaelen Culpepper
 Minnesota Twins9,Walker Jenkins
-New York Mets1,Francisco Lindor
-New York Mets2,Juan Soto
-New York Mets3,Bo Bichette
-New York Mets4,Mark Vientos
-New York Mets5,Carson Benge
-New York Mets6,Marcus Semien
-New York Mets7,Christopher Morel
-New York Mets8,Francisco Alvarez
-New York Mets9,Nick Morabito
 New York Yankees1,Ben Rice
 New York Yankees2,Cody Bellinger
 New York Yankees3,Luis Garcia Jr.
