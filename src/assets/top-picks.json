@@ -1,24 +1,5 @@
 [
   {
-    "matchup": "San Francisco Giants @ New York Mets",
-    "awayTeam": "San Francisco Giants",
-    "homeTeam": "New York Mets",
-    "awayPitcher": "Anthony Molina",
-    "homePitcher": "Zac Thornton",
-    "pick": "New York Mets",
-    "prediction": "New York Mets -168",
-    "odds": "-168",
-    "winProb": 0.712,
-    "edge": 0.212,
-    "confidence": "Elite",
-    "predictedScore": "San Francisco Giants 4.4 \u2013 New York Mets 7.4",
-    "predictedHomeScore": 7.43,
-    "predictedAwayScore": 4.42,
-    "gameTime": "2026-09-05T20:10:00Z",
-    "gamePk": 823577,
-    "rank": 1
-  },
-  {
     "matchup": "Athletics @ Seattle Mariners",
     "awayTeam": "Athletics",
     "homeTeam": "Seattle Mariners",
@@ -35,7 +16,7 @@
     "predictedAwayScore": 4.88,
     "gameTime": "2026-09-06T01:40:00Z",
     "gamePk": 823094,
-    "rank": 2
+    "rank": 1
   },
   {
     "matchup": "Los Angeles Angels @ Pittsburgh Pirates",
@@ -46,15 +27,15 @@
     "pick": "Pittsburgh Pirates",
     "prediction": "Pittsburgh Pirates -196",
     "odds": "-196",
-    "winProb": 0.618,
-    "edge": 0.118,
+    "winProb": 0.613,
+    "edge": 0.113,
     "confidence": "Strong",
-    "predictedScore": "Los Angeles Angels 4.3 \u2013 Pittsburgh Pirates 5.9",
+    "predictedScore": "Los Angeles Angels 4.4 \u2013 Pittsburgh Pirates 5.9",
     "predictedHomeScore": 5.94,
-    "predictedAwayScore": 4.33,
+    "predictedAwayScore": 4.4,
     "gameTime": "2026-09-05T22:40:00Z",
     "gamePk": 823335,
-    "rank": 3
+    "rank": 2
   },
   {
     "matchup": "Washington Nationals @ Los Angeles Dodgers",
@@ -65,33 +46,14 @@
     "pick": "Los Angeles Dodgers",
     "prediction": "Los Angeles Dodgers -205",
     "odds": "-205",
-    "winProb": 0.618,
-    "edge": 0.118,
+    "winProb": 0.606,
+    "edge": 0.106,
     "confidence": "Strong",
-    "predictedScore": "Washington Nationals 3.7 \u2013 Los Angeles Dodgers 5.3",
-    "predictedHomeScore": 5.34,
-    "predictedAwayScore": 3.74,
+    "predictedScore": "Washington Nationals 3.8 \u2013 Los Angeles Dodgers 5.3",
+    "predictedHomeScore": 5.26,
+    "predictedAwayScore": 3.83,
     "gameTime": "2026-09-06T01:10:00Z",
     "gamePk": 823904,
-    "rank": 4
-  },
-  {
-    "matchup": "New York Yankees @ San Diego Padres",
-    "awayTeam": "New York Yankees",
-    "homeTeam": "San Diego Padres",
-    "awayPitcher": "Carlos Rod\u00f3n",
-    "homePitcher": "Robbie Ray",
-    "pick": "New York Yankees",
-    "prediction": "New York Yankees -116",
-    "odds": "-116",
-    "winProb": 0.581,
-    "edge": 0.081,
-    "confidence": "Strong",
-    "predictedScore": "New York Yankees 5.2 \u2013 San Diego Padres 4.1",
-    "predictedHomeScore": 4.14,
-    "predictedAwayScore": 5.23,
-    "gameTime": "2026-09-05T23:15:00Z",
-    "gamePk": 823257,
-    "rank": 5
+    "rank": 3
   }
 ]
