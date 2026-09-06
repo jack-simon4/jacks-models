@@ -1,40 +1,21 @@
 [
   {
-    "matchup": "St. Louis Cardinals @ Colorado Rockies",
-    "awayTeam": "St. Louis Cardinals",
-    "homeTeam": "Colorado Rockies",
-    "awayPitcher": "Kyle Leahy",
-    "homePitcher": "Tanner Gordon",
-    "pick": "St. Louis Cardinals",
-    "prediction": "St. Louis Cardinals -138",
-    "odds": "-138",
-    "winProb": 0.639,
-    "edge": 0.139,
-    "confidence": "Strong",
-    "predictedScore": "St. Louis Cardinals 7.6 \u2013 Colorado Rockies 5.7",
-    "predictedHomeScore": 5.69,
-    "predictedAwayScore": 7.6,
-    "gameTime": "2026-09-06T19:10:00Z",
-    "gamePk": 824309,
-    "rank": 1
-  },
-  {
     "matchup": "Athletics @ Seattle Mariners",
     "awayTeam": "Athletics",
     "homeTeam": "Seattle Mariners",
     "awayPitcher": "Gage Jump",
     "homePitcher": "Bryan Woo",
     "pick": "Seattle Mariners",
-    "prediction": "Seattle Mariners -205",
-    "odds": "-205",
-    "winProb": 0.614,
-    "edge": 0.114,
+    "prediction": "Seattle Mariners -310",
+    "odds": "-310",
+    "winProb": 0.612,
+    "edge": 0.112,
     "confidence": "Strong",
-    "predictedScore": "Athletics 4.3 \u2013 Seattle Mariners 5.9",
-    "predictedHomeScore": 5.87,
+    "predictedScore": "Athletics 4.3 \u2013 Seattle Mariners 5.8",
+    "predictedHomeScore": 5.84,
     "predictedAwayScore": 4.32,
     "gameTime": "2026-09-06T20:10:00Z",
     "gamePk": 823091,
-    "rank": 2
+    "rank": 1
   }
 ]
