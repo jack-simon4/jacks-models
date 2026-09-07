@@ -1,23 +1,9 @@
 {
-  "San Diego Padres": {
-    "home_team": "San Diego Padres",
-    "away_team": "New York Yankees",
-    "home_ml": "-5000",
-    "away_ml": "+1300",
-    "book": "fanduel"
-  },
-  "Seattle Mariners": {
-    "home_team": "Seattle Mariners",
-    "away_team": "Athletics",
-    "home_ml": "-10000",
-    "away_ml": "+3000",
-    "book": "betmgm"
-  },
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "Minnesota Twins",
-    "home_ml": "-194",
-    "away_ml": "+150",
+    "home_ml": "-50000",
+    "away_ml": "+3000",
     "book": "fanduel"
   },
   "Los Angeles Dodgers": {
@@ -51,8 +37,8 @@
   "Boston Red Sox": {
     "home_team": "Boston Red Sox",
     "away_team": "Los Angeles Angels",
-    "home_ml": "-172",
-    "away_ml": "+144",
+    "home_ml": "-168",
+    "away_ml": "+142",
     "book": "fanduel"
   },
   "Milwaukee Brewers": {
