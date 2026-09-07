@@ -1,11 +1,4 @@
 {
-  "Chicago White Sox": {
-    "home_team": "Chicago White Sox",
-    "away_team": "Minnesota Twins",
-    "home_ml": "-50000",
-    "away_ml": "+3000",
-    "book": "fanduel"
-  },
   "Los Angeles Dodgers": {
     "home_team": "Los Angeles Dodgers",
     "away_team": "Cincinnati Reds",
@@ -46,6 +39,13 @@
     "away_team": "Chicago Cubs",
     "home_ml": "-124",
     "away_ml": "+106",
+    "book": "fanduel"
+  },
+  "San Diego Padres": {
+    "home_team": "San Diego Padres",
+    "away_team": "Washington Nationals",
+    "home_ml": "-205",
+    "away_ml": "+172",
     "book": "fanduel"
   },
   "San Francisco Giants": {

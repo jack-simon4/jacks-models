@@ -19,6 +19,25 @@
     "rank": 1
   },
   {
+    "matchup": "Washington Nationals @ San Diego Padres",
+    "awayTeam": "Washington Nationals",
+    "homeTeam": "San Diego Padres",
+    "awayPitcher": "Jake Irvin",
+    "homePitcher": "Nick Pivetta",
+    "pick": "San Diego Padres",
+    "prediction": "San Diego Padres -205",
+    "odds": "-205",
+    "winProb": 0.637,
+    "edge": 0.137,
+    "confidence": "Strong",
+    "predictedScore": "Washington Nationals 3.8 \u2013 San Diego Padres 5.6",
+    "predictedHomeScore": 5.62,
+    "predictedAwayScore": 3.75,
+    "gameTime": "2026-09-07T21:10:00Z",
+    "gamePk": 823254,
+    "rank": 2
+  },
+  {
     "matchup": "Toronto Blue Jays @ Athletics",
     "awayTeam": "Toronto Blue Jays",
     "homeTeam": "Athletics",
@@ -35,7 +54,7 @@
     "predictedAwayScore": 6.58,
     "gameTime": "2026-09-08T02:05:00Z",
     "gamePk": 824958,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "New York Mets @ Miami Marlins",
@@ -54,6 +73,6 @@
     "predictedAwayScore": 4.49,
     "gameTime": "2026-09-07T17:10:00Z",
     "gamePk": 823820,
-    "rank": 3
+    "rank": 4
   }
 ]
