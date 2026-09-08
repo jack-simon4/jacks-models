@@ -51,8 +51,8 @@
   "Kansas City Royals": {
     "home_team": "Kansas City Royals",
     "away_team": "Arizona Diamondbacks",
-    "home_ml": "+102",
-    "away_ml": "-120",
+    "home_ml": "-108",
+    "away_ml": "-108",
     "book": "fanduel"
   },
   "Milwaukee Brewers": {
@@ -86,8 +86,8 @@
   "Seattle Mariners": {
     "home_team": "Seattle Mariners",
     "away_team": "Texas Rangers",
-    "home_ml": "-134",
-    "away_ml": "+114",
+    "home_ml": "-162",
+    "away_ml": "+136",
     "book": "fanduel"
   },
   "San Francisco Giants": {
