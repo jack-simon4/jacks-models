@@ -26,33 +26,33 @@ Athletics6,Max Muncy
 Athletics7,Donovan Walton
 Athletics8,Alika Williams
 Athletics9,Jonah Heim
-Atlanta Braves1,Ronald Acuna Jr.
-Atlanta Braves2,Drake Baldwin
-Atlanta Braves3,Ozzie Albies
-Atlanta Braves4,Matt Olson
-Atlanta Braves5,Lane Thomas
-Atlanta Braves6,Michael Harris II
-Atlanta Braves7,Mauricio Dubon
-Atlanta Braves8,Austin Riley
-Atlanta Braves9,Ha-Seong Kim
-Baltimore Orioles1,Blaze Alexander
+Atlanta Braves1,Michael Harris II
+Atlanta Braves2,Ronald Acuna Jr.
+Atlanta Braves3,Matt Olson
+Atlanta Braves4,Drake Baldwin
+Atlanta Braves5,Mauricio Dubon
+Atlanta Braves6,Ozzie Albies
+Atlanta Braves7,Austin Riley
+Atlanta Braves8,Mike Yastrzemski
+Atlanta Braves9,Sean Murphy
+Baltimore Orioles1,Jackson Holliday
 Baltimore Orioles2,Pete Alonso
-Baltimore Orioles3,Jackson Holliday
-Baltimore Orioles4,Colton Cowser
-Baltimore Orioles5,Gunnar Henderson
-Baltimore Orioles6,Christian Encarnacion-Strand
-Baltimore Orioles7,Samuel Basallo
-Baltimore Orioles8,Rece Hinds
-Baltimore Orioles9,Dylan Beavers
+Baltimore Orioles3,Gunnar Henderson
+Baltimore Orioles4,Coby Mayo
+Baltimore Orioles5,Samuel Basallo
+Baltimore Orioles6,Dylan Beavers
+Baltimore Orioles7,Blaze Alexander
+Baltimore Orioles8,Colton Cowser
+Baltimore Orioles9,Leody Taveras
 Boston Red Sox1,Roman Anthony
-Boston Red Sox2,Mickey Gasper
-Boston Red Sox3,Adley Rutschman
-Boston Red Sox4,Wilyer Abreu
-Boston Red Sox5,Trevor Story
+Boston Red Sox2,Jahmai Jones
+Boston Red Sox3,Wilyer Abreu
+Boston Red Sox4,Trevor Story
+Boston Red Sox5,Nick Sogard
 Boston Red Sox6,Caleb Durbin
-Boston Red Sox7,Jarren Duran
-Boston Red Sox8,Isiah Kiner-Falefa
-Boston Red Sox9,Eli White
+Boston Red Sox7,Andruw Monasterio
+Boston Red Sox8,Eli White
+Boston Red Sox9,Connor Wong
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Seiya Suzuki
 Chicago Cubs3,Alex Bregman
@@ -81,11 +81,11 @@ Cincinnati Reds7,Matt McLain
 Cincinnati Reds8,Carlos Jorge
 Cincinnati Reds9,Ke'Bryan Hayes
 Cleveland Guardians1,Steven Kwan
-Cleveland Guardians2,Jo Adell
+Cleveland Guardians2,Travis Bazzana
 Cleveland Guardians3,Jose Ramirez
-Cleveland Guardians4,Angel Martinez
+Cleveland Guardians4,Jo Adell
 Cleveland Guardians5,Nathaniel Lowe
-Cleveland Guardians6,Angel Genao
+Cleveland Guardians6,Angel Martinez
 Cleveland Guardians7,Patrick Bailey
 Cleveland Guardians8,Petey Halpin
 Cleveland Guardians9,Brayan Rocchio
@@ -98,15 +98,15 @@ Colorado Rockies6,Adael Amador
 Colorado Rockies7,Hunter Goodman
 Colorado Rockies8,Connor Norby
 Colorado Rockies9,Zac Veen
-Detroit Tigers1,Eduardo Valencia
-Detroit Tigers2,Kevin McGonigle
-Detroit Tigers3,Javier Baez
+Detroit Tigers1,Kevin McGonigle
+Detroit Tigers2,Gleyber Torres
+Detroit Tigers3,Colt Keith
 Detroit Tigers4,Riley Greene
-Detroit Tigers5,Dillon Dingler
-Detroit Tigers6,Ben Malgeri
-Detroit Tigers7,Spencer Torkelson
-Detroit Tigers8,Max Clark
-Detroit Tigers9,John Peck
+Detroit Tigers5,Eduardo Valencia
+Detroit Tigers6,Brett Callahan
+Detroit Tigers7,Max Clark
+Detroit Tigers8,Hao-Yu Lee
+Detroit Tigers9,Zach McKinstry
 Houston Astros1,Jeremy Pena
 Houston Astros2,Yordan Alvarez
 Houston Astros3,Isaac Paredes
@@ -119,21 +119,21 @@ Houston Astros9,Yainer Diaz
 Kansas City Royals1,Carter Jensen
 Kansas City Royals2,Bobby Witt Jr.
 Kansas City Royals3,Vinnie Pasquantino
-Kansas City Royals4,Tyler Tolbert
+Kansas City Royals4,Salvador Perez
 Kansas City Royals5,Michael Massey
 Kansas City Royals6,Nick Loftin
-Kansas City Royals7,John Rave
-Kansas City Royals8,Isaac Collins
+Kansas City Royals7,Isaac Collins
+Kansas City Royals8,Matthew Lugo
 Kansas City Royals9,Kyle Isbel
 Los Angeles Angels1,Zach Neto
 Los Angeles Angels2,Mike Trout
-Los Angeles Angels3,Wade Meckler
+Los Angeles Angels3,Jose Siri
 Los Angeles Angels4,Vaughn Grissom
-Los Angeles Angels5,Jose Siri
+Los Angeles Angels5,Moises Ballesteros
 Los Angeles Angels6,Christian Moore
-Los Angeles Angels7,Denzer Guzman
-Los Angeles Angels8,Adam Frazier
-Los Angeles Angels9,Tyler Heineman
+Los Angeles Angels7,Kyren Paris
+Los Angeles Angels8,Denzer Guzman
+Los Angeles Angels9,Travis d'Arnaud
 Los Angeles Dodgers1,Tommy Edman
 Los Angeles Dodgers2,Freddie Freeman
 Los Angeles Dodgers3,Tommy Edman
@@ -143,15 +143,15 @@ Los Angeles Dodgers6,Kyle Tucker
 Los Angeles Dodgers7,Hunter Feduccia
 Los Angeles Dodgers8,Alex Call
 Los Angeles Dodgers9,Alex Freeland
-Miami Marlins1,Kyle Stowers
-Miami Marlins2,Heriberto Hernandez
-Miami Marlins3,Griffin Conine
-Miami Marlins4,Otto Lopez
-Miami Marlins5,Jakob Marsee
-Miami Marlins6,Javier Sanoja
-Miami Marlins7,Owen Caissie
-Miami Marlins8,Graham Pauley
-Miami Marlins9,Agustin Ramirez
+Miami Marlins1,Heriberto Hernandez
+Miami Marlins2,Otto Lopez
+Miami Marlins3,Agustin Ramirez
+Miami Marlins4,Javier Sanoja
+Miami Marlins5,Esteury Ruiz
+Miami Marlins6,Deyvison De Los Santos
+Miami Marlins7,Jakob Marsee
+Miami Marlins8,Jared Serna
+Miami Marlins9,Brian Navarreto
 Milwaukee Brewers1,Jackson Chourio
 Milwaukee Brewers2,Brice Turang
 Milwaukee Brewers3,William Contreras
@@ -167,7 +167,7 @@ Minnesota Twins3,Kody Clemens
 Minnesota Twins4,Ryan Jeffers
 Minnesota Twins5,Josh Bell
 Minnesota Twins6,Royce Lewis
-Minnesota Twins7,Ryan Kreidler
+Minnesota Twins7,Trevor Larnach
 Minnesota Twins8,Kaelen Culpepper
 Minnesota Twins9,Walker Jenkins
 National League All-Stars1,Kyle Schwarber
@@ -183,17 +183,17 @@ New York Mets1,Francisco Lindor
 New York Mets2,Juan Soto
 New York Mets3,Bo Bichette
 New York Mets4,Carson Benge
-New York Mets5,Marcus Semien
-New York Mets6,A.J. Ewing
-New York Mets7,Francisco Alvarez
+New York Mets5,Jared Young
+New York Mets6,Marcus Semien
+New York Mets7,A.J. Ewing
 New York Mets8,Brett Baty
-New York Mets9,Nick Morabito
+New York Mets9,Francisco Alvarez
 New York Yankees1,Ben Rice
 New York Yankees2,Cody Bellinger
-New York Yankees3,Paul Goldschmidt
-New York Yankees4,Spencer Jones
-New York Yankees5,Jose Caballero
-New York Yankees6,Jasson Dominguez
+New York Yankees3,Aaron Judge
+New York Yankees4,Luis Garcia Jr.
+New York Yankees5,Spencer Jones
+New York Yankees6,Jazz Chisholm Jr.
 New York Yankees7,George Lombard Jr.
 New York Yankees8,Ryan McMahon
 New York Yankees9,Austin Wells
