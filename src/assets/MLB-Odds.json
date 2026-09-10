@@ -1,16 +1,9 @@
 {
-  "Atlanta Braves": {
-    "home_team": "Atlanta Braves",
-    "away_team": "Tampa Bay Rays",
-    "home_ml": "-140",
-    "away_ml": "+110",
-    "book": "fanduel"
-  },
   "Philadelphia Phillies": {
     "home_team": "Philadelphia Phillies",
     "away_team": "Houston Astros",
-    "home_ml": "-184",
-    "away_ml": "+154",
+    "home_ml": "-174",
+    "away_ml": "+136",
     "book": "fanduel"
   },
   "Seattle Mariners": {
@@ -23,8 +16,8 @@
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "Colorado Rockies",
-    "home_ml": "-295",
-    "away_ml": "+240",
+    "home_ml": "-275",
+    "away_ml": "+225",
     "book": "fanduel"
   },
   "Chicago White Sox": {
@@ -32,6 +25,48 @@
     "away_team": "Pittsburgh Pirates",
     "home_ml": "-108",
     "away_ml": "-108",
+    "book": "fanduel"
+  },
+  "Washington Nationals": {
+    "home_team": "Washington Nationals",
+    "away_team": "Los Angeles Angels",
+    "home_ml": "-154",
+    "away_ml": "+130",
+    "book": "fanduel"
+  },
+  "Toronto Blue Jays": {
+    "home_team": "Toronto Blue Jays",
+    "away_team": "Baltimore Orioles",
+    "home_ml": "-122",
+    "away_ml": "+104",
+    "book": "fanduel"
+  },
+  "Boston Red Sox": {
+    "home_team": "Boston Red Sox",
+    "away_team": "Kansas City Royals",
+    "home_ml": "-198",
+    "away_ml": "+166",
+    "book": "fanduel"
+  },
+  "Atlanta Braves": {
+    "home_team": "Atlanta Braves",
+    "away_team": "Philadelphia Phillies",
+    "home_ml": "-174",
+    "away_ml": "+146",
+    "book": "fanduel"
+  },
+  "Milwaukee Brewers": {
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Cincinnati Reds",
+    "home_ml": "-180",
+    "away_ml": "+152",
+    "book": "fanduel"
+  },
+  "Minnesota Twins": {
+    "home_team": "Minnesota Twins",
+    "away_team": "Cleveland Guardians",
+    "home_ml": "+100",
+    "away_ml": "-118",
     "book": "fanduel"
   }
 }
