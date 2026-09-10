@@ -46,12 +46,13 @@ MLS_SEASON  = 2025
 # football-data.org competition code → metadata
 # MLS competition code on football-data.org is 'MLS' (free-tier availability may vary)
 LEAGUES = {
-    'PL':  {'name': 'Premier League', 'season': EURO_SEASON, 'prefix': 'EPL', 'wLeague': 90.6},
-    'PD':  {'name': 'La Liga',        'season': EURO_SEASON, 'prefix': 'LAL', 'wLeague': 84.8},
-    'SA':  {'name': 'Serie A',        'season': EURO_SEASON, 'prefix': 'SA',  'wLeague': 84.8},
-    'BL1': {'name': 'Bundesliga',     'season': EURO_SEASON, 'prefix': 'BL',  'wLeague': 84.2},
-    'FL1': {'name': 'Ligue 1',        'season': EURO_SEASON, 'prefix': 'L1',  'wLeague': 84.3},
-    'MLS': {'name': 'MLS',            'season': MLS_SEASON,  'prefix': 'MLS', 'wLeague': 72.0},
+    'CL':  {'name': 'Champions League', 'season': EURO_SEASON, 'prefix': 'CL',  'wLeague': 95.0},
+    'PL':  {'name': 'Premier League',   'season': EURO_SEASON, 'prefix': 'EPL', 'wLeague': 90.6},
+    'PD':  {'name': 'La Liga',          'season': EURO_SEASON, 'prefix': 'LAL', 'wLeague': 84.8},
+    'SA':  {'name': 'Serie A',          'season': EURO_SEASON, 'prefix': 'SA',  'wLeague': 84.8},
+    'BL1': {'name': 'Bundesliga',       'season': EURO_SEASON, 'prefix': 'BL',  'wLeague': 84.2},
+    'FL1': {'name': 'Ligue 1',          'season': EURO_SEASON, 'prefix': 'L1',  'wLeague': 84.3},
+    'MLS': {'name': 'MLS',             'season': MLS_SEASON,  'prefix': 'MLS', 'wLeague': 72.0},
 }
 
 # Map football-data.org team names → Soccer-Stats.csv team names

@@ -31,11 +31,18 @@ def load_stats() -> dict:
     with open(STATS_PATH, newline='', encoding='utf-8') as f:
         for row in csv.DictReader(f):
             try:
+                # Derive PPG from per-play rate × plays-per-game when direct columns absent
+                off_ppp   = float(row.get('oPtsPerPlay', 0) or 0)
+                off_plays = float(row.get('oPlays/Game', 0) or 0)
+                def_ppp   = float(row.get('dPtsPerPlay', 0) or 0)
+                def_plays = float(row.get('dPlaysGame',  0) or 0)
+                offPPG = float(row.get('offPPG', row.get('OffPPG', 0)) or 0) or round(off_ppp * off_plays, 2)
+                defPPG = float(row.get('defPPG', row.get('DefPPG', 0)) or 0) or round(def_ppp * def_plays, 2)
                 stats[row['Team']] = {
-                    'offPPG':  float(row.get('offPPG',  row.get('OffPPG',  0))),
-                    'defPPG':  float(row.get('defPPG',  row.get('DefPPG',  0))),
-                    'offYPG':  float(row.get('offYPG',  row.get('OffYPG',  0))),
-                    'defYPG':  float(row.get('defYPG',  row.get('DefYPG',  0))),
+                    'offPPG': offPPG,
+                    'defPPG': defPPG,
+                    'offYPG': float(row.get('offYPG', row.get('OffYPG', 0)) or 0),
+                    'defYPG': float(row.get('defYPG', row.get('DefYPG', 0)) or 0),
                 }
             except (ValueError, KeyError):
                 pass

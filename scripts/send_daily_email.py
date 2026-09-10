@@ -64,7 +64,7 @@ TD = 'padding:8px;border-bottom:1px solid #ddd'
 
 # ── Soccer section ────────────────────────────────────────────────────────────
 
-SOCCER_SPORTS = ['Premier League', 'La Liga', 'Serie A', 'Bundesliga', 'Ligue 1']
+SOCCER_SPORTS = ['Champions League', 'Premier League', 'La Liga', 'Serie A', 'Bundesliga', 'Ligue 1']
 
 
 def fetch_soccer_from_firestore(yesterday: str) -> list:

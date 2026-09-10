@@ -12,7 +12,7 @@ Runs via GitHub Actions on Monday/Tuesday nights after games complete.
 import math
 import os
 import sys
-from datetime import date
+from datetime import date, datetime, timedelta
 
 import pandas as pd
 
@@ -25,7 +25,8 @@ except ImportError:
 ASSETS = os.path.normpath(
     os.path.join(os.path.dirname(__file__), '..', 'src', 'assets')
 )
-OUTPUT = os.path.join(ASSETS, 'NFL-Stats.csv')
+OUTPUT          = os.path.join(ASSETS, 'NFL-Stats.csv')
+SPREADS_OUTPUT  = os.path.join(ASSETS, 'NFL-Spreads.csv')
 
 # ── Season year logic ────────────────────────────────────────────────────────
 # NFL season starts in September. Jan–Jul we're in the off-season for that
@@ -308,5 +309,81 @@ def build():
     print(f'[NFL] Wrote {len(rows)} teams → {OUTPUT}')
 
 
+def update_spreads_csv(year: int):
+    """Populate NFL-Spreads.csv with this week's upcoming matchups from nfl_data_py."""
+    try:
+        sched = nfl.import_schedules([year])
+    except Exception as exc:
+        print(f'[NFL] Schedule fetch for spreads failed: {exc}')
+        return
+
+    today_dt = date.today()
+    reg = sched[
+        (sched['game_type'] == 'REG') &
+        sched['home_score'].isna()
+    ].copy()
+
+    if reg.empty:
+        print('[NFL] No upcoming regular-season games found.')
+        return
+
+    reg['gameday_dt'] = pd.to_datetime(reg['gameday'], errors='coerce').dt.date
+    reg = reg[reg['gameday_dt'].notna() & (reg['gameday_dt'] >= today_dt)]
+    if reg.empty:
+        print('[NFL] No upcoming games from today onward.')
+        return
+
+    target_week = int(reg['week'].min())
+    this_week   = reg[reg['week'] == target_week]
+    print(f'[NFL] Building spreads for Week {target_week}: {len(this_week)} games.')
+
+    try:
+        from zoneinfo import ZoneInfo
+        ET  = ZoneInfo('America/New_York')
+        UTC = ZoneInfo('UTC')
+    except Exception:
+        ET = UTC = None
+
+    rows = []
+    for _, game in this_week.iterrows():
+        home_abbr = str(game['home_team'])
+        away_abbr = str(game['away_team'])
+        home_name = TEAM_NAMES.get(home_abbr, home_abbr)
+        away_name = TEAM_NAMES.get(away_abbr, away_abbr)
+
+        gameday  = str(game.get('gameday', ''))
+        gametime = str(game.get('gametime', '') or '13:00')
+        if not gametime or gametime == 'nan':
+            gametime = '13:00'
+
+        try:
+            local_dt = datetime.strptime(f'{gameday} {gametime}', '%Y-%m-%d %H:%M')
+            if ET and UTC:
+                aware_dt      = local_dt.replace(tzinfo=ET)
+                utc_dt        = aware_dt.astimezone(UTC)
+            else:
+                offset        = 4 if local_dt.month < 11 else 5
+                utc_dt        = local_dt + timedelta(hours=offset)
+            game_time_utc = utc_dt.strftime('%Y-%m-%dT%H:%M:00Z')
+        except Exception:
+            game_time_utc = f'{gameday}T17:00:00Z'
+
+        try:
+            spread_val = float(game.get('spread_line') or 0)
+            if pd.isna(spread_val):
+                spread_val = 0.0
+        except (TypeError, ValueError):
+            spread_val = 0.0
+
+        rows.append({'Team': home_name, 'Spread':  spread_val, 'Opponent': away_name, 'GameTime': game_time_utc, 'IsHome': 'true'})
+        rows.append({'Team': away_name, 'Spread': -spread_val, 'Opponent': home_name, 'GameTime': game_time_utc, 'IsHome': 'false'})
+
+    if rows:
+        df_out = pd.DataFrame(rows, columns=['Team', 'Spread', 'Opponent', 'GameTime', 'IsHome'])
+        df_out.to_csv(SPREADS_OUTPUT, index=False)
+        print(f'[NFL] NFL-Spreads.csv: {len(rows) // 2} games written (Week {target_week}).')
+
+
 if __name__ == '__main__':
     build()
+    update_spreads_csv(SEASON_YEAR)
