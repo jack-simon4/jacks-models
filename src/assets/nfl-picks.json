@@ -1,1 +1,156 @@
-[]
+[
+  {
+    "homeTeam": "Detroit Lions",
+    "awayTeam": "New Orleans Saints",
+    "homePredicted": 30.1,
+    "awayPredicted": 15.8,
+    "pick": "Detroit Lions",
+    "winProb": 0.986,
+    "spread": 7.0,
+    "gameTime": "2026-09-13T17:00:00Z",
+    "confidence": "Elite"
+  },
+  {
+    "homeTeam": "Jacksonville Jaguars",
+    "awayTeam": "Cleveland Browns",
+    "homePredicted": 30.1,
+    "awayPredicted": 17.8,
+    "pick": "Jacksonville Jaguars",
+    "winProb": 0.976,
+    "spread": 8.5,
+    "gameTime": "2026-09-13T17:00:00Z",
+    "confidence": "Elite"
+  },
+  {
+    "homeTeam": "Houston Texans",
+    "awayTeam": "Buffalo Bills",
+    "homePredicted": 26.7,
+    "awayPredicted": 36.3,
+    "pick": "Buffalo Bills",
+    "winProb": 0.947,
+    "spread": -1.5,
+    "gameTime": "2026-09-13T17:00:00Z",
+    "confidence": "Elite"
+  },
+  {
+    "homeTeam": "Cincinnati Bengals",
+    "awayTeam": "Tampa Bay Buccaneers",
+    "homePredicted": 24.4,
+    "awayPredicted": 16.5,
+    "pick": "Cincinnati Bengals",
+    "winProb": 0.915,
+    "spread": 3.5,
+    "gameTime": "2026-09-13T17:00:00Z",
+    "confidence": "Elite"
+  },
+  {
+    "homeTeam": "Carolina Panthers",
+    "awayTeam": "Chicago Bears",
+    "homePredicted": 18.5,
+    "awayPredicted": 25.4,
+    "pick": "Chicago Bears",
+    "winProb": 0.888,
+    "spread": -3.0,
+    "gameTime": "2026-09-13T17:00:00Z",
+    "confidence": "Elite"
+  },
+  {
+    "homeTeam": "Indianapolis Colts",
+    "awayTeam": "Baltimore Ravens",
+    "homePredicted": 28.2,
+    "awayPredicted": 22.4,
+    "pick": "Indianapolis Colts",
+    "winProb": 0.851,
+    "spread": -3.5,
+    "gameTime": "2026-09-13T17:00:00Z",
+    "confidence": "Elite"
+  },
+  {
+    "homeTeam": "New York Giants",
+    "awayTeam": "Dallas Cowboys",
+    "homePredicted": 18.4,
+    "awayPredicted": 23.4,
+    "pick": "Dallas Cowboys",
+    "winProb": 0.818,
+    "spread": -3.0,
+    "gameTime": "2026-09-14T00:20:00Z",
+    "confidence": "Elite"
+  },
+  {
+    "homeTeam": "Pittsburgh Steelers",
+    "awayTeam": "Atlanta Falcons",
+    "homePredicted": 24.0,
+    "awayPredicted": 19.7,
+    "pick": "Pittsburgh Steelers",
+    "winProb": 0.784,
+    "spread": 5.5,
+    "gameTime": "2026-09-13T17:00:00Z",
+    "confidence": "Elite"
+  },
+  {
+    "homeTeam": "Los Angeles Chargers",
+    "awayTeam": "Arizona Cardinals",
+    "homePredicted": 18.6,
+    "awayPredicted": 22.8,
+    "pick": "Arizona Cardinals",
+    "winProb": 0.779,
+    "spread": 9.5,
+    "gameTime": "2026-09-13T20:25:00Z",
+    "confidence": "Elite"
+  },
+  {
+    "homeTeam": "Philadelphia Eagles",
+    "awayTeam": "Washington Commanders",
+    "homePredicted": 20.6,
+    "awayPredicted": 23.9,
+    "pick": "Washington Commanders",
+    "winProb": 0.729,
+    "spread": 6.0,
+    "gameTime": "2026-09-13T20:25:00Z",
+    "confidence": "Elite"
+  },
+  {
+    "homeTeam": "Las Vegas Raiders",
+    "awayTeam": "Miami Dolphins",
+    "homePredicted": 14.3,
+    "awayPredicted": 17.2,
+    "pick": "Miami Dolphins",
+    "winProb": 0.705,
+    "spread": 3.0,
+    "gameTime": "2026-09-13T20:25:00Z",
+    "confidence": "Elite"
+  },
+  {
+    "homeTeam": "Minnesota Vikings",
+    "awayTeam": "Green Bay Packers",
+    "homePredicted": 23.2,
+    "awayPredicted": 25.8,
+    "pick": "Green Bay Packers",
+    "winProb": 0.686,
+    "spread": 1.5,
+    "gameTime": "2026-09-13T20:25:00Z",
+    "confidence": "Strong"
+  },
+  {
+    "homeTeam": "Kansas City Chiefs",
+    "awayTeam": "Denver Broncos",
+    "homePredicted": 28.0,
+    "awayPredicted": 26.9,
+    "pick": "Kansas City Chiefs",
+    "winProb": 0.582,
+    "spread": 2.5,
+    "gameTime": "2026-09-15T00:15:00Z",
+    "confidence": "Lean"
+  },
+  {
+    "homeTeam": "Tennessee Titans",
+    "awayTeam": "New York Jets",
+    "homePredicted": 14.2,
+    "awayPredicted": 13.2,
+    "pick": "Tennessee Titans",
+    "winProb": 0.574,
+    "spread": 1.5,
+    "gameTime": "2026-09-13T17:00:00Z",
+    "confidence": "Lean"
+  }
+]
