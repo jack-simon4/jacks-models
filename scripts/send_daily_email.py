@@ -18,6 +18,9 @@ import os
 import smtplib
 import sys
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
+
+ET = ZoneInfo('America/New_York')
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -37,6 +40,14 @@ MLB_URL     = 'https://jesimon4-scoreboard.web.app/scoreboard'
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
+
+def _et_date(game_time_str: str) -> str:
+    """Convert a UTC ISO game time string to its calendar date in Eastern time."""
+    try:
+        dt = datetime.fromisoformat(game_time_str.replace('Z', '+00:00')).astimezone(ET)
+        return dt.strftime('%Y-%m-%d')
+    except Exception:
+        return ''
 
 def pick_correct_soccer(pred_home, pred_away, act_home, act_away):
     if act_home is None or act_away is None:
@@ -783,10 +794,12 @@ def main():
         sys.exit(0)
 
     now          = datetime.now(timezone.utc)
+    now_et       = now.astimezone(ET)
     yesterday_dt = now - timedelta(days=1)
     yesterday    = yesterday_dt.strftime('%Y-%m-%d')
     today_str    = now.strftime('%Y-%m-%d')
-    date_hdr     = now.strftime('%A, %B %d, %Y').replace(' 0', ' ')
+    today_et     = now_et.strftime('%Y-%m-%d')
+    date_hdr     = now_et.strftime('%A, %B %d, %Y').replace(' 0', ' ')
 
     sections          = []
     soccer_data       = None
@@ -835,12 +848,12 @@ def main():
         with open(PICKS_PATH, encoding='utf-8') as f:
             mlb_picks_today = json.load(f)
 
-    # NFL — only include games whose kickoff falls on today's date (UTC)
+    # NFL — only include games whose kickoff falls on today in ET
     if os.path.exists(NFL_PATH):
         with open(NFL_PATH, encoding='utf-8') as f:
             nfl_picks = [
                 p for p in json.load(f)
-                if (p.get('gameTime') or '')[:10] == today_str
+                if _et_date(p.get('gameTime') or '') == today_et
             ]
         nfl_html = build_nfl_section(nfl_picks)
         if nfl_html:

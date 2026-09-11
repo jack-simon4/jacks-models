@@ -1,12 +1,13 @@
 name: Update Soccer Stats (Daily)
 
-# Runs every morning at 8 AM UTC — before European leagues kick off (~11:30 UTC earliest)
-# and well before MLS evening matches (~23:30 UTC).
+# Runs at 8:30 UTC (4:30 AM ET) — early enough that GitHub Actions queue delays
+# still deliver the daily email by 8:30 AM ET. Before European leagues kick off
+# (~11:30 UTC earliest) and well before MLS evening matches (~23:30 UTC).
 # Handles: Premier League, La Liga, Serie A, Bundesliga, Ligue 1, MLS.
 
 on:
   schedule:
-    - cron: '30 12 * * *'
+    - cron: '30 8 * * *'
   workflow_dispatch:
 
 jobs:
