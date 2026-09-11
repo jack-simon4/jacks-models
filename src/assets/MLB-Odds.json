@@ -1,11 +1,4 @@
 {
-  "Chicago White Sox": {
-    "home_team": "Chicago White Sox",
-    "away_team": "Pittsburgh Pirates",
-    "home_ml": "+680",
-    "away_ml": "-1400",
-    "book": "fanduel"
-  },
   "Detroit Tigers": {
     "home_team": "Detroit Tigers",
     "away_team": "Colorado Rockies",
