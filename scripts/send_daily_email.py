@@ -835,10 +835,13 @@ def main():
         with open(PICKS_PATH, encoding='utf-8') as f:
             mlb_picks_today = json.load(f)
 
-    # NFL
+    # NFL — only include games whose kickoff falls on today's date (UTC)
     if os.path.exists(NFL_PATH):
         with open(NFL_PATH, encoding='utf-8') as f:
-            nfl_picks = json.load(f)
+            nfl_picks = [
+                p for p in json.load(f)
+                if (p.get('gameTime') or '')[:10] == today_str
+            ]
         nfl_html = build_nfl_section(nfl_picks)
         if nfl_html:
             sections.append(nfl_html)

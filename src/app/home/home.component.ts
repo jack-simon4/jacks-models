@@ -111,12 +111,13 @@ export class HomeComponent implements OnInit {
       catchError(() => of([] as UnifiedPick[]))
     );
 
+    const oneDayAhead = new Date(now.getTime() + 24 * 60 * 60 * 1000);
     const nfl$ = this.http.get<any[]>('assets/nfl-picks.json').pipe(
       map(picks => (picks ?? [])
         .filter(p => {
-          if (!p.gameTime) return true;
+          if (!p.gameTime) return false;
           const gt = new Date(p.gameTime);
-          return gt >= now && gt <= weekAhead;
+          return gt >= now && gt <= oneDayAhead;
         })
         .map(p => this.normalizeFootball(p, 'NFL'))
         .filter((p): p is UnifiedPick => p !== null)),
