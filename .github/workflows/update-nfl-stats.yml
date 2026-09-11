@@ -36,7 +36,14 @@ jobs:
         run: python scripts/fetch_nfl_players.py
 
       - name: Generate NFL picks
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
         run: python scripts/generate_nfl_picks.py
+
+      - name: Update NFL actual results
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
+        run: python scripts/update_nfl_results.py
 
       - name: Commit updated NFL stats
         run: |
