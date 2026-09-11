@@ -152,41 +152,44 @@ def save_games_to_firestore(all_games: list):
         print('[TopPicks] firebase-admin not installed — skipping Firestore save.')
         return
 
-    cred = credentials.Certificate(json.loads(sa_json))
-    app = firebase_admin.initialize_app(cred)
-    db = fb_firestore.client()
+    try:
+        cred = credentials.Certificate(json.loads(sa_json))
+        app = firebase_admin.initialize_app(cred)
+        db = fb_firestore.client()
 
-    saved = 0
-    for game in all_games:
-        game_pk = game.get('gamePk')
-        if not game_pk:
-            continue
-        doc_ref = db.collection('games').document(str(game_pk))
-        # Only create — never overwrite a doc that already has actual scores
-        if not doc_ref.get().exists:
-            doc_ref.set({
-                'sport': 'MLB',
-                'homeTeam': game['homeTeam'],
-                'awayTeam': game['awayTeam'],
-                'predictedHomeScore': game['predictedHomeScore'],
-                'predictedAwayScore': game['predictedAwayScore'],
-                'actualHomeScore': None,
-                'actualAwayScore': None,
-                'pick': game.get('pick', ''),
-                'winProb': game.get('winProb', 0),
-                'odds': game.get('odds', ''),
-                'confidence': game.get('confidence', ''),
-                'gamePk': game_pk,
-                'gameTime': game['gameTime'],
-                'awayPitcher': game.get('awayPitcher', ''),
-                'homePitcher': game.get('homePitcher', ''),
-                'timestamp': fb_firestore.SERVER_TIMESTAMP,
-            })
-            saved += 1
-            print(f'  [Firestore] Saved: {game["awayTeam"]} @ {game["homeTeam"]}')
+        saved = 0
+        for game in all_games:
+            game_pk = game.get('gamePk')
+            if not game_pk:
+                continue
+            doc_ref = db.collection('games').document(str(game_pk))
+            # Only create — never overwrite a doc that already has actual scores
+            if not doc_ref.get().exists:
+                doc_ref.set({
+                    'sport': 'MLB',
+                    'homeTeam': game['homeTeam'],
+                    'awayTeam': game['awayTeam'],
+                    'predictedHomeScore': game['predictedHomeScore'],
+                    'predictedAwayScore': game['predictedAwayScore'],
+                    'actualHomeScore': None,
+                    'actualAwayScore': None,
+                    'pick': game.get('pick', ''),
+                    'winProb': game.get('winProb', 0),
+                    'odds': game.get('odds', ''),
+                    'confidence': game.get('confidence', ''),
+                    'gamePk': game_pk,
+                    'gameTime': game['gameTime'],
+                    'awayPitcher': game.get('awayPitcher', ''),
+                    'homePitcher': game.get('homePitcher', ''),
+                    'timestamp': fb_firestore.SERVER_TIMESTAMP,
+                })
+                saved += 1
+                print(f'  [Firestore] Saved: {game["awayTeam"]} @ {game["homeTeam"]}')
 
-    firebase_admin.delete_app(app)
-    print(f'[TopPicks] {saved} new game(s) written to Firestore.')
+        firebase_admin.delete_app(app)
+        print(f'[TopPicks] {saved} new game(s) written to Firestore.')
+    except Exception as exc:
+        print(f'[TopPicks] Firestore error (non-fatal): {exc}')
 
 
 # ── Data loaders ───────────────────────────────────────────────────────────

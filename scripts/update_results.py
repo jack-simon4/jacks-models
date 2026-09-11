@@ -28,13 +28,23 @@ def update_results():
         print('[Results] FIREBASE_SERVICE_ACCOUNT not set; skipping.')
         return
 
-    cred = credentials.Certificate(json.loads(sa_json))
-    app = firebase_admin.initialize_app(cred)
-    db = fb_firestore.client()
+    try:
+        cred = credentials.Certificate(json.loads(sa_json))
+        app = firebase_admin.initialize_app(cred)
+        db = fb_firestore.client()
+    except Exception as exc:
+        print(f'[Results] Firebase init failed (non-fatal): {exc}')
+        return
 
     # Fetch all MLB games, filter pending ones in Python to avoid index requirements
-    all_games = db.collection('games').where('sport', '==', 'MLB').stream()
-    pending = [doc for doc in all_games if doc.to_dict().get('actualHomeScore') is None]
+    try:
+        all_games = db.collection('games').where('sport', '==', 'MLB').stream()
+        pending = [doc for doc in all_games if doc.to_dict().get('actualHomeScore') is None]
+    except Exception as exc:
+        print(f'[Results] Firestore query failed (non-fatal): {exc}')
+        firebase_admin.delete_app(app)
+        return
+
     print(f'[Results] {len(pending)} pending MLB games to check.')
 
     updated = 0
@@ -72,14 +82,20 @@ def update_results():
             print(f'  [Skip] {away} @ {home} — scores missing in response.')
             continue
 
-        doc.reference.update({
-            'actualHomeScore': int(home_score),
-            'actualAwayScore': int(away_score),
-        })
-        print(f'  [Updated] {away} @ {home}: {away_score}-{home_score}')
-        updated += 1
+        try:
+            doc.reference.update({
+                'actualHomeScore': int(home_score),
+                'actualAwayScore': int(away_score),
+            })
+            print(f'  [Updated] {away} @ {home}: {away_score}-{home_score}')
+            updated += 1
+        except Exception as exc:
+            print(f'  [Error] updating {away} @ {home}: {exc}')
 
-    firebase_admin.delete_app(app)
+    try:
+        firebase_admin.delete_app(app)
+    except Exception:
+        pass
     print(f'[Results] Done. Updated {updated} game(s).')
 
 

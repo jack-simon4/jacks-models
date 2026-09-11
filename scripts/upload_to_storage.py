@@ -34,20 +34,27 @@ def upload():
         print('[Storage] FIREBASE_SERVICE_ACCOUNT env var not set; skipping.')
         return
 
-    cred = credentials.Certificate(json.loads(sa_json))
-    firebase_admin.initialize_app(cred, {'storageBucket': BUCKET})
-    bucket = fb_storage.bucket()
+    try:
+        cred = credentials.Certificate(json.loads(sa_json))
+        firebase_admin.initialize_app(cred, {'storageBucket': BUCKET})
+        bucket = fb_storage.bucket()
+    except Exception as exc:
+        print(f'[Storage] Firebase init failed (non-fatal): {exc}')
+        return
 
     for filename in FILES:
         local_path = os.path.join(ASSETS_DIR, filename)
         if not os.path.exists(local_path):
             print(f'[Storage] File not found, skipping: {filename}')
             continue
-        content_type = 'application/json' if filename.endswith('.json') else 'text/csv'
-        blob = bucket.blob(filename)
-        blob.cache_control = 'no-cache, no-store, must-revalidate'
-        blob.upload_from_filename(local_path, content_type=content_type)
-        print(f'[Storage] Uploaded {filename} -> gs://{BUCKET}/{filename}')
+        try:
+            content_type = 'application/json' if filename.endswith('.json') else 'text/csv'
+            blob = bucket.blob(filename)
+            blob.cache_control = 'no-cache, no-store, must-revalidate'
+            blob.upload_from_filename(local_path, content_type=content_type)
+            print(f'[Storage] Uploaded {filename} -> gs://{BUCKET}/{filename}')
+        except Exception as exc:
+            print(f'[Storage] Failed to upload {filename} (non-fatal): {exc}')
 
     print('[Storage] Done.')
 
