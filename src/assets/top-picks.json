@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "matchup": "Los Angeles Angels @ Washington Nationals",
+    "awayTeam": "Los Angeles Angels",
+    "homeTeam": "Washington Nationals",
+    "awayPitcher": "Grayson Rodriguez",
+    "homePitcher": "Riley Cornelio",
+    "pick": "Washington Nationals",
+    "prediction": "Washington Nationals -134",
+    "odds": "-134",
+    "winProb": 0.591,
+    "edge": 0.091,
+    "confidence": "Strong",
+    "predictedScore": "Los Angeles Angels 4.9 \u2013 Washington Nationals 6.2",
+    "predictedHomeScore": 6.16,
+    "predictedAwayScore": 4.93,
+    "gameTime": "2026-09-13T17:35:00Z",
+    "gamePk": 822682,
+    "rank": 1
+  },
+  {
+    "matchup": "New York Mets @ New York Yankees",
+    "awayTeam": "New York Mets",
+    "homeTeam": "New York Yankees",
+    "awayPitcher": "Christian Scott",
+    "homePitcher": "Cam Schlittler",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -184",
+    "odds": "-184",
+    "winProb": 0.582,
+    "edge": 0.082,
+    "confidence": "Strong",
+    "predictedScore": "New York Mets 3.9 \u2013 New York Yankees 5.0",
+    "predictedHomeScore": 5.04,
+    "predictedAwayScore": 3.93,
+    "gameTime": "2026-09-13T17:35:00Z",
+    "gamePk": 823495,
+    "rank": 2
+  }
+]
