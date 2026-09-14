@@ -2,8 +2,8 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "San Diego Padres",
-    "home_ml": "+830",
-    "away_ml": "-2000",
+    "home_ml": "+560",
+    "away_ml": "-1000",
     "book": "fanduel"
   },
   "Cleveland Guardians": {
@@ -30,8 +30,8 @@
   "New York Mets": {
     "home_team": "New York Mets",
     "away_team": "Baltimore Orioles",
-    "home_ml": "-122",
-    "away_ml": "+104",
+    "home_ml": "-118",
+    "away_ml": "+100",
     "book": "fanduel"
   },
   "Chicago Cubs": {
