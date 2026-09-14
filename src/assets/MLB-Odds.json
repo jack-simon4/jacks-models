@@ -1,11 +1,4 @@
 {
-  "San Francisco Giants": {
-    "home_team": "San Francisco Giants",
-    "away_team": "San Diego Padres",
-    "home_ml": "+560",
-    "away_ml": "-1000",
-    "book": "fanduel"
-  },
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "Chicago White Sox",
