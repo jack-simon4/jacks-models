@@ -14,7 +14,7 @@ Arizona Diamondbacks3,Gabriel Moreno
 Arizona Diamondbacks4,Geraldo Perdomo
 Arizona Diamondbacks5,Corbin Carroll
 Arizona Diamondbacks6,Nolan Arenado
-Arizona Diamondbacks7,Tim Tawa
+Arizona Diamondbacks7,Jesus Sanchez
 Arizona Diamondbacks8,Pavin Smith
 Arizona Diamondbacks9,Jordan Lawlar
 Athletics1,Henry Bolte
@@ -55,13 +55,13 @@ Boston Red Sox8,Caleb Durbin
 Boston Red Sox9,Nick Sogard
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Seiya Suzuki
-Chicago Cubs3,Michael Busch
-Chicago Cubs4,Alex Bregman
-Chicago Cubs5,Ian Happ
-Chicago Cubs6,Nico Hoerner
-Chicago Cubs7,Michael Conforto
+Chicago Cubs3,Alex Bregman
+Chicago Cubs4,Tyrone Taylor
+Chicago Cubs5,Nico Hoerner
+Chicago Cubs6,Michael Busch
+Chicago Cubs7,Matt Shaw
 Chicago Cubs8,Pedro Ramirez
-Chicago Cubs9,Carson Kelly
+Chicago Cubs9,Miguel Amaya
 Chicago White Sox1,Chase Meidroth
 Chicago White Sox2,Randal Grichuk
 Chicago White Sox3,Miguel Vargas
@@ -90,14 +90,14 @@ Cleveland Guardians7,Patrick Bailey
 Cleveland Guardians8,Petey Halpin
 Cleveland Guardians9,Brayan Rocchio
 Colorado Rockies1,Jake McCarthy
-Colorado Rockies2,Connor Norby
-Colorado Rockies3,Hunter Goodman
+Colorado Rockies2,Adael Amador
+Colorado Rockies3,Cole Carrigg
 Colorado Rockies4,TJ Rumfield
-Colorado Rockies5,Cole Carrigg
-Colorado Rockies6,Kyle Karros
-Colorado Rockies7,Mickey Moniak
-Colorado Rockies8,Adael Amador
-Colorado Rockies9,Ezequiel Tovar
+Colorado Rockies5,Kyle Karros
+Colorado Rockies6,Mickey Moniak
+Colorado Rockies7,Troy Johnston
+Colorado Rockies8,Brett Sullivan
+Colorado Rockies9,Zac Veen
 Detroit Tigers1,Kevin McGonigle
 Detroit Tigers2,Gleyber Torres
 Detroit Tigers3,Hao-Yu Lee
@@ -132,8 +132,8 @@ Los Angeles Angels4,Vaughn Grissom
 Los Angeles Angels5,Moises Ballesteros
 Los Angeles Angels6,Denzer Guzman
 Los Angeles Angels7,Josh Lowe
-Los Angeles Angels8,Adam Frazier
-Los Angeles Angels9,Christian Moore
+Los Angeles Angels8,Christian Moore
+Los Angeles Angels9,Tyler Heineman
 Los Angeles Dodgers1,Josue De Paula
 Los Angeles Dodgers2,Freddie Freeman
 Los Angeles Dodgers3,Mookie Betts
@@ -216,14 +216,14 @@ Pittsburgh Pirates7,Rafael Flores Jr.
 Pittsburgh Pirates8,Spencer Horwitz
 Pittsburgh Pirates9,Jake Mangum
 San Diego Padres1,Fernando Tatis Jr.
-San Diego Padres2,Dustin Harris
+San Diego Padres2,Austin Hays
 San Diego Padres3,Manny Machado
 San Diego Padres4,Ty France
 San Diego Padres5,Jackson Merrill
-San Diego Padres6,Luis Campusano
-San Diego Padres7,Xander Bogaerts
-San Diego Padres8,Jake Cronenworth
-San Diego Padres9,Freddy Fermin
+San Diego Padres6,Xander Bogaerts
+San Diego Padres7,Luis Campusano
+San Diego Padres8,Samad Taylor
+San Diego Padres9,Jake Cronenworth
 San Francisco Giants1,Drew Gilbert
 San Francisco Giants2,Bryce Eldridge
 San Francisco Giants3,Jonah Cox
@@ -239,9 +239,9 @@ Seattle Mariners3,Dominic Canzone
 Seattle Mariners4,Cal Raleigh
 Seattle Mariners5,Julio Rodriguez
 Seattle Mariners6,Josh Naylor
-Seattle Mariners7,Michael Arroyo
-Seattle Mariners8,Cole Young
-Seattle Mariners9,Weston Wilson
+Seattle Mariners7,Cole Young
+Seattle Mariners8,Lazaro Montes
+Seattle Mariners9,Brock Rodden
 St. Louis Cardinals1,Bryan Torres
 St. Louis Cardinals2,Ivan Herrera
 St. Louis Cardinals3,Alec Burleson
@@ -278,12 +278,12 @@ Toronto Blue Jays6,Kazuma Okamoto
 Toronto Blue Jays7,Andres Gimenez
 Toronto Blue Jays8,Josh Smith
 Toronto Blue Jays9,Ernie Clement
-Washington Nationals1,Andrew Pinckney
-Washington Nationals2,Dylan Crews
-Washington Nationals3,Andres Chaparro
-Washington Nationals4,CJ Abrams
-Washington Nationals5,Yohandy Morales
-Washington Nationals6,Daylen Lile
-Washington Nationals7,Keibert Ruiz
-Washington Nationals8,Jorbit Vivas
-Washington Nationals9,Jacob Young
+Washington Nationals1,Dylan Crews
+Washington Nationals2,Andres Chaparro
+Washington Nationals3,Brady House
+Washington Nationals4,Yohandy Morales
+Washington Nationals5,Jacob Young
+Washington Nationals6,Jorbit Vivas
+Washington Nationals7,Harry Ford
+Washington Nationals8,Andrew Pinckney
+Washington Nationals9,Nasim Nunez
