@@ -16,8 +16,8 @@
   "Toronto Blue Jays": {
     "home_team": "Toronto Blue Jays",
     "away_team": "Detroit Tigers",
-    "home_ml": "-142",
-    "away_ml": "+120",
+    "home_ml": "+200",
+    "away_ml": "-265",
     "book": "fanduel"
   },
   "New York Mets": {
@@ -51,8 +51,8 @@
   "Colorado Rockies": {
     "home_team": "Colorado Rockies",
     "away_team": "San Diego Padres",
-    "home_ml": "+168",
-    "away_ml": "-200",
+    "home_ml": "+320",
+    "away_ml": "-460",
     "book": "fanduel"
   },
   "Los Angeles Angels": {
@@ -65,8 +65,8 @@
   "Arizona Diamondbacks": {
     "home_team": "Arizona Diamondbacks",
     "away_team": "Miami Marlins",
-    "home_ml": "-152",
-    "away_ml": "+128",
+    "home_ml": "-146",
+    "away_ml": "+124",
     "book": "fanduel"
   },
   "Tampa Bay Rays": {
