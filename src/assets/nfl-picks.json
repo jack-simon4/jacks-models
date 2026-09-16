@@ -34,7 +34,7 @@
     "predictedAwayScore": 14.8,
     "pick": "Dallas Cowboys",
     "winProb": 0.959,
-    "spread": 3.5,
+    "spread": 4.5,
     "gameTime": "2026-09-20T20:25:00Z",
     "confidence": "Elite"
   },
@@ -47,7 +47,7 @@
     "predictedAwayScore": 16.5,
     "pick": "Baltimore Ravens",
     "winProb": 0.955,
-    "spread": 8.5,
+    "spread": 7.5,
     "gameTime": "2026-09-20T17:00:00Z",
     "confidence": "Elite"
   },
@@ -86,7 +86,7 @@
     "predictedAwayScore": 21.5,
     "pick": "Arizona Cardinals",
     "winProb": 0.91,
-    "spread": -4.5,
+    "spread": -3.5,
     "gameTime": "2026-09-20T20:25:00Z",
     "confidence": "Elite"
   },
@@ -99,7 +99,7 @@
     "predictedAwayScore": 16.6,
     "pick": "Atlanta Falcons",
     "winProb": 0.858,
-    "spread": -1.5,
+    "spread": -2.5,
     "gameTime": "2026-09-20T17:00:00Z",
     "confidence": "Elite"
   },
@@ -112,7 +112,7 @@
     "predictedAwayScore": 15.0,
     "pick": "Los Angeles Chargers",
     "winProb": 0.851,
-    "spread": 7.0,
+    "spread": 6.5,
     "gameTime": "2026-09-20T20:05:00Z",
     "confidence": "Elite"
   },
@@ -190,7 +190,7 @@
     "predictedAwayScore": 27.3,
     "pick": "New England Patriots",
     "winProb": 0.711,
-    "spread": 5.5,
+    "spread": 4.5,
     "gameTime": "2026-09-20T17:00:00Z",
     "confidence": "Elite"
   },
