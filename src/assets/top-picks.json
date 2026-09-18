@@ -13,10 +13,29 @@
     "confidence": "Elite",
     "predictedScore": "Athletics 4.2 \u2013 Cleveland Guardians 6.2",
     "predictedHomeScore": 6.16,
-    "predictedAwayScore": 4.22,
+    "predictedAwayScore": 4.21,
     "gameTime": "2026-09-18T23:10:00Z",
     "gamePk": 824383,
     "rank": 1
+  },
+  {
+    "matchup": "Milwaukee Brewers @ Baltimore Orioles",
+    "awayTeam": "Milwaukee Brewers",
+    "homeTeam": "Baltimore Orioles",
+    "awayPitcher": "Dustin May",
+    "homePitcher": "Cade Povich",
+    "pick": "Milwaukee Brewers",
+    "prediction": "Milwaukee Brewers -138",
+    "odds": "-138",
+    "winProb": 0.613,
+    "edge": 0.113,
+    "confidence": "Strong",
+    "predictedScore": "Milwaukee Brewers 6.4 \u2013 Baltimore Orioles 4.9",
+    "predictedHomeScore": 4.86,
+    "predictedAwayScore": 6.39,
+    "gameTime": "2026-09-18T23:05:00Z",
+    "gamePk": 824790,
+    "rank": 2
   },
   {
     "matchup": "San Francisco Giants @ Los Angeles Dodgers",
@@ -35,7 +54,7 @@
     "predictedAwayScore": 3.48,
     "gameTime": "2026-09-19T02:15:00Z",
     "gamePk": 823898,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Toronto Blue Jays @ Texas Rangers",
@@ -46,14 +65,14 @@
     "pick": "Toronto Blue Jays",
     "prediction": "Toronto Blue Jays -136",
     "odds": "-136",
-    "winProb": 0.581,
-    "edge": 0.081,
+    "winProb": 0.582,
+    "edge": 0.082,
     "confidence": "Strong",
     "predictedScore": "Toronto Blue Jays 5.6 \u2013 Texas Rangers 4.5",
-    "predictedHomeScore": 4.53,
+    "predictedHomeScore": 4.52,
     "predictedAwayScore": 5.62,
     "gameTime": "2026-09-19T00:05:00Z",
     "gamePk": 822847,
-    "rank": 3
+    "rank": 4
   }
 ]
