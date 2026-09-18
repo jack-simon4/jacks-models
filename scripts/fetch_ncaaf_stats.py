@@ -41,8 +41,10 @@ _today = date.today()
 SEASON_YEAR = _today.year if _today.month >= 8 else _today.year - 1
 PRIOR_YEAR  = SEASON_YEAR - 1
 
-# How many games of current-season data before we fully trust it over the prior
-BLEND_FULL_GAMES = 8
+# Games needed before we trust current-season data exclusively.
+# With 3+ games: 100% current season.
+# With fewer games: current season still outweighs prior (see blend_weight()).
+BLEND_FULL_GAMES = 3
 
 # Weight of last-3-games stats in the wYds/* columns
 W_RECENT = 0.35
@@ -153,7 +155,11 @@ def fetch_game_stats(year: int) -> dict:
     where off/def are stat dicts for that team's offense/defense in each game.
     """
     print(f'[NCAAF] Fetching {year} per-game stats...')
-    raw = _api('/games/teams', {'year': year, 'seasonType': 'regular'})
+    try:
+        raw = _api('/games/teams', {'year': year, 'seasonType': 'regular'})
+    except Exception as exc:
+        print(f'[NCAAF] WARNING: {year} game stats API error: {exc}')
+        return {}
     if not raw:
         return {}
 
@@ -202,15 +208,21 @@ def fetch_sp_ratings(year: int) -> dict:
     """
     Fetch SP+ ratings.
     Returns {csv_team_name: {'sos': float}}
+    SP+ may not be published early in the season — returns {} on failure.
     """
     print(f'[NCAAF] Fetching {year} SP+ ratings...')
-    raw = _api('/ratings/sp', {'year': year})
+    try:
+        raw = _api('/ratings/sp', {'year': year})
+    except Exception as exc:
+        print(f'[NCAAF] WARNING: SP+ ratings not available for {year}: {exc}')
+        return {}
     result = {}
     for entry in raw:
         cfbd_name = entry.get('team', '')
         csv_name = CFBD_TO_CSV.get(cfbd_name, cfbd_name)
         sos = _safe(entry.get('sos'), 0.0)
         result[csv_name] = {'sos': sos}
+    print(f'[NCAAF] SP+ ratings loaded for {len(result)} teams.')
     return result
 
 
@@ -313,143 +325,181 @@ def prior_val(prior: pd.DataFrame | None, team: str, col: str,
     return fallback
 
 
+def blend_weight(gp: int) -> float:
+    """Return the weight to place on current-season stats vs prior-season stats.
+    3+ games → 100% current season.
+    1–2 games → current season still outweighs prior (college rosters turn over heavily).
+    0 games → fall back entirely to prior year."""
+    if gp >= 3:
+        return 1.0
+    if gp == 2:
+        return 0.80
+    if gp == 1:
+        return 0.60
+    return 0.0
+
+
+def compute_team_stats(off_games: list, def_games: list, national_avg: float, lg: dict) -> dict:
+    """Compute all stats for one team from their offense/defense game lists."""
+    if not off_games:
+        return {}
+    off  = compute_stats(off_games)
+    def_ = compute_def_stats(def_games) if def_games else {}
+
+    def co(key, fb): return _safe(off.get(key),  fb)
+    def cd(key, fb): return _safe(def_.get(key), fb) if def_ else fb
+
+    pts_for     = co('pts_for_pg',    national_avg)
+    pts_against = cd('pts_against_pg', national_avg)
+    yds_play    = co('yds_play',    lg['yds_play'])
+    yds_play_l3 = co('yds_play_l3', yds_play)
+    plays_pg    = co('plays_pg',    lg['plays_pg'])
+
+    d_yds_play    = cd('d_yds_play',    lg['d_yds_play'])
+    d_yds_play_l3 = cd('d_yds_play_l3', d_yds_play)
+    d_plays_pg    = cd('d_plays_pg',    lg['d_plays_pg'])
+
+    yds_pt   = (yds_play   * plays_pg)   / pts_for     if pts_for     > 0 else lg['yds_pt']
+    d_yds_pt = (d_yds_play * d_plays_pg) / pts_against if pts_against > 0 else lg['d_yds_pt']
+
+    yds_pt_l3   = yds_pt   * (yds_play_l3   / max(yds_play,   0.1))
+    d_yds_pt_l3 = d_yds_pt * (d_yds_play_l3 / max(d_yds_play, 0.1))
+
+    return {
+        'pts_for':     pts_for,
+        'pts_against': pts_against,
+        'yds_play':    yds_play,    'yds_play_l3':   yds_play_l3,
+        'd_yds_play':  d_yds_play,  'd_yds_play_l3': d_yds_play_l3,
+        'yds_pt':      yds_pt,      'yds_pt_l3':     yds_pt_l3,
+        'd_yds_pt':    d_yds_pt,    'd_yds_pt_l3':   d_yds_pt_l3,
+        'plays_pg':    plays_pg,    'd_plays_pg':    d_plays_pg,
+        'games':       len(off_games),
+    }
+
+
 def build():
     if not API_KEY:
         print('[NCAAF] CFBD_API_KEY not set — skipping.')
         sys.exit(0)
 
-    # Load existing CSV team list (preserves team order)
-    prior = load_prior()
-    if prior is None:
+    # Load existing CSV for team list and HomeAdv (which we preserve across seasons)
+    prior_csv = load_prior()
+    if prior_csv is None:
         print('[NCAAF] No existing NCAAF-Stats.csv found; cannot determine team list.')
         sys.exit(1)
-    teams_in_csv = list(prior.index)
+    teams_in_csv = list(prior_csv.index)
 
-    # Try current season; fall back to prior year in off-season
-    game_data = fetch_game_stats(SEASON_YEAR)
-    using_prior_year = False
-    if not game_data:
-        print(f'[NCAAF] No {SEASON_YEAR} game data — trying {PRIOR_YEAR}.')
-        game_data = fetch_game_stats(PRIOR_YEAR)
-        using_prior_year = True
-        if not game_data:
-            print('[NCAAF] No data available. Aborting.')
-            sys.exit(1)
+    # Always fetch current-season game data
+    print(f'[NCAAF] Fetching {SEASON_YEAR} (current) and {PRIOR_YEAR} (baseline) data...')
+    cur_game_data   = fetch_game_stats(SEASON_YEAR)
+    prior_game_data = fetch_game_stats(PRIOR_YEAR)
 
-    sp_year = PRIOR_YEAR if using_prior_year else SEASON_YEAR
-    sp_ratings = fetch_sp_ratings(sp_year)
-    opp_views  = build_opponent_views(game_data)
+    if not cur_game_data and not prior_game_data:
+        print('[NCAAF] No game data available from API. Aborting.')
+        sys.exit(1)
 
-    # Compute national averages for oRating / dRating
-    all_pts_for     = [g['points'] for glist in game_data.values() for g in glist]
-    national_avg    = sum(all_pts_for) / len(all_pts_for) if all_pts_for else 30.0
+    # Fall back to off-season mode: use prior year as sole source
+    off_season = not cur_game_data
+    if off_season:
+        print(f'[NCAAF] No {SEASON_YEAR} games yet — using {PRIOR_YEAR} only.')
 
-    # Default league-average values (used when data is absent)
+    # SP+ ratings: prefer current season
+    sp_ratings = fetch_sp_ratings(SEASON_YEAR if not off_season else PRIOR_YEAR)
+
+    cur_opp_views   = build_opponent_views(cur_game_data)   if cur_game_data   else {}
+    prior_opp_views = build_opponent_views(prior_game_data) if prior_game_data else {}
+
+    # National avg from current season if available, else prior
+    ref_data = cur_game_data if cur_game_data else prior_game_data
+    all_pts  = [g['points'] for glist in ref_data.values() for g in glist]
+    national_avg = sum(all_pts) / len(all_pts) if all_pts else 30.0
+
     LG = {
-        'yds_play':   5.8,
-        'd_yds_play': 5.8,
-        'yds_pt':     14.5,
-        'd_yds_pt':   14.5,
-        'plays_pg':   68.0,
-        'd_plays_pg': 68.0,
-        'home_adv':   2.5,
-        'sos':        0.0,
-        'o_rating':   1.0,
-        'd_rating':   1.0,
+        'yds_play':   5.8,  'd_yds_play': 5.8,
+        'yds_pt':     14.5, 'd_yds_pt':   14.5,
+        'plays_pg':   68.0, 'd_plays_pg': 68.0,
+        'home_adv':   2.5,  'sos':        0.0,
     }
 
     rows = []
     for csv_team in teams_in_csv:
-        off_games = game_data.get(csv_team, [])
-        def_games = opp_views.get(csv_team, [])
+        cur_off   = cur_game_data.get(csv_team, [])
+        cur_def   = cur_opp_views.get(csv_team, [])
+        prior_off = prior_game_data.get(csv_team, []) if prior_game_data else []
+        prior_def = prior_opp_views.get(csv_team, []) if prior_opp_views else []
 
-        gp = len(off_games)
-        # Blend weight: 0 = all prior, 1 = all current
-        w = 1.0 if using_prior_year else min(gp / BLEND_FULL_GAMES, 1.0)
+        gp = len(cur_off)
+        w  = 1.0 if off_season else blend_weight(gp)
 
-        if off_games:
-            off = compute_stats(off_games)
-            def_ = compute_def_stats(def_games)
-        else:
-            off = {}
-            def_ = {}
+        # Compute stats from each season independently
+        cur_s   = compute_team_stats(cur_off,   cur_def,   national_avg, LG) if cur_off   else {}
+        prior_s = compute_team_stats(prior_off, prior_def, national_avg, LG) if prior_off else {}
 
-        def cur_off(key, fb):
-            return _safe(off.get(key), fb) if off else fb
+        def blend(key, fallback):
+            c = cur_s.get(key,   fallback)
+            p = prior_s.get(key, fallback)
+            return w * c + (1 - w) * p
 
-        def cur_def(key, fb):
-            return _safe(def_.get(key), fb) if def_ else fb
+        pts_for     = blend('pts_for',     national_avg)
+        pts_against = blend('pts_against', national_avg)
+        yds_play    = blend('yds_play',    LG['yds_play'])
+        yds_play_l3 = blend('yds_play_l3', yds_play)
+        d_yds_play  = blend('d_yds_play',  LG['d_yds_play'])
+        d_yds_play_l3 = blend('d_yds_play_l3', d_yds_play)
+        yds_pt      = blend('yds_pt',      LG['yds_pt'])
+        yds_pt_l3   = blend('yds_pt_l3',   yds_pt)
+        d_yds_pt    = blend('d_yds_pt',    LG['d_yds_pt'])
+        d_yds_pt_l3 = blend('d_yds_pt_l3', d_yds_pt)
+        plays_pg    = blend('plays_pg',    LG['plays_pg'])
+        d_plays_pg  = blend('d_plays_pg',  LG['d_plays_pg'])
 
-        # ── Season stats ─────────────────────────────────────────────────────
-        pts_for     = cur_off('pts_for_pg', national_avg)
-        pts_against = cur_def('pts_against_pg', national_avg)
-        yds_play    = cur_off('yds_play',    LG['yds_play'])
-        yds_play_l3 = cur_off('yds_play_l3', yds_play)
-        plays_pg    = cur_off('plays_pg',    LG['plays_pg'])
+        w_yds_play  = W_SEASON * yds_play   + W_RECENT * yds_play_l3
+        wd_yds_play = W_SEASON * d_yds_play + W_RECENT * d_yds_play_l3
+        w_yds_pt    = W_SEASON * yds_pt     + W_RECENT * yds_pt_l3
+        wd_yds_pt   = W_SEASON * d_yds_pt   + W_RECENT * d_yds_pt_l3
 
-        d_yds_play    = cur_def('d_yds_play',    LG['d_yds_play'])
-        d_yds_play_l3 = cur_def('d_yds_play_l3', d_yds_play)
-        d_plays_pg    = cur_def('d_plays_pg',     LG['d_plays_pg'])
-
-        yds_pt   = (yds_play * plays_pg) / pts_for   if pts_for   > 0 else LG['yds_pt']
-        d_yds_pt = (d_yds_play * d_plays_pg) / pts_against if pts_against > 0 else LG['d_yds_pt']
-
-        # Rough last-3 approximation for Yds/Pt (use last3 yds/play ratio)
-        yds_pt_l3   = yds_pt   * (yds_play_l3   / max(yds_play,   0.1))
-        d_yds_pt_l3 = d_yds_pt * (d_yds_play_l3 / max(d_yds_play, 0.1))
-
-        # Weighted stats
-        w_yds_play   = W_SEASON * yds_play   + W_RECENT * yds_play_l3
-        wd_yds_play  = W_SEASON * d_yds_play + W_RECENT * d_yds_play_l3
-        w_yds_pt     = W_SEASON * yds_pt     + W_RECENT * yds_pt_l3
-        wd_yds_pt    = W_SEASON * d_yds_pt   + W_RECENT * d_yds_pt_l3
-
-        # Ratings
         o_rating = pts_for     / national_avg if national_avg > 0 else 1.0
         d_rating = pts_against / national_avg if national_avg > 0 else 1.0
-
-        # SOS from SP+
-        sos = sp_ratings.get(csv_team, {}).get('sos', 0.0)
-
-        # Home advantage: use prior if available (limited by single-season sample)
-        home_adv = prior_val(prior, csv_team, 'HomeAdv', LG['home_adv'])
-
-        # ── Blend with prior CSV ─────────────────────────────────────────────
-        def b(col, cur_val):
-            p = prior_val(prior, csv_team, col, cur_val)
-            return round(w * cur_val + (1 - w) * p, 3)
+        sos      = sp_ratings.get(csv_team, {}).get('sos', 0.0)
+        home_adv = prior_val(prior_csv, csv_team, 'HomeAdv', LG['home_adv'])
 
         rows.append({
-            'Team':        csv_team,
-            'SOS':         round(sos, 1),
-            'oRating':     b('oRating',     o_rating),
-            'dRating':     b('dRating',     d_rating),
-            'Yds/Play':    b('Yds/Play',    round(yds_play, 1)),
-            'Last 3':      round(yds_play_l3, 1),
-            'wYds/Play':   b('wYds/Play',   round(w_yds_play, 3)),
-            'D Yds/Play':  b('D Yds/Play',  round(d_yds_play, 1)),
-            'Last 3.1':    round(d_yds_play_l3, 1),
-            'wD Yds/Play': b('wD Yds/Play', round(wd_yds_play, 3)),
-            'Yds/Point':   b('Yds/Point',   round(yds_pt, 1)),
-            'Last 3.2':    round(yds_pt_l3, 1),
-            'wYds/Point':  b('wYds/Point',  round(w_yds_pt, 3)),
-            'D Yds/Point': b('D Yds/Point', round(d_yds_pt, 1)),
-            'Last 3.3':    round(d_yds_pt_l3, 1),
-            'wD Yds/Point': b('wD Yds/Point', round(wd_yds_pt, 3)),
-            'PlaysGame':   b('PlaysGame',   round(plays_pg, 1)),
-            'dPlaysGame':  b('dPlaysGame',  round(d_plays_pg, 1)),
-            'HomeAdv':     round(home_adv, 2),
+            'Team':         csv_team,
+            'SOS':          round(sos, 1),
+            'oRating':      round(o_rating,   3),
+            'dRating':      round(d_rating,   3),
+            'Yds/Play':     round(yds_play,   1),
+            'Last 3':       round(yds_play_l3, 1),
+            'wYds/Play':    round(w_yds_play, 3),
+            'D Yds/Play':   round(d_yds_play, 1),
+            'Last 3.1':     round(d_yds_play_l3, 1),
+            'wD Yds/Play':  round(wd_yds_play, 3),
+            'Yds/Point':    round(yds_pt,     1),
+            'Last 3.2':     round(yds_pt_l3,  1),
+            'wYds/Point':   round(w_yds_pt,   3),
+            'D Yds/Point':  round(d_yds_pt,   1),
+            'Last 3.3':     round(d_yds_pt_l3, 1),
+            'wD Yds/Point': round(wd_yds_pt,  3),
+            'PlaysGame':    round(plays_pg,   1),
+            'dPlaysGame':   round(d_plays_pg, 1),
+            'HomeAdv':      round(home_adv,   2),
         })
-        status = f'{gp} games, blend {w:.0%}' if not using_prior_year else 'prior year (full season)'
+
+        if off_season:
+            status = f'off-season, {PRIOR_YEAR} only'
+        elif gp == 0:
+            status = f'no {SEASON_YEAR} games, using {PRIOR_YEAR}'
+        elif gp >= BLEND_FULL_GAMES:
+            status = f'{gp} games, 100% {SEASON_YEAR}'
+        else:
+            status = f'{gp} game(s), {w:.0%} {SEASON_YEAR} / {1-w:.0%} {PRIOR_YEAR}'
         print(f'  {csv_team}: {status}')
 
     if not rows:
         print('[NCAAF] No rows generated. Aborting.')
         sys.exit(1)
 
-    # Write with the original CSV column header names
     df = pd.DataFrame(rows)
-    # Rename duplicate "Last 3" columns back to match the original CSV header
     df.columns = [
         'Team', 'SOS', 'oRating', 'dRating',
         'Yds/Play', 'Last 3', 'wYds/Play',
