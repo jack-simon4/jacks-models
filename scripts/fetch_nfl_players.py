@@ -83,6 +83,177 @@ def _safe(val, fallback: float) -> float:
         return fallback
 
 
+def fetch_roster_teams(year: int) -> dict[str, str]:
+    """Return {player_id: team_abbr} for the given season's most recent active roster.
+    Uses import_weekly_rosters and takes the latest week per player.
+    Used to remap prior-season stats to correct current-season teams."""
+    try:
+        rosters = nfl.import_weekly_rosters([year])
+        if rosters is None or rosters.empty:
+            print(f'[NFLPlayers] No weekly roster data for {year}.')
+            return {}
+        # Keep the most recent week's entry per player (latest team assignment)
+        rosters = rosters.sort_values('week').groupby('player_id').last().reset_index()
+        id_col   = 'player_id'
+        team_col = 'team'
+        result: dict[str, str] = {}
+        for _, row in rosters.iterrows():
+            pid = str(row.get(id_col, '')).strip()
+            tm  = str(row.get(team_col, '')).strip()
+            if pid and tm and tm not in ('nan', 'FA', 'UFA', ''):
+                result[pid] = tm
+        print(f'[NFLPlayers] {year} weekly roster: {len(result)} active player-team assignments loaded.')
+        return result
+    except Exception as exc:
+        print(f'[NFLPlayers] Roster fetch failed for {year}: {exc}')
+        return {}
+
+
+def apply_roster_override(df: pd.DataFrame, roster: dict[str, str]) -> pd.DataFrame:
+    """Re-assign the team column in df using current-season roster data.
+    Corrects for free-agent moves so prior-season stats follow players to their new teams."""
+    if df is None or df.empty or not roster:
+        return df
+    id_col = next((c for c in ['player_id', 'gsis_id'] if c in df.columns), None)
+    if not id_col:
+        return df
+    df       = df.copy()
+    new_teams = df[id_col].map(roster)
+    moved     = new_teams.notna() & (new_teams != df['team'])
+    if moved.any():
+        name_col = 'player_display_name' if 'player_display_name' in df.columns else 'player_name'
+        for _, row in df[moved].iterrows():
+            nm  = str(row.get(name_col, '')).strip()
+            old = row['team']
+            new = roster.get(str(row[id_col]), '')
+            print(f'  [Team update] {nm}: {old} → {new}')
+        df.loc[new_teams.notna(), 'team'] = new_teams[new_teams.notna()]
+    return df
+
+
+def fetch_seasonal_from_pfr(year: int) -> pd.DataFrame | None:
+    """Build a seasonal stats DataFrame using PFR data (rush + rec + pass).
+    Fallback when import_weekly_data returns 404 for a recent season.
+    Returns a DataFrame with the same columns as fetch_seasonal()."""
+
+    player_map: dict[str, dict] = {}
+
+    def _base(pid, name, pos, team, g):
+        return {
+            'player_id': pid, 'player_display_name': name,
+            'position': pos, 'team': team, 'games': g,
+            'completions': 0.0, 'attempts': 0.0,
+            'passing_yards': 0.0, 'passing_tds': 0.0, 'interceptions': 0.0,
+            'carries': 0.0, 'rushing_yards': 0.0, 'rushing_tds': 0.0,
+            'targets': 0.0, 'receiving_yards': 0.0, 'receiving_tds': 0.0,
+        }
+
+    # ── Rushing ──────────────────────────────────────────────────────────
+    try:
+        rush = nfl.import_seasonal_pfr('rush', [year])
+        if rush is not None and not rush.empty:
+            for _, r in rush.iterrows():
+                att = float(r.get('att', 0) or 0)
+                if att < 1:
+                    continue
+                pid  = str(r.get('pfr_id', '')).strip()
+                g    = max(float(r.get('g', 1) or 1), 1)
+                if pid not in player_map:
+                    player_map[pid] = _base(
+                        pid,
+                        str(r.get('player', '')).strip(),
+                        str(r.get('pos', 'RB')).strip().upper(),
+                        str(r.get('tm', '')).strip(),
+                        g,
+                    )
+                player_map[pid]['carries']       = att
+                player_map[pid]['rushing_yards'] = float(r.get('yds', 0) or 0)
+                player_map[pid]['rushing_tds']   = float(r.get('td', 0) or 0)
+                player_map[pid]['games']         = max(player_map[pid]['games'], g)
+            n_rush = sum(1 for v in player_map.values() if v['carries'] > 0)
+            print(f'[NFLPlayers] PFR rush {year}: {n_rush} rushers.')
+    except Exception as e:
+        print(f'[NFLPlayers] PFR rush {year} error: {e}')
+
+    # ── Receiving ─────────────────────────────────────────────────────────
+    try:
+        rec = nfl.import_seasonal_pfr('rec', [year])
+        if rec is not None and not rec.empty:
+            for _, r in rec.iterrows():
+                tgts = float(r.get('tgt', 0) or 0)
+                if tgts < 1:
+                    continue
+                pid  = str(r.get('pfr_id', '')).strip()
+                g    = max(float(r.get('g', 1) or 1), 1)
+                if pid not in player_map:
+                    player_map[pid] = _base(
+                        pid,
+                        str(r.get('player', '')).strip(),
+                        str(r.get('pos', 'WR')).strip().upper(),
+                        str(r.get('tm', '')).strip(),
+                        g,
+                    )
+                player_map[pid]['targets']         = tgts
+                player_map[pid]['receiving_yards'] = float(r.get('yds', 0) or 0)
+                player_map[pid]['receiving_tds']   = float(r.get('td', 0) or 0)
+                player_map[pid]['games']           = max(player_map[pid]['games'], g)
+            n_rec = sum(1 for v in player_map.values() if v['targets'] > 0)
+            print(f'[NFLPlayers] PFR rec {year}: {n_rec} receivers.')
+    except Exception as e:
+        print(f'[NFLPlayers] PFR rec {year} error: {e}')
+
+    # ── Passing (QBs) ────────────────────────────────────────────────────
+    try:
+        pass_s  = nfl.import_seasonal_pfr('pass', [year])
+        wk_pass = nfl.import_weekly_pfr('pass', [year])
+
+        # Count regular-season games played per QB from weekly PFR
+        games_map: dict[str, int] = {}
+        if wk_pass is not None and not wk_pass.empty:
+            id_col_w = next((c for c in ['pfr_player_id', 'pfr_player_name'] if c in wk_pass.columns), None)
+            if id_col_w:
+                gt_col = 'game_type' if 'game_type' in wk_pass.columns else None
+                reg    = wk_pass[wk_pass[gt_col] == 'REG'] if gt_col else wk_pass
+                for pid_val, grp in reg.groupby(id_col_w):
+                    games_map[str(pid_val)] = int(grp['week'].nunique())
+
+        if pass_s is not None and not pass_s.empty:
+            for _, r in pass_s.iterrows():
+                att = float(r.get('pass_attempts', 0) or 0)
+                if att < MIN_QB_ATTEMPTS:
+                    continue
+                pid  = str(r.get('pfr_id', '')).strip()
+                g    = float(games_map.get(pid, 17))
+                # Total passing yards = completed air yards + YAC
+                yds  = (float(r.get('completed_air_yards', 0) or 0) +
+                        float(r.get('pass_yards_after_catch', 0) or 0))
+                team = str(r.get('team', '')).strip()
+                name = str(r.get('player', '')).strip()
+
+                if pid not in player_map:
+                    player_map[pid] = _base(pid, name, 'QB', team, g)
+                # Overwrite position/team/passing stats (pass data is authoritative for QBs)
+                player_map[pid].update({
+                    'position':      'QB',
+                    'team':          team if team else player_map[pid]['team'],
+                    'attempts':      att,
+                    'passing_yards': yds,
+                    'games':         max(player_map[pid]['games'], g),
+                })
+            n_qb = sum(1 for v in player_map.values() if v['attempts'] >= MIN_QB_ATTEMPTS)
+            print(f'[NFLPlayers] PFR pass {year}: {n_qb} qualifying QBs.')
+    except Exception as e:
+        print(f'[NFLPlayers] PFR pass {year} error: {e}')
+
+    if not player_map:
+        print(f'[NFLPlayers] PFR fallback {year}: no data.')
+        return None
+
+    df = pd.DataFrame(list(player_map.values()))
+    print(f'[NFLPlayers] PFR fallback {year}: {len(df)} player-seasons total.')
+    return df
+
+
 def fetch_seasonal(year: int) -> pd.DataFrame | None:
     """
     Aggregate weekly data into per-player season totals for the given year.
@@ -131,22 +302,36 @@ def fetch_seasonal(year: int) -> pd.DataFrame | None:
 
 
 def fetch_depth_chart(year: int) -> dict[str, list[str]]:
-    """Return {team_abbr: [qb1_name, qb2_name, ...]} from most recent week."""
+    """Return {team_abbr: [qb1_name, qb2_name, ...]} from most recent depth chart."""
     try:
         dc = nfl.import_depth_charts([year])
         if dc is None or dc.empty:
             return {}
-        qb_dc = dc[dc['position'] == 'QB'].copy()
+        # Column name varies by year: 'position' or 'pos_abb'
+        pos_col = next((c for c in ['position', 'pos_abb'] if c in dc.columns), None)
+        if not pos_col:
+            return {}
+        qb_dc = dc[dc[pos_col] == 'QB'].copy()
         if qb_dc.empty:
             return {}
-        max_week = qb_dc['week'].max()
-        qb_dc = qb_dc[qb_dc['week'] == max_week].sort_values('depth_order')
-        name_col = 'full_name' if 'full_name' in qb_dc.columns else 'player_name'
-        team_col = 'club_code' if 'club_code' in qb_dc.columns else 'team'
+        # Use 'week' if present, otherwise fall back to most recent 'dt' timestamp
+        if 'week' in qb_dc.columns:
+            max_key = qb_dc['week'].max()
+            qb_dc   = qb_dc[qb_dc['week'] == max_key]
+        elif 'dt' in qb_dc.columns:
+            max_key = qb_dc['dt'].max()
+            qb_dc   = qb_dc[qb_dc['dt'] == max_key]
+        sort_col = next((c for c in ['depth_order', 'pos_rank', 'pos_slot'] if c in qb_dc.columns), None)
+        if sort_col:
+            qb_dc = qb_dc.sort_values(sort_col)
+        name_col = next((c for c in ['full_name', 'player_name'] if c in qb_dc.columns), None)
+        team_col = next((c for c in ['club_code', 'team'] if c in qb_dc.columns), None)
+        if not name_col or not team_col:
+            return {}
         result = {}
         for team, grp in qb_dc.groupby(team_col):
             result[str(team)] = [str(n).strip() for n in grp[name_col] if n]
-        print(f'[NFLPlayers] Depth chart loaded for {len(result)} teams (week {max_week}).')
+        print(f'[NFLPlayers] Depth chart loaded for {len(result)} teams.')
         return result
     except Exception as exc:
         print(f'[NFLPlayers] Depth chart fetch failed: {exc}')
@@ -421,9 +606,21 @@ def build_receivers_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | No
     print(f'[NFLPlayers] Wrote {len(rows)} receiver rows -> {REC_OUTPUT}')
 
 
+def _fetch_with_pfr_fallback(year: int) -> tuple[pd.DataFrame | None, str]:
+    """Try nflverse weekly data, fall back to PFR seasonal data for the given year.
+    Returns (df, source_label) where source_label is 'nflverse' or 'pfr'."""
+    df = fetch_seasonal(year)
+    if df is not None and not df.empty:
+        return df, 'nflverse'
+    df = fetch_seasonal_from_pfr(year)
+    if df is not None and not df.empty:
+        return df, 'pfr'
+    return None, 'none'
+
+
 def build():
-    # Try current season; fall back to prior if no data yet
-    cur_df = fetch_seasonal(SEASON_YEAR)
+    # Try current season (nflverse first, then PFR)
+    cur_df, cur_src = _fetch_with_pfr_fallback(SEASON_YEAR)
 
     games_played = 0
     if cur_df is not None and not cur_df.empty:
@@ -432,21 +629,30 @@ def build():
             games_played = int(cur_df[games_col].max() or 0)
 
     if cur_df is None or games_played == 0:
-        print(f'[NFLPlayers] No {SEASON_YEAR} data — using {PRIOR_YEAR} only.')
+        print(f'[NFLPlayers] No {SEASON_YEAR} game data yet — will use {PRIOR_YEAR} as sole baseline.')
         cur_df = None
 
-    # Try prior years in order until we find data (library may not have latest season yet)
+    # Prior season baseline — try each year's nflverse then PFR before stepping back
     prior_df = None
+    used_prior_year = PRIOR_YEAR
     for fallback_year in [PRIOR_YEAR, PRIOR_YEAR - 1, PRIOR_YEAR - 2]:
-        prior_df = fetch_seasonal(fallback_year)
+        prior_df, src = _fetch_with_pfr_fallback(fallback_year)
         if prior_df is not None and not prior_df.empty:
-            print(f'[NFLPlayers] Using {fallback_year} as baseline season.')
+            used_prior_year = fallback_year
+            print(f'[NFLPlayers] Using {fallback_year} {src} data as baseline season.')
             break
 
     # If we have no data at all, bail
     if cur_df is None and prior_df is None:
         print('[NFLPlayers] No data available for any recent season. Aborting.')
         sys.exit(1)
+
+    # Apply current-season roster to prior-season stats so players who changed
+    # teams during the off-season appear on their correct current-season teams.
+    roster_current = fetch_roster_teams(SEASON_YEAR)
+    if roster_current and prior_df is not None:
+        print(f'[NFLPlayers] Applying {SEASON_YEAR} roster corrections to {used_prior_year} stats...')
+        prior_df = apply_roster_override(prior_df, roster_current)
 
     depth_chart  = fetch_depth_chart(SEASON_YEAR)
     injured_out  = fetch_injured_out(SEASON_YEAR)

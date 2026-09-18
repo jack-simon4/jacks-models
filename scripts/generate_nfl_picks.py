@@ -1,6 +1,6 @@
 """
 Generate NFL game picks for the current week and write nfl-picks.json.
-Uses NFL-Stats.csv (team ratings) and NFL-Spreads.csv (matchups + lines).
+Uses NFL-Stats.csv (team ratings), NFL-QBs.csv, NFL-RBs.csv, and NFL-Spreads.csv.
 
 NFL-Spreads.csv format: Team, Spread, Opponent, GameTime (UTC)
   Spread is from the team's perspective (negative = favorite).
@@ -24,11 +24,12 @@ import os
 
 ASSETS     = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'src', 'assets'))
 STATS_PATH = os.path.join(ASSETS, 'NFL-Stats.csv')
+QB_PATH    = os.path.join(ASSETS, 'NFL-QBs.csv')
+RB_PATH    = os.path.join(ASSETS, 'NFL-RBs.csv')
 SPREAD_PATH= os.path.join(ASSETS, 'NFL-Spreads.csv')
 OUT_PATH   = os.path.join(ASSETS, 'nfl-picks.json')
 
 SA_JSON    = os.environ.get('FIREBASE_SERVICE_ACCOUNT', '')
-HOME_ADV   = 2.5   # points
 WIN_PROB_K = 0.30
 
 
@@ -37,22 +38,135 @@ def load_stats() -> dict:
     with open(STATS_PATH, newline='', encoding='utf-8') as f:
         for row in csv.DictReader(f):
             try:
-                # Derive PPG from per-play rate × plays-per-game when direct columns absent
-                off_ppp   = float(row.get('oPtsPerPlay', 0) or 0)
-                off_plays = float(row.get('oPlays/Game', 0) or 0)
-                def_ppp   = float(row.get('dPtsPerPlay', 0) or 0)
-                def_plays = float(row.get('dPlaysGame',  0) or 0)
-                offPPG = float(row.get('offPPG', row.get('OffPPG', 0)) or 0) or round(off_ppp * off_plays, 2)
-                defPPG = float(row.get('defPPG', row.get('DefPPG', 0)) or 0) or round(def_ppp * def_plays, 2)
-                stats[row['Team']] = {
-                    'offPPG': offPPG,
-                    'defPPG': defPPG,
-                    'offYPG': float(row.get('offYPG', row.get('OffYPG', 0)) or 0),
-                    'defYPG': float(row.get('defYPG', row.get('DefYPG', 0)) or 0),
+                stats[row['Team'].strip()] = {
+                    'RushYdsAtt':   float(row['RushYdsAtt']),
+                    'dRushYdsAtt':  float(row['dRushYdsAtt']),
+                    'PassYdsAtt':   float(row['PassYdsAtt']),
+                    'dPassYdsAtt':  float(row['dPassYdsAtt']),
+                    'oRushPerGame': float(row['oRushPerGame']),
+                    'dRushPerGame': float(row['dRushPerGame']),
+                    'oPassPerGame': float(row['oPassPerGame']),
+                    'dPassPerGame': float(row['dPassPerGame']),
+                    'oYdsPerPoint': float(row['oYdsPerPoint']),
+                    'dYdsPerPoint': float(row['dYardsPerPoint']),
+                    'oPtsPerPlay':  float(row['oPtsPerPlay']),
+                    'dPtsPerPlay':  float(row['dPtsPerPlay']),
+                    'oPlaysGame':   float(row['oPlays/Game']),
+                    'dPlaysGame':   float(row['dPlaysGame']),
+                    'HomeAdv':      float(row['HomeAdv']),
                 }
             except (ValueError, KeyError):
                 pass
     return stats
+
+
+def load_league_avg(stats: dict) -> dict:
+    teams = list(stats.values())
+    def avg(key): return sum(t[key] for t in teams) / len(teams)
+    return {
+        'rushYPA': avg('RushYdsAtt'),
+        'rushAtt': avg('oRushPerGame'),
+        'passYPA': avg('PassYdsAtt'),
+        'passAtt': avg('oPassPerGame'),
+        'ydsPt':   avg('oYdsPerPoint'),
+        'ptsPP':   avg('oPtsPerPlay'),
+        'playsG':  avg('oPlaysGame'),
+    }
+
+
+def load_qbs() -> dict:
+    qbs = {}
+    try:
+        with open(QB_PATH, newline='', encoding='utf-8') as f:
+            for row in csv.DictReader(f):
+                team = row['Team'].strip()
+                qbs[team] = {
+                    'passYdsAtt':  float(row['PassYdsAtt']),
+                    'passAttGame': float(row['PassAttGame']),
+                }
+    except FileNotFoundError:
+        print('[NFL Picks] NFL-QBs.csv not found — using team averages for passing.')
+    return qbs
+
+
+def load_rbs() -> dict:
+    rbs: dict = {}
+    try:
+        with open(RB_PATH, newline='', encoding='utf-8') as f:
+            for row in csv.DictReader(f):
+                team = row['Team'].strip()
+                if team not in rbs:
+                    rbs[team] = []
+                rbs[team].append({
+                    'rushYdsCarry': float(row['RushYdsCarry']),
+                    'rushAttGame':  float(row['RushAttGame']),
+                })
+    except FileNotFoundError:
+        print('[NFL Picks] NFL-RBs.csv not found — using team averages for rushing.')
+    return rbs
+
+
+def weighted_ypc(rbs: list, fallback: float) -> float:
+    total_att = sum(rb['rushAttGame'] for rb in rbs)
+    if total_att > 0:
+        return sum(rb['rushYdsCarry'] * rb['rushAttGame'] for rb in rbs) / total_att
+    return fallback
+
+
+def simulate(home: dict, away: dict, lg: dict,
+             home_qb: dict | None, away_qb: dict | None,
+             home_rbs: list, away_rbs: list) -> tuple[float, float]:
+    """Mirror the Angular NFL simulation formula in scoreboard.component.ts."""
+    home_adv = home['HomeAdv'] / 2
+
+    h_pass_ypa = home_qb['passYdsAtt']  if home_qb else home['PassYdsAtt']
+    h_pass_apg = home_qb['passAttGame'] if home_qb else home['oPassPerGame']
+    a_pass_ypa = away_qb['passYdsAtt']  if away_qb else away['PassYdsAtt']
+    a_pass_apg = away_qb['passAttGame'] if away_qb else away['oPassPerGame']
+
+    h_rush_ypc = weighted_ypc(home_rbs, home['RushYdsAtt'])
+    a_rush_ypc = weighted_ypc(away_rbs, away['RushYdsAtt'])
+
+    # Rush yards
+    hr_yds_att = .85 * h_rush_ypc          * (away['dRushYdsAtt'] / lg['rushYPA']) + .15 * lg['rushYPA']
+    ar_yds_att = .85 * a_rush_ypc          * (home['dRushYdsAtt'] / lg['rushYPA']) + .15 * lg['rushYPA']
+    hr_att     = .85 * home['oRushPerGame'] * (away['dRushPerGame'] / lg['rushAtt']) + .15 * lg['rushAtt']
+    ar_att     = .85 * away['oRushPerGame'] * (home['dRushPerGame'] / lg['rushAtt']) + .15 * lg['rushAtt']
+    h_rush_yds = hr_yds_att * hr_att
+    a_rush_yds = ar_yds_att * ar_att
+
+    # Pass yards
+    hp_yds_att = .85 * h_pass_ypa * (away['dPassYdsAtt'] / lg['passYPA']) + .15 * lg['passYPA']
+    ap_yds_att = .85 * a_pass_ypa * (home['dPassYdsAtt'] / lg['passYPA']) + .15 * lg['passYPA']
+    hp_att     = .85 * h_pass_apg * (away['dPassPerGame'] / lg['passAtt']) + .15 * lg['passAtt']
+    ap_att     = .85 * a_pass_apg * (home['dPassPerGame'] / lg['passAtt']) + .15 * lg['passAtt']
+    h_pass_yds = hp_yds_att * hp_att
+    a_pass_yds = ap_yds_att * ap_att
+
+    h_total_yds = h_pass_yds + h_rush_yds
+    a_total_yds = a_pass_yds + a_rush_yds
+
+    # Yards-based score
+    h_oyp = .85 * home['oYdsPerPoint'] * (away['dYdsPerPoint'] / lg['ydsPt']) + .15 * lg['ydsPt']
+    a_oyp = .85 * away['oYdsPerPoint'] * (home['dYdsPerPoint'] / lg['ydsPt']) + .15 * lg['ydsPt']
+    h_yds_score = h_total_yds / h_oyp
+    a_yds_score = a_total_yds / a_oyp
+
+    # Plays-based score
+    h_ppp = .85 * home['oPtsPerPlay'] * (away['dPtsPerPlay'] / lg['ptsPP']) + .15 * lg['ptsPP']
+    a_ppp = .85 * away['oPtsPerPlay'] * (home['dPtsPerPlay'] / lg['ptsPP']) + .15 * lg['ptsPP']
+    h_plg = .85 * home['oPlaysGame']  * (away['dPlaysGame']  / lg['playsG']) + .15 * lg['playsG']
+    a_plg = .85 * away['oPlaysGame']  * (home['dPlaysGame']  / lg['playsG']) + .15 * lg['playsG']
+    h_plays_score = h_ppp * h_plg
+    a_plays_score = a_ppp * a_plg
+
+    h_score = round(((h_yds_score + h_plays_score) / 2) + home_adv, 2)
+    a_score = round(((a_yds_score + a_plays_score) / 2) - home_adv, 2)
+    return h_score, a_score
+
+
+def win_prob(diff: float) -> float:
+    return round(1 / (1 + math.exp(-WIN_PROB_K * diff)), 3)
 
 
 def load_spreads() -> list:
@@ -75,21 +189,6 @@ def load_spreads() -> list:
             except (ValueError, KeyError):
                 pass
     return matchups
-
-
-def simulate(home: dict, away: dict) -> tuple[float, float]:
-    lg_avg_ppg = 23.0
-    home_off = home['offPPG'] / lg_avg_ppg
-    home_def = home['defPPG'] / lg_avg_ppg
-    away_off = away['offPPG'] / lg_avg_ppg
-    away_def = away['defPPG'] / lg_avg_ppg
-    home_score = round(lg_avg_ppg * home_off / away_def + HOME_ADV / 2, 1)
-    away_score = round(lg_avg_ppg * away_off / home_def - HOME_ADV / 2, 1)
-    return home_score, away_score
-
-
-def win_prob(diff: float) -> float:
-    return round(1 / (1 + math.exp(-WIN_PROB_K * diff)), 3)
 
 
 def save_to_firestore(picks: list):
@@ -156,6 +255,10 @@ def main():
         print('[NFL Picks] NFL-Stats.csv not found — skipping.')
         return
 
+    lg   = load_league_avg(stats)
+    qbs  = load_qbs()
+    rbs  = load_rbs()
+
     try:
         matchups = load_spreads()
     except FileNotFoundError:
@@ -186,7 +289,11 @@ def main():
             print(f'[NFL Picks] Missing stats for {home_name} or {away_name} — skipping.')
             continue
 
-        h_score, a_score = simulate(home_stats, away_stats)
+        h_score, a_score = simulate(
+            home_stats, away_stats, lg,
+            qbs.get(home_name), qbs.get(away_name),
+            rbs.get(home_name, []), rbs.get(away_name, []),
+        )
         diff  = h_score - a_score
         wp    = win_prob(diff)
         pick  = home_name if diff > 0 else away_name

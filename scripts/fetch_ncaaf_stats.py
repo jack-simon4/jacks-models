@@ -148,52 +148,74 @@ def _parse_attempts(s: str) -> int:
         return 0
 
 
+def _weeks_played(year: int) -> int:
+    """Estimate how many regular-season weeks have completed for a given year."""
+    season_start = date(year, 8, 24)   # NCAAF week 1 typically starts around Aug 24
+    if _today < season_start:
+        return 0
+    return min((_today - season_start).days // 7 + 1, 16)
+
+
 def fetch_game_stats(year: int) -> dict:
     """
-    Fetch per-game stats for all teams.
-    Returns {csv_team_name: [{'date': ..., 'off': {...}, 'def': {...}}, ...]}
-    where off/def are stat dicts for that team's offense/defense in each game.
+    Fetch per-game stats for all teams by iterating week-by-week.
+    Returns {csv_team_name: [game_dict, ...]}
+
+    Note: /games/teams requires 'week' in addition to 'year' — omitting it
+    causes a 400 Bad Request. We loop weeks 1..N where N is either the
+    estimated current week (for the current season) or 16 (for a completed
+    prior season).
     """
-    print(f'[NCAAF] Fetching {year} per-game stats...')
-    try:
-        raw = _api('/games/teams', {'year': year, 'seasonType': 'regular'})
-    except Exception as exc:
-        print(f'[NCAAF] WARNING: {year} game stats API error: {exc}')
-        return {}
-    if not raw:
+    max_week = _weeks_played(year) if year == SEASON_YEAR else 16
+    if max_week == 0:
+        print(f'[NCAAF] {year} season has not started yet.')
         return {}
 
-    # Build: {cfbd_school: [(game_id, homeAway, points, stat_dict), ...]}
+    print(f'[NCAAF] Fetching {year} per-game stats (weeks 1–{max_week})...')
     school_games: dict[str, list] = {}
-    game_dates: dict[int, str] = {}
 
-    for game in raw:
-        game_id = game.get('id', 0)
-        for team_entry in game.get('teams', []):
-            school = team_entry.get('school', '')
-            points = _safe(team_entry.get('points'), 0)
-            stats_raw = {s['category']: s['stat']
-                         for s in team_entry.get('stats', [])}
+    for week in range(1, max_week + 1):
+        try:
+            raw = _api('/games/teams', {'year': year, 'week': week, 'seasonType': 'regular'})
+        except Exception as exc:
+            print(f'[NCAAF] WARNING: {year} w{week} error: {exc}')
+            continue
+        if not raw:
+            continue
 
-            total_yds   = _safe(stats_raw.get('totalYards', 0), 0)
-            plays       = _safe(stats_raw.get('plays', 0), 1)
-            rush_yds    = _safe(stats_raw.get('rushingYards', 0), 0)
-            rush_att    = _safe(stats_raw.get('rushingAttempts', 0), 1)
-            pass_yds    = _safe(stats_raw.get('netPassingYards', 0), 0)
-            pass_att    = _parse_attempts(stats_raw.get('completionAttempts', '0-0'))
+        for game in raw:
+            game_id = game.get('id', 0)
+            for team_entry in game.get('teams', []):
+                school = team_entry.get('school', '')
+                points = _safe(team_entry.get('points'), 0)
+                stats_raw = {s['category']: s['stat']
+                             for s in team_entry.get('stats', [])}
 
-            g = {
-                'game_id':  game_id,
-                'points':   points,
-                'total_yds': total_yds,
-                'plays':     max(plays, 1),
-                'rush_yds':  rush_yds,
-                'rush_att':  max(rush_att, 1),
-                'pass_yds':  pass_yds,
-                'pass_att':  max(pass_att, 1),
-                'yds_play':  total_yds / max(plays, 1),
-            }
-            school_games.setdefault(school, []).append(g)
+                total_yds = _safe(stats_raw.get('totalYards', 0), 0)
+                plays     = _safe(stats_raw.get('plays', 0), 1)
+                rush_yds  = _safe(stats_raw.get('rushingYards', 0), 0)
+                rush_att  = _safe(stats_raw.get('rushingAttempts', 0), 1)
+                pass_yds  = _safe(stats_raw.get('netPassingYards', 0), 0)
+                pass_att  = _parse_attempts(stats_raw.get('completionAttempts', '0-0'))
+
+                g = {
+                    'game_id':   game_id,
+                    'points':    points,
+                    'total_yds': total_yds,
+                    'plays':     max(plays, 1),
+                    'rush_yds':  rush_yds,
+                    'rush_att':  max(rush_att, 1),
+                    'pass_yds':  pass_yds,
+                    'pass_att':  max(pass_att, 1),
+                    'yds_play':  total_yds / max(plays, 1),
+                }
+                school_games.setdefault(school, []).append(g)
+
+        time.sleep(0.2)  # stay well under rate limits
+
+    if not school_games:
+        print(f'[NCAAF] No game data returned for {year}.')
+        return {}
 
     # Convert cfbd names to CSV names
     result = {}
@@ -201,6 +223,7 @@ def fetch_game_stats(year: int) -> dict:
         csv_name = CFBD_TO_CSV.get(cfbd_name, cfbd_name)
         result[csv_name] = games
 
+    print(f'[NCAAF] {year}: got data for {len(result)} teams.')
     return result
 
 
