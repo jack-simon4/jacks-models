@@ -6,17 +6,36 @@
     "awayPitcher": "Mason Barnett",
     "homePitcher": "Daniel Espino",
     "pick": "Cleveland Guardians",
-    "prediction": "Cleveland Guardians -230",
-    "odds": "-230",
-    "winProb": 0.642,
-    "edge": 0.142,
+    "prediction": "Cleveland Guardians -172",
+    "odds": "-172",
+    "winProb": 0.652,
+    "edge": 0.152,
     "confidence": "Elite",
-    "predictedScore": "Athletics 4.2 \u2013 Cleveland Guardians 6.2",
-    "predictedHomeScore": 6.16,
+    "predictedScore": "Athletics 4.2 \u2013 Cleveland Guardians 6.3",
+    "predictedHomeScore": 6.31,
     "predictedAwayScore": 4.21,
     "gameTime": "2026-09-18T23:10:00Z",
     "gamePk": 824383,
     "rank": 1
+  },
+  {
+    "matchup": "Seattle Mariners @ Colorado Rockies",
+    "awayTeam": "Seattle Mariners",
+    "homeTeam": "Colorado Rockies",
+    "awayPitcher": "Bryan Woo",
+    "homePitcher": "Gabriel Hughes",
+    "pick": "Seattle Mariners",
+    "prediction": "Seattle Mariners -190",
+    "odds": "-190",
+    "winProb": 0.624,
+    "edge": 0.124,
+    "confidence": "Strong",
+    "predictedScore": "Seattle Mariners 6.6 \u2013 Colorado Rockies 4.9",
+    "predictedHomeScore": 4.9,
+    "predictedAwayScore": 6.59,
+    "gameTime": "2026-09-19T00:10:00Z",
+    "gamePk": 824303,
+    "rank": 2
   },
   {
     "matchup": "Milwaukee Brewers @ Baltimore Orioles",
@@ -25,8 +44,8 @@
     "awayPitcher": "Dustin May",
     "homePitcher": "Cade Povich",
     "pick": "Milwaukee Brewers",
-    "prediction": "Milwaukee Brewers -138",
-    "odds": "-138",
+    "prediction": "Milwaukee Brewers -144",
+    "odds": "-144",
     "winProb": 0.613,
     "edge": 0.113,
     "confidence": "Strong",
@@ -35,7 +54,7 @@
     "predictedAwayScore": 6.39,
     "gameTime": "2026-09-18T23:05:00Z",
     "gamePk": 824790,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "San Francisco Giants @ Los Angeles Dodgers",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 3.48,
     "gameTime": "2026-09-19T02:15:00Z",
     "gamePk": 823898,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Toronto Blue Jays @ Texas Rangers",
@@ -63,8 +82,8 @@
     "awayPitcher": "Dylan Cease",
     "homePitcher": "Kumar Rocker",
     "pick": "Toronto Blue Jays",
-    "prediction": "Toronto Blue Jays -136",
-    "odds": "-136",
+    "prediction": "Toronto Blue Jays -116",
+    "odds": "-116",
     "winProb": 0.582,
     "edge": 0.082,
     "confidence": "Strong",
@@ -73,6 +92,6 @@
     "predictedAwayScore": 5.62,
     "gameTime": "2026-09-19T00:05:00Z",
     "gamePk": 822847,
-    "rank": 4
+    "rank": 5
   }
 ]

@@ -1,4 +1,49 @@
 Team,Player
+Cincinnati Reds1,Carlos Jorge
+Cincinnati Reds2,Elly De La Cruz
+Cincinnati Reds3,Sal Stewart
+Cincinnati Reds4,Tyler Stephenson
+Cincinnati Reds5,JJ Bleday
+Cincinnati Reds6,Eugenio Suarez
+Cincinnati Reds7,Hector Rodriguez
+Cincinnati Reds8,Jose Trevino
+Cincinnati Reds9,Matt McLain
+Pittsburgh Pirates1,Konnor Griffin
+Pittsburgh Pirates2,Brandon Lowe
+Pittsburgh Pirates3,Bryan Reynolds
+Pittsburgh Pirates4,Oneil Cruz
+Pittsburgh Pirates5,Nick Gonzales
+Pittsburgh Pirates6,Ryan O'Hearn
+Pittsburgh Pirates7,Ronny Simon
+Pittsburgh Pirates8,Spencer Horwitz
+Pittsburgh Pirates9,Henry Davis
+Cleveland Guardians1,Steven Kwan
+Cleveland Guardians2,Jose Ramirez
+Cleveland Guardians3,Chase DeLauter
+Cleveland Guardians4,Jo Adell
+Cleveland Guardians5,Travis Bazzana
+Cleveland Guardians6,Nathaniel Lowe
+Cleveland Guardians7,Patrick Bailey
+Cleveland Guardians8,Petey Halpin
+Cleveland Guardians9,Brayan Rocchio
+Boston Red Sox1,Roman Anthony
+Boston Red Sox2,Nick Sogard
+Boston Red Sox3,Jahmai Jones
+Boston Red Sox4,Wilyer Abreu
+Boston Red Sox5,Trevor Story
+Boston Red Sox6,Caleb Durbin
+Boston Red Sox7,Isiah Kiner-Falefa
+Boston Red Sox8,Nate Eaton
+Boston Red Sox9,Connor Wong
+Tampa Bay Rays1,Yandy Diaz
+Tampa Bay Rays2,Jonathan Aranda
+Tampa Bay Rays3,Junior Caminero
+Tampa Bay Rays4,Ryan Vilade
+Tampa Bay Rays5,Chandler Simpson
+Tampa Bay Rays6,Jonny DeLuca
+Tampa Bay Rays7,Nick Fortes
+Tampa Bay Rays8,Victor Mesa Jr.
+Tampa Bay Rays9,Taylor Walls
 Arizona Diamondbacks1,Lars Nootbaar
 Arizona Diamondbacks2,Ketel Marte
 Arizona Diamondbacks3,Gabriel Moreno
@@ -35,15 +80,6 @@ Baltimore Orioles6,Samuel Basallo
 Baltimore Orioles7,Jeremiah Jackson
 Baltimore Orioles8,Rece Hinds
 Baltimore Orioles9,Colton Cowser
-Boston Red Sox1,Roman Anthony
-Boston Red Sox2,Jahmai Jones
-Boston Red Sox3,Wilyer Abreu
-Boston Red Sox4,Willson Contreras
-Boston Red Sox5,Adley Rutschman
-Boston Red Sox6,Trevor Story
-Boston Red Sox7,Jarren Duran
-Boston Red Sox8,Caleb Durbin
-Boston Red Sox9,Nick Sogard
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Seiya Suzuki
 Chicago Cubs3,Michael Busch
@@ -62,24 +98,6 @@ Chicago White Sox6,Brenton Doyle
 Chicago White Sox7,Jake Rogers
 Chicago White Sox8,Luisangel Acuna
 Chicago White Sox9,Braden Montgomery
-Cincinnati Reds1,Carlos Jorge
-Cincinnati Reds2,Elly De La Cruz
-Cincinnati Reds3,Sal Stewart
-Cincinnati Reds4,Will Banfield
-Cincinnati Reds5,Juan Brito
-Cincinnati Reds6,Matt McLain
-Cincinnati Reds7,Hector Rodriguez
-Cincinnati Reds8,Ke'Bryan Hayes
-Cincinnati Reds9,TJ Friedl
-Cleveland Guardians1,Steven Kwan
-Cleveland Guardians2,Jose Ramirez
-Cleveland Guardians3,Jo Adell
-Cleveland Guardians4,Travis Bazzana
-Cleveland Guardians5,Nathaniel Lowe
-Cleveland Guardians6,Angel Genao
-Cleveland Guardians7,Austin Hedges
-Cleveland Guardians8,Petey Halpin
-Cleveland Guardians9,Brayan Rocchio
 Colorado Rockies1,Jordan Beck
 Colorado Rockies2,Connor Norby
 Colorado Rockies3,Cole Carrigg
@@ -188,15 +206,6 @@ Philadelphia Phillies6,Bryson Stott
 Philadelphia Phillies7,Brandon Marsh
 Philadelphia Phillies8,Justin Crawford
 Philadelphia Phillies9,Garrett Stubbs
-Pittsburgh Pirates1,Konnor Griffin
-Pittsburgh Pirates2,Oneil Cruz
-Pittsburgh Pirates3,Bryan Reynolds
-Pittsburgh Pirates4,Rafael Flores Jr.
-Pittsburgh Pirates5,Brandon Lowe
-Pittsburgh Pirates6,Nick Gonzales
-Pittsburgh Pirates7,Billy Cook
-Pittsburgh Pirates8,Jared Triolo
-Pittsburgh Pirates9,Henry Davis
 San Diego Padres1,Sung-Mun Song
 San Diego Padres2,Dustin Harris
 San Diego Padres3,Jase Bowen
@@ -233,15 +242,6 @@ St. Louis Cardinals6,Nolan Gorman
 St. Louis Cardinals7,Thomas Saggese
 St. Louis Cardinals8,Nathan Church
 St. Louis Cardinals9,Masyn Winn
-Tampa Bay Rays1,Yandy Diaz
-Tampa Bay Rays2,Jonathan Aranda
-Tampa Bay Rays3,Junior Caminero
-Tampa Bay Rays4,Liam Hicks
-Tampa Bay Rays5,Jake Fraley
-Tampa Bay Rays6,Chandler Simpson
-Tampa Bay Rays7,Cedric Mullins
-Tampa Bay Rays8,Richie Palacios
-Tampa Bay Rays9,Taylor Walls
 Texas Rangers1,Ezequiel Duran
 Texas Rangers2,Corey Seager
 Texas Rangers3,Josh Jung
