@@ -8,7 +8,7 @@
     "predictedAwayScore": 17.8,
     "pick": "Chicago Bears",
     "winProb": 0.985,
-    "spread": 5.5,
+    "spread": 4.5,
     "gameTime": "2026-09-20T17:00:00Z",
     "confidence": "Elite"
   },
@@ -21,7 +21,7 @@
     "predictedAwayScore": 31.1,
     "pick": "Cincinnati Bengals",
     "winProb": 0.964,
-    "spread": 3.0,
+    "spread": 2.5,
     "gameTime": "2026-09-20T17:00:00Z",
     "confidence": "Elite"
   },
@@ -34,7 +34,7 @@
     "predictedAwayScore": 14.8,
     "pick": "Dallas Cowboys",
     "winProb": 0.959,
-    "spread": 4.5,
+    "spread": 3.5,
     "gameTime": "2026-09-20T20:25:00Z",
     "confidence": "Elite"
   },
@@ -177,7 +177,7 @@
     "predictedAwayScore": 16.6,
     "pick": "New York Jets",
     "winProb": 0.758,
-    "spread": -4.5,
+    "spread": -3.5,
     "gameTime": "2026-09-20T17:00:00Z",
     "confidence": "Elite"
   },
@@ -190,21 +190,8 @@
     "predictedAwayScore": 27.3,
     "pick": "New England Patriots",
     "winProb": 0.711,
-    "spread": 4.5,
+    "spread": 5.5,
     "gameTime": "2026-09-20T17:00:00Z",
     "confidence": "Elite"
-  },
-  {
-    "homeTeam": "Buffalo Bills",
-    "awayTeam": "Detroit Lions",
-    "homePredicted": 28.0,
-    "awayPredicted": 29.1,
-    "predictedHomeScore": 28.0,
-    "predictedAwayScore": 29.1,
-    "pick": "Detroit Lions",
-    "winProb": 0.582,
-    "spread": 4.5,
-    "gameTime": "2026-09-18T00:15:00Z",
-    "confidence": "Lean"
   }
 ]
