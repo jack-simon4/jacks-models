@@ -30,8 +30,8 @@
   "Tampa Bay Rays": {
     "home_team": "Tampa Bay Rays",
     "away_team": "Boston Red Sox",
-    "home_ml": "-138",
-    "away_ml": "+118",
+    "home_ml": "+520",
+    "away_ml": "-900",
     "book": "fanduel"
   },
   "New York Mets": {
@@ -58,15 +58,15 @@
   "Houston Astros": {
     "home_team": "Houston Astros",
     "away_team": "Atlanta Braves",
-    "home_ml": "-120",
-    "away_ml": "+102",
+    "home_ml": "-118",
+    "away_ml": "+100",
     "book": "fanduel"
   },
   "Colorado Rockies": {
     "home_team": "Colorado Rockies",
     "away_team": "Seattle Mariners",
-    "home_ml": "+156",
-    "away_ml": "-186",
+    "home_ml": "+320",
+    "away_ml": "-460",
     "book": "fanduel"
   },
   "St. Louis Cardinals": {
