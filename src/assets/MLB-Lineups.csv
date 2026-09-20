@@ -155,7 +155,7 @@ Texas Rangers1,Wyatt Langford
 Texas Rangers2,Corey Seager
 Texas Rangers3,Josh Jung
 Texas Rangers4,Ezequiel Duran
-Texas Rangers5,Brandon Nimmo
+Texas Rangers5,Alejandro Osuna
 Texas Rangers6,Jake Burger
 Texas Rangers7,Nicky Lopez
 Texas Rangers8,Danny Jansen
@@ -172,12 +172,30 @@ Seattle Mariners9,Brock Rodden
 Colorado Rockies1,Jake McCarthy
 Colorado Rockies2,Connor Norby
 Colorado Rockies3,Hunter Goodman
-Colorado Rockies4,Cole Carrigg
-Colorado Rockies5,Kyle Karros
+Colorado Rockies4,TJ Rumfield
+Colorado Rockies5,Cole Carrigg
 Colorado Rockies6,Adael Amador
 Colorado Rockies7,Brett Sullivan
 Colorado Rockies8,Jordan Beck
 Colorado Rockies9,Ezequiel Tovar
+Minnesota Twins1,Walker Jenkins
+Minnesota Twins2,Brooks Lee
+Minnesota Twins3,Kody Clemens
+Minnesota Twins4,Josh Bell
+Minnesota Twins5,Alan Roden
+Minnesota Twins6,Royce Lewis
+Minnesota Twins7,Victor Caratini
+Minnesota Twins8,Emmanuel Rodriguez
+Minnesota Twins9,Ben Ross
+Los Angeles Angels1,Zach Neto
+Los Angeles Angels2,Mike Trout
+Los Angeles Angels3,Wade Meckler
+Los Angeles Angels4,Vaughn Grissom
+Los Angeles Angels5,Moises Ballesteros
+Los Angeles Angels6,Denzer Guzman
+Los Angeles Angels7,Josh Lowe
+Los Angeles Angels8,Jose Siri
+Los Angeles Angels9,Christian Moore
 San Francisco Giants1,Jonah Cox
 San Francisco Giants2,Jung Hoo Lee
 San Francisco Giants3,Victor Bericoto
@@ -187,15 +205,42 @@ San Francisco Giants6,Scott Bandura
 San Francisco Giants7,Shay Whitcomb
 San Francisco Giants8,Grant McCray
 San Francisco Giants9,Christian Koss
+Los Angeles Dodgers1,Mookie Betts
+Los Angeles Dodgers2,Tommy Edman
+Los Angeles Dodgers3,Teoscar Hernandez
+Los Angeles Dodgers4,Freddie Freeman
+Los Angeles Dodgers5,Miguel Rojas
+Los Angeles Dodgers6,Max Muncy
+Los Angeles Dodgers7,Josue De Paula
+Los Angeles Dodgers8,Enrique Hernandez
+Los Angeles Dodgers9,Hunter Feduccia
+San Diego Padres1,Fernando Tatis Jr.
+San Diego Padres2,Dustin Harris
+San Diego Padres3,Manny Machado
+San Diego Padres4,Ty France
+San Diego Padres5,Jackson Merrill
+San Diego Padres6,Xander Bogaerts
+San Diego Padres7,Jake Cronenworth
+San Diego Padres8,Samad Taylor
+San Diego Padres9,Ethan Salas
+New York Yankees1,Ben Rice
+New York Yankees2,Cody Bellinger
+New York Yankees3,Heliot Ramos
+New York Yankees4,Luis Garcia Jr.
+New York Yankees5,George Lombard Jr.
+New York Yankees6,Spencer Jones
+New York Yankees7,Anthony Volpe
+New York Yankees8,Austin Wells
+New York Yankees9,Jose Caballero
 Arizona Diamondbacks1,Lars Nootbaar
 Arizona Diamondbacks2,Ketel Marte
 Arizona Diamondbacks3,Gabriel Moreno
 Arizona Diamondbacks4,Geraldo Perdomo
 Arizona Diamondbacks5,Corbin Carroll
 Arizona Diamondbacks6,Nolan Arenado
-Arizona Diamondbacks7,Tim Tawa
-Arizona Diamondbacks8,Jesus Sanchez
-Arizona Diamondbacks9,Jordan Lawlar
+Arizona Diamondbacks7,Jesus Sanchez
+Arizona Diamondbacks8,Pavin Smith
+Arizona Diamondbacks9,Tim Tawa
 Baltimore Orioles1,Jeremiah Jackson
 Baltimore Orioles2,Pete Alonso
 Baltimore Orioles3,Coby Mayo
@@ -205,24 +250,6 @@ Baltimore Orioles6,Rece Hinds
 Baltimore Orioles7,Christian Franklin
 Baltimore Orioles8,Samuel Basallo
 Baltimore Orioles9,Leody Taveras
-Los Angeles Angels1,Zach Neto
-Los Angeles Angels2,Mike Trout
-Los Angeles Angels3,Jose Siri
-Los Angeles Angels4,Vaughn Grissom
-Los Angeles Angels5,Denzer Guzman
-Los Angeles Angels6,Oswald Peraza
-Los Angeles Angels7,Travis d'Arnaud
-Los Angeles Angels8,Christian Moore
-Los Angeles Angels9,Wade Meckler
-Los Angeles Dodgers1,Mookie Betts
-Los Angeles Dodgers2,Freddie Freeman
-Los Angeles Dodgers3,Will Smith
-Los Angeles Dodgers4,Max Muncy
-Los Angeles Dodgers5,Teoscar Hernandez
-Los Angeles Dodgers6,Kyle Tucker
-Los Angeles Dodgers7,Josue De Paula
-Los Angeles Dodgers8,Tommy Edman
-Los Angeles Dodgers9,Alex Freeland
 Miami Marlins1,Otto Lopez
 Miami Marlins2,Heriberto Hernandez
 Miami Marlins3,Kyle Stowers
@@ -241,33 +268,6 @@ Milwaukee Brewers6,Brice Turang
 Milwaukee Brewers7,Cooper Pratt
 Milwaukee Brewers8,Luis Lara
 Milwaukee Brewers9,David Hamilton
-Minnesota Twins1,Luke Keaschall
-Minnesota Twins2,Brooks Lee
-Minnesota Twins3,Kody Clemens
-Minnesota Twins4,Josh Bell
-Minnesota Twins5,Emmanuel Rodriguez
-Minnesota Twins6,Royce Lewis
-Minnesota Twins7,Victor Caratini
-Minnesota Twins8,Walker Jenkins
-Minnesota Twins9,Ben Ross
-New York Yankees1,Ben Rice
-New York Yankees2,Cody Bellinger
-New York Yankees3,Luis Garcia Jr.
-New York Yankees4,Heliot Ramos
-New York Yankees5,George Lombard Jr.
-New York Yankees6,Austin Wells
-New York Yankees7,Anthony Volpe
-New York Yankees8,Ryan McMahon
-New York Yankees9,Jose Caballero
-San Diego Padres1,Fernando Tatis Jr.
-San Diego Padres2,Dustin Harris
-San Diego Padres3,Manny Machado
-San Diego Padres4,Ty France
-San Diego Padres5,Jackson Merrill
-San Diego Padres6,Luis Campusano
-San Diego Padres7,Jake Cronenworth
-San Diego Padres8,Samad Taylor
-San Diego Padres9,Freddy Fermin
 American League All-Stars1,Mike Trout
 American League All-Stars2,Yordan Alvarez
 American League All-Stars3,Shea Langeliers
