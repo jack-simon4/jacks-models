@@ -19,14 +19,33 @@
     "rank": 1
   },
   {
+    "matchup": "San Francisco Giants @ Los Angeles Dodgers",
+    "awayTeam": "San Francisco Giants",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Matt Wilkinson",
+    "homePitcher": "TBD",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -170",
+    "odds": "-170",
+    "winProb": 0.626,
+    "edge": 0.126,
+    "confidence": "Strong",
+    "predictedScore": "San Francisco Giants 4.1 \u2013 Los Angeles Dodgers 5.8",
+    "predictedHomeScore": 5.78,
+    "predictedAwayScore": 4.06,
+    "gameTime": "2026-09-20T20:10:00Z",
+    "gamePk": 823896,
+    "rank": 2
+  },
+  {
     "matchup": "Boston Red Sox @ Tampa Bay Rays",
     "awayTeam": "Boston Red Sox",
     "homeTeam": "Tampa Bay Rays",
     "awayPitcher": "Patrick Sandoval",
     "homePitcher": "Griffin Jax",
     "pick": "Tampa Bay Rays",
-    "prediction": "Tampa Bay Rays -150",
-    "odds": "-150",
+    "prediction": "Tampa Bay Rays -142",
+    "odds": "-142",
     "winProb": 0.598,
     "edge": 0.098,
     "confidence": "Strong",
@@ -35,7 +54,7 @@
     "predictedAwayScore": 4.46,
     "gameTime": "2026-09-20T17:40:00Z",
     "gamePk": 822922,
-    "rank": 2
+    "rank": 3
   },
   {
     "matchup": "Chicago Cubs @ Cincinnati Reds",
@@ -44,8 +63,8 @@
     "awayPitcher": "TBD",
     "homePitcher": "Rhett Lowder",
     "pick": "Chicago Cubs",
-    "prediction": "Chicago Cubs -145",
-    "odds": "-145",
+    "prediction": "Chicago Cubs -154",
+    "odds": "-154",
     "winProb": 0.595,
     "edge": 0.095,
     "confidence": "Strong",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 6.5,
     "gameTime": "2026-09-20T17:40:00Z",
     "gamePk": 824462,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Athletics @ Cleveland Guardians",
@@ -73,6 +92,6 @@
     "predictedAwayScore": 4.5,
     "gameTime": "2026-09-20T17:40:00Z",
     "gamePk": 824381,
-    "rank": 4
+    "rank": 5
   }
 ]
