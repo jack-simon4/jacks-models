@@ -1,11 +1,4 @@
 {
-  "Chicago White Sox": {
-    "home_team": "Chicago White Sox",
-    "away_team": "Detroit Tigers",
-    "home_ml": "-10000",
-    "away_ml": "+3300",
-    "book": "betmgm"
-  },
   "Baltimore Orioles": {
     "home_team": "Baltimore Orioles",
     "away_team": "Toronto Blue Jays",
@@ -23,8 +16,8 @@
   "San Francisco Giants": {
     "home_team": "San Francisco Giants",
     "away_team": "Minnesota Twins",
-    "home_ml": "+106",
-    "away_ml": "-124",
+    "home_ml": "+100",
+    "away_ml": "-118",
     "book": "fanduel"
   }
 }
