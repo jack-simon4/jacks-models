@@ -264,8 +264,8 @@ def build():
         }
 
         if d is not None:
-            d_rush_att  = _safe(d.get('d_rush_att'),  LG['oRushPerGame'] * gp)
-            d_pass_att  = _safe(d.get('d_pass_att'),  LG['oPassPerGame'] * gp)
+            d_rush_att  = _safe(d.get('d_rush_att'),  LG['oRushPerGame'] * gp_pbp)
+            d_pass_att  = _safe(d.get('d_pass_att'),  LG['oPassPerGame'] * gp_pbp)
             d_sacks     = _safe(d.get('d_sacks'),     0)
             d_rush_yds  = _safe(d.get('d_rush_yds'),  d_rush_att * LG['RushYdsAtt'])
             d_pass_yds  = _safe(d.get('d_pass_yds'),  d_pass_att * LG['PassYdsAtt'])
