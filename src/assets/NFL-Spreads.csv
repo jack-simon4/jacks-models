@@ -1,31 +1,33 @@
 Team,Spread,Opponent,GameTime,IsHome
-Atlanta Falcons,-2.5,Carolina Panthers,2026-09-20T17:00:00Z,true
-Carolina Panthers,2.5,Atlanta Falcons,2026-09-20T17:00:00Z,false
-Baltimore Ravens,7.5,New Orleans Saints,2026-09-20T17:00:00Z,true
-New Orleans Saints,-7.5,Baltimore Ravens,2026-09-20T17:00:00Z,false
-Chicago Bears,4.5,Minnesota Vikings,2026-09-20T17:00:00Z,true
-Minnesota Vikings,-4.5,Chicago Bears,2026-09-20T17:00:00Z,false
-Houston Texans,2.5,Cincinnati Bengals,2026-09-20T17:00:00Z,true
-Cincinnati Bengals,-2.5,Houston Texans,2026-09-20T17:00:00Z,false
-New England Patriots,5.5,Pittsburgh Steelers,2026-09-20T17:00:00Z,true
-Pittsburgh Steelers,-5.5,New England Patriots,2026-09-20T17:00:00Z,false
-New York Jets,-3.5,Green Bay Packers,2026-09-20T17:00:00Z,true
-Green Bay Packers,3.5,New York Jets,2026-09-20T17:00:00Z,false
-Tampa Bay Buccaneers,8.5,Cleveland Browns,2026-09-20T17:00:00Z,true
-Cleveland Browns,-8.5,Tampa Bay Buccaneers,2026-09-20T17:00:00Z,false
-Tennessee Titans,-7.0,Philadelphia Eagles,2026-09-20T17:00:00Z,true
-Philadelphia Eagles,7.0,Tennessee Titans,2026-09-20T17:00:00Z,false
-Denver Broncos,2.5,Jacksonville Jaguars,2026-09-20T20:05:00Z,true
-Jacksonville Jaguars,-2.5,Denver Broncos,2026-09-20T20:05:00Z,false
-Los Angeles Chargers,6.5,Las Vegas Raiders,2026-09-20T20:05:00Z,true
-Las Vegas Raiders,-6.5,Los Angeles Chargers,2026-09-20T20:05:00Z,false
-Arizona Cardinals,-3.5,Seattle Seahawks,2026-09-20T20:25:00Z,true
-Seattle Seahawks,3.5,Arizona Cardinals,2026-09-20T20:25:00Z,false
-Dallas Cowboys,3.5,Washington Commanders,2026-09-20T20:25:00Z,true
-Washington Commanders,-3.5,Dallas Cowboys,2026-09-20T20:25:00Z,false
-San Francisco 49ers,13.5,Miami Dolphins,2026-09-20T20:25:00Z,true
-Miami Dolphins,-13.5,San Francisco 49ers,2026-09-20T20:25:00Z,false
-Kansas City Chiefs,6.5,Indianapolis Colts,2026-09-21T00:20:00Z,true
-Indianapolis Colts,-6.5,Kansas City Chiefs,2026-09-21T00:20:00Z,false
-Los Angeles Rams,7.0,New York Giants,2026-09-22T00:15:00Z,true
-New York Giants,-7.0,Los Angeles Rams,2026-09-22T00:15:00Z,false
+Green Bay Packers,6.0,Atlanta Falcons,2026-09-25T00:15:00Z,true
+Atlanta Falcons,-6.0,Green Bay Packers,2026-09-25T00:15:00Z,false
+Buffalo Bills,7.0,Los Angeles Chargers,2026-09-27T17:00:00Z,true
+Los Angeles Chargers,-7.0,Buffalo Bills,2026-09-27T17:00:00Z,false
+Cleveland Browns,-2.5,Carolina Panthers,2026-09-27T17:00:00Z,true
+Carolina Panthers,2.5,Cleveland Browns,2026-09-27T17:00:00Z,false
+Detroit Lions,6.5,New York Jets,2026-09-27T17:00:00Z,true
+New York Jets,-6.5,Detroit Lions,2026-09-27T17:00:00Z,false
+Indianapolis Colts,-2.5,Houston Texans,2026-09-27T17:00:00Z,true
+Houston Texans,2.5,Indianapolis Colts,2026-09-27T17:00:00Z,false
+Jacksonville Jaguars,3.0,New England Patriots,2026-09-27T17:00:00Z,true
+New England Patriots,-3.0,Jacksonville Jaguars,2026-09-27T17:00:00Z,false
+Miami Dolphins,-11.5,Kansas City Chiefs,2026-09-27T17:00:00Z,true
+Kansas City Chiefs,11.5,Miami Dolphins,2026-09-27T17:00:00Z,false
+New York Giants,3.5,Tennessee Titans,2026-09-27T17:00:00Z,true
+Tennessee Titans,-3.5,New York Giants,2026-09-27T17:00:00Z,false
+Pittsburgh Steelers,-3.5,Cincinnati Bengals,2026-09-27T17:00:00Z,true
+Cincinnati Bengals,3.5,Pittsburgh Steelers,2026-09-27T17:00:00Z,false
+Washington Commanders,-7.0,Seattle Seahawks,2026-09-27T17:00:00Z,true
+Seattle Seahawks,7.0,Washington Commanders,2026-09-27T17:00:00Z,false
+San Francisco 49ers,8.5,Arizona Cardinals,2026-09-27T20:05:00Z,true
+Arizona Cardinals,-8.5,San Francisco 49ers,2026-09-27T20:05:00Z,false
+Tampa Bay Buccaneers,-1.5,Minnesota Vikings,2026-09-27T20:05:00Z,true
+Minnesota Vikings,1.5,Tampa Bay Buccaneers,2026-09-27T20:05:00Z,false
+Dallas Cowboys,-3.0,Baltimore Ravens,2026-09-27T20:25:00Z,true
+Baltimore Ravens,3.0,Dallas Cowboys,2026-09-27T20:25:00Z,false
+New Orleans Saints,3.0,Las Vegas Raiders,2026-09-27T20:25:00Z,true
+Las Vegas Raiders,-3.0,New Orleans Saints,2026-09-27T20:25:00Z,false
+Denver Broncos,-2.5,Los Angeles Rams,2026-09-28T00:20:00Z,true
+Los Angeles Rams,2.5,Denver Broncos,2026-09-28T00:20:00Z,false
+Chicago Bears,-3.0,Philadelphia Eagles,2026-09-29T00:15:00Z,true
+Philadelphia Eagles,3.0,Chicago Bears,2026-09-29T00:15:00Z,false
