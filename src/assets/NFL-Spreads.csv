@@ -13,8 +13,8 @@ Jacksonville Jaguars,3.0,New England Patriots,2026-09-27T17:00:00Z,true
 New England Patriots,-3.0,Jacksonville Jaguars,2026-09-27T17:00:00Z,false
 Miami Dolphins,-11.5,Kansas City Chiefs,2026-09-27T17:00:00Z,true
 Kansas City Chiefs,11.5,Miami Dolphins,2026-09-27T17:00:00Z,false
-New York Giants,3.5,Tennessee Titans,2026-09-27T17:00:00Z,true
-Tennessee Titans,-3.5,New York Giants,2026-09-27T17:00:00Z,false
+New York Giants,3.0,Tennessee Titans,2026-09-27T17:00:00Z,true
+Tennessee Titans,-3.0,New York Giants,2026-09-27T17:00:00Z,false
 Pittsburgh Steelers,-3.5,Cincinnati Bengals,2026-09-27T17:00:00Z,true
 Cincinnati Bengals,3.5,Pittsburgh Steelers,2026-09-27T17:00:00Z,false
 Washington Commanders,-7.0,Seattle Seahawks,2026-09-27T17:00:00Z,true
@@ -29,5 +29,5 @@ New Orleans Saints,3.0,Las Vegas Raiders,2026-09-27T20:25:00Z,true
 Las Vegas Raiders,-3.0,New Orleans Saints,2026-09-27T20:25:00Z,false
 Denver Broncos,-2.5,Los Angeles Rams,2026-09-28T00:20:00Z,true
 Los Angeles Rams,2.5,Denver Broncos,2026-09-28T00:20:00Z,false
-Chicago Bears,-3.0,Philadelphia Eagles,2026-09-29T00:15:00Z,true
-Philadelphia Eagles,3.0,Chicago Bears,2026-09-29T00:15:00Z,false
+Chicago Bears,-3.5,Philadelphia Eagles,2026-09-29T00:15:00Z,true
+Philadelphia Eagles,3.5,Chicago Bears,2026-09-29T00:15:00Z,false
