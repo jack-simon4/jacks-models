@@ -1,11 +1,4 @@
 {
-  "Detroit Tigers": {
-    "home_team": "Detroit Tigers",
-    "away_team": "Washington Nationals",
-    "home_ml": "-164",
-    "away_ml": "+138",
-    "book": "fanduel"
-  },
   "Baltimore Orioles": {
     "home_team": "Baltimore Orioles",
     "away_team": "Toronto Blue Jays",
@@ -25,6 +18,13 @@
     "away_team": "Tampa Bay Rays",
     "home_ml": "-134",
     "away_ml": "+116",
+    "book": "fanduel"
+  },
+  "Detroit Tigers": {
+    "home_team": "Detroit Tigers",
+    "away_team": "Washington Nationals",
+    "home_ml": "-164",
+    "away_ml": "+138",
     "book": "fanduel"
   },
   "Philadelphia Phillies": {
@@ -55,11 +55,18 @@
     "away_ml": "+154",
     "book": "fanduel"
   },
+  "Chicago Cubs": {
+    "home_team": "Chicago Cubs",
+    "away_team": "Miami Marlins",
+    "home_ml": "-224",
+    "away_ml": "+183",
+    "book": "draftkings"
+  },
   "Kansas City Royals": {
     "home_team": "Kansas City Royals",
     "away_team": "Chicago White Sox",
-    "home_ml": "-104",
-    "away_ml": "-112",
+    "home_ml": "+100",
+    "away_ml": "-118",
     "book": "fanduel"
   },
   "Texas Rangers": {
