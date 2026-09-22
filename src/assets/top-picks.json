@@ -6,8 +6,8 @@
     "awayPitcher": "Michael Soroka",
     "homePitcher": "Kyle Freeland",
     "pick": "Arizona Diamondbacks",
-    "prediction": "Arizona Diamondbacks -188",
-    "odds": "-188",
+    "prediction": "Arizona Diamondbacks -194",
+    "odds": "-194",
     "winProb": 0.71,
     "edge": 0.21,
     "confidence": "Elite",
@@ -55,24 +55,5 @@
     "gameTime": "2026-09-23T01:45:00Z",
     "gamePk": 823166,
     "rank": 3
-  },
-  {
-    "matchup": "Washington Nationals @ Detroit Tigers",
-    "awayTeam": "Washington Nationals",
-    "homeTeam": "Detroit Tigers",
-    "awayPitcher": "Jackson Kent",
-    "homePitcher": "Drew Anderson",
-    "pick": "Detroit Tigers",
-    "prediction": "Detroit Tigers -158",
-    "odds": "-158",
-    "winProb": 0.583,
-    "edge": 0.083,
-    "confidence": "Strong",
-    "predictedScore": "Washington Nationals 4.8 \u2013 Detroit Tigers 6.0",
-    "predictedHomeScore": 5.95,
-    "predictedAwayScore": 4.83,
-    "gameTime": "2026-09-22T22:40:00Z",
-    "gamePk": 824222,
-    "rank": 4
   }
 ]
