@@ -83,51 +83,71 @@ def _safe(val, fallback: float) -> float:
         return fallback
 
 
-def fetch_roster_teams(year: int) -> dict[str, str]:
-    """Return {player_id: team_abbr} for the given season's most recent active roster.
+def fetch_roster_teams(year: int) -> tuple[dict[str, str], dict[str, str]]:
+    """Return ({player_id: team_abbr}, {full_name: team_abbr}) for the given season.
     Uses import_weekly_rosters and takes the latest week per player.
-    Used to remap prior-season stats to correct current-season teams."""
+    Both maps are used in apply_roster_override — ID-based first, name-based as fallback
+    for PFR-sourced data where pfr_id != gsis_id."""
     try:
         rosters = nfl.import_weekly_rosters([year])
         if rosters is None or rosters.empty:
             print(f'[NFLPlayers] No weekly roster data for {year}.')
-            return {}
+            return {}, {}
         # Keep the most recent week's entry per player (latest team assignment)
         rosters = rosters.sort_values('week').groupby('player_id').last().reset_index()
-        id_col   = 'player_id'
-        team_col = 'team'
-        result: dict[str, str] = {}
+        id_map:   dict[str, str] = {}
+        name_map: dict[str, str] = {}
+        name_col = next((c for c in ['full_name', 'player_name'] if c in rosters.columns), None)
         for _, row in rosters.iterrows():
-            pid = str(row.get(id_col, '')).strip()
-            tm  = str(row.get(team_col, '')).strip()
-            if pid and tm and tm not in ('nan', 'FA', 'UFA', ''):
-                result[pid] = tm
-        print(f'[NFLPlayers] {year} weekly roster: {len(result)} active player-team assignments loaded.')
-        return result
+            pid = str(row.get('player_id', '')).strip()
+            tm  = str(row.get('team', '')).strip()
+            if not tm or tm in ('nan', 'FA', 'UFA', ''):
+                continue
+            if pid:
+                id_map[pid] = tm
+            if name_col:
+                nm = str(row.get(name_col, '')).strip()
+                if nm and nm != 'nan':
+                    name_map[nm] = tm
+        print(f'[NFLPlayers] {year} weekly roster: {len(id_map)} by ID, {len(name_map)} by name.')
+        return id_map, name_map
     except Exception as exc:
         print(f'[NFLPlayers] Roster fetch failed for {year}: {exc}')
-        return {}
+        return {}, {}
 
 
-def apply_roster_override(df: pd.DataFrame, roster: dict[str, str]) -> pd.DataFrame:
+def apply_roster_override(df: pd.DataFrame,
+                          roster_by_id: dict[str, str],
+                          roster_by_name: dict[str, str] | None = None) -> pd.DataFrame:
     """Re-assign the team column in df using current-season roster data.
-    Corrects for free-agent moves so prior-season stats follow players to their new teams."""
-    if df is None or df.empty or not roster:
+    First tries player_id → team lookup; falls back to full-name matching for
+    PFR-sourced rows where pfr_id != gsis_id."""
+    if df is None or df.empty:
         return df
+    df = df.copy()
+    name_col = 'player_display_name' if 'player_display_name' in df.columns else 'player_name'
+
+    # Pass 1: ID-based override
     id_col = next((c for c in ['player_id', 'gsis_id'] if c in df.columns), None)
-    if not id_col:
-        return df
-    df       = df.copy()
-    new_teams = df[id_col].map(roster)
-    moved     = new_teams.notna() & (new_teams != df['team'])
-    if moved.any():
-        name_col = 'player_display_name' if 'player_display_name' in df.columns else 'player_name'
+    if id_col and roster_by_id:
+        new_teams = df[id_col].map(roster_by_id)
+        moved     = new_teams.notna() & (new_teams != df['team'])
         for _, row in df[moved].iterrows():
-            nm  = str(row.get(name_col, '')).strip()
-            old = row['team']
-            new = roster.get(str(row[id_col]), '')
-            print(f'  [Team update] {nm}: {old} → {new}')
+            print(f'  [Team update/id] {str(row.get(name_col,"")).strip()}: {row["team"]} → {roster_by_id[str(row[id_col])]}')
         df.loc[new_teams.notna(), 'team'] = new_teams[new_teams.notna()]
+
+    # Pass 2: name-based fallback for rows still on their old team (e.g. PFR data)
+    if roster_by_name:
+        player_names = df[name_col].str.strip() if name_col in df.columns else None
+        if player_names is not None:
+            name_teams = player_names.map(roster_by_name)
+            moved = name_teams.notna() & (name_teams != df['team'])
+            for _, row in df[moved].iterrows():
+                nm  = str(row.get(name_col, '')).strip()
+                new = roster_by_name.get(nm, '')
+                print(f'  [Team update/name] {nm}: {row["team"]} → {new}')
+            df.loc[name_teams.notna(), 'team'] = name_teams[name_teams.notna()]
+
     return df
 
 
@@ -369,42 +389,69 @@ def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
     """Write NFL-QBs.csv — one starting QB per team."""
     rows = []
 
+    def _name_col(df):
+        return 'player_display_name' if df is not None and 'player_display_name' in df.columns else 'player_name'
+
+    def get_qb_stats(df: pd.DataFrame | None, team_abbr: str, exclude_names: set = set()):
+        """Find the primary QB for team_abbr in df by attempt count."""
+        if df is None or df.empty:
+            return None
+        nc = _name_col(df)
+        team_data = df[
+            (df['team'] == team_abbr) &
+            (df['position'] == 'QB') &
+            (~df[nc].isin(exclude_names))
+        ].sort_values('attempts', ascending=False)
+        for _, row in team_data.iterrows():
+            if _safe(row.get('attempts', 0), 0) >= MIN_QB_ATTEMPTS:
+                return row
+        return None
+
+    def find_qb_by_name(df: pd.DataFrame | None, name: str) -> object | None:
+        """Find a QB row anywhere in df by exact display-name match."""
+        if df is None or df.empty or not name:
+            return None
+        nc = _name_col(df)
+        match = df[(df['position'] == 'QB') & (df[nc].str.strip() == name)]
+        if not match.empty:
+            return match.sort_values('attempts', ascending=False).iloc[0]
+        return None
+
     for abbr, team_name in sorted(TEAM_NAMES.items(), key=lambda x: x[1]):
         # Blend weight (0 = all prior, 1 = all current)
         w = min(games_played / BLEND_FULL_WEEKS, 1.0) if games_played > 0 else 0.0
 
-        def get_qb_stats(df: pd.DataFrame | None, team_abbr: str, exclude_names: set = set()):
-            """Find the primary QB for team_abbr in df, skipping names in exclude_names."""
-            if df is None or df.empty:
-                return None
-            team_data = df[
-                (df['team'] == team_abbr) &
-                (df['position'] == 'QB') &
-                (~df['player_display_name'].isin(exclude_names) if 'player_display_name' in df.columns
-                 else ~df['player_name'].isin(exclude_names))
-            ].copy()
-            if team_data.empty:
-                return None
-            name_col = 'player_display_name' if 'player_display_name' in team_data.columns else 'player_name'
-            team_data = team_data.sort_values('attempts', ascending=False)
-            for _, row in team_data.iterrows():
-                if _safe(row.get('attempts', 0), 0) >= MIN_QB_ATTEMPTS:
-                    return row
-            return None
+        # ── Step 1: identify the 2026 starter from depth chart (most authoritative) ──
+        dc_names   = [n for n in depth_chart.get(abbr, []) if n]
+        dc_starter = dc_names[0] if dc_names else None
+        dc_backup  = dc_names[1] if len(dc_names) > 1 else None
 
-        # Find current-season starter
-        cur_row = get_qb_stats(cur_df, abbr)
+        # ── Step 2: find current-season stats ──────────────────────────────────
+        cur_row = None
+        if dc_starter:
+            # Prefer depth-chart starter — search across ALL teams so a
+            # newly signed QB whose PFR data still shows the old team is found.
+            cur_row = find_qb_by_name(cur_df, dc_starter)
+        if cur_row is None:
+            cur_row = get_qb_stats(cur_df, abbr)
 
         # Check if starter is injured — if so, promote backup
         if cur_row is not None:
-            name_col = 'player_display_name' if cur_df is not None and 'player_display_name' in cur_df.columns else 'player_name'
-            starter_name = str(cur_row.get(name_col, '')).strip()
+            starter_name = str(cur_row.get(_name_col(cur_df) if cur_df is not None else 'player_display_name', '')).strip()
             if (abbr, starter_name) in injured_out:
                 print(f'  [{team_name}] {starter_name} is Out/Doubtful — promoting backup.')
-                cur_row = get_qb_stats(cur_df, abbr, exclude_names={starter_name})
+                backup_name = dc_backup
+                if backup_name:
+                    cur_row = find_qb_by_name(cur_df, backup_name) or get_qb_stats(cur_df, abbr, exclude_names={starter_name})
+                else:
+                    cur_row = get_qb_stats(cur_df, abbr, exclude_names={starter_name})
 
-        # Fall back to prior season if no current data
-        prior_row = get_qb_stats(prior_df, abbr)
+        # ── Step 3: fall back to prior season if no current data ───────────────
+        prior_row = None
+        if dc_starter:
+            prior_row = find_qb_by_name(prior_df, dc_starter)
+        if prior_row is None:
+            prior_row = get_qb_stats(prior_df, abbr)
         if cur_row is None and prior_row is None:
             print(f'  [{team_name}] No QB data found — using league averages.')
             rows.append({
@@ -472,8 +519,8 @@ def build_rb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
     w = min(games_played / BLEND_FULL_WEEKS, 1.0) if games_played > 0 else 0.0
     rows = []
 
-    # Non-QB positions that carry the ball
-    RB_POSITIONS = {'RB', 'FB', 'WR', 'TE'}
+    # Non-QB positions that carry the ball (WR excluded — they appear in receivers CSV instead)
+    RB_POSITIONS = {'RB', 'FB'}
 
     def get_team_rbs(df: pd.DataFrame | None, abbr: str) -> pd.DataFrame:
         if df is None or df.empty:
@@ -649,10 +696,10 @@ def build():
 
     # Apply current-season roster to prior-season stats so players who changed
     # teams during the off-season appear on their correct current-season teams.
-    roster_current = fetch_roster_teams(SEASON_YEAR)
-    if roster_current and prior_df is not None:
+    roster_by_id, roster_by_name = fetch_roster_teams(SEASON_YEAR)
+    if (roster_by_id or roster_by_name) and prior_df is not None:
         print(f'[NFLPlayers] Applying {SEASON_YEAR} roster corrections to {used_prior_year} stats...')
-        prior_df = apply_roster_override(prior_df, roster_current)
+        prior_df = apply_roster_override(prior_df, roster_by_id, roster_by_name)
 
     depth_chart  = fetch_depth_chart(SEASON_YEAR)
     injured_out  = fetch_injured_out(SEASON_YEAR)
