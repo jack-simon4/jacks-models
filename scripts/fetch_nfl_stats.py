@@ -134,27 +134,33 @@ def fetch_pbp(year: int):
 
 
 def fetch_scoring(year: int):
-    """Return (pts_for_per_game, pts_against_per_game) Series by abbr."""
+    """Return (pts_for_per_game, pts_against_per_game, games_played) Series by abbr."""
     print(f'[NFL] Fetching {year} schedule...')
+    empty = pd.Series(dtype=int)
     try:
         sched = nfl.import_schedules([year])
     except Exception as exc:
         print(f'[NFL] Schedule fetch failed for {year}: {exc}')
-        return None, None
+        return None, None, empty
 
-    sched = sched[
+    completed = sched[
         (sched['game_type'] == 'REG') &
         sched['home_score'].notna() &
         sched['away_score'].notna()
     ]
 
-    rows = []
-    for _, row in sched.iterrows():
-        rows.append({'team': row['home_team'], 'pf': row['home_score'], 'pa': row['away_score']})
-        rows.append({'team': row['away_team'], 'pf': row['away_score'], 'pa': row['home_score']})
+    if completed.empty:
+        return None, None, empty
 
-    df = pd.DataFrame(rows)
-    return df.groupby('team')['pf'].mean(), df.groupby('team')['pa'].mean()
+    rows = []
+    for _, row in completed.iterrows():
+        rows.append({'team': row['home_team'], 'pf': float(row['home_score']), 'pa': float(row['away_score'])})
+        rows.append({'team': row['away_team'], 'pf': float(row['away_score']), 'pa': float(row['home_score'])})
+
+    df       = pd.DataFrame(rows)
+    games_gp = df.groupby('team').size()
+    print(f'[NFL] {year} scoring: {len(games_gp)} teams, up to {int(games_gp.max())} games played.')
+    return df.groupby('team')['pf'].mean(), df.groupby('team')['pa'].mean(), games_gp
 
 
 def fetch_home_adv(year: int) -> pd.Series:
@@ -187,22 +193,39 @@ def load_prior() -> pd.DataFrame | None:
 
 
 def build():
-    # Try current season first; fall back to prior year (off-season)
+    # ── Step 1: PBP for yardage stats ────────────────────────────────────────
     pbp_result = fetch_pbp(SEASON_YEAR)
     using_prior_year = False
     if pbp_result is None:
-        print(f'[NFL] No {SEASON_YEAR} data — trying {PRIOR_YEAR} (off-season).')
+        print(f'[NFL] No {SEASON_YEAR} PBP — using {PRIOR_YEAR} yardage + {SEASON_YEAR} scoring.')
         pbp_result = fetch_pbp(PRIOR_YEAR)
         using_prior_year = True
         if pbp_result is None:
             print('[NFL] No data available for either year. Aborting.')
             sys.exit(1)
 
-    off, def_, games_o = pbp_result
-    score_year = PRIOR_YEAR if using_prior_year else SEASON_YEAR
-    pf_pg, pa_pg = fetch_scoring(score_year)
-    home_adv    = fetch_home_adv(score_year)
-    prior       = load_prior()
+    off, def_, games_o_pbp = pbp_result
+
+    # ── Step 2: Scoring — always try current season from schedule ─────────────
+    # import_schedules([SEASON_YEAR]) works even when PBP isn't published yet.
+    # This ensures projected scores update each week based on current-season PPG.
+    pf_pg, pa_pg, games_o_sched = fetch_scoring(SEASON_YEAR)
+    if pf_pg is None:
+        # Current season has no completed games yet — fall back to prior season
+        pf_pg, pa_pg, _ = fetch_scoring(PRIOR_YEAR)
+
+    # ── Step 3: games_played for blend weight ────────────────────────────────
+    # When PBP data comes from the prior year, derive games_played from the
+    # current-season schedule so the blend weight reflects 2026 progress.
+    if using_prior_year and games_o_sched is not None and not games_o_sched.empty:
+        games_o = games_o_sched
+    else:
+        games_o = games_o_pbp
+
+    home_adv = fetch_home_adv(SEASON_YEAR)
+    if home_adv.empty:
+        home_adv = fetch_home_adv(PRIOR_YEAR)
+    prior    = load_prior()
 
     rows = []
     for abbr, team_name in sorted(TEAM_NAMES.items(), key=lambda x: x[1]):
@@ -212,20 +235,24 @@ def build():
 
         o = off.loc[abbr]
         d = def_.loc[abbr] if abbr in def_.index else None
-        gp = int(o.get('gp', 0))
 
-        # Blend weight: 0 = all prior, 1 = all current
-        # When using prior year for off-season, always use w=1 (full season complete)
-        w = 1.0 if using_prior_year else min(gp / BLEND_FULL_WEEKS, 1.0)
+        # gp_pbp  = games played in the PBP dataset (used to compute per-game rates)
+        # gp_cur  = games played in the current season (used for blend weight)
+        gp_pbp = int(o.get('gp', 0))
+        gp_raw = games_o.get(abbr) if isinstance(games_o, pd.Series) else None
+        gp_cur = int(gp_raw) if gp_raw is not None and not pd.isna(gp_raw) else gp_pbp
+
+        # Blend weight: 0 = 100% prior season, 1 = 100% current season
+        w = min(gp_cur / BLEND_FULL_WEEKS, 1.0) if gp_cur > 0 else 0.0
 
         # ── Compute current-season stats ─────────────────────────────────────
-        rush_att  = _safe(o.get('rush_att'),  LG['oRushPerGame'] * gp)
-        pass_att  = _safe(o.get('pass_att'),  LG['oPassPerGame'] * gp)
+        rush_att  = _safe(o.get('rush_att'),  LG['oRushPerGame'] * gp_pbp)
+        pass_att  = _safe(o.get('pass_att'),  LG['oPassPerGame'] * gp_pbp)
         sacks     = _safe(o.get('sacks'),     0)
         rush_yds  = _safe(o.get('rush_yds'),  rush_att * LG['RushYdsAtt'])
         pass_yds  = _safe(o.get('pass_yds'),  pass_att * LG['PassYdsAtt'])
         total_yds = _safe(o.get('total_yds'), (rush_yds + pass_yds))
-        gp_safe   = max(gp, 1)
+        gp_safe   = max(gp_pbp, 1)
 
         cur = {
             'RushYdsAtt':    rush_yds  / max(rush_att, 1),
@@ -243,7 +270,7 @@ def build():
             d_rush_yds  = _safe(d.get('d_rush_yds'),  d_rush_att * LG['RushYdsAtt'])
             d_pass_yds  = _safe(d.get('d_pass_yds'),  d_pass_att * LG['PassYdsAtt'])
             d_total_yds = _safe(d.get('d_total_yds'), (d_rush_yds + d_pass_yds))
-            d_gp        = max(int(d.get('gp', gp)), 1)
+            d_gp        = max(int(d.get('gp', gp_pbp)), 1)
             cur.update({
                 'dRushYdsAtt':   d_rush_yds  / max(d_rush_att, 1),
                 'dPassYdsAtt':   d_pass_yds  / max(d_pass_att, 1),
@@ -298,7 +325,7 @@ def build():
             'dPlaysGame':     b('dPlaysGame',     cur['dPlaysGame']),
             'HomeAdv':        round(ha, 2),
         })
-        print(f'  {team_name}: {gp} games, blend {w:.0%} current')
+        print(f'  {team_name}: {gp_cur} games (2026), blend {w:.0%} current')
 
     if not rows:
         print('[NFL] No rows generated. Aborting.')
