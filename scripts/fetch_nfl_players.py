@@ -431,7 +431,12 @@ def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
         if dc_starter:
             # Prefer depth-chart starter — search across ALL teams so a
             # newly signed QB whose PFR data still shows the old team is found.
-            cur_row = find_qb_by_name(cur_df, dc_starter)
+            candidate = find_qb_by_name(cur_df, dc_starter)
+            # Only accept if the player has real pass attempts; a QB who only
+            # appeared on rush plays has attempts=0 after PFR filtering and
+            # would produce nonsense stats via the _safe fallback.
+            if candidate is not None and float(candidate.get('attempts', 0) or 0) >= 5:
+                cur_row = candidate
         if cur_row is None:
             cur_row = get_qb_stats(cur_df, abbr)
 

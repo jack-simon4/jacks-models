@@ -164,7 +164,9 @@ def fetch_scoring(year: int):
 
 
 def fetch_home_adv(year: int) -> pd.Series:
-    """Return home-field advantage in points per team."""
+    """Return home-field advantage in points per team.
+    Teams with no home games yet (early season) return NaN — callers must
+    handle this with a fallback."""
     try:
         sched = nfl.import_schedules([year])
     except Exception:
@@ -179,8 +181,8 @@ def fetch_home_adv(year: int) -> pd.Series:
 
     home_edge = sched.groupby('home_team')['diff'].mean()
     away_edge = sched.groupby('away_team')['diff'].mean() * -1
-    adv = ((home_edge + away_edge) / 2).clip(lower=0.5, upper=5.5)
-    return adv
+    # NaN stays NaN here — filled by caller using prior-year fallback
+    return ((home_edge + away_edge) / 2).clip(lower=0.5, upper=5.5)
 
 
 def load_prior() -> pd.DataFrame | None:
@@ -222,10 +224,9 @@ def build():
     else:
         games_o = games_o_pbp
 
-    home_adv = fetch_home_adv(SEASON_YEAR)
-    if home_adv.empty:
-        home_adv = fetch_home_adv(PRIOR_YEAR)
-    prior    = load_prior()
+    home_adv_cur   = fetch_home_adv(SEASON_YEAR)
+    home_adv_prior = fetch_home_adv(PRIOR_YEAR)
+    prior          = load_prior()
 
     rows = []
     for abbr, team_name in sorted(TEAM_NAMES.items(), key=lambda x: x[1]):
@@ -305,7 +306,16 @@ def build():
                     pass
             return round(cur_val, 3)
 
-        ha = float(home_adv.get(abbr, 2.5)) if abbr in home_adv.index else 2.5
+        # Home-field advantage: blend current-season value (when valid) with prior year.
+        # Teams that haven't played at home yet return NaN from fetch_home_adv — fall
+        # back to prior year for those rather than writing a blank cell.
+        ha_cur_raw   = home_adv_cur.get(abbr)  if abbr in home_adv_cur.index   else None
+        ha_prior_raw = home_adv_prior.get(abbr) if abbr in home_adv_prior.index else None
+        ha_prior = float(ha_prior_raw) if ha_prior_raw is not None and math.isfinite(float(ha_prior_raw)) else 2.5
+        if ha_cur_raw is not None and math.isfinite(float(ha_cur_raw)):
+            ha = round(w * float(ha_cur_raw) + (1 - w) * ha_prior, 2)
+        else:
+            ha = ha_prior
 
         rows.append({
             'Team':           team_name,
