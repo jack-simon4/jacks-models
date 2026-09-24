@@ -69,27 +69,33 @@ TEAM_NAME_MAP = {
     'Georgia So':      'Georgia Southern',
     'Georgia St':      'Georgia State',
     "Hawai'i":         'Hawaii',
+    'Iowa St':         'Iowa State',
     'J Madison':       'James Madison',
     'Jacksonville St': 'Jacksonville State',
     'Kansas St':       'Kansas State',
+    'Kennesaw St':     'Kennesaw State',
     'Kent St':         'Kent State',
     'Louisiana':       'Louisiana',
     'Miami OH':        'Miami (OH)',
+    'Michigan St':     'Michigan State',
     'Middle Tenn':     'Middle Tennessee',
     'Mississippi':     'Ole Miss',
     'Mississippi St':  'Mississippi State',
-    'Missouri St':     'Missouri State',   # FCS — likely absent from API
+    'Missouri St':     'Missouri State',
     'N Illinois':      'Northern Illinois',
     'N Texas':         'North Texas',
     'NC State':        'NC State',
     'New Mexico St':   'New Mexico State',
+    'Ohio St':         'Ohio State',
+    'Oklahoma St':     'Oklahoma State',
+    'Oregon St':       'Oregon State',
     'Penn St':         'Penn State',
     'S Alabama':       'South Alabama',
     'S Florida':       'South Florida',
-    'Sam Houston':     'Sam Houston',
+    'Sam Houston':     'Sam Houston State',
     'San Diego St':    'San Diego State',
     'San Jose St':     'San Jose State',
-    'Southern Miss':   'Southern Miss',
+    'Southern Miss':   'Southern Mississippi',
     'Texas A&M':       'Texas A&M',
     'Texas St':        'Texas State',
     'UAB':             'UAB',
@@ -176,7 +182,7 @@ def fetch_game_stats(year: int) -> dict:
 
     for week in range(1, max_week + 1):
         try:
-            raw = _api('/games/teams', {'year': year, 'week': week, 'seasonType': 'regular'})
+            raw = _api('/games/teams', {'year': year, 'week': week, 'seasonType': 'regular', 'classification': 'fbs'})
         except Exception as exc:
             print(f'[NCAAF] WARNING: {year} w{week} error: {exc}')
             continue
@@ -452,7 +458,8 @@ def build():
         prior_def = prior_opp_views.get(csv_team, []) if prior_opp_views else []
 
         gp = len(cur_off)
-        w  = 1.0 if off_season else blend_weight(gp)
+        # off_season: no current-year data → use 100% prior year (w=0)
+        w  = 0.0 if off_season else blend_weight(gp)
 
         # Compute stats from each season independently
         cur_s   = compute_team_stats(cur_off,   cur_def,   national_avg, LG) if cur_off   else {}

@@ -45,20 +45,29 @@ CFBD_TO_CSV: dict[str, str] = {
     'Georgia Southern':     'Georgia So',
     'Georgia State':        'Georgia St',
     'Hawaii':               "Hawai'i",
+    'Iowa State':           'Iowa St',
     'James Madison':        'J Madison',
     'Jacksonville State':   'Jacksonville St',
     'Kansas State':         'Kansas St',
+    'Kennesaw State':       'Kennesaw St',
     'Kent State':           'Kent St',
     'Miami (OH)':           'Miami OH',
+    'Michigan State':       'Michigan St',
     'Middle Tennessee':     'Middle Tenn',
     'Ole Miss':             'Mississippi',
     'Mississippi State':    'Mississippi St',
+    'Missouri State':       'Missouri St',
     'Northern Illinois':    'N Illinois',
     'North Texas':          'N Texas',
     'New Mexico State':     'New Mexico St',
+    'Ohio State':           'Ohio St',
+    'Oklahoma State':       'Oklahoma St',
+    'Oregon State':         'Oregon St',
     'Penn State':           'Penn St',
+    'Sam Houston State':    'Sam Houston',
     'South Alabama':        'S Alabama',
     'South Florida':        'S Florida',
+    'Southern Mississippi': 'Southern Miss',
     'San Diego State':      'San Diego St',
     'San Jose State':       'San Jose St',
     'Texas State':          'Texas St',
@@ -140,21 +149,33 @@ def fetch_schedule(year: int, weeks: list) -> list:
     games   = []
     seen    = set()
     for week in weeks:
-        try:
-            resp = requests.get(
-                f'{BASE}/games',
-                params={'year': year, 'week': week, 'seasonType': 'regular'},
-                headers=headers, timeout=15,
-            )
-            if resp.status_code == 200:
-                for g in resp.json():
-                    gid = g.get('id')
-                    if gid not in seen:
-                        seen.add(gid)
-                        games.append(g)
+        fetched = False
+        for params in [
+            {'year': year, 'week': week, 'seasonType': 'regular', 'classification': 'fbs'},
+            {'year': year, 'week': week, 'seasonType': 'regular'},
+            {'year': year, 'week': week},
+        ]:
+            try:
+                resp = requests.get(f'{BASE}/games', params=params, headers=headers, timeout=15)
+                if resp.status_code == 200:
+                    batch = resp.json()
+                    for g in batch:
+                        gid = g.get('id')
+                        if gid not in seen:
+                            seen.add(gid)
+                            games.append(g)
+                    if batch:
+                        fetched = True
+                    break
+                else:
+                    print(f'[NCAAF] Schedule w{week} HTTP {resp.status_code} (params={params}): {resp.text[:200]}')
+            except Exception as exc:
+                print(f'[NCAAF] Schedule w{week} error: {exc}')
+                break
             time.sleep(0.3)
-        except Exception as exc:
-            print(f'[NCAAF] Schedule w{week} error: {exc}')
+        if not fetched:
+            print(f'[NCAAF] Schedule w{week}: no games returned for {year}.')
+        time.sleep(0.2)
     print(f'[NCAAF] Fetched {len(games)} games for weeks {weeks}.')
     return games
 
@@ -245,7 +266,7 @@ def generate_ncaaf_picks():
     year       = now.year if now.month >= 8 else now.year - 1
     weeks      = current_ncaaf_weeks(now)
     games      = fetch_schedule(year, weeks)
-    window_end = now + timedelta(days=7)
+    window_end = now + timedelta(days=10)
 
     picks         = []   # upcoming games with clear edge → ncaaf-picks.json
     firestore_data = []  # all simulatable games → Firestore
@@ -262,6 +283,10 @@ def generate_ncaaf_picks():
         h_stats = stats.get(home)
         a_stats = stats.get(away)
         if not h_stats or not a_stats:
+            missing = []
+            if not h_stats: missing.append(f'home={home!r}')
+            if not a_stats: missing.append(f'away={away!r}')
+            print(f'[NCAAF] Skipping game {game_id}: no stats for {", ".join(missing)}')
             skipped += 1
             continue
 
