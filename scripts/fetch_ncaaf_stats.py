@@ -181,18 +181,34 @@ def fetch_game_stats(year: int) -> dict:
     school_games: dict[str, list] = {}
 
     for week in range(1, max_week + 1):
-        try:
-            raw = _api('/games/teams', {'year': year, 'week': week, 'seasonType': 'regular', 'classification': 'fbs'})
-        except Exception as exc:
-            print(f'[NCAAF] WARNING: {year} w{week} error: {exc}')
-            continue
+        # Try without classification first (broader), then with fbs filter
+        params_attempts = [
+            {'year': year, 'week': week, 'seasonType': 'regular'},
+            {'year': year, 'week': week},
+        ]
+        raw = []
+        for params in params_attempts:
+            try:
+                raw = _api('/games/teams', params)
+                if raw:
+                    break
+            except Exception as exc:
+                print(f'[NCAAF] WARNING: {year} w{week} params={params} error: {exc}')
         if not raw:
             continue
 
         for game in raw:
             game_id = game.get('id', 0)
+            teams_key = 'teams' if 'teams' in game else None
+            if teams_key is None:
+                # Log first unexpected game structure for diagnosis
+                if len(school_games) == 0:
+                    print(f'[NCAAF] Unexpected game structure (keys: {list(game.keys())[:10]})')
+                continue
             for team_entry in game.get('teams', []):
-                school = team_entry.get('school', '')
+                school = team_entry.get('school', '') or team_entry.get('team', '')
+                if not school:
+                    continue
                 points = _safe(team_entry.get('points'), 0)
                 stats_raw = {s['category']: s['stat']
                              for s in team_entry.get('stats', [])}
@@ -223,13 +239,22 @@ def fetch_game_stats(year: int) -> dict:
         print(f'[NCAAF] No game data returned for {year}.')
         return {}
 
+    # Log sample of raw API team names for diagnosis
+    sample_names = list(school_games.keys())[:10]
+    print(f'[NCAAF] {year}: API returned {len(school_games)} schools. Sample: {sample_names}')
+
     # Convert cfbd names to CSV names
     result = {}
+    unmatched = []
     for cfbd_name, games in school_games.items():
         csv_name = CFBD_TO_CSV.get(cfbd_name, cfbd_name)
         result[csv_name] = games
+        if cfbd_name not in CFBD_TO_CSV and cfbd_name not in result:
+            unmatched.append(cfbd_name)
 
-    print(f'[NCAAF] {year}: got data for {len(result)} teams.')
+    if unmatched:
+        print(f'[NCAAF] {year}: {len(unmatched)} names passed through unchanged (no explicit mapping): {unmatched[:15]}')
+    print(f'[NCAAF] {year}: got data for {len(result)} teams after name conversion.')
     return result
 
 
@@ -427,9 +452,20 @@ def build():
         print('[NCAAF] No game data available from API. Aborting.')
         sys.exit(1)
 
-    # Fall back to off-season mode: use prior year as sole source
-    off_season = not cur_game_data
-    if off_season:
+    # Check how many CSV teams are actually matched in cur_game_data.
+    # If very few match (API data present but team names don't align),
+    # treat it as off-season and rely on prior year.
+    csv_matches_cur = sum(1 for t in teams_in_csv if cur_game_data.get(t))
+    csv_matches_prior = sum(1 for t in teams_in_csv if prior_game_data.get(t) if prior_game_data)
+    print(f'[NCAAF] CSV team matches — {SEASON_YEAR}: {csv_matches_cur}/{len(teams_in_csv)}, '
+          f'{PRIOR_YEAR}: {csv_matches_prior}/{len(teams_in_csv)}')
+
+    # Fall back to off-season mode if current data doesn't match CSV names
+    off_season = csv_matches_cur < 5
+    if off_season and cur_game_data:
+        print(f'[NCAAF] {SEASON_YEAR} data returned but <5 CSV teams matched — '
+              f'treating as off-season, using {PRIOR_YEAR} only.')
+    elif off_season:
         print(f'[NCAAF] No {SEASON_YEAR} games yet — using {PRIOR_YEAR} only.')
 
     # SP+ ratings: prefer current season
