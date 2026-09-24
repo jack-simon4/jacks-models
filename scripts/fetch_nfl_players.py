@@ -136,7 +136,7 @@ def apply_roster_override(df: pd.DataFrame,
             print(f'  [Team update/id] {str(row.get(name_col,"")).strip()}: {row["team"]} → {roster_by_id[str(row[id_col])]}')
         df.loc[new_teams.notna(), 'team'] = new_teams[new_teams.notna()]
 
-    # Pass 2: name-based fallback for rows still on their old team (e.g. PFR data)
+    # Pass 2: exact name-based fallback (e.g. PFR data whose pfr_id != gsis_id)
     if roster_by_name:
         player_names = df[name_col].str.strip() if name_col in df.columns else None
         if player_names is not None:
@@ -147,6 +147,22 @@ def apply_roster_override(df: pd.DataFrame,
                 new = roster_by_name.get(nm, '')
                 print(f'  [Team update/name] {nm}: {row["team"]} → {new}')
             df.loc[name_teams.notna(), 'team'] = name_teams[name_teams.notna()]
+
+    # Pass 3: normalized name fallback — strips apostrophes/dots so
+    # "Wan'Dale Robinson" matches "Wandale Robinson", etc.
+    if roster_by_name and name_col in df.columns:
+        import re
+        def _norm(s: str) -> str:
+            return re.sub(r"['\.\-]", '', s).lower().strip()
+        norm_roster = {_norm(k): v for k, v in roster_by_name.items()}
+        norm_names  = df[name_col].str.strip().apply(_norm)
+        norm_teams  = norm_names.map(norm_roster)
+        moved = norm_teams.notna() & (norm_teams != df['team'])
+        for _, row in df[moved].iterrows():
+            nm  = str(row.get(name_col, '')).strip()
+            new = norm_roster.get(_norm(nm), '')
+            print(f'  [Team update/norm] {nm}: {row["team"]} → {new}')
+        df.loc[norm_teams.notna(), 'team'] = norm_teams[norm_teams.notna()]
 
     return df
 
@@ -519,7 +535,7 @@ def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
 
 
 def build_rb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
-                 games_played: int):
+                 games_played: int, injured_out: set | None = None):
     """Write NFL-RBs.csv — top non-QB rushers per team."""
     w = min(games_played / BLEND_FULL_WEEKS, 1.0) if games_played > 0 else 0.0
     rows = []
@@ -527,18 +543,24 @@ def build_rb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
     # Non-QB positions that carry the ball (WR excluded — they appear in receivers CSV instead)
     RB_POSITIONS = {'RB', 'FB'}
 
-    def get_team_rbs(df: pd.DataFrame | None, abbr: str) -> pd.DataFrame:
+    # Scale the minimum-carries threshold with season progress so early-season
+    # starters (few games played) aren't invisible in the current-season data.
+    # After 8+ games this converges back toward MIN_RB_CARRIES.
+    min_carries_cur = max(3, games_played * 2) if games_played > 0 else MIN_RB_CARRIES
+
+    def get_team_rbs(df: pd.DataFrame | None, abbr: str, min_c: int = MIN_RB_CARRIES) -> pd.DataFrame:
         if df is None or df.empty:
             return pd.DataFrame()
         mask = (
             (df['team'] == abbr) &
             (df['position'].isin(RB_POSITIONS)) &
-            (df['carries'] >= MIN_RB_CARRIES)
+            (df['carries'] >= min_c)
         )
         return df[mask].sort_values('carries', ascending=False).head(MAX_RBS_PER_TEAM)
 
     for abbr, team_name in sorted(TEAM_NAMES.items(), key=lambda x: x[1]):
-        cur_rbs   = get_team_rbs(cur_df, abbr)
+        # Use a lower carries threshold for early-season current data
+        cur_rbs   = get_team_rbs(cur_df, abbr, min_c=min_carries_cur)
         prior_rbs = get_team_rbs(prior_df, abbr)
 
         # Use current if available, else prior, else skip
@@ -553,6 +575,10 @@ def build_rb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
 
         for _, rb in use_rbs.iterrows():
             name     = str(rb.get(name_col, 'Unknown')).strip()
+            # Skip players listed as Out/Doubtful on the current injury report
+            if injured_out and (abbr, name) in injured_out:
+                print(f'  [{team_name}] {name} is Out/Doubtful — skipping from RB list.')
+                continue
             carries  = _safe(rb.get('carries', 0),        1)
             yds      = _safe(rb.get('rushing_yards', 0),  carries * LG_RUSH_YPC)
             gp       = max(_safe(rb.get('games', 1), 1), 1)
@@ -588,25 +614,28 @@ def build_rb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
 
 
 def build_receivers_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
-                        games_played: int):
+                        games_played: int, injured_out: set | None = None):
     """Write NFL-Receivers.csv — top WR/TE receivers per team."""
     w = min(games_played / BLEND_FULL_WEEKS, 1.0) if games_played > 0 else 0.0
     rows = []
 
     REC_POSITIONS = {'WR', 'TE'}
 
-    def get_team_receivers(df: pd.DataFrame | None, abbr: str) -> pd.DataFrame:
+    # Dynamic minimum targets for current-season data; prior always uses full threshold
+    min_tgts_cur = max(3, games_played * 2) if games_played > 0 else MIN_REC_TARGETS
+
+    def get_team_receivers(df: pd.DataFrame | None, abbr: str, min_t: int = MIN_REC_TARGETS) -> pd.DataFrame:
         if df is None or df.empty:
             return pd.DataFrame()
         mask = (
             (df['team'] == abbr) &
             (df['position'].isin(REC_POSITIONS)) &
-            (df['targets'] >= MIN_REC_TARGETS)
+            (df['targets'] >= min_t)
         )
         return df[mask].sort_values('targets', ascending=False).head(MAX_REC_PER_TEAM)
 
     for abbr, team_name in sorted(TEAM_NAMES.items(), key=lambda x: x[1]):
-        cur_recs   = get_team_receivers(cur_df, abbr)
+        cur_recs   = get_team_receivers(cur_df, abbr, min_t=min_tgts_cur)
         prior_recs = get_team_receivers(prior_df, abbr)
         use_recs   = cur_recs if not cur_recs.empty else prior_recs
         use_prior  = cur_recs.empty and not prior_recs.empty
@@ -619,6 +648,9 @@ def build_receivers_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | No
 
         for _, rec in use_recs.iterrows():
             name    = str(rec.get(name_col, 'Unknown')).strip()
+            if injured_out and (abbr, name) in injured_out:
+                print(f'  [{team_name}] {name} is Out/Doubtful — skipping from receiver list.')
+                continue
             pos     = str(rec.get('position', 'WR')).strip()
             tgts    = _safe(rec.get('targets', 0),          1)
             yds     = _safe(rec.get('receiving_yards', 0),  tgts * 8.0)
@@ -710,8 +742,8 @@ def build():
     injured_out  = fetch_injured_out(SEASON_YEAR)
 
     build_qb_csv(cur_df, prior_df, games_played, depth_chart, injured_out)
-    build_rb_csv(cur_df, prior_df, games_played)
-    build_receivers_csv(cur_df, prior_df, games_played)
+    build_rb_csv(cur_df, prior_df, games_played, injured_out)
+    build_receivers_csv(cur_df, prior_df, games_played, injured_out)
 
 
 if __name__ == '__main__':
