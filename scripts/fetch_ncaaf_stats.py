@@ -214,22 +214,32 @@ def fetch_game_stats(year: int) -> dict:
                              for s in team_entry.get('stats', [])}
 
                 total_yds = _safe(stats_raw.get('totalYards', 0), 0)
-                plays     = _safe(stats_raw.get('plays', 0), 1)
                 rush_yds  = _safe(stats_raw.get('rushingYards', 0), 0)
-                rush_att  = _safe(stats_raw.get('rushingAttempts', 0), 1)
+                rush_att  = int(_safe(stats_raw.get('rushingAttempts', 0), 0))
                 pass_yds  = _safe(stats_raw.get('netPassingYards', 0), 0)
                 pass_att  = _parse_attempts(stats_raw.get('completionAttempts', '0-0'))
+
+                # CFBD does not return a bare 'plays' category; compute from
+                # rush + pass attempts which gives total offensive plays.
+                total_plays = max(rush_att + pass_att, 1)
+
+                # Use yardsPerPlay stat when available; otherwise derive it.
+                ypp_stat = _safe(stats_raw.get('yardsPerPlay', 0), 0)
+                if 2.0 < ypp_stat < 12.0:
+                    yds_play = ypp_stat
+                else:
+                    yds_play = total_yds / total_plays
 
                 g = {
                     'game_id':   game_id,
                     'points':    points,
                     'total_yds': total_yds,
-                    'plays':     max(plays, 1),
+                    'plays':     total_plays,
                     'rush_yds':  rush_yds,
                     'rush_att':  max(rush_att, 1),
                     'pass_yds':  pass_yds,
                     'pass_att':  max(pass_att, 1),
-                    'yds_play':  total_yds / max(plays, 1),
+                    'yds_play':  yds_play,
                 }
                 school_games.setdefault(school, []).append(g)
 

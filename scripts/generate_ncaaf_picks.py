@@ -308,6 +308,12 @@ def generate_ncaaf_picks():
         edge  = pick_wp - 0.5
         label = confidence_label(edge)
 
+        # Use game_dt (not h_pts) to decide if the game has been played.
+        # Some CFBD entries return 0 for future game scores instead of null.
+        game_started = game_dt <= now
+        actual_home = int(h_pts) if (h_pts is not None and game_started) else None
+        actual_away = int(a_pts) if (a_pts is not None and game_started) else None
+
         entry = {
             'gameId':             game_id,
             'homeTeam':           home,
@@ -318,14 +324,18 @@ def generate_ncaaf_picks():
             'winProb':            round(pick_wp, 3),
             'confidence':         label,
             'gameTime':           start_raw,
-            'actualHomeScore':    int(h_pts) if h_pts is not None else None,
-            'actualAwayScore':    int(a_pts) if a_pts is not None else None,
+            'actualHomeScore':    actual_home,
+            'actualAwayScore':    actual_away,
         }
         firestore_data.append(entry)
 
         # Add to picks list only if upcoming with a clear edge
-        if h_pts is None and game_dt >= now and game_dt <= window_end and label:
+        if not game_started and game_dt <= window_end and label:
             picks.append(entry)
+
+    upcoming_count = sum(1 for g in firestore_data if g['actualHomeScore'] is None)
+    print(f'[NCAAF] {len(firestore_data)} games simulated: {upcoming_count} upcoming, '
+          f'{len(firestore_data)-upcoming_count} completed  ({skipped} skipped)')
 
     picks.sort(key=lambda p: p['winProb'], reverse=True)
     for i, p in enumerate(picks):
@@ -333,7 +343,7 @@ def generate_ncaaf_picks():
 
     with open(OUTPUT, 'w', encoding='utf-8') as f:
         json.dump(picks, f, indent=2)
-    print(f'[NCAAF] {len(picks)} picks saved → {OUTPUT}  ({skipped} skipped)')
+    print(f'[NCAAF] {len(picks)} picks saved → {OUTPUT}')
 
     save_to_firestore(firestore_data)
 
