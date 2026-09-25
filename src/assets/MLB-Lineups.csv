@@ -2,14 +2,14 @@ Team,Player
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Seiya Suzuki
 Chicago Cubs3,Alex Bregman
-Chicago Cubs4,Tyrone Taylor
+Chicago Cubs4,Ian Happ
 Chicago Cubs5,Nico Hoerner
 Chicago Cubs6,Matt Shaw
 Chicago Cubs7,Michael Busch
 Chicago Cubs8,Dansby Swanson
 Chicago Cubs9,Miguel Amaya
 Boston Red Sox1,Roman Anthony
-Boston Red Sox2,Mickey Gasper
+Boston Red Sox2,Connor Wong
 Boston Red Sox3,Adley Rutschman
 Boston Red Sox4,Wilyer Abreu
 Boston Red Sox5,Caleb Durbin
@@ -35,6 +35,24 @@ New York Yankees6,Spencer Jones
 New York Yankees7,Anthony Volpe
 New York Yankees8,Ali Sanchez
 New York Yankees9,Jose Caballero
+Detroit Tigers1,Max Clark
+Detroit Tigers2,Hao-Yu Lee
+Detroit Tigers3,Kevin McGonigle
+Detroit Tigers4,Eduardo Valencia
+Detroit Tigers5,Riley Greene
+Detroit Tigers6,Dillon Dingler
+Detroit Tigers7,Brett Callahan
+Detroit Tigers8,Spencer Torkelson
+Detroit Tigers9,John Peck
+Philadelphia Phillies1,Kyle Schwarber
+Philadelphia Phillies2,Trea Turner
+Philadelphia Phillies3,Bryce Harper
+Philadelphia Phillies4,Alec Bohm
+Philadelphia Phillies5,Bryson Stott
+Philadelphia Phillies6,Brandon Marsh
+Philadelphia Phillies7,Justin Crawford
+Philadelphia Phillies8,J.T. Realmuto
+Philadelphia Phillies9,Edmundo Sosa
 Arizona Diamondbacks1,Lars Nootbaar
 Arizona Diamondbacks2,Ketel Marte
 Arizona Diamondbacks3,Gabriel Moreno
@@ -98,15 +116,6 @@ Colorado Rockies6,Kyle Karros
 Colorado Rockies7,Brett Sullivan
 Colorado Rockies8,Jordan Beck
 Colorado Rockies9,Ezequiel Tovar
-Detroit Tigers1,Kevin McGonigle
-Detroit Tigers2,Hao-Yu Lee
-Detroit Tigers3,Ben Malgeri
-Detroit Tigers4,Riley Greene
-Detroit Tigers5,Dillon Dingler
-Detroit Tigers6,Max Clark
-Detroit Tigers7,Spencer Torkelson
-Detroit Tigers8,Brett Callahan
-Detroit Tigers9,Jace Jung
 Houston Astros1,Jeremy Pena
 Houston Astros2,Yordan Alvarez
 Houston Astros3,Isaac Paredes
@@ -179,15 +188,6 @@ New York Mets6,Marcus Semien
 New York Mets7,A.J. Ewing
 New York Mets8,Luis Torrens
 New York Mets9,Nick Morabito
-Philadelphia Phillies1,Kyle Schwarber
-Philadelphia Phillies2,Trea Turner
-Philadelphia Phillies3,Bryce Harper
-Philadelphia Phillies4,Luis Arraez
-Philadelphia Phillies5,Alec Bohm
-Philadelphia Phillies6,Bryan De La Cruz
-Philadelphia Phillies7,Bryson Stott
-Philadelphia Phillies8,J.T. Realmuto
-Philadelphia Phillies9,Justin Crawford
 Pittsburgh Pirates1,Oneil Cruz
 Pittsburgh Pirates2,Konnor Griffin
 Pittsburgh Pirates3,Brandon Lowe
