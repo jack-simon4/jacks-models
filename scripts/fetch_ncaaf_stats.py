@@ -42,8 +42,6 @@ SEASON_YEAR = _today.year if _today.month >= 8 else _today.year - 1
 PRIOR_YEAR  = SEASON_YEAR - 1
 
 # Games needed before we trust current-season data exclusively.
-# With 3+ games: 100% current season.
-# With fewer games: current season still outweighs prior (see blend_weight()).
 BLEND_FULL_GAMES = 3
 
 # Weight of last-3-games stats in the wYds/* columns
@@ -496,47 +494,99 @@ def build():
         'home_adv':   2.5,  'sos':        0.0,
     }
 
-    rows = []
+    # ── Pass 1: raw oRating/dRating and cached stats for every team ──────────
+    raw_o:    dict[str, float] = {}
+    raw_d:    dict[str, float] = {}
+    stats_cache: dict[str, dict] = {}
+
     for csv_team in teams_in_csv:
         cur_off   = cur_game_data.get(csv_team, [])
         cur_def   = cur_opp_views.get(csv_team, [])
         prior_off = prior_game_data.get(csv_team, []) if prior_game_data else []
         prior_def = prior_opp_views.get(csv_team, []) if prior_opp_views else []
-
         gp = len(cur_off)
-        # off_season: no current-year data → use 100% prior year (w=0)
         w  = 0.0 if off_season else blend_weight(gp)
-
-        # Compute stats from each season independently
         cur_s   = compute_team_stats(cur_off,   cur_def,   national_avg, LG) if cur_off   else {}
         prior_s = compute_team_stats(prior_off, prior_def, national_avg, LG) if prior_off else {}
+        pts_for     = w * cur_s.get('pts_for',     national_avg) + (1 - w) * prior_s.get('pts_for',     national_avg)
+        pts_against = w * cur_s.get('pts_against', national_avg) + (1 - w) * prior_s.get('pts_against', national_avg)
+        raw_o[csv_team] = pts_for     / national_avg if national_avg > 0 else 1.0
+        raw_d[csv_team] = pts_against / national_avg if national_avg > 0 else 1.0
+        stats_cache[csv_team] = {'gp': gp, 'w': w, 'cur_s': cur_s, 'prior_s': prior_s}
 
-        def blend(key, fallback):
-            c = cur_s.get(key,   fallback)
-            p = prior_s.get(key, fallback)
-            return w * c + (1 - w) * p
+    # ── Build game_id → teams map (enables finding each team's opponents) ─────
+    game_to_teams: dict[int, list[str]] = {}
+    if not off_season:
+        for t, games in cur_game_data.items():
+            for g in games:
+                game_to_teams.setdefault(g['game_id'], []).append(t)
 
-        pts_for     = blend('pts_for',     national_avg)
-        pts_against = blend('pts_against', national_avg)
-        yds_play    = blend('yds_play',    LG['yds_play'])
-        yds_play_l3 = blend('yds_play_l3', yds_play)
-        d_yds_play  = blend('d_yds_play',  LG['d_yds_play'])
+    # ── SOS-adjust oRating/dRating based on opponent quality ──────────────────
+    # adj = raw / (0.5 + 0.5 * avg_opp_factor)  ← 50% dampening prevents overcorrection
+    # oRating: divide by avg opponent dRating (facing good defenses inflates raw score)
+    # dRating: divide by avg opponent oRating (facing weak offenses deflates raw dRating)
+    def _sos_adj(raw: float, opp_factor: float) -> float:
+        return raw / max(0.5 + 0.5 * opp_factor, 0.1)
+
+    adj_o:   dict[str, float] = {}
+    adj_d:   dict[str, float] = {}
+    adj_sos: dict[str, float] = {}
+
+    for csv_team in teams_in_csv:
+        gp = stats_cache[csv_team]['gp']
+        if off_season or gp == 0:
+            adj_o[csv_team]   = raw_o.get(csv_team, 1.0)
+            adj_d[csv_team]   = raw_d.get(csv_team, 1.0)
+            adj_sos[csv_team] = 0.0
+            continue
+        opp_o_vals, opp_d_vals = [], []
+        for g in cur_game_data.get(csv_team, []):
+            for opp in game_to_teams.get(g['game_id'], []):
+                if opp != csv_team and opp in raw_o:
+                    opp_o_vals.append(raw_o[opp])
+                    opp_d_vals.append(raw_d[opp])
+        if opp_o_vals:
+            avg_opp_o = sum(opp_o_vals) / len(opp_o_vals)
+            avg_opp_d = sum(opp_d_vals) / len(opp_d_vals)
+            adj_o[csv_team]   = _sos_adj(raw_o.get(csv_team, 1.0), avg_opp_d)
+            adj_d[csv_team]   = _sos_adj(raw_d.get(csv_team, 1.0), avg_opp_o)
+            adj_sos[csv_team] = round(avg_opp_o, 3)
+        else:
+            adj_o[csv_team]   = raw_o.get(csv_team, 1.0)
+            adj_d[csv_team]   = raw_d.get(csv_team, 1.0)
+            adj_sos[csv_team] = 0.0
+
+    # ── Pass 2: write final rows using SOS-adjusted oRating/dRating ───────────
+    rows = []
+    for csv_team in teams_in_csv:
+        cache   = stats_cache[csv_team]
+        gp      = cache['gp']
+        w       = cache['w']
+        cur_s   = cache['cur_s']
+        prior_s = cache['prior_s']
+
+        def blend(key, fallback, _w=w, _c=cur_s, _p=prior_s):
+            return _w * _c.get(key, fallback) + (1 - _w) * _p.get(key, fallback)
+
+        yds_play      = blend('yds_play',      LG['yds_play'])
+        yds_play_l3   = blend('yds_play_l3',   yds_play)
+        d_yds_play    = blend('d_yds_play',    LG['d_yds_play'])
         d_yds_play_l3 = blend('d_yds_play_l3', d_yds_play)
-        yds_pt      = blend('yds_pt',      LG['yds_pt'])
-        yds_pt_l3   = blend('yds_pt_l3',   yds_pt)
-        d_yds_pt    = blend('d_yds_pt',    LG['d_yds_pt'])
-        d_yds_pt_l3 = blend('d_yds_pt_l3', d_yds_pt)
-        plays_pg    = blend('plays_pg',    LG['plays_pg'])
-        d_plays_pg  = blend('d_plays_pg',  LG['d_plays_pg'])
+        yds_pt        = blend('yds_pt',        LG['yds_pt'])
+        yds_pt_l3     = blend('yds_pt_l3',     yds_pt)
+        d_yds_pt      = blend('d_yds_pt',      LG['d_yds_pt'])
+        d_yds_pt_l3   = blend('d_yds_pt_l3',   d_yds_pt)
+        plays_pg      = blend('plays_pg',      LG['plays_pg'])
+        d_plays_pg    = blend('d_plays_pg',    LG['d_plays_pg'])
 
         w_yds_play  = W_SEASON * yds_play   + W_RECENT * yds_play_l3
         wd_yds_play = W_SEASON * d_yds_play + W_RECENT * d_yds_play_l3
         w_yds_pt    = W_SEASON * yds_pt     + W_RECENT * yds_pt_l3
         wd_yds_pt   = W_SEASON * d_yds_pt   + W_RECENT * d_yds_pt_l3
 
-        o_rating = pts_for     / national_avg if national_avg > 0 else 1.0
-        d_rating = pts_against / national_avg if national_avg > 0 else 1.0
-        sos      = sp_ratings.get(csv_team, {}).get('sos', 0.0)
+        o_rating = adj_o.get(csv_team, 1.0)
+        d_rating = adj_d.get(csv_team, 1.0)
+        sos      = adj_sos.get(csv_team, 0.0)
         home_adv = prior_val(prior_csv, csv_team, 'HomeAdv', LG['home_adv'])
 
         rows.append({
@@ -566,9 +616,9 @@ def build():
         elif gp == 0:
             status = f'no {SEASON_YEAR} games, using {PRIOR_YEAR}'
         elif gp >= BLEND_FULL_GAMES:
-            status = f'{gp} games, 100% {SEASON_YEAR}'
+            status = f'{gp} games, 100% {SEASON_YEAR} (SOS-adj)'
         else:
-            status = f'{gp} game(s), {w:.0%} {SEASON_YEAR} / {1-w:.0%} {PRIOR_YEAR}'
+            status = f'{gp} game(s), {w:.0%} {SEASON_YEAR} / {1-w:.0%} {PRIOR_YEAR} (SOS-adj)'
         print(f'  {csv_team}: {status}')
 
     if not rows:

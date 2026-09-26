@@ -181,15 +181,14 @@ def fetch_schedule(year: int, weeks: list) -> list:
 
 
 def current_ncaaf_weeks(now: datetime) -> list:
-    """Return [prev_week, current_week, next_week] based on today's date.
-    Previous week included so Sunday/Monday runs capture last week's results."""
+    """Return all weeks from 1 through next_week.
+    Fetching all completed weeks ensures Firestore captures every finished game,
+    not just the rolling 3-week window, so the Results page fills in correctly."""
     start_of_week0 = datetime(now.year, 8, 24, tzinfo=timezone.utc)
     days_in        = max(0, (now - start_of_week0).days)
     current_week   = days_in // 7
-    prev_week      = max(0, current_week - 1)
     next_week      = current_week + 1
-    weeks = sorted(set([prev_week, current_week, next_week]))
-    return weeks
+    return list(range(1, next_week + 1))
 
 
 def save_to_firestore(games_data: list):
