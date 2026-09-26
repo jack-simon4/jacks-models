@@ -1,23 +1,16 @@
 {
-  "Washington Nationals": {
-    "home_team": "Washington Nationals",
-    "away_team": "New York Mets",
-    "home_ml": "-162",
-    "away_ml": "+126",
-    "book": "fanduel"
-  },
   "Detroit Tigers": {
     "home_team": "Detroit Tigers",
     "away_team": "Pittsburgh Pirates",
-    "home_ml": "-120",
-    "away_ml": "+102",
+    "home_ml": "+215",
+    "away_ml": "-290",
     "book": "fanduel"
   },
   "Toronto Blue Jays": {
     "home_team": "Toronto Blue Jays",
     "away_team": "Cincinnati Reds",
-    "home_ml": "-162",
-    "away_ml": "+136",
+    "home_ml": "-111",
+    "away_ml": "-115",
     "book": "fanduel"
   },
   "San Francisco Giants": {

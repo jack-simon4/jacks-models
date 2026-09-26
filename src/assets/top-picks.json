@@ -8,34 +8,15 @@
     "pick": "Chicago White Sox",
     "prediction": "Chicago White Sox -235",
     "odds": "-235",
-    "winProb": 0.62,
-    "edge": 0.12,
+    "winProb": 0.606,
+    "edge": 0.106,
     "confidence": "Strong",
-    "predictedScore": "Colorado Rockies 5.1 \u2013 Chicago White Sox 6.7",
-    "predictedHomeScore": 6.69,
+    "predictedScore": "Colorado Rockies 5.1 \u2013 Chicago White Sox 6.5",
+    "predictedHomeScore": 6.49,
     "predictedAwayScore": 5.06,
     "gameTime": "2026-09-26T23:10:00Z",
     "gamePk": 824543,
     "rank": 1
-  },
-  {
-    "matchup": "Cincinnati Reds @ Toronto Blue Jays",
-    "awayTeam": "Cincinnati Reds",
-    "homeTeam": "Toronto Blue Jays",
-    "awayPitcher": "Rhett Lowder",
-    "homePitcher": "Trey Yesavage",
-    "pick": "Toronto Blue Jays",
-    "prediction": "Toronto Blue Jays -162",
-    "odds": "-162",
-    "winProb": 0.611,
-    "edge": 0.111,
-    "confidence": "Strong",
-    "predictedScore": "Cincinnati Reds 4.5 \u2013 Toronto Blue Jays 6.0",
-    "predictedHomeScore": 5.97,
-    "predictedAwayScore": 4.47,
-    "gameTime": "2026-09-26T19:07:00Z",
-    "gamePk": 822759,
-    "rank": 2
   },
   {
     "matchup": "Los Angeles Dodgers @ San Francisco Giants",
@@ -54,6 +35,6 @@
     "predictedAwayScore": 4.73,
     "gameTime": "2026-09-26T20:05:00Z",
     "gamePk": 823165,
-    "rank": 3
+    "rank": 2
   }
 ]
