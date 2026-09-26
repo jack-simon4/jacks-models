@@ -50,29 +50,10 @@
     "edge": 0.098,
     "confidence": "Strong",
     "predictedScore": "Los Angeles Dodgers 4.9 \u2013 San Francisco Giants 3.6",
-    "predictedHomeScore": 3.61,
-    "predictedAwayScore": 4.93,
+    "predictedHomeScore": 3.6,
+    "predictedAwayScore": 4.92,
     "gameTime": "2026-09-26T20:05:00Z",
     "gamePk": 823165,
     "rank": 3
-  },
-  {
-    "matchup": "Houston Astros @ Athletics",
-    "awayTeam": "Houston Astros",
-    "homeTeam": "Athletics",
-    "awayPitcher": "TBD",
-    "homePitcher": "Jack Perkins",
-    "pick": "Houston Astros",
-    "prediction": "Houston Astros -205",
-    "odds": "-205",
-    "winProb": 0.588,
-    "edge": 0.088,
-    "confidence": "Strong",
-    "predictedScore": "Houston Astros 6.5 \u2013 Athletics 5.3",
-    "predictedHomeScore": 5.27,
-    "predictedAwayScore": 6.45,
-    "gameTime": "2026-09-27T01:40:00Z",
-    "gamePk": 824949,
-    "rank": 4
   }
 ]
