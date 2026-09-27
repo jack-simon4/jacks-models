@@ -12,7 +12,7 @@
     "edge": 0.126,
     "confidence": "Strong",
     "predictedScore": "Los Angeles Angels 4.2 \u2013 Seattle Mariners 5.9",
-    "predictedHomeScore": 5.89,
+    "predictedHomeScore": 5.9,
     "predictedAwayScore": 4.18,
     "gameTime": "2026-09-27T19:10:00Z",
     "gamePk": 823084,
@@ -38,6 +38,25 @@
     "rank": 2
   },
   {
+    "matchup": "Houston Astros @ Athletics",
+    "awayTeam": "Houston Astros",
+    "homeTeam": "Athletics",
+    "awayPitcher": "Peter Lambert",
+    "homePitcher": "Seth Johnson",
+    "pick": "Houston Astros",
+    "prediction": "Houston Astros -172",
+    "odds": "-172",
+    "winProb": 0.618,
+    "edge": 0.118,
+    "confidence": "Strong",
+    "predictedScore": "Houston Astros 7.0 \u2013 Athletics 5.3",
+    "predictedHomeScore": 5.35,
+    "predictedAwayScore": 6.96,
+    "gameTime": "2026-09-27T19:05:00Z",
+    "gamePk": 824948,
+    "rank": 3
+  },
+  {
     "matchup": "Baltimore Orioles @ New York Yankees",
     "awayTeam": "Baltimore Orioles",
     "homeTeam": "New York Yankees",
@@ -54,7 +73,7 @@
     "predictedAwayScore": 3.86,
     "gameTime": "2026-09-27T17:05:00Z",
     "gamePk": 823490,
-    "rank": 3
+    "rank": 4
   },
   {
     "matchup": "Colorado Rockies @ Chicago White Sox",
@@ -73,6 +92,25 @@
     "predictedAwayScore": 5.64,
     "gameTime": "2026-09-27T19:10:00Z",
     "gamePk": 824542,
-    "rank": 4
+    "rank": 5
+  },
+  {
+    "matchup": "Los Angeles Dodgers @ San Francisco Giants",
+    "awayTeam": "Los Angeles Dodgers",
+    "homeTeam": "San Francisco Giants",
+    "awayPitcher": "TBD",
+    "homePitcher": "Carson Seymour",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -260",
+    "odds": "-260",
+    "winProb": 0.605,
+    "edge": 0.105,
+    "confidence": "Strong",
+    "predictedScore": "Los Angeles Dodgers 5.5 \u2013 San Francisco Giants 4.1",
+    "predictedHomeScore": 4.13,
+    "predictedAwayScore": 5.55,
+    "gameTime": "2026-09-27T19:05:00Z",
+    "gamePk": 823164,
+    "rank": 6
   }
 ]
