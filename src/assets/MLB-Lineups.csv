@@ -62,6 +62,15 @@ Boston Red Sox6,Nick Sogard
 Boston Red Sox7,Caleb Durbin
 Boston Red Sox8,Trevor Story
 Boston Red Sox9,Andruw Monasterio
+Houston Astros1,Jeremy Pena
+Houston Astros2,Yordan Alvarez
+Houston Astros3,Isaac Paredes
+Houston Astros4,Jose Altuve
+Houston Astros5,Yainer Diaz
+Houston Astros6,Christian Walker
+Houston Astros7,Lucas Spence
+Houston Astros8,Cam Smith
+Houston Astros9,Taylor Trammell
 Athletics1,Henry Bolte
 Athletics2,Lawrence Butler
 Athletics3,Shea Langeliers
@@ -144,13 +153,13 @@ Detroit Tigers8,Zach McKinstry
 Detroit Tigers9,John Peck
 Arizona Diamondbacks1,Lars Nootbaar
 Arizona Diamondbacks2,Ketel Marte
-Arizona Diamondbacks3,Gabriel Moreno
-Arizona Diamondbacks4,Geraldo Perdomo
+Arizona Diamondbacks3,Geraldo Perdomo
+Arizona Diamondbacks4,Nolan Arenado
 Arizona Diamondbacks5,Corbin Carroll
-Arizona Diamondbacks6,Nolan Arenado
-Arizona Diamondbacks7,Pavin Smith
+Arizona Diamondbacks6,Pavin Smith
+Arizona Diamondbacks7,Tim Tawa
 Arizona Diamondbacks8,James McCann
-Arizona Diamondbacks9,Tim Tawa
+Arizona Diamondbacks9,Jordan Lawlar
 San Diego Padres1,Dustin Harris
 San Diego Padres2,Manny Machado
 San Diego Padres3,Ty France
@@ -183,10 +192,10 @@ Texas Rangers2,Wyatt Langford
 Texas Rangers3,Corey Seager
 Texas Rangers4,Jake Burger
 Texas Rangers5,Ezequiel Duran
-Texas Rangers6,Nicky Lopez
+Texas Rangers6,Alejandro Osuna
 Texas Rangers7,Danny Jansen
-Texas Rangers8,Evan Carter
-Texas Rangers9,Alejandro Osuna
+Texas Rangers8,Nicky Lopez
+Texas Rangers9,Evan Carter
 Minnesota Twins1,Luke Keaschall
 Minnesota Twins2,Kaelen Culpepper
 Minnesota Twins3,Josh Bell
@@ -249,15 +258,6 @@ Milwaukee Brewers6,Christian Yelich
 Milwaukee Brewers7,Cooper Pratt
 Milwaukee Brewers8,Sal Frelick
 Milwaukee Brewers9,David Hamilton
-Houston Astros1,Jeremy Pena
-Houston Astros2,Yordan Alvarez
-Houston Astros3,Isaac Paredes
-Houston Astros4,Jose Altuve
-Houston Astros5,Yainer Diaz
-Houston Astros6,Christian Walker
-Houston Astros7,Cam Smith
-Houston Astros8,Lucas Spence
-Houston Astros9,Jorge Barrosa
 New York Yankees1,Ben Rice
 New York Yankees2,Cody Bellinger
 New York Yankees3,Heliot Ramos
