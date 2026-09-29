@@ -2,8 +2,8 @@
   "Atlanta Braves": {
     "home_team": "Atlanta Braves",
     "away_team": "Philadelphia Phillies",
-    "home_ml": "-196",
-    "away_ml": "+164",
+    "home_ml": "-210",
+    "away_ml": "+162",
     "book": "fanduel"
   },
   "Houston Astros": {
@@ -16,8 +16,8 @@
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "Boston Red Sox",
-    "home_ml": "-142",
-    "away_ml": "+120",
+    "home_ml": "-134",
+    "away_ml": "+116",
     "book": "fanduel"
   },
   "San Diego Padres": {

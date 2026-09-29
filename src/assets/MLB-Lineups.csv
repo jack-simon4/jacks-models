@@ -1,13 +1,40 @@
 Team,Player
-Atlanta Braves1,Mauricio Dubon
-Atlanta Braves2,Kyle Farmer
-Atlanta Braves3,Dominic Smith
-Atlanta Braves4,Austin Riley
-Atlanta Braves5,Mike Yastrzemski
-Atlanta Braves6,Sean Murphy
-Atlanta Braves7,Ha-Seong Kim
-Atlanta Braves8,Brewer Hicklen
-Atlanta Braves9,DaShawn Keirsey Jr.
+Philadelphia Phillies1,Trea Turner
+Philadelphia Phillies2,Kyle Schwarber
+Philadelphia Phillies3,Bryce Harper
+Philadelphia Phillies4,Alec Bohm
+Philadelphia Phillies5,Derek Hill
+Philadelphia Phillies6,Bryan De La Cruz
+Philadelphia Phillies7,Bryson Stott
+Philadelphia Phillies8,Edmundo Sosa
+Philadelphia Phillies9,J.T. Realmuto
+Atlanta Braves1,Drake Baldwin
+Atlanta Braves2,Ronald Acuna Jr.
+Atlanta Braves3,Matt Olson
+Atlanta Braves4,Mauricio Dubon
+Atlanta Braves5,Michael Harris II
+Atlanta Braves6,Ozzie Albies
+Atlanta Braves7,Austin Riley
+Atlanta Braves8,Mike Yastrzemski
+Atlanta Braves9,Ha-Seong Kim
+Chicago White Sox1,Sam Antonacci
+Chicago White Sox2,Kyle Teel
+Chicago White Sox3,Miguel Vargas
+Chicago White Sox4,Munetaka Murakami
+Chicago White Sox5,Andrew Benintendi
+Chicago White Sox6,Tristan Peters
+Chicago White Sox7,Braden Montgomery
+Chicago White Sox8,Chase Meidroth
+Chicago White Sox9,Colson Montgomery
+Houston Astros1,Jeremy Pena
+Houston Astros2,Yordan Alvarez
+Houston Astros3,Isaac Paredes
+Houston Astros4,Jose Altuve
+Houston Astros5,Yainer Diaz
+Houston Astros6,Christian Walker
+Houston Astros7,Lucas Spence
+Houston Astros8,Cam Smith
+Houston Astros9,Taylor Trammell
 Boston Red Sox1,Jarren Duran
 Boston Red Sox2,Connor Wong
 Boston Red Sox3,Jahmai Jones
@@ -26,24 +53,6 @@ Chicago Cubs6,Matt Shaw
 Chicago Cubs7,Pedro Ramirez
 Chicago Cubs8,Dansby Swanson
 Chicago Cubs9,Miguel Amaya
-Chicago White Sox1,Tristan Peters
-Chicago White Sox2,Tommy Pham
-Chicago White Sox3,Munetaka Murakami
-Chicago White Sox4,Brenton Doyle
-Chicago White Sox5,Sam Antonacci
-Chicago White Sox6,Braden Montgomery
-Chicago White Sox7,Colson Montgomery
-Chicago White Sox8,Luisangel Acuna
-Chicago White Sox9,Drew Romo
-Houston Astros1,Jeremy Pena
-Houston Astros2,LaMonte Wade Jr.
-Houston Astros3,Nick Allen
-Houston Astros4,Raynel Delgado
-Houston Astros5,Yainer Diaz
-Houston Astros6,Christian Walker
-Houston Astros7,Lucas Spence
-Houston Astros8,Cam Smith
-Houston Astros9,Jorge Barrosa
 New York Yankees1,Ben Rice
 New York Yankees2,Cody Bellinger
 New York Yankees3,Heliot Ramos
@@ -53,15 +62,6 @@ New York Yankees6,Jazz Chisholm Jr.
 New York Yankees7,Anthony Volpe
 New York Yankees8,Austin Wells
 New York Yankees9,Ryan McMahon
-Philadelphia Phillies1,Trea Turner
-Philadelphia Phillies2,Kyle Schwarber
-Philadelphia Phillies3,Derek Hill
-Philadelphia Phillies4,Bryson Stott
-Philadelphia Phillies5,Alec Bohm
-Philadelphia Phillies6,Brandon Marsh
-Philadelphia Phillies7,Edmundo Sosa
-Philadelphia Phillies8,Justin Crawford
-Philadelphia Phillies9,J.T. Realmuto
 San Diego Padres1,Dustin Harris
 San Diego Padres2,Samad Taylor
 San Diego Padres3,Ty France
