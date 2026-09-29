@@ -9,15 +9,15 @@
   "Houston Astros": {
     "home_team": "Houston Astros",
     "away_team": "Chicago White Sox",
-    "home_ml": "-130",
-    "away_ml": "+110",
+    "home_ml": "-126",
+    "away_ml": "+108",
     "book": "fanduel"
   },
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "Boston Red Sox",
-    "home_ml": "-144",
-    "away_ml": "+122",
+    "home_ml": "-142",
+    "away_ml": "+120",
     "book": "fanduel"
   },
   "San Diego Padres": {
