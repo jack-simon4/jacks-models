@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "matchup": "Boston Red Sox @ New York Yankees",
+    "awayTeam": "Boston Red Sox",
+    "homeTeam": "New York Yankees",
+    "awayPitcher": "Payton Tolle",
+    "homePitcher": "Cam Schlittler",
+    "pick": "New York Yankees",
+    "prediction": "New York Yankees -144",
+    "odds": "-144",
+    "winProb": 0.621,
+    "edge": 0.121,
+    "confidence": "Strong",
+    "predictedScore": "Boston Red Sox 3.5 \u2013 New York Yankees 5.1",
+    "predictedHomeScore": 5.14,
+    "predictedAwayScore": 3.49,
+    "gameTime": "2026-09-30T00:00:00Z",
+    "gamePk": 849851,
+    "rank": 1
+  }
+]
