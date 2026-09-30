@@ -1,13 +1,4 @@
 Team,Player
-Philadelphia Phillies1,Trea Turner
-Philadelphia Phillies2,Kyle Schwarber
-Philadelphia Phillies3,Bryce Harper
-Philadelphia Phillies4,Alec Bohm
-Philadelphia Phillies5,Brandon Marsh
-Philadelphia Phillies6,Bryan De La Cruz
-Philadelphia Phillies7,Bryson Stott
-Philadelphia Phillies8,Justin Crawford
-Philadelphia Phillies9,J.T. Realmuto
 Atlanta Braves1,Drake Baldwin
 Atlanta Braves2,Ronald Acuna Jr.
 Atlanta Braves3,Matt Olson
@@ -16,6 +7,25 @@ Atlanta Braves5,Michael Harris II
 Atlanta Braves6,Ozzie Albies
 Atlanta Braves7,Austin Riley
 Atlanta Braves8,Mike Yastrzemski
+Atlanta Braves9,Ha-Seong Kim
+Boston Red Sox1,Roman Anthony
+Boston Red Sox2,Adley Rutschman
+Boston Red Sox3,Willson Contreras
+Boston Red Sox4,Wilyer Abreu
+Boston Red Sox5,Ceddanne Rafaela
+Boston Red Sox6,Nick Sogard
+Boston Red Sox7,Jarren Duran
+Boston Red Sox8,Trevor Story
+Boston Red Sox9,Caleb Durbin
+Chicago Cubs1,Pete Crow-Armstrong
+Chicago Cubs2,Alex Bregman
+Chicago Cubs3,Michael Busch
+Chicago Cubs4,Seiya Suzuki
+Chicago Cubs5,Ian Happ
+Chicago Cubs6,Nico Hoerner
+Chicago Cubs7,Pedro Ramirez
+Chicago Cubs8,Carson Kelly
+Chicago Cubs9,Dansby Swanson
 Chicago White Sox1,Sam Antonacci
 Chicago White Sox2,Kyle Teel
 Chicago White Sox3,Miguel Vargas
@@ -34,15 +44,6 @@ Houston Astros6,Christian Walker
 Houston Astros7,Lucas Spence
 Houston Astros8,Cam Smith
 Houston Astros9,Taylor Trammell
-Boston Red Sox1,Roman Anthony
-Boston Red Sox2,Adley Rutschman
-Boston Red Sox3,Willson Contreras
-Boston Red Sox4,Wilyer Abreu
-Boston Red Sox5,Ceddanne Rafaela
-Boston Red Sox6,Nick Sogard
-Boston Red Sox7,Jarren Duran
-Boston Red Sox8,Trevor Story
-Boston Red Sox9,Caleb Durbin
 New York Yankees1,Paul Goldschmidt
 New York Yankees2,Ben Rice
 New York Yankees3,Heliot Ramos
@@ -52,15 +53,15 @@ New York Yankees6,Amed Rosario
 New York Yankees7,Anthony Volpe
 New York Yankees8,Spencer Jones
 New York Yankees9,Austin Wells
-Chicago Cubs1,Pete Crow-Armstrong
-Chicago Cubs2,Alex Bregman
-Chicago Cubs3,Michael Busch
-Chicago Cubs4,Seiya Suzuki
-Chicago Cubs5,Ian Happ
-Chicago Cubs6,Nico Hoerner
-Chicago Cubs7,Pedro Ramirez
-Chicago Cubs8,Carson Kelly
-Chicago Cubs9,Dansby Swanson
+Philadelphia Phillies1,Trea Turner
+Philadelphia Phillies2,Kyle Schwarber
+Philadelphia Phillies3,Bryce Harper
+Philadelphia Phillies4,Alec Bohm
+Philadelphia Phillies5,Brandon Marsh
+Philadelphia Phillies6,Bryan De La Cruz
+Philadelphia Phillies7,Bryson Stott
+Philadelphia Phillies8,Justin Crawford
+Philadelphia Phillies9,J.T. Realmuto
 San Diego Padres1,Fernando Tatis Jr.
 San Diego Padres2,Samad Taylor
 San Diego Padres3,Manny Machado
