@@ -2,15 +2,15 @@
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "Boston Red Sox",
-    "home_ml": "-370",
-    "away_ml": "+265",
+    "home_ml": "-20000",
+    "away_ml": "+2000",
     "book": "fanduel"
   },
   "San Diego Padres": {
     "home_team": "San Diego Padres",
     "away_team": "Chicago Cubs",
-    "home_ml": "-134",
-    "away_ml": "+116",
+    "home_ml": "-560",
+    "away_ml": "+370",
     "book": "fanduel"
   },
   "Atlanta Braves": {
