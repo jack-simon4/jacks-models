@@ -1,13 +1,4 @@
 Team,Player
-Philadelphia Phillies1,Trea Turner
-Philadelphia Phillies2,Kyle Schwarber
-Philadelphia Phillies3,Bryce Harper
-Philadelphia Phillies4,Alec Bohm
-Philadelphia Phillies5,Bryson Stott
-Philadelphia Phillies6,Bryan De La Cruz
-Philadelphia Phillies7,Derek Hill
-Philadelphia Phillies8,Justin Crawford
-Philadelphia Phillies9,J.T. Realmuto
 Atlanta Braves1,Ronald Acuna Jr.
 Atlanta Braves2,Drake Baldwin
 Atlanta Braves3,Ozzie Albies
@@ -17,24 +8,6 @@ Atlanta Braves6,Austin Riley
 Atlanta Braves7,Michael Harris II
 Atlanta Braves8,Dominic Smith
 Atlanta Braves9,Mike Yastrzemski
-Chicago White Sox1,Sam Antonacci
-Chicago White Sox2,Kyle Teel
-Chicago White Sox3,Miguel Vargas
-Chicago White Sox4,Munetaka Murakami
-Chicago White Sox5,Andrew Benintendi
-Chicago White Sox6,Tristan Peters
-Chicago White Sox7,Chase Meidroth
-Chicago White Sox8,Braden Montgomery
-Chicago White Sox9,Colson Montgomery
-Houston Astros1,Jeremy Pena
-Houston Astros2,Yordan Alvarez
-Houston Astros3,Isaac Paredes
-Houston Astros4,Jose Altuve
-Houston Astros5,Yainer Diaz
-Houston Astros6,Christian Walker
-Houston Astros7,Lucas Spence
-Houston Astros8,Cam Smith
-Houston Astros9,Nick Allen
 Boston Red Sox1,Jahmai Jones
 Boston Red Sox2,Adley Rutschman
 Boston Red Sox3,Willson Contreras
@@ -44,15 +17,6 @@ Boston Red Sox6,Caleb Durbin
 Boston Red Sox7,Nick Sogard
 Boston Red Sox8,Trevor Story
 Boston Red Sox9,Nate Eaton
-New York Yankees1,Ben Rice
-New York Yankees2,Cody Bellinger
-New York Yankees3,Luis Garcia Jr.
-New York Yankees4,Spencer Jones
-New York Yankees5,George Lombard Jr.
-New York Yankees6,Jazz Chisholm Jr.
-New York Yankees7,Trent Grisham
-New York Yankees8,Austin Wells
-New York Yankees9,Ryan McMahon
 Chicago Cubs1,Pete Crow-Armstrong
 Chicago Cubs2,Alex Bregman
 Chicago Cubs3,Michael Busch
@@ -62,6 +26,24 @@ Chicago Cubs6,Nico Hoerner
 Chicago Cubs7,Matt Shaw
 Chicago Cubs8,Carson Kelly
 Chicago Cubs9,Dansby Swanson
+New York Yankees1,Ben Rice
+New York Yankees2,Cody Bellinger
+New York Yankees3,Luis Garcia Jr.
+New York Yankees4,Spencer Jones
+New York Yankees5,George Lombard Jr.
+New York Yankees6,Jazz Chisholm Jr.
+New York Yankees7,Trent Grisham
+New York Yankees8,Austin Wells
+New York Yankees9,Ryan McMahon
+Philadelphia Phillies1,Trea Turner
+Philadelphia Phillies2,Kyle Schwarber
+Philadelphia Phillies3,Bryce Harper
+Philadelphia Phillies4,Alec Bohm
+Philadelphia Phillies5,Bryson Stott
+Philadelphia Phillies6,Bryan De La Cruz
+Philadelphia Phillies7,Derek Hill
+Philadelphia Phillies8,Justin Crawford
+Philadelphia Phillies9,J.T. Realmuto
 San Diego Padres1,Fernando Tatis Jr.
 San Diego Padres2,Dustin Harris
 San Diego Padres3,Manny Machado
@@ -107,6 +89,15 @@ Baltimore Orioles6,Colton Cowser
 Baltimore Orioles7,Jeremiah Jackson
 Baltimore Orioles8,Heston Kjerstad
 Baltimore Orioles9,Carlos Narvaez
+Chicago White Sox1,Sam Antonacci
+Chicago White Sox2,Kyle Teel
+Chicago White Sox3,Miguel Vargas
+Chicago White Sox4,Munetaka Murakami
+Chicago White Sox5,Andrew Benintendi
+Chicago White Sox6,Tristan Peters
+Chicago White Sox7,Chase Meidroth
+Chicago White Sox8,Braden Montgomery
+Chicago White Sox9,Colson Montgomery
 Cincinnati Reds1,Carlos Jorge
 Cincinnati Reds2,Elly De La Cruz
 Cincinnati Reds3,Sal Stewart
@@ -143,6 +134,15 @@ Detroit Tigers6,Brett Callahan
 Detroit Tigers7,Jace Jung
 Detroit Tigers8,Zach McKinstry
 Detroit Tigers9,John Peck
+Houston Astros1,Jeremy Pena
+Houston Astros2,Yordan Alvarez
+Houston Astros3,Isaac Paredes
+Houston Astros4,Jose Altuve
+Houston Astros5,Yainer Diaz
+Houston Astros6,Christian Walker
+Houston Astros7,Lucas Spence
+Houston Astros8,Cam Smith
+Houston Astros9,Nick Allen
 Kansas City Royals1,Maikel Garcia
 Kansas City Royals2,Bobby Witt Jr.
 Kansas City Royals3,Jac Caglianone
