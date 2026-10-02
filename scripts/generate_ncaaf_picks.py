@@ -295,11 +295,14 @@ def generate_ncaaf_picks():
 
     for g in games:
         game_id   = g.get('id')
-        start_raw = g.get('start_date', '')
-        home      = CFBD_TO_CSV.get(g.get('home_team', ''), g.get('home_team', ''))
-        away      = CFBD_TO_CSV.get(g.get('away_team', ''), g.get('away_team', ''))
-        h_pts     = g.get('home_points')
-        a_pts     = g.get('away_points')
+        # CFBD API uses camelCase in newer responses; fall back to snake_case for compat
+        start_raw = g.get('startDate') or g.get('start_date', '')
+        home_raw  = g.get('homeTeam') or g.get('home_team', '')
+        away_raw  = g.get('awayTeam') or g.get('away_team', '')
+        home      = CFBD_TO_CSV.get(home_raw, home_raw)
+        away      = CFBD_TO_CSV.get(away_raw, away_raw)
+        h_pts     = g['homePoints'] if 'homePoints' in g else g.get('home_points')
+        a_pts     = g['awayPoints'] if 'awayPoints' in g else g.get('away_points')
 
         h_stats = stats.get(home)
         a_stats = stats.get(away)
