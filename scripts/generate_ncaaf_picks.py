@@ -218,13 +218,24 @@ def save_to_firestore(games_data: list):
             actual_away = entry.get('actualAwayScore')
 
             if existing.exists:
-                # Update actual scores if game just finished
-                if actual_home is not None and existing.to_dict().get('actualHomeScore') is None:
+                existing_data = existing.to_dict()
+                if actual_home is not None and existing_data.get('actualHomeScore') is None:
+                    # Game just finished — write actual scores and freeze the prediction
                     doc_ref.update({
                         'actualHomeScore': actual_home,
                         'actualAwayScore': actual_away,
                     })
                     print(f'  [Updated] {entry["awayTeam"]} @ {entry["homeTeam"]}: {actual_away}-{actual_home}')
+                    updated += 1
+                elif existing_data.get('actualHomeScore') is None:
+                    # Game not yet played — refresh prediction with latest model output
+                    doc_ref.update({
+                        'predictedHomeScore': entry['predictedHomeScore'],
+                        'predictedAwayScore': entry['predictedAwayScore'],
+                        'pick':               entry.get('pick', ''),
+                        'winProb':            entry.get('winProb', 0),
+                        'confidence':         entry.get('confidence', ''),
+                    })
                     updated += 1
                 else:
                     skipped += 1

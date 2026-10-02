@@ -192,7 +192,8 @@ def load_spreads() -> list:
 
 
 def save_to_firestore(picks: list):
-    """Save NFL game predictions to Firestore. Skips docs that already exist."""
+    """Save NFL game predictions to Firestore.
+    Creates new docs, or refreshes predicted scores if the game hasn't been played yet."""
     if not SA_JSON:
         print('[NFL Picks] FIREBASE_SERVICE_ACCOUNT not set — skipping Firestore.')
         return
@@ -208,7 +209,7 @@ def save_to_firestore(picks: list):
         app  = firebase_admin.initialize_app(cred, name='nfl_picks')
         db   = fb_firestore.client(app)
 
-        created = skipped = 0
+        created = updated = skipped = 0
         for p in picks:
             home     = p['homeTeam']
             away     = p['awayTeam']
@@ -218,9 +219,24 @@ def save_to_firestore(picks: list):
             a_norm   = away.replace(' ', '_').replace("'", '')
             doc_id   = f'nfl_{h_norm}_{a_norm}_{date_str}'
             doc_ref  = db.collection('games').document(doc_id)
+            existing = doc_ref.get()
 
-            if doc_ref.get().exists:
-                skipped += 1
+            if existing.exists:
+                # Refresh prediction if game hasn't been played yet so the
+                # Results page always shows the most up-to-date model output.
+                if existing.to_dict().get('actualHomeScore') is None:
+                    doc_ref.update({
+                        'predictedHomeScore': p['predictedHomeScore'],
+                        'predictedAwayScore': p['predictedAwayScore'],
+                        'pick':               p.get('pick', ''),
+                        'winProb':            p.get('winProb', 0),
+                        'spread':             p.get('spread', 0),
+                        'confidence':         p.get('confidence', ''),
+                    })
+                    print(f'  [Updated] {away} @ {home}: {p["predictedAwayScore"]} – {p["predictedHomeScore"]}')
+                    updated += 1
+                else:
+                    skipped += 1
                 continue
 
             doc_ref.set({
@@ -243,7 +259,7 @@ def save_to_firestore(picks: list):
             created += 1
 
         firebase_admin.delete_app(app)
-        print(f'[NFL Picks] Firestore: {created} created, {skipped} skipped.')
+        print(f'[NFL Picks] Firestore: {created} created, {updated} updated, {skipped} skipped.')
     except Exception as exc:
         print(f'[NFL Picks] Firestore error: {exc}')
 
