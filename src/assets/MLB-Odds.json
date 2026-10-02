@@ -1,16 +1,9 @@
 {
-  "Atlanta Braves": {
-    "home_team": "Atlanta Braves",
-    "away_team": "Philadelphia Phillies",
-    "home_ml": "-7000",
-    "away_ml": "+1500",
-    "book": "fanduel"
-  },
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "Chicago White Sox",
-    "home_ml": "-152",
-    "away_ml": "+128",
+    "home_ml": "-154",
+    "away_ml": "+130",
     "book": "fanduel"
   },
   "Tampa Bay Rays": {
