@@ -159,24 +159,34 @@ def fetch_schedule(year: int, weeks: list) -> list:
                 resp = requests.get(f'{BASE}/games', params=params, headers=headers, timeout=15)
                 if resp.status_code == 200:
                     batch = resp.json()
-                    for g in batch:
-                        gid = g.get('id')
-                        if gid not in seen:
-                            seen.add(gid)
-                            games.append(g)
+                    if not isinstance(batch, list):
+                        print(f'[NCAAF] w{week} unexpected API response type: {str(batch)[:200]}')
+                        break
                     if batch:
+                        added = 0
+                        for g in batch:
+                            gid = g.get('id')
+                            if gid not in seen:
+                                seen.add(gid)
+                                games.append(g)
+                                added += 1
+                        param_keys = '+'.join(k for k in params if k not in ('year', 'week'))
+                        print(f'[NCAAF] w{week} ({param_keys}): {len(batch)} games, {added} new')
                         fetched = True
-                    break
+                        break  # Only break when we actually got games
+                    else:
+                        param_keys = '+'.join(k for k in params if k not in ('year', 'week'))
+                        print(f'[NCAAF] w{week} ({param_keys}): empty — trying next params')
                 else:
-                    print(f'[NCAAF] Schedule w{week} HTTP {resp.status_code} (params={params}): {resp.text[:200]}')
+                    print(f'[NCAAF] w{week} HTTP {resp.status_code} ({params}): {resp.text[:200]}')
             except Exception as exc:
-                print(f'[NCAAF] Schedule w{week} error: {exc}')
+                print(f'[NCAAF] w{week} error: {exc}')
                 break
             time.sleep(0.3)
         if not fetched:
-            print(f'[NCAAF] Schedule w{week}: no games returned for {year}.')
+            print(f'[NCAAF] w{week}: no games returned for {year}.')
         time.sleep(0.2)
-    print(f'[NCAAF] Fetched {len(games)} games for weeks {weeks}.')
+    print(f'[NCAAF] Fetched {len(games)} total games for weeks {weeks}.')
     return games
 
 
@@ -278,9 +288,10 @@ def generate_ncaaf_picks():
     games      = fetch_schedule(year, weeks)
     window_end = now + timedelta(days=10)
 
-    picks         = []   # upcoming games with clear edge → ncaaf-picks.json
+    picks          = []   # upcoming games with clear edge → ncaaf-picks.json
     firestore_data = []  # all simulatable games → Firestore
-    skipped       = 0
+    skipped        = 0
+    missing_teams  = set()
 
     for g in games:
         game_id   = g.get('id')
@@ -293,10 +304,8 @@ def generate_ncaaf_picks():
         h_stats = stats.get(home)
         a_stats = stats.get(away)
         if not h_stats or not a_stats:
-            missing = []
-            if not h_stats: missing.append(f'home={home!r}')
-            if not a_stats: missing.append(f'away={away!r}')
-            print(f'[NCAAF] Skipping game {game_id}: no stats for {", ".join(missing)}')
+            if not h_stats: missing_teams.add(home)
+            if not a_stats: missing_teams.add(away)
             skipped += 1
             continue
 
@@ -346,6 +355,9 @@ def generate_ncaaf_picks():
     upcoming_count = sum(1 for g in firestore_data if g['actualHomeScore'] is None)
     print(f'[NCAAF] {len(firestore_data)} games simulated: {upcoming_count} upcoming, '
           f'{len(firestore_data)-upcoming_count} completed  ({skipped} skipped)')
+    if missing_teams:
+        print(f'[NCAAF] Teams with no stats ({len(missing_teams)} unique): '
+              f'{sorted(missing_teams)}')
 
     picks.sort(key=lambda p: p['winProb'], reverse=True)
     for i, p in enumerate(picks):
