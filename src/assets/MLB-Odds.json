@@ -6,6 +6,13 @@
     "away_ml": "+130",
     "book": "fanduel"
   },
+  "Los Angeles Dodgers": {
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Atlanta Braves",
+    "home_ml": "-210",
+    "away_ml": "+176",
+    "book": "fanduel"
+  },
   "Tampa Bay Rays": {
     "home_team": "Tampa Bay Rays",
     "away_team": "New York Yankees",
