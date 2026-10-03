@@ -44,7 +44,8 @@ SEASON_YEAR  = _today.year if _today.month >= 8 else _today.year - 1
 PRIOR_YEAR   = SEASON_YEAR - 1
 BLEND_FULL_WEEKS = 8
 
-MIN_QB_ATTEMPTS  = 50   # minimum season attempts to qualify as a starter candidate
+MIN_QB_ATTEMPTS     = 50   # minimum season attempts for prior-year data
+MIN_QB_ATTEMPTS_CUR = 10   # lower bar for current year — confirms player has actually played
 MIN_RB_CARRIES   = 15   # minimum season carries to appear in RB output
 MIN_REC_TARGETS  = 20   # minimum season targets for a receiver to qualify
 MAX_RBS_PER_TEAM = 3
@@ -408,7 +409,8 @@ def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
     def _name_col(df):
         return 'player_display_name' if df is not None and 'player_display_name' in df.columns else 'player_name'
 
-    def get_qb_stats(df: pd.DataFrame | None, team_abbr: str, exclude_names: set = set()):
+    def get_qb_stats(df: pd.DataFrame | None, team_abbr: str,
+                     exclude_names: set = set(), min_att: int = MIN_QB_ATTEMPTS):
         """Find the primary QB for team_abbr in df by attempt count."""
         if df is None or df.empty:
             return None
@@ -419,7 +421,7 @@ def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
             (~df[nc].isin(exclude_names))
         ].sort_values('attempts', ascending=False)
         for _, row in team_data.iterrows():
-            if _safe(row.get('attempts', 0), 0) >= MIN_QB_ATTEMPTS:
+            if _safe(row.get('attempts', 0), 0) >= min_att:
                 return row
         return None
 
@@ -437,42 +439,40 @@ def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
         # Blend weight (0 = all prior, 1 = all current)
         w = min(games_played / BLEND_FULL_WEEKS, 1.0) if games_played > 0 else 0.0
 
-        # ── Step 1: identify the 2026 starter from depth chart (most authoritative) ──
+        # ── Step 1: identify depth chart QBs (name fallback only) ─────────────
         dc_names   = [n for n in depth_chart.get(abbr, []) if n]
         dc_starter = dc_names[0] if dc_names else None
         dc_backup  = dc_names[1] if len(dc_names) > 1 else None
 
-        # ── Step 2: find current-season stats ──────────────────────────────────
-        cur_row = None
-        if dc_starter:
-            # Prefer depth-chart starter — search across ALL teams so a
-            # newly signed QB whose PFR data still shows the old team is found.
+        # ── Step 2: find current-season starter by who actually played ─────────
+        # Stats-first: the QB who threw the most passes IS the starter.
+        # A lower attempt threshold catches week-1/2 starters before they
+        # accumulate enough attempts for the prior-year bar (50).
+        cur_row = get_qb_stats(cur_df, abbr, min_att=MIN_QB_ATTEMPTS_CUR)
+        if cur_row is None and dc_starter:
+            # No stats yet (early season / bye / injury) — check depth chart name
             candidate = find_qb_by_name(cur_df, dc_starter)
-            # Only accept if the player has real pass attempts; a QB who only
-            # appeared on rush plays has attempts=0 after PFR filtering and
-            # would produce nonsense stats via the _safe fallback.
             if candidate is not None and float(candidate.get('attempts', 0) or 0) >= 5:
                 cur_row = candidate
-        if cur_row is None:
-            cur_row = get_qb_stats(cur_df, abbr)
 
-        # Check if starter is injured — if so, promote backup
+        # Check if the stats-based starter is injured — if so, promote backup
         if cur_row is not None:
             starter_name = str(cur_row.get(_name_col(cur_df) if cur_df is not None else 'player_display_name', '')).strip()
             if (abbr, starter_name) in injured_out:
                 print(f'  [{team_name}] {starter_name} is Out/Doubtful — promoting backup.')
                 backup_name = dc_backup
                 if backup_name:
-                    cur_row = find_qb_by_name(cur_df, backup_name) or get_qb_stats(cur_df, abbr, exclude_names={starter_name})
+                    cur_row = find_qb_by_name(cur_df, backup_name) or get_qb_stats(cur_df, abbr, exclude_names={starter_name}, min_att=MIN_QB_ATTEMPTS_CUR)
                 else:
-                    cur_row = get_qb_stats(cur_df, abbr, exclude_names={starter_name})
+                    cur_row = get_qb_stats(cur_df, abbr, exclude_names={starter_name}, min_att=MIN_QB_ATTEMPTS_CUR)
 
-        # ── Step 3: fall back to prior season if no current data ───────────────
-        prior_row = None
-        if dc_starter:
+        # ── Step 3: prior-season fallback — also stats-first ──────────────────
+        # Use the QB with the most prior-season attempts (= actual starter),
+        # not the depth-chart name, so a backup listed at #1 on the current
+        # depth chart doesn't overshadow the proven veteran in prior data.
+        prior_row = get_qb_stats(prior_df, abbr)
+        if prior_row is None and dc_starter:
             prior_row = find_qb_by_name(prior_df, dc_starter)
-        if prior_row is None:
-            prior_row = get_qb_stats(prior_df, abbr)
         if cur_row is None and prior_row is None:
             print(f'  [{team_name}] No QB data found — using league averages.')
             rows.append({
