@@ -1,6 +1,6 @@
 Team,Spread,Opponent,GameTime,IsHome
-Washington Commanders,-3.5,Indianapolis Colts,2026-10-04T13:30:00Z,true
-Indianapolis Colts,3.5,Washington Commanders,2026-10-04T13:30:00Z,false
+Washington Commanders,-4.5,Indianapolis Colts,2026-10-04T13:30:00Z,true
+Indianapolis Colts,4.5,Washington Commanders,2026-10-04T13:30:00Z,false
 Baltimore Ravens,11.5,Tennessee Titans,2026-10-04T17:00:00Z,true
 Tennessee Titans,-11.5,Baltimore Ravens,2026-10-04T17:00:00Z,false
 Buffalo Bills,7.0,New England Patriots,2026-10-04T17:00:00Z,true
@@ -15,10 +15,10 @@ New York Giants,-2.5,Arizona Cardinals,2026-10-04T17:00:00Z,true
 Arizona Cardinals,2.5,New York Giants,2026-10-04T17:00:00Z,false
 Philadelphia Eagles,-3.5,Los Angeles Rams,2026-10-04T17:00:00Z,true
 Los Angeles Rams,3.5,Philadelphia Eagles,2026-10-04T17:00:00Z,false
-Tampa Bay Buccaneers,-3.5,Green Bay Packers,2026-10-04T17:00:00Z,true
-Green Bay Packers,3.5,Tampa Bay Buccaneers,2026-10-04T17:00:00Z,false
-Minnesota Vikings,10.5,Miami Dolphins,2026-10-04T20:05:00Z,true
-Miami Dolphins,-10.5,Minnesota Vikings,2026-10-04T20:05:00Z,false
+Tampa Bay Buccaneers,-3.0,Green Bay Packers,2026-10-04T17:00:00Z,true
+Green Bay Packers,3.0,Tampa Bay Buccaneers,2026-10-04T17:00:00Z,false
+Minnesota Vikings,10.0,Miami Dolphins,2026-10-04T20:05:00Z,true
+Miami Dolphins,-10.0,Minnesota Vikings,2026-10-04T20:05:00Z,false
 Las Vegas Raiders,-4.5,Kansas City Chiefs,2026-10-04T20:25:00Z,true
 Kansas City Chiefs,4.5,Las Vegas Raiders,2026-10-04T20:25:00Z,false
 Seattle Seahawks,7.0,Los Angeles Chargers,2026-10-04T20:25:00Z,true

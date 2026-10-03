@@ -1,71 +1,68 @@
-Team,Name,RushYdsCarry,RushAttGame
-Arizona Cardinals,Jeremiyah Love,3.902,13.67
-Arizona Cardinals,Tyler Allgeier,3.34,8.26
-Atlanta Falcons,Bijan Robinson,5.202,18.8
-Atlanta Falcons,Brian Robinson,4.367,7.13
-Baltimore Ravens,Derrick Henry,4.957,19.54
-Baltimore Ravens,Justice Hill,4.873,2.75
-Buffalo Bills,James Cook,5.516,18.61
-Carolina Panthers,Chuba Hubbard,4.066,10.71
-Carolina Panthers,AJ Dillon,3.417,4.0
-Carolina Panthers,Jonathon Brooks,3.333,4.5
-Chicago Bears,DAndre Swift,4.803,15.46
-Chicago Bears,Kyle Monangai,5.121,9.96
-Cincinnati Bengals,Chase Brown,4.253,14.65
-Cincinnati Bengals,Samaje Perine,4.155,4.75
-Cleveland Browns,Quinshon Judkins,3.354,15.52
-Dallas Cowboys,Javonte Williams,4.453,15.22
-Dallas Cowboys,Tyler Goodson,3.667,6.0
-Denver Broncos,JK Dobbins,4.45,13.94
-Denver Broncos,Jonah Coleman,3.9,5.0
-Detroit Lions,Jahmyr Gibbs,4.917,17.06
-Detroit Lions,Sione Vaki,4.444,3.0
-Green Bay Packers,MarShawn Lloyd,2.957,7.67
-Green Bay Packers,Kaleb Johnson,2.728,3.25
-Green Bay Packers,Chris Brooks,3.817,2.37
-Houston Texans,David Montgomery,3.876,10.43
-Houston Texans,Woody Marks,3.35,10.41
-Indianapolis Colts,Jonathan Taylor,4.533,20.12
-Indianapolis Colts,Seth McGowan,2.333,2.0
-Jacksonville Jaguars,Bhayshul Tuten,4.091,8.83
-Jacksonville Jaguars,Chris Rodriguez,3.65,6.67
-Jacksonville Jaguars,Ameer Abdullah,4.5,3.33
-Kansas City Chiefs,Kenneth Walker,5.538,21.67
-Kansas City Chiefs,Emmett Johnson,3.5,5.33
-Las Vegas Raiders,Ashton Jeanty,3.517,17.65
-Las Vegas Raiders,Mike Washington,6.8,5.0
-Los Angeles Chargers,Omarion Hampton,4.194,14.86
-Los Angeles Chargers,Keaton Mitchell,5.487,4.96
-Los Angeles Rams,Kyren Williams,5.133,14.27
-Los Angeles Rams,Blake Corum,5.198,8.83
-Miami Dolphins,DeVon Achane,4.946,13.55
-Miami Dolphins,Ollie Gordon,2.677,5.07
-Minnesota Vikings,Aaron Jones,4.059,13.38
-Minnesota Vikings,Jordan Mason,4.455,11.84
-New England Patriots,Rhamondre Stevenson,4.302,9.68
-New England Patriots,TreVeyon Henderson,4.71,11.12
-New England Patriots,Corey Kiner,2.071,4.67
-New Orleans Saints,Travis Etienne,4.261,13.31
-New Orleans Saints,Alvin Kamara,3.31,10.82
-New Orleans Saints,Kendre Miller,3.836,6.63
-New York Giants,Cam Skattebo,3.865,14.14
-New York Giants,Najee Harris,4.462,6.5
-New York Giants,Devin Singletary,3.337,6.06
-New York Jets,Breece Hall,3.938,15.87
-New York Jets,Braelon Allen,3.843,5.19
-Philadelphia Eagles,Saquon Barkley,4.464,15.19
-Philadelphia Eagles,Tank Bigsby,4.671,3.88
-Philadelphia Eagles,Will Shipley,3.111,3.0
-Pittsburgh Steelers,Jaylen Warren,4.969,12.99
-San Francisco 49ers,Christian McCaffrey,4.194,15.81
-San Francisco 49ers,Kaelon Black,4.28,8.33
-Seattle Seahawks,Emanuel Wilson,3.757,8.6
-Seattle Seahawks,Jadarian Price,4.25,9.33
-Seattle Seahawks,George Holani,3.467,5.0
-Tampa Bay Buccaneers,Bucky Irving,3.812,15.81
-Tampa Bay Buccaneers,Kenneth Gainwell,2.1,3.33
-Tennessee Titans,Tony Pollard,4.502,13.65
-Tennessee Titans,Tyjae Spears,4.13,5.09
-Washington Commanders,Jacory Croskey-Merritt,4.008,12.31
-Washington Commanders,Rachaad White,4.413,7.6
-Washington Commanders,Kaytron Allen,4.444,3.0
+Team,Name,RushYdsCarry,RushAttGame,TDGame
+Arizona Cardinals,Jeremiyah Love,3.902,13.67,
+Arizona Cardinals,Tyler Allgeier,3.34,8.26,
+Atlanta Falcons,Bijan Robinson,5.202,18.8,
+Atlanta Falcons,Brian Robinson,4.367,7.13,
+Baltimore Ravens,Derrick Henry,4.957,19.54,
+Baltimore Ravens,Justice Hill,4.873,2.75,
+Buffalo Bills,James Cook,5.516,18.61,
+Carolina Panthers,Chuba Hubbard,4.066,10.71,
+Carolina Panthers,AJ Dillon,3.417,4.0,
+Carolina Panthers,Jonathon Brooks,3.333,4.5,
+Chicago Bears,DAndre Swift,4.803,15.46,
+Chicago Bears,Kyle Monangai,5.121,9.96,
+Cincinnati Bengals,Chase Brown,4.253,14.65,
+Cincinnati Bengals,Samaje Perine,4.155,4.75,
+Cleveland Browns,Quinshon Judkins,3.354,15.52,
+Dallas Cowboys,Javonte Williams,4.453,15.22,
+Dallas Cowboys,Tyler Goodson,3.667,6.0,
+Denver Broncos,JK Dobbins,4.45,13.94,
+Denver Broncos,Jonah Coleman,3.9,5.0,
+Detroit Lions,Jahmyr Gibbs,4.917,17.06,
+Detroit Lions,Sione Vaki,4.444,3.0,
+Green Bay Packers,MarShawn Lloyd,2.957,7.67,
+Green Bay Packers,Kaleb Johnson,2.728,3.25,
+Green Bay Packers,Chris Brooks,3.817,2.37,
+Houston Texans,David Montgomery,3.876,10.43,
+Houston Texans,Woody Marks,3.35,10.41,
+Indianapolis Colts,Jonathan Taylor,4.533,20.12,
+Indianapolis Colts,Seth McGowan,2.333,2.0,
+Jacksonville Jaguars,Bhayshul Tuten,4.091,8.83,
+Jacksonville Jaguars,Chris Rodriguez,3.65,6.67,
+Jacksonville Jaguars,Ameer Abdullah,4.5,3.33,
+Kansas City Chiefs,Kenneth Walker,5.538,21.67,
+Kansas City Chiefs,Emmett Johnson,3.5,5.33,
+Las Vegas Raiders,Ashton Jeanty,3.517,17.65,
+Las Vegas Raiders,Mike Washington,6.8,5.0,
+Los Angeles Chargers,Omarion Hampton,4.194,14.86,
+Los Angeles Chargers,Keaton Mitchell,5.487,4.96,
+Los Angeles Rams,Kyren Williams,5.133,14.27,
+Los Angeles Rams,Blake Corum,5.198,8.83,
+Miami Dolphins,DeVon Achane,4.946,13.55,
+Miami Dolphins,Ollie Gordon,2.677,5.07,
+Minnesota Vikings,Aaron Jones,4.059,13.38,
+Minnesota Vikings,Jordan Mason,4.455,11.84,
+New England Patriots,Rhamondre Stevenson,4.302,9.68,
+New England Patriots,TreVeyon Henderson,4.71,11.12,
+New England Patriots,Corey Kiner,2.071,4.67,
+New Orleans Saints,Travis Etienne,4.261,13.31,
+New Orleans Saints,Alvin Kamara,3.31,10.82,
+New Orleans Saints,Kendre Miller,3.836,6.63,
+New York Giants,Cam Skattebo,3.865,14.14,
+New York Giants,Najee Harris,4.462,6.5,
+New York Giants,Devin Singletary,3.337,6.06,
+New York Jets,Braelon Allen,3.843,5.19,
+Philadelphia Eagles,Saquon Barkley,4.464,15.19,
+Philadelphia Eagles,Tank Bigsby,4.671,3.88,
+Philadelphia Eagles,Will Shipley,3.111,3.0,
+Pittsburgh Steelers,Jaylen Warren,4.969,12.99,
+San Francisco 49ers,Christian McCaffrey,4.194,15.81,
+San Francisco 49ers,Kaelon Black,4.28,8.33,
+Seattle Seahawks,Emanuel Wilson,3.757,8.6,
+Seattle Seahawks,George Holani,3.467,5.0,
+Tampa Bay Buccaneers,Bucky Irving,3.812,15.81,
+Tampa Bay Buccaneers,Kenneth Gainwell,2.1,3.33,
+Tennessee Titans,Tony Pollard,4.502,13.65,
+Tennessee Titans,Tyjae Spears,4.13,5.09,
+Washington Commanders,Jacory Croskey-Merritt,4.008,12.31,
+Washington Commanders,Kaytron Allen,4.444,3.0,
