@@ -182,7 +182,7 @@ def fetch_seasonal_from_pfr(year: int) -> pd.DataFrame | None:
             'completions': 0.0, 'attempts': 0.0,
             'passing_yards': 0.0, 'passing_tds': 0.0, 'interceptions': 0.0,
             'carries': 0.0, 'rushing_yards': 0.0, 'rushing_tds': 0.0,
-            'targets': 0.0, 'receiving_yards': 0.0, 'receiving_tds': 0.0,
+            'targets': 0.0, 'receptions': 0.0, 'receiving_yards': 0.0, 'receiving_tds': 0.0,
         }
 
     # ── Rushing ──────────────────────────────────────────────────────────
@@ -231,6 +231,7 @@ def fetch_seasonal_from_pfr(year: int) -> pd.DataFrame | None:
                         g,
                     )
                 player_map[pid]['targets']         = tgts
+                player_map[pid]['receptions']      = float(r.get('rec', 0) or 0)
                 player_map[pid]['receiving_yards'] = float(r.get('yds', 0) or 0)
                 player_map[pid]['receiving_tds']   = float(r.get('td', 0) or 0)
                 player_map[pid]['games']           = max(player_map[pid]['games'], g)
@@ -328,6 +329,7 @@ def fetch_seasonal(year: int) -> pd.DataFrame | None:
             rushing_yards       = ('rushing_yards',        'sum'),
             rushing_tds         = ('rushing_tds',          'sum'),
             targets             = ('targets',              'sum'),
+            receptions          = ('receptions',           'sum'),
             receiving_yards     = ('receiving_yards',      'sum'),
             receiving_tds       = ('receiving_tds',        'sum'),
         ).reset_index()
@@ -581,9 +583,11 @@ def build_rb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
                 continue
             carries  = _safe(rb.get('carries', 0),        1)
             yds      = _safe(rb.get('rushing_yards', 0),  carries * LG_RUSH_YPC)
+            rush_tds = max(float(rb.get('rushing_tds', 0) or 0), 0)
             gp       = max(_safe(rb.get('games', 1), 1), 1)
             cur_ypc  = yds / carries
             cur_apg  = carries / gp
+            cur_tdg  = rush_tds / gp
 
             # Blend with prior if early season
             if not use_prior and not prior_rbs.empty:
@@ -592,17 +596,20 @@ def build_rb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
                 ] if name_col in prior_rbs.columns else pd.DataFrame()
                 if not prior_match.empty:
                     pr = prior_match.iloc[0]
-                    pr_c = _safe(pr.get('carries', 0),       1)
-                    pr_y = _safe(pr.get('rushing_yards', 0), pr_c * LG_RUSH_YPC)
-                    pr_g = max(_safe(pr.get('games', 1), 1), 1)
-                    cur_ypc = w * cur_ypc + (1 - w) * (pr_y / pr_c)
-                    cur_apg = w * cur_apg + (1 - w) * (pr_c / pr_g)
+                    pr_c  = _safe(pr.get('carries', 0),       1)
+                    pr_y  = _safe(pr.get('rushing_yards', 0), pr_c * LG_RUSH_YPC)
+                    pr_td = max(float(pr.get('rushing_tds', 0) or 0), 0)
+                    pr_g  = max(_safe(pr.get('games', 1), 1), 1)
+                    cur_ypc = w * cur_ypc + (1 - w) * (pr_y  / pr_c)
+                    cur_apg = w * cur_apg + (1 - w) * (pr_c  / pr_g)
+                    cur_tdg = w * cur_tdg + (1 - w) * (pr_td / pr_g)
 
             rows.append({
                 'Team':         team_name,
                 'Name':         name,
                 'RushYdsCarry': round(cur_ypc, 3),
                 'RushAttGame':  round(cur_apg, 2),
+                'TDGame':       round(cur_tdg, 3),
             })
 
         team_rbs = [r for r in rows if r['Team'] == team_name]
@@ -653,10 +660,12 @@ def build_receivers_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | No
                 continue
             pos     = str(rec.get('position', 'WR')).strip()
             tgts    = _safe(rec.get('targets', 0),          1)
+            recs    = max(float(rec.get('receptions', 0) or 0), 0)
             yds     = _safe(rec.get('receiving_yards', 0),  tgts * 8.0)
             tds     = max(float(rec.get('receiving_tds', 0) or 0), 0)
             gp      = max(_safe(rec.get('games', 1), 1), 1)
             cur_tpg = tgts / gp
+            cur_rpg = recs / gp
             cur_ypt = yds  / tgts
             cur_tdg = tds  / gp
 
@@ -664,14 +673,16 @@ def build_receivers_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | No
             if not use_prior and not prior_recs.empty and name_col in prior_recs.columns:
                 prior_match = prior_recs[prior_recs[name_col].str.strip() == name]
                 if not prior_match.empty:
-                    pr     = prior_match.iloc[0]
-                    pr_t   = _safe(pr.get('targets', 0),         1)
-                    pr_y   = _safe(pr.get('receiving_yards', 0), pr_t * 8.0)
-                    pr_td  = max(float(pr.get('receiving_tds', 0) or 0), 0)
-                    pr_g   = max(_safe(pr.get('games', 1), 1), 1)
-                    cur_tpg = w * cur_tpg + (1 - w) * (pr_t  / pr_g)
-                    cur_ypt = w * cur_ypt + (1 - w) * (pr_y  / pr_t)
-                    cur_tdg = w * cur_tdg + (1 - w) * (pr_td / pr_g)
+                    pr      = prior_match.iloc[0]
+                    pr_t    = _safe(pr.get('targets', 0),         1)
+                    pr_rec  = max(float(pr.get('receptions', 0) or 0), 0)
+                    pr_y    = _safe(pr.get('receiving_yards', 0), pr_t * 8.0)
+                    pr_td   = max(float(pr.get('receiving_tds', 0) or 0), 0)
+                    pr_g    = max(_safe(pr.get('games', 1), 1), 1)
+                    cur_tpg = w * cur_tpg + (1 - w) * (pr_t   / pr_g)
+                    cur_rpg = w * cur_rpg + (1 - w) * (pr_rec  / pr_g)
+                    cur_ypt = w * cur_ypt + (1 - w) * (pr_y    / pr_t)
+                    cur_tdg = w * cur_tdg + (1 - w) * (pr_td   / pr_g)
 
             rows.append({
                 'Team':        team_name,
@@ -680,6 +691,7 @@ def build_receivers_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | No
                 'TargetsGame': round(cur_tpg, 2),
                 'RecYdTarget': round(cur_ypt, 3),
                 'TDGame':      round(cur_tdg, 3),
+                'RecGame':     round(cur_rpg, 2),
             })
 
         team_recs = [r for r in rows if r['Team'] == team_name]

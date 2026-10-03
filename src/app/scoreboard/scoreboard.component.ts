@@ -100,6 +100,7 @@ interface NFLRBStats {
   name: string;
   rushYdsCarry: number;
   rushAttGame: number;
+  tdGame: number;
 }
 
 interface NFLReceiverStats {
@@ -108,6 +109,7 @@ interface NFLReceiverStats {
   targetsGame: number;
   recYdTarget: number;
   tdGame: number;
+  recGame: number;
 }
 
 interface NHLStats { [team: string]: {ShotsF:number, PP:number, ShotsA:number, S:number}}
@@ -621,7 +623,7 @@ resetScores() {
   parseNFLRBs(csv: string): { [team: string]: NFLRBStats[] } {
     const result: { [team: string]: NFLRBStats[] } = {};
     csv.split('\n').slice(1).filter(l => l.trim()).forEach(line => {
-      const [team, name, RushYdsCarry, RushAttGame] = line.trim().split(',');
+      const [team, name, RushYdsCarry, RushAttGame, TDGame] = line.trim().split(',');
       if (team && name) {
         const t = team.trim();
         if (!result[t]) result[t] = [];
@@ -629,6 +631,7 @@ resetScores() {
           name:         name.trim(),
           rushYdsCarry: parseFloat(RushYdsCarry),
           rushAttGame:  parseFloat(RushAttGame),
+          tdGame:       parseFloat(TDGame) || 0,
         });
       }
     });
@@ -639,7 +642,7 @@ resetScores() {
   parseNFLReceivers(csv: string): { [team: string]: NFLReceiverStats[] } {
     const result: { [team: string]: NFLReceiverStats[] } = {};
     csv.split('\n').slice(1).filter(l => l.trim()).forEach(line => {
-      const [team, name, position, TargetsGame, RecYdTarget, TDGame] = line.trim().split(',');
+      const [team, name, position, TargetsGame, RecYdTarget, TDGame, RecGame] = line.trim().split(',');
       if (team && name) {
         const t = team.trim();
         if (!result[t]) result[t] = [];
@@ -649,6 +652,7 @@ resetScores() {
           targetsGame: parseFloat(TargetsGame),
           recYdTarget: parseFloat(RecYdTarget),
           tdGame:      parseFloat(TDGame),
+          recGame:     parseFloat(RecGame) || 0,
         });
       }
     });
@@ -1335,14 +1339,14 @@ parseNHLStats(csvData: string | undefined) {
         rbs: hRBs.map(rb => ({
           name:    rb.name,
           rushYds: Math.round(rb.rushYdsCarry * rb.rushAttGame * hRushMatchupFactor),
-          carries: +(rb.rushAttGame * hRushMatchupFactor).toFixed(1),
+          rushTDs: +(rb.tdGame * hRushMatchupFactor).toFixed(2),
         })),
         receivers: (this.nflReceivers[this.selectedHomeTeam] ?? []).map(r => ({
-          name:     r.name,
-          position: r.position,
-          recYds:   Math.round(r.recYdTarget * r.targetsGame * hPassMatchupFactor),
-          targets:  +(r.targetsGame * hPassMatchupFactor).toFixed(1),
-          tds:      +(r.tdGame * hPassMatchupFactor).toFixed(2),
+          name:       r.name,
+          position:   r.position,
+          recYds:     Math.round(r.recYdTarget * r.targetsGame * hPassMatchupFactor),
+          receptions: +(r.recGame * hPassMatchupFactor).toFixed(1),
+          tds:        +(r.tdGame * hPassMatchupFactor).toFixed(2),
         })),
       },
       away: {
@@ -1355,14 +1359,14 @@ parseNHLStats(csvData: string | undefined) {
         rbs: aRBs.map(rb => ({
           name:    rb.name,
           rushYds: Math.round(rb.rushYdsCarry * rb.rushAttGame * aRushMatchupFactor),
-          carries: +(rb.rushAttGame * aRushMatchupFactor).toFixed(1),
+          rushTDs: +(rb.tdGame * aRushMatchupFactor).toFixed(2),
         })),
         receivers: (this.nflReceivers[this.selectedAwayTeam] ?? []).map(r => ({
-          name:     r.name,
-          position: r.position,
-          recYds:   Math.round(r.recYdTarget * r.targetsGame * aPassMatchupFactor),
-          targets:  +(r.targetsGame * aPassMatchupFactor).toFixed(1),
-          tds:      +(r.tdGame * aPassMatchupFactor).toFixed(2),
+          name:       r.name,
+          position:   r.position,
+          recYds:     Math.round(r.recYdTarget * r.targetsGame * aPassMatchupFactor),
+          receptions: +(r.recGame * aPassMatchupFactor).toFixed(1),
+          tds:        +(r.tdGame * aPassMatchupFactor).toFixed(2),
         })),
       },
     };
