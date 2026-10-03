@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "matchup": "San Diego Padres @ Milwaukee Brewers",
+    "awayTeam": "San Diego Padres",
+    "homeTeam": "Milwaukee Brewers",
+    "awayPitcher": "Robbie Ray",
+    "homePitcher": "Jacob Misiorowski",
+    "pick": "Milwaukee Brewers",
+    "prediction": "Milwaukee Brewers -200",
+    "odds": "-200",
+    "winProb": 0.644,
+    "edge": 0.144,
+    "confidence": "Elite",
+    "predictedScore": "San Diego Padres 3.6 \u2013 Milwaukee Brewers 5.6",
+    "predictedHomeScore": 5.57,
+    "predictedAwayScore": 3.6,
+    "gameTime": "2026-10-04T00:30:00Z",
+    "gamePk": 849830,
+    "rank": 1
+  }
+]
