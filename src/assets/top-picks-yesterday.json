@@ -17,5 +17,24 @@
     "gameTime": "2026-10-04T00:30:00Z",
     "gamePk": 849830,
     "rank": 1
+  },
+  {
+    "matchup": "Chicago White Sox @ Cleveland Guardians",
+    "awayTeam": "Chicago White Sox",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "Hagen Smith",
+    "homePitcher": "Parker Messick",
+    "pick": "Chicago White Sox",
+    "prediction": "Chicago White Sox -3500",
+    "odds": "-3500",
+    "winProb": 0.601,
+    "edge": 0.101,
+    "confidence": "Strong",
+    "predictedScore": "Chicago White Sox 4.7 \u2013 Cleveland Guardians 3.3",
+    "predictedHomeScore": 3.32,
+    "predictedAwayScore": 4.68,
+    "gameTime": "2026-10-03T17:00:00Z",
+    "gamePk": 849829,
+    "rank": 2
   }
 ]
