@@ -68,6 +68,22 @@ export class HomeComponent implements OnInit {
     };
   }
 
+  private normalizeNHL(p: any): UnifiedPick | null {
+    if (!p.confidence) return null;
+    const aSc = (p.predictedAwayScore ?? 0) as number;
+    const hSc = (p.predictedHomeScore ?? 0) as number;
+    return {
+      rank: 0,
+      sport: 'NHL',
+      matchup: `${p.awayTeam} @ ${p.homeTeam}`,
+      pick: p.pick,
+      winProb: p.winProb ?? 0,
+      confidence: p.confidence,
+      predictedScore: `${aSc.toFixed(1)} – ${hSc.toFixed(1)}`,
+      gameTime: p.gameTime,
+    };
+  }
+
   private normalizeSoccer(g: any): UnifiedPick | null {
     const wp = g.homeWinProb ?? 0.5;
     const edge = Math.abs(wp - 0.5);
@@ -112,6 +128,18 @@ export class HomeComponent implements OnInit {
     );
 
     const oneDayAhead = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+    const nhl$ = this.http.get<any[]>('assets/nhl-picks.json').pipe(
+      map(picks => (picks ?? [])
+        .filter(p => {
+          if (!p.gameTime) return false;
+          const gt = new Date(p.gameTime);
+          return gt >= now && gt <= oneDayAhead;
+        })
+        .map(p => this.normalizeNHL(p))
+        .filter((p): p is UnifiedPick => p !== null)),
+      catchError(() => of([] as UnifiedPick[]))
+    );
+
     const nfl$ = this.http.get<any[]>('assets/nfl-picks.json').pipe(
       map(picks => (picks ?? [])
         .filter(p => {
@@ -144,8 +172,8 @@ export class HomeComponent implements OnInit {
       catchError(() => of([] as UnifiedPick[]))
     );
 
-    forkJoin([mlb$, nfl$, ncaaf$, soccer$]).subscribe(([mlb, nfl, ncaaf, soccer]) => {
-      const all = [...mlb, ...nfl, ...ncaaf, ...soccer];
+    forkJoin([mlb$, nfl$, ncaaf$, soccer$, nhl$]).subscribe(([mlb, nfl, ncaaf, soccer, nhl]) => {
+      const all = [...mlb, ...nfl, ...ncaaf, ...soccer, ...nhl];
       all.sort((a, b) => b.winProb - a.winProb);
       this.topPicks = all.slice(0, 5).map((p, i) => ({ ...p, rank: i + 1 }));
       this.topPicksLoading = false;

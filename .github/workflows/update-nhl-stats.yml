@@ -1,0 +1,54 @@
+name: Update NHL Stats (Daily)
+
+# Runs at 7:00 UTC (3:00 AM ET) daily — early enough that picks are ready
+# before the daily email sends at 8:30 UTC. NHL seasons runs Oct–Apr.
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-nhl:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch and update NHL team + goalie stats
+        run: python scripts/fetch_nhl_stats.py
+
+      - name: Generate NHL picks
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
+        run: python scripts/generate_nhl_picks.py
+
+      - name: Update NHL actual results
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
+        run: python scripts/update_nhl_results.py
+
+      - name: Commit updated NHL stats and picks
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add src/assets/NHL-Stats.csv src/assets/NHL-Goalies.csv src/assets/nhl-picks.json
+          if git diff --staged --quiet; then
+            echo "No NHL changes — nothing to commit."
+          else
+            git commit -m "chore: auto-update NHL stats $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+          fi

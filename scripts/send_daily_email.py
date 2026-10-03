@@ -30,6 +30,7 @@ PICKS_PATH           = os.path.join(ASSETS, 'top-picks.json')
 YESTERDAY_PICKS_PATH = os.path.join(ASSETS, 'top-picks-yesterday.json')
 NFL_PATH             = os.path.join(ASSETS, 'nfl-picks.json')
 NCAAF_PATH           = os.path.join(ASSETS, 'ncaaf-picks.json')
+NHL_PATH             = os.path.join(ASSETS, 'nhl-picks.json')
 
 GMAIL_USER  = os.environ.get('GMAIL_USER', '')
 GMAIL_PASS  = os.environ.get('GMAIL_APP_PASSWORD', '')
@@ -572,6 +573,145 @@ def build_ncaaf_picks_section(picks: list) -> str:
     </table>"""
 
 
+# ── NHL section ──────────────────────────────────────────────────────────────
+
+def fetch_nhl_from_firestore(yesterday: str) -> list:
+    """Return yesterday's finished NHL games from Firestore."""
+    sa_json = os.environ.get('FIREBASE_SERVICE_ACCOUNT')
+    if not sa_json:
+        return []
+    try:
+        import firebase_admin
+        from firebase_admin import credentials, firestore as fb_firestore
+        cred = credentials.Certificate(json.loads(sa_json))
+        app  = firebase_admin.initialize_app(cred, name='email_nhl')
+        db   = fb_firestore.client(app)
+        docs = db.collection('games').where('sport', '==', 'NHL').stream()
+        games = []
+        for d in docs:
+            data = d.to_dict()
+            if data.get('gameDate') == yesterday and data.get('actualHomeScore') is not None:
+                games.append(data)
+        firebase_admin.delete_app(app)
+        games.sort(key=lambda g: g.get('gameTime', ''))
+        print(f'[Email] Firestore NHL: {len(games)} finished games for {yesterday}')
+        return games
+    except Exception as exc:
+        print(f'[Email] Firestore NHL fetch error: {exc}')
+        return []
+
+
+def build_nhl_results_section(games: list, yesterday: str) -> str:
+    if not games:
+        return ''
+
+    correct = total = 0
+    rows = ''
+    for g in games:
+        away   = g.get('awayTeam', '')
+        home   = g.get('homeTeam', '')
+        pick   = g.get('pick', '')
+        h_pred = g.get('predictedHomeScore', 0)
+        a_pred = g.get('predictedAwayScore', 0)
+        h_act  = g.get('actualHomeScore')
+        a_act  = g.get('actualAwayScore')
+        wp     = round(g.get('winProb', 0) * 100)
+
+        ok   = pick_correct_mlb(pick, away, home, a_act, h_act)
+        bg   = '#d4edda' if ok else '#f8d7da'
+        icon = '✅' if ok else '❌'
+        if ok is not None:
+            total += 1
+            if ok: correct += 1
+
+        rows += f"""
+        <tr style="background:{bg}">
+          <td style="{TD}">{away} @ {home}</td>
+          <td style="{TD};font-weight:bold">{pick} ({wp}%)</td>
+          <td style="{TD};font-size:12px;color:#555">{a_pred:.2f}–{h_pred:.2f}</td>
+          <td style="{TD};text-align:center">{a_act}–{h_act}</td>
+          <td style="{TD};text-align:center">{icon}</td>
+        </tr>"""
+
+    if total:
+        pct     = round(correct / total * 100)
+        summary = f'<p style="font-size:17px;font-weight:bold;color:{summary_color(pct)}">{correct}/{total} correct ({pct}%)</p>'
+    else:
+        summary = ''
+
+    return f"""
+    <h3 style="border-bottom:2px solid #1a1a2e;padding-bottom:6px;margin-top:24px">
+      🏒 NHL &nbsp;<span style="font-size:14px;color:#666">Yesterday ({yesterday})</span>
+    </h3>
+    {summary}
+    <table style="border-collapse:collapse;width:100%;font-size:14px">
+      <thead><tr style="{TABLE_HEADER_STYLE}">
+        <th style="padding:8px;text-align:left">Matchup</th>
+        <th style="padding:8px;text-align:left">Pick</th>
+        <th style="padding:8px;text-align:left">Predicted</th>
+        <th style="padding:8px;text-align:center">Actual</th>
+        <th style="padding:8px"></th>
+      </tr></thead>
+      <tbody>{rows}</tbody>
+    </table>"""
+
+
+def build_nhl_picks_section(picks: list, today_et: str) -> str:
+    """Show today's NHL picks (games whose gameTime falls on today in ET)."""
+    from zoneinfo import ZoneInfo
+    ET = ZoneInfo('America/New_York')
+    today_games = []
+    for p in picks:
+        try:
+            gt = datetime.fromisoformat(p.get('gameTime', '').replace('Z', '+00:00'))
+            if gt.astimezone(ET).strftime('%Y-%m-%d') == today_et:
+                today_games.append(p)
+        except (ValueError, AttributeError):
+            pass
+
+    if not today_games:
+        return ''
+
+    today_games.sort(key=lambda p: p.get('winProb', 0), reverse=True)
+    rows = ''
+    for p in today_games:
+        home  = p['homeTeam']
+        away  = p['awayTeam']
+        pick  = p['pick']
+        wp    = round(p['winProb'] * 100)
+        h_sc  = p.get('predictedHomeScore', 0)
+        a_sc  = p.get('predictedAwayScore', 0)
+        conf  = p.get('confidence', '')
+        cc    = '#28a745' if wp >= 68 else ('#856404' if wp >= 60 else '#6c757d')
+        try:
+            gt_str = datetime.fromisoformat(p['gameTime'].replace('Z', '+00:00')).strftime('%I:%M %p UTC').lstrip('0')
+        except Exception:
+            gt_str = ''
+        rows += f"""
+        <tr>
+          <td style="{TD}">{away} @ {home}</td>
+          <td style="{TD};color:#555;font-size:12px">{gt_str}</td>
+          <td style="{TD};font-weight:bold;color:{cc}">{pick} ({wp}%)</td>
+          <td style="{TD};text-align:center;color:#555">{a_sc:.2f}–{h_sc:.2f}</td>
+          <td style="{TD};text-align:center;font-size:12px">{conf}</td>
+        </tr>"""
+
+    return f"""
+    <h3 style="border-bottom:2px solid #1a1a2e;padding-bottom:6px;margin-top:24px">
+      🏒 NHL Picks &nbsp;<span style="font-size:14px;color:#666">Today ({today_et})</span>
+    </h3>
+    <table style="border-collapse:collapse;width:100%;font-size:14px">
+      <thead><tr style="{TABLE_HEADER_STYLE}">
+        <th style="padding:8px;text-align:left">Matchup</th>
+        <th style="padding:8px;text-align:left">Puck Drop</th>
+        <th style="padding:8px;text-align:left">Pick</th>
+        <th style="padding:8px;text-align:center">Predicted Score</th>
+        <th style="padding:8px;text-align:center">Confidence</th>
+      </tr></thead>
+      <tbody>{rows}</tbody>
+    </table>"""
+
+
 # ── Tweet drafts ─────────────────────────────────────────────────────────────
 
 LEAGUE_FLAG = {
@@ -876,6 +1016,23 @@ def main():
     ncaaf_html = build_ncaaf_picks_section(ncaaf_picks_list or [])
     if ncaaf_html:
         sections.append(ncaaf_html)
+
+    # NHL results (Firestore) + today's picks (json)
+    if os.path.exists(NHL_PATH):
+        with open(NHL_PATH, encoding='utf-8') as f:
+            nhl_picks_list = json.load(f)
+    else:
+        nhl_picks_list = []
+
+    nhl_yest_games = fetch_nhl_from_firestore(yesterday)
+    if nhl_yest_games:
+        nhl_results_html = build_nhl_results_section(nhl_yest_games, yesterday)
+        if nhl_results_html:
+            sections.append(nhl_results_html)
+
+    nhl_picks_html = build_nhl_picks_section(nhl_picks_list, today_et)
+    if nhl_picks_html:
+        sections.append(nhl_picks_html)
 
     if not sections:
         print('[Email] No data available — skipping.')
