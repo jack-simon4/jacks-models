@@ -4,7 +4,7 @@ Outputs:
   src/assets/NHL-Stats.csv   — Team,ShotsF,PP,ShotsA,S%
   src/assets/NHL-Goalies.csv — Player,GAA,Sv%,Team
 
-Uses current season when ≥10 teams have data; falls back to prior season.
+Uses current season when teams average ≥5 games played; falls back to prior season.
 """
 
 import csv
@@ -18,7 +18,7 @@ GOALIES_OUTPUT = os.path.join(ASSETS, 'NHL-Goalies.csv')
 
 NHL_BASE = 'https://api.nhle.com/stats/rest/en'
 
-# NHL API abbreviation → exact name used in NHL-Teams.csv
+# NHL API abbreviation -> exact name used in NHL-Teams.csv
 ABBREV_TO_NAME = {
     'ANA': 'Anaheim Ducks',
     'BOS': 'Boston Bruins',
@@ -112,6 +112,16 @@ def fetch_goalie_stats(season: str) -> list[dict]:
         return []
 
 
+def _has_sufficient_data(data: list[dict]) -> bool:
+    """Return True when current-season data has enough games to be statistically reliable."""
+    if len(data) < 20:
+        return False
+    games = [float(t.get('gamesPlayed', 0) or 0) for t in data]
+    avg_games = sum(games) / len(games) if games else 0
+    print(f'[NHL Stats] Average games played: {avg_games:.1f} across {len(data)} entries')
+    return avg_games >= 5.0
+
+
 def write_team_stats(data: list[dict]) -> int:
     rows = []
     for t in data:
@@ -122,7 +132,11 @@ def write_team_stats(data: list[dict]) -> int:
         shots_f = round(float(t.get('shotsForPerGame',    0) or 0), 2)
         shots_a = round(float(t.get('shotsAgainstPerGame', 0) or 0), 2)
         pp      = _to_pct(t.get('ppPct',        t.get('powerPlayPct',  0)))
-        s_pct   = _to_pct(t.get('shootingPctg', t.get('shootingPct',   0)))
+        s_raw = _to_pct(t.get('shootingPctg', t.get('shootingPct', 0)))
+        if s_raw < 0.5 and shots_f > 0:  # API returned 0 — derive from goals/shots
+            goals_f = float(t.get('goalsForPerGame', 0) or 0)
+            s_raw = round(goals_f / shots_f * 100, 2) if goals_f > 0 else 8.0
+        s_pct = s_raw
         if shots_f == 0:
             continue
         rows.append({'Team': name, 'ShotsF': shots_f, 'PP': pp, 'ShotsA': shots_a, 'S%': s_pct})
@@ -132,7 +146,7 @@ def write_team_stats(data: list[dict]) -> int:
         writer = csv.DictWriter(f, fieldnames=['Team', 'ShotsF', 'PP', 'ShotsA', 'S%'])
         writer.writeheader()
         writer.writerows(rows)
-    print(f'[NHL Stats] Wrote {len(rows)} teams → {STATS_OUTPUT}')
+    print(f'[NHL Stats] Wrote {len(rows)} teams -> {STATS_OUTPUT}')
     return len(rows)
 
 
@@ -151,7 +165,7 @@ def write_goalie_stats(data: list[dict]) -> int:
             sv = round(sv, 4)
         team_abbrev = str(g.get('teamAbbrevs', '') or '').split(',')[0].strip()
         team_name   = ABBREV_TO_NAME.get(team_abbrev, team_abbrev)
-        if gaa == 0 and sv == 0:
+        if (gaa == 0 and sv == 0) or sv >= 1.0:
             continue
         rows.append({'Player': name, 'GAA': gaa, 'Sv%': sv, 'Team': team_name})
 
@@ -160,7 +174,7 @@ def write_goalie_stats(data: list[dict]) -> int:
         writer = csv.DictWriter(f, fieldnames=['Player', 'GAA', 'Sv%', 'Team'])
         writer.writeheader()
         writer.writerows(rows)
-    print(f'[NHL Stats] Wrote {len(rows)} goalies → {GOALIES_OUTPUT}')
+    print(f'[NHL Stats] Wrote {len(rows)} goalies -> {GOALIES_OUTPUT}')
     return len(rows)
 
 
@@ -168,17 +182,17 @@ def main():
     cur_season, prior_season = current_season()
     print(f'[NHL Stats] Current season: {cur_season}  Prior: {prior_season}')
 
-    # Team stats — prefer current season; fall back if sparse
+    # Team stats — prefer current season; fall back until avg ≥ 5 games played
     teams_data = fetch_team_stats(cur_season)
-    if len(teams_data) < 10:
-        print(f'[NHL Stats] Only {len(teams_data)} teams in {cur_season} — using {prior_season}.')
+    if not _has_sufficient_data(teams_data):
+        print(f'[NHL Stats] Using {prior_season} team stats (current season too sparse).')
         teams_data = fetch_team_stats(prior_season)
     write_team_stats(teams_data)
 
     # Goalie stats — same strategy
     goalies_data = fetch_goalie_stats(cur_season)
-    if len(goalies_data) < 20:
-        print(f'[NHL Stats] Only {len(goalies_data)} goalies in {cur_season} — using {prior_season}.')
+    if not _has_sufficient_data(goalies_data):
+        print(f'[NHL Stats] Using {prior_season} goalie stats (current season too sparse).')
         goalies_data = fetch_goalie_stats(prior_season)
     write_goalie_stats(goalies_data)
 

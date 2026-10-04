@@ -340,7 +340,7 @@ def main():
 
     with open(OUTPUT, 'w', encoding='utf-8') as f:
         json.dump(picks, f, indent=2)
-    print(f'[NHL Picks] {len(picks)} picks → {OUTPUT}')
+    print(f'[NHL Picks] {len(picks)} picks -> {OUTPUT}')
 
     save_to_firestore(firestore_data)
 
