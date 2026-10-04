@@ -1,16 +1,9 @@
 {
-  "Milwaukee Brewers": {
-    "home_team": "Milwaukee Brewers",
-    "away_team": "San Diego Padres",
-    "home_ml": "+140",
-    "away_ml": "-180",
-    "book": "fanduel"
-  },
   "Los Angeles Dodgers": {
     "home_team": "Los Angeles Dodgers",
     "away_team": "Atlanta Braves",
     "home_ml": "-230",
-    "away_ml": "+190",
+    "away_ml": "+198",
     "book": "fanduel"
   },
   "Cleveland Guardians": {
@@ -25,6 +18,13 @@
     "away_team": "New York Yankees",
     "home_ml": "+110",
     "away_ml": "-130",
+    "book": "fanduel"
+  },
+  "San Diego Padres": {
+    "home_team": "San Diego Padres",
+    "away_team": "Milwaukee Brewers",
+    "home_ml": "-126",
+    "away_ml": "+108",
     "book": "fanduel"
   }
 }
