@@ -116,9 +116,8 @@ export class HomeComponent implements OnInit {
   }
 
   private loadAllPicks() {
-    const now       = new Date();
-    const todayStr  = now.toISOString().slice(0, 10);
-    const weekAhead = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
+    const now      = new Date();
+    const todayStr = now.toISOString().slice(0, 10);
 
     const mlb$ = this.http.get<any[]>(environment.topPicksUrl).pipe(
       map(picks => (picks ?? [])
@@ -155,9 +154,9 @@ export class HomeComponent implements OnInit {
     const ncaaf$ = this.http.get<any[]>('assets/ncaaf-picks.json').pipe(
       map(picks => (picks ?? [])
         .filter(p => {
-          if (!p.gameTime) return true;
+          if (!p.gameTime) return false;
           const gt = new Date(p.gameTime);
-          return gt >= now && gt <= weekAhead;
+          return gt >= now && gt <= oneDayAhead;
         })
         .map(p => this.normalizeFootball(p, 'NCAAF'))
         .filter((p): p is UnifiedPick => p !== null)),
