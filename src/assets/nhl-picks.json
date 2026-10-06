@@ -96,22 +96,6 @@
     "rank": 6
   },
   {
-    "gameId": 2026020043,
-    "homeTeam": "Dallas Stars",
-    "awayTeam": "San Jose Sharks",
-    "homeGoalie": "Casey DeSmith",
-    "awayGoalie": "Alex Nedeljkovic",
-    "predictedHomeScore": 3.52,
-    "predictedAwayScore": 2.79,
-    "pick": "Dallas Stars",
-    "winProb": 0.625,
-    "confidence": "Strong",
-    "gameTime": "2026-10-06T00:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 7
-  },
-  {
     "gameId": 2026020071,
     "homeTeam": "New Jersey Devils",
     "awayTeam": "Vancouver Canucks",
@@ -125,7 +109,7 @@
     "gameTime": "2026-10-10T19:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 8
+    "rank": 7
   },
   {
     "gameId": 2026020098,
@@ -141,7 +125,7 @@
     "gameTime": "2026-10-14T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 9
+    "rank": 8
   },
   {
     "gameId": 2026020065,
@@ -157,7 +141,7 @@
     "gameTime": "2026-10-09T02:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 10
+    "rank": 9
   },
   {
     "gameId": 2026020086,
@@ -173,7 +157,7 @@
     "gameTime": "2026-10-11T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 11
+    "rank": 10
   },
   {
     "gameId": 2026020081,
@@ -189,23 +173,7 @@
     "gameTime": "2026-10-10T23:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 12
-  },
-  {
-    "gameId": 2026020042,
-    "homeTeam": "Pittsburgh Penguins",
-    "awayTeam": "Winnipeg Jets",
-    "homeGoalie": "Sergei Murashov",
-    "awayGoalie": "Connor Hellebuyck",
-    "predictedHomeScore": 3.52,
-    "predictedAwayScore": 2.9,
-    "pick": "Pittsburgh Penguins",
-    "winProb": 0.607,
-    "confidence": "Strong",
-    "gameTime": "2026-10-05T23:30:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 13
+    "rank": 11
   },
   {
     "gameId": 2026020099,
@@ -221,7 +189,7 @@
     "gameTime": "2026-10-14T00:15:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 14
+    "rank": 12
   },
   {
     "gameId": 2026020048,
@@ -237,7 +205,7 @@
     "gameTime": "2026-10-06T23:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 15
+    "rank": 13
   },
   {
     "gameId": 2026020064,
@@ -253,7 +221,7 @@
     "gameTime": "2026-10-09T01:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 16
+    "rank": 14
   },
   {
     "gameId": 2026020082,
@@ -269,7 +237,7 @@
     "gameTime": "2026-10-11T02:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 17
+    "rank": 15
   },
   {
     "gameId": 2026020103,
@@ -285,7 +253,7 @@
     "gameTime": "2026-10-14T01:45:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 18
+    "rank": 16
   },
   {
     "gameId": 2026020055,
@@ -301,7 +269,7 @@
     "gameTime": "2026-10-08T02:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 19
+    "rank": 17
   },
   {
     "gameId": 2026020045,
@@ -317,7 +285,7 @@
     "gameTime": "2026-10-06T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 20
+    "rank": 18
   },
   {
     "gameId": 2026020097,
@@ -333,7 +301,7 @@
     "gameTime": "2026-10-13T23:45:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 21
+    "rank": 19
   },
   {
     "gameId": 2026020100,
@@ -349,7 +317,23 @@
     "gameTime": "2026-10-14T00:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 22
+    "rank": 20
+  },
+  {
+    "gameId": 2026020107,
+    "homeTeam": "Colorado Avalanche",
+    "awayTeam": "Dallas Stars",
+    "homeGoalie": "Scott Wedgewood",
+    "awayGoalie": "Casey DeSmith",
+    "predictedHomeScore": 3.32,
+    "predictedAwayScore": 2.79,
+    "pick": "Colorado Avalanche",
+    "winProb": 0.592,
+    "confidence": "Lean",
+    "gameTime": "2026-10-15T00:30:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 21
   },
   {
     "gameId": 2026020093,
@@ -365,7 +349,7 @@
     "gameTime": "2026-10-13T22:45:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 23
+    "rank": 22
   },
   {
     "gameId": 2026020101,
@@ -381,7 +365,7 @@
     "gameTime": "2026-10-14T00:45:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 24
+    "rank": 23
   },
   {
     "gameId": 2026020104,
@@ -397,7 +381,7 @@
     "gameTime": "2026-10-14T02:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 25
+    "rank": 24
   },
   {
     "gameId": 2026020102,
@@ -413,7 +397,7 @@
     "gameTime": "2026-10-14T01:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 26
+    "rank": 25
   },
   {
     "gameId": 2026020076,
@@ -429,23 +413,7 @@
     "gameTime": "2026-10-10T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 27
-  },
-  {
-    "gameId": 2026020040,
-    "homeTeam": "Tampa Bay Lightning",
-    "awayTeam": "Philadelphia Flyers",
-    "homeGoalie": "Andrei Vasilevskiy",
-    "awayGoalie": "Dan Vladar",
-    "predictedHomeScore": 3.04,
-    "predictedAwayScore": 2.61,
-    "pick": "Tampa Bay Lightning",
-    "winProb": 0.575,
-    "confidence": "Lean",
-    "gameTime": "2026-10-05T23:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 28
+    "rank": 26
   },
   {
     "gameId": 2026020096,
@@ -461,7 +429,7 @@
     "gameTime": "2026-10-13T23:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 29
+    "rank": 27
   },
   {
     "gameId": 2026020083,
@@ -477,7 +445,7 @@
     "gameTime": "2026-10-11T02:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 30
+    "rank": 28
   },
   {
     "gameId": 2026020058,
@@ -493,7 +461,7 @@
     "gameTime": "2026-10-08T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 31
+    "rank": 29
   },
   {
     "gameId": 2026020046,
@@ -509,7 +477,7 @@
     "gameTime": "2026-10-06T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 32
+    "rank": 30
   },
   {
     "gameId": 2026020105,
@@ -525,7 +493,7 @@
     "gameTime": "2026-10-14T03:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 33
+    "rank": 31
   },
   {
     "gameId": 2026020075,
@@ -541,7 +509,7 @@
     "gameTime": "2026-10-10T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 34
+    "rank": 32
   },
   {
     "gameId": 2026020062,
@@ -557,7 +525,7 @@
     "gameTime": "2026-10-08T23:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 35
+    "rank": 33
   },
   {
     "gameId": 2026020073,
@@ -573,23 +541,7 @@
     "gameTime": "2026-10-10T22:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 36
-  },
-  {
-    "gameId": 2026020041,
-    "homeTeam": "Boston Bruins",
-    "awayTeam": "Ottawa Senators",
-    "homeGoalie": "Jeremy Swayman",
-    "awayGoalie": "James Reimer",
-    "predictedHomeScore": 3.13,
-    "predictedAwayScore": 3.43,
-    "pick": "Ottawa Senators",
-    "winProb": 0.552,
-    "confidence": "Lean",
-    "gameTime": "2026-10-05T23:30:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 37
+    "rank": 34
   },
   {
     "gameId": 2026020068,
@@ -605,6 +557,6 @@
     "gameTime": "2026-10-09T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 38
+    "rank": 35
   }
 ]
