@@ -23,8 +23,8 @@
   "New York Yankees": {
     "home_team": "New York Yankees",
     "away_team": "Tampa Bay Rays",
-    "home_ml": "-164",
-    "away_ml": "+138",
+    "home_ml": "-162",
+    "away_ml": "+136",
     "book": "fanduel"
   }
 }
