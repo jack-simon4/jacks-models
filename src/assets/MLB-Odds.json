@@ -2,22 +2,22 @@
   "Atlanta Braves": {
     "home_team": "Atlanta Braves",
     "away_team": "Los Angeles Dodgers",
-    "home_ml": "-108",
-    "away_ml": "-108",
+    "home_ml": "-106",
+    "away_ml": "-110",
     "book": "fanduel"
   },
   "San Diego Padres": {
     "home_team": "San Diego Padres",
     "away_team": "Milwaukee Brewers",
-    "home_ml": "-134",
-    "away_ml": "+116",
+    "home_ml": "-142",
+    "away_ml": "+120",
     "book": "fanduel"
   },
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "Cleveland Guardians",
-    "home_ml": "-124",
-    "away_ml": "+106",
+    "home_ml": "-120",
+    "away_ml": "+102",
     "book": "fanduel"
   },
   "New York Yankees": {
