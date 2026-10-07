@@ -192,17 +192,17 @@
     "rank": 12
   },
   {
-    "gameId": 2026020048,
-    "homeTeam": "New York Rangers",
-    "awayTeam": "New York Islanders",
-    "homeGoalie": "Dylan Garand",
-    "awayGoalie": "Ilya Sorokin",
-    "predictedHomeScore": 2.86,
-    "predictedAwayScore": 2.27,
-    "pick": "New York Rangers",
-    "winProb": 0.602,
-    "confidence": "Strong",
-    "gameTime": "2026-10-06T23:30:00Z",
+    "gameId": 2026020112,
+    "homeTeam": "Florida Panthers",
+    "awayTeam": "Vancouver Canucks",
+    "homeGoalie": "Daniil Tarasov",
+    "awayGoalie": "Thatcher Demko",
+    "predictedHomeScore": 3.34,
+    "predictedAwayScore": 2.77,
+    "pick": "Florida Panthers",
+    "winProb": 0.598,
+    "confidence": "Lean",
+    "gameTime": "2026-10-15T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 13
@@ -272,22 +272,6 @@
     "rank": 17
   },
   {
-    "gameId": 2026020045,
-    "homeTeam": "Montr\u00e9al Canadiens",
-    "awayTeam": "Carolina Hurricanes",
-    "homeGoalie": "Jacob Fowler",
-    "awayGoalie": "Pyotr Kochetkov",
-    "predictedHomeScore": 2.93,
-    "predictedAwayScore": 3.46,
-    "pick": "Carolina Hurricanes",
-    "winProb": 0.592,
-    "confidence": "Lean",
-    "gameTime": "2026-10-06T23:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 18
-  },
-  {
     "gameId": 2026020097,
     "homeTeam": "New York Islanders",
     "awayTeam": "Vancouver Canucks",
@@ -301,7 +285,7 @@
     "gameTime": "2026-10-13T23:45:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 19
+    "rank": 18
   },
   {
     "gameId": 2026020100,
@@ -317,7 +301,7 @@
     "gameTime": "2026-10-14T00:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 20
+    "rank": 19
   },
   {
     "gameId": 2026020107,
@@ -331,6 +315,22 @@
     "winProb": 0.592,
     "confidence": "Lean",
     "gameTime": "2026-10-15T00:30:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 20
+  },
+  {
+    "gameId": 2026020108,
+    "homeTeam": "Toronto Maple Leafs",
+    "awayTeam": "Buffalo Sabres",
+    "homeGoalie": "Dennis Hildeby",
+    "awayGoalie": "Ukko-Pekka Luukkonen",
+    "predictedHomeScore": 3.05,
+    "predictedAwayScore": 3.58,
+    "pick": "Buffalo Sabres",
+    "winProb": 0.592,
+    "confidence": "Lean",
+    "gameTime": "2026-10-15T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 21
@@ -432,6 +432,38 @@
     "rank": 27
   },
   {
+    "gameId": 2026020109,
+    "homeTeam": "Ottawa Senators",
+    "awayTeam": "New York Islanders",
+    "homeGoalie": "James Reimer",
+    "awayGoalie": "Ilya Sorokin",
+    "predictedHomeScore": 3.25,
+    "predictedAwayScore": 2.82,
+    "pick": "Ottawa Senators",
+    "winProb": 0.575,
+    "confidence": "Lean",
+    "gameTime": "2026-10-15T23:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 28
+  },
+  {
+    "gameId": 2026020116,
+    "homeTeam": "Minnesota Wild",
+    "awayTeam": "St. Louis Blues",
+    "homeGoalie": "Jesper Wallstedt",
+    "awayGoalie": "Joel Hofer",
+    "predictedHomeScore": 3.17,
+    "predictedAwayScore": 2.75,
+    "pick": "Minnesota Wild",
+    "winProb": 0.573,
+    "confidence": "Lean",
+    "gameTime": "2026-10-16T00:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 29
+  },
+  {
     "gameId": 2026020083,
     "homeTeam": "Vegas Golden Knights",
     "awayTeam": "Los Angeles Kings",
@@ -445,7 +477,23 @@
     "gameTime": "2026-10-11T02:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 28
+    "rank": 30
+  },
+  {
+    "gameId": 2026020113,
+    "homeTeam": "New Jersey Devils",
+    "awayTeam": "New York Rangers",
+    "homeGoalie": "Nico Daws",
+    "awayGoalie": "Dylan Garand",
+    "predictedHomeScore": 2.38,
+    "predictedAwayScore": 2.79,
+    "pick": "New York Rangers",
+    "winProb": 0.571,
+    "confidence": "Lean",
+    "gameTime": "2026-10-15T23:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 31
   },
   {
     "gameId": 2026020058,
@@ -461,23 +509,7 @@
     "gameTime": "2026-10-08T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 29
-  },
-  {
-    "gameId": 2026020046,
-    "homeTeam": "Detroit Red Wings",
-    "awayTeam": "Ottawa Senators",
-    "homeGoalie": "John Gibson",
-    "awayGoalie": "James Reimer",
-    "predictedHomeScore": 2.95,
-    "predictedAwayScore": 3.33,
-    "pick": "Ottawa Senators",
-    "winProb": 0.566,
-    "confidence": "Lean",
-    "gameTime": "2026-10-06T23:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 30
+    "rank": 32
   },
   {
     "gameId": 2026020105,
@@ -493,7 +525,7 @@
     "gameTime": "2026-10-14T03:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 31
+    "rank": 33
   },
   {
     "gameId": 2026020075,
@@ -509,7 +541,7 @@
     "gameTime": "2026-10-10T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 32
+    "rank": 34
   },
   {
     "gameId": 2026020062,
@@ -525,7 +557,7 @@
     "gameTime": "2026-10-08T23:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 33
+    "rank": 35
   },
   {
     "gameId": 2026020073,
@@ -541,7 +573,23 @@
     "gameTime": "2026-10-10T22:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 34
+    "rank": 36
+  },
+  {
+    "gameId": 2026020111,
+    "homeTeam": "Tampa Bay Lightning",
+    "awayTeam": "Seattle Kraken",
+    "homeGoalie": "Andrei Vasilevskiy",
+    "awayGoalie": "Victor Ostman",
+    "predictedHomeScore": 2.85,
+    "predictedAwayScore": 2.54,
+    "pick": "Tampa Bay Lightning",
+    "winProb": 0.554,
+    "confidence": "Lean",
+    "gameTime": "2026-10-15T23:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 37
   },
   {
     "gameId": 2026020068,
@@ -557,6 +605,6 @@
     "gameTime": "2026-10-09T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 35
+    "rank": 38
   }
 ]
