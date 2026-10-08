@@ -1,23 +1,16 @@
 {
-  "New York Yankees": {
-    "home_team": "New York Yankees",
-    "away_team": "Tampa Bay Rays",
-    "home_ml": "+680",
-    "away_ml": "-1400",
-    "book": "fanduel"
-  },
-  "San Diego Padres": {
-    "home_team": "San Diego Padres",
-    "away_team": "Milwaukee Brewers",
-    "home_ml": "-120",
-    "away_ml": "-106",
-    "book": "fanduel"
-  },
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "Cleveland Guardians",
-    "home_ml": "-103",
-    "away_ml": "-117",
-    "book": "draftkings"
+    "home_ml": "+102",
+    "away_ml": "-120",
+    "book": "fanduel"
+  },
+  "Milwaukee Brewers": {
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Los Angeles Dodgers",
+    "home_ml": "-108",
+    "away_ml": "-108",
+    "book": "fanduel"
   }
 }
