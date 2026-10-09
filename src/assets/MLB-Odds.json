@@ -2,8 +2,8 @@
   "Chicago White Sox": {
     "home_team": "Chicago White Sox",
     "away_team": "Cleveland Guardians",
-    "home_ml": "-102",
-    "away_ml": "-116",
+    "home_ml": "+100",
+    "away_ml": "-114",
     "book": "fanduel"
   },
   "Milwaukee Brewers": {
