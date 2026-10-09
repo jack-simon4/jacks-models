@@ -1,10 +1,10 @@
 {
-  "Chicago White Sox": {
-    "home_team": "Chicago White Sox",
-    "away_team": "Cleveland Guardians",
-    "home_ml": "+8000",
-    "away_ml": "-10000",
-    "book": "betmgm"
+  "Cleveland Guardians": {
+    "home_team": "Cleveland Guardians",
+    "away_team": "Chicago White Sox",
+    "home_ml": "-136",
+    "away_ml": "+116",
+    "book": "fanduel"
   },
   "Milwaukee Brewers": {
     "home_team": "Milwaukee Brewers",
