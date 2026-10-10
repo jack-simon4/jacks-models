@@ -184,6 +184,8 @@ def save_to_firestore(games_data: list):
         app  = firebase_admin.initialize_app(cred, name='nhl_picks')
         db   = fb_firestore.client(app)
 
+        now_utc = datetime.now(timezone.utc)
+
         created = updated = skipped = 0
         for entry in games_data:
             doc_id  = f'nhl_{entry["gameId"]}'
@@ -192,6 +194,17 @@ def save_to_firestore(games_data: list):
 
             actual_home = entry.get('actualHomeScore')
             actual_away = entry.get('actualAwayScore')
+
+            # Determine if game is within 24 hours — lock predictions after that
+            # so daily stat updates don't flip picks on game day.
+            game_time_str = entry.get('gameTime', '')
+            prediction_locked = False
+            if game_time_str:
+                try:
+                    game_dt = datetime.fromisoformat(game_time_str.replace('Z', '+00:00'))
+                    prediction_locked = (game_dt - now_utc).total_seconds() < 24 * 3600
+                except ValueError:
+                    pass
 
             if existing.exists:
                 existing_data = existing.to_dict()
@@ -202,7 +215,7 @@ def save_to_firestore(games_data: list):
                     })
                     print(f'  [Updated] {entry["awayTeam"]} @ {entry["homeTeam"]}: {actual_away}-{actual_home}')
                     updated += 1
-                elif existing_data.get('actualHomeScore') is None:
+                elif existing_data.get('actualHomeScore') is None and not prediction_locked:
                     doc_ref.update({
                         'predictedHomeScore': entry['predictedHomeScore'],
                         'predictedAwayScore': entry['predictedAwayScore'],
