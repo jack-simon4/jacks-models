@@ -512,6 +512,22 @@
     "rank": 32
   },
   {
+    "gameId": 2026020136,
+    "homeTeam": "Calgary Flames",
+    "awayTeam": "Carolina Hurricanes",
+    "homeGoalie": "Arsenii Sergeev",
+    "awayGoalie": "Pyotr Kochetkov",
+    "predictedHomeScore": 2.41,
+    "predictedAwayScore": 2.79,
+    "pick": "Carolina Hurricanes",
+    "winProb": 0.566,
+    "confidence": "Lean",
+    "gameTime": "2026-10-19T00:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 33
+  },
+  {
     "gameId": 2026020075,
     "homeTeam": "Montr\u00e9al Canadiens",
     "awayTeam": "Detroit Red Wings",
@@ -525,7 +541,7 @@
     "gameTime": "2026-10-10T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 33
+    "rank": 34
   },
   {
     "gameId": 2026020073,
@@ -541,7 +557,7 @@
     "gameTime": "2026-10-10T22:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 34
+    "rank": 35
   },
   {
     "gameId": 2026020111,
@@ -557,7 +573,7 @@
     "gameTime": "2026-10-15T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 35
+    "rank": 36
   },
   {
     "gameId": 2026020127,
@@ -571,22 +587,6 @@
     "winProb": 0.554,
     "confidence": "Lean",
     "gameTime": "2026-10-17T23:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 36
-  },
-  {
-    "gameId": 2026020068,
-    "homeTeam": "Columbus Blue Jackets",
-    "awayTeam": "Pittsburgh Penguins",
-    "homeGoalie": "Jet Greaves",
-    "awayGoalie": "Sergei Murashov",
-    "predictedHomeScore": 3.14,
-    "predictedAwayScore": 3.43,
-    "pick": "Pittsburgh Penguins",
-    "winProb": 0.551,
-    "confidence": "Lean",
-    "gameTime": "2026-10-09T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 37
