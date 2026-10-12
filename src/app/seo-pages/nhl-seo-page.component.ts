@@ -9,13 +9,13 @@ import { JsonLdService } from '../shared/json-ld.service';
 })
 export class NhlSeoPageComponent {
   constructor(private meta: Meta, private title: Title, private jsonLd: JsonLdService) {
-    this.title.setTitle("NHL Score Predictions | Jack's Models");
-    this.meta.updateTag({ name: 'description', content: "Free NHL predictions from Jack's Models. Goalie save percentage, power play efficiency, and Corsi — 60% moneyline accuracy across 671 recorded games. All 32 teams supported." });
-    this.meta.updateTag({ property: 'og:title',       content: "NHL Score Predictions | Jack's Models" });
-    this.meta.updateTag({ property: 'og:description', content: "Free data-driven NHL picks. 60% moneyline, 58% favored value rate across 671 games. Goalie stats, power play, and Corsi modeled." });
+    this.title.setTitle("Free NHL Predictor | Jack's Models");
+    this.meta.updateTag({ name: 'description', content: "Free NHL game predictions updated daily. Stat-driven model covering all 32 teams." });
+    this.meta.updateTag({ property: 'og:title',       content: "Free NHL Predictor | Jack's Models" });
+    this.meta.updateTag({ property: 'og:description', content: "Free NHL game predictions updated daily. Stat-driven model covering all 32 teams." });
     this.meta.updateTag({ property: 'og:url',         content: 'https://jacksmodels.com/nhl-predictions' });
-    this.meta.updateTag({ name: 'twitter:title',       content: "NHL Score Predictions | Jack's Models" });
-    this.meta.updateTag({ name: 'twitter:description', content: "Free NHL picks using goalie save %, power play, and Corsi. 60% ML accuracy across 671 games." });
+    this.meta.updateTag({ name: 'twitter:title',       content: "Free NHL Predictor | Jack's Models" });
+    this.meta.updateTag({ name: 'twitter:description', content: "Free NHL game predictions updated daily. Stat-driven model covering all 32 teams." });
 
     this.jsonLd.set('nhl-faq', {
       '@context': 'https://schema.org',

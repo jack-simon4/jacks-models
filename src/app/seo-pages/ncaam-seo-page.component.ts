@@ -9,13 +9,13 @@ import { JsonLdService } from '../shared/json-ld.service';
 })
 export class NcaamSeoPageComponent {
   constructor(private meta: Meta, private title: Title, private jsonLd: JsonLdService) {
-    this.title.setTitle("College Basketball Predictions | Jack's Models");
-    this.meta.updateTag({ name: 'description', content: "Free NCAAM basketball predictions from Jack's Models. Offensive/defensive efficiency and pace — 73% moneyline accuracy across 1,203 recorded games. March Madness bracket predictions included." });
-    this.meta.updateTag({ property: 'og:title',       content: "College Basketball Predictions | Jack's Models" });
-    this.meta.updateTag({ property: 'og:description', content: "Free NCAAM picks with 73% moneyline accuracy — the highest of any sport on the site. 1,203 games tracked." });
+    this.title.setTitle("Free College Basketball Predictor | Jack's Models");
+    this.meta.updateTag({ name: 'description', content: "Free NCAAM game predictions powered by a stat-driven model. Run any matchup for all major college basketball programs." });
+    this.meta.updateTag({ property: 'og:title',       content: "Free College Basketball Predictor | Jack's Models" });
+    this.meta.updateTag({ property: 'og:description', content: "Free NCAAM game predictions powered by a stat-driven model. Run any matchup for all major college basketball programs." });
     this.meta.updateTag({ property: 'og:url',         content: 'https://jacksmodels.com/ncaam-predictions' });
-    this.meta.updateTag({ name: 'twitter:title',       content: "College Basketball Predictions | Jack's Models" });
-    this.meta.updateTag({ name: 'twitter:description', content: "Free NCAAM picks. 73% moneyline accuracy across 1,203 games. March Madness ready." });
+    this.meta.updateTag({ name: 'twitter:title',       content: "Free College Basketball Predictor | Jack's Models" });
+    this.meta.updateTag({ name: 'twitter:description', content: "Free NCAAM game predictions powered by a stat-driven model. Run any matchup for all major college basketball programs." });
 
     this.jsonLd.set('ncaam-faq', {
       '@context': 'https://schema.org',

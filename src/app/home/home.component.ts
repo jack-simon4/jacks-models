@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Meta, Title } from '@angular/platform-browser';
 import { forkJoin, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { environment } from '../../environments/environment';
@@ -29,9 +30,11 @@ export class HomeComponent implements OnInit {
 
   topProps: { rank: number; name: string; hitPercent: string; hrPercent: string; xBases: string }[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private titleService: Title, private metaService: Meta) {}
 
   ngOnInit() {
+    this.titleService.setTitle("Jack's Models | Free Sports Prediction Models");
+    this.metaService.updateTag({ name: 'description', content: "Free stat-driven sports predictions for NFL, NBA, MLB, NHL, NCAAF, NCAAM and Soccer. Run any matchup instantly." });
     this.loadAllPicks();
     this.loadTopProps();
   }

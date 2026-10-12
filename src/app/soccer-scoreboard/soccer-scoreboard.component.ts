@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Meta, Title } from '@angular/platform-browser';
 import { MatDialog } from '@angular/material/dialog';
 import { ScoreboardPopupComponent } from '../scoreboard-popup/scoreboard-popup.component';
 import { single } from 'rxjs';
@@ -33,9 +34,12 @@ export class SoccerScoreboardComponent implements OnInit {
 
   Leagues: string[] = ['World Cup', 'Premier League', 'La Liga', 'Serie A', 'Bundesliga', 'Ligue 1', 'Champions League', 'MLS'];
 
-  constructor(private http: HttpClient, private dialog: MatDialog,  private firestore: AngularFirestore) { }
+  constructor(private http: HttpClient, private dialog: MatDialog, private firestore: AngularFirestore,
+              private titleService: Title, private metaService: Meta) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle("Free Soccer Predictor | Jack's Models");
+    this.metaService.updateTag({ name: 'description', content: "Free soccer predictions for Premier League, La Liga, Serie A, Bundesliga, Ligue 1, Champions League and the 2026 FIFA World Cup." });
     this.loadTeamsData();
     this.loadSoccerStatsData();
   }
