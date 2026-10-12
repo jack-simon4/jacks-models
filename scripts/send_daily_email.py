@@ -430,6 +430,93 @@ def build_nfl_section(picks: list) -> str:
     </table>"""
 
 
+# ── NFL results section ───────────────────────────────────────────────────────
+
+def fetch_nfl_from_firestore(target_dates: list) -> list:
+    """Return finished NFL games from Firestore for any of the given game dates."""
+    sa_json = os.environ.get('FIREBASE_SERVICE_ACCOUNT')
+    if not sa_json:
+        print('[Email] FIREBASE_SERVICE_ACCOUNT not set — skipping Firestore NFL fetch.')
+        return []
+    try:
+        import firebase_admin
+        from firebase_admin import credentials, firestore as fb_firestore
+        cred = credentials.Certificate(json.loads(sa_json))
+        app  = firebase_admin.initialize_app(cred, name='email_nfl')
+        db   = fb_firestore.client(app)
+        docs = db.collection('games').where('sport', '==', 'NFL').stream()
+        games = []
+        for d in docs:
+            data = d.to_dict()
+            if data.get('gameDate') in target_dates and data.get('actualHomeScore') is not None:
+                games.append(data)
+        firebase_admin.delete_app(app)
+        games.sort(key=lambda g: g.get('gameDate', '') + g.get('gameTime', ''))
+        print(f'[Email] Firestore NFL: {len(games)} finished games')
+        return games
+    except Exception as exc:
+        print(f'[Email] Firestore NFL fetch error: {exc}')
+        return []
+
+
+def build_nfl_results_section(games: list) -> str:
+    if not games:
+        return ''
+
+    dates    = sorted(set(g.get('gameDate', '') for g in games))
+    date_lbl = dates[-1] if len(dates) == 1 else f'{dates[0]} – {dates[-1]}'
+
+    correct = total = 0
+    rows = ''
+    for g in games:
+        away   = g.get('awayTeam', '')
+        home   = g.get('homeTeam', '')
+        pick   = g.get('pick', '')
+        h_pred = g.get('predictedHomeScore', 0)
+        a_pred = g.get('predictedAwayScore', 0)
+        h_act  = g.get('actualHomeScore')
+        a_act  = g.get('actualAwayScore')
+        wp     = round(g.get('winProb', 0) * 100)
+
+        ok   = pick_correct_mlb(pick, away, home, a_act, h_act)
+        bg   = '#d4edda' if ok else '#f8d7da'
+        icon = '✅' if ok else '❌'
+        if ok is not None:
+            total += 1
+            if ok: correct += 1
+
+        rows += f"""
+        <tr style="background:{bg}">
+          <td style="{TD}">{away} @ {home}</td>
+          <td style="{TD};font-weight:bold">{pick} ({wp}%)</td>
+          <td style="{TD};font-size:12px;color:#555">{a_pred:.1f}–{h_pred:.1f}</td>
+          <td style="{TD};text-align:center">{a_act}–{h_act}</td>
+          <td style="{TD};text-align:center">{icon}</td>
+        </tr>"""
+
+    if total:
+        pct     = round(correct / total * 100)
+        summary = f'<p style="font-size:17px;font-weight:bold;color:{summary_color(pct)}">{correct}/{total} correct ({pct}%)</p>'
+    else:
+        summary = ''
+
+    return f"""
+    <h3 style="border-bottom:2px solid #1a1a2e;padding-bottom:6px;margin-top:24px">
+      🏈 NFL &nbsp;<span style="font-size:14px;color:#666">Recent Results ({date_lbl})</span>
+    </h3>
+    {summary}
+    <table style="border-collapse:collapse;width:100%;font-size:14px">
+      <thead><tr style="{TABLE_HEADER_STYLE}">
+        <th style="padding:8px;text-align:left">Matchup</th>
+        <th style="padding:8px;text-align:left">Pick</th>
+        <th style="padding:8px;text-align:left">Predicted</th>
+        <th style="padding:8px;text-align:center">Actual</th>
+        <th style="padding:8px"></th>
+      </tr></thead>
+      <tbody>{rows}</tbody>
+    </table>"""
+
+
 # ── NCAAF section ────────────────────────────────────────────────────────────
 
 def fetch_ncaaf_from_firestore(yesterday: str) -> list:
@@ -988,7 +1075,15 @@ def main():
         with open(PICKS_PATH, encoding='utf-8') as f:
             mlb_picks_today = json.load(f)
 
-    # NFL — only include games whose kickoff falls on today in ET
+    # NFL results (Firestore, past 2 days — Sun games appear in Tue email, MNF in Wed, TNF in Fri)
+    two_days_ago   = (yesterday_dt - timedelta(days=1)).strftime('%Y-%m-%d')
+    nfl_yest_games = fetch_nfl_from_firestore([yesterday, two_days_ago])
+    if nfl_yest_games:
+        nfl_results_html = build_nfl_results_section(nfl_yest_games)
+        if nfl_results_html:
+            sections.append(nfl_results_html)
+
+    # NFL picks — only include games whose kickoff falls on today in ET
     if os.path.exists(NFL_PATH):
         with open(NFL_PATH, encoding='utf-8') as f:
             nfl_picks = [

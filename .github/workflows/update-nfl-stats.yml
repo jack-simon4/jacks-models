@@ -2,11 +2,11 @@ name: Update NFL Stats (Weekly)
 
 on:
   schedule:
-    # Monday 2 AM ET (06:00 UTC) — captures Sunday afternoon + night games
-    - cron: '0 6 * * 2'
+    # Monday 11 AM ET (15:00 UTC) — captures Sunday games (nflverse needs ~10h after SNF to publish)
+    - cron: '0 15 * * 1'
     # Tuesday 2 AM ET (06:00 UTC) — captures Monday Night Football
-    - cron: '0 6 * * 3'
-    # Thursday 2 AM ET (06:00 UTC) — captures roster/injury updates mid-week
+    - cron: '0 6 * * 2'
+    # Friday 2 AM ET (06:00 UTC) — captures Thursday Night Football + weekly stat refresh
     - cron: '0 6 * * 5'
   workflow_dispatch:
 
