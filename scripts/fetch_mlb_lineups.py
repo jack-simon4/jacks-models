@@ -37,6 +37,11 @@ def _is_pitcher_position(position_dict: dict) -> bool:
     return abbrev == 'P' or code == '1'
 
 
+# Two-way players who appear in both pitcher and hitter CSVs — always keep in
+# the batting order regardless of position code or pitcher-name lookup.
+HITTER_OVERRIDE = {'Shohei Ohtani'}
+
+
 OUTPUT  = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'src', 'assets', 'MLB-Lineups.csv'))
 HISTORY = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'src', 'assets', 'MLB-Last-Lineups.csv'))
 PITCHERS_CSV = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'src', 'assets', 'MLB-Pitchers.csv'))
@@ -120,10 +125,10 @@ def fetch_mlb_lineups():
                         primary_pos = player.get('primaryPosition', {})
                         if not full_name:
                             continue
-                        if _is_pitcher_position(primary_pos):
+                        if _is_pitcher_position(primary_pos) and full_name not in HITTER_OVERRIDE:
                             print(f'[Lineups]   Skipping pitcher {full_name} in {team_name} slot {slot}')
                             continue
-                        if _ascii(full_name) in pitcher_names:
+                        if _ascii(full_name) in pitcher_names and full_name not in HITTER_OVERRIDE:
                             print(f'[Lineups]   Skipping pitcher {full_name} in {team_name} slot {slot} (CSV match)')
                             continue
                         live_rows.append({'Team': team_name + str(slot), 'Player': _ascii(full_name)})
@@ -136,10 +141,10 @@ def fetch_mlb_lineups():
                 position    = player_data.get('position', {})
                 if not full_name:
                     continue
-                if _is_pitcher_position(position):
+                if _is_pitcher_position(position) and full_name not in HITTER_OVERRIDE:
                     print(f'[Lineups]   Skipping pitcher {full_name} in {team_name} slot {slot}')
                     continue
-                if _ascii(full_name) in pitcher_names:
+                if _ascii(full_name) in pitcher_names and full_name not in HITTER_OVERRIDE:
                     print(f'[Lineups]   Skipping pitcher {full_name} in {team_name} slot {slot} (CSV match)')
                     continue
                 live_rows.append({'Team': team_name + str(slot), 'Player': _ascii(full_name)})
@@ -173,7 +178,7 @@ def fetch_mlb_lineups():
             for slot, player in enumerate(slots, start=1):
                 if not player:
                     continue
-                if _ascii(player) in pitcher_names:
+                if _ascii(player) in pitcher_names and player not in HITTER_OVERRIDE:
                     print(f'[Lineups]   Removing pitcher {player} from {team_name} history (slot {slot})')
                     continue
                 fallback_rows.append({'Team': team_name + str(slot), 'Player': _ascii(player)})
@@ -189,7 +194,7 @@ def fetch_mlb_lineups():
             for slot, player in enumerate(slots, start=1):
                 if not player:
                     continue
-                if _ascii(player) in pitcher_names:
+                if _ascii(player) in pitcher_names and player not in HITTER_OVERRIDE:
                     continue
                 fallback_rows.append({'Team': team_name + str(slot), 'Player': _ascii(player)})
             fallback_count += 1
