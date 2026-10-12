@@ -51,10 +51,18 @@ MIN_REC_TARGETS  = 20   # minimum season targets for a receiver to qualify
 MAX_RBS_PER_TEAM = 3
 MAX_REC_PER_TEAM = 4    # top WRs + TEs combined
 
+# Manual starter overrides — update when injury reports, trades, or API data errors
+# cause the wrong QB to be selected. Map team_abbr -> exact QB display name.
+STARTER_OVERRIDE: dict[str, str] = {
+    # Example: 'ATL': 'Michael Penix Jr.',
+}
+
 LG_PASS_YPA = 7.175
 LG_PASS_APG = 32.69
 LG_RUSH_YPC = 4.44
 LG_RUSH_APG = 6.5    # per-RB share (team total ~27 split among ~3-4 backs)
+LG_RUSH_TD_PER_ATT = 0.033   # ~1 rushing TD per 30 carries (league average)
+LG_REC_TD_PER_TGT  = 0.045   # ~1 receiving TD per 22 targets (league average)
 
 TEAM_NAMES = {
     'ARI': 'Arizona Cardinals',    'ATL': 'Atlanta Falcons',
@@ -121,7 +129,7 @@ def apply_roster_override(df: pd.DataFrame,
                           roster_by_id: dict[str, str],
                           roster_by_name: dict[str, str] | None = None) -> pd.DataFrame:
     """Re-assign the team column in df using current-season roster data.
-    First tries player_id → team lookup; falls back to full-name matching for
+    First tries player_id -> team lookup; falls back to full-name matching for
     PFR-sourced rows where pfr_id != gsis_id."""
     if df is None or df.empty:
         return df
@@ -134,7 +142,7 @@ def apply_roster_override(df: pd.DataFrame,
         new_teams = df[id_col].map(roster_by_id)
         moved     = new_teams.notna() & (new_teams != df['team'])
         for _, row in df[moved].iterrows():
-            print(f'  [Team update/id] {str(row.get(name_col,"")).strip()}: {row["team"]} → {roster_by_id[str(row[id_col])]}')
+            print(f'  [Team update/id] {str(row.get(name_col,"")).strip()}: {row["team"]} -> {roster_by_id[str(row[id_col])]}')
         df.loc[new_teams.notna(), 'team'] = new_teams[new_teams.notna()]
 
     # Pass 2: exact name-based fallback (e.g. PFR data whose pfr_id != gsis_id)
@@ -146,7 +154,7 @@ def apply_roster_override(df: pd.DataFrame,
             for _, row in df[moved].iterrows():
                 nm  = str(row.get(name_col, '')).strip()
                 new = roster_by_name.get(nm, '')
-                print(f'  [Team update/name] {nm}: {row["team"]} → {new}')
+                print(f'  [Team update/name] {nm}: {row["team"]} -> {new}')
             df.loc[name_teams.notna(), 'team'] = name_teams[name_teams.notna()]
 
     # Pass 3: normalized name fallback — strips apostrophes/dots so
@@ -162,7 +170,7 @@ def apply_roster_override(df: pd.DataFrame,
         for _, row in df[moved].iterrows():
             nm  = str(row.get(name_col, '')).strip()
             new = norm_roster.get(_norm(nm), '')
-            print(f'  [Team update/norm] {nm}: {row["team"]} → {new}')
+            print(f'  [Team update/norm] {nm}: {row["team"]} -> {new}')
         df.loc[norm_teams.notna(), 'team'] = norm_teams[norm_teams.notna()]
 
     return df
@@ -205,7 +213,7 @@ def fetch_seasonal_from_pfr(year: int) -> pd.DataFrame | None:
                     )
                 player_map[pid]['carries']       = att
                 player_map[pid]['rushing_yards'] = float(r.get('yds', 0) or 0)
-                player_map[pid]['rushing_tds']   = float(r.get('td', 0) or 0)
+                player_map[pid]['rushing_tds']   = _safe(r.get('td'), 0)
                 player_map[pid]['games']         = max(player_map[pid]['games'], g)
             n_rush = sum(1 for v in player_map.values() if v['carries'] > 0)
             print(f'[NFLPlayers] PFR rush {year}: {n_rush} rushers.')
@@ -233,7 +241,7 @@ def fetch_seasonal_from_pfr(year: int) -> pd.DataFrame | None:
                 player_map[pid]['targets']         = tgts
                 player_map[pid]['receptions']      = float(r.get('rec', 0) or 0)
                 player_map[pid]['receiving_yards'] = float(r.get('yds', 0) or 0)
-                player_map[pid]['receiving_tds']   = float(r.get('td', 0) or 0)
+                player_map[pid]['receiving_tds']   = _safe(r.get('td'), 0)
                 player_map[pid]['games']           = max(player_map[pid]['games'], g)
             n_rec = sum(1 for v in player_map.values() if v['targets'] > 0)
             print(f'[NFLPlayers] PFR rec {year}: {n_rec} receivers.')
@@ -427,12 +435,24 @@ def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
                 return row
         return None
 
+    def _norm_name(s: str) -> str:
+        """Strip Jr./Sr./II/III/IV suffixes for fuzzy QB name matching."""
+        import re
+        return re.sub(r'\s+(Jr\.?|Sr\.?|II|III|IV|V)$', '', s.strip(), flags=re.IGNORECASE).strip().lower()
+
     def find_qb_by_name(df: pd.DataFrame | None, name: str) -> object | None:
-        """Find a QB row anywhere in df by exact display-name match."""
+        """Find a QB row by display-name, with suffix-normalized fallback."""
         if df is None or df.empty or not name:
             return None
         nc = _name_col(df)
+        # Exact match first
         match = df[(df['position'] == 'QB') & (df[nc].str.strip() == name)]
+        if not match.empty:
+            return match.sort_values('attempts', ascending=False).iloc[0]
+        # Fuzzy match ignoring Jr./Sr./II suffixes
+        norm_target = _norm_name(name)
+        norm_series = df[nc].str.strip().apply(_norm_name)
+        match = df[(df['position'] == 'QB') & (norm_series == norm_target)]
         if not match.empty:
             return match.sort_values('attempts', ascending=False).iloc[0]
         return None
@@ -452,9 +472,10 @@ def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
         # accumulate enough attempts for the prior-year bar (50).
         cur_row = get_qb_stats(cur_df, abbr, min_att=MIN_QB_ATTEMPTS_CUR)
         if cur_row is None and dc_starter:
-            # No stats yet (early season / bye / injury) — check depth chart name
+            # No stats yet (early season / bye / injury / PFR data lag) —
+            # accept any depth-chart-listed starter regardless of attempt count.
             candidate = find_qb_by_name(cur_df, dc_starter)
-            if candidate is not None and float(candidate.get('attempts', 0) or 0) >= 5:
+            if candidate is not None:
                 cur_row = candidate
 
         # Check if the stats-based starter is injured — if so, promote backup
@@ -464,9 +485,20 @@ def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
                 print(f'  [{team_name}] {starter_name} is Out/Doubtful — promoting backup.')
                 backup_name = dc_backup
                 if backup_name:
-                    cur_row = find_qb_by_name(cur_df, backup_name) or get_qb_stats(cur_df, abbr, exclude_names={starter_name}, min_att=MIN_QB_ATTEMPTS_CUR)
+                    _bk = find_qb_by_name(cur_df, backup_name)
+                    cur_row = _bk if _bk is not None else get_qb_stats(cur_df, abbr, exclude_names={starter_name}, min_att=MIN_QB_ATTEMPTS_CUR)
                 else:
                     cur_row = get_qb_stats(cur_df, abbr, exclude_names={starter_name}, min_att=MIN_QB_ATTEMPTS_CUR)
+
+        # ── Manual override: force a specific starter regardless of data ─────
+        override_name = STARTER_OVERRIDE.get(abbr)
+        if override_name:
+            ov = find_qb_by_name(cur_df, override_name)
+            if ov is None:
+                ov = find_qb_by_name(prior_df, override_name)
+            if ov is not None:
+                cur_row = ov
+                print(f'  [{team_name}] QB manually overridden to: {override_name}')
 
         # ── Step 3: prior-season fallback — also stats-first ──────────────────
         # Use the QB with the most prior-season attempts (= actual starter),
@@ -604,6 +636,10 @@ def build_rb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
                     cur_apg = w * cur_apg + (1 - w) * (pr_c  / pr_g)
                     cur_tdg = w * cur_tdg + (1 - w) * (pr_td / pr_g)
 
+            # PFR seasonal data doesn't include TDs — use league-average rate as floor
+            if cur_tdg == 0.0 and cur_apg > 0:
+                cur_tdg = cur_apg * LG_RUSH_TD_PER_ATT
+
             rows.append({
                 'Team':         team_name,
                 'Name':         name,
@@ -683,6 +719,10 @@ def build_receivers_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | No
                     cur_rpg = w * cur_rpg + (1 - w) * (pr_rec  / pr_g)
                     cur_ypt = w * cur_ypt + (1 - w) * (pr_y    / pr_t)
                     cur_tdg = w * cur_tdg + (1 - w) * (pr_td   / pr_g)
+
+            # PFR seasonal data doesn't include TDs — use league-average rate as floor
+            if cur_tdg == 0.0 and cur_tpg > 0:
+                cur_tdg = cur_tpg * LG_REC_TD_PER_TGT
 
             rows.append({
                 'Team':        team_name,
