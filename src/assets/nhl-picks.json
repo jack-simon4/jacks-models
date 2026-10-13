@@ -32,6 +32,22 @@
     "rank": 2
   },
   {
+    "gameId": 2026020152,
+    "homeTeam": "Buffalo Sabres",
+    "awayTeam": "Philadelphia Flyers",
+    "homeGoalie": "Ukko-Pekka Luukkonen",
+    "awayGoalie": "Dan Vladar",
+    "predictedHomeScore": 3.42,
+    "predictedAwayScore": 0.82,
+    "pick": "Buffalo Sabres",
+    "winProb": 0.861,
+    "confidence": "Elite",
+    "gameTime": "2026-10-21T23:30:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 3
+  },
+  {
     "gameId": 2026020110,
     "homeTeam": "Detroit Red Wings",
     "awayTeam": "Philadelphia Flyers",
@@ -45,7 +61,23 @@
     "gameTime": "2026-10-15T23:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 3
+    "rank": 4
+  },
+  {
+    "gameId": 2026020128,
+    "homeTeam": "Philadelphia Flyers",
+    "awayTeam": "Ottawa Senators",
+    "homeGoalie": "Dan Vladar",
+    "awayGoalie": "James Reimer",
+    "predictedHomeScore": 1.56,
+    "predictedAwayScore": 3.44,
+    "pick": "Ottawa Senators",
+    "winProb": 0.789,
+    "confidence": "Elite",
+    "gameTime": "2026-10-17T23:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 5
   },
   {
     "gameId": 2026020119,
@@ -61,7 +93,7 @@
     "gameTime": "2026-10-17T01:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 4
+    "rank": 6
   },
   {
     "gameId": 2026020104,
@@ -77,23 +109,7 @@
     "gameTime": "2026-10-14T02:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 5
-  },
-  {
-    "gameId": 2026020128,
-    "homeTeam": "Philadelphia Flyers",
-    "awayTeam": "Ottawa Senators",
-    "homeGoalie": "Dan Vladar",
-    "awayGoalie": "James Reimer",
-    "predictedHomeScore": 1.52,
-    "predictedAwayScore": 3.33,
-    "pick": "Ottawa Senators",
-    "winProb": 0.78,
-    "confidence": "Elite",
-    "gameTime": "2026-10-17T23:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 6
+    "rank": 7
   },
   {
     "gameId": 2026020100,
@@ -109,7 +125,7 @@
     "gameTime": "2026-10-14T00:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 7
+    "rank": 8
   },
   {
     "gameId": 2026020107,
@@ -125,7 +141,7 @@
     "gameTime": "2026-10-15T00:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 8
+    "rank": 9
   },
   {
     "gameId": 2026020122,
@@ -141,7 +157,7 @@
     "gameTime": "2026-10-17T19:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 9
+    "rank": 10
   },
   {
     "gameId": 2026020124,
@@ -149,15 +165,15 @@
     "awayTeam": "Seattle Kraken",
     "homeGoalie": "Daniil Tarasov",
     "awayGoalie": "Victor Ostman",
-    "predictedHomeScore": 1.88,
-    "predictedAwayScore": 3.51,
+    "predictedHomeScore": 2.0,
+    "predictedAwayScore": 3.65,
     "pick": "Seattle Kraken",
-    "winProb": 0.758,
+    "winProb": 0.76,
     "confidence": "Elite",
     "gameTime": "2026-10-17T22:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 10
+    "rank": 11
   },
   {
     "gameId": 2026020142,
@@ -165,15 +181,15 @@
     "awayTeam": "Colorado Avalanche",
     "homeGoalie": "Nico Daws",
     "awayGoalie": "Scott Wedgewood",
-    "predictedHomeScore": 2.79,
-    "predictedAwayScore": 4.18,
+    "predictedHomeScore": 2.54,
+    "predictedAwayScore": 4.01,
     "pick": "Colorado Avalanche",
-    "winProb": 0.726,
+    "winProb": 0.737,
     "confidence": "Elite",
     "gameTime": "2026-10-20T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 11
+    "rank": 12
   },
   {
     "gameId": 2026020150,
@@ -189,39 +205,7 @@
     "gameTime": "2026-10-21T02:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 12
-  },
-  {
-    "gameId": 2026020148,
-    "homeTeam": "Edmonton Oilers",
-    "awayTeam": "Minnesota Wild",
-    "homeGoalie": "Connor Ingram",
-    "awayGoalie": "Jesper Wallstedt",
-    "predictedHomeScore": 4.0,
-    "predictedAwayScore": 2.84,
-    "pick": "Edmonton Oilers",
-    "winProb": 0.693,
-    "confidence": "Elite",
-    "gameTime": "2026-10-21T01:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
     "rank": 13
-  },
-  {
-    "gameId": 2026020101,
-    "homeTeam": "Nashville Predators",
-    "awayTeam": "Vegas Golden Knights",
-    "homeGoalie": "Justus Annunen",
-    "awayGoalie": "Akira Schmid",
-    "predictedHomeScore": 2.74,
-    "predictedAwayScore": 3.89,
-    "pick": "Vegas Golden Knights",
-    "winProb": 0.691,
-    "confidence": "Elite",
-    "gameTime": "2026-10-14T00:45:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 14
   },
   {
     "gameId": 2026020140,
@@ -235,6 +219,22 @@
     "winProb": 0.691,
     "confidence": "Elite",
     "gameTime": "2026-10-20T01:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 14
+  },
+  {
+    "gameId": 2026020099,
+    "homeTeam": "Winnipeg Jets",
+    "awayTeam": "Minnesota Wild",
+    "homeGoalie": "Connor Hellebuyck",
+    "awayGoalie": "Jesper Wallstedt",
+    "predictedHomeScore": 2.57,
+    "predictedAwayScore": 3.68,
+    "pick": "Minnesota Wild",
+    "winProb": 0.685,
+    "confidence": "Elite",
+    "gameTime": "2026-10-14T00:15:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 15
@@ -288,6 +288,22 @@
     "rank": 18
   },
   {
+    "gameId": 2026020113,
+    "homeTeam": "New Jersey Devils",
+    "awayTeam": "New York Rangers",
+    "homeGoalie": "Nico Daws",
+    "awayGoalie": "Dylan Garand",
+    "predictedHomeScore": 1.88,
+    "predictedAwayScore": 2.92,
+    "pick": "New York Rangers",
+    "winProb": 0.674,
+    "confidence": "Strong",
+    "gameTime": "2026-10-15T23:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 19
+  },
+  {
     "gameId": 2026020149,
     "homeTeam": "Seattle Kraken",
     "awayTeam": "Detroit Red Wings",
@@ -301,7 +317,7 @@
     "gameTime": "2026-10-21T01:40:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 19
+    "rank": 20
   },
   {
     "gameId": 2026020102,
@@ -317,71 +333,39 @@
     "gameTime": "2026-10-14T01:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 20
-  },
-  {
-    "gameId": 2026020113,
-    "homeTeam": "New Jersey Devils",
-    "awayTeam": "New York Rangers",
-    "homeGoalie": "Nico Daws",
-    "awayGoalie": "Dylan Garand",
-    "predictedHomeScore": 2.11,
-    "predictedAwayScore": 3.04,
-    "pick": "New York Rangers",
-    "winProb": 0.657,
-    "confidence": "Strong",
-    "gameTime": "2026-10-15T23:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
     "rank": 21
   },
   {
-    "gameId": 2026020099,
-    "homeTeam": "Winnipeg Jets",
+    "gameId": 2026020148,
+    "homeTeam": "Edmonton Oilers",
     "awayTeam": "Minnesota Wild",
-    "homeGoalie": "Connor Hellebuyck",
+    "homeGoalie": "Connor Ingram",
     "awayGoalie": "Jesper Wallstedt",
-    "predictedHomeScore": 2.65,
-    "predictedAwayScore": 3.56,
-    "pick": "Minnesota Wild",
-    "winProb": 0.654,
+    "predictedHomeScore": 3.92,
+    "predictedAwayScore": 2.96,
+    "pick": "Edmonton Oilers",
+    "winProb": 0.662,
     "confidence": "Strong",
-    "gameTime": "2026-10-14T00:15:00Z",
+    "gameTime": "2026-10-21T01:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 22
   },
   {
-    "gameId": 2026020134,
-    "homeTeam": "Vegas Golden Knights",
-    "awayTeam": "Pittsburgh Penguins",
-    "homeGoalie": "Akira Schmid",
-    "awayGoalie": "Sergei Murashov",
-    "predictedHomeScore": 4.01,
-    "predictedAwayScore": 3.11,
+    "gameId": 2026020101,
+    "homeTeam": "Nashville Predators",
+    "awayTeam": "Vegas Golden Knights",
+    "homeGoalie": "Justus Annunen",
+    "awayGoalie": "Akira Schmid",
+    "predictedHomeScore": 2.79,
+    "predictedAwayScore": 3.64,
     "pick": "Vegas Golden Knights",
-    "winProb": 0.652,
+    "winProb": 0.645,
     "confidence": "Strong",
-    "gameTime": "2026-10-18T02:00:00Z",
+    "gameTime": "2026-10-14T00:45:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 23
-  },
-  {
-    "gameId": 2026020088,
-    "homeTeam": "New Jersey Devils",
-    "awayTeam": "Ottawa Senators",
-    "homeGoalie": "Nico Daws",
-    "awayGoalie": "James Reimer",
-    "predictedHomeScore": 3.43,
-    "predictedAwayScore": 2.61,
-    "pick": "New Jersey Devils",
-    "winProb": 0.64,
-    "confidence": "Strong",
-    "gameTime": "2026-10-12T23:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 24
   },
   {
     "gameId": 2026020093,
@@ -397,7 +381,7 @@
     "gameTime": "2026-10-13T22:45:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 25
+    "rank": 24
   },
   {
     "gameId": 2026020123,
@@ -413,7 +397,7 @@
     "gameTime": "2026-10-17T20:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 26
+    "rank": 25
   },
   {
     "gameId": 2026020137,
@@ -429,7 +413,7 @@
     "gameTime": "2026-10-19T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 27
+    "rank": 26
   },
   {
     "gameId": 2026020130,
@@ -445,7 +429,7 @@
     "gameTime": "2026-10-17T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 28
+    "rank": 27
   },
   {
     "gameId": 2026020091,
@@ -453,31 +437,15 @@
     "awayTeam": "Florida Panthers",
     "homeGoalie": "Jet Greaves",
     "awayGoalie": "Daniil Tarasov",
-    "predictedHomeScore": 2.72,
-    "predictedAwayScore": 1.97,
+    "predictedHomeScore": 2.86,
+    "predictedAwayScore": 2.11,
     "pick": "Columbus Blue Jackets",
     "winProb": 0.628,
     "confidence": "Strong",
     "gameTime": "2026-10-13T22:15:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 29
-  },
-  {
-    "gameId": 2026020118,
-    "homeTeam": "Vegas Golden Knights",
-    "awayTeam": "Calgary Flames",
-    "homeGoalie": "Akira Schmid",
-    "awayGoalie": "Arsenii Sergeev",
-    "predictedHomeScore": 2.79,
-    "predictedAwayScore": 2.05,
-    "pick": "Vegas Golden Knights",
-    "winProb": 0.627,
-    "confidence": "Strong",
-    "gameTime": "2026-10-16T02:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 30
+    "rank": 28
   },
   {
     "gameId": 2026020095,
@@ -491,6 +459,38 @@
     "winProb": 0.625,
     "confidence": "Strong",
     "gameTime": "2026-10-13T23:15:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 29
+  },
+  {
+    "gameId": 2026020092,
+    "homeTeam": "Montr\u00e9al Canadiens",
+    "awayTeam": "Buffalo Sabres",
+    "homeGoalie": "Jacob Fowler",
+    "awayGoalie": "Ukko-Pekka Luukkonen",
+    "predictedHomeScore": 2.03,
+    "predictedAwayScore": 2.71,
+    "pick": "Buffalo Sabres",
+    "winProb": 0.617,
+    "confidence": "Strong",
+    "gameTime": "2026-10-13T22:30:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 30
+  },
+  {
+    "gameId": 2026020126,
+    "homeTeam": "Montr\u00e9al Canadiens",
+    "awayTeam": "Buffalo Sabres",
+    "homeGoalie": "Jacob Fowler",
+    "awayGoalie": "Ukko-Pekka Luukkonen",
+    "predictedHomeScore": 2.03,
+    "predictedAwayScore": 2.71,
+    "pick": "Buffalo Sabres",
+    "winProb": 0.617,
+    "confidence": "Strong",
+    "gameTime": "2026-10-17T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 31
@@ -544,22 +544,6 @@
     "rank": 34
   },
   {
-    "gameId": 2026020087,
-    "homeTeam": "Buffalo Sabres",
-    "awayTeam": "Florida Panthers",
-    "homeGoalie": "Ukko-Pekka Luukkonen",
-    "awayGoalie": "Daniil Tarasov",
-    "predictedHomeScore": 2.08,
-    "predictedAwayScore": 1.43,
-    "pick": "Buffalo Sabres",
-    "winProb": 0.612,
-    "confidence": "Strong",
-    "gameTime": "2026-10-12T17:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 35
-  },
-  {
     "gameId": 2026020139,
     "homeTeam": "Toronto Maple Leafs",
     "awayTeam": "San Jose Sharks",
@@ -573,20 +557,36 @@
     "gameTime": "2026-10-19T23:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
+    "rank": 35
+  },
+  {
+    "gameId": 2026020116,
+    "homeTeam": "Minnesota Wild",
+    "awayTeam": "St. Louis Blues",
+    "homeGoalie": "Jesper Wallstedt",
+    "awayGoalie": "Joel Hofer",
+    "predictedHomeScore": 3.13,
+    "predictedAwayScore": 2.49,
+    "pick": "Minnesota Wild",
+    "winProb": 0.61,
+    "confidence": "Strong",
+    "gameTime": "2026-10-16T00:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
     "rank": 36
   },
   {
-    "gameId": 2026020109,
-    "homeTeam": "Ottawa Senators",
-    "awayTeam": "New York Islanders",
-    "homeGoalie": "James Reimer",
-    "awayGoalie": "Ilya Sorokin",
-    "predictedHomeScore": 2.64,
-    "predictedAwayScore": 3.22,
-    "pick": "New York Islanders",
-    "winProb": 0.6,
-    "confidence": "Lean",
-    "gameTime": "2026-10-15T23:00:00Z",
+    "gameId": 2026020134,
+    "homeTeam": "Vegas Golden Knights",
+    "awayTeam": "Pittsburgh Penguins",
+    "homeGoalie": "Akira Schmid",
+    "awayGoalie": "Sergei Murashov",
+    "predictedHomeScore": 3.77,
+    "predictedAwayScore": 3.17,
+    "pick": "Vegas Golden Knights",
+    "winProb": 0.603,
+    "confidence": "Strong",
+    "gameTime": "2026-10-18T02:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 37
@@ -608,6 +608,22 @@
     "rank": 38
   },
   {
+    "gameId": 2026020109,
+    "homeTeam": "Ottawa Senators",
+    "awayTeam": "New York Islanders",
+    "homeGoalie": "James Reimer",
+    "awayGoalie": "Ilya Sorokin",
+    "predictedHomeScore": 2.77,
+    "predictedAwayScore": 3.28,
+    "pick": "New York Islanders",
+    "winProb": 0.588,
+    "confidence": "Lean",
+    "gameTime": "2026-10-15T23:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 39
+  },
+  {
     "gameId": 2026020132,
     "homeTeam": "Los Angeles Kings",
     "awayTeam": "Boston Bruins",
@@ -621,7 +637,7 @@
     "gameTime": "2026-10-18T01:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 39
+    "rank": 40
   },
   {
     "gameId": 2026020117,
@@ -637,7 +653,7 @@
     "gameTime": "2026-10-16T01:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 40
+    "rank": 41
   },
   {
     "gameId": 2026020133,
@@ -653,36 +669,20 @@
     "gameTime": "2026-10-18T02:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 41
-  },
-  {
-    "gameId": 2026020089,
-    "homeTeam": "Minnesota Wild",
-    "awayTeam": "Vegas Golden Knights",
-    "homeGoalie": "Jesper Wallstedt",
-    "awayGoalie": "Akira Schmid",
-    "predictedHomeScore": 3.03,
-    "predictedAwayScore": 3.52,
-    "pick": "Vegas Golden Knights",
-    "winProb": 0.585,
-    "confidence": "Lean",
-    "gameTime": "2026-10-13T00:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
     "rank": 42
   },
   {
-    "gameId": 2026020116,
-    "homeTeam": "Minnesota Wild",
-    "awayTeam": "St. Louis Blues",
-    "homeGoalie": "Jesper Wallstedt",
-    "awayGoalie": "Joel Hofer",
-    "predictedHomeScore": 3.01,
-    "predictedAwayScore": 2.56,
-    "pick": "Minnesota Wild",
+    "gameId": 2026020118,
+    "homeTeam": "Vegas Golden Knights",
+    "awayTeam": "Calgary Flames",
+    "homeGoalie": "Akira Schmid",
+    "awayGoalie": "Arsenii Sergeev",
+    "predictedHomeScore": 2.55,
+    "predictedAwayScore": 2.1,
+    "pick": "Vegas Golden Knights",
     "winProb": 0.578,
     "confidence": "Lean",
-    "gameTime": "2026-10-16T00:00:00Z",
+    "gameTime": "2026-10-16T02:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 43
@@ -704,22 +704,6 @@
     "rank": 44
   },
   {
-    "gameId": 2026020090,
-    "homeTeam": "Detroit Red Wings",
-    "awayTeam": "New Jersey Devils",
-    "homeGoalie": "John Gibson",
-    "awayGoalie": "Nico Daws",
-    "predictedHomeScore": 2.66,
-    "predictedAwayScore": 3.09,
-    "pick": "New Jersey Devils",
-    "winProb": 0.575,
-    "confidence": "Lean",
-    "gameTime": "2026-10-13T22:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 45
-  },
-  {
     "gameId": 2026020111,
     "homeTeam": "Tampa Bay Lightning",
     "awayTeam": "Seattle Kraken",
@@ -733,7 +717,7 @@
     "gameTime": "2026-10-15T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 46
+    "rank": 45
   },
   {
     "gameId": 2026020112,
@@ -741,12 +725,28 @@
     "awayTeam": "Vancouver Canucks",
     "homeGoalie": "Daniil Tarasov",
     "awayGoalie": "Thatcher Demko",
-    "predictedHomeScore": 2.56,
-    "predictedAwayScore": 2.97,
+    "predictedHomeScore": 2.68,
+    "predictedAwayScore": 3.09,
     "pick": "Vancouver Canucks",
     "winProb": 0.571,
     "confidence": "Lean",
     "gameTime": "2026-10-15T23:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 46
+  },
+  {
+    "gameId": 2026020135,
+    "homeTeam": "Minnesota Wild",
+    "awayTeam": "Columbus Blue Jackets",
+    "homeGoalie": "Jesper Wallstedt",
+    "awayGoalie": "Jet Greaves",
+    "predictedHomeScore": 3.17,
+    "predictedAwayScore": 2.78,
+    "pick": "Minnesota Wild",
+    "winProb": 0.568,
+    "confidence": "Lean",
+    "gameTime": "2026-10-18T22:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 47
@@ -768,6 +768,22 @@
     "rank": 48
   },
   {
+    "gameId": 2026020090,
+    "homeTeam": "Detroit Red Wings",
+    "awayTeam": "New Jersey Devils",
+    "homeGoalie": "John Gibson",
+    "awayGoalie": "Nico Daws",
+    "predictedHomeScore": 2.5,
+    "predictedAwayScore": 2.85,
+    "pick": "New Jersey Devils",
+    "winProb": 0.561,
+    "confidence": "Lean",
+    "gameTime": "2026-10-13T22:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 49
+  },
+  {
     "gameId": 2026020097,
     "homeTeam": "New York Islanders",
     "awayTeam": "Vancouver Canucks",
@@ -781,7 +797,7 @@
     "gameTime": "2026-10-13T23:45:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 49
+    "rank": 50
   },
   {
     "gameId": 2026020127,
@@ -797,55 +813,7 @@
     "gameTime": "2026-10-17T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 50
-  },
-  {
-    "gameId": 2026020096,
-    "homeTeam": "Ottawa Senators",
-    "awayTeam": "St. Louis Blues",
-    "homeGoalie": "James Reimer",
-    "awayGoalie": "Joel Hofer",
-    "predictedHomeScore": 2.51,
-    "predictedAwayScore": 2.85,
-    "pick": "St. Louis Blues",
-    "winProb": 0.559,
-    "confidence": "Lean",
-    "gameTime": "2026-10-13T23:30:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
     "rank": 51
-  },
-  {
-    "gameId": 2026020092,
-    "homeTeam": "Montr\u00e9al Canadiens",
-    "awayTeam": "Buffalo Sabres",
-    "homeGoalie": "Jacob Fowler",
-    "awayGoalie": "Ukko-Pekka Luukkonen",
-    "predictedHomeScore": 2.0,
-    "predictedAwayScore": 2.32,
-    "pick": "Buffalo Sabres",
-    "winProb": 0.556,
-    "confidence": "Lean",
-    "gameTime": "2026-10-13T22:30:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 52
-  },
-  {
-    "gameId": 2026020126,
-    "homeTeam": "Montr\u00e9al Canadiens",
-    "awayTeam": "Buffalo Sabres",
-    "homeGoalie": "Jacob Fowler",
-    "awayGoalie": "Ukko-Pekka Luukkonen",
-    "predictedHomeScore": 2.0,
-    "predictedAwayScore": 2.32,
-    "pick": "Buffalo Sabres",
-    "winProb": 0.556,
-    "confidence": "Lean",
-    "gameTime": "2026-10-17T23:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 53
   },
   {
     "gameId": 2026020103,
@@ -861,6 +829,6 @@
     "gameTime": "2026-10-14T01:45:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 54
+    "rank": 52
   }
 ]
