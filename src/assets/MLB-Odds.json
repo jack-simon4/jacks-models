@@ -2,8 +2,8 @@
   "Tampa Bay Rays": {
     "home_team": "Tampa Bay Rays",
     "away_team": "Cleveland Guardians",
-    "home_ml": "-128",
-    "away_ml": "+114",
+    "home_ml": "-1800",
+    "away_ml": "+800",
     "book": "fanduel"
   },
   "Los Angeles Dodgers": {

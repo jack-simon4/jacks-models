@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "matchup": "Milwaukee Brewers @ Los Angeles Dodgers",
+    "awayTeam": "Milwaukee Brewers",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Robert Gasser",
+    "homePitcher": "Blake Snell",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -178",
+    "odds": "-178",
+    "winProb": 0.592,
+    "edge": 0.092,
+    "confidence": "Strong",
+    "predictedScore": "Milwaukee Brewers 4.1 \u2013 Los Angeles Dodgers 5.3",
+    "predictedHomeScore": 5.3,
+    "predictedAwayScore": 4.06,
+    "gameTime": "2026-10-15T00:00:00Z",
+    "gamePk": 849811,
+    "rank": 1
+  }
+]
