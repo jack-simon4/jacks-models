@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "matchup": "Milwaukee Brewers @ Los Angeles Dodgers",
+    "awayTeam": "Milwaukee Brewers",
+    "homeTeam": "Los Angeles Dodgers",
+    "awayPitcher": "Shane Drohan",
+    "homePitcher": "Tyler Glasnow",
+    "pick": "Los Angeles Dodgers",
+    "prediction": "Los Angeles Dodgers -156",
+    "odds": "-156",
+    "winProb": 0.633,
+    "edge": 0.133,
+    "confidence": "Strong",
+    "predictedScore": "Milwaukee Brewers 4.0 \u2013 Los Angeles Dodgers 5.9",
+    "predictedHomeScore": 5.87,
+    "predictedAwayScore": 4.05,
+    "gameTime": "2026-10-16T00:00:00Z",
+    "gamePk": 849810,
+    "rank": 1
+  }
+]
