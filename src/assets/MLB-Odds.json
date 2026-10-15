@@ -2,8 +2,8 @@
   "Los Angeles Dodgers": {
     "home_team": "Los Angeles Dodgers",
     "away_team": "Milwaukee Brewers",
-    "home_ml": "-184",
-    "away_ml": "+154",
+    "home_ml": "-140",
+    "away_ml": "+110",
     "book": "fanduel"
   },
   "Cleveland Guardians": {
