@@ -1,11 +1,4 @@
 {
-  "Los Angeles Dodgers": {
-    "home_team": "Los Angeles Dodgers",
-    "away_team": "Milwaukee Brewers",
-    "home_ml": "-140",
-    "away_ml": "+110",
-    "book": "fanduel"
-  },
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "Tampa Bay Rays",
