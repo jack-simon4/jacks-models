@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "matchup": "Tampa Bay Rays @ Cleveland Guardians",
+    "awayTeam": "Tampa Bay Rays",
+    "homeTeam": "Cleveland Guardians",
+    "awayPitcher": "Drew Rasmussen",
+    "homePitcher": "Parker Messick",
+    "pick": "Tampa Bay Rays",
+    "prediction": "Tampa Bay Rays -124",
+    "odds": "-124",
+    "winProb": 0.587,
+    "edge": 0.087,
+    "confidence": "Strong",
+    "predictedScore": "Tampa Bay Rays 5.1 \u2013 Cleveland Guardians 3.9",
+    "predictedHomeScore": 3.91,
+    "predictedAwayScore": 5.08,
+    "gameTime": "2026-10-18T21:08:00Z",
+    "gamePk": 849817,
+    "rank": 1
+  }
+]

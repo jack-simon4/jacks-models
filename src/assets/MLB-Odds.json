@@ -2,8 +2,8 @@
   "Cleveland Guardians": {
     "home_team": "Cleveland Guardians",
     "away_team": "Tampa Bay Rays",
-    "home_ml": "+180",
-    "away_ml": "-235",
+    "home_ml": "+106",
+    "away_ml": "-124",
     "book": "fanduel"
   }
 }
