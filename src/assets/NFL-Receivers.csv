@@ -45,6 +45,7 @@ Detroit Lions,Isaac TeSlaa,WR,2.12,9.366,0.095,1.21
 Green Bay Packers,Matthew Golden,WR,5.71,8.29,0.257,3.17
 Green Bay Packers,Christian Watson,WR,7.06,10.616,0.318,4.31
 Green Bay Packers,Tucker Kraft,TE,5.56,9.284,0.25,3.62
+Green Bay Packers,Skyy Moore,WR,3.67,3.364,0.165,1.67
 Houston Texans,Dalton Schultz,TE,7.02,7.656,0.316,5.39
 Houston Texans,Xavier Hutchinson,WR,4.72,6.836,0.212,2.41
 Houston Texans,Jared Wayne,WR,4.0,5.417,0.18,1.33
@@ -58,6 +59,7 @@ Jacksonville Jaguars,Brian Thomas,WR,5.69,7.394,0.256,3.02
 Jacksonville Jaguars,Jakobi Meyers,WR,3.76,9.449,0.169,2.89
 Jacksonville Jaguars,Brenton Strange,TE,4.38,8.325,0.197,3.27
 Kansas City Chiefs,Travis Kelce,TE,6.22,9.737,0.28,4.54
+Kansas City Chiefs,Rashee Rice,WR,8.22,8.766,0.37,5.77
 Kansas City Chiefs,Xavier Worthy,WR,5.13,6.13,0.231,3.12
 Kansas City Chiefs,Tyquan Thornton,WR,2.33,15.429,0.105,2.0
 Las Vegas Raiders,Tre Tucker,WR,5.26,9.453,0.237,3.47
@@ -65,6 +67,7 @@ Las Vegas Raiders,Michael Mayer,TE,4.15,6.43,0.187,3.18
 Las Vegas Raiders,Brock Bowers,TE,9.35,8.288,0.421,7.08
 Las Vegas Raiders,Jalen Nailor,WR,3.32,7.009,0.15,1.69
 Los Angeles Chargers,Quentin Johnston,WR,5.88,6.881,0.264,3.03
+Los Angeles Chargers,Tre Harris,WR,5.33,9.312,0.24,3.33
 Los Angeles Chargers,Ladd McConkey,WR,6.02,9.227,0.271,4.08
 Los Angeles Chargers,David Njoku,TE,4.0,6.956,0.18,2.84
 Los Angeles Rams,Davante Adams,WR,8.71,8.955,0.392,4.93
@@ -91,6 +94,7 @@ New York Giants,Malik Nabers,WR,7.84,6.734,0.353,4.31
 New York Giants,Malachi Fields,WR,4.0,6.167,0.18,2.0
 New York Giants,Darnell Mooney,WR,4.0,8.299,0.18,2.08
 New York Jets,Garrett Wilson,WR,8.64,7.559,0.389,5.84
+New York Jets,Adonai Mitchell,WR,5.08,6.319,0.229,2.62
 New York Jets,Kenyon Sadiq,TE,4.67,10.214,0.21,4.0
 New York Jets,Isaiah Williams,WR,3.0,6.889,0.135,2.67
 Philadelphia Eagles,DeVonta Smith,WR,9.0,8.704,0.405,6.33
@@ -98,6 +102,7 @@ Philadelphia Eagles,Dontayvion Wicks,WR,3.93,8.986,0.177,2.46
 Philadelphia Eagles,Makai Lemon,WR,3.0,4.222,0.135,2.33
 Philadelphia Eagles,Dallas Goedert,TE,4.92,8.301,0.221,3.44
 Pittsburgh Steelers,DK Metcalf,WR,7.12,6.897,0.321,3.83
+Pittsburgh Steelers,Roman Wilson,WR,6.0,6.333,0.27,3.67
 Pittsburgh Steelers,Pat Freiermuth,TE,3.74,8.518,0.168,2.88
 Pittsburgh Steelers,Germie Bernard,WR,3.0,5.444,0.135,1.67
 San Francisco 49ers,Mike Evans,WR,6.84,6.921,0.308,3.84
