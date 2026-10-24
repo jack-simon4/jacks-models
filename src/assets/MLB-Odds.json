@@ -2,8 +2,8 @@
   "Milwaukee Brewers": {
     "home_team": "Milwaukee Brewers",
     "away_team": "Tampa Bay Rays",
-    "home_ml": "-122",
-    "away_ml": "+104",
+    "home_ml": "-120",
+    "away_ml": "+102",
     "book": "fanduel"
   }
 }
