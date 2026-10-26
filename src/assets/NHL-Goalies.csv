@@ -1,6 +1,6 @@
 Player,GAA,Sv%,Team
 Adin Hill,2.955,0.8819,Vegas Golden Knights
-Akira Schmid,3.624,0.8672,Florida Panthers
+Akira Schmid,3.34,0.8725,Florida Panthers
 Alex Nedeljkovic,2.889,0.9032,San Jose Sharks
 Andrei Vasilevskiy,2.778,0.8836,Tampa Bay Lightning
 Anthony Stolarz,2.795,0.9067,Toronto Maple Leafs
@@ -8,7 +8,7 @@ Anton Forsberg,2.476,0.8941,Los Angeles Kings
 Arturs Silovs,2.874,0.89,Pittsburgh Penguins
 Arvid Soderblom,4.582,0.82,Chicago Blackhawks
 Brandon Bussi,3.266,0.8649,Carolina Hurricanes
-Calvin Pickard,5.0,0.8,Minnesota Wild
+Calvin Pickard,3.5,0.8333,Minnesota Wild
 Cam Talbot,2.82,0.8909,Columbus Blue Jackets
 Carter Hart,2.756,0.8889,Vegas Golden Knights
 Casey DeSmith,1.945,0.9245,Dallas Stars
@@ -25,11 +25,11 @@ Devon Levi,3.108,0.8866,Edmonton Oilers
 Dustin Wolf,4.854,0.8345,Calgary Flames
 Dylan Garand,2.651,0.9005,New York Rangers
 Igor Shesterkin,1.793,0.9266,New York Rangers
-Ilya Sorokin,1.724,0.9344,New York Islanders
-Jacob Fowler,1.939,0.9099,Montréal Canadiens
+Ilya Sorokin,2.261,0.9185,New York Islanders
+Jacob Fowler,1.786,0.9241,Montréal Canadiens
 Jacob Markstrom,2.206,0.8974,Florida Panthers
 Jake Allen,2.844,0.8864,New Jersey Devils
-Jake Oettinger,1.233,0.9394,Dallas Stars
+Jake Oettinger,1.427,0.9297,Dallas Stars
 Jakub Dobes,4.472,0.8472,Montréal Canadiens
 Jeremy Swayman,2.199,0.9197,Boston Bruins
 Jesper Wallstedt,2.079,0.9184,Minnesota Wild
@@ -40,11 +40,11 @@ John Gibson,3.443,0.867,Detroit Red Wings
 Jonas Johansson,4.029,0.8571,Ottawa Senators
 Jordan Binnington,4.677,0.8313,St. Louis Blues
 Joseph Woll,2.99,0.9037,Philadelphia Flyers
-Justus Annunen,6.0,0.8065,Nashville Predators
+Justus Annunen,4.0,0.8461,Nashville Predators
 Juuse Saros,2.82,0.908,Nashville Predators
 Karel Vejmelka,3.132,0.8783,Utah Mammoth
 Kevin Lankinen,6.172,0.8122,Vancouver Canucks
-Leevi Merilainen,2.946,0.9167,Vancouver Canucks
+Leevi Merilainen,3.124,0.9118,Vancouver Canucks
 Linus Ullmark,1.333,0.945,Ottawa Senators
 Logan Thompson,2.896,0.901,Washington Capitals
 Lukas Dostal,3.273,0.8804,Anaheim Ducks
@@ -52,18 +52,18 @@ Mackenzie Blackwood,2.911,0.8925,Colorado Avalanche
 Matt Murray,1.848,0.9,Nashville Predators
 Michael DiPietro,1.686,0.9412,Boston Bruins
 Michal Postava,3.038,0.875,Detroit Red Wings
-Nicolas Daws,2.777,0.8721,New Jersey Devils
+Nico Daws,2.777,0.8721,New Jersey Devils
 Philipp Grubauer,2.765,0.9067,Seattle Kraken
 Pyotr Kochetkov,1.703,0.9161,Carolina Hurricanes
 Samuel Ersson,4.586,0.835,Ottawa Senators
-Scott Wedgewood,2.646,0.9121,Colorado Avalanche
+Scott Wedgewood,3.481,0.8889,Colorado Avalanche
 Sebastian Cossa,3.332,0.82,Utah Mammoth
 Semyon Varlamov,2.249,0.8985,New York Islanders
 Sergei Bobrovsky,3.096,0.8954,Toronto Maple Leafs
 Sergei Murashov,3.5,0.8833,Pittsburgh Penguins
-Spencer Knight,3.521,0.888,Chicago Blackhawks
+Spencer Knight,3.478,0.8904,Chicago Blackhawks
 Spencer Martin,5.092,0.8333,New York Rangers
-Stuart Skinner,2.672,0.9116,Winnipeg Jets
+Stuart Skinner,2.598,0.911,Winnipeg Jets
 Tristan Jarry,3.73,0.8614,Edmonton Oilers
 Ukko-Pekka Luukkonen,3.563,0.8664,Buffalo Sabres
 Ville Husso,3.093,0.8864,Anaheim Ducks
