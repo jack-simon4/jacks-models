@@ -98,6 +98,20 @@
     "rank": 7
   },
   {
+    "gameId": 401866453,
+    "homeTeam": "Akron",
+    "awayTeam": "Ohio",
+    "predictedHomeScore": 17.33,
+    "predictedAwayScore": 35.64,
+    "pick": "Ohio",
+    "winProb": 0.9,
+    "confidence": "Elite",
+    "gameTime": "2026-11-04T00:00:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 8
+  },
+  {
     "gameId": 401858504,
     "homeTeam": "Nebraska",
     "awayTeam": "Washington",
@@ -109,7 +123,7 @@
     "gameTime": "2026-11-01T00:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 8
+    "rank": 9
   },
   {
     "gameId": 401856734,
@@ -123,7 +137,7 @@
     "gameTime": "2026-10-31T19:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 9
+    "rank": 10
   },
   {
     "gameId": 401858508,
@@ -137,7 +151,7 @@
     "gameTime": "2026-10-31T20:15:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 10
+    "rank": 11
   },
   {
     "gameId": 401856843,
@@ -151,7 +165,7 @@
     "gameTime": "2026-10-31T19:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 11
+    "rank": 12
   },
   {
     "gameId": 401856848,
@@ -165,7 +179,7 @@
     "gameTime": "2026-10-31T19:45:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 12
+    "rank": 13
   },
   {
     "gameId": 401860908,
@@ -179,7 +193,7 @@
     "gameTime": "2026-11-01T02:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 13
+    "rank": 14
   },
   {
     "gameId": 401866452,
@@ -193,7 +207,21 @@
     "gameTime": "2026-10-31T16:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 14
+    "rank": 15
+  },
+  {
+    "gameId": 401866455,
+    "homeTeam": "UMass",
+    "awayTeam": "Ball St",
+    "predictedHomeScore": 33.67,
+    "predictedAwayScore": 18.62,
+    "pick": "UMass",
+    "winProb": 0.859,
+    "confidence": "Elite",
+    "gameTime": "2026-11-04T05:00:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 16
   },
   {
     "gameId": 401858277,
@@ -207,7 +235,7 @@
     "gameTime": "2026-10-31T16:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 15
+    "rank": 17
   },
   {
     "gameId": 401858501,
@@ -221,7 +249,7 @@
     "gameTime": "2026-10-31T19:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 16
+    "rank": 18
   },
   {
     "gameId": 401858509,
@@ -235,7 +263,7 @@
     "gameTime": "2026-10-31T23:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 17
+    "rank": 19
   },
   {
     "gameId": 401856737,
@@ -249,7 +277,7 @@
     "gameTime": "2026-10-31T23:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 18
+    "rank": 20
   },
   {
     "gameId": 401858279,
@@ -263,21 +291,21 @@
     "gameTime": "2026-10-31T16:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 19
+    "rank": 21
   },
   {
     "gameId": 401862812,
     "homeTeam": "N Texas",
     "awayTeam": "Florida Atlantic",
     "predictedHomeScore": 57.02,
-    "predictedAwayScore": 44.08,
+    "predictedAwayScore": 44.04,
     "pick": "N Texas",
-    "winProb": 0.825,
+    "winProb": 0.826,
     "confidence": "Elite",
     "gameTime": "2026-10-29T23:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 20
+    "rank": 22
   },
   {
     "gameId": 401858506,
@@ -291,7 +319,7 @@
     "gameTime": "2026-10-31T20:15:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 21
+    "rank": 23
   },
   {
     "gameId": 401862816,
@@ -305,7 +333,7 @@
     "gameTime": "2026-10-31T16:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 22
+    "rank": 24
   },
   {
     "gameId": 401869944,
@@ -319,7 +347,7 @@
     "gameTime": "2026-10-31T18:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 23
+    "rank": 25
   },
   {
     "gameId": 401862813,
@@ -333,7 +361,7 @@
     "gameTime": "2026-10-30T23:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 24
+    "rank": 26
   },
   {
     "gameId": 401856733,
@@ -347,21 +375,21 @@
     "gameTime": "2026-10-31T23:45:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 25
+    "rank": 27
   },
   {
     "gameId": 401856735,
     "homeTeam": "Mississippi",
     "awayTeam": "Auburn",
-    "predictedHomeScore": 35.9,
+    "predictedHomeScore": 35.95,
     "predictedAwayScore": 25.45,
     "pick": "Mississippi",
-    "winProb": 0.778,
+    "winProb": 0.779,
     "confidence": "Elite",
     "gameTime": "2026-10-31T16:45:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 26
+    "rank": 28
   },
   {
     "gameId": 401871059,
@@ -375,7 +403,7 @@
     "gameTime": "2026-10-31T19:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 27
+    "rank": 29
   },
   {
     "gameId": 401856847,
@@ -389,7 +417,7 @@
     "gameTime": "2026-10-31T23:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 28
+    "rank": 30
   },
   {
     "gameId": 401871095,
@@ -403,7 +431,7 @@
     "gameTime": "2026-10-31T19:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 29
+    "rank": 31
   },
   {
     "gameId": 401871097,
@@ -417,7 +445,7 @@
     "gameTime": "2026-10-31T19:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 30
+    "rank": 32
   },
   {
     "gameId": 401860910,
@@ -431,7 +459,7 @@
     "gameTime": "2026-10-31T19:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 31
+    "rank": 33
   },
   {
     "gameId": 401860924,
@@ -445,7 +473,7 @@
     "gameTime": "2026-11-01T03:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 32
+    "rank": 34
   },
   {
     "gameId": 401858284,
@@ -459,7 +487,7 @@
     "gameTime": "2026-10-31T19:45:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 33
+    "rank": 35
   },
   {
     "gameId": 401856845,
@@ -473,7 +501,21 @@
     "gameTime": "2026-10-31T19:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 34
+    "rank": 36
+  },
+  {
+    "gameId": 401866456,
+    "homeTeam": "E Michigan",
+    "awayTeam": "C Michigan",
+    "predictedHomeScore": 22.69,
+    "predictedAwayScore": 17.08,
+    "pick": "E Michigan",
+    "winProb": 0.662,
+    "confidence": "Strong",
+    "gameTime": "2026-11-04T05:00:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 37
   },
   {
     "gameId": 401861966,
@@ -487,7 +529,21 @@
     "gameTime": "2026-10-31T19:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 35
+    "rank": 38
+  },
+  {
+    "gameId": 401858507,
+    "homeTeam": "Rutgers",
+    "awayTeam": "Michigan",
+    "predictedHomeScore": 19.71,
+    "predictedAwayScore": 24.16,
+    "pick": "Michigan",
+    "winProb": 0.63,
+    "confidence": "Strong",
+    "gameTime": "2026-10-31T16:30:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 39
   },
   {
     "gameId": 401858503,
@@ -501,21 +557,7 @@
     "gameTime": "2026-10-31T16:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 36
-  },
-  {
-    "gameId": 401858507,
-    "homeTeam": "Rutgers",
-    "awayTeam": "Michigan",
-    "predictedHomeScore": 19.71,
-    "predictedAwayScore": 24.11,
-    "pick": "Michigan",
-    "winProb": 0.629,
-    "confidence": "Strong",
-    "gameTime": "2026-10-31T16:30:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 37
+    "rank": 40
   },
   {
     "gameId": 401858502,
@@ -529,7 +571,7 @@
     "gameTime": "2026-10-31T16:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 38
+    "rank": 41
   },
   {
     "gameId": 401858280,
@@ -543,7 +585,7 @@
     "gameTime": "2026-10-31T23:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 39
+    "rank": 42
   },
   {
     "gameId": 401858278,
@@ -557,7 +599,7 @@
     "gameTime": "2026-10-31T16:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 40
+    "rank": 43
   },
   {
     "gameId": 401856844,
@@ -571,7 +613,21 @@
     "gameTime": "2026-10-30T23:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 41
+    "rank": 44
+  },
+  {
+    "gameId": 401866454,
+    "homeTeam": "Miami OH",
+    "awayTeam": "Buffalo",
+    "predictedHomeScore": 26.6,
+    "predictedAwayScore": 23.36,
+    "pick": "Miami OH",
+    "winProb": 0.596,
+    "confidence": "Lean",
+    "gameTime": "2026-11-04T00:00:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 45
   },
   {
     "gameId": 401871071,
@@ -585,7 +641,7 @@
     "gameTime": "2026-10-27T23:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 42
+    "rank": 46
   },
   {
     "gameId": 401871096,
@@ -599,21 +655,21 @@
     "gameTime": "2026-10-31T17:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 43
+    "rank": 47
   },
   {
     "gameId": 401871072,
     "homeTeam": "Missouri St",
     "awayTeam": "Sam Houston",
     "predictedHomeScore": 24.95,
-    "predictedAwayScore": 27.73,
+    "predictedAwayScore": 27.72,
     "pick": "Sam Houston",
-    "winProb": 0.583,
+    "winProb": 0.582,
     "confidence": "Lean",
     "gameTime": "2026-10-28T00:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 44
+    "rank": 48
   },
   {
     "gameId": 401862815,
@@ -627,7 +683,7 @@
     "gameTime": "2026-10-31T19:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 45
+    "rank": 49
   },
   {
     "gameId": 401871058,
@@ -641,6 +697,6 @@
     "gameTime": "2026-10-28T23:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 46
+    "rank": 50
   }
 ]
