@@ -1,3 +1,29 @@
 Team,Spread,Opponent,GameTime,IsHome
-Philadelphia Eagles,-4.5,Dallas Cowboys,2026-10-27T00:15:00Z,true
-Dallas Cowboys,4.5,Philadelphia Eagles,2026-10-27T00:15:00Z,false
+Green Bay Packers,3.5,Carolina Panthers,2026-10-30T00:15:00Z,true
+Carolina Panthers,-3.5,Green Bay Packers,2026-10-30T00:15:00Z,false
+Buffalo Bills,3.5,Baltimore Ravens,2026-11-01T18:00:00Z,true
+Baltimore Ravens,-3.5,Buffalo Bills,2026-11-01T18:00:00Z,false
+Cincinnati Bengals,10.0,Tennessee Titans,2026-11-01T18:00:00Z,true
+Tennessee Titans,-10.0,Cincinnati Bengals,2026-11-01T18:00:00Z,false
+Dallas Cowboys,6.5,Arizona Cardinals,2026-11-01T18:00:00Z,true
+Arizona Cardinals,-6.5,Dallas Cowboys,2026-11-01T18:00:00Z,false
+Detroit Lions,3.0,Minnesota Vikings,2026-11-01T18:00:00Z,true
+Minnesota Vikings,-3.0,Detroit Lions,2026-11-01T18:00:00Z,false
+Jacksonville Jaguars,7.5,Indianapolis Colts,2026-11-01T18:00:00Z,true
+Indianapolis Colts,-7.5,Jacksonville Jaguars,2026-11-01T18:00:00Z,false
+New York Jets,1.5,Las Vegas Raiders,2026-11-01T18:00:00Z,true
+Las Vegas Raiders,-1.5,New York Jets,2026-11-01T18:00:00Z,false
+Pittsburgh Steelers,3.5,Cleveland Browns,2026-11-01T18:00:00Z,true
+Cleveland Browns,-3.5,Pittsburgh Steelers,2026-11-01T18:00:00Z,false
+Tampa Bay Buccaneers,2.5,Atlanta Falcons,2026-11-01T18:00:00Z,true
+Atlanta Falcons,-2.5,Tampa Bay Buccaneers,2026-11-01T18:00:00Z,false
+Los Angeles Rams,6.5,Los Angeles Chargers,2026-11-01T21:05:00Z,true
+Los Angeles Chargers,-6.5,Los Angeles Rams,2026-11-01T21:05:00Z,false
+Denver Broncos,-1.5,Kansas City Chiefs,2026-11-01T21:25:00Z,true
+Kansas City Chiefs,1.5,Denver Broncos,2026-11-01T21:25:00Z,false
+Miami Dolphins,-7.5,New England Patriots,2026-11-01T21:25:00Z,true
+New England Patriots,7.5,Miami Dolphins,2026-11-01T21:25:00Z,false
+Washington Commanders,4.5,Philadelphia Eagles,2026-11-02T01:20:00Z,true
+Philadelphia Eagles,-4.5,Washington Commanders,2026-11-02T01:20:00Z,false
+Seattle Seahawks,3.0,Chicago Bears,2026-11-03T01:15:00Z,true
+Chicago Bears,-3.0,Seattle Seahawks,2026-11-03T01:15:00Z,false
