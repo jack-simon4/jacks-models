@@ -411,10 +411,22 @@ def fetch_injured_out(year: int) -> set[tuple[str, str]]:
         return set()
 
 
+def _load_team_pass_apg() -> dict[str, float]:
+    """Read oPassPerGame from NFL-Stats.csv keyed by full team name."""
+    stats_path = os.path.join(ASSETS, 'NFL-Stats.csv')
+    try:
+        df = pd.read_csv(stats_path)
+        return dict(zip(df['Team'].str.strip(), df['oPassPerGame'].astype(float)))
+    except Exception as e:
+        print(f'[NFLPlayers] Could not load NFL-Stats.csv for pass APG: {e}')
+        return {}
+
+
 def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
                  games_played: int, depth_chart: dict, injured_out: set):
     """Write NFL-QBs.csv — one starting QB per team."""
     rows = []
+    team_pass_apg = _load_team_pass_apg()
 
     def _name_col(df):
         return 'player_display_name' if df is not None and 'player_display_name' in df.columns else 'player_name'
@@ -553,11 +565,16 @@ def build_qb_csv(cur_df: pd.DataFrame | None, prior_df: pd.DataFrame | None,
         name_col = 'player_display_name' if 'player_display_name' in use_df_cols else 'player_name'
         starter_name = str(use_row.get(name_col, use_row.get('player_display_name', 'Unknown'))).strip()
 
+        # Use the team's oPassPerGame from NFL-Stats.csv as the QB's attempt rate.
+        # The per-QB attempt derivation (att/games from nflverse) is unreliable mid-season;
+        # the team-level stat is what the simulation matchup formula uses anyway.
+        pass_apg = team_pass_apg.get(team_name, LG_PASS_APG)
+
         rows.append({
             'Team':       team_name,
             'Name':       starter_name,
             'PassYdsAtt': round(blend('ypa',     cur_stats, prior_stats, LG_PASS_YPA), 3),
-            'PassAttGame': round(blend('apg',    cur_stats, prior_stats, LG_PASS_APG), 3),
+            'PassAttGame': round(pass_apg, 3),
             'CompPct':    round(blend('cmp_pct', cur_stats, prior_stats, 0.635), 3),
             'TDRate':     round(blend('td_rate', cur_stats, prior_stats, 0.045), 3),
             'INTRate':    round(blend('int_rate',cur_stats, prior_stats, 0.022), 4),
