@@ -31,19 +31,26 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      - name: Update lineups and player props
+      - name: Update lineups
+        continue-on-error: true
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
-        run: |
-          python scripts/fetch_mlb_lineups.py
-          python scripts/fetch_mlb_player_props.py
+        run: python scripts/fetch_mlb_lineups.py
+
+      - name: Update player props
+        continue-on-error: true
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
+        run: python scripts/fetch_mlb_player_props.py
 
       - name: Fetch Vegas moneylines
+        continue-on-error: true
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python scripts/fetch_mlb_odds.py
 
       - name: Generate top picks
+        continue-on-error: true
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
         run: python scripts/generate_top_picks.py
