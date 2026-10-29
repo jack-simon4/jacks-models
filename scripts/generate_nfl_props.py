@@ -207,15 +207,23 @@ def main():
         props = project_game(home, away, team_stats, qbs, rbs, receivers, gt)
         all_props.extend(props)
 
-    # Sort by projected yards desc, dedupe names (keep highest), take top 20
-    seen = set()
-    top = []
+    # Bucket by position, dedupe names within each bucket, keep top N per position
+    PER_POSITION = {'QB': 5, 'RB': 5, 'WR': 5, 'TE': 5}
+    buckets: dict[str, list] = {pos: [] for pos in PER_POSITION}
+    seen: dict[str, set] = {pos: set() for pos in PER_POSITION}
+
     for p in sorted(all_props, key=lambda x: x['projYards'], reverse=True):
-        if p['name'] not in seen:
-            seen.add(p['name'])
-            top.append(p)
-        if len(top) >= 20:
-            break
+        pos = p['position']
+        if pos not in buckets:
+            continue
+        if p['name'] not in seen[pos]:
+            seen[pos].add(p['name'])
+            buckets[pos].append(p)
+
+    # Combine in display order: QB, RB, WR, TE
+    top = []
+    for pos in PER_POSITION:
+        top.extend(buckets[pos][:PER_POSITION[pos]])
 
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(top, f, indent=2)
