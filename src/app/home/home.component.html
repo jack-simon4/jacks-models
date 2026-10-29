@@ -62,6 +62,15 @@
 <div class="top-props-container">
   <h2>🏈 This Week's Top NFL Props</h2>
 
+  <div class="position-filters">
+    <button
+      *ngFor="let pos of ['ALL', 'QB', 'RB', 'WR', 'TE']"
+      class="pos-filter-btn"
+      [class.active]="nflPositionFilter === pos"
+      (click)="setNflPositionFilter($any(pos))"
+    >{{ pos }}</button>
+  </div>
+
   <div
     *ngFor="let player of nflProps"
     class="pick-card prop-pick-card"

@@ -29,6 +29,8 @@ export class HomeComponent implements OnInit {
   topPicksLoading = true;
 
   nflProps: { rank: number; name: string; team: string; opponent: string; position: string; projYards: number; projTDs: number; statLabel: string; matchup: string }[] = [];
+  private allNflProps: typeof this.nflProps = [];
+  nflPositionFilter: 'ALL' | 'QB' | 'RB' | 'WR' | 'TE' = 'ALL';
 
   constructor(private http: HttpClient, private titleService: Title, private metaService: Meta) {}
 
@@ -185,7 +187,7 @@ export class HomeComponent implements OnInit {
   private loadNFLProps() {
     this.http.get<any[]>('assets/nfl-player-props.json').subscribe({
       next: (props) => {
-        this.nflProps = (props ?? []).slice(0, 5).map((p, i) => ({
+        this.allNflProps = (props ?? []).map((p, i) => ({
           rank:      i + 1,
           name:      p.name,
           team:      p.team,
@@ -196,8 +198,21 @@ export class HomeComponent implements OnInit {
           statLabel: p.statLabel,
           matchup:   p.matchup,
         }));
+        this.applyNflPositionFilter();
       },
       error: () => {}
     });
+  }
+
+  setNflPositionFilter(pos: typeof this.nflPositionFilter) {
+    this.nflPositionFilter = pos;
+    this.applyNflPositionFilter();
+  }
+
+  private applyNflPositionFilter() {
+    const filtered = this.nflPositionFilter === 'ALL'
+      ? this.allNflProps
+      : this.allNflProps.filter(p => p.position === this.nflPositionFilter);
+    this.nflProps = filtered.slice(0, 5).map((p, i) => ({ ...p, rank: i + 1 }));
   }
 }

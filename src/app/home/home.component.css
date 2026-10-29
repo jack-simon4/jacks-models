@@ -202,7 +202,38 @@
 .top-props-container h2 {
   text-align: center;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+}
+
+.position-filters {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.pos-filter-btn {
+  padding: 5px 16px;
+  border-radius: 20px;
+  border: 1px solid #555;
+  background: rgba(255,255,255,.07);
+  color: #ccc;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.pos-filter-btn:hover {
+  background: rgba(255,255,255,.15);
+  color: #fff;
+}
+
+.pos-filter-btn.active {
+  background: #f5a623;
+  border-color: #f5a623;
+  color: #1a1a1a;
 }
 
 .prop-pick-card {
