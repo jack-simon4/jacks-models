@@ -40,6 +40,9 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
         run: python scripts/generate_nfl_picks.py
 
+      - name: Generate NFL player props
+        run: python scripts/generate_nfl_props.py
+
       - name: Update NFL actual results
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
@@ -49,7 +52,7 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/NFL-Stats.csv src/assets/NFL-QBs.csv src/assets/NFL-RBs.csv src/assets/NFL-Receivers.csv src/assets/nfl-picks.json src/assets/NFL-Spreads.csv
+          git add src/assets/NFL-Stats.csv src/assets/NFL-QBs.csv src/assets/NFL-RBs.csv src/assets/NFL-Receivers.csv src/assets/nfl-picks.json src/assets/NFL-Spreads.csv src/assets/nfl-player-props.json
           if git diff --staged --quiet; then
             echo "No NFL stat changes — nothing to commit."
           else

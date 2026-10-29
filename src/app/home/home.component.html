@@ -60,24 +60,28 @@
 </div>
 
 <div class="top-props-container">
-  <h2>⚾ Today's Top MLB Props</h2>
+  <h2>🏈 This Week's Top NFL Props</h2>
 
   <div
-    *ngFor="let player of topProps"
+    *ngFor="let player of nflProps"
     class="pick-card prop-pick-card"
   >
     <div class="pick-rank">#{{ player.rank }}</div>
     <div class="pick-info">
+      <div class="pick-header">
+        <span class="sport-chip sport-nfl">{{ player.position }}</span>
+        <span class="matchup">{{ player.matchup }}</span>
+      </div>
       <div class="player-name">{{ player.name }}</div>
       <div class="player-stats">
-        🎯 Hit %: <span class="hit-stat">{{ player.hitPercent }}</span>
-        💣 HR %: <span class="hr-stat">{{ player.hrPercent }}</span>
-        ⚾ xBases: <span class="xbases-stat">{{ player.xBases }}</span>
+        📊 Proj {{ player.statLabel }}: <span class="hit-stat">{{ player.projYards }}</span>
+        &nbsp;|&nbsp;
+        🏈 Proj TDs: <span class="hr-stat">{{ player.projTDs }}</span>
       </div>
     </div>
   </div>
 </div>
 
-<button class="props-button" routerLink="/mlb-props">
-  View Full Props Table →
+<button class="props-button" routerLink="/scoreboard">
+  Run NFL Prediction →
 </button>

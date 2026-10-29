@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   topPicks: UnifiedPick[] = [];
   topPicksLoading = true;
 
-  topProps: { rank: number; name: string; hitPercent: string; hrPercent: string; xBases: string }[] = [];
+  nflProps: { rank: number; name: string; team: string; opponent: string; position: string; projYards: number; projTDs: number; statLabel: string; matchup: string }[] = [];
 
   constructor(private http: HttpClient, private titleService: Title, private metaService: Meta) {}
 
@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
     this.titleService.setTitle("Jack's Models | Free Sports Prediction Models");
     this.metaService.updateTag({ name: 'description', content: "Free stat-driven sports predictions for NFL, NBA, MLB, NHL, NCAAF, NCAAM and Soccer. Run any matchup instantly." });
     this.loadAllPicks();
-    this.loadTopProps();
+    this.loadNFLProps();
   }
 
   private normalizeMlb(p: any): UnifiedPick {
@@ -182,28 +182,19 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  private loadTopProps() {
-    this.http.get(environment.mlbPlayerPropsUrl, { responseType: 'text' }).subscribe({
-      next: (csv) => {
-        const lines = csv.trim().split('\n');
-        const rows = lines.slice(1)
-          .map(line => {
-            const parts = line.split(',');
-            return {
-              name:      (parts[0] ?? '').trim(),
-              homerPct:  parseFloat(parts[1] ?? '0'),
-              hitPct:    parseFloat(parts[2] ?? '0'),
-              xBases:    parseFloat(parts[3] ?? '0'),
-            };
-          })
-          .filter(r => r.name && !isNaN(r.xBases));
-
-        this.topProps = rows.slice(0, 5).map((r, i) => ({
-          rank:       i + 1,
-          name:       r.name,
-          hitPercent: Math.round(r.hitPct * 100) + '%',
-          hrPercent:  Math.round(r.homerPct * 100) + '%',
-          xBases:     r.xBases.toFixed(2),
+  private loadNFLProps() {
+    this.http.get<any[]>('assets/nfl-player-props.json').subscribe({
+      next: (props) => {
+        this.nflProps = (props ?? []).slice(0, 5).map((p, i) => ({
+          rank:      i + 1,
+          name:      p.name,
+          team:      p.team,
+          opponent:  p.opponent,
+          position:  p.position,
+          projYards: p.projYards,
+          projTDs:   p.projTDs,
+          statLabel: p.statLabel,
+          matchup:   p.matchup,
         }));
       },
       error: () => {}
