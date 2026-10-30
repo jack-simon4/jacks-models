@@ -51,6 +51,7 @@ Houston Texans,Xavier Hutchinson,WR,4.72,6.836,0.212,2.41
 Houston Texans,Jared Wayne,WR,4.0,5.417,0.18,1.33
 Houston Texans,Nico Collins,WR,8.75,8.63,0.394,5.58
 Indianapolis Colts,Josh Downs,WR,6.44,6.926,0.29,4.02
+Indianapolis Colts,Tyler Warren,TE,6.87,6.076,0.309,5.04
 Indianapolis Colts,Keenan Allen,WR,6.99,5.856,0.314,4.6
 Indianapolis Colts,Alec Pierce,WR,4.81,11.32,0.217,2.9
 Jacksonville Jaguars,Parker Washington,WR,6.59,9.176,0.296,4.14
@@ -58,6 +59,7 @@ Jacksonville Jaguars,Brian Thomas,WR,5.69,7.394,0.256,3.02
 Jacksonville Jaguars,Jakobi Meyers,WR,3.76,9.449,0.169,2.89
 Jacksonville Jaguars,Brenton Strange,TE,4.38,8.325,0.197,3.27
 Kansas City Chiefs,Travis Kelce,TE,6.22,9.737,0.28,4.54
+Kansas City Chiefs,Rashee Rice,WR,8.22,8.766,0.37,5.77
 Kansas City Chiefs,Xavier Worthy,WR,5.13,6.13,0.231,3.12
 Kansas City Chiefs,Tyquan Thornton,WR,2.33,15.429,0.105,2.0
 Las Vegas Raiders,Tre Tucker,WR,5.26,9.453,0.237,3.47
@@ -95,12 +97,15 @@ New York Jets,Garrett Wilson,WR,8.64,7.559,0.389,5.84
 New York Jets,Adonai Mitchell,WR,5.08,6.319,0.229,2.62
 New York Jets,Kenyon Sadiq,TE,4.67,10.214,0.21,4.0
 New York Jets,Isaiah Williams,WR,3.0,6.889,0.135,2.67
+Philadelphia Eagles,DeVonta Smith,WR,9.0,8.704,0.405,6.33
+Philadelphia Eagles,Dontayvion Wicks,WR,3.93,8.986,0.177,2.46
 Philadelphia Eagles,Makai Lemon,WR,3.0,4.222,0.135,2.33
 Philadelphia Eagles,Dallas Goedert,TE,4.92,8.301,0.221,3.44
 Pittsburgh Steelers,DK Metcalf,WR,7.12,6.897,0.321,3.83
 Pittsburgh Steelers,Roman Wilson,WR,6.0,6.333,0.27,3.67
 Pittsburgh Steelers,Pat Freiermuth,TE,3.74,8.518,0.168,2.88
 Pittsburgh Steelers,Germie Bernard,WR,3.0,5.444,0.135,1.67
+San Francisco 49ers,Mike Evans,WR,6.84,6.921,0.308,3.84
 San Francisco 49ers,George Kittle,TE,5.92,9.767,0.266,4.74
 San Francisco 49ers,Deebo Samuel,WR,3.67,14.455,0.165,3.0
 San Francisco 49ers,Demarcus Robinson,WR,3.0,14.0,0.135,2.5
@@ -108,6 +113,7 @@ Seattle Seahawks,Jaxon Smith-Njigba,WR,10.49,11.094,0.472,7.75
 Seattle Seahawks,AJ Barner,TE,4.0,7.583,0.18,2.91
 Seattle Seahawks,Rashid Shaheed,WR,2.4,6.175,0.108,1.27
 Seattle Seahawks,Cooper Kupp,WR,3.98,9.082,0.179,2.84
+Tampa Bay Buccaneers,Emeka Egbuka,WR,7.17,7.26,0.323,3.94
 Tampa Bay Buccaneers,Cade Otton,TE,5.29,7.061,0.238,3.68
 Tampa Bay Buccaneers,Ted Hurst,WR,4.33,7.923,0.195,2.0
 Tampa Bay Buccaneers,Chris Godwin,WR,4.92,8.196,0.221,3.54

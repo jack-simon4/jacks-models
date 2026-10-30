@@ -104,7 +104,7 @@
     "opponent": "Tampa Bay Buccaneers",
     "position": "RB",
     "projYards": 81,
-    "projTDs": 0.51,
+    "projTDs": 0.52,
     "statLabel": "Rush Yds",
     "matchup": "Atlanta Falcons @ Tampa Bay Buccaneers",
     "gameTime": "2026-11-01T18:00:00Z"
@@ -143,6 +143,17 @@
     "gameTime": "2026-11-01T18:00:00Z"
   },
   {
+    "name": "DeVonta Smith",
+    "team": "Philadelphia Eagles",
+    "opponent": "Washington Commanders",
+    "position": "WR",
+    "projYards": 85,
+    "projTDs": 0.44,
+    "statLabel": "Rec Yds",
+    "matchup": "Philadelphia Eagles @ Washington Commanders",
+    "gameTime": "2026-11-02T01:20:00Z"
+  },
+  {
     "name": "JaMarr Chase",
     "team": "Cincinnati Bengals",
     "opponent": "Tennessee Titans",
@@ -151,17 +162,6 @@
     "projTDs": 0.48,
     "statLabel": "Rec Yds",
     "matchup": "Tennessee Titans @ Cincinnati Bengals",
-    "gameTime": "2026-11-01T18:00:00Z"
-  },
-  {
-    "name": "George Pickens",
-    "team": "Dallas Cowboys",
-    "opponent": "Arizona Cardinals",
-    "position": "WR",
-    "projYards": 72,
-    "projTDs": 0.37,
-    "statLabel": "Rec Yds",
-    "matchup": "Arizona Cardinals @ Dallas Cowboys",
     "gameTime": "2026-11-01T18:00:00Z"
   },
   {
