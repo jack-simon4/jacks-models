@@ -285,8 +285,8 @@ def main():
 
     now    = datetime.now(timezone.utc)
     now_et = now.astimezone(ET)
-    # Fetch today + next 2 days in ET to catch late-night games that cross UTC midnight
-    et_dates = [(now_et + timedelta(days=d)).strftime('%Y-%m-%d') for d in range(3)]
+    # Fetch yesterday + today + next 2 days so completed games get actual scores backfilled
+    et_dates = [(now_et + timedelta(days=d)).strftime('%Y-%m-%d') for d in range(-1, 3)]
 
     raw_events = fetch_schedule(et_dates)
     picks          = []
