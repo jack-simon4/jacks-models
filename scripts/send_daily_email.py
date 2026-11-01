@@ -207,8 +207,8 @@ def build_soccer_section(data: dict, yesterday: str, today_str: str,
 
 # ── MLB section ───────────────────────────────────────────────────────────────
 
-def fetch_mlb_from_firestore(yesterday: str) -> list:
-    """Return all MLB game docs from Firestore whose gameTime falls on `yesterday` (YYYY-MM-DD)."""
+def fetch_mlb_from_firestore(yesterday_et: str) -> list:
+    """Return all MLB game docs from Firestore whose gameTime falls on `yesterday_et` in Eastern time."""
     sa_json = os.environ.get('FIREBASE_SERVICE_ACCOUNT')
     if not sa_json:
         print('[Email] FIREBASE_SERVICE_ACCOUNT not set — skipping Firestore MLB fetch.')
@@ -220,9 +220,10 @@ def fetch_mlb_from_firestore(yesterday: str) -> list:
         app  = firebase_admin.initialize_app(cred, name='email_mlb')
         db   = fb_firestore.client(app)
         docs = db.collection('games').where('sport', '==', 'MLB').stream()
-        games = [d.to_dict() for d in docs if d.to_dict().get('gameTime', '')[:10] == yesterday]
+        # Compare in ET so a 9 PM ET game (stored as next-day UTC) still matches the correct date
+        games = [d.to_dict() for d in docs if _et_date(d.to_dict().get('gameTime', '')) == yesterday_et]
         firebase_admin.delete_app(app)
-        print(f'[Email] Firestore: {len(games)} MLB games for {yesterday}')
+        print(f'[Email] Firestore: {len(games)} MLB games for {yesterday_et} (ET)')
         return games
     except Exception as exc:
         print(f'[Email] Firestore MLB fetch error: {exc}')
@@ -315,14 +316,13 @@ def build_mlb_section_with_actuals(picks: list, yesterday: str, actuals: dict) -
     return _render_mlb_section(picks, yesterday, actuals)
 
 
-def build_mlb_section(picks: list, yesterday: str, yesterday_dt: datetime) -> str:
+def build_mlb_section(picks: list, yesterday_et: str, yesterday_dt: datetime) -> str:
     if not picks:
         return ''
 
-    # Filter to yesterday's games (gameTime date matches yesterday)
-    yesterday_picks = [p for p in picks if p.get('gameTime', '')[:10] == yesterday]
+    # Filter to yesterday's games using ET date to avoid UTC midnight mismatch
+    yesterday_picks = [p for p in picks if _et_date(p.get('gameTime', '')) == yesterday_et]
     if not yesterday_picks:
-        # If no date match, just show all picks as "today's upcoming"
         yesterday_picks = picks
 
     actuals = fetch_mlb_actuals(yesterday_dt)
@@ -1023,7 +1023,8 @@ def main():
     now          = datetime.now(timezone.utc)
     now_et       = now.astimezone(ET)
     yesterday_dt = now - timedelta(days=1)
-    yesterday    = yesterday_dt.strftime('%Y-%m-%d')
+    yesterday    = yesterday_dt.strftime('%Y-%m-%d')          # UTC date (used for soccer/NCAAF/NHL gameDate fields)
+    yesterday_et = (now_et - timedelta(days=1)).strftime('%Y-%m-%d')  # ET date (for gameTime comparisons)
     today_str    = now.strftime('%Y-%m-%d')
     today_et     = now_et.strftime('%Y-%m-%d')
     date_hdr     = now_et.strftime('%A, %B %d, %Y').replace(' 0', ' ')
@@ -1045,10 +1046,10 @@ def main():
     else:
         print('[Email] soccer-today.json not found — skipping soccer section.')
 
-    # MLB results — pull from Firestore (has every game + accurate predicted scores)
-    mlb_fs_games = fetch_mlb_from_firestore(yesterday)
+    # MLB results — pull from Firestore using ET date to avoid UTC midnight mismatch
+    mlb_fs_games = fetch_mlb_from_firestore(yesterday_et)
     if mlb_fs_games:
-        mlb_html = build_mlb_section_firestore(mlb_fs_games, yesterday)
+        mlb_html = build_mlb_section_firestore(mlb_fs_games, yesterday_et)
         if mlb_html:
             sections.append(mlb_html)
         # Build actuals dict for the tweet morning recap (yesterday W/L record)
@@ -1066,7 +1067,7 @@ def main():
             with open(src, encoding='utf-8') as f:
                 mlb_picks_yest = json.load(f)
             mlb_actuals = fetch_mlb_actuals(yesterday_dt)
-            mlb_html = build_mlb_section_with_actuals(mlb_picks_yest, yesterday, mlb_actuals)
+            mlb_html = build_mlb_section_with_actuals(mlb_picks_yest, yesterday_et, mlb_actuals)
             if mlb_html:
                 sections.append(mlb_html)
 

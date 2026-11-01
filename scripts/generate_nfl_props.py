@@ -148,6 +148,7 @@ def project_game(home, away, team_stats, qbs, rbs, receivers, game_time):
                 'position':  'QB',
                 'projYards': round(proj_pass_yds),
                 'projTDs':   proj_tds,
+                'projRec':   None,
                 'statLabel': 'Pass Yds',
                 'matchup':   f'{away} @ {home}',
                 'gameTime':  game_time,
@@ -164,6 +165,7 @@ def project_game(home, away, team_stats, qbs, rbs, receivers, game_time):
                 'position':  'RB',
                 'projYards': round(yds),
                 'projTDs':   tds,
+                'projRec':   None,
                 'statLabel': 'Rush Yds',
                 'matchup':   f'{away} @ {home}',
                 'gameTime':  game_time,
@@ -173,6 +175,7 @@ def project_game(home, away, team_stats, qbs, rbs, receivers, game_time):
         for rec in (receivers.get(off_team) or []):
             yds = rec['ydPerTgt'] * rec['tgtPG'] * pass_f
             tds = round(rec['tdGame'] * pass_f, 2)
+            proj_rec = round(rec['recPG'] * pass_f, 1)
             results.append({
                 'name':      rec['name'],
                 'team':      off_team,
@@ -180,6 +183,7 @@ def project_game(home, away, team_stats, qbs, rbs, receivers, game_time):
                 'position':  rec['position'],
                 'projYards': round(yds),
                 'projTDs':   tds,
+                'projRec':   proj_rec,
                 'statLabel': 'Rec Yds',
                 'matchup':   f'{away} @ {home}',
                 'gameTime':  game_time,
@@ -208,7 +212,7 @@ def main():
         all_props.extend(props)
 
     # Bucket by position, dedupe names within each bucket, keep top N per position
-    PER_POSITION = {'QB': 5, 'RB': 5, 'WR': 5, 'TE': 5}
+    PER_POSITION = {'QB': 10, 'RB': 10, 'WR': 10, 'TE': 10}
     buckets: dict[str, list] = {pos: [] for pos in PER_POSITION}
     seen: dict[str, set] = {pos: set() for pos in PER_POSITION}
 

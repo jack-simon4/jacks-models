@@ -18,6 +18,7 @@ import { MlbPropsComponent } from './mlb-props/mlb-props.component';
 import { NflSeoPageComponent } from './seo-pages/nfl-seo-page.component';
 import { MlbTodayComponent } from './mlb-today/mlb-today.component';
 import { WcTodayComponent } from './wc-today/wc-today.component';
+import { NflPropsComponent } from './nfl-props/nfl-props.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'results', component: ResultsComponent },
   { path: 'soccer-scoreboard', component: SoccerScoreboardComponent },
   { path: 'mlb-props', component: MlbPropsComponent },
+  { path: 'nfl-props', component: NflPropsComponent },
   { path: 'mlb-predictions-today', component: MlbTodayComponent },
   { path: 'world-cup-predictions-today', component: WcTodayComponent },
 

@@ -20,12 +20,11 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-           "assets": [
-            "src/favicon.ico",
-  "src/assets",
-  "src/sitemap.xml",
-  "src/robots.txt"
-
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/sitemap.xml",
+              "src/robots.txt"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
@@ -60,23 +59,21 @@
           },
           "defaultConfiguration": "production"
         },
-"serve": {
-  "builder": "@angular-devkit/build-angular:dev-server",
-  "configurations": {
-    "production": {
-      "browserTarget": "scoreboard-app:build:production"  
-    },
-    "development": {
-      "browserTarget": "scoreboard-app:build:development" 
-    }
-  },
-  "defaultConfiguration": "development"
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "scoreboard-app:build:production"
+            },
+            "development": {
+              "browserTarget": "scoreboard-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            
-          }
+          "options": {}
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -139,20 +136,20 @@
           "builder": "@nguniversal/builders:prerender",
           "options": {
             "routes": [
-  "/nfl-predictions",
-  "/mlb-predictions",
-  "/mlb-predictions-today",
-  "/ncaaf-predictions",
-  "/nba-predictions",
-  "/ncaam-predictions",
-  "/nhl-predictions",
-  "/college-baseball-predictions",
-  "/soccer-predictions",
-  "/soccer-scoreboard",
-  "/world-cup-predictions",
-  "/world-cup-predictions-today"
-]
-
+              "/nfl-predictions",
+              "/mlb-predictions",
+              "/mlb-predictions-today",
+              "/ncaaf-predictions",
+              "/nba-predictions",
+              "/ncaam-predictions",
+              "/nhl-predictions",
+              "/college-baseball-predictions",
+              "/soccer-predictions",
+              "/soccer-scoreboard",
+              "/world-cup-predictions",
+              "/world-cup-predictions-today",
+              "/nfl-props"
+            ]
           },
           "configurations": {
             "production": {

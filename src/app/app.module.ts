@@ -34,6 +34,7 @@ import { HomeComponent } from './home/home.component';
 import { MlbPropsComponent } from './mlb-props/mlb-props.component';
 import { MlbTodayComponent } from './mlb-today/mlb-today.component';
 import { WcTodayComponent } from './wc-today/wc-today.component';
+import { NflPropsComponent } from './nfl-props/nfl-props.component';
 
 
 
@@ -59,7 +60,8 @@ import { WcTodayComponent } from './wc-today/wc-today.component';
       HomeComponent,
     MlbPropsComponent,
     MlbTodayComponent,
-    WcTodayComponent
+    WcTodayComponent,
+    NflPropsComponent
   ],
   imports: [
     BrowserModule,

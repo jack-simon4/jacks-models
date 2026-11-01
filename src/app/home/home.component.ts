@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   topPicks: UnifiedPick[] = [];
   topPicksLoading = true;
 
-  nflProps: { rank: number; name: string; team: string; opponent: string; position: string; projYards: number; projTDs: number; statLabel: string; matchup: string }[] = [];
+  nflProps: { rank: number; name: string; team: string; opponent: string; position: string; projYards: number; projTDs: number; projRec?: number; statLabel: string; matchup: string }[] = [];
   private allNflProps: typeof this.nflProps = [];
   nflPositionFilter: 'ALL' | 'QB' | 'RB' | 'WR' | 'TE' = 'ALL';
 
@@ -69,6 +69,22 @@ export class HomeComponent implements OnInit {
       winProb: p.winProb ?? 0,
       confidence: p.confidence,
       predictedScore: `${aAbbr} ${aSc} – ${hAbbr} ${hSc}`,
+      gameTime: p.gameTime,
+    };
+  }
+
+  private normalizeNBA(p: any): UnifiedPick | null {
+    if (!p.confidence) return null;
+    const aSc = Math.round(p.predictedAwayScore ?? 0);
+    const hSc = Math.round(p.predictedHomeScore ?? 0);
+    return {
+      rank: 0,
+      sport: 'NBA',
+      matchup: `${p.awayTeam} @ ${p.homeTeam}`,
+      pick: p.pick,
+      winProb: p.winProb ?? 0,
+      confidence: p.confidence,
+      predictedScore: `${aSc} – ${hSc}`,
       gameTime: p.gameTime,
     };
   }
@@ -121,8 +137,19 @@ export class HomeComponent implements OnInit {
   }
 
   private loadAllPicks() {
-    const now      = new Date();
-    const todayStr = now.toISOString().slice(0, 10);
+    const now = new Date();
+    // Today's date in ET (en-CA locale returns YYYY-MM-DD)
+    const todayET = now.toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+
+    // Returns the ET calendar date of a UTC game-time string as YYYY-MM-DD
+    const etDate = (iso: string) =>
+      new Date(iso).toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+
+    // A game is "today" in ET and hasn't started yet
+    const isTodayUnstarted = (gameTime: string | undefined) => {
+      if (!gameTime) return false;
+      return etDate(gameTime) === todayET && new Date(gameTime) >= now;
+    };
 
     const mlb$ = this.http.get<any[]>(environment.topPicksUrl).pipe(
       map(picks => (picks ?? [])
@@ -131,14 +158,17 @@ export class HomeComponent implements OnInit {
       catchError(() => of([] as UnifiedPick[]))
     );
 
-    const oneDayAhead = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+    const nba$ = this.http.get<any[]>('assets/nba-picks.json').pipe(
+      map(picks => (picks ?? [])
+        .filter(p => isTodayUnstarted(p.gameTime))
+        .map(p => this.normalizeNBA(p))
+        .filter((p): p is UnifiedPick => p !== null)),
+      catchError(() => of([] as UnifiedPick[]))
+    );
+
     const nhl$ = this.http.get<any[]>('assets/nhl-picks.json').pipe(
       map(picks => (picks ?? [])
-        .filter(p => {
-          if (!p.gameTime) return false;
-          const gt = new Date(p.gameTime);
-          return gt >= now && gt <= oneDayAhead;
-        })
+        .filter(p => isTodayUnstarted(p.gameTime))
         .map(p => this.normalizeNHL(p))
         .filter((p): p is UnifiedPick => p !== null)),
       catchError(() => of([] as UnifiedPick[]))
@@ -146,11 +176,7 @@ export class HomeComponent implements OnInit {
 
     const nfl$ = this.http.get<any[]>('assets/nfl-picks.json').pipe(
       map(picks => (picks ?? [])
-        .filter(p => {
-          if (!p.gameTime) return false;
-          const gt = new Date(p.gameTime);
-          return gt >= now && gt <= oneDayAhead;
-        })
+        .filter(p => isTodayUnstarted(p.gameTime))
         .map(p => this.normalizeFootball(p, 'NFL'))
         .filter((p): p is UnifiedPick => p !== null)),
       catchError(() => of([] as UnifiedPick[]))
@@ -158,11 +184,7 @@ export class HomeComponent implements OnInit {
 
     const ncaaf$ = this.http.get<any[]>('assets/ncaaf-picks.json').pipe(
       map(picks => (picks ?? [])
-        .filter(p => {
-          if (!p.gameTime) return false;
-          const gt = new Date(p.gameTime);
-          return gt >= now && gt <= oneDayAhead;
-        })
+        .filter(p => isTodayUnstarted(p.gameTime))
         .map(p => this.normalizeFootball(p, 'NCAAF'))
         .filter((p): p is UnifiedPick => p !== null)),
       catchError(() => of([] as UnifiedPick[]))
@@ -170,14 +192,14 @@ export class HomeComponent implements OnInit {
 
     const soccer$ = this.http.get<any>('assets/soccer-today.json').pipe(
       map(data => ((data?.upcoming ?? []) as any[])
-        .filter((g: any) => g.gameDate === todayStr)
+        .filter((g: any) => g.gameDate === todayET)
         .map((g: any) => this.normalizeSoccer(g))
         .filter((p): p is UnifiedPick => p !== null)),
       catchError(() => of([] as UnifiedPick[]))
     );
 
-    forkJoin([mlb$, nfl$, ncaaf$, soccer$, nhl$]).subscribe(([mlb, nfl, ncaaf, soccer, nhl]) => {
-      const all = [...mlb, ...nfl, ...ncaaf, ...soccer, ...nhl];
+    forkJoin([mlb$, nfl$, ncaaf$, soccer$, nhl$, nba$]).subscribe(([mlb, nfl, ncaaf, soccer, nhl, nba]) => {
+      const all = [...mlb, ...nfl, ...ncaaf, ...soccer, ...nhl, ...nba];
       all.sort((a, b) => b.winProb - a.winProb);
       this.topPicks = all.slice(0, 5).map((p, i) => ({ ...p, rank: i + 1 }));
       this.topPicksLoading = false;
@@ -195,6 +217,7 @@ export class HomeComponent implements OnInit {
           position:  p.position,
           projYards: p.projYards,
           projTDs:   p.projTDs,
+          projRec:   p.projRec ?? undefined,
           statLabel: p.statLabel,
           matchup:   p.matchup,
         }));

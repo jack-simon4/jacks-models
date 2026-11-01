@@ -70,7 +70,8 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv src/assets/top-picks.json src/assets/top-picks-yesterday.json src/assets/MLB-Odds.json
+          echo '{"date": "'$(date +'%B %-d, %Y')'"}' > src/assets/last-updated.json
+          git add src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv src/assets/top-picks.json src/assets/top-picks-yesterday.json src/assets/MLB-Odds.json src/assets/last-updated.json
           if git diff --staged --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
             echo "No lineup changes — nothing to commit."
@@ -92,12 +93,9 @@ jobs:
         if: steps.commit.outputs.changed == 'true'
         run: npm ci
 
-      - name: Stamp deploy date and build
+      - name: Build
         if: steps.commit.outputs.changed == 'true'
-        run: |
-          TODAY=$(date +'%B %-d, %Y')
-          sed -i "s/Last Updated: [A-Za-z]* [0-9]*, [0-9]*/Last Updated: $TODAY/" src/app/app.component.html
-          npm run build
+        run: npm run build
 
       - name: Deploy to Firebase Hosting
         if: steps.commit.outputs.changed == 'true'

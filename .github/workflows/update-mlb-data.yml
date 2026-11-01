@@ -45,7 +45,8 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add src/assets/MLB-Pitchers.csv src/assets/MLB-Hitters.csv src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv src/assets/top-picks.json src/assets/top-picks-yesterday.json
+          echo '{"date": "'$(date +'%B %-d, %Y')'"}' > src/assets/last-updated.json
+          git add src/assets/MLB-Pitchers.csv src/assets/MLB-Hitters.csv src/assets/MLB-Lineups.csv src/assets/MLB-Player-Props.csv src/assets/MLB-Last-Lineups.csv src/assets/top-picks.json src/assets/top-picks-yesterday.json src/assets/last-updated.json
           if git diff --staged --quiet; then
             echo "No CSV changes — nothing to commit."
           else
@@ -63,11 +64,8 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
-      - name: Stamp deploy date and build
-        run: |
-          TODAY=$(date +'%B %-d, %Y')
-          sed -i "s/Last Updated: [A-Za-z]* [0-9]*, [0-9]*/Last Updated: $TODAY/" src/app/app.component.html
-          npm run build
+      - name: Build
+        run: npm run build
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0

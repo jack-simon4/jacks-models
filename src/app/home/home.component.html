@@ -84,6 +84,9 @@
       <div class="player-name">{{ player.name }}</div>
       <div class="player-stats">
         📊 Proj {{ player.statLabel }}: <span class="hit-stat">{{ player.projYards }}</span>
+        <ng-container *ngIf="player.projRec != null">
+          &nbsp;|&nbsp; 🤲 Proj Rec: <span class="xbases-stat">{{ player.projRec }}</span>
+        </ng-container>
         &nbsp;|&nbsp;
         🏈 Proj TDs: <span class="hr-stat">{{ player.projTDs }}</span>
       </div>
@@ -91,6 +94,7 @@
   </div>
 </div>
 
-<button class="props-button" routerLink="/scoreboard">
-  Run NFL Prediction →
-</button>
+<div class="props-cta-row">
+  <button class="props-button" routerLink="/nfl-props">View All Props →</button>
+  <button class="props-button props-button-secondary" routerLink="/scoreboard">Run NFL Prediction →</button>
+</div>

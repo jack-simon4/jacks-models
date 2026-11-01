@@ -134,6 +134,8 @@
 
 .sport-mlb     { background: #1a3a5c; color: #7ec8e3; }
 .sport-nfl     { background: #5c1a1a; color: #f5a623; }
+.sport-nba     { background: #5c3a1a; color: #f5d123; }
+.sport-nhl     { background: #1a3a5c; color: #a0c8f5; }
 .sport-ncaaf   { background: #3d1a5c; color: #c97ff5; }
 .sport-soccer  { background: #1a5c2a; color: #7ef5a0; }
 
@@ -264,24 +266,40 @@
 .xbases-stat {
   color: #3498db;
 }
+.props-cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
 .props-button {
-  display: block;
-  margin: 20px auto 0 auto;
   padding: 12px 24px;
-
-  background: linear-gradient(
-    135deg,
-    #0f9b0f,
-    #00ff95
-  );
-
+  background: linear-gradient(135deg, #0f9b0f, #00ff95);
   border: none;
   border-radius: 25px;
-
   font-weight: bold;
   cursor: pointer;
   color: #ffffff;
   font-size: small;
+  transition: .2s;
+}
+
+.props-button:hover {
+  transform: translateY(-2px);
+}
+
+.props-button-secondary {
+  background: rgba(255,255,255,.1);
+  border: 1px solid #555;
+  color: #ccc;
+}
+
+.props-button-secondary:hover {
+  background: rgba(255,255,255,.18);
+  color: #fff;
+  box-shadow: none;
 }
 
 @media (max-width: 768px) {

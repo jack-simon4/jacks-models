@@ -1,0 +1,50 @@
+name: Update NBA Picks (Daily)
+
+# Runs at 7:00 UTC (3:00 AM ET) daily — picks ready before the morning email.
+# NBA season runs October through June.
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-nba:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch NBA team stats
+        run: python scripts/fetch_nba_stats.py
+
+      - name: Generate NBA picks
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JESIMON4_SCOREBOARD }}
+        run: python scripts/generate_nba_picks.py
+
+      - name: Commit updated NBA picks
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          echo '{"date": "'$(date +'%B %-d, %Y')'"}' > src/assets/last-updated.json
+          git add src/assets/NBA-Stats.csv src/assets/nba-picks.json src/assets/last-updated.json
+          if git diff --staged --quiet; then
+            echo "No NBA changes — nothing to commit."
+          else
+            git commit -m "chore: auto-update NBA picks $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+          fi
