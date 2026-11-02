@@ -1,0 +1,45 @@
+name: Update NCAAM Stats (Daily)
+
+# Runs at 6:00 AM UTC (2:00 AM ET) daily during basketball season (Nov–Apr).
+# Downloads fresh Barttorvik (T-Rank) efficiency ratings.
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-ncaam:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install requests
+
+      - name: Fetch NCAAM stats from Barttorvik
+        run: python scripts/fetch_ncaam_stats.py
+
+      - name: Commit updated NCAAM stats
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          echo '{"date": "'$(date +'%B %-d, %Y')'"}' > src/assets/last-updated.json
+          git add src/assets/NCAAM-Stats.csv src/assets/last-updated.json
+          if git diff --staged --quiet; then
+            echo "No NCAAM changes -- nothing to commit."
+          else
+            git commit -m "chore: auto-update NCAAM stats $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+          fi
