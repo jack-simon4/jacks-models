@@ -16,6 +16,8 @@ interface UnifiedPick {
   predictedScore: string;
   odds?: string;
   gameTime?: string;
+  spreadEdge?: number;   // model margin minus Vegas margin; + = model likes home more
+  vegasSpread?: number;  // Vegas home-team line (+ = home favored)
 }
 
 @Component({
@@ -70,6 +72,8 @@ export class HomeComponent implements OnInit {
       confidence: p.confidence,
       predictedScore: `${aAbbr} ${aSc} – ${hAbbr} ${hSc}`,
       gameTime: p.gameTime,
+      spreadEdge: p.spreadEdge,
+      vegasSpread: p.vegasSpread,
     };
   }
 
@@ -86,6 +90,8 @@ export class HomeComponent implements OnInit {
       confidence: p.confidence,
       predictedScore: `${aSc} – ${hSc}`,
       gameTime: p.gameTime,
+      spreadEdge: p.spreadEdge,
+      vegasSpread: p.vegasSpread,
     };
   }
 
@@ -222,7 +228,10 @@ export class HomeComponent implements OnInit {
 
     forkJoin([mlb$, nfl$, ncaaf$, soccer$, nhl$, nba$, ncaam$]).subscribe(([mlb, nfl, ncaaf, soccer, nhl, nba, ncaam]) => {
       const all = [...mlb, ...nfl, ...ncaaf, ...soccer, ...nhl, ...nba, ...ncaam];
-      all.sort((a, b) => b.winProb - a.winProb);
+      // Sort by |spreadEdge| when available; fall back to scaled winProb edge
+      const pickScore = (p: UnifiedPick): number =>
+        p.spreadEdge != null ? Math.abs(p.spreadEdge) : (p.winProb - 0.5) * 20;
+      all.sort((a, b) => pickScore(b) - pickScore(a));
       this.topPicks = all.slice(0, 5).map((p, i) => ({ ...p, rank: i + 1 }));
       this.topPicksLoading = false;
     });

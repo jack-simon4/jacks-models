@@ -167,6 +167,13 @@
   font-size: 12px;
 }
 
+.spread-edge {
+  color: #f5a623;
+  font-size: 11px;
+  font-style: italic;
+  margin: 1px 0;
+}
+
 .predicted-score {
   color: #c5c3c5;
   font-size: 12px;

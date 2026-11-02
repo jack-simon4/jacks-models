@@ -275,6 +275,42 @@ def save_to_firestore(games_data: list):
         print(f'[NCAAF] Firestore error: {exc}')
 
 
+def load_lines(year: int, weeks: list) -> dict:
+    """Returns {game_id: vegasHomeMargin} — positive = home favored.
+    Calls CFBD /lines; negative CFBD spread means home is favorite."""
+    if not API_KEY:
+        return {}
+    headers   = {'Authorization': f'Bearer {API_KEY}'}
+    lines_map = {}
+    for week in weeks:
+        try:
+            resp = requests.get(
+                f'{BASE}/lines',
+                params={'year': year, 'week': week, 'seasonType': 'regular'},
+                headers=headers, timeout=15,
+            )
+            if resp.status_code != 200:
+                continue
+            for game in resp.json():
+                gid   = game.get('id')
+                lines = game.get('lines') or []
+                # Prefer consensus line; fall back to first available
+                for line in sorted(lines, key=lambda l: (l.get('provider', '') != 'consensus')):
+                    s = line.get('spread')
+                    if s is not None:
+                        try:
+                            # CFBD: negative spread = home favorite → our convention: positive
+                            lines_map[gid] = round(-float(s), 1)
+                            break
+                        except (ValueError, TypeError):
+                            pass
+        except Exception as exc:
+            print(f'[NCAAF] Lines w{week}: {exc}')
+        time.sleep(0.2)
+    print(f'[NCAAF] Loaded Vegas lines for {len(lines_map)} games.')
+    return lines_map
+
+
 def generate_ncaaf_picks():
     stats = load_stats()
     if not stats:
@@ -286,6 +322,7 @@ def generate_ncaaf_picks():
     year       = now.year if now.month >= 8 else now.year - 1
     weeks      = current_ncaaf_weeks(now)
     games      = fetch_schedule(year, weeks)
+    lines_map  = load_lines(year, weeks)
     window_end = now + timedelta(days=10)
 
     picks          = []   # upcoming games with clear edge → ncaaf-picks.json
@@ -328,7 +365,15 @@ def generate_ncaaf_picks():
             pick_team, pick_wp = away, 1 - wp
 
         edge  = pick_wp - 0.5
-        label = confidence_label(edge)
+
+        # Spread edge vs Vegas (positive = model likes home more than Vegas does)
+        vegas_home  = lines_map.get(game_id)
+        spread_edge = round(diff - vegas_home, 1) if vegas_home is not None else None
+        if spread_edge is not None:
+            abs_se = abs(spread_edge)
+            label  = 'Elite' if abs_se >= 7 else ('Strong' if abs_se >= 4 else ('Lean' if abs_se >= 2 else ''))
+        else:
+            label = confidence_label(edge)
 
         # Use game_dt (not h_pts) to decide if the game has been played.
         # Some CFBD entries return 0 for future game scores instead of null.
@@ -345,6 +390,8 @@ def generate_ncaaf_picks():
             'pick':               pick_team,
             'winProb':            round(pick_wp, 3),
             'confidence':         label,
+            'vegasSpread':        vegas_home,
+            'spreadEdge':         spread_edge,
             'gameTime':           start_raw,
             'actualHomeScore':    actual_home,
             'actualAwayScore':    actual_away,
@@ -362,7 +409,7 @@ def generate_ncaaf_picks():
         print(f'[NCAAF] Teams with no stats ({len(missing_teams)} unique): '
               f'{sorted(missing_teams)}')
 
-    picks.sort(key=lambda p: p['winProb'], reverse=True)
+    picks.sort(key=lambda p: abs(p.get('spreadEdge') or 0), reverse=True)
     for i, p in enumerate(picks):
         p['rank'] = i + 1
 

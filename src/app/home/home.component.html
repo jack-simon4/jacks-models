@@ -53,6 +53,9 @@
         <span class="pick-prob">&nbsp;{{ (pick.winProb * 100).toFixed(0) }}%</span>
         <span *ngIf="pick.odds" class="pick-odds">&nbsp;{{ pick.odds }}</span>
       </div>
+      <div *ngIf="pick.spreadEdge != null" class="spread-edge">
+        Edge: {{ pick.spreadEdge > 0 ? '+' : '' }}{{ pick.spreadEdge.toFixed(1) }} pts vs Vegas
+      </div>
       <div class="predicted-score">{{ pick.predictedScore }}</div>
     </div>
     <div class="confidence">{{ pick.confidence }}</div>

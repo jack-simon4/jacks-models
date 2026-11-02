@@ -185,6 +185,17 @@ def parse_event(event: dict) -> dict | None:
         except (TypeError, ValueError):
             pass
 
+    # Extract Vegas spread from ESPN odds (negative ESPN spread = home favorite)
+    odds_list = competition.get('odds') or []
+    vegas_spread = None
+    if odds_list:
+        raw = odds_list[0].get('spread')
+        if raw is not None:
+            try:
+                vegas_spread = round(-float(raw), 1)
+            except (ValueError, TypeError):
+                pass
+
     return {
         'gameId':     event.get('id'),
         'homeTeam':   home_name,
@@ -193,6 +204,7 @@ def parse_event(event: dict) -> dict | None:
         'isFinal':    is_final,
         'homeActual': home_score,
         'awayActual': away_score,
+        'vegasSpread': vegas_spread,
     }
 
 
@@ -316,7 +328,15 @@ def main():
         else:
             pick_team, pick_wp = away_name, round(1 - wp, 3)
         edge  = pick_wp - 0.5
-        label = confidence_label(edge)
+
+        # Spread edge vs Vegas (positive = model likes home more than Vegas does)
+        vegas_home  = parsed.get('vegasSpread')
+        spread_edge = round((h_score - a_score) - vegas_home, 1) if vegas_home is not None else None
+        if spread_edge is not None:
+            abs_se = abs(spread_edge)
+            label  = 'Elite' if abs_se >= 10 else ('Strong' if abs_se >= 6 else ('Lean' if abs_se >= 3 else ''))
+        else:
+            label = confidence_label(edge)
 
         entry = {
             'homeTeam':           home_name,
@@ -328,6 +348,8 @@ def main():
             'pick':               pick_team,
             'winProb':            round(pick_wp, 3),
             'confidence':         label,
+            'vegasSpread':        vegas_home,
+            'spreadEdge':         spread_edge,
             'gameTime':           parsed['startUTC'],
         }
         firestore_data.append(entry)
@@ -338,7 +360,7 @@ def main():
         if not game_started and label:
             picks.append(entry)
 
-    picks.sort(key=lambda p: p['winProb'], reverse=True)
+    picks.sort(key=lambda p: abs(p.get('spreadEdge') or 0), reverse=True)
     for i, p in enumerate(picks):
         p['rank'] = i + 1
 

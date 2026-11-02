@@ -313,25 +313,30 @@ def main():
         diff  = h_score - a_score
         wp    = win_prob(diff)
         pick  = home_name if diff > 0 else away_name
-        conf_pct = round((max(wp, 1 - wp)) * 100)
-        confidence = 'Elite' if conf_pct >= 70 else ('Strong' if conf_pct >= 60 else 'Lean')
         pick_wp = wp if pick == home_name else round(1 - wp, 3)
+
+        # Spread edge: model home margin minus Vegas home margin (+ = model likes home more)
+        spread_edge = round(diff - m['spread'], 1)
+        abs_edge    = abs(spread_edge)
+        confidence  = 'Elite' if abs_edge >= 7 else ('Strong' if abs_edge >= 4 else ('Lean' if abs_edge >= 2 else ''))
 
         picks.append({
             'homeTeam':           home_name,
             'awayTeam':           away_name,
-            'homePredicted':      h_score,      # kept for email compat
-            'awayPredicted':      a_score,       # kept for email compat
+            'homePredicted':      h_score,
+            'awayPredicted':      a_score,
             'predictedHomeScore': h_score,
             'predictedAwayScore': a_score,
             'pick':               pick,
             'winProb':            pick_wp,
             'spread':             m['spread'],
+            'vegasSpread':        m['spread'],
+            'spreadEdge':         spread_edge,
             'gameTime':           m['gameTime'],
             'confidence':         confidence,
         })
 
-    picks.sort(key=lambda p: p['winProb'], reverse=True)
+    picks.sort(key=lambda p: abs(p.get('spreadEdge', 0)), reverse=True)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         json.dump(picks, f, indent=2)
     print(f'[NFL Picks] Wrote {len(picks)} picks to nfl-picks.json.')
