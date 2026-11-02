@@ -13,6 +13,7 @@ Requires:
   EMAIL_TO           — recipient; defaults to GMAIL_USER
 """
 
+import base64
 import json
 import os
 import smtplib
@@ -31,6 +32,8 @@ YESTERDAY_PICKS_PATH = os.path.join(ASSETS, 'top-picks-yesterday.json')
 NFL_PATH             = os.path.join(ASSETS, 'nfl-picks.json')
 NCAAF_PATH           = os.path.join(ASSETS, 'ncaaf-picks.json')
 NHL_PATH             = os.path.join(ASSETS, 'nhl-picks.json')
+NBA_PATH             = os.path.join(ASSETS, 'nba-picks.json')
+NCAAM_PATH           = os.path.join(ASSETS, 'ncaam-picks.json')
 
 GMAIL_USER  = os.environ.get('GMAIL_USER', '')
 GMAIL_PASS  = os.environ.get('GMAIL_APP_PASSWORD', '')
@@ -406,11 +409,20 @@ def build_nfl_section(picks: list) -> str:
         h_sc = p['homePredicted']
         a_sc = p['awayPredicted']
         conf = p.get('confidence', '')
-        cc   = '#28a745' if wp >= 70 else ('#856404' if wp >= 60 else '#6c757d')
+        se   = p.get('spreadEdge')
+        vs   = p.get('vegasSpread')
+        if se is not None and vs is not None:
+            cover  = home if se >= 0 else away
+            vs_str = f'-{vs:.1f}' if vs > 0 else f'+{abs(vs):.1f}'
+            bet_str = f'{cover} {vs_str} · edge {se:+.1f}'
+            cc = '#28a745' if abs(se) >= 7 else ('#856404' if abs(se) >= 4 else '#6c757d')
+        else:
+            bet_str = pick
+            cc = '#28a745' if wp >= 70 else ('#856404' if wp >= 60 else '#6c757d')
         rows += f"""
         <tr>
           <td style="{TD}">{away} @ {home}</td>
-          <td style="{TD};font-weight:bold;color:{cc}">{pick} ({wp}%)</td>
+          <td style="{TD};font-weight:bold;color:{cc}">{bet_str}</td>
           <td style="{TD};text-align:center;color:#555">{a_sc}–{h_sc}</td>
           <td style="{TD};text-align:center;font-size:12px">{conf}</td>
         </tr>"""
@@ -422,7 +434,7 @@ def build_nfl_section(picks: list) -> str:
     <table style="border-collapse:collapse;width:100%;font-size:14px">
       <thead><tr style="{TABLE_HEADER_STYLE}">
         <th style="padding:8px;text-align:left">Matchup</th>
-        <th style="padding:8px;text-align:left">Pick</th>
+        <th style="padding:8px;text-align:left">Bet / Edge</th>
         <th style="padding:8px;text-align:center">Predicted Score</th>
         <th style="padding:8px;text-align:center">Confidence</th>
       </tr></thead>
@@ -799,6 +811,199 @@ def build_nhl_picks_section(picks: list, today_et: str) -> str:
     </table>"""
 
 
+# ── NBA section ──────────────────────────────────────────────────────────────
+
+def fetch_nba_from_firestore(yesterday_et: str) -> list:
+    """Return yesterday's finished NBA games from Firestore."""
+    sa_json = os.environ.get('FIREBASE_SERVICE_ACCOUNT')
+    if not sa_json:
+        return []
+    try:
+        import firebase_admin
+        from firebase_admin import credentials, firestore as fb_firestore
+        cred = credentials.Certificate(json.loads(sa_json))
+        app  = firebase_admin.initialize_app(cred, name='email_nba')
+        db   = fb_firestore.client(app)
+        docs = db.collection('games').where('sport', '==', 'NBA').stream()
+        games = []
+        for d in docs:
+            data = d.to_dict()
+            if _et_date(data.get('gameTime', '')) == yesterday_et and data.get('actualHomeScore') is not None:
+                games.append(data)
+        firebase_admin.delete_app(app)
+        games.sort(key=lambda g: g.get('gameTime', ''))
+        print(f'[Email] Firestore NBA: {len(games)} finished games for {yesterday_et}')
+        return games
+    except Exception as exc:
+        print(f'[Email] Firestore NBA fetch error: {exc}')
+        return []
+
+
+def build_nba_section(yest_games: list, picks: list, yesterday_et: str, today_et: str) -> str:
+    parts = []
+
+    # Yesterday's NBA results
+    if yest_games:
+        correct = total = 0
+        rows = ''
+        for g in yest_games:
+            away   = g.get('awayTeam', '')
+            home   = g.get('homeTeam', '')
+            pick   = g.get('pick', '')
+            h_pred = g.get('predictedHomeScore', 0)
+            a_pred = g.get('predictedAwayScore', 0)
+            h_act  = g.get('actualHomeScore')
+            a_act  = g.get('actualAwayScore')
+            wp     = round(g.get('winProb', 0) * 100)
+            ok     = pick_correct_mlb(pick, away, home, a_act, h_act)
+            bg     = '#d4edda' if ok else '#f8d7da'
+            icon   = '✅' if ok else '❌'
+            if ok is not None:
+                total += 1
+                if ok: correct += 1
+            rows += f"""
+            <tr style="background:{bg}">
+              <td style="{TD}">{away} @ {home}</td>
+              <td style="{TD};font-weight:bold">{pick} ({wp}%)</td>
+              <td style="{TD};font-size:12px;color:#555">{int(a_pred)}–{int(h_pred)}</td>
+              <td style="{TD};text-align:center">{a_act}–{h_act}</td>
+              <td style="{TD};text-align:center">{icon}</td>
+            </tr>"""
+        summary = ''
+        if total:
+            pct     = round(correct / total * 100)
+            summary = f'<p style="font-size:17px;font-weight:bold;color:{summary_color(pct)}">{correct}/{total} correct ({pct}%)</p>'
+        parts.append(f"""
+        <h3 style="border-bottom:2px solid #1a1a2e;padding-bottom:6px;margin-top:24px">
+          🏀 NBA &nbsp;<span style="font-size:14px;color:#666">Yesterday ({yesterday_et})</span>
+        </h3>
+        {summary}
+        <table style="border-collapse:collapse;width:100%;font-size:14px">
+          <thead><tr style="{TABLE_HEADER_STYLE}">
+            <th style="padding:8px;text-align:left">Matchup</th>
+            <th style="padding:8px;text-align:left">Pick</th>
+            <th style="padding:8px;text-align:left">Predicted</th>
+            <th style="padding:8px;text-align:center">Actual</th>
+            <th style="padding:8px"></th>
+          </tr></thead>
+          <tbody>{rows}</tbody>
+        </table>""")
+
+    # Today's NBA picks sorted by spread edge
+    today_picks = []
+    for p in picks:
+        try:
+            gt = datetime.fromisoformat(p.get('gameTime', '').replace('Z', '+00:00'))
+            if gt.astimezone(ET).strftime('%Y-%m-%d') == today_et:
+                today_picks.append(p)
+        except (ValueError, AttributeError):
+            pass
+    today_picks.sort(key=lambda p: abs(p.get('spreadEdge') or 0), reverse=True)
+
+    if today_picks:
+        rows = ''
+        for p in today_picks[:8]:
+            home = p['homeTeam']
+            away = p['awayTeam']
+            pick = p['pick']
+            wp   = round(p['winProb'] * 100)
+            h_sc = round(p.get('predictedHomeScore', 0))
+            a_sc = round(p.get('predictedAwayScore', 0))
+            conf = p.get('confidence', '')
+            se   = p.get('spreadEdge')
+            vs   = p.get('vegasSpread')
+            if se is not None and vs is not None:
+                cover   = home if se >= 0 else away
+                vs_str  = f'-{vs:.1f}' if vs > 0 else f'+{abs(vs):.1f}'
+                bet_str = f'{cover} {vs_str} · edge {se:+.1f}'
+                cc = '#28a745' if abs(se) >= 10 else ('#856404' if abs(se) >= 6 else '#6c757d')
+            else:
+                bet_str = pick
+                cc = '#28a745' if wp >= 68 else ('#856404' if wp >= 60 else '#6c757d')
+            try:
+                gt_str = datetime.fromisoformat(p['gameTime'].replace('Z', '+00:00')).astimezone(ET).strftime('%-I:%M %p ET')
+            except Exception:
+                gt_str = ''
+            rows += f"""
+            <tr>
+              <td style="{TD}">{away} @ {home}</td>
+              <td style="{TD};color:#555;font-size:12px">{gt_str}</td>
+              <td style="{TD};font-weight:bold;color:{cc}">{bet_str}</td>
+              <td style="{TD};text-align:center;color:#555">{a_sc}–{h_sc}</td>
+              <td style="{TD};text-align:center;font-size:12px">{conf}</td>
+            </tr>"""
+        parts.append(f"""
+        <h3 style="border-bottom:2px solid #1a1a2e;padding-bottom:6px;margin-top:24px">
+          🏀 NBA Picks &nbsp;<span style="font-size:14px;color:#666">Today ({today_et})</span>
+        </h3>
+        <table style="border-collapse:collapse;width:100%;font-size:14px">
+          <thead><tr style="{TABLE_HEADER_STYLE}">
+            <th style="padding:8px;text-align:left">Matchup</th>
+            <th style="padding:8px;text-align:left">Tip-off (ET)</th>
+            <th style="padding:8px;text-align:left">Bet / Edge</th>
+            <th style="padding:8px;text-align:center">Predicted</th>
+            <th style="padding:8px;text-align:center">Confidence</th>
+          </tr></thead>
+          <tbody>{rows}</tbody>
+        </table>""")
+
+    return '\n'.join(parts)
+
+
+# ── NCAAM section ─────────────────────────────────────────────────────────────
+
+def build_ncaam_picks_section(picks: list, today_et: str) -> str:
+    today_picks = []
+    for p in picks:
+        try:
+            gt = datetime.fromisoformat(p.get('gameTime', '').replace('Z', '+00:00'))
+            if gt.astimezone(ET).strftime('%Y-%m-%d') == today_et:
+                today_picks.append(p)
+        except (ValueError, AttributeError):
+            pass
+    if not today_picks:
+        return ''
+
+    today_picks.sort(key=lambda p: p.get('winProb', 0), reverse=True)
+    rows = ''
+    for p in today_picks[:8]:
+        home = p['homeTeam']
+        away = p['awayTeam']
+        pick = p['pick']
+        wp   = round(p['winProb'] * 100)
+        h_sc = p.get('predictedHomeScore', 0)
+        a_sc = p.get('predictedAwayScore', 0)
+        conf = p.get('confidence', '')
+        cc   = '#28a745' if wp >= 68 else ('#856404' if wp >= 60 else '#6c757d')
+        try:
+            gt_str = datetime.fromisoformat(p['gameTime'].replace('Z', '+00:00')).astimezone(ET).strftime('%-I:%M %p ET')
+        except Exception:
+            gt_str = ''
+        rows += f"""
+        <tr>
+          <td style="{TD}">{away} @ {home}</td>
+          <td style="{TD};color:#555;font-size:12px">{gt_str}</td>
+          <td style="{TD};font-weight:bold;color:{cc}">{pick} ({wp}%)</td>
+          <td style="{TD};text-align:center;color:#555">{a_sc}–{h_sc}</td>
+          <td style="{TD};text-align:center;font-size:12px">{conf}</td>
+        </tr>"""
+
+    return f"""
+    <h3 style="border-bottom:2px solid #1a1a2e;padding-bottom:6px;margin-top:24px">
+      🏀 College Basketball &nbsp;<span style="font-size:14px;color:#666">Today ({today_et})</span>
+    </h3>
+    <table style="border-collapse:collapse;width:100%;font-size:14px">
+      <thead><tr style="{TABLE_HEADER_STYLE}">
+        <th style="padding:8px;text-align:left">Matchup</th>
+        <th style="padding:8px;text-align:left">Tip-off (ET)</th>
+        <th style="padding:8px;text-align:left">Pick</th>
+        <th style="padding:8px;text-align:center">Predicted</th>
+        <th style="padding:8px;text-align:center">Confidence</th>
+      </tr></thead>
+      <tbody>{rows}</tbody>
+    </table>"""
+
+
 # ── Tweet drafts ─────────────────────────────────────────────────────────────
 
 LEAGUE_FLAG = {
@@ -834,6 +1039,9 @@ def build_tweet_drafts(
     mlb_yest_games: list | None = None,
     ncaaf_yest_games: list | None = None,
     ncaaf_picks: list | None = None,
+    nba_yest_games: list | None = None,
+    nba_picks: list | None = None,
+    ncaam_picks: list | None = None,
 ) -> str:
     now      = datetime.now(timezone.utc)
     date_lbl = now.strftime('%b %-d').replace(' 0', ' ')
@@ -995,12 +1203,77 @@ def build_tweet_drafts(
             emoji = CONF_EMOJI.get(p.get('confidence', ''), '📊')
             pick  = p['pick']
             opp   = p['awayTeam'] if p['homeTeam'] == pick else p['homeTeam']
-            wp    = round(p['winProb'] * 100)
-            lines.append(f'{emoji} {pick} vs {opp} — {wp}%')
+            se    = p.get('spreadEdge')
+            vs    = p.get('vegasSpread')
+            if se is not None and vs is not None:
+                cover = pick if (se >= 0 and p['homeTeam'] == pick) or (se < 0 and p['awayTeam'] == pick) else opp
+                lines.append(f'{emoji} {cover} · edge {se:+.1f} pts vs Vegas')
+            else:
+                wp = round(p['winProb'] * 100)
+                lines.append(f'{emoji} {pick} vs {opp} — {wp}%')
         lines.append('')
         lines.append(f'Full picks 👉 {MLB_URL}')
         lines.append('#NFL #NFLPicks #SportsBetting')
         drafts.append(_tweet_box('🏈 NFL — post Thursday or Sunday morning', '\n'.join(lines)))
+
+    # ── NBA tweet ────────────────────────────────────────────────────────────
+    if nba_picks or nba_yest_games:
+        nba_correct = nba_total = 0
+        for g in (nba_yest_games or []):
+            pick = g.get('pick', '')
+            away, home = g.get('awayTeam', ''), g.get('homeTeam', '')
+            h_act = g.get('actualHomeScore')
+            a_act = g.get('actualAwayScore')
+            if h_act is not None and a_act is not None:
+                ok = pick_correct_mlb(pick, away, home, a_act, h_act)
+                if ok is not None:
+                    nba_total += 1
+                    if ok: nba_correct += 1
+
+        top_nba = sorted(nba_picks or [], key=lambda p: abs(p.get('spreadEdge') or 0), reverse=True)[:5]
+        lines   = [f'🏀 NBA Picks — {date_lbl}', '']
+        if nba_total:
+            pct = round(nba_correct / nba_total * 100)
+            lines.append(f'Yesterday: {nba_correct}/{nba_total} ({pct}%) {"✅" if pct >= 55 else "❌"}')
+            lines.append('')
+        if top_nba:
+            lines.append("Today's top edges:")
+            for p in top_nba:
+                emoji = CONF_EMOJI.get(p.get('confidence', ''), '📊')
+                home, away = p['homeTeam'], p['awayTeam']
+                se   = p.get('spreadEdge')
+                vs   = p.get('vegasSpread')
+                if se is not None and vs is not None:
+                    cover = home if se >= 0 else away
+                    lines.append(f'{emoji} {cover} · edge {se:+.1f} pts')
+                else:
+                    pick = p['pick']
+                    wp   = round(p['winProb'] * 100)
+                    opp  = away if home == pick else home
+                    lines.append(f'{emoji} {pick} vs {opp} — {wp}%')
+            lines.append('')
+        lines.append(f'Full model 👉 {MLB_URL}')
+        lines.append('#NBA #NBAPicksAndParlays #SportsBetting')
+        drafts.append(_tweet_box('🏀 NBA — post each morning', '\n'.join(lines)))
+
+    # ── NCAAM tweet ──────────────────────────────────────────────────────────
+    if ncaam_picks:
+        now_utc  = datetime.now(timezone.utc)
+        upcoming = [p for p in ncaam_picks
+                    if datetime.fromisoformat(p.get('gameTime', '').replace('Z', '+00:00')) >= now_utc]
+        upcoming.sort(key=lambda p: p.get('winProb', 0), reverse=True)
+        if upcoming:
+            lines = [f'🏀 College Hoops Picks — {date_lbl}', '']
+            for p in upcoming[:5]:
+                emoji = CONF_EMOJI.get(p.get('confidence', ''), '📊')
+                pick  = p.get('pick', '')
+                opp   = p.get('awayTeam') if p.get('homeTeam') == pick else p.get('homeTeam')
+                wp    = round(p.get('winProb', 0) * 100)
+                lines.append(f'{emoji} {pick} vs {opp} — {wp}%')
+            lines.append('')
+            lines.append(f'Full model 👉 {MLB_URL}')
+            lines.append('#NCAAM #CollegeBasketball #SportsBetting')
+            drafts.append(_tweet_box('🏀 NCAAM — post each morning during season', '\n'.join(lines)))
 
     if not drafts:
         return ''
@@ -1023,10 +1296,12 @@ def main():
     now          = datetime.now(timezone.utc)
     now_et       = now.astimezone(ET)
     yesterday_dt = now - timedelta(days=1)
-    yesterday    = yesterday_dt.strftime('%Y-%m-%d')          # UTC date (used for soccer/NCAAF/NHL gameDate fields)
-    yesterday_et = (now_et - timedelta(days=1)).strftime('%Y-%m-%d')  # ET date (for gameTime comparisons)
-    today_str    = now.strftime('%Y-%m-%d')
+    # Always use ET-based dates so a late-night game (e.g. 11 PM ET = next UTC day)
+    # appears under the correct calendar date.
+    yesterday_et = (now_et - timedelta(days=1)).strftime('%Y-%m-%d')
+    yesterday    = yesterday_et   # alias — keep variable name for compatibility
     today_et     = now_et.strftime('%Y-%m-%d')
+    today_str    = today_et       # alias for soccer section
     date_hdr     = now_et.strftime('%A, %B %d, %Y').replace(' 0', ' ')
 
     sections          = []
@@ -1120,9 +1395,9 @@ def main():
     else:
         nhl_picks_list = []
 
-    nhl_yest_games = fetch_nhl_from_firestore(yesterday)
+    nhl_yest_games = fetch_nhl_from_firestore(yesterday_et)
     if nhl_yest_games:
-        nhl_results_html = build_nhl_results_section(nhl_yest_games, yesterday)
+        nhl_results_html = build_nhl_results_section(nhl_yest_games, yesterday_et)
         if nhl_results_html:
             sections.append(nhl_results_html)
 
@@ -1130,18 +1405,56 @@ def main():
     if nhl_picks_html:
         sections.append(nhl_picks_html)
 
+    # NBA results (Firestore) + today's picks (json)
+    nba_picks_list = []
+    nba_yest_games = fetch_nba_from_firestore(yesterday_et)
+    if os.path.exists(NBA_PATH):
+        with open(NBA_PATH, encoding='utf-8') as f:
+            nba_picks_list = json.load(f)
+    nba_html = build_nba_section(nba_yest_games, nba_picks_list, yesterday_et, today_et)
+    if nba_html:
+        sections.append(nba_html)
+
+    # NCAAM today's picks (json only — early season, no historical for email)
+    ncaam_picks_list = []
+    if os.path.exists(NCAAM_PATH):
+        with open(NCAAM_PATH, encoding='utf-8') as f:
+            ncaam_picks_list = json.load(f)
+    ncaam_html = build_ncaam_picks_section(ncaam_picks_list, today_et)
+    if ncaam_html:
+        sections.append(ncaam_html)
+
     if not sections:
         print('[Email] No data available — skipping.')
         sys.exit(0)
 
-    # Tweet drafts — afternoon box uses today's picks; morning recap uses Firestore games
+    # Tweet drafts
     tweet_html = build_tweet_drafts(
         soccer_data, mlb_picks_today, mlb_actuals, nfl_picks,
-        yesterday, today_str,
+        yesterday_et, today_str,
         mlb_yest_games=mlb_fs_games if mlb_fs_games else None,
         ncaaf_yest_games=ncaaf_yest_games if ncaaf_yest_games else None,
         ncaaf_picks=ncaaf_picks_list,
+        nba_yest_games=nba_yest_games if nba_yest_games else None,
+        nba_picks=nba_picks_list if nba_picks_list else None,
+        ncaam_picks=ncaam_picks_list if ncaam_picks_list else None,
     )
+
+    # Inline social card image if it was generated today
+    social_card_html = ''
+    card_path = os.path.join(ASSETS, 'social-picks.png')
+    if os.path.exists(card_path):
+        try:
+            with open(card_path, 'rb') as cf:
+                b64 = base64.b64encode(cf.read()).decode()
+            social_card_html = f"""
+    <h3 style="border-bottom:2px solid #1a1a2e;padding-bottom:6px;margin-top:32px">
+      📱 Today's Social Card
+    </h3>
+    <p style="color:#555;font-size:13px;margin-top:0">Save and post to Instagram, Twitter, or TikTok.</p>
+    <img src="data:image/png;base64,{b64}" style="max-width:100%;border-radius:12px" alt="Today's picks card">"""
+        except Exception as exc:
+            print(f'[Email] Could not inline social card: {exc}')
 
     body = '\n<br>\n'.join(sections)
     html = f"""<!DOCTYPE html>
@@ -1153,6 +1466,7 @@ def main():
   </div>
   <div style="border:1px solid #ddd;border-top:none;padding:20px;border-radius:0 0 8px 8px">
     {body}
+    {social_card_html}
     {tweet_html}
     <br>
     <p style="color:#aaa;font-size:12px;margin-top:24px">
@@ -1162,7 +1476,7 @@ def main():
 </body>
 </html>"""
 
-    subject = f"🏆 Jack's Models Daily Report — {yesterday}"
+    subject = f"🏆 Jack's Models Daily Report — {today_et}"
     msg = MIMEMultipart('alternative')
     msg['Subject'] = subject
     msg['From']    = GMAIL_USER
