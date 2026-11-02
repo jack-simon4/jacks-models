@@ -20,6 +20,7 @@ Falls back to prior season when average games played < 3.
 
 import csv
 import os
+import sys
 import time
 from datetime import datetime
 
@@ -42,22 +43,26 @@ def current_season() -> tuple[str, str]:
 def fetch_advanced(season: str, last_n: int = 0, location: str = '') -> list[dict]:
     from nba_api.stats.endpoints import leaguedashteamstats
     label = f'{season} last_n={last_n} loc={location or "all"}'
-    try:
-        kwargs = dict(
-            measure_type_detailed_defense='Advanced',
-            per_mode_simple='PerGame',
-            season=season,
-            season_type_all_star='Regular Season',
-            last_n_games=last_n,
-            location_nullable=location,
-        )
-        df = leaguedashteamstats.LeagueDashTeamStats(**kwargs).get_data_frames()[0]
-        rows = df.to_dict('records')
-        print(f'[NBA Stats] {label}: {len(rows)} teams')
-        return rows
-    except Exception as exc:
-        print(f'[NBA Stats] {label} error: {exc}')
-        return []
+    for attempt in range(1, 4):
+        try:
+            kwargs = dict(
+                measure_type_detailed_defense='Advanced',
+                per_mode_simple='PerGame',
+                season=season,
+                season_type_all_star='Regular Season',
+                last_n_games=last_n,
+                location_nullable=location,
+                timeout=60,
+            )
+            df = leaguedashteamstats.LeagueDashTeamStats(**kwargs).get_data_frames()[0]
+            rows = df.to_dict('records')
+            print(f'[NBA Stats] {label}: {len(rows)} teams')
+            return rows
+        except Exception as exc:
+            print(f'[NBA Stats] {label} attempt {attempt}/3 failed: {exc}')
+            if attempt < 3:
+                time.sleep(10 * attempt)
+    return []
 
 
 def avg_gp(rows: list[dict]) -> float:
@@ -90,8 +95,8 @@ def main():
         season = cur_season
 
     if not overall:
-        print('[NBA Stats] No data — aborting.')
-        return
+        print('[NBA Stats] No data after all retries — aborting.')
+        sys.exit(1)
 
     last3 = fetch_advanced(season, last_n=3);   time.sleep(1)
     home  = fetch_advanced(season, location='Home'); time.sleep(1)
