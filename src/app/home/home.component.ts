@@ -89,6 +89,20 @@ export class HomeComponent implements OnInit {
     };
   }
 
+  private normalizeNCAAM(p: any): UnifiedPick | null {
+    if (!p.confidence) return null;
+    return {
+      rank: 0,
+      sport: 'NCAAM',
+      matchup: `${p.awayTeam} @ ${p.homeTeam}`,
+      pick: p.pick,
+      winProb: p.winProb ?? 0,
+      confidence: p.confidence,
+      predictedScore: `${p.awayTeam.slice(0,6)} ${p.predictedAwayScore} – ${p.homeTeam.slice(0,6)} ${p.predictedHomeScore}`,
+      gameTime: p.gameTime,
+    };
+  }
+
   private normalizeNHL(p: any): UnifiedPick | null {
     if (!p.confidence) return null;
     const aSc = (p.predictedAwayScore ?? 0) as number;
@@ -158,6 +172,14 @@ export class HomeComponent implements OnInit {
       catchError(() => of([] as UnifiedPick[]))
     );
 
+    const ncaam$ = this.http.get<any[]>('assets/ncaam-picks.json').pipe(
+      map(picks => (picks ?? [])
+        .filter(p => isTodayUnstarted(p.gameTime))
+        .map(p => this.normalizeNCAAM(p))
+        .filter((p): p is UnifiedPick => p !== null)),
+      catchError(() => of([] as UnifiedPick[]))
+    );
+
     const nba$ = this.http.get<any[]>('assets/nba-picks.json').pipe(
       map(picks => (picks ?? [])
         .filter(p => isTodayUnstarted(p.gameTime))
@@ -198,8 +220,8 @@ export class HomeComponent implements OnInit {
       catchError(() => of([] as UnifiedPick[]))
     );
 
-    forkJoin([mlb$, nfl$, ncaaf$, soccer$, nhl$, nba$]).subscribe(([mlb, nfl, ncaaf, soccer, nhl, nba]) => {
-      const all = [...mlb, ...nfl, ...ncaaf, ...soccer, ...nhl, ...nba];
+    forkJoin([mlb$, nfl$, ncaaf$, soccer$, nhl$, nba$, ncaam$]).subscribe(([mlb, nfl, ncaaf, soccer, nhl, nba, ncaam]) => {
+      const all = [...mlb, ...nfl, ...ncaaf, ...soccer, ...nhl, ...nba, ...ncaam];
       all.sort((a, b) => b.winProb - a.winProb);
       this.topPicks = all.slice(0, 5).map((p, i) => ({ ...p, rank: i + 1 }));
       this.topPicksLoading = false;
