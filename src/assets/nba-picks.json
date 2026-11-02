@@ -13,6 +13,19 @@
     "rank": 1
   },
   {
+    "homeTeam": "New York Knicks",
+    "awayTeam": "Chicago Bulls",
+    "predictedHomeScore": 125.0,
+    "predictedAwayScore": 105.0,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "New York Knicks",
+    "winProb": 0.832,
+    "confidence": "Elite",
+    "gameTime": "2026-11-05T00:30Z",
+    "rank": 2
+  },
+  {
     "homeTeam": "San Antonio Spurs",
     "awayTeam": "Utah Jazz",
     "predictedHomeScore": 128.0,
@@ -23,7 +36,33 @@
     "winProb": 0.808,
     "confidence": "Elite",
     "gameTime": "2026-11-03T01:30Z",
-    "rank": 2
+    "rank": 3
+  },
+  {
+    "homeTeam": "San Antonio Spurs",
+    "awayTeam": "Dallas Mavericks",
+    "predictedHomeScore": 124.0,
+    "predictedAwayScore": 108.0,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "San Antonio Spurs",
+    "winProb": 0.782,
+    "confidence": "Elite",
+    "gameTime": "2026-11-05T02:30Z",
+    "rank": 4
+  },
+  {
+    "homeTeam": "Boston Celtics",
+    "awayTeam": "Milwaukee Bucks",
+    "predictedHomeScore": 115.0,
+    "predictedAwayScore": 102.0,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "Boston Celtics",
+    "winProb": 0.739,
+    "confidence": "Elite",
+    "gameTime": "2026-11-05T00:30Z",
+    "rank": 5
   },
   {
     "homeTeam": "Orlando Magic",
@@ -36,20 +75,46 @@
     "winProb": 0.723,
     "confidence": "Elite",
     "gameTime": "2026-11-03T00:30Z",
-    "rank": 3
+    "rank": 6
   },
   {
-    "homeTeam": "Indiana Pacers",
-    "awayTeam": "Brooklyn Nets",
-    "predictedHomeScore": 116.0,
+    "homeTeam": "Detroit Pistons",
+    "awayTeam": "Philadelphia 76ers",
+    "predictedHomeScore": 118.0,
     "predictedAwayScore": 106.0,
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "pick": "Indiana Pacers",
-    "winProb": 0.69,
+    "pick": "Detroit Pistons",
+    "winProb": 0.723,
     "confidence": "Elite",
-    "gameTime": "2026-11-01T22:00Z",
-    "rank": 4
+    "gameTime": "2026-11-05T00:00Z",
+    "rank": 7
+  },
+  {
+    "homeTeam": "Brooklyn Nets",
+    "awayTeam": "Charlotte Hornets",
+    "predictedHomeScore": 103.0,
+    "predictedAwayScore": 115.0,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "Charlotte Hornets",
+    "winProb": 0.723,
+    "confidence": "Elite",
+    "gameTime": "2026-11-05T00:30Z",
+    "rank": 8
+  },
+  {
+    "homeTeam": "Oklahoma City Thunder",
+    "awayTeam": "Cleveland Cavaliers",
+    "predictedHomeScore": 119.0,
+    "predictedAwayScore": 107.0,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "Oklahoma City Thunder",
+    "winProb": 0.723,
+    "confidence": "Elite",
+    "gameTime": "2026-11-05T01:00Z",
+    "rank": 9
   },
   {
     "homeTeam": "Denver Nuggets",
@@ -62,7 +127,7 @@
     "winProb": 0.69,
     "confidence": "Elite",
     "gameTime": "2026-11-03T02:00Z",
-    "rank": 5
+    "rank": 10
   },
   {
     "homeTeam": "Dallas Mavericks",
@@ -75,7 +140,7 @@
     "winProb": 0.655,
     "confidence": "Strong",
     "gameTime": "2026-11-03T01:00Z",
-    "rank": 6
+    "rank": 11
   },
   {
     "homeTeam": "Minnesota Timberwolves",
@@ -88,7 +153,20 @@
     "winProb": 0.655,
     "confidence": "Strong",
     "gameTime": "2026-11-03T01:00Z",
-    "rank": 7
+    "rank": 12
+  },
+  {
+    "homeTeam": "Houston Rockets",
+    "awayTeam": "Minnesota Timberwolves",
+    "predictedHomeScore": 114.0,
+    "predictedAwayScore": 106.0,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "Houston Rockets",
+    "winProb": 0.655,
+    "confidence": "Strong",
+    "gameTime": "2026-11-05T01:30Z",
+    "rank": 13
   },
   {
     "homeTeam": "Cleveland Cavaliers",
@@ -101,20 +179,46 @@
     "winProb": 0.636,
     "confidence": "Strong",
     "gameTime": "2026-11-03T00:00Z",
-    "rank": 8
+    "rank": 14
   },
   {
-    "homeTeam": "Orlando Magic",
-    "awayTeam": "Boston Celtics",
-    "predictedHomeScore": 105.0,
+    "homeTeam": "New Orleans Pelicans",
+    "awayTeam": "Utah Jazz",
+    "predictedHomeScore": 127.0,
+    "predictedAwayScore": 121.0,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "New Orleans Pelicans",
+    "winProb": 0.618,
+    "confidence": "Strong",
+    "gameTime": "2026-11-05T01:00Z",
+    "rank": 15
+  },
+  {
+    "homeTeam": "Phoenix Suns",
+    "awayTeam": "Portland Trail Blazers",
+    "predictedHomeScore": 115.0,
     "predictedAwayScore": 109.0,
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "pick": "Boston Celtics",
-    "winProb": 0.579,
+    "pick": "Phoenix Suns",
+    "winProb": 0.618,
+    "confidence": "Strong",
+    "gameTime": "2026-11-05T02:00Z",
+    "rank": 16
+  },
+  {
+    "homeTeam": "Washington Wizards",
+    "awayTeam": "Atlanta Hawks",
+    "predictedHomeScore": 118.0,
+    "predictedAwayScore": 123.0,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "Atlanta Hawks",
+    "winProb": 0.599,
     "confidence": "Lean",
-    "gameTime": "2026-11-01T20:30Z",
-    "rank": 9
+    "gameTime": "2026-11-05T00:00Z",
+    "rank": 17
   },
   {
     "homeTeam": "Philadelphia 76ers",
@@ -127,7 +231,7 @@
     "winProb": 0.579,
     "confidence": "Lean",
     "gameTime": "2026-11-03T00:30Z",
-    "rank": 10
+    "rank": 18
   },
   {
     "homeTeam": "Los Angeles Lakers",
@@ -140,7 +244,33 @@
     "winProb": 0.579,
     "confidence": "Lean",
     "gameTime": "2026-11-03T03:00Z",
-    "rank": 11
+    "rank": 19
+  },
+  {
+    "homeTeam": "Denver Nuggets",
+    "awayTeam": "Toronto Raptors",
+    "predictedHomeScore": 117.0,
+    "predictedAwayScore": 113.0,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "Denver Nuggets",
+    "winProb": 0.579,
+    "confidence": "Lean",
+    "gameTime": "2026-11-05T02:00Z",
+    "rank": 20
+  },
+  {
+    "homeTeam": "Sacramento Kings",
+    "awayTeam": "Los Angeles Lakers",
+    "predictedHomeScore": 114.0,
+    "predictedAwayScore": 118.0,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "Los Angeles Lakers",
+    "winProb": 0.579,
+    "confidence": "Lean",
+    "gameTime": "2026-11-05T03:00Z",
+    "rank": 21
   },
   {
     "homeTeam": "Memphis Grizzlies",
@@ -153,7 +283,7 @@
     "winProb": 0.56,
     "confidence": "Lean",
     "gameTime": "2026-11-03T01:00Z",
-    "rank": 12
+    "rank": 22
   },
   {
     "homeTeam": "Houston Rockets",
@@ -166,7 +296,7 @@
     "winProb": 0.56,
     "confidence": "Lean",
     "gameTime": "2026-11-03T01:30Z",
-    "rank": 13
+    "rank": 23
   },
   {
     "homeTeam": "Golden State Warriors",
@@ -179,6 +309,19 @@
     "winProb": 0.56,
     "confidence": "Lean",
     "gameTime": "2026-11-03T03:00Z",
-    "rank": 14
+    "rank": 24
+  },
+  {
+    "homeTeam": "Los Angeles Clippers",
+    "awayTeam": "Miami Heat",
+    "predictedHomeScore": 118.0,
+    "predictedAwayScore": 121.0,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "Miami Heat",
+    "winProb": 0.56,
+    "confidence": "Lean",
+    "gameTime": "2026-11-05T03:30Z",
+    "rank": 25
   }
 ]
