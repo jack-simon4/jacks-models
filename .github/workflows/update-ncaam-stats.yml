@@ -28,6 +28,7 @@ jobs:
         run: pip install requests
 
       - name: Fetch NCAAM stats from Barttorvik
+        continue-on-error: true
         run: python scripts/fetch_ncaam_stats.py
 
       - name: Generate NCAAM picks

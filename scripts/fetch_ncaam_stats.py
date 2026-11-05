@@ -100,6 +100,12 @@ def main():
 
     rows = fetch_csv(year)
     if not rows:
+        # Early in the season Barttorvik may not have published the new year's file yet.
+        # Fall back to the previous year's data so picks can still run.
+        fallback = year - 1
+        print(f'[NCAAM Stats] {year} not available — trying fallback year {fallback}')
+        rows = fetch_csv(fallback)
+    if not rows:
         print('[NCAAM Stats] No data — aborting.')
         sys.exit(1)
 
