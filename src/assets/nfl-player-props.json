@@ -36,18 +36,6 @@
     "gameTime": "2026-11-08T18:00:00Z"
   },
   {
-    "name": "Trevor Lawrence",
-    "team": "Jacksonville Jaguars",
-    "opponent": "Baltimore Ravens",
-    "position": "QB",
-    "projYards": 275,
-    "projTDs": 1.84,
-    "projRec": null,
-    "statLabel": "Pass Yds",
-    "matchup": "Jacksonville Jaguars @ Baltimore Ravens",
-    "gameTime": "2026-11-06T01:15:00Z"
-  },
-  {
     "name": "Jared Goff",
     "team": "Detroit Lions",
     "opponent": "Miami Dolphins",
@@ -120,6 +108,18 @@
     "gameTime": "2026-11-09T01:20:00Z"
   },
   {
+    "name": "Michael Penix",
+    "team": "Atlanta Falcons",
+    "opponent": "Cincinnati Bengals",
+    "position": "QB",
+    "projYards": 246,
+    "projTDs": 1.55,
+    "projRec": null,
+    "statLabel": "Pass Yds",
+    "matchup": "Cincinnati Bengals @ Atlanta Falcons",
+    "gameTime": "2026-11-08T14:30:00Z"
+  },
+  {
     "name": "Kenneth Walker",
     "team": "Kansas City Chiefs",
     "opponent": "New York Jets",
@@ -137,7 +137,7 @@
     "opponent": "Cincinnati Bengals",
     "position": "RB",
     "projYards": 114,
-    "projTDs": 0.72,
+    "projTDs": 0.73,
     "projRec": null,
     "statLabel": "Rush Yds",
     "matchup": "Cincinnati Bengals @ Atlanta Falcons",
@@ -204,18 +204,6 @@
     "gameTime": "2026-11-08T18:00:00Z"
   },
   {
-    "name": "Derrick Henry",
-    "team": "Baltimore Ravens",
-    "opponent": "Jacksonville Jaguars",
-    "position": "RB",
-    "projYards": 71,
-    "projTDs": 0.47,
-    "projRec": null,
-    "statLabel": "Rush Yds",
-    "matchup": "Jacksonville Jaguars @ Baltimore Ravens",
-    "gameTime": "2026-11-06T01:15:00Z"
-  },
-  {
     "name": "Bucky Irving",
     "team": "Tampa Bay Buccaneers",
     "opponent": "Chicago Bears",
@@ -238,6 +226,18 @@
     "statLabel": "Rush Yds",
     "matchup": "Cincinnati Bengals @ Atlanta Falcons",
     "gameTime": "2026-11-08T14:30:00Z"
+  },
+  {
+    "name": "DeVon Achane",
+    "team": "Miami Dolphins",
+    "opponent": "Detroit Lions",
+    "position": "RB",
+    "projYards": 65,
+    "projTDs": 0.44,
+    "projRec": null,
+    "statLabel": "Rush Yds",
+    "matchup": "Detroit Lions @ Miami Dolphins",
+    "gameTime": "2026-11-08T18:00:00Z"
   },
   {
     "name": "Jaxon Smith-Njigba",
@@ -264,18 +264,6 @@
     "gameTime": "2026-11-08T18:00:00Z"
   },
   {
-    "name": "Zay Flowers",
-    "team": "Baltimore Ravens",
-    "opponent": "Jacksonville Jaguars",
-    "position": "WR",
-    "projYards": 90,
-    "projTDs": 0.29,
-    "projRec": 5.0,
-    "statLabel": "Rec Yds",
-    "matchup": "Jacksonville Jaguars @ Baltimore Ravens",
-    "gameTime": "2026-11-06T01:15:00Z"
-  },
-  {
     "name": "Drake London",
     "team": "Atlanta Falcons",
     "opponent": "Cincinnati Bengals",
@@ -297,6 +285,18 @@
     "projRec": 5.2,
     "statLabel": "Rec Yds",
     "matchup": "Los Angeles Rams @ Washington Commanders",
+    "gameTime": "2026-11-08T18:00:00Z"
+  },
+  {
+    "name": "DeVonta Smith",
+    "team": "Philadelphia Eagles",
+    "opponent": "New York Giants",
+    "position": "WR",
+    "projYards": 78,
+    "projTDs": 0.4,
+    "projRec": 6.3,
+    "statLabel": "Rec Yds",
+    "matchup": "New York Giants @ Philadelphia Eagles",
     "gameTime": "2026-11-08T18:00:00Z"
   },
   {
