@@ -197,14 +197,26 @@ def parse_event(event: dict) -> dict | None:
         except (TypeError, ValueError):
             pass
 
+    # ESPN provides odds for notable NCAAM games (negative spread = home favorite)
+    odds_list    = comp.get('odds') or []
+    vegas_spread = None
+    if odds_list:
+        raw = odds_list[0].get('spread')
+        if raw is not None:
+            try:
+                vegas_spread = round(-float(raw), 1)
+            except (ValueError, TypeError):
+                pass
+
     return {
-        'gameId':     event.get('id'),
-        'homeTeam':   home_name,
-        'awayTeam':   away_name,
-        'startUTC':   start_utc,
-        'isFinal':    is_final,
-        'homeActual': home_score,
-        'awayActual': away_score,
+        'gameId':      event.get('id'),
+        'homeTeam':    home_name,
+        'awayTeam':    away_name,
+        'startUTC':    start_utc,
+        'isFinal':     is_final,
+        'homeActual':  home_score,
+        'awayActual':  away_score,
+        'vegasSpread': vegas_spread,
     }
 
 
@@ -344,7 +356,15 @@ def main():
             pick_team, pick_wp = home_name, wp
         else:
             pick_team, pick_wp = away_name, wp
-        label = confidence_label(pick_wp)
+
+        # Spread edge vs Vegas when ESPN provides a line
+        vegas_home  = parsed.get('vegasSpread')
+        spread_edge = round(diff - vegas_home, 1) if vegas_home is not None else None
+        if spread_edge is not None:
+            abs_se = abs(spread_edge)
+            label  = 'Elite' if abs_se >= 7 else ('Strong' if abs_se >= 4 else ('Lean' if abs_se >= 2 else ''))
+        else:
+            label = confidence_label(pick_wp)
 
         entry = {
             'homeTeam':           home_name,
@@ -356,6 +376,8 @@ def main():
             'pick':               pick_team,
             'winProb':            round(pick_wp, 3),
             'confidence':         label,
+            'vegasSpread':        vegas_home,
+            'spreadEdge':         spread_edge,
             'gameTime':           parsed['startUTC'],
         }
         firestore_data.append(entry)
@@ -366,7 +388,7 @@ def main():
         if not game_started and label:
             picks.append(entry)
 
-    picks.sort(key=lambda p: p['winProb'], reverse=True)
+    picks.sort(key=lambda p: abs(p.get('spreadEdge') or 0), reverse=True)
     for i, p in enumerate(picks):
         p['rank'] = i + 1
 

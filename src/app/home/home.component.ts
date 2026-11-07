@@ -106,6 +106,8 @@ export class HomeComponent implements OnInit {
       confidence: p.confidence,
       predictedScore: `${p.awayTeam.slice(0,6)} ${p.predictedAwayScore} – ${p.homeTeam.slice(0,6)} ${p.predictedHomeScore}`,
       gameTime: p.gameTime,
+      spreadEdge: p.spreadEdge,
+      vegasSpread: p.vegasSpread,
     };
   }
 
