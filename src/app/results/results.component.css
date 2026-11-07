@@ -274,10 +274,22 @@
   background: rgba(255,255,255,0.08);
   color: #aaa;
   font-size: 11px;
+  font-weight: 700;
   border-radius: 4px;
-  padding: 1px 6px;
+  padding: 2px 7px;
   margin-right: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
+
+/* Per-sport chip colors — matches home page palette */
+.sport-chip-nfl    { background: #5c1a1a; color: #f5a623; }
+.sport-chip-nba    { background: #5c3a1a; color: #f5d123; }
+.sport-chip-mlb    { background: #1a3a5c; color: #7ec8e3; }
+.sport-chip-nhl    { background: #1a3a5c; color: #a0c8f5; }
+.sport-chip-ncaaf  { background: #3d1a5c; color: #c97ff5; }
+.sport-chip-ncaam  { background: #1a4a2e; color: #7ef5a0; }
+.sport-chip-soccer { background: #1a5c2a; color: #7ef5a0; }
 
 .game-meta {
   color: #555;

@@ -63,7 +63,7 @@
 
         <div class="game-info">
           <div class="game-matchup">
-            <span class="sport-chip">{{ game.sport }}</span>
+            <span class="sport-chip" [ngClass]="'sport-chip-' + game.sport.toLowerCase()">{{ game.sport }}</span>
             {{ game.awayTeam }} @ {{ game.homeTeam }}
           </div>
           <div class="game-meta">
