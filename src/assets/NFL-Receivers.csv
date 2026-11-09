@@ -69,10 +69,8 @@ Las Vegas Raiders,Jalen Nailor,WR,3.32,7.009,0.15,1.69
 Los Angeles Chargers,Quentin Johnston,WR,5.88,6.881,0.264,3.03
 Los Angeles Chargers,Tre Harris,WR,5.33,9.312,0.24,3.33
 Los Angeles Chargers,Ladd McConkey,WR,6.02,9.227,0.271,4.08
-Los Angeles Chargers,David Njoku,TE,4.0,6.956,0.18,2.84
 Los Angeles Rams,Davante Adams,WR,8.71,8.955,0.392,4.93
 Los Angeles Rams,Tyler Higbee,TE,3.88,7.013,0.174,2.81
-Los Angeles Rams,Terrance Ferguson,TE,4.0,5.25,0.18,2.33
 Los Angeles Rams,Konata Mumpfield,WR,3.67,9.545,0.165,1.67
 Miami Dolphins,Malik Washington,WR,5.26,5.526,0.237,3.19
 Miami Dolphins,Greg Dulcich,TE,3.56,9.157,0.16,2.75
@@ -93,25 +91,20 @@ New York Giants,Isaiah Likely,TE,4.48,7.352,0.202,3.08
 New York Giants,Malik Nabers,WR,7.84,6.734,0.353,4.31
 New York Giants,Malachi Fields,WR,4.0,6.167,0.18,2.0
 New York Giants,Darnell Mooney,WR,4.0,8.299,0.18,2.08
-New York Jets,Garrett Wilson,WR,8.64,7.559,0.389,5.84
 New York Jets,Adonai Mitchell,WR,5.08,6.319,0.229,2.62
 New York Jets,Kenyon Sadiq,TE,4.67,10.214,0.21,4.0
 New York Jets,Isaiah Williams,WR,3.0,6.889,0.135,2.67
-Philadelphia Eagles,DeVonta Smith,WR,9.0,8.704,0.405,6.33
-Philadelphia Eagles,Dontayvion Wicks,WR,3.93,8.986,0.177,2.46
 Philadelphia Eagles,Makai Lemon,WR,3.0,4.222,0.135,2.33
 Philadelphia Eagles,Dallas Goedert,TE,4.92,8.301,0.221,3.44
 Pittsburgh Steelers,DK Metcalf,WR,7.12,6.897,0.321,3.83
 Pittsburgh Steelers,Roman Wilson,WR,6.0,6.333,0.27,3.67
 Pittsburgh Steelers,Pat Freiermuth,TE,3.74,8.518,0.168,2.88
 Pittsburgh Steelers,Germie Bernard,WR,3.0,5.444,0.135,1.67
-San Francisco 49ers,Mike Evans,WR,6.84,6.921,0.308,3.84
 San Francisco 49ers,George Kittle,TE,5.92,9.767,0.266,4.74
 San Francisco 49ers,Deebo Samuel,WR,3.67,14.455,0.165,3.0
 San Francisco 49ers,Demarcus Robinson,WR,3.0,14.0,0.135,2.5
 Seattle Seahawks,Jaxon Smith-Njigba,WR,10.49,11.094,0.472,7.75
 Seattle Seahawks,AJ Barner,TE,4.0,7.583,0.18,2.91
-Seattle Seahawks,Rashid Shaheed,WR,2.4,6.175,0.108,1.27
 Seattle Seahawks,Cooper Kupp,WR,3.98,9.082,0.179,2.84
 Tampa Bay Buccaneers,Emeka Egbuka,WR,7.17,7.26,0.323,3.94
 Tampa Bay Buccaneers,Cade Otton,TE,5.29,7.061,0.238,3.68
@@ -124,4 +117,3 @@ Tennessee Titans,Elic Ayomanor,WR,4.6,7.408,0.207,2.1
 Washington Commanders,Stefon Diggs,WR,6.5,8.508,0.292,4.75
 Washington Commanders,Terry McLaurin,WR,6.5,8.466,0.292,3.62
 Washington Commanders,Antonio Williams,WR,3.67,9.364,0.165,3.0
-Washington Commanders,Dyami Brown,WR,3.0,2.333,0.135,1.33
