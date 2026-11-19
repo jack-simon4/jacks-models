@@ -33,6 +33,7 @@ Cleveland Browns,Denzel Boston,WR,5.0,13.0,0.225,3.0
 Dallas Cowboys,CeeDee Lamb,WR,8.35,10.388,0.376,5.85
 Dallas Cowboys,George Pickens,WR,8.16,8.769,0.367,5.42
 Dallas Cowboys,Ryan Flournoy,WR,4.44,6.697,0.2,2.69
+Dallas Cowboys,Jake Ferguson,TE,5.12,6.131,0.231,4.14
 Denver Broncos,Jaylen Waddle,WR,6.41,8.5,0.288,3.88
 Denver Broncos,Courtland Sutton,WR,6.56,7.048,0.295,3.72
 Denver Broncos,Pat Bryant,WR,3.0,9.556,0.135,2.0
@@ -71,10 +72,12 @@ Los Angeles Chargers,Ladd McConkey,WR,6.02,9.227,0.271,4.08
 Los Angeles Chargers,David Njoku,TE,4.0,6.956,0.18,2.84
 Los Angeles Rams,Davante Adams,WR,8.71,8.955,0.392,4.93
 Los Angeles Rams,Tyler Higbee,TE,3.88,7.013,0.174,2.81
+Los Angeles Rams,Terrance Ferguson,TE,4.0,5.25,0.18,2.33
 Los Angeles Rams,Konata Mumpfield,WR,3.67,9.545,0.165,1.67
 Miami Dolphins,Malik Washington,WR,5.26,5.526,0.237,3.19
 Miami Dolphins,Greg Dulcich,TE,3.56,9.157,0.16,2.75
 Miami Dolphins,Caleb Douglas,WR,5.0,11.3,0.225,3.5
+Miami Dolphins,Chris Bell,WR,3.33,9.2,0.15,1.67
 Minnesota Vikings,Justin Jefferson,WR,5.67,10.529,0.255,4.33
 Minnesota Vikings,Jordan Addison,WR,5.53,7.428,0.249,2.75
 Minnesota Vikings,TJ Hockenson,TE,4.38,6.34,0.197,3.25
@@ -102,6 +105,7 @@ Pittsburgh Steelers,DK Metcalf,WR,7.12,6.897,0.321,3.83
 Pittsburgh Steelers,Roman Wilson,WR,6.0,6.333,0.27,3.67
 Pittsburgh Steelers,Pat Freiermuth,TE,3.74,8.518,0.168,2.88
 Pittsburgh Steelers,Germie Bernard,WR,3.0,5.444,0.135,1.67
+San Francisco 49ers,Mike Evans,WR,6.84,6.921,0.308,3.84
 San Francisco 49ers,George Kittle,TE,5.92,9.767,0.266,4.74
 San Francisco 49ers,Deebo Samuel,WR,3.67,14.455,0.165,3.0
 San Francisco 49ers,Demarcus Robinson,WR,3.0,14.0,0.135,2.5
@@ -113,6 +117,7 @@ Tampa Bay Buccaneers,Emeka Egbuka,WR,7.17,7.26,0.323,3.94
 Tampa Bay Buccaneers,Cade Otton,TE,5.29,7.061,0.238,3.68
 Tampa Bay Buccaneers,Ted Hurst,WR,4.33,7.923,0.195,2.0
 Tampa Bay Buccaneers,Chris Godwin,WR,4.92,8.196,0.221,3.54
+Tennessee Titans,Carnell Tate,WR,6.67,6.15,0.3,4.33
 Tennessee Titans,WanDale Robinson,WR,7.72,6.693,0.347,5.22
 Tennessee Titans,Gunnar Helm,TE,3.67,5.0,0.165,2.67
 Tennessee Titans,Elic Ayomanor,WR,4.6,7.408,0.207,2.1
