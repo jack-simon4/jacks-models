@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { JsonLdService } from '../shared/json-ld.service';
+import { CanonicalService } from '../shared/canonical.service';
 
 @Component({
   selector: 'app-soccer-seo-page',
@@ -8,7 +9,8 @@ import { JsonLdService } from '../shared/json-ld.service';
   styleUrls: ['./seo-page.component.css']
 })
 export class SoccerSeoPageComponent {
-  constructor(private meta: Meta, private title: Title, private jsonLd: JsonLdService) {
+  constructor(private meta: Meta, private title: Title, private jsonLd: JsonLdService, private canonical: CanonicalService) {
+    this.canonical.set('https://jacksmodels.com/soccer-predictions');
     this.title.setTitle("Soccer Predictions & EPL Picks | Jack's Models");
     this.meta.updateTag({ name: 'description', content: "Free soccer and EPL predictions from Jack's Models. Expected goals (xG), possession, and goals per game — 68% Tie No Bet accuracy across 112 games. Club and international matches covered." });
     this.meta.updateTag({ property: 'og:title',       content: "Soccer Predictions & EPL Picks | Jack's Models" });

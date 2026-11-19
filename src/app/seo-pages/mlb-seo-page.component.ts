@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { JsonLdService } from '../shared/json-ld.service';
+import { CanonicalService } from '../shared/canonical.service';
 
 @Component({
   selector: 'app-mlb-seo-page',
@@ -8,7 +9,8 @@ import { JsonLdService } from '../shared/json-ld.service';
   styleUrls: ['./seo-page.component.css']
 })
 export class MlbSeoPageComponent {
-  constructor(private meta: Meta, private title: Title, private jsonLd: JsonLdService) {
+  constructor(private meta: Meta, private title: Title, private jsonLd: JsonLdService, private canonical: CanonicalService) {
+    this.canonical.set('https://jacksmodels.com/mlb-predictions');
     this.title.setTitle("Free MLB Predictor | Jack's Models");
     this.meta.updateTag({ name: 'description', content: "Free MLB game predictions updated daily. Stat-driven model covering all 30 teams — projected scores and win probabilities." });
     this.meta.updateTag({ property: 'og:title',       content: "Free MLB Predictor | Jack's Models" });

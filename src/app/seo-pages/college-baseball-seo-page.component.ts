@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { JsonLdService } from '../shared/json-ld.service';
+import { CanonicalService } from '../shared/canonical.service';
 
 @Component({
   selector: 'app-college-baseball-seo-page',
@@ -8,7 +9,8 @@ import { JsonLdService } from '../shared/json-ld.service';
   styleUrls: ['./seo-page.component.css']
 })
 export class CollegeBaseballSeoPageComponent {
-  constructor(private meta: Meta, private title: Title, private jsonLd: JsonLdService) {
+  constructor(private meta: Meta, private title: Title, private jsonLd: JsonLdService, private canonical: CanonicalService) {
+    this.canonical.set('https://jacksmodels.com/college-baseball-predictions');
     this.title.setTitle("College Baseball Predictions | Jack's Models");
     this.meta.updateTag({ name: 'description', content: "Free NCAA Baseball predictions from Jack's Models. ERA, WHIP, and offensive ratings — 76% moneyline accuracy across 237 games, the highest of any sport on the site." });
     this.meta.updateTag({ property: 'og:title',       content: "College Baseball Predictions | Jack's Models" });

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { JsonLdService } from '../shared/json-ld.service';
+import { CanonicalService } from '../shared/canonical.service';
 
 @Component({
   selector: 'app-ncaam-seo-page',
@@ -8,7 +9,8 @@ import { JsonLdService } from '../shared/json-ld.service';
   styleUrls: ['./seo-page.component.css']
 })
 export class NcaamSeoPageComponent {
-  constructor(private meta: Meta, private title: Title, private jsonLd: JsonLdService) {
+  constructor(private meta: Meta, private title: Title, private jsonLd: JsonLdService, private canonical: CanonicalService) {
+    this.canonical.set('https://jacksmodels.com/ncaam-predictions');
     this.title.setTitle("Free College Basketball Predictor | Jack's Models");
     this.meta.updateTag({ name: 'description', content: "Free NCAAM game predictions powered by a stat-driven model. Run any matchup for all major college basketball programs." });
     this.meta.updateTag({ property: 'og:title',       content: "Free College Basketball Predictor | Jack's Models" });
