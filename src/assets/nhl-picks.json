@@ -1,5 +1,21 @@
 [
   {
+    "gameId": 2026020411,
+    "homeTeam": "Chicago Blackhawks",
+    "awayTeam": "New York Rangers",
+    "homeGoalie": "Spencer Knight",
+    "awayGoalie": "Joonas Korpisalo",
+    "predictedHomeScore": 1.81,
+    "predictedAwayScore": 3.56,
+    "pick": "New York Rangers",
+    "winProb": 0.773,
+    "confidence": "Elite",
+    "gameTime": "2026-11-27T22:30:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 1
+  },
+  {
     "gameId": 2026020384,
     "homeTeam": "San Jose Sharks",
     "awayTeam": "Minnesota Wild",
@@ -13,7 +29,7 @@
     "gameTime": "2026-11-24T03:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 1
+    "rank": 2
   },
   {
     "gameId": 2026020352,
@@ -22,14 +38,14 @@
     "homeGoalie": "Pyotr Kochetkov",
     "awayGoalie": "Jacob Fowler",
     "predictedHomeScore": 3.59,
-    "predictedAwayScore": 2.14,
+    "predictedAwayScore": 2.15,
     "pick": "Carolina Hurricanes",
-    "winProb": 0.734,
+    "winProb": 0.733,
     "confidence": "Elite",
     "gameTime": "2026-11-20T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 2
+    "rank": 3
   },
   {
     "gameId": 2026020378,
@@ -37,15 +53,15 @@
     "awayTeam": "Columbus Blue Jackets",
     "homeGoalie": "Connor Hellebuyck",
     "awayGoalie": "Cam Talbot",
-    "predictedHomeScore": 3.64,
-    "predictedAwayScore": 2.22,
+    "predictedHomeScore": 3.59,
+    "predictedAwayScore": 2.28,
     "pick": "New Jersey Devils",
-    "winProb": 0.73,
+    "winProb": 0.714,
     "confidence": "Elite",
     "gameTime": "2026-11-24T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 3
+    "rank": 4
   },
   {
     "gameId": 2026020393,
@@ -53,15 +69,15 @@
     "awayTeam": "New Jersey Devils",
     "homeGoalie": "Cam Talbot",
     "awayGoalie": "Connor Hellebuyck",
-    "predictedHomeScore": 2.22,
-    "predictedAwayScore": 3.64,
+    "predictedHomeScore": 2.28,
+    "predictedAwayScore": 3.59,
     "pick": "New Jersey Devils",
-    "winProb": 0.73,
+    "winProb": 0.714,
     "confidence": "Elite",
     "gameTime": "2026-11-26T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 4
+    "rank": 5
   },
   {
     "gameId": 2026020355,
@@ -77,7 +93,7 @@
     "gameTime": "2026-11-20T01:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 5
+    "rank": 6
   },
   {
     "gameId": 2026020377,
@@ -93,7 +109,23 @@
     "gameTime": "2026-11-23T01:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 6
+    "rank": 7
+  },
+  {
+    "gameId": 2026020401,
+    "homeTeam": "New Jersey Devils",
+    "awayTeam": "Calgary Flames",
+    "homeGoalie": "Connor Hellebuyck",
+    "awayGoalie": "Devin Cooley",
+    "predictedHomeScore": 3.76,
+    "predictedAwayScore": 2.5,
+    "pick": "New Jersey Devils",
+    "winProb": 0.707,
+    "confidence": "Elite",
+    "gameTime": "2026-11-27T18:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 8
   },
   {
     "gameId": 2026020348,
@@ -109,7 +141,23 @@
     "gameTime": "2026-11-20T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 7
+    "rank": 9
+  },
+  {
+    "gameId": 2026020414,
+    "homeTeam": "Edmonton Oilers",
+    "awayTeam": "Seattle Kraken",
+    "homeGoalie": "Devon Levi",
+    "awayGoalie": "Philipp Grubauer",
+    "predictedHomeScore": 4.1,
+    "predictedAwayScore": 2.89,
+    "pick": "Edmonton Oilers",
+    "winProb": 0.7,
+    "confidence": "Elite",
+    "gameTime": "2026-11-28T01:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 10
   },
   {
     "gameId": 2026020388,
@@ -125,7 +173,23 @@
     "gameTime": "2026-11-26T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 8
+    "rank": 11
+  },
+  {
+    "gameId": 2026020410,
+    "homeTeam": "San Jose Sharks",
+    "awayTeam": "Vegas Golden Knights",
+    "homeGoalie": "Alex Nedeljkovic",
+    "awayGoalie": "Adin Hill",
+    "predictedHomeScore": 2.6,
+    "predictedAwayScore": 3.65,
+    "pick": "Vegas Golden Knights",
+    "winProb": 0.676,
+    "confidence": "Strong",
+    "gameTime": "2026-11-27T21:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 12
   },
   {
     "gameId": 2026020380,
@@ -141,7 +205,7 @@
     "gameTime": "2026-11-24T00:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 9
+    "rank": 13
   },
   {
     "gameId": 2026020373,
@@ -157,7 +221,7 @@
     "gameTime": "2026-11-22T17:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 10
+    "rank": 14
   },
   {
     "gameId": 2026020387,
@@ -173,7 +237,7 @@
     "gameTime": "2026-11-26T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 11
+    "rank": 15
   },
   {
     "gameId": 2026020365,
@@ -189,7 +253,7 @@
     "gameTime": "2026-11-22T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 12
+    "rank": 16
   },
   {
     "gameId": 2026020374,
@@ -205,23 +269,23 @@
     "gameTime": "2026-11-22T22:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 13
+    "rank": 17
   },
   {
-    "gameId": 2026020368,
-    "homeTeam": "St. Louis Blues",
-    "awayTeam": "New Jersey Devils",
-    "homeGoalie": "Joel Hofer",
-    "awayGoalie": "Connor Hellebuyck",
-    "predictedHomeScore": 2.6,
-    "predictedAwayScore": 3.47,
-    "pick": "New Jersey Devils",
+    "gameId": 2026020386,
+    "homeTeam": "Boston Bruins",
+    "awayTeam": "Winnipeg Jets",
+    "homeGoalie": "Michael DiPietro",
+    "awayGoalie": "Stuart Skinner",
+    "predictedHomeScore": 3.6,
+    "predictedAwayScore": 2.73,
+    "pick": "Boston Bruins",
     "winProb": 0.648,
     "confidence": "Strong",
-    "gameTime": "2026-11-22T00:00:00Z",
+    "gameTime": "2026-11-26T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 14
+    "rank": 18
   },
   {
     "gameId": 2026020359,
@@ -237,23 +301,7 @@
     "gameTime": "2026-11-21T18:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 15
-  },
-  {
-    "gameId": 2026020386,
-    "homeTeam": "Boston Bruins",
-    "awayTeam": "Winnipeg Jets",
-    "homeGoalie": "Michael DiPietro",
-    "awayGoalie": "Stuart Skinner",
-    "predictedHomeScore": 3.56,
-    "predictedAwayScore": 2.75,
-    "pick": "Boston Bruins",
-    "winProb": 0.638,
-    "confidence": "Strong",
-    "gameTime": "2026-11-26T00:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 16
+    "rank": 19
   },
   {
     "gameId": 2026020369,
@@ -269,7 +317,55 @@
     "gameTime": "2026-11-22T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 17
+    "rank": 20
+  },
+  {
+    "gameId": 2026020396,
+    "homeTeam": "Minnesota Wild",
+    "awayTeam": "Utah Mammoth",
+    "homeGoalie": "Jesper Wallstedt",
+    "awayGoalie": "Karel Vejmelka",
+    "predictedHomeScore": 3.69,
+    "predictedAwayScore": 2.91,
+    "pick": "Minnesota Wild",
+    "winProb": 0.633,
+    "confidence": "Strong",
+    "gameTime": "2026-11-26T01:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 21
+  },
+  {
+    "gameId": 2026020405,
+    "homeTeam": "Philadelphia Flyers",
+    "awayTeam": "Vancouver Canucks",
+    "homeGoalie": "Joseph Woll",
+    "awayGoalie": "Nikita Tolopilo",
+    "predictedHomeScore": 2.12,
+    "predictedAwayScore": 2.9,
+    "pick": "Vancouver Canucks",
+    "winProb": 0.633,
+    "confidence": "Strong",
+    "gameTime": "2026-11-27T20:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 22
+  },
+  {
+    "gameId": 2026020368,
+    "homeTeam": "St. Louis Blues",
+    "awayTeam": "New Jersey Devils",
+    "homeGoalie": "Joel Hofer",
+    "awayGoalie": "Connor Hellebuyck",
+    "predictedHomeScore": 2.65,
+    "predictedAwayScore": 3.42,
+    "pick": "New Jersey Devils",
+    "winProb": 0.632,
+    "confidence": "Strong",
+    "gameTime": "2026-11-22T00:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 23
   },
   {
     "gameId": 2026020360,
@@ -285,7 +381,7 @@
     "gameTime": "2026-11-21T20:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 18
+    "rank": 24
   },
   {
     "gameId": 2026020371,
@@ -301,23 +397,7 @@
     "gameTime": "2026-11-22T03:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 19
-  },
-  {
-    "gameId": 2026020396,
-    "homeTeam": "Minnesota Wild",
-    "awayTeam": "Utah Mammoth",
-    "homeGoalie": "Jesper Wallstedt",
-    "awayGoalie": "Karel Vejmelka",
-    "predictedHomeScore": 3.66,
-    "predictedAwayScore": 2.9,
-    "pick": "Minnesota Wild",
-    "winProb": 0.63,
-    "confidence": "Strong",
-    "gameTime": "2026-11-26T01:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 20
+    "rank": 25
   },
   {
     "gameId": 2026020366,
@@ -333,7 +413,23 @@
     "gameTime": "2026-11-22T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 21
+    "rank": 26
+  },
+  {
+    "gameId": 2026020407,
+    "homeTeam": "Columbus Blue Jackets",
+    "awayTeam": "Detroit Red Wings",
+    "homeGoalie": "Cam Talbot",
+    "awayGoalie": "Daniil Tarasov",
+    "predictedHomeScore": 2.08,
+    "predictedAwayScore": 2.79,
+    "pick": "Detroit Red Wings",
+    "winProb": 0.622,
+    "confidence": "Strong",
+    "gameTime": "2026-11-27T20:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 27
   },
   {
     "gameId": 2026020398,
@@ -349,23 +445,7 @@
     "gameTime": "2026-11-26T03:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 22
-  },
-  {
-    "gameId": 2026020345,
-    "homeTeam": "New Jersey Devils",
-    "awayTeam": "Montr\u00e9al Canadiens",
-    "homeGoalie": "Connor Hellebuyck",
-    "awayGoalie": "Jacob Fowler",
-    "predictedHomeScore": 3.35,
-    "predictedAwayScore": 2.67,
-    "pick": "New Jersey Devils",
-    "winProb": 0.617,
-    "confidence": "Strong",
-    "gameTime": "2026-11-19T00:30:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 23
+    "rank": 28
   },
   {
     "gameId": 2026020375,
@@ -381,7 +461,7 @@
     "gameTime": "2026-11-23T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 24
+    "rank": 29
   },
   {
     "gameId": 2026020353,
@@ -397,7 +477,7 @@
     "gameTime": "2026-11-20T01:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 25
+    "rank": 30
   },
   {
     "gameId": 2026020399,
@@ -413,23 +493,23 @@
     "gameTime": "2026-11-26T02:40:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 26
+    "rank": 31
   },
   {
-    "gameId": 2026020356,
-    "homeTeam": "Colorado Avalanche",
-    "awayTeam": "Anaheim Ducks",
-    "homeGoalie": "Mackenzie Blackwood",
-    "awayGoalie": "Laurent Brossoit",
-    "predictedHomeScore": 4.17,
-    "predictedAwayScore": 3.56,
-    "pick": "Colorado Avalanche",
-    "winProb": 0.605,
+    "gameId": 2026020363,
+    "homeTeam": "Boston Bruins",
+    "awayTeam": "Washington Capitals",
+    "homeGoalie": "Michael DiPietro",
+    "awayGoalie": "Logan Thompson",
+    "predictedHomeScore": 3.56,
+    "predictedAwayScore": 2.91,
+    "pick": "Boston Bruins",
+    "winProb": 0.612,
     "confidence": "Strong",
-    "gameTime": "2026-11-20T02:00:00Z",
+    "gameTime": "2026-11-22T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 27
+    "rank": 32
   },
   {
     "gameId": 2026020357,
@@ -445,39 +525,7 @@
     "gameTime": "2026-11-20T02:40:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 28
-  },
-  {
-    "gameId": 2026020363,
-    "homeTeam": "Boston Bruins",
-    "awayTeam": "Washington Capitals",
-    "homeGoalie": "Michael DiPietro",
-    "awayGoalie": "Logan Thompson",
-    "predictedHomeScore": 3.52,
-    "predictedAwayScore": 2.94,
-    "pick": "Boston Bruins",
-    "winProb": 0.6,
-    "confidence": "Lean",
-    "gameTime": "2026-11-22T00:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 29
-  },
-  {
-    "gameId": 2026020346,
-    "homeTeam": "Utah Mammoth",
-    "awayTeam": "Colorado Avalanche",
-    "homeGoalie": "Karel Vejmelka",
-    "awayGoalie": "Mackenzie Blackwood",
-    "predictedHomeScore": 3.33,
-    "predictedAwayScore": 3.89,
-    "pick": "Colorado Avalanche",
-    "winProb": 0.597,
-    "confidence": "Lean",
-    "gameTime": "2026-11-19T03:00:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 30
+    "rank": 33
   },
   {
     "gameId": 2026020383,
@@ -493,7 +541,7 @@
     "gameTime": "2026-11-24T02:40:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 31
+    "rank": 34
   },
   {
     "gameId": 2026020361,
@@ -509,23 +557,7 @@
     "gameTime": "2026-11-21T23:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 32
-  },
-  {
-    "gameId": 2026020382,
-    "homeTeam": "Winnipeg Jets",
-    "awayTeam": "Utah Mammoth",
-    "homeGoalie": "Stuart Skinner",
-    "awayGoalie": "Karel Vejmelka",
-    "predictedHomeScore": 3.26,
-    "predictedAwayScore": 3.77,
-    "pick": "Utah Mammoth",
-    "winProb": 0.588,
-    "confidence": "Lean",
-    "gameTime": "2026-11-24T00:30:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 33
+    "rank": 35
   },
   {
     "gameId": 2026020354,
@@ -541,7 +573,39 @@
     "gameTime": "2026-11-20T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 34
+    "rank": 36
+  },
+  {
+    "gameId": 2026020356,
+    "homeTeam": "Colorado Avalanche",
+    "awayTeam": "Anaheim Ducks",
+    "homeGoalie": "Mackenzie Blackwood",
+    "awayGoalie": "Laurent Brossoit",
+    "predictedHomeScore": 4.08,
+    "predictedAwayScore": 3.58,
+    "pick": "Colorado Avalanche",
+    "winProb": 0.587,
+    "confidence": "Lean",
+    "gameTime": "2026-11-20T02:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 37
+  },
+  {
+    "gameId": 2026020412,
+    "homeTeam": "New York Islanders",
+    "awayTeam": "Winnipeg Jets",
+    "homeGoalie": "Ilya Sorokin",
+    "awayGoalie": "Stuart Skinner",
+    "predictedHomeScore": 3.43,
+    "predictedAwayScore": 2.93,
+    "pick": "New York Islanders",
+    "winProb": 0.587,
+    "confidence": "Lean",
+    "gameTime": "2026-11-28T00:30:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 38
   },
   {
     "gameId": 2026020364,
@@ -557,7 +621,7 @@
     "gameTime": "2026-11-22T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 35
+    "rank": 39
   },
   {
     "gameId": 2026020392,
@@ -573,7 +637,39 @@
     "gameTime": "2026-11-26T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 36
+    "rank": 40
+  },
+  {
+    "gameId": 2026020382,
+    "homeTeam": "Winnipeg Jets",
+    "awayTeam": "Utah Mammoth",
+    "homeGoalie": "Stuart Skinner",
+    "awayGoalie": "Karel Vejmelka",
+    "predictedHomeScore": 3.29,
+    "predictedAwayScore": 3.77,
+    "pick": "Utah Mammoth",
+    "winProb": 0.583,
+    "confidence": "Lean",
+    "gameTime": "2026-11-24T00:30:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 41
+  },
+  {
+    "gameId": 2026020400,
+    "homeTeam": "Boston Bruins",
+    "awayTeam": "Toronto Maple Leafs",
+    "homeGoalie": "Michael DiPietro",
+    "awayGoalie": "Anthony Stolarz",
+    "predictedHomeScore": 3.31,
+    "predictedAwayScore": 2.83,
+    "pick": "Boston Bruins",
+    "winProb": 0.583,
+    "confidence": "Lean",
+    "gameTime": "2026-11-27T18:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 42
   },
   {
     "gameId": 2026020376,
@@ -589,7 +685,7 @@
     "gameTime": "2026-11-23T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 37
+    "rank": 43
   },
   {
     "gameId": 2026020395,
@@ -605,23 +701,7 @@
     "gameTime": "2026-11-26T01:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 38
-  },
-  {
-    "gameId": 2026020397,
-    "homeTeam": "Colorado Avalanche",
-    "awayTeam": "Montr\u00e9al Canadiens",
-    "homeGoalie": "Mackenzie Blackwood",
-    "awayGoalie": "Jacob Fowler",
-    "predictedHomeScore": 3.42,
-    "predictedAwayScore": 2.97,
-    "pick": "Colorado Avalanche",
-    "winProb": 0.578,
-    "confidence": "Lean",
-    "gameTime": "2026-11-26T02:30:00Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 39
+    "rank": 44
   },
   {
     "gameId": 2026020389,
@@ -637,7 +717,39 @@
     "gameTime": "2026-11-26T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 40
+    "rank": 45
+  },
+  {
+    "gameId": 2026020402,
+    "homeTeam": "Nashville Predators",
+    "awayTeam": "Utah Mammoth",
+    "homeGoalie": "Matt Murray",
+    "awayGoalie": "Karel Vejmelka",
+    "predictedHomeScore": 3.26,
+    "predictedAwayScore": 3.66,
+    "pick": "Utah Mammoth",
+    "winProb": 0.57,
+    "confidence": "Lean",
+    "gameTime": "2026-11-27T18:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 46
+  },
+  {
+    "gameId": 2026020406,
+    "homeTeam": "Washington Capitals",
+    "awayTeam": "Florida Panthers",
+    "homeGoalie": "Logan Thompson",
+    "awayGoalie": "Jacob Markstrom",
+    "predictedHomeScore": 3.1,
+    "predictedAwayScore": 3.5,
+    "pick": "Florida Panthers",
+    "winProb": 0.57,
+    "confidence": "Lean",
+    "gameTime": "2026-11-27T20:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 47
   },
   {
     "gameId": 2026020385,
@@ -653,7 +765,7 @@
     "gameTime": "2026-11-25T01:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 41
+    "rank": 48
   },
   {
     "gameId": 2026020379,
@@ -669,7 +781,7 @@
     "gameTime": "2026-11-24T00:30:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 42
+    "rank": 49
   },
   {
     "gameId": 2026020350,
@@ -685,6 +797,38 @@
     "gameTime": "2026-11-20T00:00:00Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 43
+    "rank": 50
+  },
+  {
+    "gameId": 2026020397,
+    "homeTeam": "Colorado Avalanche",
+    "awayTeam": "Montr\u00e9al Canadiens",
+    "homeGoalie": "Mackenzie Blackwood",
+    "awayGoalie": "Jacob Fowler",
+    "predictedHomeScore": 3.33,
+    "predictedAwayScore": 3.0,
+    "pick": "Colorado Avalanche",
+    "winProb": 0.557,
+    "confidence": "Lean",
+    "gameTime": "2026-11-26T02:30:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 51
+  },
+  {
+    "gameId": 2026020408,
+    "homeTeam": "Minnesota Wild",
+    "awayTeam": "Colorado Avalanche",
+    "homeGoalie": "Jesper Wallstedt",
+    "awayGoalie": "Mackenzie Blackwood",
+    "predictedHomeScore": 3.41,
+    "predictedAwayScore": 3.12,
+    "pick": "Minnesota Wild",
+    "winProb": 0.551,
+    "confidence": "Lean",
+    "gameTime": "2026-11-27T21:00:00Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 52
   }
 ]
