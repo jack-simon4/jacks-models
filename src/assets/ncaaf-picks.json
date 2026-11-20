@@ -36,7 +36,7 @@
     "homeTeam": "Louisville",
     "awayTeam": "Pittsburgh",
     "predictedHomeScore": 29.07,
-    "predictedAwayScore": 29.08,
+    "predictedAwayScore": 29.06,
     "pick": "Louisville",
     "winProb": 0.5,
     "confidence": "Elite",
@@ -56,8 +56,8 @@
     "pick": "Wake Forest",
     "winProb": 0.981,
     "confidence": "Elite",
-    "vegasSpread": -20.5,
-    "spreadEdge": -12.2,
+    "vegasSpread": -20.0,
+    "spreadEdge": -12.7,
     "gameTime": "2026-11-21T17:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
@@ -67,8 +67,8 @@
     "gameId": 401862835,
     "homeTeam": "Tulane",
     "awayTeam": "N Texas",
-    "predictedHomeScore": 26.23,
-    "predictedAwayScore": 44.27,
+    "predictedHomeScore": 26.22,
+    "predictedAwayScore": 44.24,
     "pick": "N Texas",
     "winProb": 0.897,
     "confidence": "Elite",
@@ -128,38 +128,6 @@
     "rank": 8
   },
   {
-    "gameId": 401858543,
-    "homeTeam": "UCLA",
-    "awayTeam": "USC",
-    "predictedHomeScore": 30.19,
-    "predictedAwayScore": 17.97,
-    "pick": "UCLA",
-    "winProb": 0.813,
-    "confidence": "Elite",
-    "vegasSpread": 3.0,
-    "spreadEdge": 9.2,
-    "gameTime": "2026-11-28T20:30:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 9
-  },
-  {
-    "gameId": 401871080,
-    "homeTeam": "Liberty",
-    "awayTeam": "W Kentucky",
-    "predictedHomeScore": 40.56,
-    "predictedAwayScore": 14.11,
-    "pick": "Liberty",
-    "winProb": 0.96,
-    "confidence": "Elite",
-    "vegasSpread": 17.5,
-    "spreadEdge": 9.0,
-    "gameTime": "2026-11-21T18:00:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 10
-  },
-  {
     "gameId": 401856871,
     "homeTeam": "Baylor",
     "awayTeam": "Texas Tech",
@@ -168,28 +136,76 @@
     "pick": "Baylor",
     "winProb": 0.647,
     "confidence": "Elite",
-    "vegasSpread": -4.0,
-    "spreadEdge": 9.0,
+    "vegasSpread": -5.0,
+    "spreadEdge": 10.0,
     "gameTime": "2026-11-21T20:30:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 9
+  },
+  {
+    "gameId": 401858543,
+    "homeTeam": "UCLA",
+    "awayTeam": "USC",
+    "predictedHomeScore": 30.19,
+    "predictedAwayScore": 17.96,
+    "pick": "UCLA",
+    "winProb": 0.813,
+    "confidence": "Elite",
+    "vegasSpread": 3.0,
+    "spreadEdge": 9.2,
+    "gameTime": "2026-11-28T20:30:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 10
+  },
+  {
+    "gameId": 401871080,
+    "homeTeam": "Liberty",
+    "awayTeam": "W Kentucky",
+    "predictedHomeScore": 40.56,
+    "predictedAwayScore": 14.1,
+    "pick": "Liberty",
+    "winProb": 0.96,
+    "confidence": "Elite",
+    "vegasSpread": 17.5,
+    "spreadEdge": 9.0,
+    "gameTime": "2026-11-21T18:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 11
   },
   {
+    "gameId": 401864545,
+    "homeTeam": "Air Force",
+    "awayTeam": "UTEP",
+    "predictedHomeScore": 39.65,
+    "predictedAwayScore": 9.25,
+    "pick": "Air Force",
+    "winProb": 0.975,
+    "confidence": "Elite",
+    "vegasSpread": 21.5,
+    "spreadEdge": 8.9,
+    "gameTime": "2026-11-21T01:00:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 12
+  },
+  {
     "gameId": 401862836,
     "homeTeam": "UAB",
     "awayTeam": "UTSA",
-    "predictedHomeScore": 27.98,
-    "predictedAwayScore": 25.54,
+    "predictedHomeScore": 27.94,
+    "predictedAwayScore": 25.55,
     "pick": "UAB",
-    "winProb": 0.573,
+    "winProb": 0.571,
     "confidence": "Elite",
     "vegasSpread": -6.5,
     "spreadEdge": 8.9,
     "gameTime": "2026-11-22T01:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 12
+    "rank": 13
   },
   {
     "gameId": 401871101,
@@ -205,7 +221,7 @@
     "gameTime": "2026-11-21T21:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 13
+    "rank": 14
   },
   {
     "gameId": 401860919,
@@ -216,44 +232,12 @@
     "pick": "Oregon St",
     "winProb": 0.885,
     "confidence": "Elite",
-    "vegasSpread": 8.5,
-    "spreadEdge": 8.5,
+    "vegasSpread": 9.0,
+    "spreadEdge": 8.0,
     "gameTime": "2026-11-22T03:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 14
-  },
-  {
-    "gameId": 401864545,
-    "homeTeam": "Air Force",
-    "awayTeam": "UTEP",
-    "predictedHomeScore": 39.65,
-    "predictedAwayScore": 9.25,
-    "pick": "Air Force",
-    "winProb": 0.975,
-    "confidence": "Elite",
-    "vegasSpread": 22.0,
-    "spreadEdge": 8.4,
-    "gameTime": "2026-11-21T01:00:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
     "rank": 15
-  },
-  {
-    "gameId": 401862834,
-    "homeTeam": "Navy",
-    "awayTeam": "Memphis",
-    "predictedHomeScore": 30.81,
-    "predictedAwayScore": 41.46,
-    "pick": "Memphis",
-    "winProb": 0.782,
-    "confidence": "Elite",
-    "vegasSpread": -3.0,
-    "spreadEdge": -7.7,
-    "gameTime": "2026-11-21T17:00:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 16
   },
   {
     "gameId": 401856879,
@@ -267,6 +251,22 @@
     "vegasSpread": 10.5,
     "spreadEdge": -7.7,
     "gameTime": "2026-11-27T01:00:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 16
+  },
+  {
+    "gameId": 401862834,
+    "homeTeam": "Navy",
+    "awayTeam": "Memphis",
+    "predictedHomeScore": 30.8,
+    "predictedAwayScore": 41.44,
+    "pick": "Memphis",
+    "winProb": 0.782,
+    "confidence": "Elite",
+    "vegasSpread": -3.0,
+    "spreadEdge": -7.6,
+    "gameTime": "2026-11-21T17:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 17
@@ -308,7 +308,7 @@
     "homeTeam": "Toledo",
     "awayTeam": "Bowling Green",
     "predictedHomeScore": 39.59,
-    "predictedAwayScore": 16.19,
+    "predictedAwayScore": 16.18,
     "pick": "Toledo",
     "winProb": 0.943,
     "confidence": "Strong",
@@ -323,10 +323,10 @@
     "gameId": 401856761,
     "homeTeam": "Kentucky",
     "awayTeam": "Louisville",
-    "predictedHomeScore": 29.7,
+    "predictedHomeScore": 29.69,
     "predictedAwayScore": 34.95,
     "pick": "Louisville",
-    "winProb": 0.652,
+    "winProb": 0.653,
     "confidence": "Strong",
     "vegasSpread": 1.5,
     "spreadEdge": -6.8,
@@ -340,7 +340,7 @@
     "homeTeam": "Tulsa",
     "awayTeam": "Charlotte",
     "predictedHomeScore": 46.55,
-    "predictedAwayScore": 17.48,
+    "predictedAwayScore": 17.47,
     "pick": "Tulsa",
     "winProb": 0.97,
     "confidence": "Strong",
@@ -368,22 +368,6 @@
     "rank": 23
   },
   {
-    "gameId": 401864542,
-    "homeTeam": "Wyoming",
-    "awayTeam": "New Mexico",
-    "predictedHomeScore": 12.29,
-    "predictedAwayScore": 26.11,
-    "pick": "New Mexico",
-    "winProb": 0.84,
-    "confidence": "Strong",
-    "vegasSpread": -7.5,
-    "spreadEdge": -6.3,
-    "gameTime": "2026-11-21T02:00:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 24
-  },
-  {
     "gameId": 401858308,
     "homeTeam": "California",
     "awayTeam": "Stanford",
@@ -397,7 +381,7 @@
     "gameTime": "2026-11-22T00:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 25
+    "rank": 24
   },
   {
     "gameId": 401856867,
@@ -413,7 +397,7 @@
     "gameTime": "2026-11-21T17:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 26
+    "rank": 25
   },
   {
     "gameId": 401856764,
@@ -429,7 +413,7 @@
     "gameTime": "2026-11-28T05:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 27
+    "rank": 26
   },
   {
     "gameId": 401858313,
@@ -445,7 +429,7 @@
     "gameTime": "2026-11-28T17:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 28
+    "rank": 27
   },
   {
     "gameId": 401856752,
@@ -461,7 +445,7 @@
     "gameTime": "2026-11-21T20:45:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 29
+    "rank": 28
   },
   {
     "gameId": 401856756,
@@ -477,13 +461,13 @@
     "gameTime": "2026-11-28T00:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 30
+    "rank": 29
   },
   {
     "gameId": 401858528,
     "homeTeam": "Michigan",
     "awayTeam": "UCLA",
-    "predictedHomeScore": 12.41,
+    "predictedHomeScore": 12.4,
     "predictedAwayScore": 21.07,
     "pick": "UCLA",
     "winProb": 0.739,
@@ -493,7 +477,7 @@
     "gameTime": "2026-11-21T20:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 31
+    "rank": 30
   },
   {
     "gameId": 401871079,
@@ -509,23 +493,23 @@
     "gameTime": "2026-11-21T19:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 32
+    "rank": 31
   },
   {
     "gameId": 401856868,
     "homeTeam": "West Virginia",
     "awayTeam": "Houston",
-    "predictedHomeScore": 33.87,
-    "predictedAwayScore": 46.22,
+    "predictedHomeScore": 33.86,
+    "predictedAwayScore": 46.2,
     "pick": "Houston",
     "winProb": 0.815,
     "confidence": "Strong",
     "vegasSpread": -7.5,
-    "spreadEdge": -4.9,
+    "spreadEdge": -4.8,
     "gameTime": "2026-11-21T18:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 33
+    "rank": 32
   },
   {
     "gameId": 401856755,
@@ -541,7 +525,7 @@
     "gameTime": "2026-11-21T20:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 34
+    "rank": 33
   },
   {
     "gameId": 401856870,
@@ -557,36 +541,52 @@
     "gameTime": "2026-11-22T03:15:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 35
-  },
-  {
-    "gameId": 401862830,
-    "homeTeam": "Temple",
-    "awayTeam": "Rice",
-    "predictedHomeScore": 29.09,
-    "predictedAwayScore": 22.11,
-    "pick": "Temple",
-    "winProb": 0.698,
-    "confidence": "Strong",
-    "vegasSpread": 2.5,
-    "spreadEdge": 4.5,
-    "gameTime": "2026-11-20T00:30:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 36
+    "rank": 34
   },
   {
     "gameId": 401861968,
     "homeTeam": "UConn",
     "awayTeam": "Old Dominion",
-    "predictedHomeScore": 35.62,
-    "predictedAwayScore": 17.21,
+    "predictedHomeScore": 35.6,
+    "predictedAwayScore": 17.2,
     "pick": "UConn",
     "winProb": 0.901,
     "confidence": "Strong",
     "vegasSpread": 14.0,
     "spreadEdge": 4.4,
     "gameTime": "2026-11-21T20:30:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 35
+  },
+  {
+    "gameId": 401864542,
+    "homeTeam": "Wyoming",
+    "awayTeam": "New Mexico",
+    "predictedHomeScore": 12.29,
+    "predictedAwayScore": 26.11,
+    "pick": "New Mexico",
+    "winProb": 0.84,
+    "confidence": "Strong",
+    "vegasSpread": -9.5,
+    "spreadEdge": -4.3,
+    "gameTime": "2026-11-21T02:00:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 36
+  },
+  {
+    "gameId": 401856872,
+    "homeTeam": "TCU",
+    "awayTeam": "Utah",
+    "predictedHomeScore": 18.78,
+    "predictedAwayScore": 22.15,
+    "pick": "Utah",
+    "winProb": 0.6,
+    "confidence": "Strong",
+    "vegasSpread": -7.5,
+    "spreadEdge": 4.1,
+    "gameTime": "2026-11-22T02:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 37
@@ -608,22 +608,6 @@
     "rank": 38
   },
   {
-    "gameId": 401856872,
-    "homeTeam": "TCU",
-    "awayTeam": "Utah",
-    "predictedHomeScore": 18.78,
-    "predictedAwayScore": 22.15,
-    "pick": "Utah",
-    "winProb": 0.6,
-    "confidence": "Lean",
-    "vegasSpread": -7.0,
-    "spreadEdge": 3.6,
-    "gameTime": "2026-11-22T02:00:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 39
-  },
-  {
     "gameId": 401858305,
     "homeTeam": "Virginia",
     "awayTeam": "North Carolina",
@@ -637,6 +621,22 @@
     "gameTime": "2026-11-21T17:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
+    "rank": 39
+  },
+  {
+    "gameId": 401860920,
+    "homeTeam": "Texas St",
+    "awayTeam": "Washington St",
+    "predictedHomeScore": 38.55,
+    "predictedAwayScore": 28.49,
+    "pick": "Texas St",
+    "winProb": 0.77,
+    "confidence": "Lean",
+    "vegasSpread": 13.5,
+    "spreadEdge": -3.4,
+    "gameTime": "2026-11-21T23:00:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
     "rank": 40
   },
   {
@@ -644,7 +644,7 @@
     "homeTeam": "Michigan St",
     "awayTeam": "Oregon",
     "predictedHomeScore": 16.96,
-    "predictedAwayScore": 31.31,
+    "predictedAwayScore": 31.3,
     "pick": "Oregon",
     "winProb": 0.848,
     "confidence": "Lean",
@@ -708,7 +708,7 @@
     "homeTeam": "Alabama",
     "awayTeam": "Auburn",
     "predictedHomeScore": 37.18,
-    "predictedAwayScore": 18.81,
+    "predictedAwayScore": 18.8,
     "pick": "Alabama",
     "winProb": 0.901,
     "confidence": "Lean",
@@ -720,17 +720,17 @@
     "rank": 45
   },
   {
-    "gameId": 401869929,
-    "homeTeam": "App State",
-    "awayTeam": "UL Monroe",
-    "predictedHomeScore": 35.34,
-    "predictedAwayScore": 19.03,
-    "pick": "App State",
-    "winProb": 0.876,
+    "gameId": 401858303,
+    "homeTeam": "Duke",
+    "awayTeam": "Clemson",
+    "predictedHomeScore": 27.42,
+    "predictedAwayScore": 12.16,
+    "pick": "Duke",
+    "winProb": 0.862,
     "confidence": "Lean",
-    "vegasSpread": 13.5,
+    "vegasSpread": 12.5,
     "spreadEdge": 2.8,
-    "gameTime": "2026-11-21T19:30:00.000Z",
+    "gameTime": "2026-11-21T00:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 46
@@ -752,10 +752,26 @@
     "rank": 47
   },
   {
+    "gameId": 401858307,
+    "homeTeam": "Notre Dame",
+    "awayTeam": "SMU",
+    "predictedHomeScore": 39.88,
+    "predictedAwayScore": 16.73,
+    "pick": "Notre Dame",
+    "winProb": 0.941,
+    "confidence": "Lean",
+    "vegasSpread": 20.5,
+    "spreadEdge": 2.7,
+    "gameTime": "2026-11-22T00:30:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 48
+  },
+  {
     "gameId": 401858302,
     "homeTeam": "Miami",
     "awayTeam": "Virginia Tech",
-    "predictedHomeScore": 47.7,
+    "predictedHomeScore": 47.69,
     "predictedAwayScore": 24.61,
     "pick": "Miami",
     "winProb": 0.941,
@@ -765,29 +781,13 @@
     "gameTime": "2026-11-22T00:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 48
-  },
-  {
-    "gameId": 401858307,
-    "homeTeam": "Notre Dame",
-    "awayTeam": "SMU",
-    "predictedHomeScore": 39.85,
-    "predictedAwayScore": 16.74,
-    "pick": "Notre Dame",
-    "winProb": 0.941,
-    "confidence": "Lean",
-    "vegasSpread": 20.5,
-    "spreadEdge": 2.6,
-    "gameTime": "2026-11-22T00:30:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
     "rank": 49
   },
   {
     "gameId": 401856748,
     "homeTeam": "Florida",
     "awayTeam": "Vanderbilt",
-    "predictedHomeScore": 36.14,
+    "predictedHomeScore": 36.12,
     "predictedAwayScore": 20.12,
     "pick": "Florida",
     "winProb": 0.872,
@@ -803,8 +803,8 @@
     "gameId": 401862831,
     "homeTeam": "Army",
     "awayTeam": "E Carolina",
-    "predictedHomeScore": 29.61,
-    "predictedAwayScore": 21.1,
+    "predictedHomeScore": 29.57,
+    "predictedAwayScore": 21.09,
     "pick": "Army",
     "winProb": 0.735,
     "confidence": "Lean",
@@ -814,22 +814,6 @@
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 51
-  },
-  {
-    "gameId": 401860920,
-    "homeTeam": "Texas St",
-    "awayTeam": "Washington St",
-    "predictedHomeScore": 38.55,
-    "predictedAwayScore": 28.51,
-    "pick": "Texas St",
-    "winProb": 0.769,
-    "confidence": "Lean",
-    "vegasSpread": 12.5,
-    "spreadEdge": -2.5,
-    "gameTime": "2026-11-21T23:00:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 52
   },
   {
     "gameId": 401858312,
@@ -845,39 +829,23 @@
     "gameTime": "2026-11-28T05:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 53
-  },
-  {
-    "gameId": 401856751,
-    "homeTeam": "Missouri",
-    "awayTeam": "Kentucky",
-    "predictedHomeScore": 31.37,
-    "predictedAwayScore": 24.45,
-    "pick": "Missouri",
-    "winProb": 0.696,
-    "confidence": "Lean",
-    "vegasSpread": 4.5,
-    "spreadEdge": 2.4,
-    "gameTime": "2026-11-22T00:30:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 54
+    "rank": 52
   },
   {
     "gameId": 401856759,
     "homeTeam": "Florida St",
     "awayTeam": "Florida",
     "predictedHomeScore": 30.29,
-    "predictedAwayScore": 32.42,
+    "predictedAwayScore": 32.4,
     "pick": "Florida",
-    "winProb": 0.564,
+    "winProb": 0.563,
     "confidence": "Lean",
     "vegasSpread": -4.5,
     "spreadEdge": 2.4,
     "gameTime": "2026-11-27T20:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 55
+    "rank": 53
   },
   {
     "gameId": 401858540,
@@ -893,20 +861,52 @@
     "gameTime": "2026-11-28T17:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 56
+    "rank": 54
   },
   {
     "gameId": 401858314,
     "homeTeam": "Syracuse",
     "awayTeam": "Notre Dame",
-    "predictedHomeScore": 19.29,
-    "predictedAwayScore": 37.35,
+    "predictedHomeScore": 19.27,
+    "predictedAwayScore": 37.37,
     "pick": "Notre Dame",
-    "winProb": 0.897,
+    "winProb": 0.898,
     "confidence": "Lean",
     "vegasSpread": -20.5,
     "spreadEdge": 2.4,
     "gameTime": "2026-11-28T17:00:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 55
+  },
+  {
+    "gameId": 401869929,
+    "homeTeam": "App State",
+    "awayTeam": "UL Monroe",
+    "predictedHomeScore": 35.34,
+    "predictedAwayScore": 19.03,
+    "pick": "App State",
+    "winProb": 0.876,
+    "confidence": "Lean",
+    "vegasSpread": 14.0,
+    "spreadEdge": 2.3,
+    "gameTime": "2026-11-21T19:30:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 56
+  },
+  {
+    "gameId": 401856869,
+    "homeTeam": "UCF",
+    "awayTeam": "Iowa St",
+    "predictedHomeScore": 30.54,
+    "predictedAwayScore": 29.81,
+    "pick": "UCF",
+    "winProb": 0.522,
+    "confidence": "Lean",
+    "vegasSpread": -1.5,
+    "spreadEdge": 2.2,
+    "gameTime": "2026-11-20T23:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 57
@@ -916,7 +916,7 @@
     "homeTeam": "Washington",
     "awayTeam": "Indiana",
     "predictedHomeScore": 14.96,
-    "predictedAwayScore": 24.66,
+    "predictedAwayScore": 24.65,
     "pick": "Indiana",
     "winProb": 0.762,
     "confidence": "Lean",
@@ -926,22 +926,6 @@
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 58
-  },
-  {
-    "gameId": 401869938,
-    "homeTeam": "Louisiana Tech",
-    "awayTeam": "Arkansas St",
-    "predictedHomeScore": 37.12,
-    "predictedAwayScore": 20.88,
-    "pick": "Louisiana Tech",
-    "winProb": 0.875,
-    "confidence": "Lean",
-    "vegasSpread": 14.0,
-    "spreadEdge": 2.2,
-    "gameTime": "2026-11-22T00:00:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 59
   },
   {
     "gameId": 401856753,
@@ -955,6 +939,22 @@
     "vegasSpread": -14.5,
     "spreadEdge": -2.2,
     "gameTime": "2026-11-22T00:30:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 59
+  },
+  {
+    "gameId": 401864541,
+    "homeTeam": "Nevada",
+    "awayTeam": "Hawai'i",
+    "predictedHomeScore": 20.55,
+    "predictedAwayScore": 17.24,
+    "pick": "Nevada",
+    "winProb": 0.598,
+    "confidence": "Lean",
+    "vegasSpread": 5.5,
+    "spreadEdge": -2.2,
+    "gameTime": "2026-11-22T03:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 60
@@ -979,8 +979,8 @@
     "gameId": 401858532,
     "homeTeam": "Penn St",
     "awayTeam": "Rutgers",
-    "predictedHomeScore": 39.18,
-    "predictedAwayScore": 15.68,
+    "predictedHomeScore": 39.17,
+    "predictedAwayScore": 15.67,
     "pick": "Penn St",
     "winProb": 0.944,
     "confidence": "Lean",
@@ -990,6 +990,22 @@
     "actualHomeScore": null,
     "actualAwayScore": null,
     "rank": 62
+  },
+  {
+    "gameId": 401856865,
+    "homeTeam": "Kansas St",
+    "awayTeam": "Arizona",
+    "predictedHomeScore": 27.31,
+    "predictedAwayScore": 32.82,
+    "pick": "Arizona",
+    "winProb": 0.66,
+    "confidence": "Lean",
+    "vegasSpread": -7.5,
+    "spreadEdge": 2.0,
+    "gameTime": "2026-11-22T00:00:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 63
   },
   {
     "gameId": 401866470,
@@ -1005,49 +1021,33 @@
     "gameTime": "2026-11-25T00:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 63
+    "rank": 64
   },
   {
     "gameId": 401866471,
     "homeTeam": "W Michigan",
     "awayTeam": "Miami OH",
     "predictedHomeScore": 26.7,
-    "predictedAwayScore": 19.66,
+    "predictedAwayScore": 19.64,
     "pick": "W Michigan",
-    "winProb": 0.699,
+    "winProb": 0.7,
     "confidence": "Elite",
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-25T00:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 64
+    "rank": 65
   },
   {
     "gameId": 401866472,
     "homeTeam": "Akron",
     "awayTeam": "Buffalo",
     "predictedHomeScore": 20.23,
-    "predictedAwayScore": 33.9,
+    "predictedAwayScore": 33.89,
     "pick": "Buffalo",
-    "winProb": 0.838,
+    "winProb": 0.837,
     "confidence": "Elite",
-    "vegasSpread": null,
-    "spreadEdge": null,
-    "gameTime": "2026-11-27T17:00:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 65
-  },
-  {
-    "gameId": 401866473,
-    "homeTeam": "Ohio",
-    "awayTeam": "Toledo",
-    "predictedHomeScore": 26.94,
-    "predictedAwayScore": 30.56,
-    "pick": "Toledo",
-    "winProb": 0.607,
-    "confidence": "Strong",
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-27T17:00:00.000Z",
@@ -1056,11 +1056,27 @@
     "rank": 66
   },
   {
+    "gameId": 401866473,
+    "homeTeam": "Ohio",
+    "awayTeam": "Toledo",
+    "predictedHomeScore": 26.93,
+    "predictedAwayScore": 30.54,
+    "pick": "Toledo",
+    "winProb": 0.607,
+    "confidence": "Strong",
+    "vegasSpread": null,
+    "spreadEdge": null,
+    "gameTime": "2026-11-27T17:00:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 67
+  },
+  {
     "gameId": 401862840,
     "homeTeam": "UTSA",
     "awayTeam": "Tulsa",
     "predictedHomeScore": 30.66,
-    "predictedAwayScore": 34.4,
+    "predictedAwayScore": 34.38,
     "pick": "Tulsa",
     "winProb": 0.61,
     "confidence": "Strong",
@@ -1069,7 +1085,7 @@
     "gameTime": "2026-11-27T17:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 67
+    "rank": 68
   },
   {
     "gameId": 401869930,
@@ -1085,23 +1101,23 @@
     "gameTime": "2026-11-27T20:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 68
+    "rank": 69
   },
   {
     "gameId": 401862838,
     "homeTeam": "Memphis",
     "awayTeam": "Temple",
-    "predictedHomeScore": 46.72,
-    "predictedAwayScore": 21.1,
+    "predictedHomeScore": 47.49,
+    "predictedAwayScore": 21.22,
     "pick": "Memphis",
-    "winProb": 0.956,
+    "winProb": 0.959,
     "confidence": "Elite",
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-27T20:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 69
+    "rank": 70
   },
   {
     "gameId": 401864546,
@@ -1117,7 +1133,7 @@
     "gameTime": "2026-11-27T21:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 70
+    "rank": 71
   },
   {
     "gameId": 401858544,
@@ -1133,14 +1149,14 @@
     "gameTime": "2026-11-28T00:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 71
+    "rank": 72
   },
   {
     "gameId": 401856880,
     "homeTeam": "Utah",
     "awayTeam": "West Virginia",
-    "predictedHomeScore": 53.21,
-    "predictedAwayScore": 25.97,
+    "predictedHomeScore": 53.19,
+    "predictedAwayScore": 25.95,
     "pick": "Utah",
     "winProb": 0.963,
     "confidence": "Elite",
@@ -1149,7 +1165,7 @@
     "gameTime": "2026-11-28T02:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 72
+    "rank": 73
   },
   {
     "gameId": 401856758,
@@ -1165,7 +1181,7 @@
     "gameTime": "2026-11-28T05:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 73
+    "rank": 74
   },
   {
     "gameId": 401856760,
@@ -1181,7 +1197,7 @@
     "gameTime": "2026-11-28T05:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 74
+    "rank": 75
   },
   {
     "gameId": 401858316,
@@ -1197,7 +1213,7 @@
     "gameTime": "2026-11-28T05:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 75
+    "rank": 76
   },
   {
     "gameId": 401858538,
@@ -1213,14 +1229,14 @@
     "gameTime": "2026-11-28T05:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 76
+    "rank": 77
   },
   {
     "gameId": 401861969,
     "homeTeam": "Wyoming",
     "awayTeam": "UConn",
-    "predictedHomeScore": 24.07,
-    "predictedAwayScore": 27.41,
+    "predictedHomeScore": 24.06,
+    "predictedAwayScore": 27.4,
     "pick": "UConn",
     "winProb": 0.599,
     "confidence": "Lean",
@@ -1229,14 +1245,14 @@
     "gameTime": "2026-11-28T17:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 77
+    "rank": 78
   },
   {
     "gameId": 401862842,
     "homeTeam": "Charlotte",
     "awayTeam": "Navy",
     "predictedHomeScore": 21.03,
-    "predictedAwayScore": 41.29,
+    "predictedAwayScore": 41.25,
     "pick": "Navy",
     "winProb": 0.919,
     "confidence": "Elite",
@@ -1245,13 +1261,13 @@
     "gameTime": "2026-11-28T17:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 78
+    "rank": 79
   },
   {
     "gameId": 401858311,
     "homeTeam": "Miami",
     "awayTeam": "Boston College",
-    "predictedHomeScore": 51.54,
+    "predictedHomeScore": 51.52,
     "predictedAwayScore": 14.86,
     "pick": "Miami",
     "winProb": 0.988,
@@ -1261,7 +1277,7 @@
     "gameTime": "2026-11-28T17:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 79
+    "rank": 80
   },
   {
     "gameId": 401866474,
@@ -1277,7 +1293,7 @@
     "gameTime": "2026-11-28T17:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 80
+    "rank": 81
   },
   {
     "gameId": 401871102,
@@ -1293,14 +1309,14 @@
     "gameTime": "2026-11-28T18:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 81
+    "rank": 82
   },
   {
     "gameId": 401870804,
     "homeTeam": "W Kentucky",
     "awayTeam": "Kennesaw St",
     "predictedHomeScore": 27.8,
-    "predictedAwayScore": 29.72,
+    "predictedAwayScore": 29.7,
     "pick": "Kennesaw St",
     "winProb": 0.557,
     "confidence": "Lean",
@@ -1309,7 +1325,7 @@
     "gameTime": "2026-11-28T18:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 82
+    "rank": 83
   },
   {
     "gameId": 401871103,
@@ -1325,45 +1341,45 @@
     "gameTime": "2026-11-28T18:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 83
+    "rank": 84
   },
   {
     "gameId": 401862837,
     "homeTeam": "E Carolina",
     "awayTeam": "Florida Atlantic",
-    "predictedHomeScore": 32.97,
-    "predictedAwayScore": 35.77,
+    "predictedHomeScore": 32.94,
+    "predictedAwayScore": 35.75,
     "pick": "Florida Atlantic",
-    "winProb": 0.583,
+    "winProb": 0.584,
     "confidence": "Lean",
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-28T18:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 84
+    "rank": 85
   },
   {
     "gameId": 401862841,
     "homeTeam": "Rice",
     "awayTeam": "Army",
-    "predictedHomeScore": 20.75,
-    "predictedAwayScore": 37.29,
+    "predictedHomeScore": 21.71,
+    "predictedAwayScore": 36.57,
     "pick": "Army",
-    "winProb": 0.879,
+    "winProb": 0.856,
     "confidence": "Elite",
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-28T19:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 85
+    "rank": 86
   },
   {
     "gameId": 401856878,
     "homeTeam": "Iowa St",
     "awayTeam": "Kansas St",
-    "predictedHomeScore": 31.49,
+    "predictedHomeScore": 31.48,
     "predictedAwayScore": 28.93,
     "pick": "Iowa St",
     "winProb": 0.576,
@@ -1373,7 +1389,7 @@
     "gameTime": "2026-11-28T19:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 86
+    "rank": 87
   },
   {
     "gameId": 401871083,
@@ -1389,7 +1405,7 @@
     "gameTime": "2026-11-28T19:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 87
+    "rank": 88
   },
   {
     "gameId": 401871082,
@@ -1405,23 +1421,23 @@
     "gameTime": "2026-11-28T19:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 88
+    "rank": 89
   },
   {
     "gameId": 401856875,
     "homeTeam": "Colorado",
     "awayTeam": "UCF",
-    "predictedHomeScore": 24.73,
+    "predictedHomeScore": 24.72,
     "predictedAwayScore": 30.38,
     "pick": "UCF",
-    "winProb": 0.663,
+    "winProb": 0.664,
     "confidence": "Strong",
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-28T19:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 89
+    "rank": 90
   },
   {
     "gameId": 401869947,
@@ -1437,13 +1453,13 @@
     "gameTime": "2026-11-28T19:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 90
+    "rank": 91
   },
   {
     "gameId": 401871063,
     "homeTeam": "Missouri St",
     "awayTeam": "Liberty",
-    "predictedHomeScore": 15.21,
+    "predictedHomeScore": 15.2,
     "predictedAwayScore": 37.12,
     "pick": "Liberty",
     "winProb": 0.933,
@@ -1453,14 +1469,14 @@
     "gameTime": "2026-11-28T19:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 91
+    "rank": 92
   },
   {
     "gameId": 401869939,
     "homeTeam": "Arkansas St",
     "awayTeam": "Troy",
     "predictedHomeScore": 27.3,
-    "predictedAwayScore": 20.95,
+    "predictedAwayScore": 20.94,
     "pick": "Arkansas St",
     "winProb": 0.682,
     "confidence": "Elite",
@@ -1469,7 +1485,7 @@
     "gameTime": "2026-11-28T20:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 92
+    "rank": 93
   },
   {
     "gameId": 401856876,
@@ -1485,32 +1501,16 @@
     "gameTime": "2026-11-28T20:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 93
+    "rank": 94
   },
   {
     "gameId": 401862839,
     "homeTeam": "S Florida",
     "awayTeam": "Tulane",
-    "predictedHomeScore": 30.44,
+    "predictedHomeScore": 30.4,
     "predictedAwayScore": 14.62,
     "pick": "S Florida",
-    "winProb": 0.87,
-    "confidence": "Elite",
-    "vegasSpread": null,
-    "spreadEdge": null,
-    "gameTime": "2026-11-28T20:30:00.000Z",
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "rank": 94
-  },
-  {
-    "gameId": 401866475,
-    "homeTeam": "Bowling Green",
-    "awayTeam": "UMass",
-    "predictedHomeScore": 18.43,
-    "predictedAwayScore": 25.6,
-    "pick": "UMass",
-    "winProb": 0.703,
+    "winProb": 0.869,
     "confidence": "Elite",
     "vegasSpread": null,
     "spreadEdge": null,
@@ -1520,11 +1520,27 @@
     "rank": 95
   },
   {
+    "gameId": 401866475,
+    "homeTeam": "Bowling Green",
+    "awayTeam": "UMass",
+    "predictedHomeScore": 18.43,
+    "predictedAwayScore": 25.59,
+    "pick": "UMass",
+    "winProb": 0.702,
+    "confidence": "Elite",
+    "vegasSpread": null,
+    "spreadEdge": null,
+    "gameTime": "2026-11-28T20:30:00.000Z",
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "rank": 96
+  },
+  {
     "gameId": 401858539,
     "homeTeam": "Maryland",
     "awayTeam": "Penn St",
-    "predictedHomeScore": 21.23,
-    "predictedAwayScore": 34.05,
+    "predictedHomeScore": 21.21,
+    "predictedAwayScore": 34.04,
     "pick": "Penn St",
     "winProb": 0.823,
     "confidence": "Elite",
@@ -1533,7 +1549,7 @@
     "gameTime": "2026-11-28T20:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 96
+    "rank": 97
   },
   {
     "gameId": 401871062,
@@ -1549,7 +1565,7 @@
     "gameTime": "2026-11-28T20:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 97
+    "rank": 98
   },
   {
     "gameId": 401864550,
@@ -1565,29 +1581,29 @@
     "gameTime": "2026-11-28T20:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 98
+    "rank": 99
   },
   {
     "gameId": 401862843,
     "homeTeam": "N Texas",
     "awayTeam": "UAB",
-    "predictedHomeScore": 37.1,
-    "predictedAwayScore": 26.72,
+    "predictedHomeScore": 37.12,
+    "predictedAwayScore": 26.68,
     "pick": "N Texas",
-    "winProb": 0.777,
+    "winProb": 0.778,
     "confidence": "Elite",
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-28T21:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 99
+    "rank": 100
   },
   {
     "gameId": 401858542,
     "homeTeam": "Rutgers",
     "awayTeam": "Michigan St",
-    "predictedHomeScore": 22.08,
+    "predictedHomeScore": 22.07,
     "predictedAwayScore": 23.79,
     "pick": "Michigan St",
     "winProb": 0.551,
@@ -1597,7 +1613,7 @@
     "gameTime": "2026-11-28T21:15:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 100
+    "rank": 101
   },
   {
     "gameId": 401856877,
@@ -1613,7 +1629,7 @@
     "gameTime": "2026-11-28T23:15:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 101
+    "rank": 102
   },
   {
     "gameId": 401858315,
@@ -1629,13 +1645,13 @@
     "gameTime": "2026-11-29T00:30:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 102
+    "rank": 103
   },
   {
     "gameId": 401864548,
     "homeTeam": "UNLV",
     "awayTeam": "Nevada",
-    "predictedHomeScore": 23.74,
+    "predictedHomeScore": 23.73,
     "predictedAwayScore": 20.08,
     "pick": "UNLV",
     "winProb": 0.608,
@@ -1645,6 +1661,6 @@
     "gameTime": "2026-11-29T02:00:00.000Z",
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "rank": 103
+    "rank": 104
   }
 ]
