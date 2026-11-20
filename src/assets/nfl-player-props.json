@@ -36,18 +36,6 @@
     "gameTime": "2026-11-22T18:00:00Z"
   },
   {
-    "name": "CJ Stroud",
-    "team": "Houston Texans",
-    "opponent": "Indianapolis Colts",
-    "position": "QB",
-    "projYards": 284,
-    "projTDs": 1.89,
-    "projRec": null,
-    "statLabel": "Pass Yds",
-    "matchup": "Indianapolis Colts @ Houston Texans",
-    "gameTime": "2026-11-20T01:15:00Z"
-  },
-  {
     "name": "Tyler Shough",
     "team": "New Orleans Saints",
     "opponent": "Chicago Bears",
@@ -120,6 +108,18 @@
     "gameTime": "2026-11-22T18:00:00Z"
   },
   {
+    "name": "Jalen Hurts",
+    "team": "Philadelphia Eagles",
+    "opponent": "Pittsburgh Steelers",
+    "position": "QB",
+    "projYards": 247,
+    "projTDs": 1.66,
+    "projRec": null,
+    "statLabel": "Pass Yds",
+    "matchup": "Pittsburgh Steelers @ Philadelphia Eagles",
+    "gameTime": "2026-11-22T21:25:00Z"
+  },
+  {
     "name": "Kenneth Walker",
     "team": "Kansas City Chiefs",
     "opponent": "Arizona Cardinals",
@@ -180,18 +180,6 @@
     "gameTime": "2026-11-24T01:15:00Z"
   },
   {
-    "name": "Jonathan Taylor",
-    "team": "Indianapolis Colts",
-    "opponent": "Houston Texans",
-    "position": "RB",
-    "projYards": 75,
-    "projTDs": 0.55,
-    "projRec": null,
-    "statLabel": "Rush Yds",
-    "matchup": "Indianapolis Colts @ Houston Texans",
-    "gameTime": "2026-11-20T01:15:00Z"
-  },
-  {
     "name": "DAndre Swift",
     "team": "Chicago Bears",
     "opponent": "New Orleans Saints",
@@ -238,6 +226,18 @@
     "statLabel": "Rush Yds",
     "matchup": "Minnesota Vikings @ San Francisco 49ers",
     "gameTime": "2026-11-23T01:20:00Z"
+  },
+  {
+    "name": "Jaylen Warren",
+    "team": "Pittsburgh Steelers",
+    "opponent": "Philadelphia Eagles",
+    "position": "RB",
+    "projYards": 68,
+    "projTDs": 0.45,
+    "projRec": null,
+    "statLabel": "Rush Yds",
+    "matchup": "Pittsburgh Steelers @ Philadelphia Eagles",
+    "gameTime": "2026-11-22T21:25:00Z"
   },
   {
     "name": "Chris Olave",
@@ -312,18 +312,6 @@
     "gameTime": "2026-11-24T01:15:00Z"
   },
   {
-    "name": "Nico Collins",
-    "team": "Houston Texans",
-    "opponent": "Indianapolis Colts",
-    "position": "WR",
-    "projYards": 82,
-    "projTDs": 0.43,
-    "projRec": 6.1,
-    "statLabel": "Rec Yds",
-    "matchup": "Indianapolis Colts @ Houston Texans",
-    "gameTime": "2026-11-20T01:15:00Z"
-  },
-  {
     "name": "Rashee Rice",
     "team": "Kansas City Chiefs",
     "opponent": "Arizona Cardinals",
@@ -358,6 +346,18 @@
     "statLabel": "Rec Yds",
     "matchup": "Cincinnati Bengals @ Washington Commanders",
     "gameTime": "2026-11-24T01:15:00Z"
+  },
+  {
+    "name": "Tetairoa McMillan",
+    "team": "Carolina Panthers",
+    "opponent": "Baltimore Ravens",
+    "position": "WR",
+    "projYards": 68,
+    "projTDs": 0.37,
+    "projRec": 4.5,
+    "statLabel": "Rec Yds",
+    "matchup": "Baltimore Ravens @ Carolina Panthers",
+    "gameTime": "2026-11-22T18:00:00Z"
   },
   {
     "name": "Brock Bowers",
@@ -406,18 +406,6 @@
     "statLabel": "Rec Yds",
     "matchup": "Miami Dolphins @ Buffalo Bills",
     "gameTime": "2026-11-22T18:00:00Z"
-  },
-  {
-    "name": "Dalton Schultz",
-    "team": "Houston Texans",
-    "opponent": "Indianapolis Colts",
-    "position": "TE",
-    "projYards": 59,
-    "projTDs": 0.34,
-    "projRec": 5.9,
-    "statLabel": "Rec Yds",
-    "matchup": "Indianapolis Colts @ Houston Texans",
-    "gameTime": "2026-11-20T01:15:00Z"
   },
   {
     "name": "Sam LaPorta",
@@ -478,5 +466,17 @@
     "statLabel": "Rec Yds",
     "matchup": "New York Jets @ Los Angeles Chargers",
     "gameTime": "2026-11-22T21:05:00Z"
+  },
+  {
+    "name": "Darren Waller",
+    "team": "Carolina Panthers",
+    "opponent": "Baltimore Ravens",
+    "position": "TE",
+    "projYards": 41,
+    "projTDs": 0.22,
+    "projRec": 3.7,
+    "statLabel": "Rec Yds",
+    "matchup": "Baltimore Ravens @ Carolina Panthers",
+    "gameTime": "2026-11-22T18:00:00Z"
   }
 ]
