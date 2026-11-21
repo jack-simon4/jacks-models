@@ -323,7 +323,8 @@ def save_to_firestore(matches: list, stats: dict):
                 updated += 1
         else:
             doc_ref.set({
-                'sport':               'World Cup',
+                'sport':               'Soccer',
+                'league':              'World Cup',
                 'homeTeam':            home_csv,
                 'awayTeam':            away_csv,
                 'predictedHomeScore':  home_xg,

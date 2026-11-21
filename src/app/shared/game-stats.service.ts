@@ -42,6 +42,16 @@ const ICONS: Record<string, string> = {
   NCAAF: '🏈', NCAAM: '🏀', Soccer: '⚽', 'College Baseball': '⚾',
 };
 
+/** Legacy Firestore docs stored league names as the sport field. Normalize them. */
+const SOCCER_LEAGUES = new Set([
+  'Premier League', 'La Liga', 'Serie A', 'Bundesliga', 'Ligue 1',
+  'Champions League', 'MLS', 'World Cup',
+]);
+
+function normalizeSport(raw: string): string {
+  return SOCCER_LEAGUES.has(raw) ? 'Soccer' : raw;
+}
+
 @Injectable({ providedIn: 'root' })
 export class GameStatsService {
 
@@ -59,6 +69,7 @@ export class GameStatsService {
         map(snaps => snaps.map(snap => {
           const data = snap.payload.doc.data() as any;
           data.id = snap.payload.doc.id;
+          data.sport = normalizeSport(data.sport ?? '');
           if (data.timestamp?.seconds) {
             data.timestamp = new Date(data.timestamp.seconds * 1000);
           }

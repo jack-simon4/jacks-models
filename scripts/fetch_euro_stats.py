@@ -728,7 +728,8 @@ def save_to_firestore(all_matches: dict[str, list], stats: dict):
                     skipped += 1
                     continue
                 doc_ref.set({
-                    'sport':              league_name,
+                    'sport':              'Soccer',
+                    'league':             league_name,
                     'homeTeam':           home_csv,
                     'awayTeam':           away_csv,
                     'predictedHomeScore': h_xg,
