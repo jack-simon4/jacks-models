@@ -69,6 +69,18 @@
   font-size: 14px;
 }
 
+.stat-sub {
+  color: #90caf9;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.stat-games {
+  color: #666;
+  font-size: 11px;
+  margin-top: 1px;
+}
+
 .top-picks-container {
   width: 90%;
   max-width: 900px;

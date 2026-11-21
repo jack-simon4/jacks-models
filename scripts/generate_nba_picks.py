@@ -261,6 +261,8 @@ def save_to_firestore(picks_data: list):
                         'pick':               p.get('pick', ''),
                         'winProb':            p.get('winProb', 0),
                         'confidence':         p.get('confidence', ''),
+                        'vegasSpread':        p.get('vegasSpread'),
+                        'spreadEdge':         p.get('spreadEdge'),
                     })
                     updated += 1
                 else:
@@ -277,6 +279,8 @@ def save_to_firestore(picks_data: list):
                     'pick':               p.get('pick', ''),
                     'winProb':            p.get('winProb', 0),
                     'confidence':         p.get('confidence', ''),
+                    'vegasSpread':        p.get('vegasSpread'),
+                    'spreadEdge':         p.get('spreadEdge'),
                     'gameTime':           gt,
                     'gameDate':           date_str,
                     'timestamp':          fb_firestore.SERVER_TIMESTAMP,

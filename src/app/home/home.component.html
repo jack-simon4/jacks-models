@@ -6,17 +6,11 @@
   </p>
 
   <div class="stats-bar">
-    <div class="stat-box">
-      <span class="stat-number">68%</span>
-      <span class="stat-label">NFL Win Rate</span>
-    </div>
-    <div class="stat-box">
-      <span class="stat-number">65%</span>
-      <span class="stat-label">MLB Win Rate</span>
-    </div>
-    <div class="stat-box">
-      <span class="stat-number">73%</span>
-      <span class="stat-label">NCAAM Win Rate</span>
+    <div class="stat-box" *ngFor="let s of homeStats">
+      <span class="stat-number">{{ s.mlPct !== null ? s.mlPct + '%' : '—' }}</span>
+      <span class="stat-label">{{ s.sport }} Win Rate</span>
+      <span class="stat-sub" *ngIf="s.atsPct !== null">{{ s.atsPct }}% ATS</span>
+      <span class="stat-games" *ngIf="s.games > 0">{{ s.games }} games</span>
     </div>
   </div>
 

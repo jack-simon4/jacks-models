@@ -5,33 +5,60 @@
     <h1>Model Performance</h1>
     <p class="page-subtitle">
       Blind moneyline results — picking every game the model favors, no filtering.
+      ATS tracking began when spread data was added to the pipeline.
     </p>
   </div>
 
   <!-- League stat cards -->
-  <div class="leagues-grid">
-    <div class="league-card" *ngFor="let league of leagueStats">
+  <div *ngIf="leagueStats.length > 0" class="leagues-grid">
+    <div class="league-card" *ngFor="let s of leagueStats">
       <div class="league-header">
-        <span class="league-icon">{{ league.icon }}</span>
-        <span class="league-name">{{ league.sport }}</span>
+        <span class="league-icon">{{ s.icon }}</span>
+        <span class="league-name">{{ s.sport }}</span>
       </div>
       <div class="league-rows">
-        <div class="league-row" *ngFor="let row of league.rows">
-          <span class="row-label">{{ row.label }}</span>
-          <span class="row-value">{{ row.value }}</span>
+        <div class="league-row">
+          <span class="row-label">Moneyline</span>
+          <span class="row-value">{{ s.mlWins }}-{{ s.mlLosses }} ({{ s.mlPct }}%)</span>
+        </div>
+        <div class="league-row" *ngIf="s.atsTot > 0">
+          <span class="row-label">ATS</span>
+          <span class="row-value">
+            {{ s.atsWins }}-{{ s.atsLosses }}<ng-container *ngIf="s.atsPushes > 0">-{{ s.atsPushes }}</ng-container>
+            ({{ s.atsPct }}%)
+          </span>
+        </div>
+        <div class="league-row" *ngIf="s.atsTot > 0">
+          <span class="row-label">Units (ATS)</span>
+          <span class="row-value" [class.units-pos]="s.units >= 0" [class.units-neg]="s.units < 0">
+            {{ s.units >= 0 ? '+' : '' }}{{ s.units }}u
+          </span>
         </div>
       </div>
-      <div class="league-footer">{{ league.games | number }} games tracked</div>
+      <div class="league-footer">{{ s.games | number }} games tracked</div>
     </div>
+  </div>
+
+  <div *ngIf="loading && leagueStats.length === 0" class="leagues-loading">
+    Loading stats…
   </div>
 
   <!-- Recent predictions -->
   <div class="recent-section">
     <div class="recent-header">
       <h2>Recent Predictions</h2>
-      <span class="overall-badge" *ngIf="filteredGames.length > 0">
-        {{ totalCorrect }}/{{ filteredGames.length }} correct &nbsp;·&nbsp; {{ overallWinRate }}
-      </span>
+      <div class="overall-badges" *ngIf="filteredGames.length > 0">
+        <span class="overall-badge">
+          ML {{ totalCorrect }}/{{ filteredGames.length }} &nbsp;·&nbsp; {{ overallWinRate }}
+        </span>
+        <span class="overall-badge ats-badge" *ngIf="hasAtsData">
+          ATS {{ totalAtsWins }}-{{ totalAtsLosses }} &nbsp;·&nbsp; {{ totalAtsPct }}
+          &nbsp;·&nbsp;
+          <span [class.units-pos]="totalUnits >= 0" [class.units-neg]="totalUnits < 0">
+            {{ totalUnits >= 0 ? '+' : '' }}{{ totalUnits }}u
+          </span>
+        </span>
+      </div>
     </div>
 
     <!-- Sport filter pills -->
@@ -56,9 +83,12 @@
         class="game-row"
         [ngClass]="isPredictionCorrect(game) ? 'correct' : 'incorrect'"
       >
-        <div class="result-badge">
+        <div class="result-badges">
           <span *ngIf="isPredictionCorrect(game)"  class="badge-win">W</span>
           <span *ngIf="!isPredictionCorrect(game)" class="badge-loss">L</span>
+          <span *ngIf="atsResult(game) === 'win'"  class="badge-ats-win">ATS ✓</span>
+          <span *ngIf="atsResult(game) === 'loss'" class="badge-ats-loss">ATS ✗</span>
+          <span *ngIf="atsResult(game) === 'push'" class="badge-ats-push">PUSH</span>
         </div>
 
         <div class="game-info">
@@ -68,6 +98,9 @@
           </div>
           <div class="game-meta">
             {{ (game.gameTime || game.timestamp) | date:'MMM d, h:mm a' }}
+            <ng-container *ngIf="game.vegasSpread != null">
+              &nbsp;·&nbsp; Spread: {{ game.vegasSpread > 0 ? game.homeTeam + ' -' + game.vegasSpread : game.awayTeam + ' -' + (-game.vegasSpread) }}
+            </ng-container>
           </div>
         </div>
 
@@ -91,6 +124,11 @@
         <div class="pick-col">
           <div class="score-label">Pick</div>
           <div class="pick-name">{{ predictedWinner(game) }}</div>
+          <div class="pick-units" *ngIf="atsUnits(game) !== null"
+               [class.units-pos]="(atsUnits(game) ?? 0) > 0"
+               [class.units-neg]="(atsUnits(game) ?? 0) < 0">
+            {{ (atsUnits(game) ?? 0) > 0 ? '+' : '' }}{{ atsUnits(game) }}u
+          </div>
         </div>
       </div>
     </div>

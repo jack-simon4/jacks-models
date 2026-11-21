@@ -117,16 +117,6 @@
   margin: 0;
 }
 
-.overall-badge {
-  background: rgba(0, 230, 118, 0.12);
-  color: #00e676;
-  border: 1px solid rgba(0, 230, 118, 0.3);
-  border-radius: 20px;
-  padding: 4px 14px;
-  font-size: 13px;
-  font-weight: 600;
-}
-
 .empty-state {
   text-align: center;
   padding: 48px 20px;
@@ -232,11 +222,14 @@
 .game-row.incorrect { border-left: 3px solid #ff5252; }
 .game-row.pending   { border-left: 3px solid #444; }
 
-/* Result badge */
-.result-badge {
-  width: 32px;
+/* Result badges */
+.result-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 44px;
   flex-shrink: 0;
-  text-align: center;
 }
 
 .badge-win, .badge-loss, .badge-pending {
@@ -253,6 +246,22 @@
 .badge-win     { background: rgba(0, 230, 118, 0.18); color: #00e676; }
 .badge-loss    { background: rgba(255, 82, 82, 0.18);  color: #ff5252; }
 .badge-pending { background: rgba(255,255,255,0.06);   color: #666; }
+
+.badge-ats-win, .badge-ats-loss, .badge-ats-push {
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 1px 5px;
+  line-height: 16px;
+}
+
+.badge-ats-win  { background: rgba(0, 230, 118, 0.14); color: #00e676; }
+.badge-ats-loss { background: rgba(255, 82, 82, 0.14);  color: #ff5252; }
+.badge-ats-push { background: rgba(255,255,255,0.08);   color: #888; }
+
+/* Units color helpers */
+.units-pos { color: #00e676; }
+.units-neg { color: #ff5252; }
 
 /* Matchup */
 .game-info {
@@ -337,6 +346,44 @@
   color: #ffffff;
   font-size: 13px;
   font-weight: 600;
+}
+
+.pick-units {
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* Overall badges */
+.overall-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.overall-badge {
+  background: rgba(0, 230, 118, 0.12);
+  color: #00e676;
+  border: 1px solid rgba(0, 230, 118, 0.3);
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.overall-badge.ats-badge {
+  background: rgba(100, 180, 255, 0.10);
+  color: #90caf9;
+  border-color: rgba(100, 180, 255, 0.3);
+}
+
+/* League footer loading */
+.leagues-loading {
+  text-align: center;
+  color: #555;
+  padding: 24px 0 40px;
+  font-size: 14px;
 }
 
 /* ── Responsive ──────────────────────────────────────────────────────── */

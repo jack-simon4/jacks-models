@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Meta, Title } from '@angular/platform-browser';
-import { forkJoin, of } from 'rxjs';
+import { forkJoin, of, Subscription } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { environment } from '../../environments/environment';
+import { GameStatsService } from '../shared/game-stats.service';
 
 interface UnifiedPick {
   rank: number;
@@ -25,7 +26,7 @@ interface UnifiedPick {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
 
   topPicks: UnifiedPick[] = [];
   topPicksLoading = true;
@@ -34,14 +35,37 @@ export class HomeComponent implements OnInit {
   private allNflProps: typeof this.nflProps = [];
   nflPositionFilter: 'ALL' | 'QB' | 'RB' | 'WR' | 'TE' = 'ALL';
 
-  constructor(private http: HttpClient, private titleService: Title, private metaService: Meta) {}
+  homeStats: { sport: string; mlPct: number | null; atsPct: number | null; atsTot: number; games: number }[] = [
+    { sport: 'NFL',   mlPct: null, atsPct: null, atsTot: 0, games: 0 },
+    { sport: 'NBA',   mlPct: null, atsPct: null, atsTot: 0, games: 0 },
+    { sport: 'NCAAM', mlPct: null, atsPct: null, atsTot: 0, games: 0 },
+  ];
+
+  private subs = new Subscription();
+
+  constructor(private http: HttpClient, private titleService: Title, private metaService: Meta, private gameStats: GameStatsService) {}
 
   ngOnInit() {
     this.titleService.setTitle("Jack's Models | Free Sports Prediction Models");
     this.metaService.updateTag({ name: 'description', content: "Free stat-driven sports predictions for NFL, NBA, MLB, NHL, NCAAF, NCAAM and Soccer. Run any matchup instantly." });
     this.loadAllPicks();
     this.loadNFLProps();
+    this.subs.add(this.gameStats.sportStats$.subscribe(map => {
+      this.homeStats = this.homeStats.map(s => {
+        const dyn = map.get(s.sport);
+        if (!dyn || dyn.games === 0) return s;
+        return {
+          sport: s.sport,
+          mlPct: dyn.mlPct,
+          atsPct: dyn.atsTot > 0 ? dyn.atsPct : null,
+          atsTot: dyn.atsTot,
+          games: dyn.games,
+        };
+      });
+    }));
   }
+
+  ngOnDestroy(): void { this.subs.unsubscribe(); }
 
   private normalizeMlb(p: any): UnifiedPick {
     return {

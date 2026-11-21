@@ -1,25 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
-
-interface Game {
-  id: string;
-  sport: string;
-  homeTeam: string;
-  awayTeam: string;
-  predictedHomeScore: number;
-  predictedAwayScore: number;
-  actualHomeScore: number | null;
-  actualAwayScore: number | null;
-  timestamp: Date;
-  gameTime?: string;
-}
-
-interface LeagueStat {
-  sport: string;
-  icon: string;
-  rows: { label: string; value: string }[];
-  games: number;
-}
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { GameStatsService, Game, SportStat } from '../shared/game-stats.service';
 
 const PAGE_SIZE = 8;
 
@@ -28,83 +9,30 @@ const PAGE_SIZE = 8;
   templateUrl: './results.component.html',
   styleUrls: ['./results.component.css']
 })
-export class ResultsComponent implements OnInit {
+export class ResultsComponent implements OnInit, OnDestroy {
 
   games: Game[] = [];
   loading = true;
   selectedSport = 'All';
   currentPage = 0;
+  leagueStats: SportStat[] = [];
 
-  leagueStats: LeagueStat[] = [
-    {
-      sport: 'NFL', icon: '🏈',
-      rows: [
-        { label: 'Moneyline',       value: '68%' },
-        { label: 'Against Spread',  value: '53%' },
-        { label: 'Over/Under',      value: '55%' },
-      ],
-      games: 116,
-    },
-    {
-      sport: 'NBA', icon: '🏀',
-      rows: [
-        { label: 'Moneyline',       value: '59%' },
-        { label: 'Against Spread',  value: '51%' },
-        { label: 'Over/Under',      value: '53%' },
-      ],
-      games: 400,
-    },
-    {
-      sport: 'MLB', icon: '⚾',
-      rows: [
-        { label: 'Moneyline',       value: '65%' },
-        { label: '0.5+ Hits (green)', value: '70%' },
-        { label: '1.5+ TB (green)',   value: '52%' },
-      ],
-      games: 69,
-    },
-    {
-      sport: 'NHL', icon: '🏒',
-      rows: [
-        { label: 'Moneyline',       value: '60%' },
-        { label: 'Favored Value',   value: '58% (+22u)' },
-      ],
-      games: 671,
-    },
-    {
-      sport: 'NCAAF', icon: '🏈',
-      rows: [
-        { label: 'Moneyline',            value: '70%' },
-        { label: 'Home Dog ATS',         value: '59%' },
-        { label: 'Extreme totals O/U',   value: '64%' },
-      ],
-      games: 535,
-    },
-    {
-      sport: 'NCAAM', icon: '🏀',
-      rows: [
-        { label: 'Moneyline',       value: '73%' },
-        { label: 'Against Spread',  value: '54%' },
-        { label: 'Over/Under',      value: '50%' },
-      ],
-      games: 1203,
-    },
-    {
-      sport: 'Soccer', icon: '⚽',
-      rows: [
-        { label: 'Record (W-L-D)',   value: '60-28-24' },
-        { label: 'Tie No Bet',       value: '68%' },
-      ],
-      games: 112,
-    },
-    {
-      sport: 'College Baseball', icon: '⚾',
-      rows: [
-        { label: 'Moneyline',  value: '76%' },
-      ],
-      games: 237,
-    },
-  ];
+  private subs = new Subscription();
+
+  constructor(private gameStats: GameStatsService) {}
+
+  ngOnInit(): void {
+    this.subs.add(this.gameStats.games$.subscribe(games => {
+      this.games = games;
+      this.loading = false;
+    }));
+    this.subs.add(this.gameStats.sportStats$.subscribe(map => {
+      this.leagueStats = Array.from(map.values())
+        .sort((a, b) => b.games - a.games);
+    }));
+  }
+
+  ngOnDestroy(): void { this.subs.unsubscribe(); }
 
   get availableSports(): string[] {
     const sports = [...new Set(
@@ -120,8 +48,8 @@ export class ResultsComponent implements OnInit {
     return this.games
       .filter(g => g.actualHomeScore != null && g.actualAwayScore != null)
       .sort((a, b) => {
-        const ta = a.gameTime ? new Date(a.gameTime).getTime() : a.timestamp?.getTime() ?? 0;
-        const tb = b.gameTime ? new Date(b.gameTime).getTime() : b.timestamp?.getTime() ?? 0;
+        const ta = a.gameTime ? new Date(a.gameTime).getTime() : (a.timestamp as any)?.getTime() ?? 0;
+        const tb = b.gameTime ? new Date(b.gameTime).getTime() : (b.timestamp as any)?.getTime() ?? 0;
         return tb - ta;
       });
   }
@@ -136,73 +64,53 @@ export class ResultsComponent implements OnInit {
     return this.filteredGames.slice(start, start + PAGE_SIZE);
   }
 
-  get totalPages(): number {
-    return Math.ceil(this.filteredGames.length / PAGE_SIZE);
-  }
+  get totalPages(): number { return Math.ceil(this.filteredGames.length / PAGE_SIZE); }
 
   get pageWindow(): number[] {
     const size = 10;
     let start = Math.max(0, this.currentPage - Math.floor(size / 2));
-    const end = Math.min(this.totalPages - 1, start + size - 1);
+    const end   = Math.min(this.totalPages - 1, start + size - 1);
     start = Math.max(0, end - size + 1);
     const pages: number[] = [];
     for (let i = start; i <= end; i++) pages.push(i);
     return pages;
   }
 
-  get totalCorrect(): number {
-    return this.filteredGames.filter(g => this.isPredictionCorrect(g)).length;
-  }
+  get totalCorrect(): number { return this.filteredGames.filter(g => this.isPredictionCorrect(g)).length; }
 
   get overallWinRate(): string {
-    const completed = this.filteredGames.length;
-    if (completed === 0) return '—';
-    const pct = Math.round((this.totalCorrect / completed) * 100);
-    return `${pct}%`;
+    const n = this.filteredGames.length;
+    if (n === 0) return '—';
+    return Math.round(this.totalCorrect / n * 100) + '%';
   }
 
-  selectSport(sport: string) {
-    this.selectedSport = sport;
-    this.currentPage = 0;
+  get totalAtsWins():   number { return this.filteredGames.filter(g => this.atsResult(g) === 'win').length; }
+  get totalAtsLosses(): number { return this.filteredGames.filter(g => this.atsResult(g) === 'loss').length; }
+
+  get totalUnits(): number {
+    return +this.filteredGames.reduce((sum, g) => {
+      const u = this.atsUnits(g);
+      return u != null ? +(sum + u).toFixed(1) : sum;
+    }, 0).toFixed(1);
   }
 
-  goToPage(page: number) {
-    this.currentPage = page;
+  get totalAtsPct(): string {
+    const dec = this.totalAtsWins + this.totalAtsLosses;
+    if (dec === 0) return '—';
+    return Math.round(this.totalAtsWins / dec * 100) + '%';
   }
 
-  constructor(private firestore: AngularFirestore) {}
+  get hasAtsData(): boolean { return this.totalAtsWins + this.totalAtsLosses > 0; }
 
-  ngOnInit(): void {
-    this.loadGames();
-  }
+  selectSport(sport: string) { this.selectedSport = sport; this.currentPage = 0; }
+  goToPage(page: number)      { this.currentPage = page; }
 
-  loadGames() {
-    this.firestore
-      .collection('games', ref => ref.orderBy('timestamp', 'desc').limit(3000))
-      .snapshotChanges()
-      .subscribe(logs => {
-        this.games = logs.map(log => {
-          const data = log.payload.doc.data() as any;
-          data.id = log.payload.doc.id;
-          if (data.timestamp?.seconds) {
-            data.timestamp = new Date(data.timestamp.seconds * 1000);
-          }
-          return data as Game;
-        });
-        this.loading = false;
-      });
-  }
-
-  isPredictionCorrect(game: Game): boolean {
-    if (game.actualHomeScore == null || game.actualAwayScore == null) return false;
-    const predWinner = game.predictedHomeScore > game.predictedAwayScore ? 'home' : 'away';
-    const actualWinner = game.actualHomeScore  > game.actualAwayScore  ? 'home' : 'away';
-    return predWinner === actualWinner;
-  }
+  isPredictionCorrect(game: Game): boolean { return this.gameStats.mlCorrect(game); }
 
   predictedWinner(game: Game): string {
-    return game.predictedHomeScore > game.predictedAwayScore
-      ? game.homeTeam
-      : game.awayTeam;
+    return game.predictedHomeScore > game.predictedAwayScore ? game.homeTeam : game.awayTeam;
   }
+
+  atsResult(game: Game) { return this.gameStats.atsResult(game); }
+  atsUnits(game: Game)  { return this.gameStats.atsUnits(game); }
 }

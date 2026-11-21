@@ -231,6 +231,8 @@ def save_to_firestore(picks: list):
                         'pick':               p.get('pick', ''),
                         'winProb':            p.get('winProb', 0),
                         'spread':             p.get('spread', 0),
+                        'vegasSpread':        p.get('vegasSpread', p.get('spread', 0)),
+                        'spreadEdge':         p.get('spreadEdge'),
                         'confidence':         p.get('confidence', ''),
                     })
                     print(f'  [Updated] {away} @ {home}: {p["predictedAwayScore"]} – {p["predictedHomeScore"]}')
@@ -250,6 +252,8 @@ def save_to_firestore(picks: list):
                 'pick':               p.get('pick', ''),
                 'winProb':            p.get('winProb', 0),
                 'spread':             p.get('spread', 0),
+                'vegasSpread':        p.get('vegasSpread', p.get('spread', 0)),
+                'spreadEdge':         p.get('spreadEdge'),
                 'confidence':         p.get('confidence', ''),
                 'gameTime':           gt,
                 'gameDate':           date_str,
