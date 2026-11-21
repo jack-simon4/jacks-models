@@ -57,6 +57,12 @@ STARTER_OVERRIDE: dict[str, str] = {
     # Example: 'ATL': 'Michael Penix Jr.',
 }
 
+# Season-ending IR exclusions — players whose IR placement doesn't reliably appear
+# in nfl_data_py weekly injury reports. Maps team_abbr -> player display name.
+SEASON_IR: dict[str, str] = {
+    'MIA': 'DeVon Achane',
+}
+
 LG_PASS_YPA = 7.175
 LG_PASS_APG = 32.69
 LG_RUSH_YPC = 4.44
@@ -809,6 +815,11 @@ def build():
 
     depth_chart  = fetch_depth_chart(SEASON_YEAR)
     injured_out  = fetch_injured_out(SEASON_YEAR)
+
+    # Merge manually-listed season IR players — their IR status doesn't reliably
+    # appear on the weekly injury report that fetch_injured_out reads.
+    for abbr, name in SEASON_IR.items():
+        injured_out.add((abbr, name))
 
     build_qb_csv(cur_df, prior_df, games_played, depth_chart, injured_out)
     build_rb_csv(cur_df, prior_df, games_played, injured_out)
