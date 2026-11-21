@@ -19,6 +19,7 @@ import { NflSeoPageComponent } from './seo-pages/nfl-seo-page.component';
 import { MlbTodayComponent } from './mlb-today/mlb-today.component';
 import { WcTodayComponent } from './wc-today/wc-today.component';
 import { NflPropsComponent } from './nfl-props/nfl-props.component';
+import { WeeklyPicksComponent } from './weekly-picks/weekly-picks.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -30,6 +31,8 @@ const routes: Routes = [
   { path: 'nfl-props', component: NflPropsComponent },
   { path: 'mlb-predictions-today', component: MlbTodayComponent },
   { path: 'world-cup-predictions-today', component: WcTodayComponent },
+
+  { path: 'weekly-picks', component: WeeklyPicksComponent },
 
   // SEO Landing Pages
   { path: 'nfl-predictions', component: NflSeoPageComponent },

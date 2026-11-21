@@ -148,7 +148,9 @@
               "/soccer-scoreboard",
               "/world-cup-predictions",
               "/world-cup-predictions-today",
-              "/nfl-props"
+              "/nfl-props",
+              "/weekly-picks",
+              "/about"
             ]
           },
           "configurations": {

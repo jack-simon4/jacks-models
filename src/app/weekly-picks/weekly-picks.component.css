@@ -1,0 +1,129 @@
+.weekly-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 36px 20px 64px;
+  color: #e0e0e0;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.page-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.updated {
+  color: #00e676;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.intro {
+  color: #a0a0a0;
+  font-size: 15px;
+  line-height: 1.65;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* Sport sections */
+.sport-section {
+  margin-bottom: 48px;
+}
+
+.sport-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #90caf9;
+  border-bottom: 1px solid #2e3038;
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+}
+
+/* Individual pick block */
+.pick-block {
+  background: linear-gradient(145deg, #1e2028, #23262f);
+  border: 1px solid #3a3d45;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+}
+
+.matchup {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.projection-line {
+  margin: 0 0 8px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.line-compare {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #b0b0b0;
+  line-height: 1.55;
+}
+
+.confidence-line {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* CTA */
+.cta-block {
+  text-align: center;
+  margin: 48px 0 32px;
+}
+
+.cta-block p {
+  color: #888;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #0f9b0f, #00ff95);
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 24px;
+  padding: 12px 28px;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: opacity 0.15s;
+}
+
+.cta-btn:hover { opacity: 0.85; }
+
+.cta-secondary {
+  background: rgba(255,255,255,0.08);
+  color: #e0e0e0;
+  border: 1px solid #3a3d45;
+}
+
+/* Disclaimer */
+.disclaimer {
+  border-top: 1px solid #2e3038;
+  padding-top: 24px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.disclaimer a {
+  color: #666;
+  text-decoration: underline;
+}
