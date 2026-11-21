@@ -94,6 +94,19 @@
   padding-top: 10px;
 }
 
+.league-no-data {
+  color: #444;
+  font-size: 12px;
+  font-style: italic;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.league-card.no-data {
+  opacity: 0.6;
+}
+
 /* ── Recent predictions ──────────────────────────────────────────────── */
 .recent-section {
   background: linear-gradient(145deg, #1e2028, #23262f);

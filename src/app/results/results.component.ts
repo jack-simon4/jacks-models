@@ -4,6 +4,18 @@ import { GameStatsService, Game, SportStat } from '../shared/game-stats.service'
 
 const PAGE_SIZE = 8;
 
+/** Sports shown in the league cards. Order controls display order. */
+const TRACKED_SPORTS: { sport: string; icon: string }[] = [
+  { sport: 'NFL',              icon: '🏈' },
+  { sport: 'NBA',              icon: '🏀' },
+  { sport: 'MLB',              icon: '⚾' },
+  { sport: 'NHL',              icon: '🏒' },
+  { sport: 'NCAAF',            icon: '🏈' },
+  { sport: 'NCAAM',            icon: '🏀' },
+  { sport: 'College Baseball', icon: '⚾' },
+  { sport: 'Soccer',           icon: '⚽' },
+];
+
 @Component({
   selector: 'app-results',
   templateUrl: './results.component.html',
@@ -27,8 +39,13 @@ export class ResultsComponent implements OnInit, OnDestroy {
       this.loading = false;
     }));
     this.subs.add(this.gameStats.sportStats$.subscribe(map => {
-      this.leagueStats = Array.from(map.values())
-        .sort((a, b) => b.games - a.games);
+      this.leagueStats = TRACKED_SPORTS.map(({ sport, icon }) =>
+        map.get(sport) ?? {
+          sport, icon,
+          games: 0, mlWins: 0, mlLosses: 0, mlPct: 0,
+          atsWins: 0, atsLosses: 0, atsPushes: 0, atsPct: 0, atsTot: 0, units: 0,
+        }
+      );
     }));
   }
 
