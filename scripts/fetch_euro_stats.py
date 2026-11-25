@@ -723,6 +723,7 @@ def save_to_firestore(all_matches: dict[str, list], stats: dict):
                         print(f'  [Patched gameTime] {away_csv} @ {home_csv}: {game_time}')
                     doc_ref.update(update_data)
                     updated += 1
+                    time.sleep(0.1)
             else:
                 if status not in ('FINISHED', 'SCHEDULED', 'TIMED', *ACTIVE_STATUSES):
                     skipped += 1
@@ -745,6 +746,7 @@ def save_to_firestore(all_matches: dict[str, list], stats: dict):
                 label = f'{actual_away}-{actual_home}' if actual_home is not None else 'upcoming'
                 print(f'  [Saved] {away_csv} @ {home_csv} ({league_name}, {label})')
                 created += 1
+                time.sleep(0.1)
 
     firebase_admin.delete_app(app)
     print(f'[Soccer] Firestore: {created} created, {updated} score-updated, {skipped} skipped.')
@@ -810,7 +812,10 @@ def main():
     stats = load_stats()
     if all_matches:
         generate_today_json(all_matches, stats)
-        save_to_firestore(all_matches, stats)
+        try:
+            save_to_firestore(all_matches, stats)
+        except Exception as e:
+            print(f'[Soccer] Firestore error (non-fatal): {e}')
 
 
 if __name__ == '__main__':

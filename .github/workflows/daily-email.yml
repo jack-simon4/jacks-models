@@ -1,11 +1,11 @@
 name: Daily Email Report
 
-# Runs at 12:00 UTC (8:00 AM ET) — after all morning data jobs have finished:
-#   NCAAM  6:00 UTC  |  NBA  7:00 UTC  |  Soccer  8:30 UTC  |  Deploy  9:00 UTC
+# Runs at 7:30 UTC (3:30 AM ET) — after NCAAM (6:00) and NBA (7:00) have committed.
+# Scheduled early to offset GitHub free-tier queue delays (~4-8h), targeting ~11am ET delivery.
 
 on:
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '30 7 * * *'
   workflow_dispatch:
 
 jobs:
