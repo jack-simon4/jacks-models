@@ -36,18 +36,6 @@
     "gameTime": "2026-11-29T18:00:00Z"
   },
   {
-    "name": "Jared Goff",
-    "team": "Detroit Lions",
-    "opponent": "Chicago Bears",
-    "position": "QB",
-    "projYards": 276,
-    "projTDs": 1.66,
-    "projRec": null,
-    "statLabel": "Pass Yds",
-    "matchup": "Chicago Bears @ Detroit Lions",
-    "gameTime": "2026-11-26T18:00:00Z"
-  },
-  {
     "name": "Bo Nix",
     "team": "Denver Broncos",
     "opponent": "Pittsburgh Steelers",
@@ -96,40 +84,40 @@
     "gameTime": "2026-11-29T18:00:00Z"
   },
   {
-    "name": "Jalen Hurts",
-    "team": "Philadelphia Eagles",
-    "opponent": "Dallas Cowboys",
+    "name": "Sam Darnold",
+    "team": "Seattle Seahawks",
+    "opponent": "San Francisco 49ers",
     "position": "QB",
-    "projYards": 250,
-    "projTDs": 1.51,
+    "projYards": 245,
+    "projTDs": 1.47,
     "projRec": null,
     "statLabel": "Pass Yds",
-    "matchup": "Philadelphia Eagles @ Dallas Cowboys",
-    "gameTime": "2026-11-26T21:30:00Z"
+    "matchup": "Seattle Seahawks @ San Francisco 49ers",
+    "gameTime": "2026-11-29T21:25:00Z"
   },
   {
-    "name": "Caleb Williams",
-    "team": "Chicago Bears",
-    "opponent": "Detroit Lions",
+    "name": "Brock Purdy",
+    "team": "San Francisco 49ers",
+    "opponent": "Seattle Seahawks",
     "position": "QB",
-    "projYards": 249,
-    "projTDs": 1.71,
+    "projYards": 239,
+    "projTDs": 1.82,
     "projRec": null,
     "statLabel": "Pass Yds",
-    "matchup": "Chicago Bears @ Detroit Lions",
-    "gameTime": "2026-11-26T18:00:00Z"
+    "matchup": "Seattle Seahawks @ San Francisco 49ers",
+    "gameTime": "2026-11-29T21:25:00Z"
   },
   {
-    "name": "Kenneth Walker",
-    "team": "Kansas City Chiefs",
-    "opponent": "Buffalo Bills",
-    "position": "RB",
-    "projYards": 133,
-    "projTDs": 0.79,
+    "name": "Joe Burrow",
+    "team": "Cincinnati Bengals",
+    "opponent": "New Orleans Saints",
+    "position": "QB",
+    "projYards": 237,
+    "projTDs": 1.7,
     "projRec": null,
-    "statLabel": "Rush Yds",
-    "matchup": "Kansas City Chiefs @ Buffalo Bills",
-    "gameTime": "2026-11-27T01:20:00Z"
+    "statLabel": "Pass Yds",
+    "matchup": "New Orleans Saints @ Cincinnati Bengals",
+    "gameTime": "2026-11-29T18:00:00Z"
   },
   {
     "name": "Jonathan Taylor",
@@ -156,30 +144,6 @@
     "gameTime": "2026-11-29T18:00:00Z"
   },
   {
-    "name": "Jahmyr Gibbs",
-    "team": "Detroit Lions",
-    "opponent": "Chicago Bears",
-    "position": "RB",
-    "projYards": 92,
-    "projTDs": 0.62,
-    "projRec": null,
-    "statLabel": "Rush Yds",
-    "matchup": "Chicago Bears @ Detroit Lions",
-    "gameTime": "2026-11-26T18:00:00Z"
-  },
-  {
-    "name": "James Cook",
-    "team": "Buffalo Bills",
-    "opponent": "Kansas City Chiefs",
-    "position": "RB",
-    "projYards": 87,
-    "projTDs": 0.52,
-    "projRec": null,
-    "statLabel": "Rush Yds",
-    "matchup": "Kansas City Chiefs @ Buffalo Bills",
-    "gameTime": "2026-11-27T01:20:00Z"
-  },
-  {
     "name": "Derrick Henry",
     "team": "Baltimore Ravens",
     "opponent": "Houston Texans",
@@ -190,18 +154,6 @@
     "statLabel": "Rush Yds",
     "matchup": "Baltimore Ravens @ Houston Texans",
     "gameTime": "2026-11-29T18:00:00Z"
-  },
-  {
-    "name": "Kyren Williams",
-    "team": "Los Angeles Rams",
-    "opponent": "Green Bay Packers",
-    "position": "RB",
-    "projYards": 71,
-    "projTDs": 0.45,
-    "projRec": null,
-    "statLabel": "Rush Yds",
-    "matchup": "Green Bay Packers @ Los Angeles Rams",
-    "gameTime": "2026-11-26T01:00:00Z"
   },
   {
     "name": "Travis Etienne",
@@ -216,28 +168,76 @@
     "gameTime": "2026-11-29T18:00:00Z"
   },
   {
-    "name": "Javonte Williams",
-    "team": "Dallas Cowboys",
-    "opponent": "Philadelphia Eagles",
+    "name": "Breece Hall",
+    "team": "New York Jets",
+    "opponent": "Miami Dolphins",
     "position": "RB",
-    "projYards": 70,
-    "projTDs": 0.52,
+    "projYards": 69,
+    "projTDs": 0.58,
     "projRec": null,
     "statLabel": "Rush Yds",
-    "matchup": "Philadelphia Eagles @ Dallas Cowboys",
-    "gameTime": "2026-11-26T21:30:00Z"
+    "matchup": "New York Jets @ Miami Dolphins",
+    "gameTime": "2026-11-29T18:00:00Z"
   },
   {
-    "name": "Saquon Barkley",
-    "team": "Philadelphia Eagles",
-    "opponent": "Dallas Cowboys",
+    "name": "Jeremiyah Love",
+    "team": "Arizona Cardinals",
+    "opponent": "Washington Commanders",
     "position": "RB",
-    "projYards": 70,
-    "projTDs": 0.52,
+    "projYards": 66,
+    "projTDs": 0.55,
     "projRec": null,
     "statLabel": "Rush Yds",
-    "matchup": "Philadelphia Eagles @ Dallas Cowboys",
-    "gameTime": "2026-11-26T21:30:00Z"
+    "matchup": "Washington Commanders @ Arizona Cardinals",
+    "gameTime": "2026-11-29T21:25:00Z"
+  },
+  {
+    "name": "Chase Brown",
+    "team": "Cincinnati Bengals",
+    "opponent": "New Orleans Saints",
+    "position": "RB",
+    "projYards": 65,
+    "projTDs": 0.51,
+    "projRec": null,
+    "statLabel": "Rush Yds",
+    "matchup": "New Orleans Saints @ Cincinnati Bengals",
+    "gameTime": "2026-11-29T18:00:00Z"
+  },
+  {
+    "name": "Bucky Irving",
+    "team": "Tampa Bay Buccaneers",
+    "opponent": "Carolina Panthers",
+    "position": "RB",
+    "projYards": 64,
+    "projTDs": 0.55,
+    "projRec": null,
+    "statLabel": "Rush Yds",
+    "matchup": "Carolina Panthers @ Tampa Bay Buccaneers",
+    "gameTime": "2026-12-01T01:15:00Z"
+  },
+  {
+    "name": "Ashton Jeanty",
+    "team": "Las Vegas Raiders",
+    "opponent": "Cleveland Browns",
+    "position": "RB",
+    "projYards": 63,
+    "projTDs": 0.59,
+    "projRec": null,
+    "statLabel": "Rush Yds",
+    "matchup": "Las Vegas Raiders @ Cleveland Browns",
+    "gameTime": "2026-11-30T01:20:00Z"
+  },
+  {
+    "name": "JK Dobbins",
+    "team": "Denver Broncos",
+    "opponent": "Pittsburgh Steelers",
+    "position": "RB",
+    "projYards": 59,
+    "projTDs": 0.44,
+    "projRec": null,
+    "statLabel": "Rush Yds",
+    "matchup": "Denver Broncos @ Pittsburgh Steelers",
+    "gameTime": "2026-11-27T20:00:00Z"
   },
   {
     "name": "Jaxon Smith-Njigba",
@@ -264,18 +264,6 @@
     "gameTime": "2026-11-29T18:00:00Z"
   },
   {
-    "name": "DeVonta Smith",
-    "team": "Philadelphia Eagles",
-    "opponent": "Dallas Cowboys",
-    "position": "WR",
-    "projYards": 88,
-    "projTDs": 0.45,
-    "projRec": 7.1,
-    "statLabel": "Rec Yds",
-    "matchup": "Philadelphia Eagles @ Dallas Cowboys",
-    "gameTime": "2026-11-26T21:30:00Z"
-  },
-  {
     "name": "Zay Flowers",
     "team": "Baltimore Ravens",
     "opponent": "Houston Texans",
@@ -300,64 +288,76 @@
     "gameTime": "2026-11-29T18:00:00Z"
   },
   {
-    "name": "Amon-Ra St Brown",
-    "team": "Detroit Lions",
-    "opponent": "Chicago Bears",
+    "name": "Drake London",
+    "team": "Atlanta Falcons",
+    "opponent": "Minnesota Vikings",
     "position": "WR",
-    "projYards": 80,
-    "projTDs": 0.48,
-    "projRec": 7.1,
-    "statLabel": "Rec Yds",
-    "matchup": "Chicago Bears @ Detroit Lions",
-    "gameTime": "2026-11-26T18:00:00Z"
-  },
-  {
-    "name": "Christian Watson",
-    "team": "Green Bay Packers",
-    "opponent": "Los Angeles Rams",
-    "position": "WR",
-    "projYards": 75,
-    "projTDs": 0.32,
+    "projYards": 68,
+    "projTDs": 0.3,
     "projRec": 4.3,
     "statLabel": "Rec Yds",
-    "matchup": "Green Bay Packers @ Los Angeles Rams",
-    "gameTime": "2026-11-26T01:00:00Z"
+    "matchup": "Atlanta Falcons @ Minnesota Vikings",
+    "gameTime": "2026-11-29T18:00:00Z"
   },
   {
-    "name": "CeeDee Lamb",
-    "team": "Dallas Cowboys",
-    "opponent": "Philadelphia Eagles",
+    "name": "Tetairoa McMillan",
+    "team": "Carolina Panthers",
+    "opponent": "Tampa Bay Buccaneers",
     "position": "WR",
-    "projYards": 75,
-    "projTDs": 0.33,
-    "projRec": 5.1,
+    "projYards": 67,
+    "projTDs": 0.36,
+    "projRec": 4.4,
     "statLabel": "Rec Yds",
-    "matchup": "Philadelphia Eagles @ Dallas Cowboys",
-    "gameTime": "2026-11-26T21:30:00Z"
+    "matchup": "Carolina Panthers @ Tampa Bay Buccaneers",
+    "gameTime": "2026-12-01T01:15:00Z"
   },
   {
-    "name": "Kalif Raymond",
-    "team": "Chicago Bears",
-    "opponent": "Detroit Lions",
+    "name": "JaMarr Chase",
+    "team": "Cincinnati Bengals",
+    "opponent": "New Orleans Saints",
     "position": "WR",
-    "projYards": 71,
-    "projTDs": 0.32,
-    "projRec": 6.3,
+    "projYards": 65,
+    "projTDs": 0.39,
+    "projRec": 6.0,
     "statLabel": "Rec Yds",
-    "matchup": "Chicago Bears @ Detroit Lions",
-    "gameTime": "2026-11-26T18:00:00Z"
+    "matchup": "New Orleans Saints @ Cincinnati Bengals",
+    "gameTime": "2026-11-29T18:00:00Z"
   },
   {
-    "name": "Davante Adams",
-    "team": "Los Angeles Rams",
-    "opponent": "Green Bay Packers",
+    "name": "Garrett Wilson",
+    "team": "New York Jets",
+    "opponent": "Miami Dolphins",
     "position": "WR",
-    "projYards": 69,
-    "projTDs": 0.34,
+    "projYards": 65,
+    "projTDs": 0.39,
+    "projRec": 5.8,
+    "statLabel": "Rec Yds",
+    "matchup": "New York Jets @ Miami Dolphins",
+    "gameTime": "2026-11-29T18:00:00Z"
+  },
+  {
+    "name": "Parker Washington",
+    "team": "Jacksonville Jaguars",
+    "opponent": "Tennessee Titans",
+    "position": "WR",
+    "projYards": 63,
+    "projTDs": 0.31,
     "projRec": 4.3,
     "statLabel": "Rec Yds",
-    "matchup": "Green Bay Packers @ Los Angeles Rams",
-    "gameTime": "2026-11-26T01:00:00Z"
+    "matchup": "Tennessee Titans @ Jacksonville Jaguars",
+    "gameTime": "2026-11-29T18:00:00Z"
+  },
+  {
+    "name": "Michael Wilson",
+    "team": "Arizona Cardinals",
+    "opponent": "Washington Commanders",
+    "position": "WR",
+    "projYards": 62,
+    "projTDs": 0.4,
+    "projRec": 5.4,
+    "statLabel": "Rec Yds",
+    "matchup": "Washington Commanders @ Arizona Cardinals",
+    "gameTime": "2026-11-29T21:25:00Z"
   },
   {
     "name": "Trey McBride",
@@ -420,30 +420,6 @@
     "gameTime": "2026-11-29T21:25:00Z"
   },
   {
-    "name": "Tucker Kraft",
-    "team": "Green Bay Packers",
-    "opponent": "Los Angeles Rams",
-    "position": "TE",
-    "projYards": 52,
-    "projTDs": 0.25,
-    "projRec": 3.6,
-    "statLabel": "Rec Yds",
-    "matchup": "Green Bay Packers @ Los Angeles Rams",
-    "gameTime": "2026-11-26T01:00:00Z"
-  },
-  {
-    "name": "Sam LaPorta",
-    "team": "Detroit Lions",
-    "opponent": "Chicago Bears",
-    "position": "TE",
-    "projYards": 52,
-    "projTDs": 0.26,
-    "projRec": 4.5,
-    "statLabel": "Rec Yds",
-    "matchup": "Chicago Bears @ Detroit Lions",
-    "gameTime": "2026-11-26T18:00:00Z"
-  },
-  {
     "name": "Kenyon Sadiq",
     "team": "New York Jets",
     "opponent": "Miami Dolphins",
@@ -456,27 +432,51 @@
     "gameTime": "2026-11-29T18:00:00Z"
   },
   {
-    "name": "Dallas Goedert",
-    "team": "Philadelphia Eagles",
-    "opponent": "Dallas Cowboys",
+    "name": "Harold Fannin",
+    "team": "Cleveland Browns",
+    "opponent": "Las Vegas Raiders",
     "position": "TE",
-    "projYards": 46,
-    "projTDs": 0.25,
-    "projRec": 3.9,
+    "projYards": 41,
+    "projTDs": 0.27,
+    "projRec": 4.2,
     "statLabel": "Rec Yds",
-    "matchup": "Philadelphia Eagles @ Dallas Cowboys",
-    "gameTime": "2026-11-26T21:30:00Z"
+    "matchup": "Las Vegas Raiders @ Cleveland Browns",
+    "gameTime": "2026-11-30T01:20:00Z"
   },
   {
-    "name": "Travis Kelce",
-    "team": "Kansas City Chiefs",
-    "opponent": "Buffalo Bills",
+    "name": "Darren Waller",
+    "team": "Carolina Panthers",
+    "opponent": "Tampa Bay Buccaneers",
     "position": "TE",
-    "projYards": 45,
+    "projYards": 41,
     "projTDs": 0.21,
+    "projRec": 3.6,
+    "statLabel": "Rec Yds",
+    "matchup": "Carolina Panthers @ Tampa Bay Buccaneers",
+    "gameTime": "2026-12-01T01:15:00Z"
+  },
+  {
+    "name": "Tyler Warren",
+    "team": "Indianapolis Colts",
+    "opponent": "New York Giants",
+    "position": "TE",
+    "projYards": 40,
+    "projTDs": 0.3,
+    "projRec": 4.8,
+    "statLabel": "Rec Yds",
+    "matchup": "New York Giants @ Indianapolis Colts",
+    "gameTime": "2026-11-29T18:00:00Z"
+  },
+  {
+    "name": "Brenton Strange",
+    "team": "Jacksonville Jaguars",
+    "opponent": "Tennessee Titans",
+    "position": "TE",
+    "projYards": 38,
+    "projTDs": 0.2,
     "projRec": 3.4,
     "statLabel": "Rec Yds",
-    "matchup": "Kansas City Chiefs @ Buffalo Bills",
-    "gameTime": "2026-11-27T01:20:00Z"
+    "matchup": "Tennessee Titans @ Jacksonville Jaguars",
+    "gameTime": "2026-11-29T18:00:00Z"
   }
 ]
