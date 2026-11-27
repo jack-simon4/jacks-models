@@ -90,6 +90,21 @@
     "rank": 6
   },
   {
+    "homeTeam": "Houston",
+    "awayTeam": "Oakland",
+    "predictedHomeScore": 91,
+    "predictedAwayScore": 60,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "Houston",
+    "winProb": 0.99,
+    "confidence": "Strong",
+    "vegasSpread": 36.5,
+    "spreadEdge": -5.5,
+    "gameTime": "2026-11-28T00:30Z",
+    "rank": 7
+  },
+  {
     "homeTeam": "Alabama",
     "awayTeam": "Miami FL",
     "predictedHomeScore": 86,
@@ -102,7 +117,7 @@
     "vegasSpread": -2.5,
     "spreadEdge": 5.5,
     "gameTime": "2026-11-28T01:30Z",
-    "rank": 7
+    "rank": 8
   },
   {
     "homeTeam": "Bucknell",
@@ -117,7 +132,7 @@
     "vegasSpread": -9.5,
     "spreadEdge": 4.5,
     "gameTime": "2026-11-27T20:30Z",
-    "rank": 8
+    "rank": 9
   },
   {
     "homeTeam": "Boston College",
@@ -132,37 +147,7 @@
     "vegasSpread": -8.5,
     "spreadEdge": 4.5,
     "gameTime": "2026-11-27T21:30Z",
-    "rank": 9
-  },
-  {
-    "homeTeam": "Houston",
-    "awayTeam": "Oakland",
-    "predictedHomeScore": 91,
-    "predictedAwayScore": 60,
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "pick": "Houston",
-    "winProb": 0.99,
-    "confidence": "Strong",
-    "vegasSpread": 35.5,
-    "spreadEdge": -4.5,
-    "gameTime": "2026-11-28T00:30Z",
     "rank": 10
-  },
-  {
-    "homeTeam": "UC Davis",
-    "awayTeam": "Pacific",
-    "predictedHomeScore": 68,
-    "predictedAwayScore": 71,
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "pick": "Pacific",
-    "winProb": 0.581,
-    "confidence": "Strong",
-    "vegasSpread": -7.5,
-    "spreadEdge": 4.5,
-    "gameTime": "2026-11-28T01:00Z",
-    "rank": 11
   },
   {
     "homeTeam": "Gonzaga",
@@ -177,7 +162,7 @@
     "vegasSpread": 5.5,
     "spreadEdge": 4.5,
     "gameTime": "2026-11-28T04:00Z",
-    "rank": 12
+    "rank": 11
   },
   {
     "homeTeam": "Merrimack",
@@ -192,7 +177,7 @@
     "vegasSpread": -2.5,
     "spreadEdge": 3.5,
     "gameTime": "2026-11-27T18:00Z",
-    "rank": 13
+    "rank": 12
   },
   {
     "homeTeam": "Hofstra",
@@ -207,22 +192,22 @@
     "vegasSpread": 2.5,
     "spreadEdge": 3.5,
     "gameTime": "2026-11-27T20:30Z",
-    "rank": 14
+    "rank": 13
   },
   {
-    "homeTeam": "Xavier",
-    "awayTeam": "Virginia",
-    "predictedHomeScore": 79,
-    "predictedAwayScore": 83,
+    "homeTeam": "UC Davis",
+    "awayTeam": "Pacific",
+    "predictedHomeScore": 68,
+    "predictedAwayScore": 71,
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "pick": "Virginia",
-    "winProb": 0.609,
+    "pick": "Pacific",
+    "winProb": 0.581,
     "confidence": "Lean",
     "vegasSpread": -6.5,
-    "spreadEdge": 2.5,
-    "gameTime": "2026-11-27T16:00Z",
-    "rank": 15
+    "spreadEdge": 3.5,
+    "gameTime": "2026-11-28T01:00Z",
+    "rank": 14
   },
   {
     "homeTeam": "Memphis",
@@ -237,7 +222,7 @@
     "vegasSpread": 1.5,
     "spreadEdge": 2.5,
     "gameTime": "2026-11-27T18:30Z",
-    "rank": 16
+    "rank": 15
   },
   {
     "homeTeam": "Le Moyne",
@@ -252,7 +237,7 @@
     "vegasSpread": 1.5,
     "spreadEdge": 2.5,
     "gameTime": "2026-11-27T19:00Z",
-    "rank": 17
+    "rank": 16
   },
   {
     "homeTeam": "UCLA",
@@ -267,7 +252,7 @@
     "vegasSpread": 7.5,
     "spreadEdge": 2.5,
     "gameTime": "2026-11-27T19:30Z",
-    "rank": 18
+    "rank": 17
   },
   {
     "homeTeam": "Indiana",
@@ -282,7 +267,7 @@
     "vegasSpread": 22.5,
     "spreadEdge": -2.5,
     "gameTime": "2026-11-27T23:00Z",
-    "rank": 19
+    "rank": 18
   },
   {
     "homeTeam": "Penn",
@@ -297,7 +282,7 @@
     "vegasSpread": 3.5,
     "spreadEdge": 2.5,
     "gameTime": "2026-11-27T23:00Z",
-    "rank": 20
+    "rank": 19
   },
   {
     "homeTeam": "Mississippi St.",
@@ -312,7 +297,7 @@
     "vegasSpread": 6.5,
     "spreadEdge": 2.5,
     "gameTime": "2026-11-28T00:30Z",
-    "rank": 21
+    "rank": 20
   },
   {
     "homeTeam": "Washington St.",
@@ -327,6 +312,21 @@
     "vegasSpread": 11.5,
     "spreadEdge": -2.5,
     "gameTime": "2026-11-28T01:00Z",
+    "rank": 21
+  },
+  {
+    "homeTeam": "Nebraska Omaha",
+    "awayTeam": "Jacksonville St.",
+    "predictedHomeScore": 69,
+    "predictedAwayScore": 72,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "Jacksonville St.",
+    "winProb": 0.581,
+    "confidence": "Lean",
+    "vegasSpread": -5.5,
+    "spreadEdge": 2.5,
+    "gameTime": "2026-11-28T03:30Z",
     "rank": 22
   },
   {
