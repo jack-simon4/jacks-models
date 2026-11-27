@@ -25,7 +25,7 @@ jobs:
           cache: 'pip'
 
       - name: Install Python dependencies
-        run: pip install requests
+        run: pip install -r requirements.txt
 
       - name: Fetch NCAAM stats from Barttorvik
         continue-on-error: true
