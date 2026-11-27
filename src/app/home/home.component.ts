@@ -253,11 +253,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     );
 
     forkJoin([mlb$, nfl$, ncaaf$, soccer$, nhl$, nba$, ncaam$]).subscribe(([mlb, nfl, ncaaf, soccer, nhl, nba, ncaam]) => {
-      const all = [...mlb, ...nfl, ...ncaaf, ...soccer, ...nhl, ...nba, ...ncaam];
-      // Sort by |spreadEdge| when available; fall back to scaled winProb edge
-      const pickScore = (p: UnifiedPick): number =>
-        p.spreadEdge != null ? Math.abs(p.spreadEdge) : (p.winProb - 0.5) * 20;
-      all.sort((a, b) => pickScore(b) - pickScore(a));
+      const all = [...mlb, ...nfl, ...ncaaf, ...soccer, ...nhl, ...nba, ...ncaam]
+        .filter(p => p.spreadEdge != null);
+      all.sort((a, b) => Math.abs(b.spreadEdge!) - Math.abs(a.spreadEdge!));
       this.topPicks = all.slice(0, 5).map((p, i) => ({ ...p, rank: i + 1 }));
       this.topPicksLoading = false;
     });
