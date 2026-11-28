@@ -1,125 +1,117 @@
 Team,Name,Position,TargetsGame,RecYdTarget,TDGame,RecGame
-Arizona Cardinals,Trey McBride,TE,10.46,6.909,0.471,7.88
-Arizona Cardinals,Michael Wilson,WR,8.51,6.962,0.383,5.12
-Arizona Cardinals,Kendrick Bourne,WR,3.82,9.39,0.172,2.95
-Arizona Cardinals,Marvin Harrison,WR,4.93,8.247,0.222,2.64
-Atlanta Falcons,Drake London,WR,8.33,10.266,0.375,5.42
-Atlanta Falcons,Jahan Dotson,WR,2.7,5.946,0.121,1.16
-Atlanta Falcons,Austin Hooper,TE,2.0,5.167,0.09,1.33
-Atlanta Falcons,Olamide Zaccheaus,WR,3.29,4.072,0.148,2.02
-Baltimore Ravens,Mark Andrews,TE,4.82,6.31,0.217,3.39
-Baltimore Ravens,Rashod Bateman,WR,3.45,7.29,0.155,2.04
-Baltimore Ravens,Zay Flowers,WR,6.59,13.727,0.296,5.04
-Baltimore Ravens,Chris Moore,WR,2.0,10.5,0.09,1.0
-Buffalo Bills,DJ Moore,WR,5.38,8.494,0.242,3.21
-Buffalo Bills,Dalton Kincaid,TE,4.68,13.085,0.21,3.78
-Buffalo Bills,Khalil Shakir,WR,5.59,7.08,0.251,3.81
-Buffalo Bills,Keon Coleman,WR,3.96,8.488,0.178,2.83
-Carolina Panthers,Tetairoa McMillan,WR,7.36,8.341,0.331,4.07
-Carolina Panthers,Jalen Coker,WR,5.19,9.511,0.234,4.12
-Carolina Panthers,Darren Waller,TE,4.33,8.615,0.195,3.33
-Carolina Panthers,Tommy Tremble,TE,3.67,6.364,0.165,2.33
-Chicago Bears,Luther Burden,WR,5.38,9.335,0.242,3.83
-Chicago Bears,Kalif Raymond,WR,7.0,10.19,0.315,6.33
-Chicago Bears,Rome Odunze,WR,6.31,8.6,0.284,3.29
-Chicago Bears,Colston Loveland,TE,4.33,6.851,0.195,2.89
-Cincinnati Bengals,JaMarr Chase,WR,10.35,7.545,0.466,7.13
-Cincinnati Bengals,Tee Higgins,WR,6.96,9.374,0.313,4.21
-Cincinnati Bengals,Mike Gesicki,TE,3.27,8.881,0.147,2.35
-Cincinnati Bengals,Dohnte Meyers,WR,2.33,6.714,0.105,1.33
-Cleveland Browns,KC Concepcion,WR,6.67,4.0,0.3,4.0
-Cleveland Browns,Harold Fannin,TE,6.43,6.895,0.289,4.56
-Cleveland Browns,Denzel Boston,WR,5.0,13.0,0.225,3.0
-Dallas Cowboys,CeeDee Lamb,WR,8.35,10.388,0.376,5.85
-Dallas Cowboys,George Pickens,WR,8.16,8.769,0.367,5.42
-Dallas Cowboys,Ryan Flournoy,WR,4.44,6.697,0.2,2.69
-Denver Broncos,Jaylen Waddle,WR,6.41,8.5,0.288,3.88
-Denver Broncos,Courtland Sutton,WR,6.56,7.048,0.295,3.72
-Denver Broncos,Pat Bryant,WR,3.0,9.556,0.135,2.0
-Denver Broncos,Evan Engram,TE,3.97,6.604,0.179,2.58
-Detroit Lions,Amon-Ra St Brown,WR,10.7,7.534,0.481,7.18
-Detroit Lions,Sam LaPorta,TE,5.78,9.079,0.26,4.53
-Detroit Lions,Jameson Williams,WR,5.88,9.646,0.264,3.64
-Detroit Lions,Isaac TeSlaa,WR,2.12,9.366,0.095,1.21
-Green Bay Packers,Matthew Golden,WR,5.71,8.29,0.257,3.17
-Green Bay Packers,Christian Watson,WR,7.06,10.616,0.318,4.31
-Green Bay Packers,Tucker Kraft,TE,5.56,9.284,0.25,3.62
-Green Bay Packers,Skyy Moore,WR,3.67,3.364,0.165,1.67
-Houston Texans,Dalton Schultz,TE,7.02,7.656,0.316,5.39
-Houston Texans,Xavier Hutchinson,WR,4.72,6.836,0.212,2.41
-Houston Texans,Jared Wayne,WR,4.0,5.417,0.18,1.33
-Houston Texans,Nico Collins,WR,8.75,8.63,0.394,5.58
-Indianapolis Colts,Josh Downs,WR,8.0,7.75,0.36,4.67
-Indianapolis Colts,Tyler Warren,TE,6.87,6.076,0.309,5.04
-Indianapolis Colts,Keenan Allen,WR,6.67,5.0,0.3,4.33
-Indianapolis Colts,Alec Pierce,WR,4.81,11.32,0.217,2.9
-Jacksonville Jaguars,Parker Washington,WR,6.59,9.176,0.296,4.14
-Jacksonville Jaguars,Brian Thomas,WR,5.69,7.394,0.256,3.02
-Jacksonville Jaguars,Jakobi Meyers,WR,3.76,9.449,0.169,2.89
-Jacksonville Jaguars,Brenton Strange,TE,4.38,8.325,0.197,3.27
-Kansas City Chiefs,Travis Kelce,TE,6.22,9.737,0.28,4.54
-Kansas City Chiefs,Rashee Rice,WR,8.22,8.766,0.37,5.77
-Kansas City Chiefs,Xavier Worthy,WR,5.13,6.13,0.231,3.12
-Kansas City Chiefs,Tyquan Thornton,WR,2.33,15.429,0.105,2.0
-Las Vegas Raiders,Tre Tucker,WR,5.26,9.453,0.237,3.47
-Las Vegas Raiders,Michael Mayer,TE,4.15,6.43,0.187,3.18
-Las Vegas Raiders,Brock Bowers,TE,9.35,8.288,0.421,7.08
-Las Vegas Raiders,Jalen Nailor,WR,3.32,7.009,0.15,1.69
-Los Angeles Chargers,Quentin Johnston,WR,5.88,6.881,0.264,3.03
-Los Angeles Chargers,Tre Harris,WR,5.33,9.312,0.24,3.33
-Los Angeles Chargers,Ladd McConkey,WR,6.02,9.227,0.271,4.08
-Los Angeles Chargers,David Njoku,TE,4.0,6.956,0.18,2.84
-Los Angeles Rams,Davante Adams,WR,8.71,8.955,0.392,4.93
-Los Angeles Rams,Tyler Higbee,TE,3.88,7.013,0.174,2.81
-Los Angeles Rams,Konata Mumpfield,WR,3.67,9.545,0.165,1.67
-Miami Dolphins,Malik Washington,WR,5.26,5.526,0.237,3.19
-Miami Dolphins,Greg Dulcich,TE,3.56,9.157,0.16,2.75
-Miami Dolphins,Caleb Douglas,WR,5.0,11.3,0.225,3.5
-Miami Dolphins,Chris Bell,WR,3.33,9.2,0.15,1.67
-Minnesota Vikings,Justin Jefferson,WR,5.67,10.529,0.255,4.33
-Minnesota Vikings,Jordan Addison,WR,5.53,7.428,0.249,2.75
-Minnesota Vikings,TJ Hockenson,TE,4.38,6.34,0.197,3.25
-New England Patriots,Mack Hollins,WR,4.71,8.945,0.212,3.42
-New England Patriots,Demario Douglas,WR,4.67,4.786,0.21,2.33
-New England Patriots,Romeo Doubs,WR,4.7,10.267,0.211,2.9
-New England Patriots,Hunter Henry,TE,4.45,8.18,0.2,3.08
-New Orleans Saints,Chris Olave,WR,10.59,8.566,0.477,7.28
-New Orleans Saints,Devaughn Vele,WR,4.62,7.627,0.208,3.08
-New Orleans Saints,Juwan Johnson,TE,6.12,8.862,0.276,4.71
-New Orleans Saints,Noah Fant,TE,3.21,6.453,0.144,2.42
-New York Giants,Isaiah Likely,TE,4.48,7.352,0.202,3.08
-New York Giants,Malik Nabers,WR,7.84,6.734,0.353,4.31
-New York Giants,Malachi Fields,WR,4.0,6.167,0.18,2.0
-New York Giants,Darnell Mooney,WR,4.0,8.299,0.18,2.08
-New York Jets,Garrett Wilson,WR,8.64,7.559,0.389,5.84
-New York Jets,Adonai Mitchell,WR,5.08,6.319,0.229,2.62
-New York Jets,Kenyon Sadiq,TE,4.67,10.214,0.21,4.0
-New York Jets,Isaiah Williams,WR,3.0,6.889,0.135,2.67
-Philadelphia Eagles,DeVonta Smith,WR,9.0,8.704,0.405,6.33
-Philadelphia Eagles,Dontayvion Wicks,WR,3.93,8.986,0.177,2.46
-Philadelphia Eagles,Makai Lemon,WR,3.0,4.222,0.135,2.33
-Philadelphia Eagles,Dallas Goedert,TE,4.92,8.301,0.221,3.44
-Pittsburgh Steelers,DK Metcalf,WR,7.12,6.897,0.321,3.83
-Pittsburgh Steelers,Roman Wilson,WR,6.0,6.333,0.27,3.67
-Pittsburgh Steelers,Pat Freiermuth,TE,3.74,8.518,0.168,2.88
-Pittsburgh Steelers,Germie Bernard,WR,3.0,5.444,0.135,1.67
-San Francisco 49ers,Mike Evans,WR,6.84,6.921,0.308,3.84
-San Francisco 49ers,George Kittle,TE,5.92,9.767,0.266,4.74
-San Francisco 49ers,Deebo Samuel,WR,3.67,14.455,0.165,3.0
-San Francisco 49ers,Demarcus Robinson,WR,3.0,14.0,0.135,2.5
-Seattle Seahawks,Jaxon Smith-Njigba,WR,10.49,11.094,0.472,7.75
-Seattle Seahawks,AJ Barner,TE,4.0,7.583,0.18,2.91
-Seattle Seahawks,Rashid Shaheed,WR,2.4,6.175,0.108,1.27
-Seattle Seahawks,Cooper Kupp,WR,3.98,9.082,0.179,2.84
-Tampa Bay Buccaneers,Emeka Egbuka,WR,7.17,7.26,0.323,3.94
-Tampa Bay Buccaneers,Cade Otton,TE,5.29,7.061,0.238,3.68
-Tampa Bay Buccaneers,Ted Hurst,WR,4.33,7.923,0.195,2.0
-Tampa Bay Buccaneers,Chris Godwin,WR,4.92,8.196,0.221,3.54
-Tennessee Titans,Carnell Tate,WR,6.67,6.15,0.3,4.33
-Tennessee Titans,WanDale Robinson,WR,7.72,6.693,0.347,5.22
-Tennessee Titans,Gunnar Helm,TE,3.67,5.0,0.165,2.67
-Tennessee Titans,Elic Ayomanor,WR,4.6,7.408,0.207,2.1
-Washington Commanders,Stefon Diggs,WR,6.5,8.508,0.292,4.75
-Washington Commanders,Terry McLaurin,WR,6.5,8.466,0.292,3.62
-Washington Commanders,Antonio Williams,WR,3.67,9.364,0.165,3.0
-Washington Commanders,Dyami Brown,WR,3.0,2.333,0.135,1.33
+Arizona Cardinals,Trey McBride,TE,10.27,6.097,0.462,7.91
+Arizona Cardinals,Michael Wilson,WR,9.78,6.205,0.44,5.67
+Arizona Cardinals,Kendrick Bourne,WR,4.75,6.921,0.214,3.25
+Atlanta Falcons,Drake London,WR,8.0,10.012,0.36,5.0
+Atlanta Falcons,Kyle Pitts,TE,4.2,6.429,0.189,2.9
+Baltimore Ravens,Zay Flowers,WR,8.2,9.573,0.369,5.7
+Baltimore Ravens,Mark Andrews,TE,4.91,6.167,0.221,3.73
+Baltimore Ravens,Rashod Bateman,WR,3.82,9.595,0.172,2.27
+Baltimore Ravens,JaKobi Lane,WR,3.57,6.0,0.161,1.71
+Buffalo Bills,Khalil Shakir,WR,5.45,9.533,0.245,3.73
+Buffalo Bills,DJ Moore,WR,6.0,8.907,0.27,3.67
+Buffalo Bills,Dalton Kincaid,TE,4.3,11.628,0.193,3.4
+Buffalo Bills,Keon Coleman,WR,3.73,8.098,0.168,2.36
+Carolina Panthers,Tetairoa McMillan,WR,8.7,8.402,0.391,5.5
+Carolina Panthers,Jalen Coker,WR,6.67,7.333,0.3,3.89
+Carolina Panthers,Darren Waller,TE,4.2,8.69,0.189,2.8
+Carolina Panthers,Tommy Tremble,TE,3.6,6.806,0.162,2.6
+Chicago Bears,Luther Burden,WR,6.91,9.184,0.311,4.91
+Chicago Bears,Rome Odunze,WR,5.82,10.312,0.262,3.82
+Chicago Bears,Colston Loveland,TE,5.55,6.508,0.25,3.73
+Chicago Bears,Kalif Raymond,WR,4.55,6.48,0.205,3.27
+Cincinnati Bengals,JaMarr Chase,WR,9.6,9.469,0.432,6.9
+Cincinnati Bengals,Tee Higgins,WR,7.6,11.408,0.342,5.5
+Cincinnati Bengals,Mike Gesicki,TE,3.4,9.941,0.153,2.5
+Cincinnati Bengals,Dohnte Meyers,WR,3.0,8.133,0.135,2.1
+Cleveland Browns,KC Concepcion,WR,6.3,7.27,0.283,4.0
+Cleveland Browns,Denzel Boston,WR,6.3,8.302,0.283,3.3
+Cleveland Browns,Harold Fannin,TE,6.2,8.774,0.279,4.4
+Cleveland Browns,Jerry Jeudy,WR,3.2,8.812,0.144,2.0
+Dallas Cowboys,CeeDee Lamb,WR,11.92,8.685,0.536,7.92
+Dallas Cowboys,George Pickens,WR,9.0,8.556,0.405,5.64
+Dallas Cowboys,Ryan Flournoy,WR,4.58,8.673,0.206,3.25
+Denver Broncos,Jaylen Waddle,WR,6.0,6.833,0.27,3.45
+Denver Broncos,Courtland Sutton,WR,5.09,4.821,0.229,2.36
+Denver Broncos,Evan Engram,TE,3.64,6.075,0.164,2.09
+Denver Broncos,Pat Bryant,WR,4.0,9.393,0.18,2.86
+Detroit Lions,Amon-Ra St Brown,WR,9.73,8.766,0.438,7.0
+Detroit Lions,Jameson Williams,WR,6.0,10.288,0.27,3.82
+Detroit Lions,Sam LaPorta,TE,5.82,8.141,0.262,3.91
+Detroit Lions,Isaac TeSlaa,WR,2.91,7.031,0.131,1.18
+Green Bay Packers,Matthew Golden,WR,9.64,8.415,0.434,5.36
+Green Bay Packers,Christian Watson,WR,7.55,11.819,0.34,5.09
+Green Bay Packers,Tucker Kraft,TE,5.55,6.459,0.25,3.64
+Houston Texans,Nico Collins,WR,7.5,8.933,0.337,5.0
+Houston Texans,Xavier Hutchinson,WR,5.7,6.281,0.257,3.0
+Houston Texans,Dalton Schultz,TE,5.0,7.72,0.225,3.7
+Indianapolis Colts,Tyler Warren,TE,6.78,4.885,0.305,4.56
+Indianapolis Colts,Laquon Treadwell,WR,3.0,7.242,0.135,1.73
+Jacksonville Jaguars,Jakobi Meyers,WR,5.3,9.302,0.238,3.3
+Jacksonville Jaguars,Brenton Strange,TE,4.3,8.86,0.193,3.5
+Jacksonville Jaguars,Brian Thomas,WR,2.9,5.655,0.131,1.4
+Kansas City Chiefs,Travis Kelce,TE,5.82,10.266,0.262,4.09
+Kansas City Chiefs,Xavier Worthy,WR,5.18,5.544,0.233,3.18
+Kansas City Chiefs,Rashee Rice,WR,5.44,9.102,0.245,4.22
+Kansas City Chiefs,Noah Gray,TE,2.55,8.357,0.115,2.0
+Las Vegas Raiders,Brock Bowers,TE,9.0,9.389,0.405,6.25
+Las Vegas Raiders,Tre Tucker,WR,6.18,8.647,0.278,3.27
+Las Vegas Raiders,Michael Mayer,TE,4.82,7.698,0.217,3.82
+Las Vegas Raiders,Jalen Nailor,WR,3.7,3.703,0.167,1.6
+Los Angeles Chargers,Tre Harris,WR,4.67,8.952,0.21,3.11
+Los Angeles Chargers,Quentin Johnston,WR,3.67,8.333,0.165,1.67
+Los Angeles Chargers,Ladd McConkey,WR,4.57,10.094,0.206,3.14
+Los Angeles Chargers,Oronde Gadsden,TE,3.0,5.967,0.135,2.0
+Los Angeles Rams,Puka Nacua,WR,13.29,7.688,0.598,10.0
+Los Angeles Rams,Davante Adams,WR,8.17,9.796,0.367,5.0
+Los Angeles Rams,Tyler Higbee,TE,4.18,6.913,0.188,2.91
+Los Angeles Rams,Konata Mumpfield,WR,2.91,9.75,0.131,1.64
+Miami Dolphins,Malik Washington,WR,5.7,7.544,0.257,3.9
+Miami Dolphins,Caleb Douglas,WR,6.43,8.822,0.289,3.43
+Miami Dolphins,Greg Dulcich,TE,4.1,6.878,0.184,2.6
+Miami Dolphins,Chris Bell,WR,3.44,5.032,0.155,1.44
+Minnesota Vikings,Justin Jefferson,WR,8.11,7.575,0.365,5.22
+Minnesota Vikings,TJ Hockenson,TE,5.67,7.51,0.255,4.56
+Minnesota Vikings,Tai Felton,WR,2.4,4.833,0.108,1.2
+New England Patriots,Demario Douglas,WR,4.9,8.939,0.221,3.2
+New England Patriots,Hunter Henry,TE,4.0,9.575,0.18,3.4
+New England Patriots,Mack Hollins,WR,5.33,9.156,0.24,3.83
+New England Patriots,Eli Raridon,TE,3.0,8.556,0.135,1.89
+New Orleans Saints,Chris Olave,WR,10.2,8.49,0.459,6.8
+New Orleans Saints,Devaughn Vele,WR,6.1,7.459,0.274,4.4
+New Orleans Saints,Noah Fant,TE,2.67,4.792,0.12,1.56
+New York Giants,Malik Nabers,WR,9.7,7.701,0.436,6.5
+New York Giants,Isaiah Likely,TE,8.3,7.349,0.373,5.6
+New York Giants,Malachi Fields,WR,4.5,8.333,0.202,2.4
+New York Giants,Darnell Mooney,WR,3.5,5.0,0.158,1.4
+New York Jets,Garrett Wilson,WR,8.2,8.195,0.369,5.3
+New York Jets,Adonai Mitchell,WR,6.43,7.867,0.289,3.0
+New York Jets,Kenyon Sadiq,TE,3.27,7.444,0.147,2.27
+New York Jets,Mason Taylor,TE,3.44,6.194,0.155,2.67
+Philadelphia Eagles,DeVonta Smith,WR,11.17,8.224,0.502,7.0
+Philadelphia Eagles,Makai Lemon,WR,5.73,5.81,0.258,3.91
+Philadelphia Eagles,Dallas Goedert,TE,5.0,7.889,0.225,3.67
+Philadelphia Eagles,Darius Cooper,WR,3.55,7.0,0.16,1.64
+Pittsburgh Steelers,DK Metcalf,WR,7.09,6.026,0.319,3.55
+Pittsburgh Steelers,Germie Bernard,WR,5.18,6.702,0.233,3.55
+Pittsburgh Steelers,Pat Freiermuth,TE,4.0,7.045,0.18,3.0
+Pittsburgh Steelers,Darnell Washington,TE,3.09,8.265,0.139,2.09
+San Francisco 49ers,George Kittle,TE,6.5,9.092,0.292,4.7
+San Francisco 49ers,Mike Evans,WR,6.57,11.5,0.296,4.71
+San Francisco 49ers,Deebo Samuel,WR,3.86,9.519,0.174,3.14
+Seattle Seahawks,Jaxon Smith-Njigba,WR,10.9,11.073,0.49,7.9
+Seattle Seahawks,AJ Barner,TE,4.1,5.585,0.184,2.6
+Seattle Seahawks,Cooper Kupp,WR,3.5,7.771,0.158,2.3
+Seattle Seahawks,Rashid Shaheed,WR,4.0,5.344,0.18,2.12
+Tampa Bay Buccaneers,Emeka Egbuka,WR,7.38,5.017,0.332,4.12
+Tampa Bay Buccaneers,Chris Godwin,WR,4.1,6.634,0.184,3.2
+Tampa Bay Buccaneers,Cade Otton,TE,4.1,5.341,0.184,2.4
+Tampa Bay Buccaneers,Ted Hurst,WR,3.2,7.0,0.144,1.6
+Tennessee Titans,Carnell Tate,WR,7.0,8.411,0.315,4.5
+Tennessee Titans,WanDale Robinson,WR,6.0,5.037,0.27,4.22
+Tennessee Titans,Elic Ayomanor,WR,3.9,8.128,0.175,2.1
+Tennessee Titans,Gunnar Helm,TE,3.3,5.97,0.148,2.3
+Washington Commanders,Stefon Diggs,WR,7.22,6.631,0.325,4.44
+Washington Commanders,Antonio Williams,WR,5.2,8.615,0.234,3.7
+Washington Commanders,Chigoziem Okonkwo,TE,5.5,7.477,0.247,3.88
+Washington Commanders,Treylon Burks,WR,3.5,10.357,0.158,2.0
