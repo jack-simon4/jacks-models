@@ -34,6 +34,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Fetch and update NCAAF team stats
+        continue-on-error: true
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: python scripts/fetch_ncaaf_stats.py

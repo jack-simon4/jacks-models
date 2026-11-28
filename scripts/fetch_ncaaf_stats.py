@@ -118,17 +118,19 @@ CFBD_TO_CSV = {v: k for k, v in TEAM_NAME_MAP.items()}
 
 
 def _api(endpoint: str, params: dict = None, retries: int = 3) -> list:
-    """GET from cfbd API with retry on 429."""
+    """GET from cfbd API; retries on 429 or network errors only. 5xx fails immediately."""
     headers = {'Authorization': f'Bearer {API_KEY}'}
     for attempt in range(retries):
         try:
             resp = requests.get(f'{BASE}{endpoint}', headers=headers,
-                                params=params or {}, timeout=30)
+                                params=params or {}, timeout=15)
             if resp.status_code == 429:
                 time.sleep(5 * (attempt + 1))
                 continue
             resp.raise_for_status()
             return resp.json()
+        except requests.exceptions.HTTPError:
+            raise  # 4xx/5xx — server error, retrying won't help
         except requests.RequestException as exc:
             if attempt == retries - 1:
                 raise
@@ -459,8 +461,8 @@ def build():
     prior_game_data = fetch_game_stats(PRIOR_YEAR)
 
     if not cur_game_data and not prior_game_data:
-        print('[NCAAF] No game data available from API. Aborting.')
-        sys.exit(1)
+        print('[NCAAF] No game data available from API — keeping existing CSV unchanged.')
+        sys.exit(0)
 
     # Check how many CSV teams are actually matched in cur_game_data.
     # If very few match (API data present but team names don't align),
