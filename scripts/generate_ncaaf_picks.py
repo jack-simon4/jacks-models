@@ -190,6 +190,59 @@ def fetch_schedule(year: int, weeks: list) -> list:
     return games
 
 
+def fetch_schedule_espn(weeks: list) -> list:
+    """Fallback schedule source using ESPN's public CFB API (no key required).
+    Returns games in a dict format compatible with generate_ncaaf_picks expectations."""
+    games = []
+    seen  = set()
+    for week in weeks:
+        url = (f'https://site.api.espn.com/apis/site/v2/sports/football'
+               f'/college-football/scoreboard?groups=80&limit=300&week={week}&seasontype=2')
+        try:
+            resp = requests.get(url, timeout=15, headers={'User-Agent': 'Mozilla/5.0'})
+            if resp.status_code != 200:
+                print(f'[NCAAF ESPN] w{week} HTTP {resp.status_code}')
+                continue
+            added = 0
+            for event in resp.json().get('events', []):
+                eid = event.get('id')
+                if eid in seen:
+                    continue
+                seen.add(eid)
+                comp        = (event.get('competitions') or [{}])[0]
+                competitors = comp.get('competitors', [])
+                if len(competitors) < 2:
+                    continue
+                home_c = next((c for c in competitors if c.get('homeAway') == 'home'), None)
+                away_c = next((c for c in competitors if c.get('homeAway') == 'away'), None)
+                if not home_c or not away_c:
+                    continue
+                is_final = (comp.get('status') or {}).get('type', {}).get('completed', False)
+                h_pts = a_pts = None
+                if is_final:
+                    try:
+                        h_pts = int(home_c.get('score', 0))
+                        a_pts = int(away_c.get('score', 0))
+                    except (ValueError, TypeError):
+                        pass
+                games.append({
+                    'id':         eid,
+                    'homeTeam':   (home_c.get('team') or {}).get('displayName', ''),
+                    'awayTeam':   (away_c.get('team') or {}).get('displayName', ''),
+                    'startDate':  event.get('date', ''),
+                    'homePoints': h_pts,
+                    'awayPoints': a_pts,
+                })
+                added += 1
+            if added:
+                print(f'[NCAAF ESPN] w{week}: {added} games')
+            time.sleep(0.3)
+        except Exception as exc:
+            print(f'[NCAAF ESPN] w{week} error: {exc}')
+    print(f'[NCAAF ESPN] Fetched {len(games)} total games.')
+    return games
+
+
 def current_ncaaf_weeks(now: datetime) -> list:
     """Return all weeks from 1 through next_week.
     Fetching all completed weeks ensures Firestore captures every finished game,
@@ -326,6 +379,12 @@ def generate_ncaaf_picks():
     year       = now.year if now.month >= 8 else now.year - 1
     weeks      = current_ncaaf_weeks(now)
     games      = fetch_schedule(year, weeks)
+    if not games:
+        print('[NCAAF] CFBD returned no games — trying ESPN fallback.')
+        games = fetch_schedule_espn(weeks)
+    if not games:
+        print('[NCAAF] No games from any source — keeping existing picks unchanged.')
+        return
     lines_map  = load_lines(year, weeks)
     window_end = now + timedelta(days=10)
 
