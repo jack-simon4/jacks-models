@@ -30,6 +30,21 @@
     "rank": 2
   },
   {
+    "homeTeam": "Creighton",
+    "awayTeam": "Louisville",
+    "predictedHomeScore": 79,
+    "predictedAwayScore": 77,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "Creighton",
+    "winProb": 0.553,
+    "confidence": "Elite",
+    "vegasSpread": -5.5,
+    "spreadEdge": 7.5,
+    "gameTime": "2026-11-29T03:30Z",
+    "rank": 3
+  },
+  {
     "homeTeam": "Navy",
     "awayTeam": "Central Connecticut",
     "predictedHomeScore": 67,
@@ -42,7 +57,7 @@
     "vegasSpread": -1.5,
     "spreadEdge": 6.5,
     "gameTime": "2026-11-28T19:00Z",
-    "rank": 3
+    "rank": 4
   },
   {
     "homeTeam": "George Mason",
@@ -57,7 +72,7 @@
     "vegasSpread": 21.5,
     "spreadEdge": -6.5,
     "gameTime": "2026-11-28T19:00Z",
-    "rank": 4
+    "rank": 5
   },
   {
     "homeTeam": "Hofstra",
@@ -72,7 +87,7 @@
     "vegasSpread": 1.5,
     "spreadEdge": 5.5,
     "gameTime": "2026-11-28T20:30Z",
-    "rank": 5
+    "rank": 6
   },
   {
     "homeTeam": "Georgia Tech",
@@ -87,7 +102,7 @@
     "vegasSpread": 26.5,
     "spreadEdge": -4.5,
     "gameTime": "2026-11-28T18:00Z",
-    "rank": 6
+    "rank": 7
   },
   {
     "homeTeam": "UNC Asheville",
@@ -102,7 +117,7 @@
     "vegasSpread": -1.5,
     "spreadEdge": 4.5,
     "gameTime": "2026-11-28T19:00Z",
-    "rank": 7
+    "rank": 8
   },
   {
     "homeTeam": "Niagara",
@@ -117,37 +132,7 @@
     "vegasSpread": -1.5,
     "spreadEdge": 4.5,
     "gameTime": "2026-11-28T19:00Z",
-    "rank": 8
-  },
-  {
-    "homeTeam": "Notre Dame",
-    "awayTeam": "Stonehill",
-    "predictedHomeScore": 91,
-    "predictedAwayScore": 65,
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "pick": "Notre Dame",
-    "winProb": 0.99,
-    "confidence": "Strong",
-    "vegasSpread": 30.5,
-    "spreadEdge": -4.5,
-    "gameTime": "2026-11-29T01:00Z",
     "rank": 9
-  },
-  {
-    "homeTeam": "Pepperdine",
-    "awayTeam": "Lehigh",
-    "predictedHomeScore": 81,
-    "predictedAwayScore": 73,
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "pick": "Pepperdine",
-    "winProb": 0.722,
-    "confidence": "Lean",
-    "vegasSpread": 11.5,
-    "spreadEdge": -3.5,
-    "gameTime": "2026-11-28T18:30Z",
-    "rank": 10
   },
   {
     "homeTeam": "Presbyterian",
@@ -162,7 +147,7 @@
     "vegasSpread": 2.5,
     "spreadEdge": -3.5,
     "gameTime": "2026-11-28T19:00Z",
-    "rank": 11
+    "rank": 10
   },
   {
     "homeTeam": "Bradley",
@@ -177,7 +162,7 @@
     "vegasSpread": 14.5,
     "spreadEdge": -3.5,
     "gameTime": "2026-11-28T19:00Z",
-    "rank": 12
+    "rank": 11
   },
   {
     "homeTeam": "Eastern Illinois",
@@ -192,7 +177,7 @@
     "vegasSpread": -10.5,
     "spreadEdge": 3.5,
     "gameTime": "2026-11-28T20:00Z",
-    "rank": 13
+    "rank": 12
   },
   {
     "homeTeam": "Charleston Southern",
@@ -207,22 +192,22 @@
     "vegasSpread": 1.5,
     "spreadEdge": 3.5,
     "gameTime": "2026-11-29T00:00Z",
-    "rank": 14
+    "rank": 13
   },
   {
-    "homeTeam": "Creighton",
-    "awayTeam": "Louisville",
-    "predictedHomeScore": 79,
-    "predictedAwayScore": 77,
+    "homeTeam": "Notre Dame",
+    "awayTeam": "Stonehill",
+    "predictedHomeScore": 91,
+    "predictedAwayScore": 65,
     "actualHomeScore": null,
     "actualAwayScore": null,
-    "pick": "Creighton",
-    "winProb": 0.553,
+    "pick": "Notre Dame",
+    "winProb": 0.99,
     "confidence": "Lean",
-    "vegasSpread": 5.5,
+    "vegasSpread": 29.5,
     "spreadEdge": -3.5,
-    "gameTime": "2026-11-29T03:30Z",
-    "rank": 15
+    "gameTime": "2026-11-29T01:00Z",
+    "rank": 14
   },
   {
     "homeTeam": "Radford",
@@ -237,6 +222,21 @@
     "vegasSpread": 1.5,
     "spreadEdge": 2.5,
     "gameTime": "2026-11-28T18:00Z",
+    "rank": 15
+  },
+  {
+    "homeTeam": "Pepperdine",
+    "awayTeam": "Lehigh",
+    "predictedHomeScore": 81,
+    "predictedAwayScore": 73,
+    "actualHomeScore": null,
+    "actualAwayScore": null,
+    "pick": "Pepperdine",
+    "winProb": 0.722,
+    "confidence": "Lean",
+    "vegasSpread": 10.5,
+    "spreadEdge": -2.5,
+    "gameTime": "2026-11-28T18:30Z",
     "rank": 16
   },
   {
@@ -255,21 +255,6 @@
     "rank": 17
   },
   {
-    "homeTeam": "Towson",
-    "awayTeam": "Buffalo",
-    "predictedHomeScore": 72,
-    "predictedAwayScore": 66,
-    "actualHomeScore": null,
-    "actualAwayScore": null,
-    "pick": "Towson",
-    "winProb": 0.666,
-    "confidence": "Lean",
-    "vegasSpread": 3.5,
-    "spreadEdge": 2.5,
-    "gameTime": "2026-11-28T20:30Z",
-    "rank": 18
-  },
-  {
     "homeTeam": "Mount St. Mary's",
     "awayTeam": "Drexel",
     "predictedHomeScore": 69,
@@ -282,7 +267,7 @@
     "vegasSpread": -4.5,
     "spreadEdge": 2.5,
     "gameTime": "2026-11-28T21:00Z",
-    "rank": 19
+    "rank": 18
   },
   {
     "homeTeam": "Seattle",
@@ -297,7 +282,7 @@
     "vegasSpread": 5.5,
     "spreadEdge": -2.5,
     "gameTime": "2026-11-28T22:00Z",
-    "rank": 20
+    "rank": 19
   },
   {
     "homeTeam": "Minnesota",
@@ -312,7 +297,7 @@
     "vegasSpread": 6.5,
     "spreadEdge": 2.5,
     "gameTime": "2026-11-29T01:00Z",
-    "rank": 21
+    "rank": 20
   },
   {
     "homeTeam": "Maine",
@@ -327,7 +312,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T17:00Z",
-    "rank": 22
+    "rank": 21
   },
   {
     "homeTeam": "Colgate",
@@ -342,7 +327,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T17:00Z",
-    "rank": 23
+    "rank": 22
   },
   {
     "homeTeam": "Dayton",
@@ -357,7 +342,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T18:00Z",
-    "rank": 24
+    "rank": 23
   },
   {
     "homeTeam": "Appalachian St.",
@@ -372,7 +357,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T18:00Z",
-    "rank": 25
+    "rank": 24
   },
   {
     "homeTeam": "Green Bay",
@@ -387,7 +372,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T19:00Z",
-    "rank": 26
+    "rank": 25
   },
   {
     "homeTeam": "Charleston",
@@ -402,7 +387,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T19:00Z",
-    "rank": 27
+    "rank": 26
   },
   {
     "homeTeam": "Tulsa",
@@ -417,7 +402,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T19:00Z",
-    "rank": 28
+    "rank": 27
   },
   {
     "homeTeam": "Fairfield",
@@ -432,7 +417,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T19:00Z",
-    "rank": 29
+    "rank": 28
   },
   {
     "homeTeam": "Yale",
@@ -447,7 +432,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T19:00Z",
-    "rank": 30
+    "rank": 29
   },
   {
     "homeTeam": "Holy Cross",
@@ -462,7 +447,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T19:00Z",
-    "rank": 31
+    "rank": 30
   },
   {
     "homeTeam": "Arkansas St.",
@@ -477,7 +462,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T19:00Z",
-    "rank": 32
+    "rank": 31
   },
   {
     "homeTeam": "Sacred Heart",
@@ -492,7 +477,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T19:00Z",
-    "rank": 33
+    "rank": 32
   },
   {
     "homeTeam": "Oregon St.",
@@ -507,7 +492,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T19:30Z",
-    "rank": 34
+    "rank": 33
   },
   {
     "homeTeam": "Hofstra",
@@ -522,7 +507,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T19:30Z",
-    "rank": 35
+    "rank": 34
   },
   {
     "homeTeam": "Lafayette",
@@ -537,7 +522,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T19:30Z",
-    "rank": 36
+    "rank": 35
   },
   {
     "homeTeam": "Wyoming",
@@ -552,7 +537,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T20:00Z",
-    "rank": 37
+    "rank": 36
   },
   {
     "homeTeam": "Oklahoma St.",
@@ -567,7 +552,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T20:00Z",
-    "rank": 38
+    "rank": 37
   },
   {
     "homeTeam": "Saint Louis",
@@ -582,7 +567,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T20:30Z",
-    "rank": 39
+    "rank": 38
   },
   {
     "homeTeam": "Houston",
@@ -597,7 +582,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T21:00Z",
-    "rank": 40
+    "rank": 39
   },
   {
     "homeTeam": "Texas Southern",
@@ -612,7 +597,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T21:00Z",
-    "rank": 41
+    "rank": 40
   },
   {
     "homeTeam": "Southern Miss",
@@ -627,7 +612,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T21:00Z",
-    "rank": 42
+    "rank": 41
   },
   {
     "homeTeam": "SIUE",
@@ -642,7 +627,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T21:00Z",
-    "rank": 43
+    "rank": 42
   },
   {
     "homeTeam": "East Tennessee St.",
@@ -657,7 +642,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T21:00Z",
-    "rank": 44
+    "rank": 43
   },
   {
     "homeTeam": "James Madison",
@@ -672,7 +657,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T21:00Z",
-    "rank": 45
+    "rank": 44
   },
   {
     "homeTeam": "Stanford",
@@ -687,7 +672,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T21:00Z",
-    "rank": 46
+    "rank": 45
   },
   {
     "homeTeam": "American",
@@ -702,7 +687,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T21:00Z",
-    "rank": 47
+    "rank": 46
   },
   {
     "homeTeam": "North Texas",
@@ -717,7 +702,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T21:30Z",
-    "rank": 48
+    "rank": 47
   },
   {
     "homeTeam": "Texas St.",
@@ -732,7 +717,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T22:00Z",
-    "rank": 49
+    "rank": 48
   },
   {
     "homeTeam": "Ohio St.",
@@ -747,7 +732,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-29T22:30Z",
-    "rank": 50
+    "rank": 49
   },
   {
     "homeTeam": "Washington",
@@ -762,7 +747,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-30T00:30Z",
-    "rank": 51
+    "rank": 50
   },
   {
     "homeTeam": "Grand Canyon",
@@ -777,7 +762,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-11-30T01:00Z",
-    "rank": 52
+    "rank": 51
   },
   {
     "homeTeam": "Kennesaw St.",
@@ -792,7 +777,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-12-01T00:00Z",
-    "rank": 53
+    "rank": 52
   },
   {
     "homeTeam": "Fairleigh Dickinson",
@@ -807,7 +792,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-12-01T00:00Z",
-    "rank": 54
+    "rank": 53
   },
   {
     "homeTeam": "Murray St.",
@@ -822,7 +807,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-12-01T01:00Z",
-    "rank": 55
+    "rank": 54
   },
   {
     "homeTeam": "South Dakota",
@@ -837,7 +822,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-12-01T01:00Z",
-    "rank": 56
+    "rank": 55
   },
   {
     "homeTeam": "Evansville",
@@ -852,7 +837,7 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-12-01T01:00Z",
-    "rank": 57
+    "rank": 56
   },
   {
     "homeTeam": "Arizona St.",
@@ -867,6 +852,6 @@
     "vegasSpread": null,
     "spreadEdge": null,
     "gameTime": "2026-12-01T02:00Z",
-    "rank": 58
+    "rank": 57
   }
 ]
