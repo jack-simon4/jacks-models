@@ -48,7 +48,8 @@
         <span *ngIf="pick.odds" class="pick-odds">&nbsp;{{ pick.odds }}</span>
       </div>
       <div *ngIf="pick.spreadEdge != null" class="spread-edge">
-        Edge: {{ pick.spreadEdge > 0 ? '+' : '' }}{{ pick.spreadEdge.toFixed(1) }} pts vs Vegas
+        Edge: +{{ pick.spreadEdge < 0 ? (-pick.spreadEdge).toFixed(1) : pick.spreadEdge.toFixed(1) }} pts
+        <span class="ats-toward" *ngIf="pick.atsPick">— {{ pick.atsPick }}</span>
       </div>
       <div class="predicted-score">{{ pick.predictedScore }}</div>
     </div>

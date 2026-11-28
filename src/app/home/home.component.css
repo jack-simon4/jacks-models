@@ -186,6 +186,11 @@
   margin: 1px 0;
 }
 
+.ats-toward {
+  font-style: normal;
+  font-weight: 600;
+}
+
 .predicted-score {
   color: #c5c3c5;
   font-size: 12px;

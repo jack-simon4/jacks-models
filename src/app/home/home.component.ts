@@ -11,6 +11,8 @@ interface UnifiedPick {
   sport: string;
   league?: string;
   matchup: string;
+  homeTeam: string;
+  awayTeam: string;
   pick: string;
   winProb: number;
   confidence: string;
@@ -19,6 +21,7 @@ interface UnifiedPick {
   gameTime?: string;
   spreadEdge?: number;   // model margin minus Vegas margin; + = model likes home more
   vegasSpread?: number;  // Vegas home-team line (+ = home favored)
+  atsPick?: string;      // team the model implies as ATS bet (derived from spreadEdge sign)
 }
 
 @Component({
@@ -67,10 +70,17 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void { this.subs.unsubscribe(); }
 
+  private atsPick(homeTeam: string, awayTeam: string, spreadEdge: number | undefined): string | undefined {
+    if (spreadEdge == null) return undefined;
+    return spreadEdge > 0 ? homeTeam : awayTeam;
+  }
+
   private normalizeMlb(p: any): UnifiedPick {
     return {
       rank: 0,
       sport: 'MLB',
+      homeTeam: p.homeTeam ?? '',
+      awayTeam: p.awayTeam ?? '',
       matchup: p.matchup ?? `${p.awayTeam} @ ${p.homeTeam}`,
       pick: p.pick,
       winProb: p.winProb ?? 0,
@@ -90,6 +100,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     return {
       rank: 0,
       sport,
+      homeTeam: p.homeTeam ?? '',
+      awayTeam: p.awayTeam ?? '',
       matchup: `${p.awayTeam} @ ${p.homeTeam}`,
       pick: p.pick,
       winProb: p.winProb ?? 0,
@@ -98,6 +110,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       gameTime: p.gameTime,
       spreadEdge: p.spreadEdge,
       vegasSpread: p.vegasSpread,
+      atsPick: this.atsPick(p.homeTeam, p.awayTeam, p.spreadEdge),
     };
   }
 
@@ -108,6 +121,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     return {
       rank: 0,
       sport: 'NBA',
+      homeTeam: p.homeTeam ?? '',
+      awayTeam: p.awayTeam ?? '',
       matchup: `${p.awayTeam} @ ${p.homeTeam}`,
       pick: p.pick,
       winProb: p.winProb ?? 0,
@@ -116,6 +131,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       gameTime: p.gameTime,
       spreadEdge: p.spreadEdge,
       vegasSpread: p.vegasSpread,
+      atsPick: this.atsPick(p.homeTeam, p.awayTeam, p.spreadEdge),
     };
   }
 
@@ -124,6 +140,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     return {
       rank: 0,
       sport: 'NCAAM',
+      homeTeam: p.homeTeam ?? '',
+      awayTeam: p.awayTeam ?? '',
       matchup: `${p.awayTeam} @ ${p.homeTeam}`,
       pick: p.pick,
       winProb: p.winProb ?? 0,
@@ -132,6 +150,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       gameTime: p.gameTime,
       spreadEdge: p.spreadEdge,
       vegasSpread: p.vegasSpread,
+      atsPick: this.atsPick(p.homeTeam, p.awayTeam, p.spreadEdge),
     };
   }
 
@@ -142,6 +161,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     return {
       rank: 0,
       sport: 'NHL',
+      homeTeam: p.homeTeam ?? '',
+      awayTeam: p.awayTeam ?? '',
       matchup: `${p.awayTeam} @ ${p.homeTeam}`,
       pick: p.pick,
       winProb: p.winProb ?? 0,
@@ -173,6 +194,8 @@ export class HomeComponent implements OnInit, OnDestroy {
       rank: 0,
       sport: 'Soccer',
       league: g.league,
+      homeTeam: g.homeTeam ?? '',
+      awayTeam: g.awayTeam ?? '',
       matchup: `${g.awayTeam} @ ${g.homeTeam}`,
       pick,
       winProb: Math.round(pickWp * 1000) / 1000,
@@ -254,7 +277,9 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     forkJoin([mlb$, nfl$, ncaaf$, soccer$, nhl$, nba$, ncaam$]).subscribe(([mlb, nfl, ncaaf, soccer, nhl, nba, ncaam]) => {
       const all = [...mlb, ...nfl, ...ncaaf, ...soccer, ...nhl, ...nba, ...ncaam]
-        .filter(p => p.spreadEdge != null);
+        .filter(p => p.spreadEdge != null)
+        // Exclude extreme spreads (>25 pts) — model isn't calibrated for such mismatches
+        .filter(p => p.vegasSpread == null || Math.abs(p.vegasSpread) <= 25);
       all.sort((a, b) => Math.abs(b.spreadEdge!) - Math.abs(a.spreadEdge!));
       this.topPicks = all.slice(0, 5).map((p, i) => ({ ...p, rank: i + 1 }));
       this.topPicksLoading = false;
