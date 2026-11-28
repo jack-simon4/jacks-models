@@ -367,6 +367,16 @@
   margin-top: 2px;
 }
 
+.ats-pick-label {
+  margin-top: 6px;
+}
+
+.ats-pick-name {
+  color: #90caf9;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 /* Overall badges */
 .overall-badges {
   display: flex;

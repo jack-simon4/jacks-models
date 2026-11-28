@@ -123,8 +123,12 @@
         </div>
 
         <div class="pick-col">
-          <div class="score-label">Pick</div>
+          <div class="score-label">ML Pick</div>
           <div class="pick-name">{{ predictedWinner(game) }}</div>
+          <ng-container *ngIf="atsPickTeam(game) as atsPick">
+            <div class="score-label ats-pick-label">ATS Bet</div>
+            <div class="pick-name ats-pick-name">{{ atsPick }}</div>
+          </ng-container>
           <div class="pick-units" *ngIf="atsUnits(game) !== null"
                [class.units-pos]="(atsUnits(game) ?? 0) > 0"
                [class.units-neg]="(atsUnits(game) ?? 0) < 0">

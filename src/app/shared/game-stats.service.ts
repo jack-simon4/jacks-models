@@ -95,22 +95,35 @@ export class GameStatsService {
   }
 
   /**
-   * ATS result for the model's moneyline pick.
-   * vegasSpread convention: positive = home is favoured.
-   * Returns null when spread data is unavailable.
+   * Returns which team the model implies as the ATS bet.
+   * Based on predicted margin vs Vegas spread: if the model's margin is higher
+   * than the spread, the model likes home ATS; otherwise it likes away ATS.
+   * Returns null when spread data is unavailable or the model agrees with Vegas exactly.
+   */
+  atsPick(game: Game): string | null {
+    if (game.vegasSpread == null) return null;
+    const modelEdge = (game.predictedHomeScore - game.predictedAwayScore) - game.vegasSpread;
+    if (modelEdge === 0) return null;
+    return modelEdge > 0 ? game.homeTeam : game.awayTeam;
+  }
+
+  /**
+   * ATS result based on the model's implied spread side (predicted margin vs Vegas spread),
+   * not the moneyline pick. vegasSpread convention: positive = home is favoured.
    */
   atsResult(game: Game): 'win' | 'loss' | 'push' | null {
     if (game.actualHomeScore == null || game.actualAwayScore == null) return null;
     if (game.vegasSpread == null) return null;
-    if (!game.pick) return null;
 
-    const margin        = game.actualHomeScore - game.actualAwayScore;
-    const coverMargin   = margin - game.vegasSpread;   // >0 means home covered
+    const margin      = game.actualHomeScore - game.actualAwayScore;
+    const coverMargin = margin - game.vegasSpread;   // >0 means home covered
     if (coverMargin === 0) return 'push';
 
-    const homeCovered = coverMargin > 0;
-    const pickIsHome  = game.pick === game.homeTeam;
-    return (pickIsHome === homeCovered) ? 'win' : 'loss';
+    const homeCovered    = coverMargin > 0;
+    const modelEdge      = (game.predictedHomeScore - game.predictedAwayScore) - game.vegasSpread;
+    if (modelEdge === 0) return null;
+    const modelLikesHome = modelEdge > 0;
+    return (modelLikesHome === homeCovered) ? 'win' : 'loss';
   }
 
   /** Flat-bet units at standard −110 vig. */

@@ -128,6 +128,7 @@ export class ResultsComponent implements OnInit, OnDestroy {
     return game.predictedHomeScore > game.predictedAwayScore ? game.homeTeam : game.awayTeam;
   }
 
-  atsResult(game: Game) { return this.gameStats.atsResult(game); }
-  atsUnits(game: Game)  { return this.gameStats.atsUnits(game); }
+  atsResult(game: Game)   { return this.gameStats.atsResult(game); }
+  atsUnits(game: Game)    { return this.gameStats.atsUnits(game); }
+  atsPickTeam(game: Game) { return this.gameStats.atsPick(game); }
 }
